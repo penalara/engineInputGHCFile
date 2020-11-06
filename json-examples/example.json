@@ -1,0 +1,388 @@
+{
+    "versionJson": "0.1",
+	"date": "2013-10-21T13:28:06.419Z",
+	"ghcData" : {
+		"periods":{ 
+            "followedPeriods":false,
+            "periodsList": [
+                {
+                    "id": "PrimerCuatri",
+                    "lastDay": 4
+                },
+                {
+                    "id": "SegundoCuatri",
+                    "lastDay": 9
+                }
+            ]
+        },
+	    "frames": [
+            {
+            "id":"A",
+            "name":"Marco A",
+            "xkey":"a",
+            "sections":[
+                {
+                    "day":0,
+                    "index":0,
+                    "entryTime": "08:30:00",
+                    "exitTime": "09:20:00",
+                    "tipo":"lectivo",
+                    "xkey":"1",
+                    "allowed":true
+                },
+                {
+                    "day":0,
+                    "index":1,
+                    "entryTime": "09:25:00",
+                    "exitTime": "10:15:00",
+                    "tipo":"lectivo",
+                    "xkey":"2",
+                    "allowed":true
+                },
+                {
+                    "day":0,
+                    "index":2,
+                    "entryTime": "10:15:00",
+                    "exitTime": "10:30:00",
+                    "tipo":"recreo",
+                    "xkey":"R1",
+                    "allowed":true
+                }
+                ]
+            }
+        ],
+        "buildings":[
+            {
+                "id":"EdP",
+                "distances":[
+                    {
+                        "refBuilding":"EdE",
+                        "minutes":24
+                    }
+                ]
+            },
+            {
+                "id":"EdE",
+                "distances":[
+                    {
+                        "refBuilding":"EdP",
+                        "minutes":24
+                    }
+                ]
+            }
+        ],
+        "classRooms": [
+            {
+                "id":"A1",
+                "capacity":20,
+                "frameTemplate":[
+                    {
+                        "day":0,
+                        "index":0,
+                        "frame":"A",
+                        "type":"banned"
+                    },
+                    {
+                        "day":0,
+                        "index":1,
+                        "frame":"A",
+                        "type":"banned"
+                    }
+                ],
+                "refBuilding":"EdP",
+                "fullDay":false
+            },
+            {
+                "id":"A2",
+                "capacity":25,
+                "refBuilding":"EdP"
+            },
+            {
+                "id":"A3",
+                "capacity":30,
+                "refBuilding":"EdE"
+            }
+        ],
+        "classRoomsSets": [
+            {
+                "id":"General",
+                "rooms":["A1","A2"],
+                "anonymousRooms":0
+            },
+            {
+                "id":"Dedicated",
+                "rooms":["A1","A3"],
+                "anonymousRooms":1
+            }
+        ],
+        "tasks": {
+            "taskList": [
+                {
+                    "id": "LEC"
+                },
+                {
+                    "id": "COORD"
+                },
+                {
+                    "id": "SUPPORT"
+                },
+                {
+                    "id": "SUPERVISION"
+                }
+            ],
+            "byDefault": {
+                "teachingDefault":"LEC",
+                "meetingsDefault": "COORDINATION",
+                "complementaryDefault":"SUPPORT",
+                "onCallHoursDefault": "SUPERVISION"                
+            }
+        },
+        "teachers":[
+            {
+                "id": "DavH",
+                "name":"David",
+                "associationIdentifier": "exmpleOtherCityGroup",
+                "frameTemplate":[
+                    {
+                        "day":0,
+                        "index":0,
+                        "frame":"A",
+                        "type":"strong-non-preferred"
+                    }
+                ],
+                "settings":[
+                    {
+                        "context":"whole",
+                        "weeklyStay": {
+                            "strict": 1860,
+                            "preferred": 1800,
+                            "countAroundMidday": true
+                        },
+                        "daylyStay": {
+                            "strict": 360,
+                            "preferred": 300
+                        },
+                        "avoidGapsBetweenSesions": false,
+                        "continuousWeeks": false,
+                        "maxContinuousTeaching": {
+                            "strict": false,
+                            "minutes": 300,
+                            "minBreak": 15
+                        },
+                        "avoidClassesAroundBreak": false,
+                        "freeTimes": {
+                            "fullDay":{
+                                "strictDays":1,
+                                "preferredDays": 2
+                            },
+                            "consecutiveAnyTime":{
+                                "strictDays":1,
+                                "preferredDays": 2,
+                                "minutes":60
+                            }
+                        },
+                        "freePartTimes":{
+                            "mornings": {
+                                "strict": 1
+                            },
+                            "afternoons": {
+                                "preferred": 1
+                            },
+                            "indistinctly":{
+                                "strict": 2
+                            }
+                        },
+                        "incompatibilities": {
+                            "doNotFinishAtLastAfternoonSectionIfStartedAtFirstAfternoonSection": {
+                                "estrict": true
+                            },
+                            "freeTimeAroundMidday": {
+                                "estrict": false,
+                                "minutes":60
+                            }
+                        },
+                        "daylyOcupation": {
+                            "allowFreeDays": true,
+                            "minimumTeaching": {
+                                "restriction": "strict"
+                            }
+                        }
+                    },
+                    {
+                        "context":"PrimerCuatri",
+                        "weeklyStay": {
+                            "strict": 1800
+                        }
+                    }
+                ]
+            }
+        ],
+        "subjects": [
+            {
+                "name": "Basic Mathematics",
+                "shortName": "BMaths",
+                "department": "Maths",
+                "xkey":"subj1",
+                "student-mentoring": false,
+                "frameTemplate":[
+                    {
+                        "day":0,
+                        "index":0,
+                        "frame":"A",
+                        "type":"weak-non-preferred"
+                    }
+                ]
+            },
+            {
+                "name": "Computing"
+            }
+        ],
+        "grades": [
+            {
+                "name": "1º ESO",
+                "fullName": "First of Secundary Education",
+                "xkey":"g1",
+                "gradeSubjects": [
+                    ["Basic Mathematics", 4.0],
+                    ["Computing", 4.5]
+                ]
+            },
+            {
+                "name": "2º ESO",
+                "fullName": "Second of Secundary Education",
+                "xkey":"g2"
+            }
+        ],
+        "groups": [
+            {
+                "frame": "A",
+                "name": "1ºA ESO",
+                "shortName": "1AE",
+                "fullName": "1ºA Secundaria",
+                "grade": "1º ESO",
+                "teacher-mentoring": "David",
+                "preferredClassrom": "Aula1",
+                "xkey":"grup1",
+                "freeAfternoons": 4,
+                "frameTemplate":[
+                    {
+                        "day":0,
+                        "index":0,
+                        "frame":"A",
+                        "type":"weak-non-preferred"
+                    }
+                ],
+                "email": "group1@example.com",
+                "numStudents": 30,
+                "notGaps": true,
+                "gapsAlwaysInNonPreferred": false
+            },
+            {
+                "frame": "A",
+                "name": "1ºB ESO"
+            }
+        ],
+        "teachingSessions": [
+            {
+                "id": 0,
+                "subject": "Basic Mathematics",
+                "group": "1ºA ESO",
+                "teacher": "David",
+                "distribution": {
+                    "stablePeriods": {
+                        "periods": [
+                            "PrimerCuatri",
+                            "SegundoCuatri"
+                        ],
+                        "weeklyDistribution": {
+                            "weeklyStable": [2,2,1]
+                        }
+                    }
+                },
+                "sessionClassRooms": {
+                    "classRoomsList": ["Aula1"],
+                    "classRoomsSetsList": ["Dedicated classroms"]
+                },
+                "task": "LEC"
+            },
+            {
+                "id": 1,
+                "subject": "Basic Mathematics",
+                "group": "1ºB ESO",
+                "teacher": "David",
+                "distribution": {
+                    "stablePeriods": {
+                        "periods": [
+                            "PrimerCuatri",
+                            "SegundoCuatri"
+                        ],
+                        "weeklyDistribution": {
+                            "weeklyVariable": {
+                                "numSessions": 5.0,
+                                "maxSessionsDaily":2,
+                                "minSessionsDayly": "allow",
+                                "avoidMaxDuration": false,
+                                "allowDiscontinuity": false
+                            }
+                        }
+                    }
+                },
+                "sessionClassRooms": {
+                    "classRoomsSetsList": ["General"]
+                },
+                "task": "LEC"
+            },
+            {
+                "id": 2,
+                "subject": "Computing",
+                "group": "1ºA ESO",
+                "teacher": "David",
+                "distribution": {
+                    "stablePeriods": {
+                        "periods": [
+                            "PrimerCuatri",
+                            "SegundoCuatri"
+                        ],
+                        "weeklyDistribution": {
+                            "weeklyCustom": [
+                                [2,2,1],
+                                [2,1,1,1]
+                            ]
+                        }
+                    }
+                },
+                "sessionClassRooms": {
+                    "classRoomsList": ["Aula1","Aula2"]
+                },
+                "task": "LEC"
+            },
+            {
+                "id": 3,
+                "subject": "Computing",
+                "group": "1ºB ESO",
+                "teacher": "David",
+                "distribution": {
+                    "variablePeriods": {
+                        "periods": [
+                            "PrimerCuatri",
+                            "SegundoCuatri"
+                        ],
+                        "maxSessionsInPeriod": 10,
+                        "minSessionsInPeriod": 5,
+                        "distVariable": {
+                            "numSessions": 10.0,
+                            "maxSessionsDaily":2,
+                            "minSessionsDayly": "allow",
+                            "avoidMaxDuration": false,
+                            "allowDiscontinuity": false
+                        }
+                    }
+                },
+                "sessionClassRooms": {
+                    "classRoomsList": ["Aula1","Aula2"]
+                },
+                "task": "LEC"
+            }
+        ]
+	}
+}
