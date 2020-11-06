@@ -1,0 +1,55 @@
+# AfternoonFreePartTimes Schema
+
+```txt
+GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/freePartTimes/properties/afternoons
+```
+
+Afternoons off periods.
+
+
+| Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
+| :------------------ | ---------- | -------------- | ------------ | :---------------- | --------------------- | ------------------- | ------------------------------------------------------------------ |
+| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [ghc.schema.json\*](../out/ghc.schema.json "open original schema") |
+
+## afternoons Type
+
+`object` ([AfternoonFreePartTimes](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-freeparttime-properties-afternoonfreeparttimes.md))
+
+# AfternoonFreePartTimes Properties
+
+| Property                | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                                                                                                                                                               |
+| :---------------------- | --------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [strict](#strict)       | `integer` | Optional | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-freeparttime-properties-afternoonfreeparttimes-properties-strict.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/freePartTimes/properties/afternoons/properties/strict")       |
+| [preferred](#preferred) | `integer` | Optional | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-freeparttime-properties-afternoonfreeparttimes-properties-preferred.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/freePartTimes/properties/afternoons/properties/preferred") |
+
+## strict
+
+Strict number of afternoons off periods.
+
+
+`strict`
+
+-   is optional
+-   Type: `integer`
+-   cannot be null
+-   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-freeparttime-properties-afternoonfreeparttimes-properties-strict.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/freePartTimes/properties/afternoons/properties/strict")
+
+### strict Type
+
+`integer`
+
+## preferred
+
+Preferred number of afternoons off periods.
+
+
+`preferred`
+
+-   is optional
+-   Type: `integer`
+-   cannot be null
+-   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-freeparttime-properties-afternoonfreeparttimes-properties-preferred.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/freePartTimes/properties/afternoons/properties/preferred")
+
+### preferred Type
+
+`integer`
