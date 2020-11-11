@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/refGroups/items
 ```
 
-Identifier name of the gruop.
+Pair of, reference id and number of students, values.
 
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
@@ -19,22 +19,22 @@ Identifier name of the gruop.
 
 | Property                    | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                                                                |
 | :-------------------------- | --------- | -------- | -------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [idGruop](#idgruop)         | `string`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-refgroups-refgroup-properties-idgruop.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/refGroups/items/properties/idGruop")         |
+| [refGroup](#refgroup)       | `string`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-refgroups-refgroup-properties-refgroup.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/refGroups/items/properties/refGroup")       |
 | [numStudents](#numstudents) | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-refgroups-refgroup-properties-numstudents.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/refGroups/items/properties/numStudents") |
 
-## idGruop
+## refGroup
 
 Identifier of the Group.
 
 
-`idGruop`
+`refGroup`
 
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-refgroups-refgroup-properties-idgruop.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/refGroups/items/properties/idGruop")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-refgroups-refgroup-properties-refgroup.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/refGroups/items/properties/refGroup")
 
-### idGruop Type
+### refGroup Type
 
 `string`
 

@@ -50,7 +50,7 @@
 -   [PeriodSetting](./ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting.md) – `engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items`
 -   [Periods](./ghc-properties-ghcdata-properties-periods.md "Weeks or periods with different assignments which contains the timetable") – `engineInputGHCSchema#/properties/ghcData/properties/periods`
 -   [RefClassRoomToAssign](./ghc-properties-ghcdata-properties-sessions-session-properties-sessionclassrooms-properties-classroomstoassign-refclassroomtoassign.md "Object, with classrooms and/or set of classrooms, where the engine should take one of them for assign the session") – `engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionClassRooms/properties/classRoomsToAssign/items`
--   [RefGroup](./ghc-properties-ghcdata-properties-sessions-session-properties-refgroups-refgroup.md "Identifier name of the gruop") – `engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/refGroups/items`
+-   [RefGroup](./ghc-properties-ghcdata-properties-sessions-session-properties-refgroups-refgroup.md "Pair of, reference id and number of students, values") – `engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/refGroups/items`
 -   [Section](./ghc-properties-ghcdata-properties-frames-frame-properties-sections-section.md) – `engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items`
 -   [SectionPreference](./ghc-definitions-frametemplate-sectionpreference.md) – `engineInputGHCSchema#/definitions/frameTemplate/items`
 -   [SectionPreference](./ghc-definitions-frametemplate-sectionpreference.md) – `engineInputGHCSchema#/definitions/frameTemplate/items`

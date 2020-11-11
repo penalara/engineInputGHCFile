@@ -265,8 +265,11 @@
                 "refTasks": ["LEC"],
                 "refTeachers": ["David"],
                 "refSubjects": ["Basic Mathematics"],
-                "refGroup": [
-                    ["1AESO",23]
+                "refGroups": [
+                    {
+                        "refGroup": "1AESO",
+                        "numStudents": 23
+                    }
                 ],                
                 "distribution": {
                     "periods": [
@@ -318,8 +321,10 @@
                 "refTasks": ["LEC"],
                 "refTeachers": ["David"],
                 "refSubjects": ["Computing"],
-                "refGroup": [
-                    ["1BESO"]
+                "refGroups": [
+                    {
+                        "refGroup": "1BESO"
+                    }
                 ],                
                 "distribution": {
                     "periods": [
@@ -343,9 +348,15 @@
                 "refTasks": ["LEC"],
                 "refTeachers": ["David"],
                 "refSubjects": ["Basic Mathematics"],
-                "refGroup": [
-                    ["1AESO",10],
-                    ["1BESO",10]
+                "refGroups": [
+                    {
+                        "refGroup": "1AESO",
+                        "numStudents": 10
+                    },
+                    {
+                        "refGroup": "1BESO",
+                        "numStudents": 10
+                    }
                 ],                
                 "distribution": {
                     "periods": [

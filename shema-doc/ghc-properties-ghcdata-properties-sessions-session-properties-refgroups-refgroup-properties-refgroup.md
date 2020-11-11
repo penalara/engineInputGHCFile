@@ -1,7 +1,7 @@
 # Untitled string in EngineInputGHCSchema Schema
 
 ```txt
-engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/refGroups/items/properties/idGruop
+engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/refGroups/items/properties/refGroup
 ```
 
 Identifier of the Group.
@@ -11,6 +11,6 @@ Identifier of the Group.
 | :------------------ | ---------- | -------------- | ----------------------- | :---------------- | --------------------- | ------------------- | ------------------------------------------------------------------ |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [ghc.schema.json\*](../out/ghc.schema.json "open original schema") |
 
-## idGruop Type
+## refGroup Type
 
 `string`

@@ -1043,13 +1043,13 @@
                                 "additionalItems": false,
                                 "items": {
                                     "title": "RefGroup",
-                                    "description": "Identifier name of the gruop.",
+                                    "description": "Pair of, reference id and number of students, values.",
                                     "type": "object",
                                     "required":[
-                                        "idGruop"
+                                        "refGroup"
                                     ],
                                     "properties":{
-                                        "idGruop": {
+                                        "refGroup": {
                                             "description": "Identifier of the Group.",
                                             "type": "string"
                                         },
@@ -1057,7 +1057,7 @@
                                             "description": "Custom number of students who are in the sessions. If is not specified, the engine takes by default the value of the Group object.",
                                             "type": "integer"
                                         }
-                                    }                                    
+                                    }
                                 }
                             },
                             "distribution": { 
