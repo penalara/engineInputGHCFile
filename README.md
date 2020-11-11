@@ -15,4 +15,4 @@ The projects contains:
 
 
 
-Check the [Reference Documentation about Schema](shema-doc/README.md)
+Check the [Reference Documentation about Schema](schema-doc/README.md)
