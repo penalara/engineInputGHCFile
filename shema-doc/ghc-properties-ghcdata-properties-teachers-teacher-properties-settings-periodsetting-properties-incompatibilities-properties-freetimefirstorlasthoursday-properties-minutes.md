@@ -1,7 +1,7 @@
-# Untitled integer in JsonGHCFile Schema
+# Untitled integer in EngineInputGHCSchema Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/incompatibilities/properties/freeTimeFirstOrLastHoursDay/properties/minutes
+engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/incompatibilities/properties/freeTimeFirstOrLastHoursDay/properties/minutes
 ```
 
 Custom time in minutes for incompatibility.

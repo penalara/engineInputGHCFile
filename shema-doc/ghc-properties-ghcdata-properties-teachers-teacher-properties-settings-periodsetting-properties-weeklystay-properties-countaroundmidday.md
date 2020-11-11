@@ -1,7 +1,7 @@
-# Untitled boolean in JsonGHCFile Schema
+# Untitled boolean in EngineInputGHCSchema Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/weeklyStay/properties/countAroundMidday
+engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/weeklyStay/properties/countAroundMidday
 ```
 
 Indicates, in case of a split day, that the unoccupied intervals between the morning and afternoon class units are counted each day.

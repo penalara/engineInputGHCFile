@@ -1,7 +1,7 @@
 # ClassRoomEntries Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/classRoomsSets/items/properties/rooms
+engineInputGHCSchema#/properties/ghcData/properties/classRoomsSets/items/properties/rooms
 ```
 
 ClassRooms which it contains the group

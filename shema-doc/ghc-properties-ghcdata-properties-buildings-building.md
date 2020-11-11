@@ -1,7 +1,7 @@
 # Building Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/buildings/items
+engineInputGHCSchema#/properties/ghcData/properties/buildings/items
 ```
 
 
@@ -17,10 +17,10 @@ GeneralJsonGHCSchema#/properties/ghcData/properties/buildings/items
 
 # Building Properties
 
-| Property                | Type     | Required | Nullable       | Defined by                                                                                                                                                                             |
-| :---------------------- | -------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [id](#id)               | `string` | Required | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-buildings-building-properties-id.md "GeneralJsonGHCSchema#/properties/ghcData/properties/buildings/items/properties/id")               |
-| [distances](#distances) | `array`  | Optional | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-buildings-building-properties-distances.md "GeneralJsonGHCSchema#/properties/ghcData/properties/buildings/items/properties/distances") |
+| Property                | Type     | Required | Nullable       | Defined by                                                                                                                                                                                      |
+| :---------------------- | -------- | -------- | -------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [id](#id)               | `string` | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-buildings-building-properties-id.md "engineInputGHCSchema#/properties/ghcData/properties/buildings/items/properties/id")               |
+| [distances](#distances) | `array`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-buildings-building-properties-distances.md "engineInputGHCSchema#/properties/ghcData/properties/buildings/items/properties/distances") |
 
 ## id
 
@@ -32,7 +32,7 @@ Identifier name of the building.
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-buildings-building-properties-id.md "GeneralJsonGHCSchema#/properties/ghcData/properties/buildings/items/properties/id")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-buildings-building-properties-id.md "engineInputGHCSchema#/properties/ghcData/properties/buildings/items/properties/id")
 
 ### id Type
 
@@ -48,7 +48,7 @@ Distances in minutes to another building of the school.
 -   is optional
 -   Type: `object[]` ([Distance](ghc-properties-ghcdata-properties-buildings-building-properties-distances-distance.md))
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-buildings-building-properties-distances.md "GeneralJsonGHCSchema#/properties/ghcData/properties/buildings/items/properties/distances")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-buildings-building-properties-distances.md "engineInputGHCSchema#/properties/ghcData/properties/buildings/items/properties/distances")
 
 ### distances Type
 

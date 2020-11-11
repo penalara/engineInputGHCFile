@@ -1,7 +1,7 @@
 # Sections Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/frames/items/properties/sections
+engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sections
 ```
 
 Timetable cells where sesions are localted.

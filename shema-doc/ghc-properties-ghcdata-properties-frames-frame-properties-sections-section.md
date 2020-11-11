@@ -1,7 +1,7 @@
 # Section Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items
+engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items
 ```
 
 
@@ -17,14 +17,14 @@ GeneralJsonGHCSchema#/properties/ghcData/properties/frames/items/properties/sect
 
 # Section Properties
 
-| Property                | Type          | Required | Nullable       | Defined by                                                                                                                                                                                                                          |
-| :---------------------- | ------------- | -------- | -------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [day](#day)             | `integer`     | Required | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-frames-frame-properties-sections-section-properties-day.md "GeneralJsonGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/day")             |
-| [index](#index)         | `integer`     | Required | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-frames-frame-properties-sections-section-properties-index.md "GeneralJsonGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/index")         |
-| [entryTime](#entrytime) | `string`      | Required | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-frames-frame-properties-sections-section-properties-entrytime.md "GeneralJsonGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/entryTime") |
-| [exitTime](#exittime)   | `string`      | Required | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-frames-frame-properties-sections-section-properties-exittime.md "GeneralJsonGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/exitTime")   |
-| [tipo](#tipo)           | Not specified | Required | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-frames-frame-properties-sections-section-properties-tipo.md "GeneralJsonGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/tipo")           |
-| [allowed](#allowed)     | `boolean`     | Optional | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-frames-frame-properties-sections-section-properties-allowed.md "GeneralJsonGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/allowed")     |
+| Property                | Type          | Required | Nullable       | Defined by                                                                                                                                                                                                                                   |
+| :---------------------- | ------------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [day](#day)             | `integer`     | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames-frame-properties-sections-section-properties-day.md "engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/day")             |
+| [index](#index)         | `integer`     | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames-frame-properties-sections-section-properties-index.md "engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/index")         |
+| [entryTime](#entrytime) | `string`      | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames-frame-properties-sections-section-properties-entrytime.md "engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/entryTime") |
+| [exitTime](#exittime)   | `string`      | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames-frame-properties-sections-section-properties-exittime.md "engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/exitTime")   |
+| [tipo](#tipo)           | Not specified | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames-frame-properties-sections-section-properties-tipo.md "engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/tipo")           |
+| [allowed](#allowed)     | `boolean`     | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames-frame-properties-sections-section-properties-allowed.md "engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/allowed")     |
 
 ## day
 
@@ -36,7 +36,7 @@ Day of the week when is located the section.
 -   is required
 -   Type: `integer`
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-frames-frame-properties-sections-section-properties-day.md "GeneralJsonGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/day")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames-frame-properties-sections-section-properties-day.md "engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/day")
 
 ### day Type
 
@@ -52,7 +52,7 @@ Index inside the day where is located the section.
 -   is required
 -   Type: `integer`
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-frames-frame-properties-sections-section-properties-index.md "GeneralJsonGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/index")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames-frame-properties-sections-section-properties-index.md "engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/index")
 
 ### index Type
 
@@ -68,7 +68,7 @@ Start time of the section.
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-frames-frame-properties-sections-section-properties-entrytime.md "GeneralJsonGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/entryTime")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames-frame-properties-sections-section-properties-entrytime.md "engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/entryTime")
 
 ### entryTime Type
 
@@ -88,7 +88,7 @@ End time of the section.
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-frames-frame-properties-sections-section-properties-exittime.md "GeneralJsonGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/exitTime")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames-frame-properties-sections-section-properties-exittime.md "engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/exitTime")
 
 ### exitTime Type
 
@@ -108,7 +108,7 @@ Kind of section.
 -   is required
 -   Type: unknown
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-frames-frame-properties-sections-section-properties-tipo.md "GeneralJsonGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/tipo")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames-frame-properties-sections-section-properties-tipo.md "engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/tipo")
 
 ### tipo Type
 
@@ -134,7 +134,7 @@ Indicates if the section is available to assign.
 -   is optional
 -   Type: `boolean`
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-frames-frame-properties-sections-section-properties-allowed.md "GeneralJsonGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/allowed")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames-frame-properties-sections-section-properties-allowed.md "engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/allowed")
 
 ### allowed Type
 

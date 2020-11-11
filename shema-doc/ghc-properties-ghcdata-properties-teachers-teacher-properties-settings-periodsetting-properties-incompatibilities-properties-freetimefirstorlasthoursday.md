@@ -1,7 +1,7 @@
 # FreeTimeFirstOrLastHoursDay Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/incompatibilities/properties/freeTimeFirstOrLastHoursDay
+engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/incompatibilities/properties/freeTimeFirstOrLastHoursDay
 ```
 
 Minutes of free time at first or last hours of the day.
@@ -17,10 +17,10 @@ Minutes of free time at first or last hours of the day.
 
 # FreeTimeFirstOrLastHoursDay Properties
 
-| Property            | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                                                                                                                                                                                          |
-| :------------------ | --------- | -------- | -------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [strict](#strict)   | `boolean` | Optional | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-incompatibilities-properties-freetimefirstorlasthoursday-properties-strict.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/incompatibilities/properties/freeTimeFirstOrLastHoursDay/properties/strict")   |
-| [minutes](#minutes) | `integer` | Required | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-incompatibilities-properties-freetimefirstorlasthoursday-properties-minutes.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/incompatibilities/properties/freeTimeFirstOrLastHoursDay/properties/minutes") |
+| Property            | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                                                                                                                                                                                                   |
+| :------------------ | --------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [strict](#strict)   | `boolean` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-incompatibilities-properties-freetimefirstorlasthoursday-properties-strict.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/incompatibilities/properties/freeTimeFirstOrLastHoursDay/properties/strict")   |
+| [minutes](#minutes) | `integer` | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-incompatibilities-properties-freetimefirstorlasthoursday-properties-minutes.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/incompatibilities/properties/freeTimeFirstOrLastHoursDay/properties/minutes") |
 
 ## strict
 
@@ -32,7 +32,7 @@ Indicate if the incompatibility is a strict condition.
 -   is optional
 -   Type: `boolean`
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-incompatibilities-properties-freetimefirstorlasthoursday-properties-strict.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/incompatibilities/properties/freeTimeFirstOrLastHoursDay/properties/strict")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-incompatibilities-properties-freetimefirstorlasthoursday-properties-strict.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/incompatibilities/properties/freeTimeFirstOrLastHoursDay/properties/strict")
 
 ### strict Type
 
@@ -48,7 +48,7 @@ Custom time in minutes for incompatibility.
 -   is required
 -   Type: `integer`
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-incompatibilities-properties-freetimefirstorlasthoursday-properties-minutes.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/incompatibilities/properties/freeTimeFirstOrLastHoursDay/properties/minutes")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-incompatibilities-properties-freetimefirstorlasthoursday-properties-minutes.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/incompatibilities/properties/freeTimeFirstOrLastHoursDay/properties/minutes")
 
 ### minutes Type
 

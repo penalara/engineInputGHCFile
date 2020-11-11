@@ -1,7 +1,7 @@
 # Subjects Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/subjects
+engineInputGHCSchema#/properties/ghcData/properties/subjects
 ```
 
 School subjects which are teach at sessions.

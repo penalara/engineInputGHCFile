@@ -1,7 +1,7 @@
-# Untitled string in JsonGHCFile Schema
+# Untitled string in EngineInputGHCSchema Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/tasks/properties/byDefault/properties/meetingsDefault
+engineInputGHCSchema#/properties/ghcData/properties/tasks/properties/byDefault/properties/meetingsDefault
 ```
 
 Default task for meeting sessions.

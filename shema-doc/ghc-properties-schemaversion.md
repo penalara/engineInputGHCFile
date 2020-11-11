@@ -1,10 +1,10 @@
 # SchemaVersion Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/versionJson
+engineInputGHCSchema#/properties/versionJson
 ```
 
-Version of GHC JSON-Schema document
+Version of EngineInputGHCSchema used
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

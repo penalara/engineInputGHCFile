@@ -1,7 +1,7 @@
 # Frame Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/frames/items
+engineInputGHCSchema#/properties/ghcData/properties/frames/items
 ```
 
 
@@ -17,10 +17,10 @@ GeneralJsonGHCSchema#/properties/ghcData/properties/frames/items
 
 # Frame Properties
 
-| Property              | Type     | Required | Nullable       | Defined by                                                                                                                                                                  |
-| :-------------------- | -------- | -------- | -------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [id](#id)             | `string` | Required | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-frames-frame-properties-id.md "GeneralJsonGHCSchema#/properties/ghcData/properties/frames/items/properties/id")             |
-| [sections](#sections) | `array`  | Required | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-frames-frame-properties-sections.md "GeneralJsonGHCSchema#/properties/ghcData/properties/frames/items/properties/sections") |
+| Property              | Type     | Required | Nullable       | Defined by                                                                                                                                                                           |
+| :-------------------- | -------- | -------- | -------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [id](#id)             | `string` | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames-frame-properties-id.md "engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/id")             |
+| [sections](#sections) | `array`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames-frame-properties-sections.md "engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sections") |
 
 ## id
 
@@ -32,7 +32,7 @@ Identifier name of the frame.
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-frames-frame-properties-id.md "GeneralJsonGHCSchema#/properties/ghcData/properties/frames/items/properties/id")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames-frame-properties-id.md "engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/id")
 
 ### id Type
 
@@ -48,7 +48,7 @@ Timetable cells where sesions are localted.
 -   is required
 -   Type: `object[]` ([Section](ghc-properties-ghcdata-properties-frames-frame-properties-sections-section.md))
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-frames-frame-properties-sections.md "GeneralJsonGHCSchema#/properties/ghcData/properties/frames/items/properties/sections")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames-frame-properties-sections.md "engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sections")
 
 ### sections Type
 

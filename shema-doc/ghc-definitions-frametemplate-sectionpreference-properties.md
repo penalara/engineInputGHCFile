@@ -1,7 +1,7 @@
-# Untitled undefined type in JsonGHCFile Schema
+# Untitled undefined type in EngineInputGHCSchema Schema
 
 ```txt
-GeneralJsonGHCSchema#/definitions/frameTemplate/items/properties
+engineInputGHCSchema#/definitions/frameTemplate/items/properties
 ```
 
 

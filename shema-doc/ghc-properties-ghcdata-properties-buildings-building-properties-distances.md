@@ -1,7 +1,7 @@
 # Distances Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/buildings/items/properties/distances
+engineInputGHCSchema#/properties/ghcData/properties/buildings/items/properties/distances
 ```
 
 Distances in minutes to another building of the school.

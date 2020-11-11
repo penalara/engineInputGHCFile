@@ -1,7 +1,7 @@
 # Group Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/groups/items
+engineInputGHCSchema#/properties/ghcData/properties/groups/items
 ```
 
 
@@ -17,68 +17,51 @@ GeneralJsonGHCSchema#/properties/ghcData/properties/groups/items
 
 # Group Properties
 
-| Property                                              | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                  |
-| :---------------------------------------------------- | --------- | -------- | -------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [frame](#frame)                                       | `string`  | Optional | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-groups-group-properties-frame.md "GeneralJsonGHCSchema#/properties/ghcData/properties/groups/items/properties/frame")                                       |
-| [name](#name)                                         | `string`  | Required | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-groups-group-properties-name.md "GeneralJsonGHCSchema#/properties/ghcData/properties/groups/items/properties/name")                                         |
-| [teacher-mentoring](#teacher-mentoring)               | `string`  | Optional | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-groups-group-properties-teacher-mentoring.md "GeneralJsonGHCSchema#/properties/ghcData/properties/groups/items/properties/teacher-mentoring")               |
-| [freeAfternoons](#freeafternoons)                     | `integer` | Optional | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-groups-group-properties-freeafternoons.md "GeneralJsonGHCSchema#/properties/ghcData/properties/groups/items/properties/freeAfternoons")                     |
-| [frameTemplate](#frametemplate)                       | Merged    | Optional | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-groups-group-properties-frametemplate.md "GeneralJsonGHCSchema#/properties/ghcData/properties/groups/items/properties/frameTemplate")                       |
-| [numStudents](#numstudents)                           | `integer` | Optional | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-groups-group-properties-numstudents.md "GeneralJsonGHCSchema#/properties/ghcData/properties/groups/items/properties/numStudents")                           |
-| [notGaps](#notgaps)                                   | `boolean` | Optional | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-groups-group-properties-notgaps.md "GeneralJsonGHCSchema#/properties/ghcData/properties/groups/items/properties/notGaps")                                   |
-| [gapsAlwaysInNonPreferred](#gapsalwaysinnonpreferred) | `boolean` | Optional | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-groups-group-properties-gapsalwaysinnonpreferred.md "GeneralJsonGHCSchema#/properties/ghcData/properties/groups/items/properties/gapsAlwaysInNonPreferred") |
+| Property                                              | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                           |
+| :---------------------------------------------------- | --------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [id](#id)                                             | `string`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-id.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/id")                                             |
+| [refFrame](#refframe)                                 | `string`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-refframe.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/refFrame")                                 |
+| [freeAfternoons](#freeafternoons)                     | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-freeafternoons.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/freeAfternoons")                     |
+| [frameTemplate](#frametemplate)                       | Merged    | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-frametemplate.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/frameTemplate")                       |
+| [numStudents](#numstudents)                           | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-numstudents.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/numStudents")                           |
+| [notGaps](#notgaps)                                   | `boolean` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-notgaps.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/notGaps")                                   |
+| [gapsAlwaysInNonPreferred](#gapsalwaysinnonpreferred) | `boolean` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-gapsalwaysinnonpreferred.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/gapsAlwaysInNonPreferred") |
 
-## frame
-
-Identifier name of the group's frame.
-
-
-`frame`
-
--   is optional
--   Type: `string`
--   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-groups-group-properties-frame.md "GeneralJsonGHCSchema#/properties/ghcData/properties/groups/items/properties/frame")
-
-### frame Type
-
-`string`
-
-## name
+## id
 
 Identifier name of the group.
 
 
-`name`
+`id`
 
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-groups-group-properties-name.md "GeneralJsonGHCSchema#/properties/ghcData/properties/groups/items/properties/name")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-id.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/id")
 
-### name Type
+### id Type
 
 `string`
 
-## teacher-mentoring
+## refFrame
 
-.
+Identifier name of the group's frame.
 
 
-`teacher-mentoring`
+`refFrame`
 
--   is optional
+-   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-groups-group-properties-teacher-mentoring.md "GeneralJsonGHCSchema#/properties/ghcData/properties/groups/items/properties/teacher-mentoring")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-refframe.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/refFrame")
 
-### teacher-mentoring Type
+### refFrame Type
 
 `string`
 
 ## freeAfternoons
 
-.
+Stric number of free afternoons for the group.
 
 
 `freeAfternoons`
@@ -86,7 +69,7 @@ Identifier name of the group.
 -   is optional
 -   Type: `integer`
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-groups-group-properties-freeafternoons.md "GeneralJsonGHCSchema#/properties/ghcData/properties/groups/items/properties/freeAfternoons")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-freeafternoons.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/freeAfternoons")
 
 ### freeAfternoons Type
 
@@ -102,7 +85,7 @@ Identifier name of the group.
 -   is optional
 -   Type: merged type ([Details](ghc-properties-ghcdata-properties-groups-group-properties-frametemplate.md))
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-groups-group-properties-frametemplate.md "GeneralJsonGHCSchema#/properties/ghcData/properties/groups/items/properties/frameTemplate")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-frametemplate.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/frameTemplate")
 
 ### frameTemplate Type
 
@@ -111,7 +94,7 @@ merged type ([Details](ghc-properties-ghcdata-properties-groups-group-properties
 all of
 
 -   [FrameTemplate](ghc-definitions-frametemplate.md "check type definition")
--   [Untitled undefined type in JsonGHCFile](ghc-properties-ghcdata-properties-groups-group-properties-frametemplate-allof-1.md "check type definition")
+-   [Untitled undefined type in EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-frametemplate-allof-1.md "check type definition")
 
 ## numStudents
 
@@ -123,7 +106,7 @@ Number of students in the group.
 -   is optional
 -   Type: `integer`
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-groups-group-properties-numstudents.md "GeneralJsonGHCSchema#/properties/ghcData/properties/groups/items/properties/numStudents")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-numstudents.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/numStudents")
 
 ### numStudents Type
 
@@ -139,7 +122,7 @@ Indicates If the group can have gaps in its timetable.
 -   is optional
 -   Type: `boolean`
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-groups-group-properties-notgaps.md "GeneralJsonGHCSchema#/properties/ghcData/properties/groups/items/properties/notGaps")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-notgaps.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/notGaps")
 
 ### notGaps Type
 
@@ -155,7 +138,7 @@ Indicates If the engine, for free intervals or gaps, to be in positions marked a
 -   is optional
 -   Type: `boolean`
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-groups-group-properties-gapsalwaysinnonpreferred.md "GeneralJsonGHCSchema#/properties/ghcData/properties/groups/items/properties/gapsAlwaysInNonPreferred")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-gapsalwaysinnonpreferred.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/gapsAlwaysInNonPreferred")
 
 ### gapsAlwaysInNonPreferred Type
 

@@ -1,7 +1,7 @@
-# Untitled integer in JsonGHCFile Schema
+# Untitled integer in EngineInputGHCSchema Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/freePartTimes/properties/afternoons/properties/strict
+engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/freePartTimes/properties/afternoons/properties/strict
 ```
 
 Strict number of afternoons off periods.

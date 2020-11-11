@@ -1,7 +1,7 @@
 # LastMinutesFreeTimes Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/freeTimes/properties/lastMinutes
+engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/freeTimes/properties/lastMinutes
 ```
 
 Teacher's free intervals at the end of the day.
@@ -17,11 +17,11 @@ Teacher's free intervals at the end of the day.
 
 # LastMinutesFreeTimes Properties
 
-| Property                        | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                                                                                                                                                               |
-| :------------------------------ | --------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [strictDays](#strictdays)       | `integer` | Optional | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-freetimes-properties-lastminutesfreetimes-properties-strictdays.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/freeTimes/properties/lastMinutes/properties/strictDays")       |
-| [preferredDays](#preferreddays) | `integer` | Optional | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-freetimes-properties-lastminutesfreetimes-properties-preferreddays.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/freeTimes/properties/lastMinutes/properties/preferredDays") |
-| [minutes](#minutes)             | `integer` | Required | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-freetimes-properties-lastminutesfreetimes-properties-minutes.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/freeTimes/properties/lastMinutes/properties/minutes")             |
+| Property                        | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                                                                                                                                                                        |
+| :------------------------------ | --------- | -------- | -------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [strictDays](#strictdays)       | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-freetimes-properties-lastminutesfreetimes-properties-strictdays.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/freeTimes/properties/lastMinutes/properties/strictDays")       |
+| [preferredDays](#preferreddays) | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-freetimes-properties-lastminutesfreetimes-properties-preferreddays.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/freeTimes/properties/lastMinutes/properties/preferredDays") |
+| [minutes](#minutes)             | `integer` | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-freetimes-properties-lastminutesfreetimes-properties-minutes.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/freeTimes/properties/lastMinutes/properties/minutes")             |
 
 ## strictDays
 
@@ -33,7 +33,7 @@ Number of strict days when teacher should have the free interval at the end of t
 -   is optional
 -   Type: `integer`
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-freetimes-properties-lastminutesfreetimes-properties-strictdays.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/freeTimes/properties/lastMinutes/properties/strictDays")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-freetimes-properties-lastminutesfreetimes-properties-strictdays.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/freeTimes/properties/lastMinutes/properties/strictDays")
 
 ### strictDays Type
 
@@ -49,7 +49,7 @@ Number of preferred days when teacher should have the free interval at the end o
 -   is optional
 -   Type: `integer`
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-freetimes-properties-lastminutesfreetimes-properties-preferreddays.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/freeTimes/properties/lastMinutes/properties/preferredDays")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-freetimes-properties-lastminutesfreetimes-properties-preferreddays.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/freeTimes/properties/lastMinutes/properties/preferredDays")
 
 ### preferredDays Type
 
@@ -65,7 +65,7 @@ Minutes of free time at the end of the day.
 -   is required
 -   Type: `integer`
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-freetimes-properties-lastminutesfreetimes-properties-minutes.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/freeTimes/properties/lastMinutes/properties/minutes")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-freetimes-properties-lastminutesfreetimes-properties-minutes.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/freeTimes/properties/lastMinutes/properties/minutes")
 
 ### minutes Type
 

@@ -1,10 +1,10 @@
 # MaximumOccupancy Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/daylyOcupation/properties/maximumOccupancy
+engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/daylyOcupation/properties/maximumOccupancy
 ```
 
-Teacher's maximun time of teaching with students and other non-teaching activities indicated as computable.
+Teacher's maximum time of teaching with students and other non-teaching activities indicated as computable.
 
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
@@ -17,10 +17,10 @@ Teacher's maximun time of teaching with students and other non-teaching activiti
 
 # MaximumOccupancy Properties
 
-| Property                    | Type          | Required | Nullable       | Defined by                                                                                                                                                                                                                                                                                                                                                      |
-| :-------------------------- | ------------- | -------- | -------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [restriction](#restriction) | Not specified | Optional | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-daylyocupation-properties-maximumoccupancy-properties-restriction.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/daylyOcupation/properties/maximumOccupancy/properties/restriction") |
-| [setting](#setting)         | Not specified | Optional | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-daylyocupation-properties-maximumoccupancy-properties-setting.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/daylyOcupation/properties/maximumOccupancy/properties/setting")         |
+| Property                    | Type          | Required | Nullable       | Defined by                                                                                                                                                                                                                                                                                                                                                               |
+| :-------------------------- | ------------- | -------- | -------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [restriction](#restriction) | Not specified | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-daylyocupation-properties-maximumoccupancy-properties-restriction.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/daylyOcupation/properties/maximumOccupancy/properties/restriction") |
+| [setting](#setting)         | Not specified | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-daylyocupation-properties-maximumoccupancy-properties-setting.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/daylyOcupation/properties/maximumOccupancy/properties/setting")         |
 
 ## restriction
 
@@ -32,7 +32,7 @@ Kind of restriction. It can be 'strict', 'preferred' or according to the related
 -   is optional
 -   Type: unknown
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-daylyocupation-properties-maximumoccupancy-properties-restriction.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/daylyOcupation/properties/maximumOccupancy/properties/restriction")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-daylyocupation-properties-maximumoccupancy-properties-restriction.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/daylyOcupation/properties/maximumOccupancy/properties/restriction")
 
 ### restriction Type
 
@@ -58,7 +58,7 @@ Indicates whether the automatic calculation of the value must be adjusted to hig
 -   is optional
 -   Type: unknown
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-daylyocupation-properties-maximumoccupancy-properties-setting.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/daylyOcupation/properties/maximumOccupancy/properties/setting")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-daylyocupation-properties-maximumoccupancy-properties-setting.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/daylyOcupation/properties/maximumOccupancy/properties/setting")
 
 ### setting Type
 

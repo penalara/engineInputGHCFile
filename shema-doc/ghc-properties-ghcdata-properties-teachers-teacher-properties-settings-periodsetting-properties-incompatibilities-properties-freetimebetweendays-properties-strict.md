@@ -1,7 +1,7 @@
-# Untitled boolean in JsonGHCFile Schema
+# Untitled boolean in EngineInputGHCSchema Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/incompatibilities/properties/freeTimeBetweenDayBeforeAndCurrent/properties/strict
+engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/incompatibilities/properties/freeTimeBetweenDayBeforeAndCurrent/properties/strict
 ```
 
 Indicate if the incompatibility is a strict condition.

@@ -1,7 +1,7 @@
-# Untitled integer in JsonGHCFile Schema
+# Untitled integer in EngineInputGHCSchema Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/day
+engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/day
 ```
 
 Day of the week when is located the section.

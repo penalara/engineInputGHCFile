@@ -1,7 +1,7 @@
-# Untitled integer in JsonGHCFile Schema
+# Untitled integer in EngineInputGHCSchema Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/daylyStay/properties/preferred
+engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/daylyStay/properties/preferred
 ```
 
 Ponderable Time in minutes of maximum daily stay.

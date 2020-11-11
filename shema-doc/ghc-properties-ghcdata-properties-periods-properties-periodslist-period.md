@@ -1,7 +1,7 @@
 # Period Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/periods/properties/periodsList/items
+engineInputGHCSchema#/properties/ghcData/properties/periods/properties/periodsList/items
 ```
 
 
@@ -17,10 +17,10 @@ GeneralJsonGHCSchema#/properties/ghcData/properties/periods/properties/periodsLi
 
 # Period Properties
 
-| Property            | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                                 |
-| :------------------ | --------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [id](#id)           | `string`  | Required | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-periods-properties-periodslist-period-properties-id.md "GeneralJsonGHCSchema#/properties/ghcData/properties/periods/properties/periodsList/items/properties/id")           |
-| [lastDay](#lastday) | `integer` | Required | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-periods-properties-periodslist-period-properties-lastday.md "GeneralJsonGHCSchema#/properties/ghcData/properties/periods/properties/periodsList/items/properties/lastDay") |
+| Property            | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                                          |
+| :------------------ | --------- | -------- | -------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [id](#id)           | `string`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-periods-properties-periodslist-period-properties-id.md "engineInputGHCSchema#/properties/ghcData/properties/periods/properties/periodsList/items/properties/id")           |
+| [lastDay](#lastday) | `integer` | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-periods-properties-periodslist-period-properties-lastday.md "engineInputGHCSchema#/properties/ghcData/properties/periods/properties/periodsList/items/properties/lastDay") |
 
 ## id
 
@@ -32,7 +32,7 @@ Identifier name of the period.
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-periods-properties-periodslist-period-properties-id.md "GeneralJsonGHCSchema#/properties/ghcData/properties/periods/properties/periodsList/items/properties/id")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-periods-properties-periodslist-period-properties-id.md "engineInputGHCSchema#/properties/ghcData/properties/periods/properties/periodsList/items/properties/id")
 
 ### id Type
 
@@ -48,7 +48,7 @@ End day of the period, the period include it.
 -   is required
 -   Type: `integer`
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-periods-properties-periodslist-period-properties-lastday.md "GeneralJsonGHCSchema#/properties/ghcData/properties/periods/properties/periodsList/items/properties/lastDay")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-periods-properties-periodslist-period-properties-lastday.md "engineInputGHCSchema#/properties/ghcData/properties/periods/properties/periodsList/items/properties/lastDay")
 
 ### lastDay Type
 

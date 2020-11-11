@@ -1,7 +1,7 @@
-# Untitled integer in JsonGHCFile Schema
+# Untitled integer in EngineInputGHCSchema Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/periods/properties/periodsList/items/properties/lastDay
+engineInputGHCSchema#/properties/ghcData/properties/periods/properties/periodsList/items/properties/lastDay
 ```
 
 End day of the period, the period include it.

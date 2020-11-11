@@ -1,10 +1,10 @@
 # JsonGenerationDate Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/date
+engineInputGHCSchema#/properties/date
 ```
 
-An explanation about the purpose of this instance.
+Json's generation date.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

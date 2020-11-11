@@ -1,7 +1,7 @@
-# Untitled string in JsonGHCFile Schema
+# Untitled string in EngineInputGHCSchema Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/tasks/properties/byDefault/properties/complementaryDefault
+engineInputGHCSchema#/properties/ghcData/properties/tasks/properties/byDefault/properties/complementaryDefault
 ```
 
 Default task for complementary sessions.

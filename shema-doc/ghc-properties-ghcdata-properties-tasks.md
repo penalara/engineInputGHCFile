@@ -1,7 +1,7 @@
 # Tasks Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/tasks
+engineInputGHCSchema#/properties/ghcData/properties/tasks
 ```
 
 Types of tasks or activities for the teachers.
@@ -17,10 +17,10 @@ Types of tasks or activities for the teachers.
 
 # Tasks Properties
 
-| Property                | Type     | Required | Nullable       | Defined by                                                                                                                                                      |
-| :---------------------- | -------- | -------- | -------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [taskList](#tasklist)   | `array`  | Required | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-tasks-properties-tasklist.md "GeneralJsonGHCSchema#/properties/ghcData/properties/tasks/properties/taskList")   |
-| [byDefault](#bydefault) | `object` | Required | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-tasks-properties-bydefault.md "GeneralJsonGHCSchema#/properties/ghcData/properties/tasks/properties/byDefault") |
+| Property                | Type     | Required | Nullable       | Defined by                                                                                                                                                               |
+| :---------------------- | -------- | -------- | -------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [taskList](#tasklist)   | `array`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-tasks-properties-tasklist.md "engineInputGHCSchema#/properties/ghcData/properties/tasks/properties/taskList")   |
+| [byDefault](#bydefault) | `object` | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-tasks-properties-bydefault.md "engineInputGHCSchema#/properties/ghcData/properties/tasks/properties/byDefault") |
 
 ## taskList
 
@@ -32,7 +32,7 @@ List of the task types for the teachers.
 -   is required
 -   Type: `object[]` ([Task](ghc-properties-ghcdata-properties-tasks-properties-tasklist-task.md))
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-tasks-properties-tasklist.md "GeneralJsonGHCSchema#/properties/ghcData/properties/tasks/properties/taskList")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-tasks-properties-tasklist.md "engineInputGHCSchema#/properties/ghcData/properties/tasks/properties/taskList")
 
 ### taskList Type
 
@@ -48,7 +48,7 @@ Default type of task for all types of sessions.
 -   is required
 -   Type: `object` ([ByDefault](ghc-properties-ghcdata-properties-tasks-properties-bydefault.md))
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-tasks-properties-bydefault.md "GeneralJsonGHCSchema#/properties/ghcData/properties/tasks/properties/byDefault")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-tasks-properties-bydefault.md "engineInputGHCSchema#/properties/ghcData/properties/tasks/properties/byDefault")
 
 ### byDefault Type
 

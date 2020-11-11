@@ -1,7 +1,7 @@
-# Untitled boolean in JsonGHCFile Schema
+# Untitled boolean in EngineInputGHCSchema Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/maxContinuousTeaching/properties/strict
+engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/maxContinuousTeaching/properties/strict
 ```
 
 Indicate if it is a strict condition.

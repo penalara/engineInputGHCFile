@@ -1,7 +1,7 @@
 # FreePartTime Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/freePartTimes
+engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/freePartTimes
 ```
 
 Half day off periods.
@@ -17,11 +17,11 @@ Half day off periods.
 
 # FreePartTime Properties
 
-| Property                      | Type     | Required | Nullable       | Defined by                                                                                                                                                                                                                                                                                                          |
-| :---------------------------- | -------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [mornings](#mornings)         | `object` | Optional | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-freeparttime-properties-morningsfreeparttimes.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/freePartTimes/properties/mornings")         |
-| [afternoons](#afternoons)     | `object` | Optional | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-freeparttime-properties-afternoonfreeparttimes.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/freePartTimes/properties/afternoons")      |
-| [indistinctly](#indistinctly) | `object` | Optional | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-freeparttime-properties-indistinctlyfreeparttimes.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/freePartTimes/properties/indistinctly") |
+| Property                      | Type     | Required | Nullable       | Defined by                                                                                                                                                                                                                                                                                                                   |
+| :---------------------------- | -------- | -------- | -------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [mornings](#mornings)         | `object` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-freeparttime-properties-morningsfreeparttimes.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/freePartTimes/properties/mornings")         |
+| [afternoons](#afternoons)     | `object` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-freeparttime-properties-afternoonfreeparttimes.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/freePartTimes/properties/afternoons")      |
+| [indistinctly](#indistinctly) | `object` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-freeparttime-properties-indistinctlyfreeparttimes.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/freePartTimes/properties/indistinctly") |
 
 ## mornings
 
@@ -33,7 +33,7 @@ Mornings off periods.
 -   is optional
 -   Type: `object` ([MorningsFreePartTimes](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-freeparttime-properties-morningsfreeparttimes.md))
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-freeparttime-properties-morningsfreeparttimes.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/freePartTimes/properties/mornings")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-freeparttime-properties-morningsfreeparttimes.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/freePartTimes/properties/mornings")
 
 ### mornings Type
 
@@ -49,7 +49,7 @@ Afternoons off periods.
 -   is optional
 -   Type: `object` ([AfternoonFreePartTimes](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-freeparttime-properties-afternoonfreeparttimes.md))
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-freeparttime-properties-afternoonfreeparttimes.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/freePartTimes/properties/afternoons")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-freeparttime-properties-afternoonfreeparttimes.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/freePartTimes/properties/afternoons")
 
 ### afternoons Type
 
@@ -65,7 +65,7 @@ Indistinctly, mornings or afternoons, off periods.
 -   is optional
 -   Type: `object` ([IndistinctlyFreePartTimes](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-freeparttime-properties-indistinctlyfreeparttimes.md))
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-freeparttime-properties-indistinctlyfreeparttimes.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/freePartTimes/properties/indistinctly")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-freeparttime-properties-indistinctlyfreeparttimes.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/freePartTimes/properties/indistinctly")
 
 ### indistinctly Type
 

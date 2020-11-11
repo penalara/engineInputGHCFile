@@ -219,10 +219,7 @@
         ],
         "subjects": [
             {
-                "name": "Basic Mathematics",
-                "shortName": "BMaths",
-                "department": "Maths",
-                "xkey":"subj1",
+                "id": "BMaths",
                 "student-mentoring": false,
                 "frameTemplate":[
                     {
@@ -234,35 +231,13 @@
                 ]
             },
             {
-                "name": "Computing"
-            }
-        ],
-        "grades": [
-            {
-                "name": "1º ESO",
-                "fullName": "First of Secundary Education",
-                "xkey":"g1",
-                "gradeSubjects": [
-                    ["Basic Mathematics", 4.0],
-                    ["Computing", 4.5]
-                ]
-            },
-            {
-                "name": "2º ESO",
-                "fullName": "Second of Secundary Education",
-                "xkey":"g2"
+                "id": "Computing"
             }
         ],
         "groups": [
             {
-                "frame": "A",
-                "name": "1ºA ESO",
-                "shortName": "1AE",
-                "fullName": "1ºA Secundaria",
-                "grade": "1º ESO",
-                "teacher-mentoring": "David",
-                "preferredClassrom": "Aula1",
-                "xkey":"grup1",
+                "id": "1AESO",
+                "refFrame": "A",
                 "freeAfternoons": 4,
                 "frameTemplate":[
                     {
@@ -278,110 +253,112 @@
                 "gapsAlwaysInNonPreferred": false
             },
             {
-                "frame": "A",
+                "id": "1BESO",
+                "refFrame": "A",
                 "name": "1ºB ESO"
             }
         ],
-        "teachingSessions": [
+        "sessions": [
             {
-                "id": 0,
-                "subject": "Basic Mathematics",
-                "group": "1ºA ESO",
-                "teacher": "David",
+                "id": "0",
+                "refFrame": "A",
+                "refTasks": ["LEC"],
+                "refTeachers": ["David"],
+                "refSubjects": ["Basic Mathematics"],
+                "refGroup": [
+                    ["1AESO",23]
+                ],                
                 "distribution": {
+                    "periods": [
+                        "PrimerCuatri",
+                        "SegundoCuatri"
+                    ],
                     "stablePeriods": {
-                        "periods": [
-                            "PrimerCuatri",
-                            "SegundoCuatri"
-                        ],
-                        "weeklyDistribution": {
-                            "weeklyStable": [2,2,1]
-                        }
+                        "weeklyStable": [2,2,1]
                     }
                 },
                 "sessionClassRooms": {
-                    "classRoomsList": ["Aula1"],
-                    "classRoomsSetsList": ["Dedicated classroms"]
-                },
-                "task": "LEC"
-            },
-            {
-                "id": 1,
-                "subject": "Basic Mathematics",
-                "group": "1ºB ESO",
-                "teacher": "David",
-                "distribution": {
-                    "stablePeriods": {
-                        "periods": [
-                            "PrimerCuatri",
-                            "SegundoCuatri"
-                        ],
-                        "weeklyDistribution": {
-                            "weeklyVariable": {
-                                "numSessions": 5.0,
-                                "maxSessionsDaily":2,
-                                "minSessionsDayly": "allow",
-                                "avoidMaxDuration": false,
-                                "allowDiscontinuity": false
-                            }
+                    "classRoomsToAssign": [
+                        {
+                        "classRoomsList": ["Aula1"],
+                        "classRoomsSetsList": ["Dedicated classroms"]
                         }
+                    ],
+                    "capacityPreference": "strict",
+                    "capacityType": "individual"
+                },
+                "frameTemplate":[
+                    {
+                        "day":0,
+                        "index":0,
+                        "frame":"A",
+                        "type":"weak-non-preferred"
                     }
+                ],
+                "sessionSettings": {
+                    "avoidFirstHourSessions": true,
+                    "sameHourPreference": "avoid"
                 },
-                "sessionClassRooms": {
-                    "classRoomsSetsList": ["General"]
-                },
-                "task": "LEC"
-            },
-            {
-                "id": 2,
-                "subject": "Computing",
-                "group": "1ºA ESO",
-                "teacher": "David",
-                "distribution": {
-                    "stablePeriods": {
-                        "periods": [
-                            "PrimerCuatri",
-                            "SegundoCuatri"
-                        ],
-                        "weeklyDistribution": {
-                            "weeklyCustom": [
-                                [2,2,1],
-                                [2,1,1,1]
-                            ]
+                "sessionRelations": {
+                    "differentDays": {
+                        "refSesions": ["1"],
+                        "daysSetting": "nonConsecutiveDaysPreferred"
+                    },
+                    "minimumSeparationTo": [
+                        {
+                            "refSessions": ["2"],
+                            "days": 2
                         }
-                    }
-                },
-                "sessionClassRooms": {
-                    "classRoomsList": ["Aula1","Aula2"]
-                },
-                "task": "LEC"
+                    ]
+                }
             },
             {
-                "id": 3,
-                "subject": "Computing",
-                "group": "1ºB ESO",
-                "teacher": "David",
+                "id": "1",
+                "refFrame": "A",
+                "refTasks": ["LEC"],
+                "refTeachers": ["David"],
+                "refSubjects": ["Computing"],
+                "refGroup": [
+                    ["1BESO"]
+                ],                
                 "distribution": {
-                    "variablePeriods": {
-                        "periods": [
-                            "PrimerCuatri",
-                            "SegundoCuatri"
-                        ],
-                        "maxSessionsInPeriod": 10,
-                        "minSessionsInPeriod": 5,
-                        "distVariable": {
-                            "numSessions": 10.0,
+                    "periods": [
+                        "PrimerCuatri",
+                        "SegundoCuatri"
+                    ],
+                    "stablePeriods": {
+                        "weeklyVariable": {
+                            "numSessions": 5.0,
                             "maxSessionsDaily":2,
                             "minSessionsDayly": "allow",
                             "avoidMaxDuration": false,
                             "allowDiscontinuity": false
                         }
                     }
-                },
-                "sessionClassRooms": {
-                    "classRoomsList": ["Aula1","Aula2"]
-                },
-                "task": "LEC"
+                }
+            },
+            {
+                "id": "2",
+                "refFrame": "A",
+                "refTasks": ["LEC"],
+                "refTeachers": ["David"],
+                "refSubjects": ["Basic Mathematics"],
+                "refGroup": [
+                    ["1AESO",10],
+                    ["1BESO",10]
+                ],                
+                "distribution": {
+                    "periods": [
+                        "PrimerCuatri",
+                        "SegundoCuatri"
+                    ],
+                    "stablePeriods": {
+                        "weeklyCustom": [
+                            [2,2,1],
+                            [2,1,1,1]
+                        ]
+                    }
+                } 
             }
         ]
 	}

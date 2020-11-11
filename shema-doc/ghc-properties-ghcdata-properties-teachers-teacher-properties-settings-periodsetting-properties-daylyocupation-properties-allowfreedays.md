@@ -1,7 +1,7 @@
-# Untitled boolean in JsonGHCFile Schema
+# Untitled boolean in EngineInputGHCSchema Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/daylyOcupation/properties/allowFreeDays
+engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/daylyOcupation/properties/allowFreeDays
 ```
 
 Indicates whether the check of the minimums is omitted in case of days without allocation. Prohibited days never are not checked.

@@ -1,7 +1,7 @@
 # PeriodsList Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/periods/properties/periodsList
+engineInputGHCSchema#/properties/ghcData/properties/periods/properties/periodsList
 ```
 
 List of periods.

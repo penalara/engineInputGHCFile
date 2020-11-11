@@ -1,7 +1,7 @@
 # Subject Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/subjects/items
+engineInputGHCSchema#/properties/ghcData/properties/subjects/items
 ```
 
 
@@ -17,25 +17,25 @@ GeneralJsonGHCSchema#/properties/ghcData/properties/subjects/items
 
 # Subject Properties
 
-| Property                                | Type      | Required | Nullable       | Defined by                                                                                                                                                                                          |
-| :-------------------------------------- | --------- | -------- | -------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [name](#name)                           | `string`  | Required | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-subjects-subject-properties-name.md "GeneralJsonGHCSchema#/properties/ghcData/properties/subjects/items/properties/name")                           |
-| [student-mentoring](#student-mentoring) | `boolean` | Optional | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-subjects-subject-properties-student-mentoring.md "GeneralJsonGHCSchema#/properties/ghcData/properties/subjects/items/properties/student-mentoring") |
-| [frameTemplate](#frametemplate)         | Merged    | Optional | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-subjects-subject-properties-frametemplate.md "GeneralJsonGHCSchema#/properties/ghcData/properties/subjects/items/properties/frameTemplate")         |
+| Property                                | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                   |
+| :-------------------------------------- | --------- | -------- | -------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [id](#id)                               | `string`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-subjects-subject-properties-id.md "engineInputGHCSchema#/properties/ghcData/properties/subjects/items/properties/id")                               |
+| [student-mentoring](#student-mentoring) | `boolean` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-subjects-subject-properties-student-mentoring.md "engineInputGHCSchema#/properties/ghcData/properties/subjects/items/properties/student-mentoring") |
+| [frameTemplate](#frametemplate)         | Merged    | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-subjects-subject-properties-frametemplate.md "engineInputGHCSchema#/properties/ghcData/properties/subjects/items/properties/frameTemplate")         |
 
-## name
+## id
 
 Identifier name of the subject.
 
 
-`name`
+`id`
 
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-subjects-subject-properties-name.md "GeneralJsonGHCSchema#/properties/ghcData/properties/subjects/items/properties/name")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-subjects-subject-properties-id.md "engineInputGHCSchema#/properties/ghcData/properties/subjects/items/properties/id")
 
-### name Type
+### id Type
 
 `string`
 
@@ -49,7 +49,7 @@ Indicates if the subject is a tutorship
 -   is optional
 -   Type: `boolean`
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-subjects-subject-properties-student-mentoring.md "GeneralJsonGHCSchema#/properties/ghcData/properties/subjects/items/properties/student-mentoring")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-subjects-subject-properties-student-mentoring.md "engineInputGHCSchema#/properties/ghcData/properties/subjects/items/properties/student-mentoring")
 
 ### student-mentoring Type
 
@@ -65,7 +65,7 @@ Indicates if the subject is a tutorship
 -   is optional
 -   Type: merged type ([Details](ghc-properties-ghcdata-properties-subjects-subject-properties-frametemplate.md))
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-subjects-subject-properties-frametemplate.md "GeneralJsonGHCSchema#/properties/ghcData/properties/subjects/items/properties/frameTemplate")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-subjects-subject-properties-frametemplate.md "engineInputGHCSchema#/properties/ghcData/properties/subjects/items/properties/frameTemplate")
 
 ### frameTemplate Type
 
@@ -74,4 +74,4 @@ merged type ([Details](ghc-properties-ghcdata-properties-subjects-subject-proper
 all of
 
 -   [FrameTemplate](ghc-definitions-frametemplate.md "check type definition")
--   [Untitled undefined type in JsonGHCFile](ghc-properties-ghcdata-properties-subjects-subject-properties-frametemplate-allof-1.md "check type definition")
+-   [Untitled undefined type in EngineInputGHCSchema](ghc-properties-ghcdata-properties-subjects-subject-properties-frametemplate-allof-1.md "check type definition")

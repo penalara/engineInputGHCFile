@@ -1,7 +1,7 @@
 # FreeTimeBetweenWeeksBorders Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/incompatibilities/properties/freeTimeBetweenEndWeekAndStartWeekDays
+engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/incompatibilities/properties/freeTimeBetweenEndWeekAndStartWeekDays
 ```
 
 Minutes between finishing time on week's last day, and starting time the next week.
@@ -17,10 +17,10 @@ Minutes between finishing time on week's last day, and starting time the next we
 
 # FreeTimeBetweenWeeksBorders Properties
 
-| Property            | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                                                                                                                                                                                                     |
-| :------------------ | --------- | -------- | -------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [strict](#strict)   | `boolean` | Optional | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-incompatibilities-properties-freetimebetweenweeksborders-properties-strict.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/incompatibilities/properties/freeTimeBetweenEndWeekAndStartWeekDays/properties/strict")   |
-| [minutes](#minutes) | `integer` | Required | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-incompatibilities-properties-freetimebetweenweeksborders-properties-minutes.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/incompatibilities/properties/freeTimeBetweenEndWeekAndStartWeekDays/properties/minutes") |
+| Property            | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                                                                                                                                                                                                              |
+| :------------------ | --------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [strict](#strict)   | `boolean` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-incompatibilities-properties-freetimebetweenweeksborders-properties-strict.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/incompatibilities/properties/freeTimeBetweenEndWeekAndStartWeekDays/properties/strict")   |
+| [minutes](#minutes) | `integer` | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-incompatibilities-properties-freetimebetweenweeksborders-properties-minutes.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/incompatibilities/properties/freeTimeBetweenEndWeekAndStartWeekDays/properties/minutes") |
 
 ## strict
 
@@ -32,7 +32,7 @@ Indicate if the incompatibility is a strict condition.
 -   is optional
 -   Type: `boolean`
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-incompatibilities-properties-freetimebetweenweeksborders-properties-strict.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/incompatibilities/properties/freeTimeBetweenEndWeekAndStartWeekDays/properties/strict")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-incompatibilities-properties-freetimebetweenweeksborders-properties-strict.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/incompatibilities/properties/freeTimeBetweenEndWeekAndStartWeekDays/properties/strict")
 
 ### strict Type
 
@@ -48,7 +48,7 @@ Custom time in minutes for incompatibility.
 -   is required
 -   Type: `integer`
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-incompatibilities-properties-freetimebetweenweeksborders-properties-minutes.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/incompatibilities/properties/freeTimeBetweenEndWeekAndStartWeekDays/properties/minutes")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-incompatibilities-properties-freetimebetweenweeksborders-properties-minutes.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/incompatibilities/properties/freeTimeBetweenEndWeekAndStartWeekDays/properties/minutes")
 
 ### minutes Type
 

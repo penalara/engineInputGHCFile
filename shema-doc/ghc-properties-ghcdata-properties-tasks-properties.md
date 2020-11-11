@@ -1,7 +1,7 @@
-# Untitled undefined type in JsonGHCFile Schema
+# Untitled undefined type in EngineInputGHCSchema Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/tasks/properties
+engineInputGHCSchema#/properties/ghcData/properties/tasks/properties
 ```
 
 

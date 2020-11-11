@@ -1,7 +1,7 @@
 # Distance Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/buildings/items/properties/distances/items
+engineInputGHCSchema#/properties/ghcData/properties/buildings/items/properties/distances/items
 ```
 
 
@@ -17,10 +17,10 @@ GeneralJsonGHCSchema#/properties/ghcData/properties/buildings/items/properties/d
 
 # Distance Properties
 
-| Property                    | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                                                          |
-| :-------------------------- | --------- | -------- | -------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [refBuilding](#refbuilding) | `string`  | Required | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-buildings-building-properties-distances-distance-properties-refbuilding.md "GeneralJsonGHCSchema#/properties/ghcData/properties/buildings/items/properties/distances/items/properties/refBuilding") |
-| [minutes](#minutes)         | `integer` | Required | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-buildings-building-properties-distances-distance-properties-minutes.md "GeneralJsonGHCSchema#/properties/ghcData/properties/buildings/items/properties/distances/items/properties/minutes")         |
+| Property                    | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                                                                   |
+| :-------------------------- | --------- | -------- | -------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [refBuilding](#refbuilding) | `string`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-buildings-building-properties-distances-distance-properties-refbuilding.md "engineInputGHCSchema#/properties/ghcData/properties/buildings/items/properties/distances/items/properties/refBuilding") |
+| [minutes](#minutes)         | `integer` | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-buildings-building-properties-distances-distance-properties-minutes.md "engineInputGHCSchema#/properties/ghcData/properties/buildings/items/properties/distances/items/properties/minutes")         |
 
 ## refBuilding
 
@@ -32,7 +32,7 @@ Abbreviated name of the other building that refer the distance.
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-buildings-building-properties-distances-distance-properties-refbuilding.md "GeneralJsonGHCSchema#/properties/ghcData/properties/buildings/items/properties/distances/items/properties/refBuilding")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-buildings-building-properties-distances-distance-properties-refbuilding.md "engineInputGHCSchema#/properties/ghcData/properties/buildings/items/properties/distances/items/properties/refBuilding")
 
 ### refBuilding Type
 
@@ -48,7 +48,7 @@ Distance minutes from the building from the referred building.
 -   is required
 -   Type: `integer`
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-buildings-building-properties-distances-distance-properties-minutes.md "GeneralJsonGHCSchema#/properties/ghcData/properties/buildings/items/properties/distances/items/properties/minutes")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-buildings-building-properties-distances-distance-properties-minutes.md "engineInputGHCSchema#/properties/ghcData/properties/buildings/items/properties/distances/items/properties/minutes")
 
 ### minutes Type
 

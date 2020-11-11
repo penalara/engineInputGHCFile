@@ -1,7 +1,7 @@
-# Untitled string in JsonGHCFile Schema
+# Untitled string in EngineInputGHCSchema Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/tasks/properties/taskList/items/properties/id
+engineInputGHCSchema#/properties/ghcData/properties/tasks/properties/taskList/items/properties/id
 ```
 
 Task's identifier name.

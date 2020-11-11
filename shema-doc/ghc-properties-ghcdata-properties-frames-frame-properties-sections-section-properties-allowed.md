@@ -1,7 +1,7 @@
-# Untitled boolean in JsonGHCFile Schema
+# Untitled boolean in EngineInputGHCSchema Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/allowed
+engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/allowed
 ```
 
 Indicates if the section is available to assign.

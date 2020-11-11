@@ -1,7 +1,7 @@
 # DoNotStartAtFirstMorningSection Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/incompatibilities/properties/doNotStartAtFirstMorningSectionIfHasAfternoonAssignment
+engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/incompatibilities/properties/doNotStartAtFirstMorningSectionIfHasAfternoonAssignment
 ```
 
 Do not start at the first hour and have occupation in the afternoon.
@@ -17,9 +17,9 @@ Do not start at the first hour and have occupation in the afternoon.
 
 # DoNotStartAtFirstMorningSection Properties
 
-| Property          | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                                                                                                                                                                                                                        |
-| :---------------- | --------- | -------- | -------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [strict](#strict) | `boolean` | Optional | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-incompatibilities-properties-donotstartatfirstmorningsection-properties-strict.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/incompatibilities/properties/doNotStartAtFirstMorningSectionIfHasAfternoonAssignment/properties/strict") |
+| Property          | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| :---------------- | --------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [strict](#strict) | `boolean` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-incompatibilities-properties-donotstartatfirstmorningsection-properties-strict.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/incompatibilities/properties/doNotStartAtFirstMorningSectionIfHasAfternoonAssignment/properties/strict") |
 
 ## strict
 
@@ -31,7 +31,7 @@ Indicate if the incompatibility is a strict condition.
 -   is optional
 -   Type: `boolean`
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-incompatibilities-properties-donotstartatfirstmorningsection-properties-strict.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/incompatibilities/properties/doNotStartAtFirstMorningSectionIfHasAfternoonAssignment/properties/strict")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-incompatibilities-properties-donotstartatfirstmorningsection-properties-strict.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/incompatibilities/properties/doNotStartAtFirstMorningSectionIfHasAfternoonAssignment/properties/strict")
 
 ### strict Type
 

@@ -1,7 +1,7 @@
 # Periods Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/periods
+engineInputGHCSchema#/properties/ghcData/properties/periods
 ```
 
 Weeks or periods with different assignments which contains the timetable.
@@ -17,10 +17,10 @@ Weeks or periods with different assignments which contains the timetable.
 
 # Periods Properties
 
-| Property                            | Type      | Required | Nullable       | Defined by                                                                                                                                                                      |
-| :---------------------------------- | --------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [followedPeriods](#followedperiods) | `boolean` | Optional | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-periods-properties-followedperiods.md "GeneralJsonGHCSchema#/properties/ghcData/properties/periods/properties/followedPeriods") |
-| [periodsList](#periodslist)         | `array`   | Required | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-periods-properties-periodslist.md "GeneralJsonGHCSchema#/properties/ghcData/properties/periods/properties/periodsList")         |
+| Property                            | Type      | Required | Nullable       | Defined by                                                                                                                                                                               |
+| :---------------------------------- | --------- | -------- | -------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [followedPeriods](#followedperiods) | `boolean` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-periods-properties-followedperiods.md "engineInputGHCSchema#/properties/ghcData/properties/periods/properties/followedPeriods") |
+| [periodsList](#periodslist)         | `array`   | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-periods-properties-periodslist.md "engineInputGHCSchema#/properties/ghcData/properties/periods/properties/periodsList")         |
 
 ## followedPeriods
 
@@ -32,7 +32,7 @@ Indicates whether, the periods or weeks, considered consecutive days the last da
 -   is optional
 -   Type: `boolean` ([FollowedPeriods](ghc-properties-ghcdata-properties-periods-properties-followedperiods.md))
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-periods-properties-followedperiods.md "GeneralJsonGHCSchema#/properties/ghcData/properties/periods/properties/followedPeriods")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-periods-properties-followedperiods.md "engineInputGHCSchema#/properties/ghcData/properties/periods/properties/followedPeriods")
 
 ### followedPeriods Type
 
@@ -48,7 +48,7 @@ List of periods.
 -   is required
 -   Type: `object[]` ([Period](ghc-properties-ghcdata-properties-periods-properties-periodslist-period.md))
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-periods-properties-periodslist.md "GeneralJsonGHCSchema#/properties/ghcData/properties/periods/properties/periodsList")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-periods-properties-periodslist.md "engineInputGHCSchema#/properties/ghcData/properties/periods/properties/periodsList")
 
 ### periodsList Type
 

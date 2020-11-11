@@ -1,7 +1,7 @@
 # FrameTemplate Schema
 
 ```txt
-GeneralJsonGHCSchema#/definitions/frameTemplate
+engineInputGHCSchema#/definitions/frameTemplate
 ```
 
 Templates with assignment preferences to section of the frames.

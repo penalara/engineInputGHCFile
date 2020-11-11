@@ -1,7 +1,7 @@
-# Untitled integer in JsonGHCFile Schema
+# Untitled integer in EngineInputGHCSchema Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/maxContinuousTeaching/properties/minBreak
+engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/maxContinuousTeaching/properties/minBreak
 ```
 
 Minimum time gap to considered it as a break.

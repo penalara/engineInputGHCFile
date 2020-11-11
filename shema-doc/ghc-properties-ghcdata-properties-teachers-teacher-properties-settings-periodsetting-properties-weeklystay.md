@@ -1,7 +1,7 @@
 # WeeklyStay Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/weeklyStay
+engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/weeklyStay
 ```
 
 Indicates the maximum teacher´s permanence time,  preferred  and strict , for the weekly stay that the teacher can be in the school.
@@ -17,11 +17,11 @@ Indicates the maximum teacher´s permanence time,  preferred  and strict , for t
 
 # WeeklyStay Properties
 
-| Property                                | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                                                                                                                  |
-| :-------------------------------------- | --------- | -------- | -------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [strict](#strict)                       | `integer` | Optional | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-weeklystay-properties-strict.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/weeklyStay/properties/strict")                       |
-| [preferred](#preferred)                 | `integer` | Optional | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-weeklystay-properties-preferred.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/weeklyStay/properties/preferred")                 |
-| [countAroundMidday](#countaroundmidday) | `boolean` | Optional | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-weeklystay-properties-countaroundmidday.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/weeklyStay/properties/countAroundMidday") |
+| Property                                | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                                                                                                                           |
+| :-------------------------------------- | --------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [strict](#strict)                       | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-weeklystay-properties-strict.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/weeklyStay/properties/strict")                       |
+| [preferred](#preferred)                 | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-weeklystay-properties-preferred.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/weeklyStay/properties/preferred")                 |
+| [countAroundMidday](#countaroundmidday) | `boolean` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-weeklystay-properties-countaroundmidday.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/weeklyStay/properties/countAroundMidday") |
 
 ## strict
 
@@ -33,7 +33,7 @@ Strict time in minutes of maximum weekly stay.
 -   is optional
 -   Type: `integer`
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-weeklystay-properties-strict.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/weeklyStay/properties/strict")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-weeklystay-properties-strict.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/weeklyStay/properties/strict")
 
 ### strict Type
 
@@ -49,7 +49,7 @@ Ponderable Time in minutes of maximum weeekly stay.
 -   is optional
 -   Type: `integer`
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-weeklystay-properties-preferred.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/weeklyStay/properties/preferred")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-weeklystay-properties-preferred.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/weeklyStay/properties/preferred")
 
 ### preferred Type
 
@@ -65,7 +65,7 @@ Indicates, in case of a split day, that the unoccupied intervals between the mor
 -   is optional
 -   Type: `boolean`
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-weeklystay-properties-countaroundmidday.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/weeklyStay/properties/countAroundMidday")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-weeklystay-properties-countaroundmidday.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/weeklyStay/properties/countAroundMidday")
 
 ### countAroundMidday Type
 

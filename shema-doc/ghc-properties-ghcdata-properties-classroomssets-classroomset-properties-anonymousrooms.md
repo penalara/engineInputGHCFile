@@ -1,7 +1,7 @@
-# Untitled integer in JsonGHCFile Schema
+# Untitled integer in EngineInputGHCSchema Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/classRoomsSets/items/properties/anonymousRooms
+engineInputGHCSchema#/properties/ghcData/properties/classRoomsSets/items/properties/anonymousRooms
 ```
 
 Number of classrooms non-specific defined that it contains the group.

@@ -1,7 +1,7 @@
 # Teacher Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items
+engineInputGHCSchema#/properties/ghcData/properties/teachers/items
 ```
 
 
@@ -17,12 +17,12 @@ GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items
 
 # Teacher Properties
 
-| Property                                        | Type     | Required | Nullable       | Defined by                                                                                                                                                                                                  |
-| :---------------------------------------------- | -------- | -------- | -------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [id](#id)                                       | `string` | Required | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-id.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/id")                                       |
-| [associationIdentifier](#associationidentifier) | `string` | Optional | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-associationidentifier.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/associationIdentifier") |
-| [frameTemplate](#frametemplate)                 | Merged   | Optional | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-frametemplate.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/frameTemplate")                 |
-| [settings](#settings)                           | `array`  | Optional | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings")                           |
+| Property                                        | Type     | Required | Nullable       | Defined by                                                                                                                                                                                                           |
+| :---------------------------------------------- | -------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [id](#id)                                       | `string` | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-id.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/id")                                       |
+| [associationIdentifier](#associationidentifier) | `string` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-associationidentifier.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/associationIdentifier") |
+| [frameTemplate](#frametemplate)                 | Merged   | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-frametemplate.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/frameTemplate")                 |
+| [settings](#settings)                           | `array`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings")                           |
 
 ## id
 
@@ -34,7 +34,7 @@ GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-id.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/id")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-id.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/id")
 
 ### id Type
 
@@ -50,7 +50,7 @@ Group or association of teachers that should have similar of entry and out hours
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-associationidentifier.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/associationIdentifier")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-associationidentifier.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/associationIdentifier")
 
 ### associationIdentifier Type
 
@@ -66,7 +66,7 @@ Group or association of teachers that should have similar of entry and out hours
 -   is optional
 -   Type: merged type ([Details](ghc-properties-ghcdata-properties-teachers-teacher-properties-frametemplate.md))
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-frametemplate.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/frameTemplate")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-frametemplate.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/frameTemplate")
 
 ### frameTemplate Type
 
@@ -75,7 +75,7 @@ merged type ([Details](ghc-properties-ghcdata-properties-teachers-teacher-proper
 all of
 
 -   [FrameTemplate](ghc-definitions-frametemplate.md "check type definition")
--   [Untitled undefined type in JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-frametemplate-allof-1.md "check type definition")
+-   [Untitled undefined type in EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-frametemplate-allof-1.md "check type definition")
 
 ## settings
 
@@ -87,7 +87,7 @@ Teacher's strict and ponderable conditions for the timetable. These can (or not)
 -   is optional
 -   Type: `object[]` ([PeriodSetting](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting.md))
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings")
 
 ### settings Type
 

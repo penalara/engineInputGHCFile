@@ -1,7 +1,7 @@
 # FollowedPeriods Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/periods/properties/followedPeriods
+engineInputGHCSchema#/properties/ghcData/properties/periods/properties/followedPeriods
 ```
 
 Indicates whether, the periods or weeks, considered consecutive days the last day of the previous one, with the first of the next.

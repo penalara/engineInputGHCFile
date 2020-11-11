@@ -1,7 +1,7 @@
-# Untitled boolean in JsonGHCFile Schema
+# Untitled boolean in EngineInputGHCSchema Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/avoidGapsBetweenSesions
+engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/avoidGapsBetweenSesions
 ```
 
 Indicates if it should avoid free gaps between sessions for the teacher. It is a ponderable condition.

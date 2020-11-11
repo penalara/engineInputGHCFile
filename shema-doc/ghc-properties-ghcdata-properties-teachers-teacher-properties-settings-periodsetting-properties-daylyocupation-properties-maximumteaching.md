@@ -1,10 +1,10 @@
 # MaximumTeaching Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/daylyOcupation/properties/maximumTeaching
+engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/daylyOcupation/properties/maximumTeaching
 ```
 
-Teacher's maximun time of teaching with students.
+Teacher's maximum time of teaching with students.
 
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
@@ -17,10 +17,10 @@ Teacher's maximun time of teaching with students.
 
 # MaximumTeaching Properties
 
-| Property                    | Type          | Required | Nullable       | Defined by                                                                                                                                                                                                                                                                                                                                                    |
-| :-------------------------- | ------------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [restriction](#restriction) | Not specified | Required | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-daylyocupation-properties-maximumteaching-properties-restriction.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/daylyOcupation/properties/maximumTeaching/properties/restriction") |
-| [setting](#setting)         | Not specified | Optional | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-daylyocupation-properties-maximumteaching-properties-setting.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/daylyOcupation/properties/maximumTeaching/properties/setting")         |
+| Property                    | Type          | Required | Nullable       | Defined by                                                                                                                                                                                                                                                                                                                                                             |
+| :-------------------------- | ------------- | -------- | -------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [restriction](#restriction) | Not specified | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-daylyocupation-properties-maximumteaching-properties-restriction.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/daylyOcupation/properties/maximumTeaching/properties/restriction") |
+| [setting](#setting)         | Not specified | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-daylyocupation-properties-maximumteaching-properties-setting.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/daylyOcupation/properties/maximumTeaching/properties/setting")         |
 
 ## restriction
 
@@ -32,7 +32,7 @@ Kind of restriction. It can be 'strict', 'preferred' or according to the related
 -   is required
 -   Type: unknown
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-daylyocupation-properties-maximumteaching-properties-restriction.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/daylyOcupation/properties/maximumTeaching/properties/restriction")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-daylyocupation-properties-maximumteaching-properties-restriction.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/daylyOcupation/properties/maximumTeaching/properties/restriction")
 
 ### restriction Type
 
@@ -58,7 +58,7 @@ Indicates whether the automatic calculation of the value must be adjusted to hig
 -   is optional
 -   Type: unknown
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-daylyocupation-properties-maximumteaching-properties-setting.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/daylyOcupation/properties/maximumTeaching/properties/setting")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-daylyocupation-properties-maximumteaching-properties-setting.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/daylyOcupation/properties/maximumTeaching/properties/setting")
 
 ### setting Type
 

@@ -1,7 +1,7 @@
-# Untitled string in JsonGHCFile Schema
+# Untitled string in EngineInputGHCSchema Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/buildings/items/properties/distances/items/properties/refBuilding
+engineInputGHCSchema#/properties/ghcData/properties/buildings/items/properties/distances/items/properties/refBuilding
 ```
 
 Abbreviated name of the other building that refer the distance.

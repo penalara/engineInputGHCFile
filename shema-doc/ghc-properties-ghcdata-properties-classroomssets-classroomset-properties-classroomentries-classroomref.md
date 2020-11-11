@@ -1,7 +1,7 @@
 # ClassRoomRef Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/classRoomsSets/items/properties/rooms/items
+engineInputGHCSchema#/properties/ghcData/properties/classRoomsSets/items/properties/rooms/items
 ```
 
 Identifier name of the classroom.

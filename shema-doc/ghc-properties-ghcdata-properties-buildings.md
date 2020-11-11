@@ -1,7 +1,7 @@
 # Buildings Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/buildings
+engineInputGHCSchema#/properties/ghcData/properties/buildings
 ```
 
 Contains the buildings of the school or education centre.

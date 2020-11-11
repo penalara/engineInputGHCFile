@@ -1,7 +1,7 @@
-# Untitled string in JsonGHCFile Schema
+# Untitled string in EngineInputGHCSchema Schema
 
 ```txt
-GeneralJsonGHCSchema#/definitions/frameTemplate/items/properties/frame
+engineInputGHCSchema#/definitions/frameTemplate/items/properties/frame
 ```
 
 Identifier name of the frame.

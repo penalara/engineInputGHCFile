@@ -1,7 +1,7 @@
-# Untitled undefined type in JsonGHCFile Schema
+# Untitled undefined type in EngineInputGHCSchema Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/tasks/properties/taskList/items/properties/frameTemplate/allOf/1/items/properties/type
+engineInputGHCSchema#/properties/ghcData/properties/tasks/properties/taskList/items/properties/frameTemplate/allOf/1/items/properties/type
 ```
 
 Availability of task to be assigned to the section.

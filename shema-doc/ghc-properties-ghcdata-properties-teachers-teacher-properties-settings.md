@@ -1,7 +1,7 @@
 # Settings Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings
+engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings
 ```
 
 Teacher's strict and ponderable conditions for the timetable. These can (or not) be different for eacch week/period.

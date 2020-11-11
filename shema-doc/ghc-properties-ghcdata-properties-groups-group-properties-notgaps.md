@@ -1,7 +1,7 @@
-# Untitled boolean in JsonGHCFile Schema
+# Untitled boolean in EngineInputGHCSchema Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/groups/items/properties/notGaps
+engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/notGaps
 ```
 
 Indicates If the group can have gaps in its timetable.

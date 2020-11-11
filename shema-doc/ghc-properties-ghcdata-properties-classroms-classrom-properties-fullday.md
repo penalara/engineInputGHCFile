@@ -1,7 +1,7 @@
-# Untitled boolean in JsonGHCFile Schema
+# Untitled boolean in EngineInputGHCSchema Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/classRooms/items/properties/fullDay
+engineInputGHCSchema#/properties/ghcData/properties/classRooms/items/properties/fullDay
 ```
 
 Indicates if the classroom must be reserved all day after it have one assignment.

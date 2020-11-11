@@ -1,7 +1,7 @@
-# Untitled undefined type in JsonGHCFile Schema
+# Untitled undefined type in EngineInputGHCSchema Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/frameTemplate/allOf/1/items
+engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/frameTemplate/allOf/1/items
 ```
 
 
@@ -17,9 +17,9 @@ unknown
 
 # undefined Properties
 
-| Property      | Type          | Required | Nullable       | Defined by                                                                                                                                                                                                                                              |
-| :------------ | ------------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [type](#type) | Not specified | Required | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-frametemplate-allof-1-items-properties-type.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/frameTemplate/allOf/1/items/properties/type") |
+| Property      | Type          | Required | Nullable       | Defined by                                                                                                                                                                                                                                                       |
+| :------------ | ------------- | -------- | -------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [type](#type) | Not specified | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-frametemplate-allof-1-items-properties-type.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/frameTemplate/allOf/1/items/properties/type") |
 
 ## type
 
@@ -31,7 +31,7 @@ Availability of teacher to be assigned to the section.
 -   is required
 -   Type: unknown
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-teachers-teacher-properties-frametemplate-allof-1-items-properties-type.md "GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/frameTemplate/allOf/1/items/properties/type")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-frametemplate-allof-1-items-properties-type.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/frameTemplate/allOf/1/items/properties/type")
 
 ### type Type
 

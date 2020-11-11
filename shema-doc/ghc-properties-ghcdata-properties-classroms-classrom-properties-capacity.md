@@ -1,7 +1,7 @@
-# Untitled integer in JsonGHCFile Schema
+# Untitled integer in EngineInputGHCSchema Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/classRooms/items/properties/capacity
+engineInputGHCSchema#/properties/ghcData/properties/classRooms/items/properties/capacity
 ```
 
 Maximum students number who the classroom can accommodate.

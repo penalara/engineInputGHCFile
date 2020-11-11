@@ -1,7 +1,7 @@
 # Teachers Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/teachers
+engineInputGHCSchema#/properties/ghcData/properties/teachers
 ```
 
 Teacher object with personal data, preferences template and settings.

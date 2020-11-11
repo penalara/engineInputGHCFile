@@ -1,7 +1,7 @@
-# Untitled integer in JsonGHCFile Schema
+# Untitled integer in EngineInputGHCSchema Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/groups/items/properties/numStudents
+engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/numStudents
 ```
 
 Number of students in the group.

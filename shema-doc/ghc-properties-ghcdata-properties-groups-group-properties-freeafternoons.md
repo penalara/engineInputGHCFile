@@ -1,10 +1,10 @@
-# Untitled integer in JsonGHCFile Schema
+# Untitled integer in EngineInputGHCSchema Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/groups/items/properties/freeAfternoons
+engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/freeAfternoons
 ```
 
-.
+Stric number of free afternoons for the group.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

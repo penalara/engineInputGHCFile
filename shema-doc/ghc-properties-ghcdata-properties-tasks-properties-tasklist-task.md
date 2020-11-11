@@ -1,7 +1,7 @@
 # Task Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/tasks/properties/taskList/items
+engineInputGHCSchema#/properties/ghcData/properties/tasks/properties/taskList/items
 ```
 
 Teacher's activity type.
@@ -17,10 +17,10 @@ Teacher's activity type.
 
 # Task Properties
 
-| Property                        | Type     | Required | Nullable       | Defined by                                                                                                                                                                                                                 |
-| :------------------------------ | -------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [id](#id)                       | `string` | Required | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-tasks-properties-tasklist-task-properties-id.md "GeneralJsonGHCSchema#/properties/ghcData/properties/tasks/properties/taskList/items/properties/id")                       |
-| [frameTemplate](#frametemplate) | Merged   | Optional | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-tasks-properties-tasklist-task-properties-frametemplate.md "GeneralJsonGHCSchema#/properties/ghcData/properties/tasks/properties/taskList/items/properties/frameTemplate") |
+| Property                        | Type     | Required | Nullable       | Defined by                                                                                                                                                                                                                          |
+| :------------------------------ | -------- | -------- | -------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [id](#id)                       | `string` | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-tasks-properties-tasklist-task-properties-id.md "engineInputGHCSchema#/properties/ghcData/properties/tasks/properties/taskList/items/properties/id")                       |
+| [frameTemplate](#frametemplate) | Merged   | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-tasks-properties-tasklist-task-properties-frametemplate.md "engineInputGHCSchema#/properties/ghcData/properties/tasks/properties/taskList/items/properties/frameTemplate") |
 
 ## id
 
@@ -32,7 +32,7 @@ Task's identifier name.
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-tasks-properties-tasklist-task-properties-id.md "GeneralJsonGHCSchema#/properties/ghcData/properties/tasks/properties/taskList/items/properties/id")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-tasks-properties-tasklist-task-properties-id.md "engineInputGHCSchema#/properties/ghcData/properties/tasks/properties/taskList/items/properties/id")
 
 ### id Type
 
@@ -48,7 +48,7 @@ Task's identifier name.
 -   is optional
 -   Type: merged type ([Details](ghc-properties-ghcdata-properties-tasks-properties-tasklist-task-properties-frametemplate.md))
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-tasks-properties-tasklist-task-properties-frametemplate.md "GeneralJsonGHCSchema#/properties/ghcData/properties/tasks/properties/taskList/items/properties/frameTemplate")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-tasks-properties-tasklist-task-properties-frametemplate.md "engineInputGHCSchema#/properties/ghcData/properties/tasks/properties/taskList/items/properties/frameTemplate")
 
 ### frameTemplate Type
 
@@ -57,4 +57,4 @@ merged type ([Details](ghc-properties-ghcdata-properties-tasks-properties-taskli
 all of
 
 -   [FrameTemplate](ghc-definitions-frametemplate.md "check type definition")
--   [Untitled undefined type in JsonGHCFile](ghc-properties-ghcdata-properties-tasks-properties-tasklist-task-properties-frametemplate-allof-1.md "check type definition")
+-   [Untitled undefined type in EngineInputGHCSchema](ghc-properties-ghcdata-properties-tasks-properties-tasklist-task-properties-frametemplate-allof-1.md "check type definition")

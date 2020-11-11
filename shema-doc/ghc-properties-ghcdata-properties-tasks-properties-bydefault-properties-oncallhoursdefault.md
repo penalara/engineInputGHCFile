@@ -1,7 +1,7 @@
-# Untitled string in JsonGHCFile Schema
+# Untitled string in EngineInputGHCSchema Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/tasks/properties/byDefault/properties/onCallHoursDefault
+engineInputGHCSchema#/properties/ghcData/properties/tasks/properties/byDefault/properties/onCallHoursDefault
 ```
 
 Default task for on call sessions.

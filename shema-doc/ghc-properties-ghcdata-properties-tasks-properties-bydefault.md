@@ -1,7 +1,7 @@
 # ByDefault Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/tasks/properties/byDefault
+engineInputGHCSchema#/properties/ghcData/properties/tasks/properties/byDefault
 ```
 
 Default type of task for all types of sessions.
@@ -17,12 +17,12 @@ Default type of task for all types of sessions.
 
 # ByDefault Properties
 
-| Property                                      | Type     | Required | Nullable       | Defined by                                                                                                                                                                                                                      |
-| :-------------------------------------------- | -------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [teachingDefault](#teachingdefault)           | `string` | Required | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-tasks-properties-bydefault-properties-teachingdefault.md "GeneralJsonGHCSchema#/properties/ghcData/properties/tasks/properties/byDefault/properties/teachingDefault")           |
-| [meetingsDefault](#meetingsdefault)           | `string` | Required | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-tasks-properties-bydefault-properties-meetingsdefault.md "GeneralJsonGHCSchema#/properties/ghcData/properties/tasks/properties/byDefault/properties/meetingsDefault")           |
-| [complementaryDefault](#complementarydefault) | `string` | Required | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-tasks-properties-bydefault-properties-complementarydefault.md "GeneralJsonGHCSchema#/properties/ghcData/properties/tasks/properties/byDefault/properties/complementaryDefault") |
-| [onCallHoursDefault](#oncallhoursdefault)     | `string` | Required | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-tasks-properties-bydefault-properties-oncallhoursdefault.md "GeneralJsonGHCSchema#/properties/ghcData/properties/tasks/properties/byDefault/properties/onCallHoursDefault")     |
+| Property                                      | Type     | Required | Nullable       | Defined by                                                                                                                                                                                                                               |
+| :-------------------------------------------- | -------- | -------- | -------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [teachingDefault](#teachingdefault)           | `string` | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-tasks-properties-bydefault-properties-teachingdefault.md "engineInputGHCSchema#/properties/ghcData/properties/tasks/properties/byDefault/properties/teachingDefault")           |
+| [meetingsDefault](#meetingsdefault)           | `string` | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-tasks-properties-bydefault-properties-meetingsdefault.md "engineInputGHCSchema#/properties/ghcData/properties/tasks/properties/byDefault/properties/meetingsDefault")           |
+| [complementaryDefault](#complementarydefault) | `string` | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-tasks-properties-bydefault-properties-complementarydefault.md "engineInputGHCSchema#/properties/ghcData/properties/tasks/properties/byDefault/properties/complementaryDefault") |
+| [onCallHoursDefault](#oncallhoursdefault)     | `string` | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-tasks-properties-bydefault-properties-oncallhoursdefault.md "engineInputGHCSchema#/properties/ghcData/properties/tasks/properties/byDefault/properties/onCallHoursDefault")     |
 
 ## teachingDefault
 
@@ -34,7 +34,7 @@ Default type of task for all types of sessions.
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-tasks-properties-bydefault-properties-teachingdefault.md "GeneralJsonGHCSchema#/properties/ghcData/properties/tasks/properties/byDefault/properties/teachingDefault")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-tasks-properties-bydefault-properties-teachingdefault.md "engineInputGHCSchema#/properties/ghcData/properties/tasks/properties/byDefault/properties/teachingDefault")
 
 ### teachingDefault Type
 
@@ -50,7 +50,7 @@ Default task for meeting sessions.
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-tasks-properties-bydefault-properties-meetingsdefault.md "GeneralJsonGHCSchema#/properties/ghcData/properties/tasks/properties/byDefault/properties/meetingsDefault")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-tasks-properties-bydefault-properties-meetingsdefault.md "engineInputGHCSchema#/properties/ghcData/properties/tasks/properties/byDefault/properties/meetingsDefault")
 
 ### meetingsDefault Type
 
@@ -66,7 +66,7 @@ Default task for complementary sessions.
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-tasks-properties-bydefault-properties-complementarydefault.md "GeneralJsonGHCSchema#/properties/ghcData/properties/tasks/properties/byDefault/properties/complementaryDefault")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-tasks-properties-bydefault-properties-complementarydefault.md "engineInputGHCSchema#/properties/ghcData/properties/tasks/properties/byDefault/properties/complementaryDefault")
 
 ### complementaryDefault Type
 
@@ -82,7 +82,7 @@ Default task for on call sessions.
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-tasks-properties-bydefault-properties-oncallhoursdefault.md "GeneralJsonGHCSchema#/properties/ghcData/properties/tasks/properties/byDefault/properties/onCallHoursDefault")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-tasks-properties-bydefault-properties-oncallhoursdefault.md "engineInputGHCSchema#/properties/ghcData/properties/tasks/properties/byDefault/properties/onCallHoursDefault")
 
 ### onCallHoursDefault Type
 

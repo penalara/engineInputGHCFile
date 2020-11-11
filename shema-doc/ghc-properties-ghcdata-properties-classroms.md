@@ -1,7 +1,7 @@
 # ClassRoms Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/classRooms
+engineInputGHCSchema#/properties/ghcData/properties/classRooms
 ```
 
 Contains the rooms to put on the sessions.

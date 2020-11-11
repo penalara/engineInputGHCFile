@@ -1,7 +1,7 @@
 # ClassRoomsSets Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/classRoomsSets
+engineInputGHCSchema#/properties/ghcData/properties/classRoomsSets
 ```
 
 A divisions of classrooms, group by characteristics or organizational needs.

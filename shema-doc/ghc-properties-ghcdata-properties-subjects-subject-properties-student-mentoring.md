@@ -1,7 +1,7 @@
-# Untitled boolean in JsonGHCFile Schema
+# Untitled boolean in EngineInputGHCSchema Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/subjects/items/properties/student-mentoring
+engineInputGHCSchema#/properties/ghcData/properties/subjects/items/properties/student-mentoring
 ```
 
 Indicates if the subject is a tutorship

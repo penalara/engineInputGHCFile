@@ -1,7 +1,7 @@
-# Untitled undefined type in JsonGHCFile Schema
+# Untitled undefined type in EngineInputGHCSchema Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/groups/items/properties/frameTemplate
+engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/frameTemplate
 ```
 
 
@@ -18,4 +18,4 @@ merged type ([Details](ghc-properties-ghcdata-properties-groups-group-properties
 all of
 
 -   [FrameTemplate](ghc-definitions-frametemplate.md "check type definition")
--   [Untitled undefined type in JsonGHCFile](ghc-properties-ghcdata-properties-groups-group-properties-frametemplate-allof-1.md "check type definition")
+-   [Untitled undefined type in EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-frametemplate-allof-1.md "check type definition")

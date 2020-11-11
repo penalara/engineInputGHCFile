@@ -1,7 +1,7 @@
-# Untitled string in JsonGHCFile Schema
+# Untitled string in EngineInputGHCSchema Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/context
+engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/context
 ```
 
 Defines the period in the timetable when the settings take effect. By default it is 'whole', which indicates that it affects the entire timetable, that is, all its periods.

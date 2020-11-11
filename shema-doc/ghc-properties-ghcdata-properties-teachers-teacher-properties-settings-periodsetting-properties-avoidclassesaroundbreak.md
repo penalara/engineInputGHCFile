@@ -1,7 +1,7 @@
-# Untitled boolean in JsonGHCFile Schema
+# Untitled boolean in EngineInputGHCSchema Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/avoidClassesAroundBreak
+engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/avoidClassesAroundBreak
 ```
 
 Indicate if will penalize the existence of sessions on both sides of a recess guard taught by this teacher.

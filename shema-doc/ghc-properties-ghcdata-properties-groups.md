@@ -1,7 +1,7 @@
 # Groups Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/groups
+engineInputGHCSchema#/properties/ghcData/properties/groups
 ```
 
 Sets of students.

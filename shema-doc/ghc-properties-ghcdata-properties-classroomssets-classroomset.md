@@ -1,7 +1,7 @@
 # ClassRoomSet Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/classRoomsSets/items
+engineInputGHCSchema#/properties/ghcData/properties/classRoomsSets/items
 ```
 
 
@@ -17,11 +17,11 @@ GeneralJsonGHCSchema#/properties/ghcData/properties/classRoomsSets/items
 
 # ClassRoomSet Properties
 
-| Property                          | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                     |
-| :-------------------------------- | --------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [id](#id)                         | `string`  | Required | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-classroomssets-classroomset-properties-id.md "GeneralJsonGHCSchema#/properties/ghcData/properties/classRoomsSets/items/properties/id")                         |
-| [rooms](#rooms)                   | `array`   | Required | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-classroomssets-classroomset-properties-classroomentries.md "GeneralJsonGHCSchema#/properties/ghcData/properties/classRoomsSets/items/properties/rooms")        |
-| [anonymousRooms](#anonymousrooms) | `integer` | Optional | cannot be null | [JsonGHCFile](ghc-properties-ghcdata-properties-classroomssets-classroomset-properties-anonymousrooms.md "GeneralJsonGHCSchema#/properties/ghcData/properties/classRoomsSets/items/properties/anonymousRooms") |
+| Property                          | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                              |
+| :-------------------------------- | --------- | -------- | -------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [id](#id)                         | `string`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-classroomssets-classroomset-properties-id.md "engineInputGHCSchema#/properties/ghcData/properties/classRoomsSets/items/properties/id")                         |
+| [rooms](#rooms)                   | `array`   | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-classroomssets-classroomset-properties-classroomentries.md "engineInputGHCSchema#/properties/ghcData/properties/classRoomsSets/items/properties/rooms")        |
+| [anonymousRooms](#anonymousrooms) | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-classroomssets-classroomset-properties-anonymousrooms.md "engineInputGHCSchema#/properties/ghcData/properties/classRoomsSets/items/properties/anonymousRooms") |
 
 ## id
 
@@ -33,7 +33,7 @@ Identifier name of the ClassRooms group.
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-classroomssets-classroomset-properties-id.md "GeneralJsonGHCSchema#/properties/ghcData/properties/classRoomsSets/items/properties/id")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-classroomssets-classroomset-properties-id.md "engineInputGHCSchema#/properties/ghcData/properties/classRoomsSets/items/properties/id")
 
 ### id Type
 
@@ -49,7 +49,7 @@ ClassRooms which it contains the group
 -   is required
 -   Type: `string[]` ([ClassRoomRef](ghc-properties-ghcdata-properties-classroomssets-classroomset-properties-classroomentries-classroomref.md))
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-classroomssets-classroomset-properties-classroomentries.md "GeneralJsonGHCSchema#/properties/ghcData/properties/classRoomsSets/items/properties/rooms")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-classroomssets-classroomset-properties-classroomentries.md "engineInputGHCSchema#/properties/ghcData/properties/classRoomsSets/items/properties/rooms")
 
 ### rooms Type
 
@@ -65,7 +65,7 @@ Number of classrooms non-specific defined that it contains the group.
 -   is optional
 -   Type: `integer`
 -   cannot be null
--   defined in: [JsonGHCFile](ghc-properties-ghcdata-properties-classroomssets-classroomset-properties-anonymousrooms.md "GeneralJsonGHCSchema#/properties/ghcData/properties/classRoomsSets/items/properties/anonymousRooms")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-classroomssets-classroomset-properties-anonymousrooms.md "engineInputGHCSchema#/properties/ghcData/properties/classRoomsSets/items/properties/anonymousRooms")
 
 ### anonymousRooms Type
 

@@ -1,7 +1,7 @@
-# Untitled integer in JsonGHCFile Schema
+# Untitled integer in EngineInputGHCSchema Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/buildings/items/properties/distances/items/properties/minutes
+engineInputGHCSchema#/properties/ghcData/properties/buildings/items/properties/distances/items/properties/minutes
 ```
 
 Distance minutes from the building from the referred building.

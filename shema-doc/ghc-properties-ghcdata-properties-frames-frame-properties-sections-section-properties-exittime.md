@@ -1,7 +1,7 @@
-# Untitled string in JsonGHCFile Schema
+# Untitled string in EngineInputGHCSchema Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/exitTime
+engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/exitTime
 ```
 
 End time of the section.

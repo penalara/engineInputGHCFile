@@ -1,7 +1,7 @@
 # TaskList Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/tasks/properties/taskList
+engineInputGHCSchema#/properties/ghcData/properties/tasks/properties/taskList
 ```
 
 List of the task types for the teachers.

@@ -1,7 +1,7 @@
-# Untitled string in JsonGHCFile Schema
+# Untitled string in EngineInputGHCSchema Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/teachers/items/properties/associationIdentifier
+engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/associationIdentifier
 ```
 
 Group or association of teachers that should have similar of entry and out hours, if it is possible. It's useful for teachers that share transport.

@@ -1,7 +1,7 @@
-# Untitled string in JsonGHCFile Schema
+# Untitled string in EngineInputGHCSchema Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/classRooms/items/properties/refBuilding
+engineInputGHCSchema#/properties/ghcData/properties/classRooms/items/properties/refBuilding
 ```
 
 Abbreviated name building where is located the classroom.

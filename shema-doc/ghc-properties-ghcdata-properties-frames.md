@@ -1,7 +1,7 @@
 # Frames Schema
 
 ```txt
-GeneralJsonGHCSchema#/properties/ghcData/properties/frames
+engineInputGHCSchema#/properties/ghcData/properties/frames
 ```
 
 Tables of Timetable which it contains sections where subject sessions are located.
