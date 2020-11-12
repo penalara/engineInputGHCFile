@@ -4,7 +4,7 @@
 engineInputGHCSchema#/definitions/weeklyVariable/properties/maxSessionsDaily
 ```
 
-.
+Maximum of sessions section's per day.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

@@ -27,7 +27,7 @@ Define the distribution as a number of sections per week and a maximum range of 
 
 ## numSessions
 
-.
+Total of session's sections.
 
 
 `numSessions`
@@ -43,7 +43,7 @@ Define the distribution as a number of sections per week and a maximum range of 
 
 ## maxSessionsDaily
 
-.
+Maximum of sessions section's per day.
 
 
 `maxSessionsDaily`
@@ -59,7 +59,7 @@ Define the distribution as a number of sections per week and a maximum range of 
 
 ## minSessionsDayly
 
-.
+Indicates de preference about the session's classes of the minimum duration section.
 
 
 `minSessionsDayly`
@@ -93,7 +93,7 @@ The default value is:
 
 ## avoidMaxDuration
 
-.
+Indicates de preference about the session's classes of the minimum duration section.
 
 
 `avoidMaxDuration`
@@ -109,7 +109,7 @@ The default value is:
 
 ## allowDiscontinuity
 
-.
+Indicates if discontinuous sections are allowed, that is, they have sections of other sessions or breaks in between.
 
 
 `allowDiscontinuity`

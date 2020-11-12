@@ -22,6 +22,5 @@ unknown
 | Value                    | Explanation |
 | :----------------------- | ----------- |
 | `"banned"`               |             |
-| `"available"`            |             |
 | `"strong-non-preferred"` |             |
 | `"weak-non-preferred"`   |             |

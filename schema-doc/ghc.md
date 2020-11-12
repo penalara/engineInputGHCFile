@@ -88,6 +88,17 @@ Reference this group by using
 | Property | Type | Required | Nullable | Defined by |
 | :------- | ---- | -------- | -------- | :--------- |
 
+## Definitions group bannedFrameTemplate
+
+Reference this group by using
+
+```json
+{"$ref":"engineInputGHCSchema#/definitions/bannedFrameTemplate"}
+```
+
+| Property | Type | Required | Nullable | Defined by |
+| :------- | ---- | -------- | -------- | :--------- |
+
 ## Definitions group weeklyStable
 
 Reference this group by using
@@ -117,7 +128,7 @@ Reference this group by using
 
 ### numSessions
 
-.
+Total of session's sections.
 
 
 `numSessions`
@@ -133,7 +144,7 @@ Reference this group by using
 
 ### maxSessionsDaily
 
-.
+Maximum of sessions section's per day.
 
 
 `maxSessionsDaily`
@@ -149,7 +160,7 @@ Reference this group by using
 
 ### minSessionsDayly
 
-.
+Indicates de preference about the session's classes of the minimum duration section.
 
 
 `minSessionsDayly`
@@ -183,7 +194,7 @@ The default value is:
 
 ### avoidMaxDuration
 
-.
+Indicates de preference about the session's classes of the minimum duration section.
 
 
 `avoidMaxDuration`
@@ -199,7 +210,7 @@ The default value is:
 
 ### allowDiscontinuity
 
-.
+Indicates if discontinuous sections are allowed, that is, they have sections of other sessions or breaks in between.
 
 
 `allowDiscontinuity`

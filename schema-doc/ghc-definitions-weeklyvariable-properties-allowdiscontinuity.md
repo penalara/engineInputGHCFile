@@ -4,7 +4,7 @@
 engineInputGHCSchema#/definitions/weeklyVariable/properties/allowDiscontinuity
 ```
 
-.
+Indicates if discontinuous sections are allowed, that is, they have sections of other sessions or breaks in between.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

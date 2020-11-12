@@ -172,7 +172,7 @@
                                     ],
                                     "properties": {
                                         "refBuilding": {
-                                            "description": "Abbreviated name of the other building that refer the distance.",
+                                            "description": "Identifier name of the other building that refer the distance.",
                                             "type": "string"
                                         },
                                         "minutes": {
@@ -206,41 +206,10 @@
                                 "type": "integer"
                             },
                             "frameTemplate": {
-                                "title": "ClassRoomTemplate",
-                                "description": "Classroom template with assignment preferences to section of the frames.",
-                                "type": "array",
-                                "additionalItems": false,
-                                "items": {                                    
-                                    "title": "ClassRoomSectionPreference",
-                                    "type": "object",
-                                    "required": [
-                                        "day",
-                                        "index",
-                                        "frame",
-                                        "type"
-                                    ],                                    
-                                    "properties": {
-                                        "day": {
-                                            "description": "Day of the week when is located the section.",
-                                            "type": "integer"
-                                        },
-                                        "index": {
-                                            "description": "Index inside the day where is located the section.",
-                                            "type": "integer"
-                                        },
-                                        "frame": {
-                                            "description": "Identifier name of the frame.",
-                                            "type": "string"
-                                        },
-                                        "type": { 
-                                            "description": "Element availability to be assigned to the section.",
-                                            "enum": ["banned", "available"] 
-                                        }
-                                    }
-                                }
+                                "$ref": "#/definitions/bannedFrameTemplate"
                             },
                             "refBuilding": {
-                                "description": "Abbreviated name building where is located the classroom.",
+                                "description": "Identifier name building where is located the classroom.",
                                 "type": "string"
                             },
                             "fullDay": {
@@ -1167,8 +1136,40 @@
                                     }
                                 }
                             },
-                            "frameTemplate":{
-                                "$ref": "#/definitions/frameTemplate"
+                            "frameTemplate": {
+                                "title": "SessionFrameTemplate",
+                                "description": "Templates with assignment preferences to section of the frames.",
+                                "type": "array",
+                                "additionalItems": false,
+                                "items": {                                    
+                                    "title": "SessionSectionPreference",
+                                    "description": "Template with a section assignment preference.",
+                                    "type": "object",
+                                    "required": [
+                                        "day",
+                                        "index",
+                                        "frame",
+                                        "type"
+                                    ],                                    
+                                    "properties": {
+                                        "day": {
+                                            "description": "Day of the week when is located the section.",
+                                            "type": "integer"
+                                        },
+                                        "index": {
+                                            "description": "Index inside the day where is located the section.",
+                                            "type": "integer"
+                                        },
+                                        "frame": {
+                                            "description": "Identifier name of the frame.",
+                                            "type": "string"
+                                        },
+                                        "type": { 
+                                            "description": "Session availability to be assigned to the section.",
+                                            "enum": ["banned","strong-non-preferred", "weak-non-preferred", "preset"] 
+                                        }
+                                    }
+                                }
                             },
                             "sessionSettings": {
                                 "title": "SessionSettings",
@@ -1347,7 +1348,7 @@
                                             "properties":{
                                                 "refSessions": {
                                                     "title":"SessionRefs",
-                                                    "description":".",
+                                                    "description":"List of sessions references.",
                                                     "type":"array",
                                                     "minItems": 1,
                                                     "additionalItems": false,
@@ -1381,7 +1382,7 @@
                                             "properties":{
                                                 "refSessions": {
                                                     "title":"SessionRefs",
-                                                    "description":".",
+                                                    "description":"List of sessions references.",
                                                     "type":"array",
                                                     "minItems": 1,
                                                     "additionalItems": false,
@@ -1402,6 +1403,177 @@
                             }
                         }
                     }
+                },
+                "relationsList":{
+
+                },
+                "onCallServices":{
+                    "title": "OnCallServices",
+                    "description": "List of on call services of teachers defined in the timetable.",
+                    "type": "array",
+                    "additionalItems": false,
+                    "items": {                                    
+                        "title": "OnCallService",
+                        "description": "On call service of teachers who supervise the free time of students.",
+                        "type": "object",
+                        "$comment": "Property 'refPeriods' is required if there are more than one period in the timetable.",
+                        "required": [
+                            "id",
+                            "refFrame",
+                            "refTask",
+                            "teachersEachSection",
+                            "refTeachers"
+                        ],
+                        "properties": {
+                            "id": {
+                                "description": "Identifier name of the On-Call service.",
+                                "type": "string"
+                            },
+                            "refFrame": {
+                                "description": "Identifier name of the frame where will be set the service.",
+                                "type": "string"
+                            },
+                            "refPeriods": {
+                                "title": "OnCallPeriodsInfo",
+                                "description": "Information about the periods that have the service and mirror placement in periods condition (same placement in periods).",
+                                "type": "object",
+                                "required": [
+                                    "periods"
+                                ],                                    
+                                "properties": {
+                                    "periods": {
+                                        "title": "PeriodsList",
+                                        "description": "List of Periods that must have the service.",
+                                        "type": "array",
+                                        "additionalItems": false,
+                                        "items": {
+                                            "description": "Identifier of the period.",
+                                            "type": "string"                                            
+                                        }
+                                    },
+                                    "samePositionEveryPeriod": {
+                                        "description": "Keep the same position each week or period for the classes of the session.",
+                                        "enum": [
+                                            "ignore",
+                                            "attempt",
+                                            "avoid",
+                                            "strict",
+                                            "forbidden"
+                                        ],
+                                        "default": "ignore"
+                                    }
+                                }
+                            },
+                            "refTask": {
+                                "description": "Identifier name of the service's task.",
+                                "type": "string"
+                            },
+                            "inBreak": {
+                                "description": "Indicates if it will be a break oversight service.",
+                                "type": "boolean",
+                                "default": false
+                            },
+                            "teachersEachSection": {
+                                "title": "TeachersEachSection",
+                                "description": "Information about number of teacher in all sections.",
+                                "type": "object",
+                                "$comment": "Propeties 'amount' and 'bySection' are mutually exclusive (Schema tag 'One Of' is not specified because POJO automatic generation incompatibility)", 
+                                "properties": {
+                                    "amount": {
+                                        "description": "General value for number of teacher in all sections.",
+                                        "type": "integer"
+                                    },
+                                    "bySection": {
+                                        "title": "OnCallServices",
+                                        "description": "Custom number of teachers in each section.",
+                                        "type": "array",
+                                        "additionalItems": false,
+                                        "items": {
+                                            "day": {
+                                                "description": "Day of the week.",
+                                                "type": "integer"
+                                            },
+                                            "index": {
+                                                "description": "Index of the section.",
+                                                "type": "integer"
+                                            },
+                                            "numTeachers": {
+                                                "description": "Custom number of tachers for the section.",
+                                                "type": "integer"
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "refTeachers": {
+                                "title": "RefTeachers",
+                                "description": "List of teachers who make the service.",
+                                "type": "array",
+                                "additionalItems": false,
+                                "items": {
+                                    "title": "RefTeacher",
+                                    "description": "Contains a teacher reference, the number of break oversight.",
+                                    "type": "object",
+                                    "required": [
+                                        "teacherId"
+                                    ],
+                                    "properties": {
+                                        "teacherId": {
+                                            "description": "Identifier name of the teacher.",
+                                            "type": "string"
+                                        },
+                                        "numOfSections": {
+                                            "description": "Number of sections of on-call service that the teacher must do weekly.",
+                                            "type": "integer",
+                                            "default": 1
+                                        },
+                                        "frameTemplate": {
+                                            "title": "OnCallTemplate",
+                                            "description": "Templates with teacher on-call assignment preferences.",
+                                            "type": "array",
+                                            "additionalItems": false,
+                                            "items": {                                    
+                                                "title": "OnCallSectionPreference",
+                                                "description": "Template with a teacher section assignment preference about the service.",
+                                                "type": "object",
+                                                "required": [
+                                                    "day",
+                                                    "index",
+                                                    "frame",
+                                                    "type"
+                                                ],                                    
+                                                "properties": {
+                                                    "day": {
+                                                        "description": "Day of the week when is located the section.",
+                                                        "type": "integer"
+                                                    },
+                                                    "index": {
+                                                        "description": "Index inside the day where is located the section.",
+                                                        "type": "integer"
+                                                    },
+                                                    "frame": {
+                                                        "description": "Identifier name of the frame.",
+                                                        "type": "string"
+                                                    },
+                                                    "type": { 
+                                                        "description": "Teacher availability to be assigned to the section.",
+                                                        "enum": ["banned", "preset"] 
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "frameTemplate": {
+                                "$ref": "#/definitions/bannedFrameTemplate"
+                            },
+                            "refBuilding": {
+                                "description": "Identifier name of the building where is the service. It is used to know transfer time and number of transfers between buildings for teachers.",
+                                "type": "string"
+                            }
+                        }
+                    }
                 }
             }
         }        
@@ -1414,6 +1586,7 @@
             "additionalItems": false,
             "items": {                                    
                 "title": "SectionPreference",
+                "description": "Template with a section assignment preference.",
                 "type": "object",
                 "required": [
                     "day",
@@ -1436,7 +1609,38 @@
                     },
                     "type": { 
                         "description": "Element availability to be assigned to the section.",
-                        "enum": ["banned", "available", "strong-non-preferred", "weak-non-preferred"] 
+                        "enum": ["banned","strong-non-preferred", "weak-non-preferred"] 
+                    }
+                }
+            }
+        },
+        "bannedFrameTemplate": {
+            "title": "BannedFrameTemplate",
+            "description": "Templates with only banned sections of the frames.",
+            "$comment": "It is used when the element cannot have non preferred sections.",
+            "type": "array",
+            "additionalItems": false,
+            "items": {                                    
+                "title": "BannedSectionPreference",
+                "description": "Template with only banned section assignment preference.",
+                "type": "object",
+                "required": [
+                    "day",
+                    "index",
+                    "frame"
+                ],                                    
+                "properties": {
+                    "day": {
+                        "description": "Day of the week when is located the section.",
+                        "type": "integer"
+                    },
+                    "index": {
+                        "description": "Index inside the day where is located the section.",
+                        "type": "integer"
+                    },
+                    "frame": {
+                        "description": "Identifier name of the frame.",
+                        "type": "string"
                     }
                 }
             }
@@ -1444,7 +1648,6 @@
         "weeklyStable": {
             "title": "WeeklyStable",
             "description": "Contains a single possible weekly distribution.",
-            "$comment": "",
             "type": "array",
             "additionalItems": false,
             "items": {
@@ -1456,7 +1659,6 @@
         "weeklyVariable": {
             "title":"WeeklyVariable",
             "description": "Define the distribution as a number of sections per week and a maximum range of sections per day.",
-            "$comment": "",
             "type":"object",
             "required":[
                 "numSessions",
@@ -1464,15 +1666,15 @@
             ],
             "properties":{
                 "numSessions": {
-                    "description": ".",
+                    "description": "Total of session's sections.",
                     "type": "number"
                 },
                 "maxSessionsDaily": {
-                    "description": ".",
+                    "description": "Maximum of sessions section's per day.",
                     "type": "number"
                 },
                 "minSessionsDayly": {
-                    "description": ".",
+                    "description": "Indicates de preference about the session's classes of the minimum duration section.",
                     "enum": [
                         "allow",
                         "avoid",
@@ -1481,12 +1683,12 @@
                     "default": "allow"
                 },
                 "avoidMaxDuration": {
-                    "description": ".",
+                    "description": "Indicates de preference about the session's classes of the minimum duration section.",
                     "type":"boolean",
                     "default": false
                 },
                 "allowDiscontinuity": {
-                    "description": ".",
+                    "description": "Indicates if discontinuous sections are allowed, that is, they have sections of other sessions or breaks in between.",
                     "type":"boolean",
                     "default": false
                 }

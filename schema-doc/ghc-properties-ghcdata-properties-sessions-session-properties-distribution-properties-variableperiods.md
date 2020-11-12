@@ -32,6 +32,9 @@ The total of the classes of the distribution, are divided among the periods.
 Contains a single possible weekly distribution.
 
 
+> It indicates a stable distribution (numbers of days and number of sections per asignation day), among all the periods between which it is distributed. It is not the distribution of each period, but the total of this session.
+>
+
 `weeklyStable`
 
 -   is optional
@@ -47,6 +50,9 @@ Contains a single possible weekly distribution.
 
 Define the distribution as a number of sections per week and a maximum range of sections per day.
 
+
+> It indicates a variable distribution, among all the periods between which it is distributed. It is not the distribution of each period, but the total of this session.
+>
 
 `weeklyVariable`
 

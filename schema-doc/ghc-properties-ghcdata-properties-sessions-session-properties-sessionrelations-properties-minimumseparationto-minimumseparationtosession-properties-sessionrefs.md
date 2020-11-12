@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionRelations/properties/minimumSeparationTo/items/properties/refSessions
 ```
 
-.
+List of sessions references.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

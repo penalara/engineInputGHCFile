@@ -4,7 +4,7 @@
 engineInputGHCSchema#/definitions/weeklyVariable/properties/minSessionsDayly
 ```
 
-.
+Indicates de preference about the session's classes of the minimum duration section.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

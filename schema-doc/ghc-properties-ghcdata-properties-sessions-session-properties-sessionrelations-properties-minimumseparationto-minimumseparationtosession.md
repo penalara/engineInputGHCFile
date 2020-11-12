@@ -24,7 +24,7 @@ Contains the identifier of the session that must be taught a number of days apar
 
 ## refSessions
 
-.
+List of sessions references.
 
 
 `refSessions`

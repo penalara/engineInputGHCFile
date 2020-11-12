@@ -4,7 +4,7 @@
 engineInputGHCSchema#/definitions/frameTemplate/items
 ```
 
-
+Template with a section assignment preference.
 
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
@@ -95,6 +95,5 @@ unknown
 | Value                    | Explanation |
 | :----------------------- | ----------- |
 | `"banned"`               |             |
-| `"available"`            |             |
 | `"strong-non-preferred"` |             |
 | `"weak-non-preferred"`   |             |

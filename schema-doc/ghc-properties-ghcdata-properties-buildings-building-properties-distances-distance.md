@@ -24,7 +24,7 @@ engineInputGHCSchema#/properties/ghcData/properties/buildings/items/properties/d
 
 ## refBuilding
 
-Abbreviated name of the other building that refer the distance.
+Identifier name of the other building that refer the distance.
 
 
 `refBuilding`

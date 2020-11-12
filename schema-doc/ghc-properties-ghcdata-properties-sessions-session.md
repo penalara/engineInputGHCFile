@@ -27,7 +27,7 @@ engineInputGHCSchema#/properties/ghcData/properties/sessions/items
 | [refGroups](#refgroups)                 | `array`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-refgroups.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/refGroups")                 |
 | [distribution](#distribution)           | `object` | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-distribution.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/distribution")           |
 | [sessionClassRooms](#sessionclassrooms) | `object` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionclassrooms.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionClassRooms") |
-| [frameTemplate](#frametemplate)         | `array`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-frametemplate.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/frameTemplate")                                                       |
+| [frameTemplate](#frametemplate)         | `array`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionframetemplate.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/frameTemplate")  |
 | [sessionSettings](#sessionsettings)     | `object` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings")     |
 | [sessionRelations](#sessionrelations)   | `object` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionrelations.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionRelations")   |
 
@@ -174,13 +174,13 @@ Templates with assignment preferences to section of the frames.
 `frameTemplate`
 
 -   is optional
--   Type: `object[]` ([SectionPreference](ghc-definitions-frametemplate-sectionpreference.md))
+-   Type: `object[]` ([SessionSectionPreference](ghc-properties-ghcdata-properties-sessions-session-properties-sessionframetemplate-sessionsectionpreference.md))
 -   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-definitions-frametemplate.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/frameTemplate")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionframetemplate.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/frameTemplate")
 
 ### frameTemplate Type
 
-`object[]` ([SectionPreference](ghc-definitions-frametemplate-sectionpreference.md))
+`object[]` ([SessionSectionPreference](ghc-properties-ghcdata-properties-sessions-session-properties-sessionframetemplate-sessionsectionpreference.md))
 
 ## sessionSettings
 

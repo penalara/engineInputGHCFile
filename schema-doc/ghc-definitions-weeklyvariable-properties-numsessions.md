@@ -4,7 +4,7 @@
 engineInputGHCSchema#/definitions/weeklyVariable/properties/numSessions
 ```
 
-.
+Total of session's sections.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
