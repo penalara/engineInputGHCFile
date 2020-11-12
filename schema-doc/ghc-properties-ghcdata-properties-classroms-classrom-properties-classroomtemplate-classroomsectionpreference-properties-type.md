@@ -1,16 +1,25 @@
-# RefPeriods Schema
+# Untitled undefined type in EngineInputGHCSchema Schema
 
 ```txt
-engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/distribution/properties/periods
+engineInputGHCSchema#/properties/ghcData/properties/classRooms/items/properties/frameTemplate/items/properties/type
 ```
 
-List of periods or weeks when the session must be assigned.
+Element availability to be assigned to the section.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
 | :------------------ | ---------- | -------------- | ----------------------- | :---------------- | --------------------- | ------------------- | ------------------------------------------------------------------ |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [ghc.schema.json\*](../out/ghc.schema.json "open original schema") |
 
-## periods Type
+## type Type
 
-`string[]` ([RefPeriod](ghc-properties-ghcdata-properties-sessions-session-properties-distribution-properties-refperiods-refperiod.md))
+unknown
+
+## type Constraints
+
+**enum**: the value of this property must be equal to one of the following values:
+
+| Value         | Explanation |
+| :------------ | ----------- |
+| `"banned"`    |             |
+| `"available"` |             |

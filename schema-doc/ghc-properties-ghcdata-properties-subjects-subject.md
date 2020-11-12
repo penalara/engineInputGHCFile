@@ -21,7 +21,7 @@ engineInputGHCSchema#/properties/ghcData/properties/subjects/items
 | :-------------------------------------- | --------- | -------- | -------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [id](#id)                               | `string`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-subjects-subject-properties-id.md "engineInputGHCSchema#/properties/ghcData/properties/subjects/items/properties/id")                               |
 | [student-mentoring](#student-mentoring) | `boolean` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-subjects-subject-properties-student-mentoring.md "engineInputGHCSchema#/properties/ghcData/properties/subjects/items/properties/student-mentoring") |
-| [frameTemplate](#frametemplate)         | Merged    | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-subjects-subject-properties-frametemplate.md "engineInputGHCSchema#/properties/ghcData/properties/subjects/items/properties/frameTemplate")         |
+| [frameTemplate](#frametemplate)         | `array`   | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-frametemplate.md "engineInputGHCSchema#/properties/ghcData/properties/subjects/items/properties/frameTemplate")                                                       |
 
 ## id
 
@@ -57,21 +57,16 @@ Indicates if the subject is a tutorship
 
 ## frameTemplate
 
-
+Templates with assignment preferences to section of the frames.
 
 
 `frameTemplate`
 
 -   is optional
--   Type: merged type ([Details](ghc-properties-ghcdata-properties-subjects-subject-properties-frametemplate.md))
+-   Type: `object[]` ([SectionPreference](ghc-definitions-frametemplate-sectionpreference.md))
 -   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-subjects-subject-properties-frametemplate.md "engineInputGHCSchema#/properties/ghcData/properties/subjects/items/properties/frameTemplate")
+-   defined in: [EngineInputGHCSchema](ghc-definitions-frametemplate.md "engineInputGHCSchema#/properties/ghcData/properties/subjects/items/properties/frameTemplate")
 
 ### frameTemplate Type
 
-merged type ([Details](ghc-properties-ghcdata-properties-subjects-subject-properties-frametemplate.md))
-
-all of
-
--   [FrameTemplate](ghc-definitions-frametemplate.md "check type definition")
--   [Untitled undefined type in EngineInputGHCSchema](ghc-properties-ghcdata-properties-subjects-subject-properties-frametemplate-allof-1.md "check type definition")
+`object[]` ([SectionPreference](ghc-definitions-frametemplate-sectionpreference.md))

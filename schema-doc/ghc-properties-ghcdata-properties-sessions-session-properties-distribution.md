@@ -4,8 +4,11 @@
 engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/distribution
 ```
 
-Contains information on how the classes of the session are distributed throughout the week
+Contains information on how the classes of the session are distributed throughout the week. Only should contain one element between 'stablePeriods' and 'variablePeriods'.
 
+
+> Property 'periods' is required if there are more than one period in the timetable. Propeties 'stablePeriods' and 'variablePeriods' are mutually exclusive (Schema tag 'One Of' is not specified because POJO automatic generation incompatibility).
+>
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
 | :------------------ | ---------- | -------------- | ------------ | :---------------- | --------------------- | ------------------- | ------------------------------------------------------------------ |
@@ -15,20 +18,17 @@ Contains information on how the classes of the session are distributed throughou
 
 `object` ([Distribution](ghc-properties-ghcdata-properties-sessions-session-properties-distribution.md))
 
-one (and only one) of
-
--   [Untitled undefined type in EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-distribution-oneof-0.md "check type definition")
--   [Untitled undefined type in EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-distribution-oneof-1.md "check type definition")
-
 # Distribution Properties
 
-| Property            | Type    | Required | Nullable       | Defined by                                                                                                                                                                                                                                  |
-| :------------------ | ------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [periods](#periods) | `array` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-distribution-properties-refperiods.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/distribution/properties/periods") |
+| Property                            | Type     | Required | Nullable       | Defined by                                                                                                                                                                                                                                               |
+| :---------------------------------- | -------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [periods](#periods)                 | `array`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-distribution-properties-refperiods.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/distribution/properties/periods")              |
+| [stablePeriods](#stableperiods)     | `object` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-distribution-properties-stableperiods.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/distribution/properties/stablePeriods")     |
+| [variablePeriods](#variableperiods) | `object` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-distribution-properties-variableperiods.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/distribution/properties/variablePeriods") |
 
 ## periods
 
-List of periods or weeks when the session must be.
+List of periods or weeks when the session must be assigned.
 
 
 `periods`
@@ -41,3 +41,41 @@ List of periods or weeks when the session must be.
 ### periods Type
 
 `string[]` ([RefPeriod](ghc-properties-ghcdata-properties-sessions-session-properties-distribution-properties-refperiods-refperiod.md))
+
+## stablePeriods
+
+The session's distribution is equals in each period.
+
+
+> Only one property can be applied (Schema tag 'One Of' is not specified because POJO automatic generation incompatibility).
+>
+
+`stablePeriods`
+
+-   is optional
+-   Type: `object` ([StablePeriods](ghc-properties-ghcdata-properties-sessions-session-properties-distribution-properties-stableperiods.md))
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-distribution-properties-stableperiods.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/distribution/properties/stablePeriods")
+
+### stablePeriods Type
+
+`object` ([StablePeriods](ghc-properties-ghcdata-properties-sessions-session-properties-distribution-properties-stableperiods.md))
+
+## variablePeriods
+
+The total of the classes of the distribution, are divided among the periods.
+
+
+> Propeties 'weeklyStable' and 'weeklyVariable' are mutually exclusive (Schema tag 'One Of' is not specified because POJO automatic generation incompatibility).
+>
+
+`variablePeriods`
+
+-   is optional
+-   Type: `object` ([VariablePeriods](ghc-properties-ghcdata-properties-sessions-session-properties-distribution-properties-variableperiods.md))
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-distribution-properties-variableperiods.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/distribution/properties/variablePeriods")
+
+### variablePeriods Type
+
+`object` ([VariablePeriods](ghc-properties-ghcdata-properties-sessions-session-properties-distribution-properties-variableperiods.md))

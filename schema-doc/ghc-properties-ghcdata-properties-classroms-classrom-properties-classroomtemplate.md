@@ -1,16 +1,16 @@
-# RefPeriods Schema
+# ClassRoomTemplate Schema
 
 ```txt
-engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/distribution/properties/periods
+engineInputGHCSchema#/properties/ghcData/properties/classRooms/items/properties/frameTemplate
 ```
 
-List of periods or weeks when the session must be assigned.
+Classroom template with assignment preferences to section of the frames.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
 | :------------------ | ---------- | -------------- | ----------------------- | :---------------- | --------------------- | ------------------- | ------------------------------------------------------------------ |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [ghc.schema.json\*](../out/ghc.schema.json "open original schema") |
 
-## periods Type
+## frameTemplate Type
 
-`string[]` ([RefPeriod](ghc-properties-ghcdata-properties-sessions-session-properties-distribution-properties-refperiods-refperiod.md))
+`object[]` ([ClassRoomSectionPreference](ghc-properties-ghcdata-properties-classroms-classrom-properties-classroomtemplate-classroomsectionpreference.md))

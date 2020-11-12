@@ -26,9 +26,9 @@ Schema of the object that contains the timetable planning data.
 | [classRoomsSets](#classroomssets) | `array`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-classroomssets.md "engineInputGHCSchema#/properties/ghcData/properties/classRoomsSets") |
 | [tasks](#tasks)                   | `object` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-tasks.md "engineInputGHCSchema#/properties/ghcData/properties/tasks")                   |
 | [teachers](#teachers)             | `array`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers.md "engineInputGHCSchema#/properties/ghcData/properties/teachers")             |
-| [subjects](#subjects)             | `array`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-subjects.md "engineInputGHCSchema#/properties/ghcData/properties/subjects")             |
-| [groups](#groups)                 | `array`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups.md "engineInputGHCSchema#/properties/ghcData/properties/groups")                 |
-| [sessions](#sessions)             | `array`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions.md "engineInputGHCSchema#/properties/ghcData/properties/sessions")             |
+| [subjects](#subjects)             | `array`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-subjects.md "engineInputGHCSchema#/properties/ghcData/properties/subjects")             |
+| [groups](#groups)                 | `array`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups.md "engineInputGHCSchema#/properties/ghcData/properties/groups")                 |
+| [sessions](#sessions)             | `array`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions.md "engineInputGHCSchema#/properties/ghcData/properties/sessions")             |
 
 ## periods
 
@@ -149,7 +149,7 @@ School subjects which are teach at sessions.
 
 `subjects`
 
--   is optional
+-   is required
 -   Type: `object[]` ([Subject](ghc-properties-ghcdata-properties-subjects-subject.md))
 -   cannot be null
 -   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-subjects.md "engineInputGHCSchema#/properties/ghcData/properties/subjects")
@@ -165,7 +165,7 @@ Sets of students.
 
 `groups`
 
--   is optional
+-   is required
 -   Type: `object[]` ([Group](ghc-properties-ghcdata-properties-groups-group.md))
 -   cannot be null
 -   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups.md "engineInputGHCSchema#/properties/ghcData/properties/groups")
@@ -181,7 +181,7 @@ Teachers sessions. These can be with students groups, meetings with other teache
 
 `sessions`
 
--   is optional
+-   is required
 -   Type: `object[]` ([Session](ghc-properties-ghcdata-properties-sessions-session.md))
 -   cannot be null
 -   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions.md "engineInputGHCSchema#/properties/ghcData/properties/sessions")

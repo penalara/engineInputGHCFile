@@ -29,7 +29,10 @@
                 "frames",
                 "buildings",
                 "classRooms",
-                "teachers"
+                "teachers",
+                "subjects",
+                "groups",
+                "sessions"
             ],
             "properties": {
                 "periods": {
@@ -202,20 +205,38 @@
                                 "type": "integer"
                             },
                             "frameTemplate": {
-                                "allOf": [
-                                    {"$ref": "#/definitions/frameTemplate"},
-                                    { 
-                                    "items": {
-                                        "properties": {                    
-                                            "type": { 
-                                                "description": "Availability of the classroom to be assigned to the section.",
-                                                "enum": ["banned", "available"] 
-                                            }
+                                "title": "ClassRoomTemplate",
+                                "description": "Classroom template with assignment preferences to section of the frames.",
+                                "type": "array",
+                                "additionalItems": false,
+                                "items": {                                    
+                                    "title": "ClassRoomSectionPreference",
+                                    "type": "object",
+                                    "required": [
+                                        "day",
+                                        "index",
+                                        "frame",
+                                        "type"
+                                    ],                                    
+                                    "properties": {
+                                        "day": {
+                                            "description": "Day of the week when is located the section.",
+                                            "type": "integer"
                                         },
-                                        "required": ["type"]
+                                        "index": {
+                                            "description": "Index inside the day where is located the section.",
+                                            "type": "integer"
+                                        },
+                                        "frame": {
+                                            "description": "Identifier name of the frame.",
+                                            "type": "string"
+                                        },
+                                        "type": { 
+                                            "description": "Element availability to be assigned to the section.",
+                                            "enum": ["banned", "available"] 
                                         }
                                     }
-                                ]
+                                }
                             },
                             "refBuilding": {
                                 "description": "Abbreviated name building where is located the classroom.",
@@ -291,20 +312,7 @@
                                         "type": "string"
                                     },
                                     "frameTemplate":{
-                                        "allOf": [
-                                            {"$ref": "#/definitions/frameTemplate"},
-                                            {
-                                            "items": {  
-                                                 "properties": {                    
-                                                    "type": { 
-                                                        "description": "Availability of task to be assigned to the section.",
-                                                        "enum": ["banned", "available", "strong-non-preferred", "weak-non-preferred"] 
-                                                    }
-                                                },
-                                                "required": ["type"]
-                                                }
-                                            }
-                                        ]
+                                        "$ref": "#/definitions/frameTemplate"
                                     }
                                 }
                             }
@@ -361,20 +369,7 @@
                                 "type": "string"
                             },
                             "frameTemplate":{
-                                "allOf": [
-                                    {"$ref": "#/definitions/frameTemplate"},
-                                    {
-                                    "items": {  
-                                         "properties": {                    
-                                            "type": { 
-                                                "description": "Availability of teacher to be assigned to the section.",
-                                                "enum": ["banned", "available", "strong-non-preferred", "weak-non-preferred"] 
-                                            }
-                                        },
-                                        "required": ["type"]
-                                        }
-                                    }
-                                ]
+                                "$ref": "#/definitions/frameTemplate"
                             },
                             "settings": {
                                 "title": "Settings",
@@ -904,20 +899,7 @@
                                 "default": false
                             },
                             "frameTemplate":{
-                                "allOf": [
-                                    {"$ref": "#/definitions/frameTemplate"},
-                                    {
-                                    "items": {  
-                                         "properties": {                    
-                                            "type": { 
-                                                "description": "Availability of subject to be assigned to the section.",
-                                                "enum": ["banned", "available", "strong-non-preferred", "weak-non-preferred"] 
-                                            }
-                                        },
-                                        "required": ["type"]
-                                        }
-                                    }
-                                ]
+                                "$ref": "#/definitions/frameTemplate"
                             }
                         }
                     }
@@ -948,20 +930,7 @@
                                 "type": "integer"
                             },
                             "frameTemplate":{
-                                "allOf": [
-                                    {"$ref": "#/definitions/frameTemplate"},
-                                    {
-                                    "items": {  
-                                         "properties": {                    
-                                            "type": { 
-                                                "description": "Group availability to be assigned to the section.",
-                                                "enum": ["banned", "available", "strong-non-preferred", "weak-non-preferred"] 
-                                            }
-                                        },
-                                        "required": ["type"]
-                                        }
-                                    }
-                                ]
+                                "$ref": "#/definitions/frameTemplate"
                             },
                             "numStudents": {
                                 "description": "Number of students in the group.",
@@ -1062,12 +1031,13 @@
                             },
                             "distribution": { 
                                 "title":"Distribution",
-                                "description": "Contains information on how the classes of the session are distributed throughout the week",
+                                "description": "Contains information on how the classes of the session are distributed throughout the week. Only should contain one element between 'stablePeriods' and 'variablePeriods'.",
                                 "type":"object",
+                                "$comment": "Property 'periods' is required if there are more than one period in the timetable. Propeties 'stablePeriods' and 'variablePeriods' are mutually exclusive (Schema tag 'One Of' is not specified because POJO automatic generation incompatibility).",
                                 "properties":{
                                     "periods": {
                                         "title": "RefPeriods",
-                                        "description": "List of periods or weeks when the session must be.",
+                                        "description": "List of periods or weeks when the session must be assigned.",
                                         "type": "array",
                                         "additionalItems": false,
                                         "items": {
@@ -1075,108 +1045,64 @@
                                             "description": "Identifier of the period.",
                                             "type": "string"
                                         }
-                                    }
-                                } ,
-                                "oneOf": [
-                                    {
-                                        "properties":{
-                                            "stablePeriods": {
-                                                "title":"StablePeriods",
-                                                "description": "The session's distribution is equals in each period.",
-                                                "type":"object",
-                                                "oneOf": [
-                                                    {
-                                                        "properties":{
-                                                            "weeklyStable": {
-                                                                "title": "WeeklyStable",
-                                                                "description": "Contains a single possible weekly distribution.",
-                                                                "type": "array",
-                                                                "additionalItems": false,
-                                                                "items": {
-                                                                    "title": "DailySections",
-                                                                    "description": "Indicates the number of sections wich sould have the session in the day.",
-                                                                    "type": "integer"   
-                                                                }
-                                                            }
-                                                        }
-                                                    },
-                                                    {
-                                                        "properties":{
-                                                            "weeklyVariable": {
-                                                                "title":"WeeklyVariable",
-                                                                "description": "Define the distribution as a number of sections per week and a maximum range of sections per day.",
-                                                                "type":"object",
-                                                                "required":[
-                                                                    "numSessions",
-                                                                    "maxSessionsDaily"
-                                                                ],
-                                                                "properties":{
-                                                                    "numSessions": {
-                                                                        "description": ".",
-                                                                        "type": "number"
-                                                                    },
-                                                                    "maxSessionsDaily": {
-                                                                        "description": ".",
-                                                                        "type": "number"
-                                                                    },
-                                                                    "minSessionsDayly": {
-                                                                        "description": ".",
-                                                                        "enum": [
-                                                                            "allow",
-                                                                            "avoid",
-                                                                            "forbidden"
-                                                                        ],
-                                                                        "default": "allow"
-                                                                    },
-                                                                    "avoidMaxDuration": {
-                                                                        "description": ".",
-                                                                        "type":"boolean",
-                                                                        "default": false
-                                                                    },
-                                                                    "allowDiscontinuity": {
-                                                                        "description": ".",
-                                                                        "type":"boolean",
-                                                                        "default": false
-                                                                    }
-                                                                }
-                                                            }
-                                                        }
-                                                    },
-                                                    {
-                                                        "properties":{
-                                                            "weeklyCustom": {
-                                                                "title": "WeeklyCustom",
-                                                                "description": "Contains an array of 'WeeklyStable' distributions.",
-                                                                "type": "array",
-                                                                "additionalItems": false,
-                                                                "items": {
-                                                                    "title": "CustomWeeklyStable",
-                                                                    "description": "Weekly distribution immovable.",
-                                                                    "type": "array",
-                                                                    "additionalItems": false,
-                                                                    "items": {
-                                                                        "title": "DailySections",
-                                                                        "description": "Indicates the number of sections wich sould have the session in the day.",
-                                                                        "type": "integer"   
-                                                                    }
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                ]
-                                            } 
-                                        }   
                                     },
-                                    {
+                                    "stablePeriods": {
+                                        "title":"StablePeriods",
+                                        "description": "The session's distribution is equals in each period.",
+                                        "type":"object",
+                                        "$comment": "Only one property can be applied (Schema tag 'One Of' is not specified because POJO automatic generation incompatibility).",
                                         "properties":{
-                                            "variablePeriods": {
-                                                "title":"VariablePeriods",
-                                                "description": "The total of the classes of the distribution are distributed in the periods.",
-                                                "type":"object"
+                                            "weeklyStable": {
+                                                "$ref": "#/definitions/weeklyStable"
+                                            },   
+                                            "weeklyVariable": {
+                                                "$ref": "#/definitions/weeklyVariable"
+                                            },
+                                            "weeklyCustom": {
+                                                "title": "WeeklyCustom",
+                                                "description": "Contains an array of 'WeeklyStable' distributions.",
+                                                "type": "array",
+                                                "additionalItems": false,
+                                                "items": {
+                                                    "title": "CustomWeeklyStable",
+                                                    "description": "Weekly distribution immovable.",
+                                                    "type": "array",
+                                                    "additionalItems": false,
+                                                    "items": {
+                                                        "title": "DailySections",
+                                                        "description": "Indicates the number of sections wich sould have the session in the day.",
+                                                        "type": "integer"   
+                                                    }
+                                                }
                                             }
-                                        }    
+                                        }
+                                    },
+                                    "variablePeriods": {
+                                        "title":"VariablePeriods",
+                                        "description": "The total of the classes of the distribution, are divided among the periods.",
+                                        "type":"object",
+                                        "$comment": "Propeties 'weeklyStable' and 'weeklyVariable' are mutually exclusive (Schema tag 'One Of' is not specified because POJO automatic generation incompatibility).",
+                                        "properties":{
+                                            "weeklyStable": {
+                                                "$ref": "#/definitions/weeklyStable",
+                                                "$comment": "It indicates a stable distribution (numbers of days and number of sections per asignation day), among all the periods between which it is distributed. It is not the distribution of each period, but the total of this session."
+                                            },   
+                                            "weeklyVariable": {
+                                                "$ref": "#/definitions/weeklyVariable",
+                                                "$comment": "It indicates a variable distribution, among all the periods between which it is distributed. It is not the distribution of each period, but the total of this session."
+                                            },
+                                            "maximunSectionsInPeriod": {
+                                                "description": "Maximum number of sections to assign in each Period. If not defined, it is considered that there is no maximum limit.",
+                                                "type":"integer"
+                                            },
+                                            "minimnunSectionsInPeriod": {
+                                                "description": "Minimum number of sections to assign in each Period.",
+                                                "type":"integer",
+                                                "default": 0
+                                            }
+                                        }
                                     }
-                                ]
+                                } 
                             },
                             "sessionClassRooms":{
                                 "title": "SessionClassRooms",
@@ -1241,20 +1167,7 @@
                                 }
                             },
                             "frameTemplate":{
-                                "allOf": [
-                                    {"$ref": "#/definitions/frameTemplate"},
-                                    {
-                                    "items": {  
-                                         "properties": {                    
-                                            "type": { 
-                                                "description": "Session availability to be assigned to the section.",
-                                                "enum": ["banned", "available", "strong-non-preferred", "weak-non-preferred"] 
-                                            }
-                                        },
-                                        "required": ["type"]
-                                        }
-                                    }
-                                ]
+                                "$ref": "#/definitions/frameTemplate"
                             },
                             "sessionSettings": {
                                 "title": "SessionSettings",
@@ -1492,7 +1405,7 @@
             }
         }        
     },
-    "definitions": { 
+    "definitions": {
         "frameTemplate": {
             "title": "FrameTemplate",
             "description": "Templates with assignment preferences to section of the frames.",
@@ -1504,7 +1417,8 @@
                 "required": [
                     "day",
                     "index",
-                    "frame"
+                    "frame",
+                    "type"
                 ],                                    
                 "properties": {
                     "day": {
@@ -1518,7 +1432,62 @@
                     "frame": {
                         "description": "Identifier name of the frame.",
                         "type": "string"
+                    },
+                    "type": { 
+                        "description": "Element availability to be assigned to the section.",
+                        "enum": ["banned", "available", "strong-non-preferred", "weak-non-preferred"] 
                     }
+                }
+            }
+        },
+        "weeklyStable": {
+            "title": "WeeklyStable",
+            "description": "Contains a single possible weekly distribution.",
+            "$comment": "",
+            "type": "array",
+            "additionalItems": false,
+            "items": {
+                "title": "DailySections",
+                "description": "Indicates the number of sections wich sould have the session in the day.",
+                "type": "integer"   
+            }
+        },   
+        "weeklyVariable": {
+            "title":"WeeklyVariable",
+            "description": "Define the distribution as a number of sections per week and a maximum range of sections per day.",
+            "$comment": "",
+            "type":"object",
+            "required":[
+                "numSessions",
+                "maxSessionsDaily"
+            ],
+            "properties":{
+                "numSessions": {
+                    "description": ".",
+                    "type": "number"
+                },
+                "maxSessionsDaily": {
+                    "description": ".",
+                    "type": "number"
+                },
+                "minSessionsDayly": {
+                    "description": ".",
+                    "enum": [
+                        "allow",
+                        "avoid",
+                        "forbidden"
+                    ],
+                    "default": "allow"
+                },
+                "avoidMaxDuration": {
+                    "description": ".",
+                    "type":"boolean",
+                    "default": false
+                },
+                "allowDiscontinuity": {
+                    "description": ".",
+                    "type":"boolean",
+                    "default": false
                 }
             }
         }

@@ -25,9 +25,9 @@ engineInputGHCSchema#/properties/ghcData/properties/sessions/items
 | [refTeachers](#refteachers)             | `array`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-refteachers.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/refTeachers")             |
 | [refSubjects](#refsubjects)             | `array`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-refsubjects.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/refSubjects")             |
 | [refGroups](#refgroups)                 | `array`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-refgroups.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/refGroups")                 |
-| [distribution](#distribution)           | Merged   | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-distribution.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/distribution")           |
+| [distribution](#distribution)           | `object` | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-distribution.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/distribution")           |
 | [sessionClassRooms](#sessionclassrooms) | `object` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionclassrooms.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionClassRooms") |
-| [frameTemplate](#frametemplate)         | Merged   | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-frametemplate.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/frameTemplate")         |
+| [frameTemplate](#frametemplate)         | `array`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-frametemplate.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/frameTemplate")                                                       |
 | [sessionSettings](#sessionsettings)     | `object` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings")     |
 | [sessionRelations](#sessionrelations)   | `object` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionrelations.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionRelations")   |
 
@@ -133,8 +133,11 @@ List of group's identifier which is teach at the session. At least one is requir
 
 ## distribution
 
-Contains information on how the classes of the session are distributed throughout the week
+Contains information on how the classes of the session are distributed throughout the week. Only should contain one element between 'stablePeriods' and 'variablePeriods'.
 
+
+> Property 'periods' is required if there are more than one period in the timetable. Propeties 'stablePeriods' and 'variablePeriods' are mutually exclusive (Schema tag 'One Of' is not specified because POJO automatic generation incompatibility).
+>
 
 `distribution`
 
@@ -146,11 +149,6 @@ Contains information on how the classes of the session are distributed throughou
 ### distribution Type
 
 `object` ([Distribution](ghc-properties-ghcdata-properties-sessions-session-properties-distribution.md))
-
-one (and only one) of
-
--   [Untitled undefined type in EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-distribution-oneof-0.md "check type definition")
--   [Untitled undefined type in EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-distribution-oneof-1.md "check type definition")
 
 ## sessionClassRooms
 
@@ -170,24 +168,19 @@ Contains the information about classrooms for the sessions. At least one classro
 
 ## frameTemplate
 
-
+Templates with assignment preferences to section of the frames.
 
 
 `frameTemplate`
 
 -   is optional
--   Type: merged type ([Details](ghc-properties-ghcdata-properties-sessions-session-properties-frametemplate.md))
+-   Type: `object[]` ([SectionPreference](ghc-definitions-frametemplate-sectionpreference.md))
 -   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-frametemplate.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/frameTemplate")
+-   defined in: [EngineInputGHCSchema](ghc-definitions-frametemplate.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/frameTemplate")
 
 ### frameTemplate Type
 
-merged type ([Details](ghc-properties-ghcdata-properties-sessions-session-properties-frametemplate.md))
-
-all of
-
--   [FrameTemplate](ghc-definitions-frametemplate.md "check type definition")
--   [Untitled undefined type in EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-frametemplate-allof-1.md "check type definition")
+`object[]` ([SectionPreference](ghc-definitions-frametemplate-sectionpreference.md))
 
 ## sessionSettings
 

@@ -1,16 +1,16 @@
-# RefPeriods Schema
+# Untitled boolean in EngineInputGHCSchema Schema
 
 ```txt
-engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/distribution/properties/periods
+engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/incompatibilities/properties/doNotFinishAtLastMorningSectionIfStartAtFirstAfternoonSection/properties/strict
 ```
 
-List of periods or weeks when the session must be assigned.
+Indicate if the incompatibility is a strict condition.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
 | :------------------ | ---------- | -------------- | ----------------------- | :---------------- | --------------------- | ------------------- | ------------------------------------------------------------------ |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [ghc.schema.json\*](../out/ghc.schema.json "open original schema") |
 
-## periods Type
+## strict Type
 
-`string[]` ([RefPeriod](ghc-properties-ghcdata-properties-sessions-session-properties-distribution-properties-refperiods-refperiod.md))
+`boolean`

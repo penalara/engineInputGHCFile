@@ -21,7 +21,7 @@ engineInputGHCSchema#/properties/ghcData/properties/teachers/items
 | :---------------------------------------------- | -------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [id](#id)                                       | `string` | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-id.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/id")                                       |
 | [associationIdentifier](#associationidentifier) | `string` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-associationidentifier.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/associationIdentifier") |
-| [frameTemplate](#frametemplate)                 | Merged   | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-frametemplate.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/frameTemplate")                 |
+| [frameTemplate](#frametemplate)                 | `array`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-frametemplate.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/frameTemplate")                                                               |
 | [settings](#settings)                           | `array`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings")                           |
 
 ## id
@@ -58,24 +58,19 @@ Group or association of teachers that should have similar of entry and out hours
 
 ## frameTemplate
 
-
+Templates with assignment preferences to section of the frames.
 
 
 `frameTemplate`
 
 -   is optional
--   Type: merged type ([Details](ghc-properties-ghcdata-properties-teachers-teacher-properties-frametemplate.md))
+-   Type: `object[]` ([SectionPreference](ghc-definitions-frametemplate-sectionpreference.md))
 -   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-frametemplate.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/frameTemplate")
+-   defined in: [EngineInputGHCSchema](ghc-definitions-frametemplate.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/frameTemplate")
 
 ### frameTemplate Type
 
-merged type ([Details](ghc-properties-ghcdata-properties-teachers-teacher-properties-frametemplate.md))
-
-all of
-
--   [FrameTemplate](ghc-definitions-frametemplate.md "check type definition")
--   [Untitled undefined type in EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-frametemplate-allof-1.md "check type definition")
+`object[]` ([SectionPreference](ghc-definitions-frametemplate-sectionpreference.md))
 
 ## settings
 

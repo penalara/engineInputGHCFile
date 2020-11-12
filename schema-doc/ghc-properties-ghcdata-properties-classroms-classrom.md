@@ -17,13 +17,13 @@ engineInputGHCSchema#/properties/ghcData/properties/classRooms/items
 
 # Classrom Properties
 
-| Property                        | Type      | Required | Nullable       | Defined by                                                                                                                                                                                               |
-| :------------------------------ | --------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [id](#id)                       | `string`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-classroms-classrom-properties-id.md "engineInputGHCSchema#/properties/ghcData/properties/classRooms/items/properties/id")                       |
-| [capacity](#capacity)           | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-classroms-classrom-properties-capacity.md "engineInputGHCSchema#/properties/ghcData/properties/classRooms/items/properties/capacity")           |
-| [frameTemplate](#frametemplate) | Merged    | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-classroms-classrom-properties-frametemplate.md "engineInputGHCSchema#/properties/ghcData/properties/classRooms/items/properties/frameTemplate") |
-| [refBuilding](#refbuilding)     | `string`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-classroms-classrom-properties-refbuilding.md "engineInputGHCSchema#/properties/ghcData/properties/classRooms/items/properties/refBuilding")     |
-| [fullDay](#fullday)             | `boolean` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-classroms-classrom-properties-fullday.md "engineInputGHCSchema#/properties/ghcData/properties/classRooms/items/properties/fullDay")             |
+| Property                        | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                   |
+| :------------------------------ | --------- | -------- | -------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [id](#id)                       | `string`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-classroms-classrom-properties-id.md "engineInputGHCSchema#/properties/ghcData/properties/classRooms/items/properties/id")                           |
+| [capacity](#capacity)           | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-classroms-classrom-properties-capacity.md "engineInputGHCSchema#/properties/ghcData/properties/classRooms/items/properties/capacity")               |
+| [frameTemplate](#frametemplate) | `array`   | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-classroms-classrom-properties-classroomtemplate.md "engineInputGHCSchema#/properties/ghcData/properties/classRooms/items/properties/frameTemplate") |
+| [refBuilding](#refbuilding)     | `string`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-classroms-classrom-properties-refbuilding.md "engineInputGHCSchema#/properties/ghcData/properties/classRooms/items/properties/refBuilding")         |
+| [fullDay](#fullday)             | `boolean` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-classroms-classrom-properties-fullday.md "engineInputGHCSchema#/properties/ghcData/properties/classRooms/items/properties/fullDay")                 |
 
 ## id
 
@@ -59,24 +59,19 @@ Maximum students number who the classroom can accommodate.
 
 ## frameTemplate
 
-
+Classroom template with assignment preferences to section of the frames.
 
 
 `frameTemplate`
 
 -   is optional
--   Type: merged type ([Details](ghc-properties-ghcdata-properties-classroms-classrom-properties-frametemplate.md))
+-   Type: `object[]` ([ClassRoomSectionPreference](ghc-properties-ghcdata-properties-classroms-classrom-properties-classroomtemplate-classroomsectionpreference.md))
 -   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-classroms-classrom-properties-frametemplate.md "engineInputGHCSchema#/properties/ghcData/properties/classRooms/items/properties/frameTemplate")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-classroms-classrom-properties-classroomtemplate.md "engineInputGHCSchema#/properties/ghcData/properties/classRooms/items/properties/frameTemplate")
 
 ### frameTemplate Type
 
-merged type ([Details](ghc-properties-ghcdata-properties-classroms-classrom-properties-frametemplate.md))
-
-all of
-
--   [FrameTemplate](ghc-definitions-frametemplate.md "check type definition")
--   [Untitled undefined type in EngineInputGHCSchema](ghc-properties-ghcdata-properties-classroms-classrom-properties-frametemplate-allof-1.md "check type definition")
+`object[]` ([ClassRoomSectionPreference](ghc-properties-ghcdata-properties-classroms-classrom-properties-classroomtemplate-classroomsectionpreference.md))
 
 ## refBuilding
 

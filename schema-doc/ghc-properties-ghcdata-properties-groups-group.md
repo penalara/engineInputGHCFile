@@ -22,7 +22,7 @@ engineInputGHCSchema#/properties/ghcData/properties/groups/items
 | [id](#id)                                             | `string`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-id.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/id")                                             |
 | [refFrame](#refframe)                                 | `string`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-refframe.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/refFrame")                                 |
 | [freeAfternoons](#freeafternoons)                     | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-freeafternoons.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/freeAfternoons")                     |
-| [frameTemplate](#frametemplate)                       | Merged    | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-frametemplate.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/frameTemplate")                       |
+| [frameTemplate](#frametemplate)                       | `array`   | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-frametemplate.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/frameTemplate")                                                                 |
 | [numStudents](#numstudents)                           | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-numstudents.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/numStudents")                           |
 | [notGaps](#notgaps)                                   | `boolean` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-notgaps.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/notGaps")                                   |
 | [gapsAlwaysInNonPreferred](#gapsalwaysinnonpreferred) | `boolean` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-gapsalwaysinnonpreferred.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/gapsAlwaysInNonPreferred") |
@@ -77,24 +77,19 @@ Stric number of free afternoons for the group.
 
 ## frameTemplate
 
-
+Templates with assignment preferences to section of the frames.
 
 
 `frameTemplate`
 
 -   is optional
--   Type: merged type ([Details](ghc-properties-ghcdata-properties-groups-group-properties-frametemplate.md))
+-   Type: `object[]` ([SectionPreference](ghc-definitions-frametemplate-sectionpreference.md))
 -   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-frametemplate.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/frameTemplate")
+-   defined in: [EngineInputGHCSchema](ghc-definitions-frametemplate.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/frameTemplate")
 
 ### frameTemplate Type
 
-merged type ([Details](ghc-properties-ghcdata-properties-groups-group-properties-frametemplate.md))
-
-all of
-
--   [FrameTemplate](ghc-definitions-frametemplate.md "check type definition")
--   [Untitled undefined type in EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-frametemplate-allof-1.md "check type definition")
+`object[]` ([SectionPreference](ghc-definitions-frametemplate-sectionpreference.md))
 
 ## numStudents
 

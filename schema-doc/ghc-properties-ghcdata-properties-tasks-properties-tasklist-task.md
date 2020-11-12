@@ -17,10 +17,10 @@ Teacher's activity type.
 
 # Task Properties
 
-| Property                        | Type     | Required | Nullable       | Defined by                                                                                                                                                                                                                          |
-| :------------------------------ | -------- | -------- | -------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [id](#id)                       | `string` | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-tasks-properties-tasklist-task-properties-id.md "engineInputGHCSchema#/properties/ghcData/properties/tasks/properties/taskList/items/properties/id")                       |
-| [frameTemplate](#frametemplate) | Merged   | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-tasks-properties-tasklist-task-properties-frametemplate.md "engineInputGHCSchema#/properties/ghcData/properties/tasks/properties/taskList/items/properties/frameTemplate") |
+| Property                        | Type     | Required | Nullable       | Defined by                                                                                                                                                                                                    |
+| :------------------------------ | -------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [id](#id)                       | `string` | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-tasks-properties-tasklist-task-properties-id.md "engineInputGHCSchema#/properties/ghcData/properties/tasks/properties/taskList/items/properties/id") |
+| [frameTemplate](#frametemplate) | `array`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-frametemplate.md "engineInputGHCSchema#/properties/ghcData/properties/tasks/properties/taskList/items/properties/frameTemplate")                                       |
 
 ## id
 
@@ -40,21 +40,16 @@ Task's identifier name.
 
 ## frameTemplate
 
-
+Templates with assignment preferences to section of the frames.
 
 
 `frameTemplate`
 
 -   is optional
--   Type: merged type ([Details](ghc-properties-ghcdata-properties-tasks-properties-tasklist-task-properties-frametemplate.md))
+-   Type: `object[]` ([SectionPreference](ghc-definitions-frametemplate-sectionpreference.md))
 -   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-tasks-properties-tasklist-task-properties-frametemplate.md "engineInputGHCSchema#/properties/ghcData/properties/tasks/properties/taskList/items/properties/frameTemplate")
+-   defined in: [EngineInputGHCSchema](ghc-definitions-frametemplate.md "engineInputGHCSchema#/properties/ghcData/properties/tasks/properties/taskList/items/properties/frameTemplate")
 
 ### frameTemplate Type
 
-merged type ([Details](ghc-properties-ghcdata-properties-tasks-properties-tasklist-task-properties-frametemplate.md))
-
-all of
-
--   [FrameTemplate](ghc-definitions-frametemplate.md "check type definition")
--   [Untitled undefined type in EngineInputGHCSchema](ghc-properties-ghcdata-properties-tasks-properties-tasklist-task-properties-frametemplate-allof-1.md "check type definition")
+`object[]` ([SectionPreference](ghc-definitions-frametemplate-sectionpreference.md))
