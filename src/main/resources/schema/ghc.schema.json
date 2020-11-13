@@ -1249,7 +1249,7 @@
                             },
                             "sessionRelations": {
                                 "title": "SessionRelations",
-                                "description": "",
+                                "description": "It contains the information on relationships between this and other sessions. These conditions only can apply for teaching sessions with students.",
                                 "type": "object",
                                 "properties":{
                                     "simultaneusGroup": {
@@ -1259,7 +1259,7 @@
                                     },
                                     "differentDays": {
                                         "title": "DifferentDays",
-                                        "description": "",
+                                        "description": "Conditions about this and other session can not coincide in the same day.",
                                         "type": "object",
                                         "required":[
                                             "refSesions",
@@ -1571,6 +1571,143 @@
                             "refBuilding": {
                                 "description": "Identifier name of the building where is the service. It is used to know transfer time and number of transfers between buildings for teachers.",
                                 "type": "string"
+                            }
+                        }
+                    }
+                },
+                "optimizationWeights": {
+                    "title": "OptimizationWeights",
+                    "description": "Indicates the weights that the ponderable options will have for engine optimization process. The engine will apply default values for elements that did not specify.",
+                    "type": "object",
+                    "properties": {
+                        "timetableGaps": {
+                            "title": "TimetableGaps",
+                            "description": "Contains options related to timetable-gaps weights.",
+                            "type": "object",
+                            "properties": {
+                                "groupGaps": {
+                                    "description": "Indicates the weight that is assigned to the fact of leaving gaps in the group timetables.",
+                                    "type": "integer",
+                                    "default": 5
+                                },
+                                "teacherGaps": {
+                                    "description": "Indicates the weight that is assigned to the fact of leaving gaps in the teacher timetables.",
+                                    "type": "integer",
+                                    "default": 2
+                                }
+                            }
+                        },
+                        "nonPreferredPositions": {
+                            "title": "NonPreferredPositionsOptimization",
+                            "description": "Contains options related to allocation in non-preferred sections.",
+                            "type": "object",
+                            "properties": {
+                                "inGroups": {
+                                    "description": "Indicates the weight to be placed in a non-preferential section of a group.",
+                                    "type": "integer",
+                                    "default": 4
+                                },
+                                "inTeachers": {
+                                    "description": "Indicates the weight to be placed in a non-preferential section of a teacher.",
+                                    "type": "integer",
+                                    "default": 3
+                                },
+                                "inSubjectsAndTask": {
+                                    "description": "Indicates the weight to be placed in a non-preferential section of a subject or a task.",
+                                    "type": "integer",
+                                    "default": 1
+                                },
+                                "inSessions": {
+                                    "description": "Indicates the weight to be placed in a non-preferential section of a session.",
+                                    "type": "integer",
+                                    "default": 2
+                                }
+                            }
+                        },
+                        "sessions": {
+                            "title": "SessionsOptimization",
+                            "description": "Contains options related to optimizable conditions for all sessions.",
+                            "type": "object",
+                            "properties": {
+                                "nonPreferredClassRoom": {
+                                    "description": "Indicates the weight of if class units are configured with a preferred classroom and with a group of alternative classrooms, it will be punished with the weight to be placed in one of the alternative classrooms.",
+                                    "type": "integer",
+                                    "default": 3
+                                },
+                                "samePositionEveryPeriod": {
+                                    "description": "Indicates the weight of placing the entities of a session that belongs to several periods in the same positions or not (it affects the on call services too).",
+                                    "type": "integer",
+                                    "default": 1
+                                }
+                            }
+                        },
+                        "teachingSessions": {
+                            "title": "TeachingSessionsOptimization",
+                            "description": "Contains options related to optimizable conditions for teaching sessions with students.",
+                            "type": "object",
+                            "properties": {
+                                "consecutiveDays": {
+                                    "description": " Indicates the weight of the condition which it has been established in each case on the properties of each session, to be placed two or three class units, that is, all of them on consecutive days.",
+                                    "type": "integer",
+                                    "default": 3
+                                },
+                                "bordersTimetable": {
+                                    "description": "Indicates the weight of have assigned classes at the borders of the timetable.",
+                                    "type": "integer",
+                                    "default": 2
+                                },
+                                "afternoonOrAfterBreakClasses": {
+                                    "description": "Indicates the weight of penalization of have classes after the last break or in the afternoon.",
+                                    "type": "integer",
+                                    "default": 3
+                                },
+                                "sameHourSessionClasses": {
+                                    "description": "Indicates the weight of penalization of not fulfilling the preferred about assignment on consecutive days.",
+                                    "type": "integer",
+                                    "default": 3
+                                },
+                                "classRoomsChanges": {
+                                    "description": " Indicates the weight of all class units of each subject is not taught in the same classroom, and also to avoid changes in the classroom of groups. It means a change of classroom of a group only between consecutive intervals, not the ones divided by a break.",
+                                    "type": "integer",
+                                    "default": 3
+                                }
+                            }
+                        },
+                        "teachers": {
+                            "title": "TeachersOptimization",
+                            "description": "Contains options related to optimizable conditions for teachers.",
+                            "type": "object",
+                            "properties": {
+                                "teacherIncompatibities": {
+                                    "description": "Indicates the weight for optimizable teacher's incompatibilities.",
+                                    "type": "integer",
+                                    "default": 3
+                                },
+                                "uniformDailyDistribution": {
+                                    "description": "Indicates the weight of placing the sessions of a teacher in a non-uniform way during the week.",
+                                    "type": "integer",
+                                    "default": 3
+                                },
+                                "excessContinuousTeaching": {
+                                    "description": "Indicates the weight of placing more continuous sessions than declared in its settings.",
+                                    "type": "integer",
+                                    "default": 2
+                                },
+                                "excessPermanence": {
+                                    "description": "Indicates the weight of assign more daily or weekly permanence than declared in its settings (contando los huecos entre sesiones).",
+                                    "type": "integer",
+                                    "default": 2
+                                },
+                                "continuousSessionsWithGroup": {
+                                    "description": "Indicates the weight of having consecutive sessions taught to the same group.",
+                                    "type": "integer",
+                                    "default": 1
+                                },
+                                "onCallSectionsOnBorders": {
+                                    "description": "Indicates the weight of the teacher got assigned a on call service at the borders of his schedule, thus trying to fit them into the gaps of his class sessions.",
+                                    "type": "integer",
+                                    "default": 1
+                                }
                             }
                         }
                     }

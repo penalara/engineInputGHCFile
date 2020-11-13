@@ -200,7 +200,7 @@ Conditions about the position of the session units.
 
 ## sessionRelations
 
-
+It contains the information on relationships between this and other sessions. These conditions only can apply for teaching sessions with students.
 
 
 `sessionRelations`

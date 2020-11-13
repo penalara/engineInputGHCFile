@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionRelations
 ```
 
-
+It contains the information on relationships between this and other sessions. These conditions only can apply for teaching sessions with students.
 
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
@@ -46,7 +46,7 @@ Identifier of the simultaneous sessions group of the session. Indicates that the
 
 ## differentDays
 
-
+Conditions about this and other session can not coincide in the same day.
 
 
 `differentDays`
