@@ -17,10 +17,10 @@ Mornings off periods.
 
 # MorningsFreePartTimes Properties
 
-| Property                | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                                                                                                                                                                     |
-| :---------------------- | --------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [strict](#strict)       | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-freeparttime-properties-morningsfreeparttimes-properties-strict.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/freePartTimes/properties/mornings/properties/strict")       |
-| [preferred](#preferred) | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-freeparttime-properties-morningsfreeparttimes-properties-preferred.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/freePartTimes/properties/mornings/properties/preferred") |
+| Property                  | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                                                                                                                                                                       |
+| :------------------------ | --------- | -------- | -------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [strict](#strict)         | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-freeparttime-properties-morningsfreeparttimes-properties-strict.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/freePartTimes/properties/mornings/properties/strict")         |
+| [preferable](#preferable) | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-freeparttime-properties-morningsfreeparttimes-properties-preferable.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/freePartTimes/properties/mornings/properties/preferable") |
 
 ## strict
 
@@ -38,18 +38,18 @@ Strict number of mornings off periods.
 
 `integer`
 
-## preferred
+## preferable
 
-Preferred number of mornings off periods.
+Preferable number of mornings off periods.
 
 
-`preferred`
+`preferable`
 
 -   is optional
 -   Type: `integer`
 -   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-freeparttime-properties-morningsfreeparttimes-properties-preferred.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/freePartTimes/properties/mornings/properties/preferred")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-freeparttime-properties-morningsfreeparttimes-properties-preferable.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/freePartTimes/properties/mornings/properties/preferable")
 
-### preferred Type
+### preferable Type
 
 `integer`

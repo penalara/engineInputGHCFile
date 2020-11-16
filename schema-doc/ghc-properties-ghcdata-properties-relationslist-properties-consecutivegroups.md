@@ -1,16 +1,16 @@
-# ConsecutiveGroup Schema
+# ConsecutiveGroups Schema
 
 ```txt
-engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionRelations/properties/consecutiveGroup
+engineInputGHCSchema#/properties/ghcData/properties/relationsList/properties/consecutiveGroups
 ```
 
-Identifier of the consecutive sessions group of the session. Indicates that the sessions must be taught consecutive to the sessions of the group.
+List of groups of sessions that must be consecutive or on the same day.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
 | :------------------ | ---------- | -------------- | ----------------------- | :---------------- | --------------------- | ------------------- | ------------------------------------------------------------------ |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [ghc.schema.json\*](../out/ghc.schema.json "open original schema") |
 
-## consecutiveGroup Type
+## consecutiveGroups Type
 
-`integer` ([ConsecutiveGroup](ghc-properties-ghcdata-properties-sessions-session-properties-sessionrelations-properties-consecutivegroup.md))
+`object[]` ([ConsecutiveGroup](ghc-properties-ghcdata-properties-relationslist-properties-consecutivegroups-consecutivegroup.md))

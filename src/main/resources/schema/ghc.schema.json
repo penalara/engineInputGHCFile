@@ -367,7 +367,7 @@
                                                     "description": "Strict time in minutes of maximum weekly stay.",
                                                     "type": "integer"
                                                 },
-                                                "preferred": {
+                                                "preferable" : {
                                                     "description": "Ponderable Time in minutes of maximum weeekly stay.",
                                                     "type": "integer"
                                                 },
@@ -377,8 +377,8 @@
                                                 }
                                             }
                                         },                                        
-                                        "daylyStay": {
-                                            "title": "DaylyStay",
+                                        "dailyStay": {
+                                            "title": "DailyStay",
                                             "description": "Indicates the maximum teacher´s permanence time,  preferred  and strict , for the daily stay that the teacher can be in the school.",
                                             "type": "object",                                                                          
                                             "properties": {
@@ -386,7 +386,7 @@
                                                     "description": "Strict time in minutes of maximum daily stay.",
                                                     "type": "integer"
                                                 },
-                                                "preferred": {
+                                                "preferable": {
                                                     "description": "Ponderable Time in minutes of maximum daily stay.",
                                                     "type": "integer"
                                                 },
@@ -541,8 +541,8 @@
                                                             "type": "integer",
                                                             "default": 0
                                                         },
-                                                        "preferred": {
-                                                            "description": "Preferred number of mornings off periods.",
+                                                        "preferable": {
+                                                            "description": "Preferable number of mornings off periods.",
                                                             "type": "integer",
                                                             "default": 0
                                                         }
@@ -558,8 +558,8 @@
                                                             "type": "integer",
                                                             "default": 0
                                                         },
-                                                        "preferred": {
-                                                            "description": "Preferred number of afternoons off periods.",
+                                                        "preferable": {
+                                                            "description": "Preferable number of afternoons off periods.",
                                                             "type": "integer",
                                                             "default": 0
                                                         }
@@ -575,8 +575,8 @@
                                                             "type": "integer",
                                                             "default": 0
                                                         },
-                                                        "preferred": {
-                                                            "description": "Preferred number of mornings or afternoons off periods.",
+                                                        "preferable": {
+                                                            "description": "Preferable number of mornings or afternoons off periods.",
                                                             "type": "integer",
                                                             "default": 0
                                                         }
@@ -727,8 +727,8 @@
                                                 }
                                             }
                                         },
-                                        "daylyOcupation": {                                            
-                                            "title": "DaylyOcupation",
+                                        "dailyOcupation": {                                            
+                                            "title": "DailyOcupation",
                                             "description": "Maximum and minimum values for teaching or activity time for teachers. This object indicates the kind of condition (estrict or ponderable) and if it should be adjusted the automatic calcultation in minutes at engine.",
                                             "type": "object",                                                                    
                                             "properties": {
@@ -840,7 +840,22 @@
                                                     }
                                                 }
                                             }
-                                        }
+                                        },
+                                        "dailyBuildingTransfers": {
+                                            "title": "DailyBuildingTransfers",
+                                            "description": ".",
+                                            "type": "object",
+                                            "properties": {
+                                                "strict": {
+                                                    "description": "Strict maximum number of displacement per day.",
+                                                    "type": "integer"
+                                                },
+                                                "preferable": {
+                                                    "description": "Ponderable/preferable maximum number of displacement per day.",
+                                                    "type": "integer"
+                                                }
+                                            }
+                                        } 
                                     }
                                 }
                             }
@@ -1078,9 +1093,6 @@
                                 "title": "SessionClassRooms",
                                 "description": "Contains the information about classrooms for the sessions. At least one classroom  is required for teaching sessions.",
                                 "type": "object",
-                                "required":[
-                                    "classRoomsToAssign"
-                                ],
                                 "properties":{
                                     "classRoomsToAssign": {
                                         "title": "ClassRoomsToAssign",
@@ -1134,6 +1146,11 @@
                                         ],
                                         "default": "individual"
                                     }
+                                },
+                                "refBuilding": {
+                                    "description": "Identifier name of the building where is session. Only allowed in sessions without groups os students. It is used to know transfer time and number of transfers between buildings for teachers without specfy a classroom.",
+                                    "type": "string",
+                                    "$comment": "It is incompatible with the other properties of object 'sessionClassRooms'."
                                 }
                             },
                             "frameTemplate": {
@@ -1291,7 +1308,7 @@
                                         }
                                     },
                                     "consecutiveGroup": {
-                                        "title": "consecutiveGroup",
+                                        "title": "ConsecutiveGroup",
                                         "description": "Identifier of the consecutive sessions group of the session. Indicates that the sessions must be taught consecutive to the sessions of the group.",
                                         "type": "integer"
                                     },
@@ -1386,7 +1403,7 @@
                                                     "type":"array",
                                                     "minItems": 1,
                                                     "additionalItems": false,
-                                                    "items": {                                    
+                                                    "items": {
                                                         "title":"SessionRef",
                                                         "description":"Identifier of session.",
                                                         "type":"string"
@@ -1405,7 +1422,86 @@
                     }
                 },
                 "relationsList":{
-
+                    "title": "RelationsList",
+                    "description": "Contains relations list of simultaneous and consecutive sessions.",
+                    "type": "object",
+                    "properties": {
+                        "simultaneusGroups": {
+                            "title": "SimultaneusGroups",
+                            "description": "Contains relations list of simultaneous and consecutive sessions.",
+                            "type": "array",
+                            "additionalItems": false,
+                            "items": {
+                                "title":"SimultaneusGroup",
+                                "description":"Contains the references of a simultaneous sessions group.",                                        
+                                "type":"object",
+                                "required":[
+                                    "id",
+                                    "refSessions"
+                                ],
+                                "properties":{
+                                    "id": {
+                                        "description":"Identifier of simultaneous group.",                                        
+                                        "type": "integer"
+                                    },
+                                    "refSessions": {
+                                        "title":"SessionRefs",
+                                        "description":"List of sessions references which must be simultaneus.",
+                                        "type":"array",
+                                        "minItems": 1,
+                                        "additionalItems": false,
+                                        "items": {                                    
+                                            "title":"SessionRef",
+                                            "description":"Identifier of session.",
+                                            "type":"string"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "consecutiveGroups": {
+                            "title": "ConsecutiveGroups",
+                            "description": "List of groups of sessions that must be consecutive or on the same day.",
+                            "type": "array",
+                            "additionalItems": false,
+                            "items": {
+                                "title":"ConsecutiveGroup",
+                                "description":"Contains the references of a continuous sessions group.",                                        
+                                "type":"object",
+                                "required":[
+                                    "id",
+                                    "refSessions"
+                                ],
+                                "properties":{
+                                    "id": {
+                                        "description":"Identifier of continuous sessions group.",                                        
+                                        "type": "integer"
+                                    },
+                                    "refSessions": {
+                                        "title":"SessionRefs",
+                                        "description":"List of sessions references which must be consecutive.",
+                                        "type":"array",
+                                        "minItems": 1,
+                                        "additionalItems": false,
+                                        "items": {                                    
+                                            "title":"SessionRef",
+                                            "description":"Identifier of session.",
+                                            "type":"string"
+                                        }
+                                    },
+                                    "order": {
+                                        "description": "Indicates if the sessions must be followed, separated, or it does not matter as long as they are assigned on the same day.",
+                                        "enum": [
+                                            "disordered",
+                                            "followed",
+                                            "separated"
+                                        ],
+                                        "default": "disordered"
+                                    }
+                                }
+                            }
+                        }
+                    }
                 },
                 "onCallServices":{
                     "title": "OnCallServices",
@@ -1711,9 +1807,21 @@
                             }
                         }
                     }
-                }
+                },
+                "engineSettings": {
+                    "title": "EngineSettings",
+                    "description": "Custom parameters about engine configuration.",
+                    "type": "object",
+                    "properties": {
+                        "teacherBalance": {
+                            "description": "Indicates If the optimizer should balance the timetables of the different teachers, to avoid very bad schedules for a particular teacher.",
+                            "type": "boolean",
+                            "default": true
+                        }
+                    }
+                }  
             }
-        }        
+        }      
     },
     "definitions": {
         "frameTemplate": {
@@ -1810,7 +1918,7 @@
                     "description": "Maximum of sessions section's per day.",
                     "type": "number"
                 },
-                "minSessionsDayly": {
+                "minSessionsDaily": {
                     "description": "Indicates de preference about the session's classes of the minimum duration section.",
                     "enum": [
                         "allow",

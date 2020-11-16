@@ -155,12 +155,12 @@
                         "context":"whole",
                         "weeklyStay": {
                             "strict": 1860,
-                            "preferred": 1800,
+                            "preferable": 1800,
                             "countAroundMidday": true
                         },
                         "daylyStay": {
                             "strict": 360,
-                            "preferred": 300
+                            "preferable": 300
                         },
                         "avoidGapsBetweenSesions": false,
                         "continuousWeeks": false,
@@ -186,7 +186,7 @@
                                 "strict": 1
                             },
                             "afternoons": {
-                                "preferred": 1
+                                "preferable": 1
                             },
                             "indistinctly":{
                                 "strict": 2
@@ -371,6 +371,38 @@
                     }
                 } 
             }
-        ]
+        ],
+        "onCallServices": [
+            {
+               "id": "breakOnCall",
+               "refFrame": "A",
+               "refPeriods": {
+                "periods": [
+                    "PrimerCuatri"
+                ]
+               },
+               "refTask": "SUPERVISION",
+               "inBreak": true,
+               "teachersEachSection": {
+                    "amount": 1
+               },
+               "refTeachers": [
+                   {
+                    "teacherId": "David"
+                   }                   
+                ]
+            }
+        ],
+        "optimizationWeights": {
+            "timetableGaps": {
+                "groupGaps": 8
+            },
+            "nonPreferredPositions": {
+                "inTeachers": 5
+            }
+        },
+        "engineSettings": {
+            "teacherBalance": true
+        }
 	}
 }

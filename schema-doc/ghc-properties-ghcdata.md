@@ -17,21 +17,22 @@ Schema of the object that contains the timetable planning data.
 
 # GhcData Properties
 
-| Property                                    | Type          | Required | Nullable       | Defined by                                                                                                                                                 |
-| :------------------------------------------ | ------------- | -------- | -------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [periods](#periods)                         | `object`      | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-periods.md "engineInputGHCSchema#/properties/ghcData/properties/periods")                         |
-| [frames](#frames)                           | `array`       | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames.md "engineInputGHCSchema#/properties/ghcData/properties/frames")                           |
-| [buildings](#buildings)                     | `array`       | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-buildings.md "engineInputGHCSchema#/properties/ghcData/properties/buildings")                     |
-| [classRooms](#classrooms)                   | `array`       | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-classroms.md "engineInputGHCSchema#/properties/ghcData/properties/classRooms")                    |
-| [classRoomsSets](#classroomssets)           | `array`       | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-classroomssets.md "engineInputGHCSchema#/properties/ghcData/properties/classRoomsSets")           |
-| [tasks](#tasks)                             | `object`      | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-tasks.md "engineInputGHCSchema#/properties/ghcData/properties/tasks")                             |
-| [teachers](#teachers)                       | `array`       | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers.md "engineInputGHCSchema#/properties/ghcData/properties/teachers")                       |
-| [subjects](#subjects)                       | `array`       | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-subjects.md "engineInputGHCSchema#/properties/ghcData/properties/subjects")                       |
-| [groups](#groups)                           | `array`       | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups.md "engineInputGHCSchema#/properties/ghcData/properties/groups")                           |
-| [sessions](#sessions)                       | `array`       | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions.md "engineInputGHCSchema#/properties/ghcData/properties/sessions")                       |
-| [relationsList](#relationslist)             | Not specified | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-relationslist.md "engineInputGHCSchema#/properties/ghcData/properties/relationsList")             |
-| [onCallServices](#oncallservices)           | `array`       | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-oncallservices.md "engineInputGHCSchema#/properties/ghcData/properties/onCallServices")           |
-| [optimizationWeights](#optimizationweights) | `object`      | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-optimizationweights.md "engineInputGHCSchema#/properties/ghcData/properties/optimizationWeights") |
+| Property                                    | Type     | Required | Nullable       | Defined by                                                                                                                                                 |
+| :------------------------------------------ | -------- | -------- | -------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [periods](#periods)                         | `object` | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-periods.md "engineInputGHCSchema#/properties/ghcData/properties/periods")                         |
+| [frames](#frames)                           | `array`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames.md "engineInputGHCSchema#/properties/ghcData/properties/frames")                           |
+| [buildings](#buildings)                     | `array`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-buildings.md "engineInputGHCSchema#/properties/ghcData/properties/buildings")                     |
+| [classRooms](#classrooms)                   | `array`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-classroms.md "engineInputGHCSchema#/properties/ghcData/properties/classRooms")                    |
+| [classRoomsSets](#classroomssets)           | `array`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-classroomssets.md "engineInputGHCSchema#/properties/ghcData/properties/classRoomsSets")           |
+| [tasks](#tasks)                             | `object` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-tasks.md "engineInputGHCSchema#/properties/ghcData/properties/tasks")                             |
+| [teachers](#teachers)                       | `array`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers.md "engineInputGHCSchema#/properties/ghcData/properties/teachers")                       |
+| [subjects](#subjects)                       | `array`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-subjects.md "engineInputGHCSchema#/properties/ghcData/properties/subjects")                       |
+| [groups](#groups)                           | `array`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups.md "engineInputGHCSchema#/properties/ghcData/properties/groups")                           |
+| [sessions](#sessions)                       | `array`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions.md "engineInputGHCSchema#/properties/ghcData/properties/sessions")                       |
+| [relationsList](#relationslist)             | `object` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-relationslist.md "engineInputGHCSchema#/properties/ghcData/properties/relationsList")             |
+| [onCallServices](#oncallservices)           | `array`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-oncallservices.md "engineInputGHCSchema#/properties/ghcData/properties/onCallServices")           |
+| [optimizationWeights](#optimizationweights) | `object` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-optimizationweights.md "engineInputGHCSchema#/properties/ghcData/properties/optimizationWeights") |
+| [engineSettings](#enginesettings)           | `object` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-enginesettings.md "engineInputGHCSchema#/properties/ghcData/properties/engineSettings")           |
 
 ## periods
 
@@ -195,19 +196,19 @@ Teachers sessions. These can be with students groups, meetings with other teache
 
 ## relationsList
 
-
+Contains relations list of simultaneous and consecutive sessions.
 
 
 `relationsList`
 
 -   is optional
--   Type: unknown
+-   Type: `object` ([RelationsList](ghc-properties-ghcdata-properties-relationslist.md))
 -   cannot be null
 -   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-relationslist.md "engineInputGHCSchema#/properties/ghcData/properties/relationsList")
 
 ### relationsList Type
 
-unknown
+`object` ([RelationsList](ghc-properties-ghcdata-properties-relationslist.md))
 
 ## onCallServices
 
@@ -240,3 +241,19 @@ Indicates the weights that the ponderable options will have for engine optimizat
 ### optimizationWeights Type
 
 `object` ([OptimizationWeights](ghc-properties-ghcdata-properties-optimizationweights.md))
+
+## engineSettings
+
+Custom parameters about engine configuration.
+
+
+`engineSettings`
+
+-   is optional
+-   Type: `object` ([EngineSettings](ghc-properties-ghcdata-properties-enginesettings.md))
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-enginesettings.md "engineInputGHCSchema#/properties/ghcData/properties/engineSettings")
+
+### engineSettings Type
+
+`object` ([EngineSettings](ghc-properties-ghcdata-properties-enginesettings.md))

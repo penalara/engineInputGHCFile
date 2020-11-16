@@ -21,14 +21,15 @@ engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/se
 | :-------------------------------------------------- | --------- | -------- | -------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [context](#context)                                 | `string`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-context.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/context")                                 |
 | [weeklyStay](#weeklystay)                           | `object`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-weeklystay.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/weeklyStay")                           |
-| [daylyStay](#daylystay)                             | `object`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-daylystay.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/daylyStay")                             |
+| [dailyStay](#dailystay)                             | `object`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-dailystay.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/dailyStay")                             |
 | [avoidGapsBetweenSesions](#avoidgapsbetweensesions) | `boolean` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-avoidgapsbetweensesions.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/avoidGapsBetweenSesions") |
 | [maxContinuousTeaching](#maxcontinuousteaching)     | `object`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-maxcontinuousteaching.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/maxContinuousTeaching")     |
 | [avoidClassesAroundBreak](#avoidclassesaroundbreak) | `boolean` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-avoidclassesaroundbreak.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/avoidClassesAroundBreak") |
 | [freeTimes](#freetimes)                             | `object`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-freetimes.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/freeTimes")                             |
 | [freePartTimes](#freeparttimes)                     | `object`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-freeparttime.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/freePartTimes")                      |
 | [incompatibilities](#incompatibilities)             | `object`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-incompatibilities.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/incompatibilities")             |
-| [daylyOcupation](#daylyocupation)                   | `object`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-daylyocupation.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/daylyOcupation")                   |
+| [dailyOcupation](#dailyocupation)                   | `object`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-dailyocupation.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/dailyOcupation")                   |
+| [dailyBuildingTransfers](#dailybuildingtransfers)   | `object`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-dailybuildingtransfers.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/dailyBuildingTransfers")   |
 
 ## context
 
@@ -70,21 +71,21 @@ Indicates the maximum teacher´s permanence time,  preferred  and strict , for t
 
 `object` ([WeeklyStay](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-weeklystay.md))
 
-## daylyStay
+## dailyStay
 
 Indicates the maximum teacher´s permanence time,  preferred  and strict , for the daily stay that the teacher can be in the school.
 
 
-`daylyStay`
+`dailyStay`
 
 -   is optional
--   Type: `object` ([DaylyStay](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-daylystay.md))
+-   Type: `object` ([DailyStay](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-dailystay.md))
 -   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-daylystay.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/daylyStay")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-dailystay.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/dailyStay")
 
-### daylyStay Type
+### dailyStay Type
 
-`object` ([DaylyStay](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-daylystay.md))
+`object` ([DailyStay](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-dailystay.md))
 
 ## avoidGapsBetweenSesions
 
@@ -182,18 +183,34 @@ Contains teacher's incompatibilities about sessions assignation and rests times.
 
 `object` ([Incompatibilities](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-incompatibilities.md))
 
-## daylyOcupation
+## dailyOcupation
 
 Maximum and minimum values for teaching or activity time for teachers. This object indicates the kind of condition (estrict or ponderable) and if it should be adjusted the automatic calcultation in minutes at engine.
 
 
-`daylyOcupation`
+`dailyOcupation`
 
 -   is optional
--   Type: `object` ([DaylyOcupation](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-daylyocupation.md))
+-   Type: `object` ([DailyOcupation](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-dailyocupation.md))
 -   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-daylyocupation.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/daylyOcupation")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-dailyocupation.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/dailyOcupation")
 
-### daylyOcupation Type
+### dailyOcupation Type
 
-`object` ([DaylyOcupation](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-daylyocupation.md))
+`object` ([DailyOcupation](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-dailyocupation.md))
+
+## dailyBuildingTransfers
+
+.
+
+
+`dailyBuildingTransfers`
+
+-   is optional
+-   Type: `object` ([DailyBuildingTransfers](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-dailybuildingtransfers.md))
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-dailybuildingtransfers.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/dailyBuildingTransfers")
+
+### dailyBuildingTransfers Type
+
+`object` ([DailyBuildingTransfers](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-dailybuildingtransfers.md))

@@ -1,16 +1,16 @@
-# ConsecutiveGroup Schema
+# Untitled boolean in EngineInputGHCSchema Schema
 
 ```txt
-engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionRelations/properties/consecutiveGroup
+engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/dailyStay/properties/countAroundMidday
 ```
 
-Identifier of the consecutive sessions group of the session. Indicates that the sessions must be taught consecutive to the sessions of the group.
+Indicates, in case of a split day, that the unoccupied intervals between the morning and afternoon class units are counted.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
 | :------------------ | ---------- | -------------- | ----------------------- | :---------------- | --------------------- | ------------------- | ------------------------------------------------------------------ |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [ghc.schema.json\*](../out/ghc.schema.json "open original schema") |
 
-## consecutiveGroup Type
+## countAroundMidday Type
 
-`integer` ([ConsecutiveGroup](ghc-properties-ghcdata-properties-sessions-session-properties-sessionrelations-properties-consecutivegroup.md))
+`boolean`

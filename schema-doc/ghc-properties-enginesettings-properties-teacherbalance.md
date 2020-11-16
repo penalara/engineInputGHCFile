@@ -1,16 +1,24 @@
-# ConsecutiveGroup Schema
+# Untitled boolean in EngineInputGHCSchema Schema
 
 ```txt
-engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionRelations/properties/consecutiveGroup
+engineInputGHCSchema#/properties/engineSettings/properties/teacherBalance
 ```
 
-Identifier of the consecutive sessions group of the session. Indicates that the sessions must be taught consecutive to the sessions of the group.
+Indicates If the optimizer should balance the timetables of the different teachers, to avoid very bad schedules for a particular teacher.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
 | :------------------ | ---------- | -------------- | ----------------------- | :---------------- | --------------------- | ------------------- | ------------------------------------------------------------------ |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [ghc.schema.json\*](../out/ghc.schema.json "open original schema") |
 
-## consecutiveGroup Type
+## teacherBalance Type
 
-`integer` ([ConsecutiveGroup](ghc-properties-ghcdata-properties-sessions-session-properties-sessionrelations-properties-consecutivegroup.md))
+`boolean`
+
+## teacherBalance Default Value
+
+The default value is:
+
+```json
+true
+```
