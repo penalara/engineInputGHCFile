@@ -2,38 +2,42 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.penalara.ghc</groupId>
-	<artifactId>engineInputGHCFile</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+    <groupId>com.penalara.ghc</groupId>
+    <artifactId>engineInputGHCFile</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
-	<name>EngineInputGHCFile</name>
-	<description>Project with schema, examples, and Java POJO classes of Json file format to new PeñalaraGHC-Engine input.</description>
-	<organization>
-		<name>Peñalara Software S.L.</name>
-		<url>https://www.penalara.com</url>
-	</organization>
-	<licenses>
-		<!-- Definir licencia -->
-	</licenses>
+    <name>EngineInputGHCFile</name>
+    <description>Project with schema, examples, and Java POJO classes of Json file format to new PeñalaraGHC-Engine input.</description>
+    <organization>
+        <name>Peñalara Software S.L.</name>
+        <url>https://www.penalara.com</url>
+    </organization>
+    <licenses>
+		<license>
+			<name>GNU Lesser General Public License v2.1</name>
+			<url>https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html</url>
+		</license>
+    </licenses>
   
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>    
-		<java.version>11</java.version>
-		<maven.compiler.source>11</maven.compiler.source>
-		<maven.compiler.target>11</maven.compiler.target>
-	</properties>
-	
-	<dependencies>
-		<dependency>
-		    <groupId>com.fasterxml.jackson.core</groupId>
-		    <artifactId>jackson-annotations</artifactId>
-		    <version>2.11.3</version>
-		</dependency>
-	</dependencies>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>    
+        <java.version>11</java.version>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
+    
+    <dependencies>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>2.11.3</version>
+        </dependency>
+    </dependencies>
   
-	<build>
+    <build>
         <plugins>
+        	<!--POJO generation-->
             <plugin>
                 <groupId>org.jsonschema2pojo</groupId>
                 <artifactId>jsonschema2pojo-maven-plugin</artifactId>
@@ -45,6 +49,7 @@
                     <includeHashcodeAndEquals>false</includeHashcodeAndEquals>
                     <includeToString>false</includeToString>
                     <useTitleAsClassname>true</useTitleAsClassname>
+                    <useDoubleNumbers>false</useDoubleNumbers>
                     <!--<timeType></timeType>-->
                 </configuration>
                 <executions>
@@ -54,8 +59,8 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin>          
         </plugins>
-	</build>
-	
+    </build>
+    
 </project>
