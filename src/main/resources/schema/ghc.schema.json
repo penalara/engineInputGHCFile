@@ -127,9 +127,9 @@
                                             "type": "string",
                                             "format": "time"
                                         },
-                                        "tipo": {                                            
+                                        "type": {                                            
                                             "description": "Kind of section.",
-                                            "enum": ["lectivo", "recreo", "mediodia"]
+                                            "enum": ["teaching", "break", "midday"]
                                         },
                                         "allowed": {
                                             "description": "Indicates if the section is available to assign.",
