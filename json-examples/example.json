@@ -26,7 +26,7 @@
                     "index":0,
                     "entryTime": "08:30:00",
                     "exitTime": "09:20:00",
-                    "tipo":"lectivo",
+                    "type":"teaching",
                     "xkey":"1",
                     "allowed":true
                 },
@@ -35,7 +35,7 @@
                     "index":1,
                     "entryTime": "09:25:00",
                     "exitTime": "10:15:00",
-                    "tipo":"lectivo",
+                    "type":"teaching",
                     "xkey":"2",
                     "allowed":true
                 },
@@ -44,7 +44,7 @@
                     "index":2,
                     "entryTime": "10:15:00",
                     "exitTime": "10:30:00",
-                    "tipo":"recreo",
+                    "type":"break",
                     "xkey":"R1",
                     "allowed":true
                 }
