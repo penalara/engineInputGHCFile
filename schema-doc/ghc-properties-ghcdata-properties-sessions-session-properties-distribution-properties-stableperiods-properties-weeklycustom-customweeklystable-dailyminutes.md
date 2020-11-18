@@ -1,26 +1,16 @@
-# Untitled undefined type in EngineInputGHCSchema Schema
+# DailyMinutes Schema
 
 ```txt
-engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/daylyOcupation/properties/maximumOccupancy/properties/restriction
+engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/distribution/properties/stablePeriods/properties/weeklyCustom/items/items
 ```
 
-Kind of restriction. It can be 'strict', 'preferred' or according to the related rule of optimization.
+Indicates the minutes wich must have the session on the day.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
 | :------------------ | ---------- | -------------- | ----------------------- | :---------------- | --------------------- | ------------------- | ------------------------------------------------------------------ |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [ghc.schema.json\*](../out/ghc.schema.json "open original schema") |
 
-## restriction Type
+## items Type
 
-unknown
-
-## restriction Constraints
-
-**enum**: the value of this property must be equal to one of the following values:
-
-| Value               | Explanation |
-| :------------------ | ----------- |
-| `"strict"`          |             |
-| `"preferred"`       |             |
-| `"accordingToRule"` |             |
+`integer` ([DailyMinutes](ghc-properties-ghcdata-properties-sessions-session-properties-distribution-properties-stableperiods-properties-weeklycustom-customweeklystable-dailyminutes.md))

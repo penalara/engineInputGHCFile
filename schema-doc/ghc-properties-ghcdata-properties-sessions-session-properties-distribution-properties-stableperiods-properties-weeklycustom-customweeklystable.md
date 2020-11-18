@@ -13,4 +13,4 @@ Weekly distribution immovable.
 
 ## items Type
 
-`integer[]` ([DailySections](ghc-properties-ghcdata-properties-sessions-session-properties-distribution-properties-stableperiods-properties-weeklycustom-customweeklystable-dailysections.md))
+`integer[]` ([DailyMinutes](ghc-properties-ghcdata-properties-sessions-session-properties-distribution-properties-stableperiods-properties-weeklycustom-customweeklystable-dailyminutes.md))

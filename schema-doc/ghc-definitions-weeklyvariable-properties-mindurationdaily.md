@@ -1,24 +1,34 @@
-# Untitled boolean in EngineInputGHCSchema Schema
+# Untitled undefined type in EngineInputGHCSchema Schema
 
 ```txt
-engineInputGHCSchema#/properties/engineSettings/properties/teacherBalance
+engineInputGHCSchema#/definitions/weeklyVariable/properties/minDurationDaily
 ```
 
-Indicates If the optimizer should balance the timetables of the different teachers, to avoid very bad schedules for a particular teacher.
+Indicates de preference about the session's classes of the minimum duration.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
 | :------------------ | ---------- | -------------- | ----------------------- | :---------------- | --------------------- | ------------------- | ------------------------------------------------------------------ |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [ghc.schema.json\*](../out/ghc.schema.json "open original schema") |
 
-## teacherBalance Type
+## minDurationDaily Type
 
-`boolean`
+unknown
 
-## teacherBalance Default Value
+## minDurationDaily Constraints
+
+**enum**: the value of this property must be equal to one of the following values:
+
+| Value         | Explanation |
+| :------------ | ----------- |
+| `"allow"`     |             |
+| `"avoid"`     |             |
+| `"forbidden"` |             |
+
+## minDurationDaily Default Value
 
 The default value is:
 
 ```json
-true
+"allow"
 ```

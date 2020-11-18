@@ -13,4 +13,4 @@ Contains a single possible weekly distribution.
 
 ## weeklyStable Type
 
-`integer[]` ([DailySections](ghc-definitions-weeklystable-dailysections.md))
+`integer[]` ([DailyMinutes](ghc-definitions-weeklystable-dailyminutes.md))

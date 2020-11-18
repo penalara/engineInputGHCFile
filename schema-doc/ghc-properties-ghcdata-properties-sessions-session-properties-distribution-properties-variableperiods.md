@@ -38,13 +38,13 @@ Contains a single possible weekly distribution.
 `weeklyStable`
 
 -   is optional
--   Type: `integer[]` ([DailySections](ghc-definitions-weeklystable-dailysections.md))
+-   Type: `integer[]` ([DailyMinutes](ghc-definitions-weeklystable-dailyminutes.md))
 -   cannot be null
 -   defined in: [EngineInputGHCSchema](ghc-definitions-weeklystable.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/distribution/properties/variablePeriods/properties/weeklyStable")
 
 ### weeklyStable Type
 
-`integer[]` ([DailySections](ghc-definitions-weeklystable-dailysections.md))
+`integer[]` ([DailyMinutes](ghc-definitions-weeklystable-dailyminutes.md))
 
 ## weeklyVariable
 

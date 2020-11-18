@@ -1054,8 +1054,8 @@
                                                     "type": "array",
                                                     "additionalItems": false,
                                                     "items": {
-                                                        "title": "DailySections",
-                                                        "description": "Indicates the number of sections wich sould have the session in the day.",
+                                                        "title": "DailyMinutes",
+                                                        "description": "Indicates the minutes wich must have the session on the day.",
                                                         "type": "integer"   
                                                     }
                                                 }
@@ -1896,8 +1896,8 @@
             "type": "array",
             "additionalItems": false,
             "items": {
-                "title": "DailySections",
-                "description": "Indicates the number of sections wich sould have the session in the day.",
+                "title": "DailyMinutes",
+                "description": "Minutes that must have the session class on the day. Each value is a assignation day.",
                 "type": "integer"   
             }
         },   
@@ -1906,20 +1906,20 @@
             "description": "Define the distribution as a number of sections per week and a maximum range of sections per day.",
             "type":"object",
             "required":[
-                "numSessions",
-                "maxSessionsDaily"
+                "minutesAmount",
+                "maxMinutesDaily"
             ],
             "properties":{
-                "numSessions": {
-                    "description": "Total of session's sections.",
-                    "type": "number"
+                "minutesAmount": {
+                    "description": "Total of session's weekly minutes.",
+                    "type": "integer"
                 },
-                "maxSessionsDaily": {
-                    "description": "Maximum of sessions section's per day.",
-                    "type": "number"
+                "maxMinutesDaily": {
+                    "description": "Maximum of minutes per day.",
+                    "type": "integer"
                 },
-                "minSessionsDaily": {
-                    "description": "Indicates de preference about the session's classes of the minimum duration section.",
+                "minDurationDaily": {
+                    "description": "Indicates de preference about the session's classes of the minimum duration.",
                     "enum": [
                         "allow",
                         "avoid",
@@ -1928,7 +1928,7 @@
                     "default": "allow"
                 },
                 "avoidMaxDuration": {
-                    "description": "Indicates de preference about the session's classes of the minimum duration section.",
+                    "description": "Indicates de preference about the session's classes of the maximum duration.",
                     "type":"boolean",
                     "default": false
                 },

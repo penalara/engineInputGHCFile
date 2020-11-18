@@ -34,13 +34,13 @@ Contains a single possible weekly distribution.
 `weeklyStable`
 
 -   is optional
--   Type: `integer[]` ([DailySections](ghc-definitions-weeklystable-dailysections.md))
+-   Type: `integer[]` ([DailyMinutes](ghc-definitions-weeklystable-dailyminutes.md))
 -   cannot be null
 -   defined in: [EngineInputGHCSchema](ghc-definitions-weeklystable.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/distribution/properties/stablePeriods/properties/weeklyStable")
 
 ### weeklyStable Type
 
-`integer[]` ([DailySections](ghc-definitions-weeklystable-dailysections.md))
+`integer[]` ([DailyMinutes](ghc-definitions-weeklystable-dailyminutes.md))
 
 ## weeklyVariable
 
@@ -66,10 +66,10 @@ Contains an array of 'WeeklyStable' distributions.
 `weeklyCustom`
 
 -   is optional
--   Type: `integer[][]` ([DailySections](ghc-properties-ghcdata-properties-sessions-session-properties-distribution-properties-stableperiods-properties-weeklycustom-customweeklystable-dailysections.md))
+-   Type: `integer[][]` ([DailyMinutes](ghc-properties-ghcdata-properties-sessions-session-properties-distribution-properties-stableperiods-properties-weeklycustom-customweeklystable-dailyminutes.md))
 -   cannot be null
 -   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-distribution-properties-stableperiods-properties-weeklycustom.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/distribution/properties/stablePeriods/properties/weeklyCustom")
 
 ### weeklyCustom Type
 
-`integer[][]` ([DailySections](ghc-properties-ghcdata-properties-sessions-session-properties-distribution-properties-stableperiods-properties-weeklycustom-customweeklystable-dailysections.md))
+`integer[][]` ([DailyMinutes](ghc-properties-ghcdata-properties-sessions-session-properties-distribution-properties-stableperiods-properties-weeklycustom-customweeklystable-dailyminutes.md))

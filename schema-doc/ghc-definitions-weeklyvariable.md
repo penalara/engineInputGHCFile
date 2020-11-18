@@ -19,61 +19,61 @@ Define the distribution as a number of sections per week and a maximum range of 
 
 | Property                                  | Type          | Required | Nullable       | Defined by                                                                                                                                                               |
 | :---------------------------------------- | ------------- | -------- | -------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [numSessions](#numsessions)               | `number`      | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-weeklyvariable-properties-numsessions.md "engineInputGHCSchema#/definitions/weeklyVariable/properties/numSessions")               |
-| [maxSessionsDaily](#maxsessionsdaily)     | `number`      | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-weeklyvariable-properties-maxsessionsdaily.md "engineInputGHCSchema#/definitions/weeklyVariable/properties/maxSessionsDaily")     |
-| [minSessionsDaily](#minsessionsdaily)     | Not specified | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-weeklyvariable-properties-minsessionsdaily.md "engineInputGHCSchema#/definitions/weeklyVariable/properties/minSessionsDaily")     |
+| [minutesAmount](#minutesamount)           | `integer`     | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-weeklyvariable-properties-minutesamount.md "engineInputGHCSchema#/definitions/weeklyVariable/properties/minutesAmount")           |
+| [maxMinutesDaily](#maxminutesdaily)       | `integer`     | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-weeklyvariable-properties-maxminutesdaily.md "engineInputGHCSchema#/definitions/weeklyVariable/properties/maxMinutesDaily")       |
+| [minDurationDaily](#mindurationdaily)     | Not specified | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-weeklyvariable-properties-mindurationdaily.md "engineInputGHCSchema#/definitions/weeklyVariable/properties/minDurationDaily")     |
 | [avoidMaxDuration](#avoidmaxduration)     | `boolean`     | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-weeklyvariable-properties-avoidmaxduration.md "engineInputGHCSchema#/definitions/weeklyVariable/properties/avoidMaxDuration")     |
 | [allowDiscontinuity](#allowdiscontinuity) | `boolean`     | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-weeklyvariable-properties-allowdiscontinuity.md "engineInputGHCSchema#/definitions/weeklyVariable/properties/allowDiscontinuity") |
 
-## numSessions
+## minutesAmount
 
-Total of session's sections.
-
-
-`numSessions`
-
--   is required
--   Type: `number`
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-definitions-weeklyvariable-properties-numsessions.md "engineInputGHCSchema#/definitions/weeklyVariable/properties/numSessions")
-
-### numSessions Type
-
-`number`
-
-## maxSessionsDaily
-
-Maximum of sessions section's per day.
+Total of session's weekly minutes.
 
 
-`maxSessionsDaily`
+`minutesAmount`
 
 -   is required
--   Type: `number`
+-   Type: `integer`
 -   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-definitions-weeklyvariable-properties-maxsessionsdaily.md "engineInputGHCSchema#/definitions/weeklyVariable/properties/maxSessionsDaily")
+-   defined in: [EngineInputGHCSchema](ghc-definitions-weeklyvariable-properties-minutesamount.md "engineInputGHCSchema#/definitions/weeklyVariable/properties/minutesAmount")
 
-### maxSessionsDaily Type
+### minutesAmount Type
 
-`number`
+`integer`
 
-## minSessionsDaily
+## maxMinutesDaily
 
-Indicates de preference about the session's classes of the minimum duration section.
+Maximum of minutes per day.
 
 
-`minSessionsDaily`
+`maxMinutesDaily`
+
+-   is required
+-   Type: `integer`
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-definitions-weeklyvariable-properties-maxminutesdaily.md "engineInputGHCSchema#/definitions/weeklyVariable/properties/maxMinutesDaily")
+
+### maxMinutesDaily Type
+
+`integer`
+
+## minDurationDaily
+
+Indicates de preference about the session's classes of the minimum duration.
+
+
+`minDurationDaily`
 
 -   is optional
 -   Type: unknown
 -   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-definitions-weeklyvariable-properties-minsessionsdaily.md "engineInputGHCSchema#/definitions/weeklyVariable/properties/minSessionsDaily")
+-   defined in: [EngineInputGHCSchema](ghc-definitions-weeklyvariable-properties-mindurationdaily.md "engineInputGHCSchema#/definitions/weeklyVariable/properties/minDurationDaily")
 
-### minSessionsDaily Type
+### minDurationDaily Type
 
 unknown
 
-### minSessionsDaily Constraints
+### minDurationDaily Constraints
 
 **enum**: the value of this property must be equal to one of the following values:
 
@@ -83,7 +83,7 @@ unknown
 | `"avoid"`     |             |
 | `"forbidden"` |             |
 
-### minSessionsDaily Default Value
+### minDurationDaily Default Value
 
 The default value is:
 
@@ -93,7 +93,7 @@ The default value is:
 
 ## avoidMaxDuration
 
-Indicates de preference about the session's classes of the minimum duration section.
+Indicates de preference about the session's classes of the maximum duration.
 
 
 `avoidMaxDuration`

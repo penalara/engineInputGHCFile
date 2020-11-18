@@ -277,7 +277,7 @@
                         "SegundoCuatri"
                     ],
                     "stablePeriods": {
-                        "weeklyStable": [2,2,1]
+                        "weeklyStable": [120,120,60]
                     }
                 },
                 "sessionClassRooms": {
@@ -333,9 +333,9 @@
                     ],
                     "stablePeriods": {
                         "weeklyVariable": {
-                            "numSessions": 5.0,
-                            "maxSessionsDaily":2,
-                            "minSessionsDayly": "allow",
+                            "minutesAmount": 300,
+                            "maxMinutesDaily":120,
+                            "minDurationDaily": "allow",
                             "avoidMaxDuration": false,
                             "allowDiscontinuity": false
                         }
@@ -365,8 +365,8 @@
                     ],
                     "stablePeriods": {
                         "weeklyCustom": [
-                            [2,2,1],
-                            [2,1,1,1]
+                            [120,120,60],
+                            [120,60,60,60]
                         ]
                     }
                 } 
