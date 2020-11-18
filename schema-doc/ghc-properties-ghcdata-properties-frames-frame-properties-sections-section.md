@@ -23,7 +23,7 @@ engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sect
 | [index](#index)         | `integer`     | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames-frame-properties-sections-section-properties-index.md "engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/index")         |
 | [entryTime](#entrytime) | `string`      | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames-frame-properties-sections-section-properties-entrytime.md "engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/entryTime") |
 | [exitTime](#exittime)   | `string`      | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames-frame-properties-sections-section-properties-exittime.md "engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/exitTime")   |
-| [tipo](#tipo)           | Not specified | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames-frame-properties-sections-section-properties-tipo.md "engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/tipo")           |
+| [type](#type)           | Not specified | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames-frame-properties-sections-section-properties-type.md "engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/type")           |
 | [allowed](#allowed)     | `boolean`     | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames-frame-properties-sections-section-properties-allowed.md "engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/allowed")     |
 
 ## day
@@ -98,31 +98,31 @@ End time of the section.
 
 **time**: the string must be a time string, according to [RFC 3339, section 5.6](https://tools.ietf.org/html/rfc3339 "check the specification")
 
-## tipo
+## type
 
 Kind of section.
 
 
-`tipo`
+`type`
 
--   is required
+-   is optional
 -   Type: unknown
 -   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames-frame-properties-sections-section-properties-tipo.md "engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/tipo")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames-frame-properties-sections-section-properties-type.md "engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/type")
 
-### tipo Type
+### type Type
 
 unknown
 
-### tipo Constraints
+### type Constraints
 
 **enum**: the value of this property must be equal to one of the following values:
 
 | Value        | Explanation |
 | :----------- | ----------- |
-| `"lectivo"`  |             |
-| `"recreo"`   |             |
-| `"mediodia"` |             |
+| `"teaching"` |             |
+| `"break"`    |             |
+| `"midday"`   |             |
 
 ## allowed
 
