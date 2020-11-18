@@ -19,7 +19,7 @@ Schema of the object that contains the timetable planning data.
 
 | Property                                    | Type     | Required | Nullable       | Defined by                                                                                                                                                 |
 | :------------------------------------------ | -------- | -------- | -------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [periods](#periods)                         | `object` | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-periods.md "engineInputGHCSchema#/properties/ghcData/properties/periods")                         |
+| [periods](#periods)                         | `object` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-periods.md "engineInputGHCSchema#/properties/ghcData/properties/periods")                         |
 | [frames](#frames)                           | `array`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames.md "engineInputGHCSchema#/properties/ghcData/properties/frames")                           |
 | [buildings](#buildings)                     | `array`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-buildings.md "engineInputGHCSchema#/properties/ghcData/properties/buildings")                     |
 | [classRooms](#classrooms)                   | `array`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-classroms.md "engineInputGHCSchema#/properties/ghcData/properties/classRooms")                    |
@@ -39,9 +39,12 @@ Schema of the object that contains the timetable planning data.
 Weeks or periods with different assignments which contains the timetable.
 
 
+> If there is not periods defined the engine will created unique period with all days of the timetable.
+>
+
 `periods`
 
--   is required
+-   is optional
 -   Type: `object` ([Periods](ghc-properties-ghcdata-properties-periods.md))
 -   cannot be null
 -   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-periods.md "engineInputGHCSchema#/properties/ghcData/properties/periods")

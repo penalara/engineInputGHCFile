@@ -26,7 +26,6 @@
             "description": "Schema of the object that contains the timetable planning data.",
             "type": "object",
             "required": [
-                "periods",
                 "frames",
                 "buildings",
                 "classRooms",
@@ -39,6 +38,7 @@
                 "periods": {
                     "title": "Periods",
                     "description": "Weeks or periods with different assignments which contains the timetable.",
+                    "$comment": "If there is not periods defined the engine will created unique period with all days of the timetable.",
                     "type": "object",
                     "required": [
                         "periodsList"

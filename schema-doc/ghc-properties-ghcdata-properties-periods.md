@@ -7,6 +7,9 @@ engineInputGHCSchema#/properties/ghcData/properties/periods
 Weeks or periods with different assignments which contains the timetable.
 
 
+> If there is not periods defined the engine will created unique period with all days of the timetable.
+>
+
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
 | :------------------ | ---------- | -------------- | ------------ | :---------------- | --------------------- | ------------------- | ------------------------------------------------------------------ |
 | Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [ghc.schema.json\*](../out/ghc.schema.json "open original schema") |
