@@ -8,46 +8,363 @@
                 {
                     "id": "PrimerCuatri",
                     "lastDay": 4
-                },
-                {
-                    "id": "SegundoCuatri",
-                    "lastDay": 9
                 }
             ]
         },
 	    "frames": [
             {
-            "id":"A",
-            "name":"Marco A",
-            "xkey":"a",
-            "sections":[
-                {
-                    "day":0,
-                    "index":0,
-                    "entryTime": "08:30:00",
-                    "exitTime": "09:20:00",
-                    "type":"teaching",
-                    "xkey":"1",
-                    "allowed":true
-                },
-                {
-                    "day":0,
-                    "index":1,
-                    "entryTime": "09:25:00",
-                    "exitTime": "10:15:00",
-                    "type":"teaching",
-                    "xkey":"2",
-                    "allowed":true
-                },
-                {
-                    "day":0,
-                    "index":2,
-                    "entryTime": "10:15:00",
-                    "exitTime": "10:30:00",
-                    "type":"break",
-                    "xkey":"R1",
-                    "allowed":true
-                }
+                "id":"Marco A",
+                "sections":[
+                    {
+                        "day":0,
+                        "index":0,
+                        "entryTime": "08:30:00",
+                        "exitTime": "09:20:00",
+                        "type":"teaching"
+                    },
+                    {
+                        "day":0,
+                        "index":1,
+                        "entryTime": "09:25:00",
+                        "exitTime": "10:15:00",
+                        "type":"teaching"
+                    },
+                    {
+                        "day":0,
+                        "index":2,
+                        "entryTime": "10:15:00",
+                        "exitTime": "10:30:00",
+                        "type":"break"
+                    },
+                    {
+                        "day":0,
+                        "index":3,
+                        "entryTime": "10:30:00",
+                        "exitTime": "11:20:00",
+                        "type":"teaching"
+                    },
+                    {
+                        "day":0,
+                        "index":4,
+                        "entryTime": "11:25:00",
+                        "exitTime": "12:15:00",
+                        "type":"teaching"
+                    },
+                    {
+                        "day":0,
+                        "index":5,
+                        "entryTime": "12:15:00",
+                        "exitTime": "12:30:00",
+                        "type":"break"
+                    },
+                    {
+                        "day":0,
+                        "index":6,
+                        "entryTime": "12:30:00",
+                        "exitTime": "13:20:00",
+                        "type":"teaching"
+                    },
+                    {
+                        "day":0,
+                        "index":7,
+                        "entryTime": "13:25:00",
+                        "exitTime": "14:15:00",
+                        "type":"teaching"
+                    },
+                    {
+                        "day":0,
+                        "index":8,
+                        "entryTime": "14:15:00",
+                        "exitTime": "14:45:00",
+                        "type":"midday"
+                    },
+                    {
+                        "day":0,
+                        "index":9,
+                        "entryTime": "14:45:00",
+                        "exitTime": "15:10:00",
+                        "type":"teaching"
+                    },
+                    {
+                        "day":1,
+                        "index":0,
+                        "entryTime": "08:30:00",
+                        "exitTime": "09:20:00",
+                        "type":"teaching"
+                    },
+                    {
+                        "day":1,
+                        "index":1,
+                        "entryTime": "09:25:00",
+                        "exitTime": "10:15:00",
+                        "type":"teaching"
+                    },
+                    {
+                        "day":1,
+                        "index":2,
+                        "entryTime": "10:15:00",
+                        "exitTime": "10:30:00",
+                        "type":"break"
+                    },
+                    {
+                        "day":1,
+                        "index":3,
+                        "entryTime": "10:30:00",
+                        "exitTime": "11:20:00",
+                        "type":"teaching"
+                    },
+                    {
+                        "day":1,
+                        "index":4,
+                        "entryTime": "11:25:00",
+                        "exitTime": "12:15:00",
+                        "type":"teaching"
+                    },
+                    {
+                        "day":1,
+                        "index":5,
+                        "entryTime": "12:15:00",
+                        "exitTime": "12:30:00",
+                        "type":"break"
+                    },
+                    {
+                        "day":1,
+                        "index":6,
+                        "entryTime": "12:30:00",
+                        "exitTime": "13:20:00",
+                        "type":"teaching"
+                    },
+                    {
+                        "day":1,
+                        "index":7,
+                        "entryTime": "13:25:00",
+                        "exitTime": "14:15:00",
+                        "type":"teaching"
+                    },
+                    {
+                        "day":1,
+                        "index":8,
+                        "entryTime": "14:15:00",
+                        "exitTime": "14:45:00",
+                        "type":"midday"
+                    },
+                    {
+                        "day":1,
+                        "index":9,
+                        "entryTime": "14:45:00",
+                        "exitTime": "15:10:00",
+                        "type":"teaching"
+                    },
+                    {
+                        "day":2,
+                        "index":0,
+                        "entryTime": "08:30:00",
+                        "exitTime": "09:20:00",
+                        "type":"teaching"
+                    },
+                    {
+                        "day":2,
+                        "index":1,
+                        "entryTime": "09:25:00",
+                        "exitTime": "10:15:00",
+                        "type":"teaching"
+                    },
+                    {
+                        "day":2,
+                        "index":2,
+                        "entryTime": "10:15:00",
+                        "exitTime": "10:30:00",
+                        "type":"break"
+                    },
+                    {
+                        "day":2,
+                        "index":3,
+                        "entryTime": "10:30:00",
+                        "exitTime": "11:20:00",
+                        "type":"teaching"
+                    },
+                    {
+                        "day":2,
+                        "index":4,
+                        "entryTime": "11:25:00",
+                        "exitTime": "12:15:00",
+                        "type":"teaching"
+                    },
+                    {
+                        "day":2,
+                        "index":5,
+                        "entryTime": "12:15:00",
+                        "exitTime": "12:30:00",
+                        "type":"break"
+                    },
+                    {
+                        "day":2,
+                        "index":6,
+                        "entryTime": "12:30:00",
+                        "exitTime": "13:20:00",
+                        "type":"teaching"
+                    },
+                    {
+                        "day":2,
+                        "index":7,
+                        "entryTime": "13:25:00",
+                        "exitTime": "14:15:00",
+                        "type":"teaching"
+                    },
+                    {
+                        "day":2,
+                        "index":8,
+                        "entryTime": "14:15:00",
+                        "exitTime": "14:45:00",
+                        "type":"midday"
+                    },
+                    {
+                        "day":2,
+                        "index":9,
+                        "entryTime": "14:45:00",
+                        "exitTime": "15:10:00",
+                        "type":"teaching"
+                    },
+                    {
+                        "day":3,
+                        "index":0,
+                        "entryTime": "08:30:00",
+                        "exitTime": "09:20:00",
+                        "type":"teaching"
+                    },
+                    {
+                        "day":3,
+                        "index":1,
+                        "entryTime": "09:25:00",
+                        "exitTime": "10:15:00",
+                        "type":"teaching"
+                    },
+                    {
+                        "day":3,
+                        "index":2,
+                        "entryTime": "10:15:00",
+                        "exitTime": "10:30:00",
+                        "type":"break"
+                    },
+                    {
+                        "day":3,
+                        "index":3,
+                        "entryTime": "10:30:00",
+                        "exitTime": "11:20:00",
+                        "type":"teaching"
+                    },
+                    {
+                        "day":3,
+                        "index":4,
+                        "entryTime": "11:25:00",
+                        "exitTime": "12:15:00",
+                        "type":"teaching"
+                    },
+                    {
+                        "day":3,
+                        "index":5,
+                        "entryTime": "12:15:00",
+                        "exitTime": "12:30:00",
+                        "type":"break"
+                    },
+                    {
+                        "day":3,
+                        "index":6,
+                        "entryTime": "12:30:00",
+                        "exitTime": "13:20:00",
+                        "type":"teaching"
+                    },
+                    {
+                        "day":3,
+                        "index":7,
+                        "entryTime": "13:25:00",
+                        "exitTime": "14:15:00",
+                        "type":"teaching"
+                    },
+                    {
+                        "day":3,
+                        "index":8,
+                        "entryTime": "14:15:00",
+                        "exitTime": "14:45:00",
+                        "type":"midday"
+                    },
+                    {
+                        "day":3,
+                        "index":9,
+                        "entryTime": "14:45:00",
+                        "exitTime": "15:10:00",
+                        "type":"teaching"
+                    },
+                    {
+                        "day":4,
+                        "index":0,
+                        "entryTime": "08:30:00",
+                        "exitTime": "09:20:00",
+                        "type":"teaching"
+                    },
+                    {
+                        "day":4,
+                        "index":1,
+                        "entryTime": "09:25:00",
+                        "exitTime": "10:15:00",
+                        "type":"teaching"
+                    },
+                    {
+                        "day":4,
+                        "index":2,
+                        "entryTime": "10:15:00",
+                        "exitTime": "10:30:00",
+                        "type":"break"
+                    },
+                    {
+                        "day":4,
+                        "index":3,
+                        "entryTime": "10:30:00",
+                        "exitTime": "11:20:00",
+                        "type":"teaching"
+                    },
+                    {
+                        "day":4,
+                        "index":4,
+                        "entryTime": "11:25:00",
+                        "exitTime": "12:15:00",
+                        "type":"teaching"
+                    },
+                    {
+                        "day":4,
+                        "index":5,
+                        "entryTime": "12:15:00",
+                        "exitTime": "12:30:00",
+                        "type":"break"
+                    },
+                    {
+                        "day":4,
+                        "index":6,
+                        "entryTime": "12:30:00",
+                        "exitTime": "13:20:00",
+                        "type":"teaching"
+                    },
+                    {
+                        "day":4,
+                        "index":7,
+                        "entryTime": "13:25:00",
+                        "exitTime": "14:15:00",
+                        "type":"teaching"
+                    },
+                    {
+                        "day":4,
+                        "index":8,
+                        "entryTime": "14:15:00",
+                        "exitTime": "14:45:00",
+                        "type":"midday"
+                    },
+                    {
+                        "day":4,
+                        "index":9,
+                        "entryTime": "14:45:00",
+                        "exitTime": "15:10:00",
+                        "type":"teaching"
+                    }
                 ]
             }
         ],
@@ -115,28 +432,52 @@
                 "anonymousRooms":1
             }
         ],
-        "tasks": {
-            "taskList": [
-                {
-                    "id": "LEC"
-                },
-                {
-                    "id": "COORD"
-                },
-                {
-                    "id": "SUPPORT"
-                },
-                {
-                    "id": "SUPERVISION"
-                }
-            ],
-            "byDefault": {
-                "teachingDefault":"LEC",
-                "meetingsDefault": "COORDINATION",
-                "complementaryDefault":"SUPPORT",
-                "onCallHoursDefault": "SUPERVISION"                
+        "tasks": [
+            {
+                "id": "LEC",
+                "frameTemplate":[
+                    {
+                        "day":0,
+                        "index":9,
+                        "frame":"A",
+                        "type":"banned"
+                    },
+                    {
+                        "day":1,
+                        "index":9,
+                        "frame":"A",
+                        "type":"banned"
+                    },
+                    {
+                        "day":2,
+                        "index":9,
+                        "frame":"A",
+                        "type":"banned"
+                    },
+                    {
+                        "day":3,
+                        "index":9,
+                        "frame":"A",
+                        "type":"banned"
+                    },
+                    {
+                        "day":4,
+                        "index":9,
+                        "frame":"A",
+                        "type":"banned"
+                    }
+                ]
+            },
+            {
+                "id": "COORD"
+            },
+            {
+                "id": "SUPPORT"
+            },
+            {
+                "id": "SUPERVISION"
             }
-        },
+        ],
         "teachers":[
             {
                 "id": "DavH",
@@ -277,7 +618,7 @@
                         "SegundoCuatri"
                     ],
                     "stablePeriods": {
-                        "weeklyStable": [120,120,60]
+                        "weeklyStable": [100,100,50]
                     }
                 },
                 "sessionClassRooms": {
@@ -333,8 +674,8 @@
                     ],
                     "stablePeriods": {
                         "weeklyVariable": {
-                            "minutesAmount": 300,
-                            "maxMinutesDaily":120,
+                            "minutesAmount": 250,
+                            "maxMinutesDaily":100,
                             "minDurationDaily": "allow",
                             "avoidMaxDuration": false,
                             "allowDiscontinuity": false
@@ -365,8 +706,8 @@
                     ],
                     "stablePeriods": {
                         "weeklyCustom": [
-                            [120,120,60],
-                            [120,60,60,60]
+                            [100,100,50],
+                            [100,50,50,50]
                         ]
                     }
                 } 

@@ -24,7 +24,7 @@ Schema of the object that contains the timetable planning data.
 | [buildings](#buildings)                     | `array`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-buildings.md "engineInputGHCSchema#/properties/ghcData/properties/buildings")                     |
 | [classRooms](#classrooms)                   | `array`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-classroms.md "engineInputGHCSchema#/properties/ghcData/properties/classRooms")                    |
 | [classRoomsSets](#classroomssets)           | `array`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-classroomssets.md "engineInputGHCSchema#/properties/ghcData/properties/classRoomsSets")           |
-| [tasks](#tasks)                             | `object` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-tasks.md "engineInputGHCSchema#/properties/ghcData/properties/tasks")                             |
+| [tasks](#tasks)                             | `array`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-tasks.md "engineInputGHCSchema#/properties/ghcData/properties/tasks")                             |
 | [teachers](#teachers)                       | `array`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers.md "engineInputGHCSchema#/properties/ghcData/properties/teachers")                       |
 | [subjects](#subjects)                       | `array`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-subjects.md "engineInputGHCSchema#/properties/ghcData/properties/subjects")                       |
 | [groups](#groups)                           | `array`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups.md "engineInputGHCSchema#/properties/ghcData/properties/groups")                           |
@@ -125,13 +125,13 @@ Types of tasks or activities for the teachers.
 `tasks`
 
 -   is optional
--   Type: `object` ([Tasks](ghc-properties-ghcdata-properties-tasks.md))
+-   Type: `object[]` ([Task](ghc-properties-ghcdata-properties-tasks-task.md))
 -   cannot be null
 -   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-tasks.md "engineInputGHCSchema#/properties/ghcData/properties/tasks")
 
 ### tasks Type
 
-`object` ([Tasks](ghc-properties-ghcdata-properties-tasks.md))
+`object[]` ([Task](ghc-properties-ghcdata-properties-tasks-task.md))
 
 ## teachers
 

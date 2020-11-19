@@ -1,16 +1,16 @@
-# Tasks Schema
+# Untitled string in EngineInputGHCSchema Schema
 
 ```txt
-engineInputGHCSchema#/properties/ghcData/properties/tasks
+engineInputGHCSchema#/properties/ghcData/properties/tasks/items/properties/id
 ```
 
-Types of tasks or activities for the teachers.
+Task's identifier name.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
 | :------------------ | ---------- | -------------- | ----------------------- | :---------------- | --------------------- | ------------------- | ------------------------------------------------------------------ |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [ghc.schema.json\*](../out/ghc.schema.json "open original schema") |
 
-## tasks Type
+## id Type
 
-`object[]` ([Task](ghc-properties-ghcdata-properties-tasks-task.md))
+`string`

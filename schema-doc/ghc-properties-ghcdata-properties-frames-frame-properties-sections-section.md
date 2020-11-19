@@ -23,7 +23,7 @@ engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sect
 | [index](#index)         | `integer`     | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames-frame-properties-sections-section-properties-index.md "engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/index")         |
 | [entryTime](#entrytime) | `string`      | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames-frame-properties-sections-section-properties-entrytime.md "engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/entryTime") |
 | [exitTime](#exittime)   | `string`      | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames-frame-properties-sections-section-properties-exittime.md "engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/exitTime")   |
-| [type](#type)           | Not specified | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames-frame-properties-sections-section-properties-type.md "engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/type")           |
+| [type](#type)           | Not specified | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames-frame-properties-sections-section-properties-type.md "engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/type")           |
 | [allowed](#allowed)     | `boolean`     | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames-frame-properties-sections-section-properties-allowed.md "engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/allowed")     |
 
 ## day
@@ -105,7 +105,7 @@ Kind of section.
 
 `type`
 
--   is optional
+-   is required
 -   Type: unknown
 -   cannot be null
 -   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames-frame-properties-sections-section-properties-type.md "engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/type")

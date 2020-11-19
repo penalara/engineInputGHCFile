@@ -104,7 +104,7 @@
                                         "index",
                                         "entryTime",
                                         "exitTime",
-                                        "tipo"
+                                        "type"
                                     ],
                                     "title": "Section",
                                     "type": "object",
@@ -258,63 +258,23 @@
                 "tasks":{
                     "title": "Tasks",
                     "description": "Types of tasks or activities for the teachers.",
-                    "type": "object",
-                    "required":[
-                        "taskList",
-                        "byDefault"
-                    ],
-                    "properties":{
-                        "taskList": {
-                            "title": "TaskList",
-                            "description": "List of the task types for the teachers.",
-                            "type": "array",
-                            "additionalItems": false,
-                            "items": {
-                                "title": "Task",
-                                "description": "Teacher's activity type.",
-                                "type": "object",
-                                "required":[
-                                    "id"
-                                ],
-                                "properties":{
-                                    "id": {
-                                        "description": "Task's identifier name.",
-                                        "type": "string"
-                                    },
-                                    "frameTemplate":{
-                                        "$ref": "#/definitions/frameTemplate"
-                                    }
-                                }
+                    "type": "array",
+                    "additionalItems": false,
+                    "items": {
+                        "title": "Task",
+                        "description": "Teacher's activity type.",
+                        "type": "object",
+                        "required":[
+                            "id"
+                        ],
+                        "properties":{
+                            "id": {
+                                "description": "Task's identifier name.",
+                                "type": "string"
+                            },
+                            "frameTemplate":{
+                                "$ref": "#/definitions/frameTemplate"
                             }
-                        },
-                        "byDefault": {
-                            "title": "ByDefault",
-                            "description": "Default type of task for all types of sessions.",
-                            "type": "object",
-                            "required":[
-                                "teachingDefault",
-                                "meetingsDefault",
-                                "complementaryDefault",
-                                "onCallHoursDefault"
-                            ],
-                            "properties":{
-                                "teachingDefault": {
-                                    "description": " Default task for teaching sessions.",
-                                    "type": "string"
-                                },
-                                "meetingsDefault": {
-                                    "description": "Default task for meeting sessions.",
-                                    "type": "string"
-                                },
-                                "complementaryDefault": {
-                                    "description": "Default task for complementary sessions.",
-                                    "type": "string"
-                                },
-                                "onCallHoursDefault": {
-                                    "description": "Default task for on call sessions.",
-                                    "type": "string"
-                                }
-                            }                            
                         }
                     }
                 },
