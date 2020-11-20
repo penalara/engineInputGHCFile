@@ -29,6 +29,7 @@ engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/se
 | [freePartTimes](#freeparttimes)                     | `object`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-freeparttime.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/freePartTimes")                      |
 | [incompatibilities](#incompatibilities)             | `object`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-incompatibilities.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/incompatibilities")             |
 | [dailyOcupation](#dailyocupation)                   | `object`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-dailyocupation.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/dailyOcupation")                   |
+| [middayReference](#middayreference)                 | `object`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-middayreference.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/middayReference")                 |
 | [dailyBuildingTransfers](#dailybuildingtransfers)   | `object`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-dailybuildingtransfers.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/dailyBuildingTransfers")   |
 
 ## context
@@ -198,6 +199,22 @@ Maximum and minimum values for teaching or activity time for teachers. This obje
 ### dailyOcupation Type
 
 `object` ([DailyOcupation](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-dailyocupation.md))
+
+## middayReference
+
+.
+
+
+`middayReference`
+
+-   is optional
+-   Type: `object` ([MiddayReference](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-middayreference.md))
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-middayreference.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings/items/properties/middayReference")
+
+### middayReference Type
+
+`object` ([MiddayReference](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting-properties-middayreference.md))
 
 ## dailyBuildingTransfers
 

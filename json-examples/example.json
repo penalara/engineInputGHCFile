@@ -547,6 +547,9 @@
                             "minimumTeaching": {
                                 "restriction": "strict"
                             }
+                        },
+                        "middayReference": {
+                            "strict": false
                         }
                     },
                     {
