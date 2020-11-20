@@ -1,0 +1,63 @@
+# MiddayReference Schema
+
+```txt
+engineInputGHCSchema#/definitions/middayReference
+```
+
+.
+
+
+| Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
+| :------------------ | ---------- | -------------- | ------------ | :---------------- | --------------------- | ------------------- | ------------------------------------------------------------------ |
+| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [ghc.schema.json\*](../out/ghc.schema.json "open original schema") |
+
+## middayReference Type
+
+`object` ([MiddayReference](ghc-definitions-middayreference.md))
+
+# MiddayReference Properties
+
+| Property              | Type      | Required | Nullable       | Defined by                                                                                                                                             |
+| :-------------------- | --------- | -------- | -------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [refFrame](#refframe) | `string`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-middayreference-properties-refframe.md "engineInputGHCSchema#/definitions/middayReference/properties/refFrame") |
+| [strict](#strict)     | `boolean` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-middayreference-properties-strict.md "engineInputGHCSchema#/definitions/middayReference/properties/strict")     |
+
+## refFrame
+
+Identifier name of a frame where the teacher take the midday. If it is not not specified, the engine will take the midday of the frame with the highest allocation.
+
+
+`refFrame`
+
+-   is optional
+-   Type: `string`
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-definitions-middayreference-properties-refframe.md "engineInputGHCSchema#/definitions/middayReference/properties/refFrame")
+
+### refFrame Type
+
+`string`
+
+## strict
+
+Indicates if the teacher's midday break must be respected without placing their sessions in sections of other frames that overlap with their midday.
+
+
+`strict`
+
+-   is optional
+-   Type: `boolean`
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-definitions-middayreference-properties-strict.md "engineInputGHCSchema#/definitions/middayReference/properties/strict")
+
+### strict Type
+
+`boolean`
+
+### strict Default Value
+
+The default value is:
+
+```json
+true
+```

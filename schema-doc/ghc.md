@@ -99,6 +99,737 @@ Reference this group by using
 | Property | Type | Required | Nullable | Defined by |
 | :------- | ---- | -------- | -------- | :--------- |
 
+## Definitions group weeklyStay
+
+Reference this group by using
+
+```json
+{"$ref":"engineInputGHCSchema#/definitions/weeklyStay"}
+```
+
+| Property                                | Type      | Required | Nullable       | Defined by                                                                                                                                                     |
+| :-------------------------------------- | --------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [strict](#strict)                       | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-weeklystay-properties-strict.md "engineInputGHCSchema#/definitions/weeklyStay/properties/strict")                       |
+| [preferable](#preferable)               | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-weeklystay-properties-preferable.md "engineInputGHCSchema#/definitions/weeklyStay/properties/preferable")               |
+| [countAroundMidday](#countaroundmidday) | `boolean` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-weeklystay-properties-countaroundmidday.md "engineInputGHCSchema#/definitions/weeklyStay/properties/countAroundMidday") |
+
+### strict
+
+Strict time in minutes of maximum weekly stay.
+
+
+`strict`
+
+-   is optional
+-   Type: `integer`
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-definitions-weeklystay-properties-strict.md "engineInputGHCSchema#/definitions/weeklyStay/properties/strict")
+
+#### strict Type
+
+`integer`
+
+### preferable
+
+Ponderable Time in minutes of maximum weeekly stay.
+
+
+`preferable`
+
+-   is optional
+-   Type: `integer`
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-definitions-weeklystay-properties-preferable.md "engineInputGHCSchema#/definitions/weeklyStay/properties/preferable")
+
+#### preferable Type
+
+`integer`
+
+### countAroundMidday
+
+Indicates, in case of a split day, that the unoccupied intervals between the morning and afternoon class units are counted each day.
+
+
+`countAroundMidday`
+
+-   is optional
+-   Type: `boolean`
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-definitions-weeklystay-properties-countaroundmidday.md "engineInputGHCSchema#/definitions/weeklyStay/properties/countAroundMidday")
+
+#### countAroundMidday Type
+
+`boolean`
+
+#### countAroundMidday Default Value
+
+The default value is:
+
+```json
+true
+```
+
+## Definitions group dailyStay
+
+Reference this group by using
+
+```json
+{"$ref":"engineInputGHCSchema#/definitions/dailyStay"}
+```
+
+| Property                                  | Type      | Required | Nullable       | Defined by                                                                                                                                                   |
+| :---------------------------------------- | --------- | -------- | -------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [strict](#strict-1)                       | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-dailystay-properties-strict.md "engineInputGHCSchema#/definitions/dailyStay/properties/strict")                       |
+| [preferable](#preferable-1)               | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-dailystay-properties-preferable.md "engineInputGHCSchema#/definitions/dailyStay/properties/preferable")               |
+| [countAroundMidday](#countaroundmidday-1) | `boolean` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-dailystay-properties-countaroundmidday.md "engineInputGHCSchema#/definitions/dailyStay/properties/countAroundMidday") |
+
+### strict
+
+Strict time in minutes of maximum daily stay.
+
+
+`strict`
+
+-   is optional
+-   Type: `integer`
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-definitions-dailystay-properties-strict.md "engineInputGHCSchema#/definitions/dailyStay/properties/strict")
+
+#### strict Type
+
+`integer`
+
+### preferable
+
+Ponderable Time in minutes of maximum daily stay.
+
+
+`preferable`
+
+-   is optional
+-   Type: `integer`
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-definitions-dailystay-properties-preferable.md "engineInputGHCSchema#/definitions/dailyStay/properties/preferable")
+
+#### preferable Type
+
+`integer`
+
+### countAroundMidday
+
+Indicates, in case of a split day, that the unoccupied intervals between the morning and afternoon class units are counted.
+
+
+`countAroundMidday`
+
+-   is optional
+-   Type: `boolean`
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-definitions-dailystay-properties-countaroundmidday.md "engineInputGHCSchema#/definitions/dailyStay/properties/countAroundMidday")
+
+#### countAroundMidday Type
+
+`boolean`
+
+#### countAroundMidday Default Value
+
+The default value is:
+
+```json
+true
+```
+
+## Definitions group avoidGapsBetweenSesions
+
+Reference this group by using
+
+```json
+{"$ref":"engineInputGHCSchema#/definitions/avoidGapsBetweenSesions"}
+```
+
+| Property | Type | Required | Nullable | Defined by |
+| :------- | ---- | -------- | -------- | :--------- |
+
+## Definitions group maxContinuousTeaching
+
+Reference this group by using
+
+```json
+{"$ref":"engineInputGHCSchema#/definitions/maxContinuousTeaching"}
+```
+
+| Property              | Type      | Required | Nullable       | Defined by                                                                                                                                                         |
+| :-------------------- | --------- | -------- | -------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [strict](#strict-2)   | `boolean` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-maxcontinuousteaching-properties-strict.md "engineInputGHCSchema#/definitions/maxContinuousTeaching/properties/strict")     |
+| [minutes](#minutes)   | `integer` | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-maxcontinuousteaching-properties-minutes.md "engineInputGHCSchema#/definitions/maxContinuousTeaching/properties/minutes")   |
+| [minBreak](#minbreak) | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-maxcontinuousteaching-properties-minbreak.md "engineInputGHCSchema#/definitions/maxContinuousTeaching/properties/minBreak") |
+
+### strict
+
+Indicate if it is a strict condition.
+
+
+`strict`
+
+-   is optional
+-   Type: `boolean`
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-definitions-maxcontinuousteaching-properties-strict.md "engineInputGHCSchema#/definitions/maxContinuousTeaching/properties/strict")
+
+#### strict Type
+
+`boolean`
+
+### minutes
+
+Maximum continuous teaching time in minutes.
+
+
+`minutes`
+
+-   is required
+-   Type: `integer`
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-definitions-maxcontinuousteaching-properties-minutes.md "engineInputGHCSchema#/definitions/maxContinuousTeaching/properties/minutes")
+
+#### minutes Type
+
+`integer`
+
+### minBreak
+
+Minimum time gap to considered it as a break.
+
+
+`minBreak`
+
+-   is optional
+-   Type: `integer`
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-definitions-maxcontinuousteaching-properties-minbreak.md "engineInputGHCSchema#/definitions/maxContinuousTeaching/properties/minBreak")
+
+#### minBreak Type
+
+`integer`
+
+#### minBreak Default Value
+
+The default value is:
+
+```json
+30
+```
+
+## Definitions group avoidClassesAroundBreak
+
+Reference this group by using
+
+```json
+{"$ref":"engineInputGHCSchema#/definitions/avoidClassesAroundBreak"}
+```
+
+| Property | Type | Required | Nullable | Defined by |
+| :------- | ---- | -------- | -------- | :--------- |
+
+## Definitions group freeTimes
+
+Reference this group by using
+
+```json
+{"$ref":"engineInputGHCSchema#/definitions/freeTimes"}
+```
+
+| Property                                  | Type     | Required | Nullable       | Defined by                                                                                                                                                              |
+| :---------------------------------------- | -------- | -------- | -------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [fullDay](#fullday)                       | `object` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-freetimes-properties-fulldaysfreetimes.md "engineInputGHCSchema#/definitions/freeTimes/properties/fullDay")                      |
+| [firstMinutes](#firstminutes)             | `object` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-freetimes-properties-firstminutesfreetimes.md "engineInputGHCSchema#/definitions/freeTimes/properties/firstMinutes")             |
+| [lastMinutes](#lastminutes)               | `object` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-freetimes-properties-lastminutesfreetimes.md "engineInputGHCSchema#/definitions/freeTimes/properties/lastMinutes")               |
+| [consecutiveAnyTime](#consecutiveanytime) | `object` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-freetimes-properties-consecutiveanytimefreetimes.md "engineInputGHCSchema#/definitions/freeTimes/properties/consecutiveAnyTime") |
+
+### fullDay
+
+Teacher's full days of free time.
+
+
+`fullDay`
+
+-   is optional
+-   Type: `object` ([FullDaysFreeTimes](ghc-definitions-freetimes-properties-fulldaysfreetimes.md))
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-definitions-freetimes-properties-fulldaysfreetimes.md "engineInputGHCSchema#/definitions/freeTimes/properties/fullDay")
+
+#### fullDay Type
+
+`object` ([FullDaysFreeTimes](ghc-definitions-freetimes-properties-fulldaysfreetimes.md))
+
+### firstMinutes
+
+Teacher's free intervals at the beginning of the day.
+
+
+`firstMinutes`
+
+-   is optional
+-   Type: `object` ([FirstMinutesFreeTimes](ghc-definitions-freetimes-properties-firstminutesfreetimes.md))
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-definitions-freetimes-properties-firstminutesfreetimes.md "engineInputGHCSchema#/definitions/freeTimes/properties/firstMinutes")
+
+#### firstMinutes Type
+
+`object` ([FirstMinutesFreeTimes](ghc-definitions-freetimes-properties-firstminutesfreetimes.md))
+
+### lastMinutes
+
+Teacher's free intervals at the end of the day.
+
+
+`lastMinutes`
+
+-   is optional
+-   Type: `object` ([LastMinutesFreeTimes](ghc-definitions-freetimes-properties-lastminutesfreetimes.md))
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-definitions-freetimes-properties-lastminutesfreetimes.md "engineInputGHCSchema#/definitions/freeTimes/properties/lastMinutes")
+
+#### lastMinutes Type
+
+`object` ([LastMinutesFreeTimes](ghc-definitions-freetimes-properties-lastminutesfreetimes.md))
+
+### consecutiveAnyTime
+
+Teacher's free intervals at any time of the day.
+
+
+`consecutiveAnyTime`
+
+-   is optional
+-   Type: `object` ([ConsecutiveAnyTimeFreeTimes](ghc-definitions-freetimes-properties-consecutiveanytimefreetimes.md))
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-definitions-freetimes-properties-consecutiveanytimefreetimes.md "engineInputGHCSchema#/definitions/freeTimes/properties/consecutiveAnyTime")
+
+#### consecutiveAnyTime Type
+
+`object` ([ConsecutiveAnyTimeFreeTimes](ghc-definitions-freetimes-properties-consecutiveanytimefreetimes.md))
+
+## Definitions group freePartTimes
+
+Reference this group by using
+
+```json
+{"$ref":"engineInputGHCSchema#/definitions/freePartTimes"}
+```
+
+| Property                      | Type     | Required | Nullable       | Defined by                                                                                                                                                             |
+| :---------------------------- | -------- | -------- | -------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [mornings](#mornings)         | `object` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-freeparttime-properties-morningsfreeparttimes.md "engineInputGHCSchema#/definitions/freePartTimes/properties/mornings")         |
+| [afternoons](#afternoons)     | `object` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-freeparttime-properties-afternoonfreeparttimes.md "engineInputGHCSchema#/definitions/freePartTimes/properties/afternoons")      |
+| [indistinctly](#indistinctly) | `object` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-freeparttime-properties-indistinctlyfreeparttimes.md "engineInputGHCSchema#/definitions/freePartTimes/properties/indistinctly") |
+
+### mornings
+
+Mornings off periods.
+
+
+`mornings`
+
+-   is optional
+-   Type: `object` ([MorningsFreePartTimes](ghc-definitions-freeparttime-properties-morningsfreeparttimes.md))
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-definitions-freeparttime-properties-morningsfreeparttimes.md "engineInputGHCSchema#/definitions/freePartTimes/properties/mornings")
+
+#### mornings Type
+
+`object` ([MorningsFreePartTimes](ghc-definitions-freeparttime-properties-morningsfreeparttimes.md))
+
+### afternoons
+
+Afternoons off periods.
+
+
+`afternoons`
+
+-   is optional
+-   Type: `object` ([AfternoonFreePartTimes](ghc-definitions-freeparttime-properties-afternoonfreeparttimes.md))
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-definitions-freeparttime-properties-afternoonfreeparttimes.md "engineInputGHCSchema#/definitions/freePartTimes/properties/afternoons")
+
+#### afternoons Type
+
+`object` ([AfternoonFreePartTimes](ghc-definitions-freeparttime-properties-afternoonfreeparttimes.md))
+
+### indistinctly
+
+Indistinctly, mornings or afternoons, off periods.
+
+
+`indistinctly`
+
+-   is optional
+-   Type: `object` ([IndistinctlyFreePartTimes](ghc-definitions-freeparttime-properties-indistinctlyfreeparttimes.md))
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-definitions-freeparttime-properties-indistinctlyfreeparttimes.md "engineInputGHCSchema#/definitions/freePartTimes/properties/indistinctly")
+
+#### indistinctly Type
+
+`object` ([IndistinctlyFreePartTimes](ghc-definitions-freeparttime-properties-indistinctlyfreeparttimes.md))
+
+## Definitions group incompatibilities
+
+Reference this group by using
+
+```json
+{"$ref":"engineInputGHCSchema#/definitions/incompatibilities"}
+```
+
+| Property                                                                                                                                | Type     | Required | Nullable       | Defined by                                                                                                                                                                                                                                                    |
+| :-------------------------------------------------------------------------------------------------------------------------------------- | -------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [freeTimeBetweenDayBeforeAndCurrent](#freetimebetweendaybeforeandcurrent)                                                               | `object` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-freetimebetweendays.md "engineInputGHCSchema#/definitions/incompatibilities/properties/freeTimeBetweenDayBeforeAndCurrent")                                                               |
+| [freeTimeBetweenEndWeekAndStartWeekDays](#freetimebetweenendweekandstartweekdays)                                                       | `object` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-freetimebetweenweeksborders.md "engineInputGHCSchema#/definitions/incompatibilities/properties/freeTimeBetweenEndWeekAndStartWeekDays")                                                   |
+| [freeTimeFirstOrLastHoursDay](#freetimefirstorlasthoursday)                                                                             | `object` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-freetimefirstorlasthoursday.md "engineInputGHCSchema#/definitions/incompatibilities/properties/freeTimeFirstOrLastHoursDay")                                                              |
+| [doNotFinishAtLastAfternoonSectionIfStartedAtFirstAfternoonSection](#donotfinishatlastafternoonsectionifstartedatfirstafternoonsection) | `object` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-donotfinishatlastafternoonsection.md "engineInputGHCSchema#/definitions/incompatibilities/properties/doNotFinishAtLastAfternoonSectionIfStartedAtFirstAfternoonSection")                  |
+| [doNotFinishAtLastMorningSectionIfStartedAtFirstMorningSection](#donotfinishatlastmorningsectionifstartedatfirstmorningsection)         | `object` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-donotfinishatlastmorningsection.md "engineInputGHCSchema#/definitions/incompatibilities/properties/doNotFinishAtLastMorningSectionIfStartedAtFirstMorningSection")                        |
+| [doNotFinishAtLastMorningSectionIfStartAtFirstAfternoonSection](#donotfinishatlastmorningsectionifstartatfirstafternoonsection)         | `object` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-donotfinishatlastmorningsectionifstartatfirstafternoon.md "engineInputGHCSchema#/definitions/incompatibilities/properties/doNotFinishAtLastMorningSectionIfStartAtFirstAfternoonSection") |
+| [doNotFinishAtLastMorningSectionIfHasAfternoonAssignment](#donotfinishatlastmorningsectionifhasafternoonassignment)                     | `object` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-donotfinishatlastmorningsectionifhasafternoon.md "engineInputGHCSchema#/definitions/incompatibilities/properties/doNotFinishAtLastMorningSectionIfHasAfternoonAssignment")                |
+| [doNotStartAtFirstMorningSectionIfHasAfternoonAssignment](#donotstartatfirstmorningsectionifhasafternoonassignment)                     | `object` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-donotstartatfirstmorningsection.md "engineInputGHCSchema#/definitions/incompatibilities/properties/doNotStartAtFirstMorningSectionIfHasAfternoonAssignment")                              |
+| [freeTimeAroundMidday](#freetimearoundmidday)                                                                                           | `object` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-freetimearoundmidday.md "engineInputGHCSchema#/definitions/incompatibilities/properties/freeTimeAroundMidday")                                                                            |
+
+### freeTimeBetweenDayBeforeAndCurrent
+
+Minutes between the departure and the next day's entry.
+
+
+`freeTimeBetweenDayBeforeAndCurrent`
+
+-   is optional
+-   Type: `object` ([FreeTimeBetweenDays](ghc-definitions-incompatibilities-properties-freetimebetweendays.md))
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-freetimebetweendays.md "engineInputGHCSchema#/definitions/incompatibilities/properties/freeTimeBetweenDayBeforeAndCurrent")
+
+#### freeTimeBetweenDayBeforeAndCurrent Type
+
+`object` ([FreeTimeBetweenDays](ghc-definitions-incompatibilities-properties-freetimebetweendays.md))
+
+### freeTimeBetweenEndWeekAndStartWeekDays
+
+Minutes between finishing time on week's last day, and starting time the next week.
+
+
+`freeTimeBetweenEndWeekAndStartWeekDays`
+
+-   is optional
+-   Type: `object` ([FreeTimeBetweenWeeksBorders](ghc-definitions-incompatibilities-properties-freetimebetweenweeksborders.md))
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-freetimebetweenweeksborders.md "engineInputGHCSchema#/definitions/incompatibilities/properties/freeTimeBetweenEndWeekAndStartWeekDays")
+
+#### freeTimeBetweenEndWeekAndStartWeekDays Type
+
+`object` ([FreeTimeBetweenWeeksBorders](ghc-definitions-incompatibilities-properties-freetimebetweenweeksborders.md))
+
+### freeTimeFirstOrLastHoursDay
+
+Minutes of free time at first or last hours of the day.
+
+
+`freeTimeFirstOrLastHoursDay`
+
+-   is optional
+-   Type: `object` ([FreeTimeFirstOrLastHoursDay](ghc-definitions-incompatibilities-properties-freetimefirstorlasthoursday.md))
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-freetimefirstorlasthoursday.md "engineInputGHCSchema#/definitions/incompatibilities/properties/freeTimeFirstOrLastHoursDay")
+
+#### freeTimeFirstOrLastHoursDay Type
+
+`object` ([FreeTimeFirstOrLastHoursDay](ghc-definitions-incompatibilities-properties-freetimefirstorlasthoursday.md))
+
+### doNotFinishAtLastAfternoonSectionIfStartedAtFirstAfternoonSection
+
+Do not finish at last hour in the afternoon and start at the first one.
+
+
+`doNotFinishAtLastAfternoonSectionIfStartedAtFirstAfternoonSection`
+
+-   is optional
+-   Type: `object` ([DoNotFinishAtLastAfternoonSection](ghc-definitions-incompatibilities-properties-donotfinishatlastafternoonsection.md))
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-donotfinishatlastafternoonsection.md "engineInputGHCSchema#/definitions/incompatibilities/properties/doNotFinishAtLastAfternoonSectionIfStartedAtFirstAfternoonSection")
+
+#### doNotFinishAtLastAfternoonSectionIfStartedAtFirstAfternoonSection Type
+
+`object` ([DoNotFinishAtLastAfternoonSection](ghc-definitions-incompatibilities-properties-donotfinishatlastafternoonsection.md))
+
+### doNotFinishAtLastMorningSectionIfStartedAtFirstMorningSection
+
+Do not start at first hour and and finish at the last hour of the morning.
+
+
+`doNotFinishAtLastMorningSectionIfStartedAtFirstMorningSection`
+
+-   is optional
+-   Type: `object` ([DoNotFinishAtLastMorningSection](ghc-definitions-incompatibilities-properties-donotfinishatlastmorningsection.md))
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-donotfinishatlastmorningsection.md "engineInputGHCSchema#/definitions/incompatibilities/properties/doNotFinishAtLastMorningSectionIfStartedAtFirstMorningSection")
+
+#### doNotFinishAtLastMorningSectionIfStartedAtFirstMorningSection Type
+
+`object` ([DoNotFinishAtLastMorningSection](ghc-definitions-incompatibilities-properties-donotfinishatlastmorningsection.md))
+
+### doNotFinishAtLastMorningSectionIfStartAtFirstAfternoonSection
+
+Do not finish at the last hour in the morning and start at the first one in the afternoon.
+
+
+`doNotFinishAtLastMorningSectionIfStartAtFirstAfternoonSection`
+
+-   is optional
+-   Type: `object` ([DoNotFinishAtLastMorningSectionIfStartAtFirstAfternoon](ghc-definitions-incompatibilities-properties-donotfinishatlastmorningsectionifstartatfirstafternoon.md))
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-donotfinishatlastmorningsectionifstartatfirstafternoon.md "engineInputGHCSchema#/definitions/incompatibilities/properties/doNotFinishAtLastMorningSectionIfStartAtFirstAfternoonSection")
+
+#### doNotFinishAtLastMorningSectionIfStartAtFirstAfternoonSection Type
+
+`object` ([DoNotFinishAtLastMorningSectionIfStartAtFirstAfternoon](ghc-definitions-incompatibilities-properties-donotfinishatlastmorningsectionifstartatfirstafternoon.md))
+
+### doNotFinishAtLastMorningSectionIfHasAfternoonAssignment
+
+Do not finish at the last hour in the morning and have the afternoon occupied.
+
+
+`doNotFinishAtLastMorningSectionIfHasAfternoonAssignment`
+
+-   is optional
+-   Type: `object` ([DoNotFinishAtLastMorningSectionIfHasAfternoon](ghc-definitions-incompatibilities-properties-donotfinishatlastmorningsectionifhasafternoon.md))
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-donotfinishatlastmorningsectionifhasafternoon.md "engineInputGHCSchema#/definitions/incompatibilities/properties/doNotFinishAtLastMorningSectionIfHasAfternoonAssignment")
+
+#### doNotFinishAtLastMorningSectionIfHasAfternoonAssignment Type
+
+`object` ([DoNotFinishAtLastMorningSectionIfHasAfternoon](ghc-definitions-incompatibilities-properties-donotfinishatlastmorningsectionifhasafternoon.md))
+
+### doNotStartAtFirstMorningSectionIfHasAfternoonAssignment
+
+Do not start at the first hour and have occupation in the afternoon.
+
+
+`doNotStartAtFirstMorningSectionIfHasAfternoonAssignment`
+
+-   is optional
+-   Type: `object` ([DoNotStartAtFirstMorningSection](ghc-definitions-incompatibilities-properties-donotstartatfirstmorningsection.md))
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-donotstartatfirstmorningsection.md "engineInputGHCSchema#/definitions/incompatibilities/properties/doNotStartAtFirstMorningSectionIfHasAfternoonAssignment")
+
+#### doNotStartAtFirstMorningSectionIfHasAfternoonAssignment Type
+
+`object` ([DoNotStartAtFirstMorningSection](ghc-definitions-incompatibilities-properties-donotstartatfirstmorningsection.md))
+
+### freeTimeAroundMidday
+
+Do not have less than a custom free time around noon pause.
+
+
+`freeTimeAroundMidday`
+
+-   is optional
+-   Type: `object` ([FreeTimeAroundMidday](ghc-definitions-incompatibilities-properties-freetimearoundmidday.md))
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-freetimearoundmidday.md "engineInputGHCSchema#/definitions/incompatibilities/properties/freeTimeAroundMidday")
+
+#### freeTimeAroundMidday Type
+
+`object` ([FreeTimeAroundMidday](ghc-definitions-incompatibilities-properties-freetimearoundmidday.md))
+
+## Definitions group dailyOcupation
+
+Reference this group by using
+
+```json
+{"$ref":"engineInputGHCSchema#/definitions/dailyOcupation"}
+```
+
+| Property                              | Type      | Required | Nullable       | Defined by                                                                                                                                                           |
+| :------------------------------------ | --------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [allowFreeDays](#allowfreedays)       | `boolean` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-dailyocupation-properties-allowfreedays.md "engineInputGHCSchema#/definitions/dailyOcupation/properties/allowFreeDays")       |
+| [minimumTeaching](#minimumteaching)   | `object`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-dailyocupation-properties-minimumteaching.md "engineInputGHCSchema#/definitions/dailyOcupation/properties/minimumTeaching")   |
+| [maximumTeaching](#maximumteaching)   | `object`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-dailyocupation-properties-maximumteaching.md "engineInputGHCSchema#/definitions/dailyOcupation/properties/maximumTeaching")   |
+| [minimumOccupancy](#minimumoccupancy) | `object`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-dailyocupation-properties-minimumoccupancy.md "engineInputGHCSchema#/definitions/dailyOcupation/properties/minimumOccupancy") |
+| [maximumOccupancy](#maximumoccupancy) | `object`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-dailyocupation-properties-maximumoccupancy.md "engineInputGHCSchema#/definitions/dailyOcupation/properties/maximumOccupancy") |
+
+### allowFreeDays
+
+Indicates whether the check of the minimums is omitted in case of days without allocation. Prohibited days never are not checked.
+
+
+`allowFreeDays`
+
+-   is optional
+-   Type: `boolean`
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-definitions-dailyocupation-properties-allowfreedays.md "engineInputGHCSchema#/definitions/dailyOcupation/properties/allowFreeDays")
+
+#### allowFreeDays Type
+
+`boolean`
+
+### minimumTeaching
+
+Teacher's minimum time of teaching with students.
+
+
+`minimumTeaching`
+
+-   is optional
+-   Type: `object` ([MinimumTeaching](ghc-definitions-dailyocupation-properties-minimumteaching.md))
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-definitions-dailyocupation-properties-minimumteaching.md "engineInputGHCSchema#/definitions/dailyOcupation/properties/minimumTeaching")
+
+#### minimumTeaching Type
+
+`object` ([MinimumTeaching](ghc-definitions-dailyocupation-properties-minimumteaching.md))
+
+### maximumTeaching
+
+Teacher's maximum time of teaching with students.
+
+
+`maximumTeaching`
+
+-   is optional
+-   Type: `object` ([MaximumTeaching](ghc-definitions-dailyocupation-properties-maximumteaching.md))
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-definitions-dailyocupation-properties-maximumteaching.md "engineInputGHCSchema#/definitions/dailyOcupation/properties/maximumTeaching")
+
+#### maximumTeaching Type
+
+`object` ([MaximumTeaching](ghc-definitions-dailyocupation-properties-maximumteaching.md))
+
+### minimumOccupancy
+
+Teacher's minimum time of teaching with students and other non-teaching activities indicated as computable.
+
+
+`minimumOccupancy`
+
+-   is optional
+-   Type: `object` ([MinimumOccupancy](ghc-definitions-dailyocupation-properties-minimumoccupancy.md))
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-definitions-dailyocupation-properties-minimumoccupancy.md "engineInputGHCSchema#/definitions/dailyOcupation/properties/minimumOccupancy")
+
+#### minimumOccupancy Type
+
+`object` ([MinimumOccupancy](ghc-definitions-dailyocupation-properties-minimumoccupancy.md))
+
+### maximumOccupancy
+
+Teacher's maximum time of teaching with students and other non-teaching activities indicated as computable.
+
+
+`maximumOccupancy`
+
+-   is optional
+-   Type: `object` ([MaximumOccupancy](ghc-definitions-dailyocupation-properties-maximumoccupancy.md))
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-definitions-dailyocupation-properties-maximumoccupancy.md "engineInputGHCSchema#/definitions/dailyOcupation/properties/maximumOccupancy")
+
+#### maximumOccupancy Type
+
+`object` ([MaximumOccupancy](ghc-definitions-dailyocupation-properties-maximumoccupancy.md))
+
+## Definitions group middayReference
+
+Reference this group by using
+
+```json
+{"$ref":"engineInputGHCSchema#/definitions/middayReference"}
+```
+
+| Property              | Type      | Required | Nullable       | Defined by                                                                                                                                             |
+| :-------------------- | --------- | -------- | -------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [refFrame](#refframe) | `string`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-middayreference-properties-refframe.md "engineInputGHCSchema#/definitions/middayReference/properties/refFrame") |
+| [strict](#strict-3)   | `boolean` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-middayreference-properties-strict.md "engineInputGHCSchema#/definitions/middayReference/properties/strict")     |
+
+### refFrame
+
+Identifier name of a frame where the teacher take the midday. If it is not not specified, the engine will take the midday of the frame with the highest allocation.
+
+
+`refFrame`
+
+-   is optional
+-   Type: `string`
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-definitions-middayreference-properties-refframe.md "engineInputGHCSchema#/definitions/middayReference/properties/refFrame")
+
+#### refFrame Type
+
+`string`
+
+### strict
+
+Indicates if the teacher's midday break must be respected without placing their sessions in sections of other frames that overlap with their midday.
+
+
+`strict`
+
+-   is optional
+-   Type: `boolean`
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-definitions-middayreference-properties-strict.md "engineInputGHCSchema#/definitions/middayReference/properties/strict")
+
+#### strict Type
+
+`boolean`
+
+#### strict Default Value
+
+The default value is:
+
+```json
+true
+```
+
+## Definitions group dailyBuildingTransfers
+
+Reference this group by using
+
+```json
+{"$ref":"engineInputGHCSchema#/definitions/dailyBuildingTransfers"}
+```
+
+| Property                    | Type      | Required | Nullable       | Defined by                                                                                                                                                               |
+| :-------------------------- | --------- | -------- | -------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [strict](#strict-4)         | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-dailybuildingtransfers-properties-strict.md "engineInputGHCSchema#/definitions/dailyBuildingTransfers/properties/strict")         |
+| [preferable](#preferable-2) | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-dailybuildingtransfers-properties-preferable.md "engineInputGHCSchema#/definitions/dailyBuildingTransfers/properties/preferable") |
+
+### strict
+
+Strict maximum number of displacement per day.
+
+
+`strict`
+
+-   is optional
+-   Type: `integer`
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-definitions-dailybuildingtransfers-properties-strict.md "engineInputGHCSchema#/definitions/dailyBuildingTransfers/properties/strict")
+
+#### strict Type
+
+`integer`
+
+### preferable
+
+Ponderable/preferable maximum number of displacement per day.
+
+
+`preferable`
+
+-   is optional
+-   Type: `integer`
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-definitions-dailybuildingtransfers-properties-preferable.md "engineInputGHCSchema#/definitions/dailyBuildingTransfers/properties/preferable")
+
+#### preferable Type
+
+`integer`
+
 ## Definitions group weeklyStable
 
 Reference this group by using

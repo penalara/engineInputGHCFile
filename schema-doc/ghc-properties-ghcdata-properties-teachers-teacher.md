@@ -22,7 +22,8 @@ Object with personal information and preferences from the teacher.
 | [id](#id)                                       | `string` | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-id.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/id")                                       |
 | [associationIdentifier](#associationidentifier) | `string` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-associationidentifier.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/associationIdentifier") |
 | [frameTemplate](#frametemplate)                 | `array`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-frametemplate.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/frameTemplate")                                                               |
-| [settings](#settings)                           | `array`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings")                           |
+| [generalSettings](#generalsettings)             | `object` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-generalsettings.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/generalSettings")             |
+| [periodSettings](#periodsettings)               | `array`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-periodssettings.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/periodSettings")              |
 
 ## id
 
@@ -72,18 +73,34 @@ Templates with assignment preferences to section of the frames.
 
 `object[]` ([SectionPreference](ghc-definitions-frametemplate-sectionpreference.md))
 
-## settings
+## generalSettings
 
-Teacher's strict and ponderable conditions for the timetable. These can (or not) be different for eacch week/period.
+Teacher's strict and ponderable conditions for the timetable. If there is not unique periods, these conditios are the default value, but they can be custom specified for each period in the 'periodSettings' tag.
 
 
-`settings`
+`generalSettings`
 
 -   is optional
--   Type: `object[]` ([PeriodSetting](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting.md))
+-   Type: `object` ([GeneralSettings](ghc-properties-ghcdata-properties-teachers-teacher-properties-generalsettings.md))
 -   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/settings")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-generalsettings.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/generalSettings")
 
-### settings Type
+### generalSettings Type
 
-`object[]` ([PeriodSetting](ghc-properties-ghcdata-properties-teachers-teacher-properties-settings-periodsetting.md))
+`object` ([GeneralSettings](ghc-properties-ghcdata-properties-teachers-teacher-properties-generalsettings.md))
+
+## periodSettings
+
+Teacher's strict and ponderable conditions,customized for each week/period
+
+
+`periodSettings`
+
+-   is optional
+-   Type: `object[]` ([PeriodSetting](ghc-properties-ghcdata-properties-teachers-teacher-properties-periodssettings-periodsetting.md))
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-periodssettings.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/periodSettings")
+
+### periodSettings Type
+
+`object[]` ([PeriodSetting](ghc-properties-ghcdata-properties-teachers-teacher-properties-periodssettings-periodsetting.md))

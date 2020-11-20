@@ -302,537 +302,96 @@
                             "frameTemplate":{
                                 "$ref": "#/definitions/frameTemplate"
                             },
-                            "settings": {
-                                "title": "Settings",
-                                "description": "Teacher's strict and ponderable conditions for the timetable. These can (or not) be different for eacch week/period.",
+                            "generalSettings": {
+                                "title": "GeneralSettings",
+                                "description": "Teacher's strict and ponderable conditions for the timetable. If there is not unique periods, these conditios are the default value, but they can be custom specified for each period in the 'periodSettings' tag.",
+                                "type": "object",                                  
+                                "properties": {
+                                    "weeklyStay": {
+                                        "$ref": "#/definitions/weeklyStay"
+                                    },
+                                    "dailyStay": {
+                                        "$ref": "#/definitions/dailyStay"
+                                    },
+                                    "avoidGapsBetweenSesions": {
+                                        "$ref": "#/definitions/avoidGapsBetweenSesions"
+                                    },
+                                    "maxContinuousTeaching": {
+                                        "$ref": "#/definitions/maxContinuousTeaching"
+                                    },
+                                    "avoidClassesAroundBreak": {
+                                        "$ref": "#/definitions/avoidClassesAroundBreak"
+                                    },
+                                    "freeTimes":  {
+                                        "$ref": "#/definitions/freeTimes"      
+                                    },
+                                    "freePartTimes": {
+                                        "$ref": "#/definitions/freePartTimes"
+                                    },
+                                    "incompatibilities": {
+                                        "$ref": "#/definitions/incompatibilities"
+                                    },
+                                    "dailyOcupation": {                                            
+                                        "$ref": "#/definitions/dailyOcupation"
+                                    },
+                                    "middayReference": {
+                                        "$ref": "#/definitions/middayReference"
+                                    },
+                                    "dailyBuildingTransfers": {
+                                        "$ref": "#/definitions/dailyBuildingTransfers"  
+                                    }
+                                    
+                                }
+                            },
+                            "periodSettings":{
+                                "title": "PeriodsSettings",
+                                "description": "Teacher's strict and ponderable conditions,customized for each week/period",
                                 "type": "array",
                                 "additionalItems": false,
                                 "items": {
                                     "title": "PeriodSetting",
                                     "type": "object",
                                     "required": [
-                                        "context"
+                                        "refPeriod"
                                     ],                                    
                                     "properties": {
-                                        "context": {
-                                            "description": "Defines the period in the timetable when the settings take effect. By default it is 'whole', which indicates that it affects the entire timetable, that is, all its periods.",
-                                            "type": "string",
-                                            "default": "whole"
+                                        "refPeriod": {
+                                            "description": "Identifier name of the period to which the settings affect.",
+                                            "type": "string"
                                         },
                                         "weeklyStay": {
-                                            "title": "WeeklyStay",
-                                            "description": "Indicates the maximum teacher´s permanence time,  preferred  and strict , for the weekly stay that the teacher can be in the school.",
-                                            "type": "object",                                                                      
-                                            "properties": {
-                                                "strict": {
-                                                    "description": "Strict time in minutes of maximum weekly stay.",
-                                                    "type": "integer"
-                                                },
-                                                "preferable" : {
-                                                    "description": "Ponderable Time in minutes of maximum weeekly stay.",
-                                                    "type": "integer"
-                                                },
-                                                "countAroundMidday": {
-                                                    "description": "Indicates, in case of a split day, that the unoccupied intervals between the morning and afternoon class units are counted each day.",
-                                                    "type": "boolean"
-                                                }
-                                            }
-                                        },                                        
+                                            "$ref": "#/definitions/weeklyStay"
+                                        },
                                         "dailyStay": {
-                                            "title": "DailyStay",
-                                            "description": "Indicates the maximum teacher´s permanence time,  preferred  and strict , for the daily stay that the teacher can be in the school.",
-                                            "type": "object",                                                                          
-                                            "properties": {
-                                                "strict": {
-                                                    "description": "Strict time in minutes of maximum daily stay.",
-                                                    "type": "integer"
-                                                },
-                                                "preferable": {
-                                                    "description": "Ponderable Time in minutes of maximum daily stay.",
-                                                    "type": "integer"
-                                                },
-                                                "countAroundMidday": {
-                                                    "description": "Indicates, in case of a split day, that the unoccupied intervals between the morning and afternoon class units are counted.",
-                                                    "type": "boolean"
-                                                }
-                                            }
+                                            "$ref": "#/definitions/dailyStay"
                                         },
                                         "avoidGapsBetweenSesions": {
-                                            "description": "Indicates if it should avoid free gaps between sessions for the teacher. It is a ponderable condition.",
-                                            "type": "boolean",
-                                            "default": false
+                                            "$ref": "#/definitions/avoidGapsBetweenSesions"
                                         },
                                         "maxContinuousTeaching": {
-                                            "title": "MaxContinuousTeaching",
-                                            "description": "Indicates the continuous maximum time teaching sessions, that are allowed without have a free gap or a non teaching session in between.",
-                                            "type": "object",
-                                            "required":[
-                                                "minutes"
-                                            ],                                                                          
-                                            "properties": {
-                                                "strict": {
-                                                    "description": "Indicate if it is a strict condition.",
-                                                    "type": "boolean",
-                                                    "default": false
-                                                },
-                                                "minutes": {
-                                                    "description": "Maximum continuous teaching time in minutes.",
-                                                    "type": "integer"
-                                                },
-                                                "minBreak": {
-                                                    "description": "Minimum time gap to considered it as a break.",
-                                                    "type": "integer",
-                                                    "default": 30
-                                                }
-                                            }
+                                            "$ref": "#/definitions/maxContinuousTeaching"
                                         },
                                         "avoidClassesAroundBreak": {
-                                            "description": "Indicate if will penalize the existence of sessions on both sides of a recess guard taught by this teacher.",
-                                            "type": "boolean",
-                                            "default": false
+                                            "$ref": "#/definitions/avoidClassesAroundBreak"
                                         },
                                         "freeTimes":  {
-                                            "title": "FreeTimes",
-                                            "description": "Contains the free spaces of time that the teacher should have.",
-                                            "type": "object",                                                                      
-                                            "properties": {
-                                                "fullDay": {
-                                                    "title": "FullDaysFreeTimes",
-                                                    "description": "Teacher's full days of free time.",
-                                                    "type": "object",                                                                      
-                                                    "properties": {
-                                                        "strictDays": {
-                                                            "description": "Number of strict days when teacher should be free.",
-                                                            "type": "integer",
-                                                            "default":0
-                                                        },
-                                                        "preferredDays": {
-                                                            "description": "Number of preferred days when teacher should be free.",
-                                                            "type": "integer",
-                                                            "default":0
-                                                        }
-                                                    }
-                                                },
-                                                "firstMinutes": {
-                                                    "title": "FirstMinutesFreeTimes",
-                                                    "description": "Teacher's free intervals at the beginning of the day.",
-                                                    "type": "object",
-                                                    "required": [
-                                                        "minutes"
-                                                    ],                                                                         
-                                                    "properties": {
-                                                        "strictDays": {
-                                                            "description": "Number of strict days when teacher should have the free interval at the beginning of the day.",
-                                                            "type": "integer",
-                                                            "default":0
-                                                        },
-                                                        "preferredDays": {
-                                                            "description": "Number of preferred days when teacher should have the free interval at the beginning of the day.",
-                                                            "type": "integer",
-                                                            "default":0
-                                                        },
-                                                        "minutes": {
-                                                            "description": "Minutes of free time at the beginning of the day.",
-                                                            "type": "integer"
-                                                        }
-                                                    }
-                                                },
-                                                "lastMinutes": {
-                                                    "title": "LastMinutesFreeTimes",
-                                                    "description": "Teacher's free intervals at the end of the day.",
-                                                    "type": "object",
-                                                    "required": [
-                                                        "minutes"
-                                                    ],                                                                        
-                                                    "properties": {
-                                                        "strictDays": {
-                                                            "description": "Number of strict days when teacher should have the free interval at the end of the day.",
-                                                            "type": "integer",
-                                                            "default":0
-                                                        },
-                                                        "preferredDays": {
-                                                            "description": "Number of preferred days when teacher should have the free interval at the end of the day.",
-                                                            "type": "integer",
-                                                            "default":0
-                                                        },
-                                                        "minutes": {
-                                                            "description": "Minutes of free time at the end of the day.",
-                                                            "type": "integer"
-                                                        }
-                                                    }
-                                                },
-                                                "consecutiveAnyTime": {
-                                                    "title": "ConsecutiveAnyTimeFreeTimes",
-                                                    "description": "Teacher's free intervals at any time of the day.",
-                                                    "type": "object",
-                                                    "required": [
-                                                        "minutes"
-                                                    ],                                                                        
-                                                    "properties": {
-                                                        "strictDays": {
-                                                            "description": "Number of strict days when teacher should have the free interval.",
-                                                            "type": "integer",
-                                                            "default":0
-                                                        },
-                                                        "preferredDays": {
-                                                            "description": "Number of preferred days when teacher should have the free interval.",
-                                                            "type": "integer",
-                                                            "default":0
-                                                        },
-                                                        "minutes": {
-                                                            "description": "Minutes of free time interval.",
-                                                            "type": "integer"
-                                                        }
-                                                    }
-                                                }
-                                            }                                            
+                                            "$ref": "#/definitions/freeTimes"      
                                         },
                                         "freePartTimes": {
-                                            "title": "FreePartTime",
-                                            "description": "Half day off periods.",
-                                            "type": "object",                                                                      
-                                            "properties": {
-                                                "mornings": {
-                                                    "title": "MorningsFreePartTimes",
-                                                    "description": "Mornings off periods.",
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "strict": {
-                                                            "description": "Strict number of mornings off periods.",
-                                                            "type": "integer",
-                                                            "default": 0
-                                                        },
-                                                        "preferable": {
-                                                            "description": "Preferable number of mornings off periods.",
-                                                            "type": "integer",
-                                                            "default": 0
-                                                        }
-                                                    }                                                    
-                                                },
-                                                "afternoons": {
-                                                    "title": "AfternoonFreePartTimes",
-                                                    "description": "Afternoons off periods.",
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "strict": {
-                                                            "description": "Strict number of afternoons off periods.",
-                                                            "type": "integer",
-                                                            "default": 0
-                                                        },
-                                                        "preferable": {
-                                                            "description": "Preferable number of afternoons off periods.",
-                                                            "type": "integer",
-                                                            "default": 0
-                                                        }
-                                                    }       
-                                                },
-                                                "indistinctly":{
-                                                    "title": "IndistinctlyFreePartTimes",
-                                                    "description": "Indistinctly, mornings or afternoons, off periods.",
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "strict": {
-                                                            "description": "Strict number of mornings or afternoons off periods.",
-                                                            "type": "integer",
-                                                            "default": 0
-                                                        },
-                                                        "preferable": {
-                                                            "description": "Preferable number of mornings or afternoons off periods.",
-                                                            "type": "integer",
-                                                            "default": 0
-                                                        }
-                                                    }       
-                                                }
-                                            }                                           
+                                            "$ref": "#/definitions/freePartTimes"
                                         },
                                         "incompatibilities": {
-                                            "title": "Incompatibilities",
-                                            "description": "Contains teacher's incompatibilities about sessions assignation and rests times.",
-                                            "type": "object",
-                                            "properties": {
-                                                "freeTimeBetweenDayBeforeAndCurrent": {
-                                                    "title": "FreeTimeBetweenDays",
-                                                    "description": "Minutes between the departure and the next day's entry.",
-                                                    "type": "object",
-                                                    "required": [
-                                                        "minutes"
-                                                    ],  
-                                                    "properties": {
-                                                        "strict": {
-                                                            "description": "Indicate if the incompatibility is a strict condition.",
-                                                            "type": "boolean",
-                                                            "default": false
-                                                        },
-                                                        "minutes": {
-                                                            "description": "Custom time in minutes for incompatibility.",
-                                                            "type": "integer"
-                                                        }
-                                                    }
-                                                },
-                                                "freeTimeBetweenEndWeekAndStartWeekDays": {
-                                                    "title": "FreeTimeBetweenWeeksBorders",
-                                                    "description": "Minutes between finishing time on week's last day, and starting time the next week.",
-                                                    "type": "object",
-                                                    "required": [
-                                                        "minutes"
-                                                    ],  
-                                                    "properties": {
-                                                        "strict": {
-                                                            "description": "Indicate if the incompatibility is a strict condition.",
-                                                            "type": "boolean",
-                                                            "default": false
-                                                        },
-                                                        "minutes": {
-                                                            "description": "Custom time in minutes for incompatibility.",
-                                                            "type": "integer"
-                                                        }
-                                                    }
-                                                },
-                                                "freeTimeFirstOrLastHoursDay": {
-                                                    "title": "FreeTimeFirstOrLastHoursDay",
-                                                    "description": "Minutes of free time at first or last hours of the day.",
-                                                    "type": "object",
-                                                    "required": [
-                                                        "minutes"
-                                                    ],  
-                                                    "properties": {
-                                                        "strict": {
-                                                            "description": "Indicate if the incompatibility is a strict condition.",
-                                                            "type": "boolean",
-                                                            "default": false
-                                                        },
-                                                        "minutes": {
-                                                            "description": "Custom time in minutes for incompatibility.",
-                                                            "type": "integer"
-                                                        }
-                                                    }
-                                                },
-                                                "doNotFinishAtLastAfternoonSectionIfStartedAtFirstAfternoonSection": {
-                                                    "title": "DoNotFinishAtLastAfternoonSection",
-                                                    "description": "Do not finish at last hour in the afternoon and start at the first one.",
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "strict": {
-                                                            "description": "Indicate if the incompatibility is a strict condition.",
-                                                            "type": "boolean",
-                                                            "default": false
-                                                        }
-                                                    }
-                                                },
-                                                "doNotFinishAtLastMorningSectionIfStartedAtFirstMorningSection": {
-                                                    "title": "DoNotFinishAtLastMorningSection",
-                                                    "description": "Do not start at first hour and and finish at the last hour of the morning.",
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "strict": {
-                                                            "description": "Indicate if the incompatibility is a strict condition.",
-                                                            "type": "boolean",
-                                                            "default": false
-                                                        }
-                                                    }
-                                                },
-                                                "doNotFinishAtLastMorningSectionIfStartAtFirstAfternoonSection": {
-                                                    "title": "DoNotFinishAtLastMorningSectionIfStartAtFirstAfternoon",
-                                                    "description": "Do not finish at the last hour in the morning and start at the first one in the afternoon.",
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "strict": {
-                                                            "description": "Indicate if the incompatibility is a strict condition.",
-                                                            "type": "boolean",
-                                                            "default": false
-                                                        }
-                                                    }
-                                                },
-                                                "doNotFinishAtLastMorningSectionIfHasAfternoonAssignment": {
-                                                    "title": "DoNotFinishAtLastMorningSectionIfHasAfternoon",
-                                                    "description": "Do not finish at the last hour in the morning and have the afternoon occupied.",
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "strict": {
-                                                            "description": "Indicate if the incompatibility is a strict condition.",
-                                                            "type": "boolean",
-                                                            "default": false
-                                                        }
-                                                    }
-                                                },
-                                                "doNotStartAtFirstMorningSectionIfHasAfternoonAssignment": {
-                                                    "title": "DoNotStartAtFirstMorningSection",
-                                                    "description": "Do not start at the first hour and have occupation in the afternoon.",
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "strict": {
-                                                            "description": "Indicate if the incompatibility is a strict condition.",
-                                                            "type": "boolean",
-                                                            "default": false
-                                                        }
-                                                    }
-                                                },
-                                                "freeTimeAroundMidday": {
-                                                    "title": "FreeTimeAroundMidday",
-                                                    "description": "Do not have less than a custom free time around noon pause.",
-                                                    "type": "object",
-                                                    "required": [
-                                                        "minutes"
-                                                    ],  
-                                                    "properties": {
-                                                        "strict": {
-                                                            "description": "Indicate if the incompatibility is a strict condition.",
-                                                            "type": "boolean",
-                                                            "default": false
-                                                        },
-                                                        "minutes": {
-                                                            "description": "Custom time in minutes for incompatibility.",
-                                                            "type": "integer"
-                                                        }
-                                                    }
-                                                }
-                                            }
+                                            "$ref": "#/definitions/incompatibilities"
                                         },
                                         "dailyOcupation": {                                            
-                                            "title": "DailyOcupation",
-                                            "description": "Maximum and minimum values for teaching or activity time for teachers. This object indicates the kind of condition (estrict or ponderable) and if it should be adjusted the automatic calcultation in minutes at engine.",
-                                            "type": "object",                                                                    
-                                            "properties": {
-                                                "allowFreeDays": {
-                                                    "description": "Indicates whether the check of the minimums is omitted in case of days without allocation. Prohibited days never are not checked.",
-                                                    "type": "boolean",
-                                                    "default": false
-                                                },
-                                                "minimumTeaching": {
-                                                    "title": "MinimumTeaching",
-                                                    "description": "Teacher's minimum time of teaching with students.",
-                                                    "type": "object",
-                                                    "required":[
-                                                        "restriction"
-                                                     ],                                                                          
-                                                    "properties": {
-                                                        "restriction": {
-                                                            "description": "Kind of restriction. It can be 'strict', 'preferred' or according to the related rule of optimization.",
-                                                            "enum": [
-                                                                "strict",
-                                                                "preferred",
-                                                                "accordingToRule"
-                                                            ] 
-                                                        },
-                                                        "setting": {
-                                                            "description": "Indicates whether the automatic calculation of the value must be adjusted to higher or lower.",
-                                                            "enum": [
-                                                                "auto",
-                                                                "oneMore",
-                                                                "oneLess"
-                                                            ],
-                                                            "default": "auto"
-                                                        }
-                                                    }
-                                                },
-                                                "maximumTeaching": {
-                                                    "title": "MaximumTeaching",
-                                                    "description": "Teacher's maximum time of teaching with students.",
-                                                    "type": "object",
-                                                    "required":[
-                                                       "restriction"
-                                                    ],                                                                          
-                                                    "properties": {
-                                                        "restriction": {
-                                                            "description": "Kind of restriction. It can be 'strict', 'preferred' or according to the related rule of optimization.",
-                                                            "enum": [
-                                                                "strict",
-                                                                "preferred",
-                                                                "accordingToRule"
-                                                            ] 
-                                                        },
-                                                        "setting": {
-                                                            "description": "Indicates whether the automatic calculation of the value must be adjusted to higher or lower.",
-                                                            "enum": [
-                                                                "auto",
-                                                                "oneMore",
-                                                                "oneLess"
-                                                            ],
-                                                            "default": "auto"
-                                                        }
-                                                    }
-                                                },
-                                                "minimumOccupancy": {
-                                                    "title": "MinimumOccupancy",
-                                                    "description": "Teacher's minimum time of teaching with students and other non-teaching activities indicated as computable.",
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "restriction": {
-                                                            "description": "Kind of restriction. It can be 'strict', 'preferred' or according to the related rule of optimization.",
-                                                            "enum": [
-                                                                "strict",
-                                                                "preferred",
-                                                                "accordingToRule"
-                                                            ] 
-                                                        },
-                                                        "setting": {
-                                                            "description": "Indicates whether the automatic calculation of the value must be adjusted to higher or lower.",
-                                                            "enum": [
-                                                                "auto",
-                                                                "oneMore",
-                                                                "oneLess"
-                                                            ],
-                                                            "default": "auto"
-                                                        }
-                                                    }
-                                                },
-                                                "maximumOccupancy": {
-                                                    "title": "MaximumOccupancy",
-                                                    "description": "Teacher's maximum time of teaching with students and other non-teaching activities indicated as computable.",
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "restriction": {
-                                                            "description": "Kind of restriction. It can be 'strict', 'preferred' or according to the related rule of optimization.",
-                                                            "enum": [
-                                                                "strict",
-                                                                "preferred",
-                                                                "accordingToRule"
-                                                            ] 
-                                                        },
-                                                        "setting": {
-                                                            "description": "Indicates whether the automatic calculation of the value must be adjusted to higher or lower.",
-                                                            "enum": [
-                                                                "auto",
-                                                                "oneMore",
-                                                                "oneLess"
-                                                            ],
-                                                            "default": "auto"
-                                                        }
-                                                    }
-                                                }
-                                            }
+                                            "$ref": "#/definitions/dailyOcupation"
                                         },
                                         "middayReference": {
-                                            "title":"MiddayReference",
-                                            "description": ".",
-                                            "type":"object",
-                                            "properties":{
-                                                "refFrame": {
-                                                    "description": "Identifier name of a frame where the teacher take the midday. If it is not not specified, the engine will take the midday of the frame with the highest allocation.",
-                                                    "type": "string"
-                                                },
-                                                "strict": {
-                                                    "description": "Indicates if the teacher's midday break must be respected without placing their sessions in sections of other frames that overlap with their midday.",
-                                                    "type": "boolean",
-                                                    "default": true
-                                                }
-                                            }
+                                            "$ref": "#/definitions/middayReference"
                                         },
                                         "dailyBuildingTransfers": {
-                                            "title": "DailyBuildingTransfers",
-                                            "description": ".",
-                                            "type": "object",
-                                            "properties": {
-                                                "strict": {
-                                                    "description": "Strict maximum number of displacement per day.",
-                                                    "type": "integer"
-                                                },
-                                                "preferable": {
-                                                    "description": "Ponderable/preferable maximum number of displacement per day.",
-                                                    "type": "integer"
-                                                }
-                                            }
-                                        } 
+                                            "$ref": "#/definitions/dailyBuildingTransfers"  
+                                        }
                                     }
                                 }
                             }
@@ -1864,6 +1423,522 @@
                         "description": "Identifier name of the frame.",
                         "type": "string"
                     }
+                }
+            }
+        },
+        "weeklyStay": {
+            "title": "WeeklyStay",
+            "description": "Indicates the maximum teacher´s permanence time,  preferred  and strict , for the weekly stay that the teacher can be in the school.",
+            "type": "object",                                                                      
+            "properties": {
+                "strict": {
+                    "description": "Strict time in minutes of maximum weekly stay.",
+                    "type": "integer"
+                },
+                "preferable" : {
+                    "description": "Ponderable Time in minutes of maximum weeekly stay.",
+                    "type": "integer"
+                },
+                "countAroundMidday": {
+                    "description": "Indicates, in case of a split day, that the unoccupied intervals between the morning and afternoon class units are counted each day.",
+                    "type": "boolean",
+                    "default": true
+                }
+            }
+        },                                        
+        "dailyStay": {
+            "title": "DailyStay",
+            "description": "Indicates the maximum teacher´s permanence time,  preferred  and strict , for the daily stay that the teacher can be in the school.",
+            "type": "object",                                                                          
+            "properties": {
+                "strict": {
+                    "description": "Strict time in minutes of maximum daily stay.",
+                    "type": "integer"
+                },
+                "preferable": {
+                    "description": "Ponderable Time in minutes of maximum daily stay.",
+                    "type": "integer"
+                },
+                "countAroundMidday": {
+                    "description": "Indicates, in case of a split day, that the unoccupied intervals between the morning and afternoon class units are counted.",
+                    "type": "boolean",
+                    "default": true
+                }
+            }
+        },
+        "avoidGapsBetweenSesions": {
+            "description": "Indicates if it should avoid free gaps between sessions for the teacher. It is a ponderable condition.",
+            "type": "boolean",
+            "default": false
+        },
+        "maxContinuousTeaching": {
+            "title": "MaxContinuousTeaching",
+            "description": "Indicates the continuous maximum time teaching sessions, that are allowed without have a free gap or a non teaching session in between.",
+            "type": "object",
+            "required":[
+                "minutes"
+            ],                                                                          
+            "properties": {
+                "strict": {
+                    "description": "Indicate if it is a strict condition.",
+                    "type": "boolean",
+                    "default": false
+                },
+                "minutes": {
+                    "description": "Maximum continuous teaching time in minutes.",
+                    "type": "integer"
+                },
+                "minBreak": {
+                    "description": "Minimum time gap to considered it as a break.",
+                    "type": "integer",
+                    "default": 30
+                }
+            }
+        },
+        "avoidClassesAroundBreak": {
+            "description": "Indicate if will penalize the existence of sessions on both sides of a recess guard taught by this teacher.",
+            "type": "boolean",
+            "default": false
+        },
+        "freeTimes":  {
+            "title": "FreeTimes",
+            "description": "Contains the free spaces of time that the teacher should have.",
+            "type": "object",                                                                      
+            "properties": {
+                "fullDay": {
+                    "title": "FullDaysFreeTimes",
+                    "description": "Teacher's full days of free time.",
+                    "type": "object",                                                                      
+                    "properties": {
+                        "strictDays": {
+                            "description": "Number of strict days when teacher should be free.",
+                            "type": "integer",
+                            "default":0
+                        },
+                        "preferredDays": {
+                            "description": "Number of preferred days when teacher should be free.",
+                            "type": "integer",
+                            "default":0
+                        }
+                    }
+                },
+                "firstMinutes": {
+                    "title": "FirstMinutesFreeTimes",
+                    "description": "Teacher's free intervals at the beginning of the day.",
+                    "type": "object",
+                    "required": [
+                        "minutes"
+                    ],                                                                         
+                    "properties": {
+                        "strictDays": {
+                            "description": "Number of strict days when teacher should have the free interval at the beginning of the day.",
+                            "type": "integer",
+                            "default":0
+                        },
+                        "preferredDays": {
+                            "description": "Number of preferred days when teacher should have the free interval at the beginning of the day.",
+                            "type": "integer",
+                            "default":0
+                        },
+                        "minutes": {
+                            "description": "Minutes of free time at the beginning of the day.",
+                            "type": "integer"
+                        }
+                    }
+                },
+                "lastMinutes": {
+                    "title": "LastMinutesFreeTimes",
+                    "description": "Teacher's free intervals at the end of the day.",
+                    "type": "object",
+                    "required": [
+                        "minutes"
+                    ],                                                                        
+                    "properties": {
+                        "strictDays": {
+                            "description": "Number of strict days when teacher should have the free interval at the end of the day.",
+                            "type": "integer",
+                            "default":0
+                        },
+                        "preferredDays": {
+                            "description": "Number of preferred days when teacher should have the free interval at the end of the day.",
+                            "type": "integer",
+                            "default":0
+                        },
+                        "minutes": {
+                            "description": "Minutes of free time at the end of the day.",
+                            "type": "integer"
+                        }
+                    }
+                },
+                "consecutiveAnyTime": {
+                    "title": "ConsecutiveAnyTimeFreeTimes",
+                    "description": "Teacher's free intervals at any time of the day.",
+                    "type": "object",
+                    "required": [
+                        "minutes"
+                    ],                                                                        
+                    "properties": {
+                        "strictDays": {
+                            "description": "Number of strict days when teacher should have the free interval.",
+                            "type": "integer",
+                            "default":0
+                        },
+                        "preferredDays": {
+                            "description": "Number of preferred days when teacher should have the free interval.",
+                            "type": "integer",
+                            "default":0
+                        },
+                        "minutes": {
+                            "description": "Minutes of free time interval.",
+                            "type": "integer"
+                        }
+                    }
+                }
+            }                                            
+        },
+        "freePartTimes": {
+            "title": "FreePartTime",
+            "description": "Half day off periods.",
+            "type": "object",                                                                      
+            "properties": {
+                "mornings": {
+                    "title": "MorningsFreePartTimes",
+                    "description": "Mornings off periods.",
+                    "type": "object",
+                    "properties": {
+                        "strict": {
+                            "description": "Strict number of mornings off periods.",
+                            "type": "integer",
+                            "default": 0
+                        },
+                        "preferable": {
+                            "description": "Preferable number of mornings off periods.",
+                            "type": "integer",
+                            "default": 0
+                        }
+                    }                                                    
+                },
+                "afternoons": {
+                    "title": "AfternoonFreePartTimes",
+                    "description": "Afternoons off periods.",
+                    "type": "object",
+                    "properties": {
+                        "strict": {
+                            "description": "Strict number of afternoons off periods.",
+                            "type": "integer",
+                            "default": 0
+                        },
+                        "preferable": {
+                            "description": "Preferable number of afternoons off periods.",
+                            "type": "integer",
+                            "default": 0
+                        }
+                    }       
+                },
+                "indistinctly":{
+                    "title": "IndistinctlyFreePartTimes",
+                    "description": "Indistinctly, mornings or afternoons, off periods.",
+                    "type": "object",
+                    "properties": {
+                        "strict": {
+                            "description": "Strict number of mornings or afternoons off periods.",
+                            "type": "integer",
+                            "default": 0
+                        },
+                        "preferable": {
+                            "description": "Preferable number of mornings or afternoons off periods.",
+                            "type": "integer",
+                            "default": 0
+                        }
+                    }       
+                }
+            }                                           
+        },
+        "incompatibilities": {
+            "title": "Incompatibilities",
+            "description": "Contains teacher's incompatibilities about sessions assignation and rests times.",
+            "type": "object",
+            "properties": {
+                "freeTimeBetweenDayBeforeAndCurrent": {
+                    "title": "FreeTimeBetweenDays",
+                    "description": "Minutes between the departure and the next day's entry.",
+                    "type": "object",
+                    "required": [
+                        "minutes"
+                    ],  
+                    "properties": {
+                        "strict": {
+                            "description": "Indicate if the incompatibility is a strict condition.",
+                            "type": "boolean",
+                            "default": false
+                        },
+                        "minutes": {
+                            "description": "Custom time in minutes for incompatibility.",
+                            "type": "integer"
+                        }
+                    }
+                },
+                "freeTimeBetweenEndWeekAndStartWeekDays": {
+                    "title": "FreeTimeBetweenWeeksBorders",
+                    "description": "Minutes between finishing time on week's last day, and starting time the next week.",
+                    "type": "object",
+                    "required": [
+                        "minutes"
+                    ],  
+                    "properties": {
+                        "strict": {
+                            "description": "Indicate if the incompatibility is a strict condition.",
+                            "type": "boolean",
+                            "default": false
+                        },
+                        "minutes": {
+                            "description": "Custom time in minutes for incompatibility.",
+                            "type": "integer"
+                        }
+                    }
+                },
+                "freeTimeFirstOrLastHoursDay": {
+                    "title": "FreeTimeFirstOrLastHoursDay",
+                    "description": "Minutes of free time at first or last hours of the day.",
+                    "type": "object",
+                    "required": [
+                        "minutes"
+                    ],  
+                    "properties": {
+                        "strict": {
+                            "description": "Indicate if the incompatibility is a strict condition.",
+                            "type": "boolean",
+                            "default": false
+                        },
+                        "minutes": {
+                            "description": "Custom time in minutes for incompatibility.",
+                            "type": "integer"
+                        }
+                    }
+                },
+                "doNotFinishAtLastAfternoonSectionIfStartedAtFirstAfternoonSection": {
+                    "title": "DoNotFinishAtLastAfternoonSection",
+                    "description": "Do not finish at last hour in the afternoon and start at the first one.",
+                    "type": "object",
+                    "properties": {
+                        "strict": {
+                            "description": "Indicate if the incompatibility is a strict condition.",
+                            "type": "boolean",
+                            "default": false
+                        }
+                    }
+                },
+                "doNotFinishAtLastMorningSectionIfStartedAtFirstMorningSection": {
+                    "title": "DoNotFinishAtLastMorningSection",
+                    "description": "Do not start at first hour and and finish at the last hour of the morning.",
+                    "type": "object",
+                    "properties": {
+                        "strict": {
+                            "description": "Indicate if the incompatibility is a strict condition.",
+                            "type": "boolean",
+                            "default": false
+                        }
+                    }
+                },
+                "doNotFinishAtLastMorningSectionIfStartAtFirstAfternoonSection": {
+                    "title": "DoNotFinishAtLastMorningSectionIfStartAtFirstAfternoon",
+                    "description": "Do not finish at the last hour in the morning and start at the first one in the afternoon.",
+                    "type": "object",
+                    "properties": {
+                        "strict": {
+                            "description": "Indicate if the incompatibility is a strict condition.",
+                            "type": "boolean",
+                            "default": false
+                        }
+                    }
+                },
+                "doNotFinishAtLastMorningSectionIfHasAfternoonAssignment": {
+                    "title": "DoNotFinishAtLastMorningSectionIfHasAfternoon",
+                    "description": "Do not finish at the last hour in the morning and have the afternoon occupied.",
+                    "type": "object",
+                    "properties": {
+                        "strict": {
+                            "description": "Indicate if the incompatibility is a strict condition.",
+                            "type": "boolean",
+                            "default": false
+                        }
+                    }
+                },
+                "doNotStartAtFirstMorningSectionIfHasAfternoonAssignment": {
+                    "title": "DoNotStartAtFirstMorningSection",
+                    "description": "Do not start at the first hour and have occupation in the afternoon.",
+                    "type": "object",
+                    "properties": {
+                        "strict": {
+                            "description": "Indicate if the incompatibility is a strict condition.",
+                            "type": "boolean",
+                            "default": false
+                        }
+                    }
+                },
+                "freeTimeAroundMidday": {
+                    "title": "FreeTimeAroundMidday",
+                    "description": "Do not have less than a custom free time around noon pause.",
+                    "type": "object",
+                    "required": [
+                        "minutes"
+                    ],  
+                    "properties": {
+                        "strict": {
+                            "description": "Indicate if the incompatibility is a strict condition.",
+                            "type": "boolean",
+                            "default": false
+                        },
+                        "minutes": {
+                            "description": "Custom time in minutes for incompatibility.",
+                            "type": "integer"
+                        }
+                    }
+                }
+            }
+        },
+        "dailyOcupation": {                                            
+            "title": "DailyOcupation",
+            "description": "Maximum and minimum values for teaching or activity time for teachers. This object indicates the kind of condition (estrict or ponderable) and if it should be adjusted the automatic calcultation in minutes at engine.",
+            "type": "object",                                                                    
+            "properties": {
+                "allowFreeDays": {
+                    "description": "Indicates whether the check of the minimums is omitted in case of days without allocation. Prohibited days never are not checked.",
+                    "type": "boolean",
+                    "default": false
+                },
+                "minimumTeaching": {
+                    "title": "MinimumTeaching",
+                    "description": "Teacher's minimum time of teaching with students.",
+                    "type": "object",
+                    "required":[
+                        "restriction"
+                     ],                                                                          
+                    "properties": {
+                        "restriction": {
+                            "description": "Kind of restriction. It can be 'strict', 'preferred' or according to the related rule of optimization.",
+                            "enum": [
+                                "strict",
+                                "preferred",
+                                "accordingToRule"
+                            ] 
+                        },
+                        "setting": {
+                            "description": "Indicates whether the automatic calculation of the value must be adjusted to higher or lower.",
+                            "enum": [
+                                "auto",
+                                "oneMore",
+                                "oneLess"
+                            ],
+                            "default": "auto"
+                        }
+                    }
+                },
+                "maximumTeaching": {
+                    "title": "MaximumTeaching",
+                    "description": "Teacher's maximum time of teaching with students.",
+                    "type": "object",
+                    "required":[
+                       "restriction"
+                    ],                                                                          
+                    "properties": {
+                        "restriction": {
+                            "description": "Kind of restriction. It can be 'strict', 'preferred' or according to the related rule of optimization.",
+                            "enum": [
+                                "strict",
+                                "preferred",
+                                "accordingToRule"
+                            ] 
+                        },
+                        "setting": {
+                            "description": "Indicates whether the automatic calculation of the value must be adjusted to higher or lower.",
+                            "enum": [
+                                "auto",
+                                "oneMore",
+                                "oneLess"
+                            ],
+                            "default": "auto"
+                        }
+                    }
+                },
+                "minimumOccupancy": {
+                    "title": "MinimumOccupancy",
+                    "description": "Teacher's minimum time of teaching with students and other non-teaching activities indicated as computable.",
+                    "type": "object",
+                    "properties": {
+                        "restriction": {
+                            "description": "Kind of restriction. It can be 'strict', 'preferred' or according to the related rule of optimization.",
+                            "enum": [
+                                "strict",
+                                "preferred",
+                                "accordingToRule"
+                            ] 
+                        },
+                        "setting": {
+                            "description": "Indicates whether the automatic calculation of the value must be adjusted to higher or lower.",
+                            "enum": [
+                                "auto",
+                                "oneMore",
+                                "oneLess"
+                            ],
+                            "default": "auto"
+                        }
+                    }
+                },
+                "maximumOccupancy": {
+                    "title": "MaximumOccupancy",
+                    "description": "Teacher's maximum time of teaching with students and other non-teaching activities indicated as computable.",
+                    "type": "object",
+                    "properties": {
+                        "restriction": {
+                            "description": "Kind of restriction. It can be 'strict', 'preferred' or according to the related rule of optimization.",
+                            "enum": [
+                                "strict",
+                                "preferred",
+                                "accordingToRule"
+                            ] 
+                        },
+                        "setting": {
+                            "description": "Indicates whether the automatic calculation of the value must be adjusted to higher or lower.",
+                            "enum": [
+                                "auto",
+                                "oneMore",
+                                "oneLess"
+                            ],
+                            "default": "auto"
+                        }
+                    }
+                }
+            }
+        },
+        "middayReference": {
+            "title":"MiddayReference",
+            "description": ".",
+            "type":"object",
+            "properties":{
+                "refFrame": {
+                    "description": "Identifier name of a frame where the teacher take the midday. If it is not not specified, the engine will take the midday of the frame with the highest allocation.",
+                    "type": "string"
+                },
+                "strict": {
+                    "description": "Indicates if the teacher's midday break must be respected without placing their sessions in sections of other frames that overlap with their midday.",
+                    "type": "boolean",
+                    "default": true
+                }
+            }
+        },
+        "dailyBuildingTransfers": {
+            "title": "DailyBuildingTransfers",
+            "description": ".",
+            "type": "object",
+            "properties": {
+                "strict": {
+                    "description": "Strict maximum number of displacement per day.",
+                    "type": "integer"
+                },
+                "preferable": {
+                    "description": "Ponderable/preferable maximum number of displacement per day.",
+                    "type": "integer"
                 }
             }
         },
