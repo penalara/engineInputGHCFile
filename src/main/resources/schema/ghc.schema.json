@@ -1353,6 +1353,11 @@
                             "description": "Indicates If the optimizer should balance the timetables of the different teachers, to avoid very bad schedules for a particular teacher.",
                             "type": "boolean",
                             "default": true
+                        },
+                        "countGapsAroundMidday": {
+                            "description": "Indicates, in case of a split day (with midday break), that the unoccupied intervals between the morning and afternoon class units are counted. This option affect to ponderation at teacher optimization about gaps in it timetable.",
+                            "type": "boolean",
+                            "default": true
                         }
                     }
                 }  
@@ -1469,7 +1474,7 @@
         "avoidGapsBetweenSesions": {
             "description": "Indicates if it should avoid free gaps between sessions for the teacher. It is a ponderable condition.",
             "type": "boolean",
-            "default": false
+            "$comment": "If did not specify, the motor will assign a true value."
         },
         "maxContinuousTeaching": {
             "title": "MaxContinuousTeaching",
@@ -1482,7 +1487,7 @@
                 "strict": {
                     "description": "Indicate if it is a strict condition.",
                     "type": "boolean",
-                    "default": false
+                    "$comment": "If did not specify, the motor will assign the general value or false as default value."
                 },
                 "minutes": {
                     "description": "Maximum continuous teaching time in minutes.",
@@ -1491,7 +1496,7 @@
                 "minBreak": {
                     "description": "Minimum time gap to considered it as a break.",
                     "type": "integer",
-                    "default": 30
+                    "$comment": "If did not specify, the motor will assign the general value or default time of 30 minutes."
                 }
             }
         },

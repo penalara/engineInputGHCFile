@@ -85,6 +85,9 @@ Indicates the maximum teacher´s permanence time,  preferred  and strict , for t
 Indicates if it should avoid free gaps between sessions for the teacher. It is a ponderable condition.
 
 
+> If did not specify, the motor will assign a true value.
+>
+
 `avoidGapsBetweenSesions`
 
 -   is optional

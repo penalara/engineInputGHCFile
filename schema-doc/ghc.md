@@ -269,6 +269,9 @@ Reference this group by using
 Indicate if it is a strict condition.
 
 
+> If did not specify, the motor will assign the general value or false as default value.
+>
+
 `strict`
 
 -   is optional
@@ -301,6 +304,9 @@ Maximum continuous teaching time in minutes.
 Minimum time gap to considered it as a break.
 
 
+> If did not specify, the motor will assign the general value or default time of 30 minutes.
+>
+
 `minBreak`
 
 -   is optional
@@ -311,14 +317,6 @@ Minimum time gap to considered it as a break.
 #### minBreak Type
 
 `integer`
-
-#### minBreak Default Value
-
-The default value is:
-
-```json
-30
-```
 
 ## Definitions group avoidClassesAroundBreak
 

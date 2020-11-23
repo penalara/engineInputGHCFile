@@ -1,19 +1,24 @@
 # Untitled boolean in EngineInputGHCSchema Schema
 
 ```txt
-engineInputGHCSchema#/definitions/avoidGapsBetweenSesions
+engineInputGHCSchema#/properties/ghcData/properties/engineSettings/properties/countGapsAroundMidday
 ```
 
-Indicates if it should avoid free gaps between sessions for the teacher. It is a ponderable condition.
+Indicates, in case of a split day (with midday break), that the unoccupied intervals between the morning and afternoon class units are counted. This option affect to ponderation at teacher optimization about gaps in it timetable.
 
-
-> If did not specify, the motor will assign a true value.
->
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
 | :------------------ | ---------- | -------------- | ----------------------- | :---------------- | --------------------- | ------------------- | ------------------------------------------------------------------ |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [ghc.schema.json\*](../out/ghc.schema.json "open original schema") |
 
-## avoidGapsBetweenSesions Type
+## countGapsAroundMidday Type
 
 `boolean`
+
+## countGapsAroundMidday Default Value
+
+The default value is:
+
+```json
+true
+```

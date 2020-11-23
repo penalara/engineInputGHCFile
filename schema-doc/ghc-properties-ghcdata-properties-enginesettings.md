@@ -17,9 +17,10 @@ Custom parameters about engine configuration.
 
 # EngineSettings Properties
 
-| Property                          | Type      | Required | Nullable       | Defined by                                                                                                                                                                                           |
-| :-------------------------------- | --------- | -------- | -------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [teacherBalance](#teacherbalance) | `boolean` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-enginesettings-properties-teacherbalance.md "engineInputGHCSchema#/properties/ghcData/properties/engineSettings/properties/teacherBalance") |
+| Property                                        | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                         |
+| :---------------------------------------------- | --------- | -------- | -------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [teacherBalance](#teacherbalance)               | `boolean` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-enginesettings-properties-teacherbalance.md "engineInputGHCSchema#/properties/ghcData/properties/engineSettings/properties/teacherBalance")               |
+| [countGapsAroundMidday](#countgapsaroundmidday) | `boolean` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-enginesettings-properties-countgapsaroundmidday.md "engineInputGHCSchema#/properties/ghcData/properties/engineSettings/properties/countGapsAroundMidday") |
 
 ## teacherBalance
 
@@ -38,6 +39,30 @@ Indicates If the optimizer should balance the timetables of the different teache
 `boolean`
 
 ### teacherBalance Default Value
+
+The default value is:
+
+```json
+true
+```
+
+## countGapsAroundMidday
+
+Indicates, in case of a split day (with midday break), that the unoccupied intervals between the morning and afternoon class units are counted. This option affect to ponderation at teacher optimization about gaps in it timetable.
+
+
+`countGapsAroundMidday`
+
+-   is optional
+-   Type: `boolean`
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-enginesettings-properties-countgapsaroundmidday.md "engineInputGHCSchema#/properties/ghcData/properties/engineSettings/properties/countGapsAroundMidday")
+
+### countGapsAroundMidday Type
+
+`boolean`
+
+### countGapsAroundMidday Default Value
 
 The default value is:
 
