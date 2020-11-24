@@ -9,7 +9,7 @@ Contains the information about classrooms for the sessions. At least one classro
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
 | :------------------ | ---------- | -------------- | ------------ | :---------------- | --------------------- | ------------------- | ------------------------------------------------------------------ |
-| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [ghc.schema.json\*](../out/ghc.schema.json "open original schema") |
+| Can be instantiated | No         | Unknown status | No           | Forbidden         | Forbidden             | none                | [ghc.schema.json\*](../out/ghc.schema.json "open original schema") |
 
 ## sessionClassRooms Type
 
@@ -22,6 +22,7 @@ Contains the information about classrooms for the sessions. At least one classro
 | [classRoomsToAssign](#classroomstoassign) | `array`       | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionclassrooms-properties-classroomstoassign.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionClassRooms/properties/classRoomsToAssign") |
 | [capacityPreference](#capacitypreference) | Not specified | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionclassrooms-properties-capacitypreference.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionClassRooms/properties/capacityPreference") |
 | [capacityType](#capacitytype)             | Not specified | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionclassrooms-properties-capacitytype.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionClassRooms/properties/capacityType")             |
+| [refBuilding](#refbuilding)               | `string`      | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionclassrooms-properties-refbuilding.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionClassRooms/properties/refBuilding")               |
 
 ## classRoomsToAssign
 
@@ -105,3 +106,22 @@ The default value is:
 ```json
 "individual"
 ```
+
+## refBuilding
+
+Identifier name of the building where is session. Only allowed in sessions without groups os students. It is used to know transfer time and number of transfers between buildings for teachers without specfy a classroom.
+
+
+> It is incompatible with the other properties of object 'sessionClassRooms'.
+>
+
+`refBuilding`
+
+-   is optional
+-   Type: `string`
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionclassrooms-properties-refbuilding.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionClassRooms/properties/refBuilding")
+
+### refBuilding Type
+
+`string`
