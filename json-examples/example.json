@@ -497,12 +497,11 @@
                         "preferable": 1800,
                         "countAroundMidday": true
                     },
-                    "daylyStay": {
+                    "dailyStay": {
                         "strict": 360,
                         "preferable": 300
                     },
                     "avoidGapsBetweenSesions": false,
-                    "continuousWeeks": false,
                     "maxContinuousTeaching": {
                         "strict": false,
                         "minutes": 300,
@@ -540,7 +539,7 @@
                             "minutes":60
                         }
                     },
-                    "daylyOcupation": {
+                    "dailyOcupation": {
                         "allowFreeDays": true,
                         "minimumTeaching": {
                             "restriction": "strict"
