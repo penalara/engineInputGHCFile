@@ -74,7 +74,8 @@
                                 }
                             }
                         }
-                    }
+                    },
+                    "additionalProperties": false
                 },
                 "frames": {
                     "title": "Frames",
@@ -179,7 +180,8 @@
                                             "description": "Distance minutes from the building from the referred building.",
                                             "type": "integer"
                                         }
-                                    }
+                                    },
+                                    "additionalProperties": false
                                 }
                             }
                         }
@@ -341,7 +343,8 @@
                                         "$ref": "#/definitions/dailyBuildingTransfers"  
                                     }
                                     
-                                }
+                                },
+                                "additionalProperties": false
                             },
                             "periodSettings":{
                                 "title": "PeriodsSettings",
@@ -392,7 +395,8 @@
                                         "dailyBuildingTransfers": {
                                             "$ref": "#/definitions/dailyBuildingTransfers"  
                                         }
-                                    }
+                                    },
+                                    "additionalProperties": false
                                 }
                             }
                         }
@@ -596,7 +600,8 @@
                                                     }
                                                 }
                                             }
-                                        }
+                                        },
+                                        "additionalProperties": false
                                     },
                                     "variablePeriods": {
                                         "title":"VariablePeriods",
@@ -621,9 +626,11 @@
                                                 "type":"integer",
                                                 "default": 0
                                             }
-                                        }
+                                        },
+                                        "additionalProperties": false
                                     }
-                                } 
+                                },
+                                "additionalProperties": false
                             },
                             "sessionClassRooms":{
                                 "title": "SessionClassRooms",
@@ -681,13 +688,14 @@
                                             "collective"
                                         ],
                                         "default": "individual"
+                                    },
+                                    "refBuilding": {
+                                        "description": "Identifier name of the building where is session. Only allowed in sessions without groups os students. It is used to know transfer time and number of transfers between buildings for teachers without specfy a classroom.",
+                                        "type": "string",
+                                        "$comment": "It is incompatible with the other properties of object 'sessionClassRooms'."
                                     }
                                 },
-                                "refBuilding": {
-                                    "description": "Identifier name of the building where is session. Only allowed in sessions without groups os students. It is used to know transfer time and number of transfers between buildings for teachers without specfy a classroom.",
-                                    "type": "string",
-                                    "$comment": "It is incompatible with the other properties of object 'sessionClassRooms'."
-                                }
+                                "additionalProperties": false
                             },
                             "frameTemplate": {
                                 "title": "SessionFrameTemplate",
@@ -798,7 +806,8 @@
                                         ],
                                         "default": "ignore"
                                     }
-                                }
+                                },
+                                "additionalProperties": false
                             },
                             "sessionRelations": {
                                 "title": "SessionRelations",
@@ -841,7 +850,8 @@
                                                 ]
                                             }
 
-                                        }
+                                        },
+                                        "additionalProperties": false
                                     },
                                     "consecutiveGroup": {
                                         "title": "ConsecutiveGroup",
@@ -915,7 +925,8 @@
                                                     "description":"Condition's Days of separation.",
                                                     "type": "integer"
                                                 }
-                                            }
+                                            },
+                                            "additionalProperties": false
                                         }
                                     },
                                     "minimumSeparationTo": {
@@ -949,10 +960,12 @@
                                                     "description":"Condition's Days of separation. If value is 0 or 1 is equivalent to 'DifferentDays' condition.",
                                                     "type": "integer"
                                                 }
-                                            }
+                                            },
+                                            "additionalProperties": false
                                         }
                                     }
-                                }
+                                },
+                                "additionalProperties": false
                             }
                         }
                     }
@@ -992,7 +1005,8 @@
                                             "type":"string"
                                         }
                                     }
-                                }
+                                },
+                                "additionalProperties": false
                             }
                         },
                         "consecutiveGroups": {
@@ -1034,10 +1048,12 @@
                                         ],
                                         "default": "disordered"
                                     }
-                                }
+                                },
+                                "additionalProperties": false
                             }
                         }
-                    }
+                    },
+                    "additionalProperties": false
                 },
                 "onCallServices":{
                     "title": "OnCallServices",
@@ -1135,7 +1151,8 @@
                                             }
                                         }
                                     }
-                                }
+                                },
+                                "additionalProperties": false
                             },
                             "refTeachers": {
                                 "title": "RefTeachers",
@@ -1194,7 +1211,8 @@
                                                 }
                                             }
                                         }
-                                    }
+                                    },
+                                    "additionalProperties": false
                                 }
                             },
                             "frameTemplate": {
@@ -1449,7 +1467,8 @@
                     "type": "boolean",
                     "default": true
                 }
-            }
+            },
+            "additionalProperties": false
         },                                        
         "dailyStay": {
             "title": "DailyStay",
@@ -1469,7 +1488,8 @@
                     "type": "boolean",
                     "default": true
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "avoidGapsBetweenSesions": {
             "description": "Indicates if it should avoid free gaps between sessions for the teacher. It is a ponderable condition.",
@@ -1498,7 +1518,8 @@
                     "type": "integer",
                     "$comment": "If did not specify, the motor will assign the general value or default time of 30 minutes."
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "avoidClassesAroundBreak": {
             "description": "Indicate if will penalize the existence of sessions on both sides of a recess guard taught by this teacher.",
@@ -1599,7 +1620,8 @@
                         }
                     }
                 }
-            }                                            
+            },
+            "additionalProperties": false                                            
         },
         "freePartTimes": {
             "title": "FreePartTime",
@@ -1657,7 +1679,8 @@
                         }
                     }       
                 }
-            }                                           
+            },
+            "additionalProperties": false                                        
         },
         "incompatibilities": {
             "title": "Incompatibilities",
@@ -1800,7 +1823,8 @@
                         }
                     }
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "dailyOcupation": {                                            
             "title": "DailyOcupation",
@@ -1914,7 +1938,8 @@
                         }
                     }
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "middayReference": {
             "title":"MiddayReference",
@@ -1930,7 +1955,8 @@
                     "type": "boolean",
                     "default": true
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "dailyBuildingTransfers": {
             "title": "DailyBuildingTransfers",
@@ -1945,7 +1971,8 @@
                     "description": "Ponderable/preferable maximum number of displacement per day.",
                     "type": "integer"
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "weeklyStable": {
             "title": "WeeklyStable",
@@ -1994,7 +2021,8 @@
                     "type":"boolean",
                     "default": false
                 }
-            }
+            },
+            "additionalProperties": false
         }
     }
 }
