@@ -1635,13 +1635,11 @@
                     "properties": {
                         "strict": {
                             "description": "Strict number of mornings off periods.",
-                            "type": "integer",
-                            "default": 0
+                            "type": "integer"
                         },
                         "preferable": {
                             "description": "Preferable number of mornings off periods.",
-                            "type": "integer",
-                            "default": 0
+                            "type": "integer"
                         }
                     }                                                    
                 },
@@ -1652,13 +1650,11 @@
                     "properties": {
                         "strict": {
                             "description": "Strict number of afternoons off periods.",
-                            "type": "integer",
-                            "default": 0
+                            "type": "integer"
                         },
                         "preferable": {
                             "description": "Preferable number of afternoons off periods.",
-                            "type": "integer",
-                            "default": 0
+                            "type": "integer"
                         }
                     }       
                 },
@@ -1669,13 +1665,11 @@
                     "properties": {
                         "strict": {
                             "description": "Strict number of mornings or afternoons off periods.",
-                            "type": "integer",
-                            "default": 0
+                            "type": "integer"
                         },
                         "preferable": {
                             "description": "Preferable number of mornings or afternoons off periods.",
-                            "type": "integer",
-                            "default": 0
+                            "type": "integer"
                         }
                     }       
                 }
