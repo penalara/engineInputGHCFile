@@ -1689,16 +1689,20 @@
                         "minutes"
                     ],  
                     "properties": {
-                        "strict": {
-                            "description": "Indicate if the incompatibility is a strict condition.",
-                            "type": "boolean",
-                            "default": false
+                        "type": {
+                            "description": "Indicate if the incompatibility is a strict, avoid (ponderable for optimization) or ignore.",
+                            "enum": [
+                                "ignore",
+                                "avoid",
+                                "strict"
+                            ]
                         },
                         "minutes": {
                             "description": "Custom time in minutes for incompatibility.",
                             "type": "integer"
                         }
-                    }
+                    },
+                    "additionalProperties": false
                 },
                 "freeTimeBetweenEndWeekAndStartWeekDays": {
                     "title": "FreeTimeBetweenWeeksBorders",
@@ -1708,16 +1712,20 @@
                         "minutes"
                     ],  
                     "properties": {
-                        "strict": {
-                            "description": "Indicate if the incompatibility is a strict condition.",
-                            "type": "boolean",
-                            "default": false
+                        "type": {
+                            "description": "Indicate if the incompatibility is a strict, avoid (ponderable for optimization) or ignore.",
+                            "enum": [
+                                "ignore",
+                                "avoid",
+                                "strict"
+                            ]
                         },
                         "minutes": {
                             "description": "Custom time in minutes for incompatibility.",
                             "type": "integer"
                         }
-                    }
+                    },
+                    "additionalProperties": false
                 },
                 "freeTimeFirstOrLastHoursDay": {
                     "title": "FreeTimeFirstOrLastHoursDay",
@@ -1727,76 +1735,65 @@
                         "minutes"
                     ],  
                     "properties": {
-                        "strict": {
-                            "description": "Indicate if the incompatibility is a strict condition.",
-                            "type": "boolean",
-                            "default": false
+                        "type": {
+                            "description": "Indicate if the incompatibility is a strict, avoid (ponderable for optimization) or ignore.",
+                            "enum": [
+                                "ignore",
+                                "avoid",
+                                "strict"
+                            ]
                         },
                         "minutes": {
                             "description": "Custom time in minutes for incompatibility.",
                             "type": "integer"
                         }
-                    }
+                    },
+                    "additionalProperties": false
                 },
                 "doNotFinishAtLastAfternoonSectionIfStartedAtFirstAfternoonSection": {
                     "title": "DoNotFinishAtLastAfternoonSection",
                     "description": "Do not finish at last hour in the afternoon and start at the first one.",
-                    "type": "object",
-                    "properties": {
-                        "strict": {
-                            "description": "Indicate if the incompatibility is a strict condition.",
-                            "type": "boolean",
-                            "default": false
-                        }
-                    }
+                    "enum": [
+                        "ignore",
+                        "avoid",
+                        "strict"
+                    ]
                 },
                 "doNotFinishAtLastMorningSectionIfStartedAtFirstMorningSection": {
                     "title": "DoNotFinishAtLastMorningSection",
                     "description": "Do not start at first hour and and finish at the last hour of the morning.",
-                    "type": "object",
-                    "properties": {
-                        "strict": {
-                            "description": "Indicate if the incompatibility is a strict condition.",
-                            "type": "boolean",
-                            "default": false
-                        }
-                    }
+                    "enum": [
+                        "ignore",
+                        "avoid",
+                        "strict"
+                    ]
                 },
                 "doNotFinishAtLastMorningSectionIfStartAtFirstAfternoonSection": {
                     "title": "DoNotFinishAtLastMorningSectionIfStartAtFirstAfternoon",
                     "description": "Do not finish at the last hour in the morning and start at the first one in the afternoon.",
-                    "type": "object",
-                    "properties": {
-                        "strict": {
-                            "description": "Indicate if the incompatibility is a strict condition.",
-                            "type": "boolean",
-                            "default": false
-                        }
-                    }
+                    "enum": [
+                        "ignore",
+                        "avoid",
+                        "strict"
+                    ]
                 },
                 "doNotFinishAtLastMorningSectionIfHasAfternoonAssignment": {
                     "title": "DoNotFinishAtLastMorningSectionIfHasAfternoon",
                     "description": "Do not finish at the last hour in the morning and have the afternoon occupied.",
-                    "type": "object",
-                    "properties": {
-                        "strict": {
-                            "description": "Indicate if the incompatibility is a strict condition.",
-                            "type": "boolean",
-                            "default": false
-                        }
-                    }
+                    "enum": [
+                        "ignore",
+                        "avoid",
+                        "strict"
+                    ]
                 },
                 "doNotStartAtFirstMorningSectionIfHasAfternoonAssignment": {
                     "title": "DoNotStartAtFirstMorningSection",
                     "description": "Do not start at the first hour and have occupation in the afternoon.",
-                    "type": "object",
-                    "properties": {
-                        "strict": {
-                            "description": "Indicate if the incompatibility is a strict condition.",
-                            "type": "boolean",
-                            "default": false
-                        }
-                    }
+                    "enum": [
+                        "ignore",
+                        "avoid",
+                        "strict"
+                    ]
                 },
                 "freeTimeAroundMidday": {
                     "title": "FreeTimeAroundMidday",
@@ -1806,16 +1803,20 @@
                         "minutes"
                     ],  
                     "properties": {
-                        "strict": {
-                            "description": "Indicate if the incompatibility is a strict condition.",
-                            "type": "boolean",
-                            "default": false
+                        "type": {
+                            "description": "Indicate if the incompatibility is a strict, avoid (ponderable for optimization) or ignore.",
+                            "enum": [
+                                "ignore",
+                                "avoid",
+                                "strict"
+                            ]
                         },
                         "minutes": {
                             "description": "Custom time in minutes for incompatibility.",
                             "type": "integer"
                         }
-                    }
+                    },
+                    "additionalProperties": false
                 }
             },
             "additionalProperties": false

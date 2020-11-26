@@ -531,11 +531,13 @@
                         }
                     },
                     "incompatibilities": {
-                        "doNotFinishAtLastAfternoonSectionIfStartedAtFirstAfternoonSection": {
-                            "estrict": true
-                        },
+                        "freeTimeBetweenDayBeforeAndCurrent" :{
+							"type": "strict",
+							"minutes": 60
+						},
+                        "doNotFinishAtLastAfternoonSectionIfStartedAtFirstAfternoonSection": "strict",
                         "freeTimeAroundMidday": {
-                            "estrict": false,
+                            "type": "avoid",
                             "minutes":60
                         }
                     },
@@ -554,6 +556,17 @@
                         "refPeriod":"PrimerCuatri",
                         "weeklyStay": {
                             "strict": 1800
+                        },
+                        "freeTimes": {
+                            "fullDay":{
+                                "strictDays":0,
+                                "preferredDays": 0
+                            },
+                            "firstMinutes":{
+                                "strictDays":1,
+                                "preferredDays": 0,
+                                "minutes":60
+                            }
                         }
                     }
                 ]

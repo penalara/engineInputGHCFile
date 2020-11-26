@@ -9,7 +9,7 @@ Minutes between finishing time on week's last day, and starting time the next we
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
 | :------------------ | ---------- | -------------- | ------------ | :---------------- | --------------------- | ------------------- | ------------------------------------------------------------------ |
-| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [ghc.schema.json\*](../out/ghc.schema.json "open original schema") |
+| Can be instantiated | No         | Unknown status | No           | Forbidden         | Forbidden             | none                | [ghc.schema.json\*](../out/ghc.schema.json "open original schema") |
 
 ## freeTimeBetweenEndWeekAndStartWeekDays Type
 
@@ -17,26 +17,36 @@ Minutes between finishing time on week's last day, and starting time the next we
 
 # FreeTimeBetweenWeeksBorders Properties
 
-| Property            | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                                                        |
-| :------------------ | --------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [strict](#strict)   | `boolean` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-freetimebetweenweeksborders-properties-strict.md "engineInputGHCSchema#/definitions/incompatibilities/properties/freeTimeBetweenEndWeekAndStartWeekDays/properties/strict")   |
-| [minutes](#minutes) | `integer` | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-freetimebetweenweeksborders-properties-minutes.md "engineInputGHCSchema#/definitions/incompatibilities/properties/freeTimeBetweenEndWeekAndStartWeekDays/properties/minutes") |
+| Property            | Type          | Required | Nullable       | Defined by                                                                                                                                                                                                                                        |
+| :------------------ | ------------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [type](#type)       | Not specified | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-freetimebetweenweeksborders-properties-type.md "engineInputGHCSchema#/definitions/incompatibilities/properties/freeTimeBetweenEndWeekAndStartWeekDays/properties/type")       |
+| [minutes](#minutes) | `integer`     | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-freetimebetweenweeksborders-properties-minutes.md "engineInputGHCSchema#/definitions/incompatibilities/properties/freeTimeBetweenEndWeekAndStartWeekDays/properties/minutes") |
 
-## strict
+## type
 
-Indicate if the incompatibility is a strict condition.
+Indicate if the incompatibility is a strict, avoid (ponderable for optimization) or ignore.
 
 
-`strict`
+`type`
 
 -   is optional
--   Type: `boolean`
+-   Type: unknown
 -   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-freetimebetweenweeksborders-properties-strict.md "engineInputGHCSchema#/definitions/incompatibilities/properties/freeTimeBetweenEndWeekAndStartWeekDays/properties/strict")
+-   defined in: [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-freetimebetweenweeksborders-properties-type.md "engineInputGHCSchema#/definitions/incompatibilities/properties/freeTimeBetweenEndWeekAndStartWeekDays/properties/type")
 
-### strict Type
+### type Type
 
-`boolean`
+unknown
+
+### type Constraints
+
+**enum**: the value of this property must be equal to one of the following values:
+
+| Value      | Explanation |
+| :--------- | ----------- |
+| `"ignore"` |             |
+| `"avoid"`  |             |
+| `"strict"` |             |
 
 ## minutes
 
