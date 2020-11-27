@@ -1383,6 +1383,16 @@
         }      
     },
     "definitions": {
+        "conditionType": {
+            "title": "ConditionType",
+            "description": "Indicate if the incompatibility is a strict, avoid (ponderable for optimization) or ignore.",
+            "javaType" : "com.penalara.ghc.jsonghcfile.ConditionType",
+            "enum": [
+                "ignore",
+                "avoid",
+                "strict"
+            ]
+        },
         "frameTemplate": {
             "title": "FrameTemplate",
             "description": "Templates with assignment preferences to section of the frames.",
@@ -1499,15 +1509,10 @@
         "maxContinuousTeaching": {
             "title": "MaxContinuousTeaching",
             "description": "Indicates the continuous maximum time teaching sessions, that are allowed without have a free gap or a non teaching session in between.",
-            "type": "object",
-            "required":[
-                "minutes"
-            ],                                                                          
+            "type": "object",                                                                        
             "properties": {
-                "strict": {
-                    "description": "Indicate if it is a strict condition.",
-                    "type": "boolean",
-                    "$comment": "If did not specify, the motor will assign the general value or false as default value."
+                "type": {
+                    "$ref": "#/definitions/conditionType"
                 },
                 "minutes": {
                     "description": "Maximum continuous teaching time in minutes.",
@@ -1690,12 +1695,7 @@
                     ],  
                     "properties": {
                         "type": {
-                            "description": "Indicate if the incompatibility is a strict, avoid (ponderable for optimization) or ignore.",
-                            "enum": [
-                                "ignore",
-                                "avoid",
-                                "strict"
-                            ]
+                            "$ref": "#/definitions/conditionType"
                         },
                         "minutes": {
                             "description": "Custom time in minutes for incompatibility.",
@@ -1713,12 +1713,7 @@
                     ],  
                     "properties": {
                         "type": {
-                            "description": "Indicate if the incompatibility is a strict, avoid (ponderable for optimization) or ignore.",
-                            "enum": [
-                                "ignore",
-                                "avoid",
-                                "strict"
-                            ]
+                            "$ref": "#/definitions/conditionType"
                         },
                         "minutes": {
                             "description": "Custom time in minutes for incompatibility.",
@@ -1736,12 +1731,7 @@
                     ],  
                     "properties": {
                         "type": {
-                            "description": "Indicate if the incompatibility is a strict, avoid (ponderable for optimization) or ignore.",
-                            "enum": [
-                                "ignore",
-                                "avoid",
-                                "strict"
-                            ]
+                            "$ref": "#/definitions/conditionType"
                         },
                         "minutes": {
                             "description": "Custom time in minutes for incompatibility.",
@@ -1804,12 +1794,7 @@
                     ],  
                     "properties": {
                         "type": {
-                            "description": "Indicate if the incompatibility is a strict, avoid (ponderable for optimization) or ignore.",
-                            "enum": [
-                                "ignore",
-                                "avoid",
-                                "strict"
-                            ]
+                            "$ref": "#/definitions/conditionType"
                         },
                         "minutes": {
                             "description": "Custom time in minutes for incompatibility.",

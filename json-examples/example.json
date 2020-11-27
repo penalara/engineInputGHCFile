@@ -503,7 +503,7 @@
                     },
                     "avoidGapsBetweenSesions": false,
                     "maxContinuousTeaching": {
-                        "strict": false,
+                        "type": "avoid",
                         "minutes": 300,
                         "minBreak": 15
                     },

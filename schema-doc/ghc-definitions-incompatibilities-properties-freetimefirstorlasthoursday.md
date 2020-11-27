@@ -19,7 +19,7 @@ Minutes of free time at first or last hours of the day.
 
 | Property            | Type          | Required | Nullable       | Defined by                                                                                                                                                                                                                             |
 | :------------------ | ------------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [type](#type)       | Not specified | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-freetimefirstorlasthoursday-properties-type.md "engineInputGHCSchema#/definitions/incompatibilities/properties/freeTimeFirstOrLastHoursDay/properties/type")       |
+| [type](#type)       | Not specified | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-conditiontype.md "engineInputGHCSchema#/definitions/incompatibilities/properties/freeTimeFirstOrLastHoursDay/properties/type")                                                                  |
 | [minutes](#minutes) | `integer`     | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-freetimefirstorlasthoursday-properties-minutes.md "engineInputGHCSchema#/definitions/incompatibilities/properties/freeTimeFirstOrLastHoursDay/properties/minutes") |
 
 ## type
@@ -30,13 +30,13 @@ Indicate if the incompatibility is a strict, avoid (ponderable for optimization)
 `type`
 
 -   is optional
--   Type: unknown
+-   Type: unknown ([ConditionType](ghc-definitions-conditiontype.md))
 -   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-freetimefirstorlasthoursday-properties-type.md "engineInputGHCSchema#/definitions/incompatibilities/properties/freeTimeFirstOrLastHoursDay/properties/type")
+-   defined in: [EngineInputGHCSchema](ghc-definitions-conditiontype.md "engineInputGHCSchema#/definitions/incompatibilities/properties/freeTimeFirstOrLastHoursDay/properties/type")
 
 ### type Type
 
-unknown
+unknown ([ConditionType](ghc-definitions-conditiontype.md))
 
 ### type Constraints
 

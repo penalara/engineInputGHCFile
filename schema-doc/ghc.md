@@ -77,6 +77,17 @@ Schema of the object that contains the timetable planning data.
 
 # EngineInputGHCSchema Definitions
 
+## Definitions group conditionType
+
+Reference this group by using
+
+```json
+{"$ref":"engineInputGHCSchema#/definitions/conditionType"}
+```
+
+| Property | Type | Required | Nullable | Defined by |
+| :------- | ---- | -------- | -------- | :--------- |
+
 ## Definitions group frameTemplate
 
 Reference this group by using
@@ -185,7 +196,7 @@ Reference this group by using
 
 ### strict
 
-Strict time in minutes of maximum daily stay.
+Strict time in minutes of maximum weekly stay.
 
 
 `strict`
@@ -258,30 +269,37 @@ Reference this group by using
 {"$ref":"engineInputGHCSchema#/definitions/maxContinuousTeaching"}
 ```
 
-| Property              | Type      | Required | Nullable       | Defined by                                                                                                                                                         |
-| :-------------------- | --------- | -------- | -------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [strict](#strict-2)   | `boolean` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-maxcontinuousteaching-properties-strict.md "engineInputGHCSchema#/definitions/maxContinuousTeaching/properties/strict")     |
-| [minutes](#minutes)   | `integer` | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-maxcontinuousteaching-properties-minutes.md "engineInputGHCSchema#/definitions/maxContinuousTeaching/properties/minutes")   |
-| [minBreak](#minbreak) | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-maxcontinuousteaching-properties-minbreak.md "engineInputGHCSchema#/definitions/maxContinuousTeaching/properties/minBreak") |
+| Property              | Type          | Required | Nullable       | Defined by                                                                                                                                                          |
+| :-------------------- | ------------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [type](#type)         | Not specified | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-maxcontinuousteaching-properties-conditiontype.md "engineInputGHCSchema#/definitions/maxContinuousTeaching/properties/type") |
+| [minutes](#minutes)   | `integer`     | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-maxcontinuousteaching-properties-minutes.md "engineInputGHCSchema#/definitions/maxContinuousTeaching/properties/minutes")    |
+| [minBreak](#minbreak) | `integer`     | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-maxcontinuousteaching-properties-minbreak.md "engineInputGHCSchema#/definitions/maxContinuousTeaching/properties/minBreak")  |
 
-### strict
+### type
 
-Indicate if it is a strict condition.
+Indicate if the incompatibility is a strict, avoid (ponderable for optimization) or ignore.
 
 
-> If did not specify, the motor will assign the general value or false as default value.
->
-
-`strict`
+`type`
 
 -   is optional
--   Type: `boolean`
+-   Type: unknown ([ConditionType](ghc-definitions-maxcontinuousteaching-properties-conditiontype.md))
 -   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-definitions-maxcontinuousteaching-properties-strict.md "engineInputGHCSchema#/definitions/maxContinuousTeaching/properties/strict")
+-   defined in: [EngineInputGHCSchema](ghc-definitions-maxcontinuousteaching-properties-conditiontype.md "engineInputGHCSchema#/definitions/maxContinuousTeaching/properties/type")
 
-#### strict Type
+#### type Type
 
-`boolean`
+unknown ([ConditionType](ghc-definitions-maxcontinuousteaching-properties-conditiontype.md))
+
+#### type Constraints
+
+**enum**: the value of this property must be equal to one of the following values:
+
+| Value      | Explanation |
+| :--------- | ----------- |
+| `"ignore"` |             |
+| `"avoid"`  |             |
+| `"strict"` |             |
 
 ### minutes
 
@@ -791,7 +809,7 @@ Reference this group by using
 | Property              | Type      | Required | Nullable       | Defined by                                                                                                                                             |
 | :-------------------- | --------- | -------- | -------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [refFrame](#refframe) | `string`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-middayreference-properties-refframe.md "engineInputGHCSchema#/definitions/middayReference/properties/refFrame") |
-| [strict](#strict-3)   | `boolean` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-middayreference-properties-strict.md "engineInputGHCSchema#/definitions/middayReference/properties/strict")     |
+| [strict](#strict-2)   | `boolean` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-middayreference-properties-strict.md "engineInputGHCSchema#/definitions/middayReference/properties/strict")     |
 
 ### refFrame
 
@@ -843,7 +861,7 @@ Reference this group by using
 
 | Property                    | Type      | Required | Nullable       | Defined by                                                                                                                                                               |
 | :-------------------------- | --------- | -------- | -------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [strict](#strict-4)         | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-dailybuildingtransfers-properties-strict.md "engineInputGHCSchema#/definitions/dailyBuildingTransfers/properties/strict")         |
+| [strict](#strict-3)         | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-dailybuildingtransfers-properties-strict.md "engineInputGHCSchema#/definitions/dailyBuildingTransfers/properties/strict")         |
 | [preferable](#preferable-2) | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-dailybuildingtransfers-properties-preferable.md "engineInputGHCSchema#/definitions/dailyBuildingTransfers/properties/preferable") |
 
 ### strict
