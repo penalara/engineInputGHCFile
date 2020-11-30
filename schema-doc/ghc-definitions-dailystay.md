@@ -25,7 +25,7 @@ Indicates the maximum teacher´s permanence time,  preferred  and strict , for t
 
 ## strict
 
-Strict time in minutes of maximum weekly stay.
+Strict time in minutes of maximum daily stay.
 
 
 `strict`

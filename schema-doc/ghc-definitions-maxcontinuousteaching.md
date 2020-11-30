@@ -20,7 +20,7 @@ Indicates the continuous maximum time teaching sessions, that are allowed withou
 | Property              | Type          | Required | Nullable       | Defined by                                                                                                                                                         |
 | :-------------------- | ------------- | -------- | -------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [type](#type)         | Not specified | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-conditiontype.md "engineInputGHCSchema#/definitions/maxContinuousTeaching/properties/type")                                 |
-| [minutes](#minutes)   | `integer`     | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-maxcontinuousteaching-properties-minutes.md "engineInputGHCSchema#/definitions/maxContinuousTeaching/properties/minutes")   |
+| [minutes](#minutes)   | `integer`     | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-maxcontinuousteaching-properties-minutes.md "engineInputGHCSchema#/definitions/maxContinuousTeaching/properties/minutes")   |
 | [minBreak](#minbreak) | `integer`     | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-maxcontinuousteaching-properties-minbreak.md "engineInputGHCSchema#/definitions/maxContinuousTeaching/properties/minBreak") |
 
 ## type
@@ -56,7 +56,7 @@ Maximum continuous teaching time in minutes.
 
 `minutes`
 
--   is required
+-   is optional
 -   Type: `integer`
 -   cannot be null
 -   defined in: [EngineInputGHCSchema](ghc-definitions-maxcontinuousteaching-properties-minutes.md "engineInputGHCSchema#/definitions/maxContinuousTeaching/properties/minutes")

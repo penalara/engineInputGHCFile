@@ -17,26 +17,26 @@ Teacher's maximum time of teaching with students.
 
 # MaximumTeaching Properties
 
-| Property                    | Type          | Required | Nullable       | Defined by                                                                                                                                                                                                       |
-| :-------------------------- | ------------- | -------- | -------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [restriction](#restriction) | Not specified | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-dailyocupation-properties-maximumteaching-properties-restriction.md "engineInputGHCSchema#/definitions/dailyOcupation/properties/maximumTeaching/properties/restriction") |
-| [setting](#setting)         | Not specified | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-dailyocupation-properties-maximumteaching-properties-setting.md "engineInputGHCSchema#/definitions/dailyOcupation/properties/maximumTeaching/properties/setting")         |
+| Property                    | Type          | Required | Nullable       | Defined by                                                                                                                                                       |
+| :-------------------------- | ------------- | -------- | -------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [restriction](#restriction) | Not specified | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-restrictiontype.md "engineInputGHCSchema#/definitions/dailyOcupation/properties/maximumTeaching/properties/restriction")  |
+| [setting](#setting)         | Not specified | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-ocupationsettingtype.md "engineInputGHCSchema#/definitions/dailyOcupation/properties/maximumTeaching/properties/setting") |
 
 ## restriction
 
-Kind of restriction. It can be 'strict', 'preferred' or according to the related rule of optimization.
+Kind of 'dailyOcupation' restriction. It can be 'ignore', 'strict', 'preferred' or according to the related rule of optimization.
 
 
 `restriction`
 
 -   is required
--   Type: unknown
+-   Type: unknown ([RestrictionType](ghc-definitions-restrictiontype.md))
 -   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-definitions-dailyocupation-properties-maximumteaching-properties-restriction.md "engineInputGHCSchema#/definitions/dailyOcupation/properties/maximumTeaching/properties/restriction")
+-   defined in: [EngineInputGHCSchema](ghc-definitions-restrictiontype.md "engineInputGHCSchema#/definitions/dailyOcupation/properties/maximumTeaching/properties/restriction")
 
 ### restriction Type
 
-unknown
+unknown ([RestrictionType](ghc-definitions-restrictiontype.md))
 
 ### restriction Constraints
 
@@ -44,40 +44,33 @@ unknown
 
 | Value               | Explanation |
 | :------------------ | ----------- |
+| `"ignore"`          |             |
 | `"strict"`          |             |
 | `"preferred"`       |             |
 | `"accordingToRule"` |             |
 
 ## setting
 
-Indicates whether the automatic calculation of the value must be adjusted to higher or lower.
+Indicates whether the automatic calculation of the value must be adjusted to higher or lower. The adjustment is made with the duration of the greater section.
 
 
 `setting`
 
 -   is optional
--   Type: unknown
+-   Type: unknown ([OcupationSettingType](ghc-definitions-ocupationsettingtype.md))
 -   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-definitions-dailyocupation-properties-maximumteaching-properties-setting.md "engineInputGHCSchema#/definitions/dailyOcupation/properties/maximumTeaching/properties/setting")
+-   defined in: [EngineInputGHCSchema](ghc-definitions-ocupationsettingtype.md "engineInputGHCSchema#/definitions/dailyOcupation/properties/maximumTeaching/properties/setting")
 
 ### setting Type
 
-unknown
+unknown ([OcupationSettingType](ghc-definitions-ocupationsettingtype.md))
 
 ### setting Constraints
 
 **enum**: the value of this property must be equal to one of the following values:
 
-| Value       | Explanation |
-| :---------- | ----------- |
-| `"auto"`    |             |
-| `"oneMore"` |             |
-| `"oneLess"` |             |
-
-### setting Default Value
-
-The default value is:
-
-```json
-"auto"
-```
+| Value      | Explanation |
+| :--------- | ----------- |
+| `"auto"`   |             |
+| `"higher"` |             |
+| `"lower"`  |             |

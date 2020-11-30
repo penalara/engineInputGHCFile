@@ -1393,6 +1393,27 @@
                 "strict"
             ]
         },
+        "restrictionType": {
+            "title": "RestrictionType",
+            "description": "Kind of 'dailyOcupation' restriction. It can be 'ignore', 'strict', 'preferred' or according to the related rule of optimization.",
+            "javaType" : "com.penalara.ghc.jsonghcfile.RestrictionType",
+            "enum": [
+                "ignore",
+                "strict",
+                "preferred",
+                "accordingToRule"
+            ] 
+        },
+        "ocupationSetting": {
+            "title": "OcupationSettingType",
+            "description": "Indicates whether the automatic calculation of the value must be adjusted to higher or lower. The adjustment is made with the duration of the greater section.",
+            "javaType" : "com.penalara.ghc.jsonghcfile.OcupationSettingType",
+            "enum": [
+                "auto",
+                "higher",
+                "lower"
+            ]
+        },
         "frameTemplate": {
             "title": "FrameTemplate",
             "description": "Templates with assignment preferences to section of the frames.",
@@ -1825,21 +1846,10 @@
                      ],                                                                          
                     "properties": {
                         "restriction": {
-                            "description": "Kind of restriction. It can be 'strict', 'preferred' or according to the related rule of optimization.",
-                            "enum": [
-                                "strict",
-                                "preferred",
-                                "accordingToRule"
-                            ] 
+                            "$ref": "#/definitions/restrictionType"
                         },
                         "setting": {
-                            "description": "Indicates whether the automatic calculation of the value must be adjusted to higher or lower.",
-                            "enum": [
-                                "auto",
-                                "oneMore",
-                                "oneLess"
-                            ],
-                            "default": "auto"
+                            "$ref": "#/definitions/ocupationSetting"
                         }
                     }
                 },
@@ -1852,21 +1862,10 @@
                     ],                                                                          
                     "properties": {
                         "restriction": {
-                            "description": "Kind of restriction. It can be 'strict', 'preferred' or according to the related rule of optimization.",
-                            "enum": [
-                                "strict",
-                                "preferred",
-                                "accordingToRule"
-                            ] 
+                            "$ref": "#/definitions/restrictionType"
                         },
                         "setting": {
-                            "description": "Indicates whether the automatic calculation of the value must be adjusted to higher or lower.",
-                            "enum": [
-                                "auto",
-                                "oneMore",
-                                "oneLess"
-                            ],
-                            "default": "auto"
+                            "$ref": "#/definitions/ocupationSetting"
                         }
                     }
                 },
@@ -1876,21 +1875,10 @@
                     "type": "object",
                     "properties": {
                         "restriction": {
-                            "description": "Kind of restriction. It can be 'strict', 'preferred' or according to the related rule of optimization.",
-                            "enum": [
-                                "strict",
-                                "preferred",
-                                "accordingToRule"
-                            ] 
+                            "$ref": "#/definitions/restrictionType"
                         },
                         "setting": {
-                            "description": "Indicates whether the automatic calculation of the value must be adjusted to higher or lower.",
-                            "enum": [
-                                "auto",
-                                "oneMore",
-                                "oneLess"
-                            ],
-                            "default": "auto"
+                            "$ref": "#/definitions/ocupationSetting"
                         }
                     }
                 },
@@ -1900,21 +1888,10 @@
                     "type": "object",
                     "properties": {
                         "restriction": {
-                            "description": "Kind of restriction. It can be 'strict', 'preferred' or according to the related rule of optimization.",
-                            "enum": [
-                                "strict",
-                                "preferred",
-                                "accordingToRule"
-                            ] 
+                            "$ref": "#/definitions/restrictionType"
                         },
                         "setting": {
-                            "description": "Indicates whether the automatic calculation of the value must be adjusted to higher or lower.",
-                            "enum": [
-                                "auto",
-                                "oneMore",
-                                "oneLess"
-                            ],
-                            "default": "auto"
+                            "$ref": "#/definitions/ocupationSetting"
                         }
                     }
                 }

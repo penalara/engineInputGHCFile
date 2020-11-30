@@ -88,6 +88,28 @@ Reference this group by using
 | Property | Type | Required | Nullable | Defined by |
 | :------- | ---- | -------- | -------- | :--------- |
 
+## Definitions group restrictionType
+
+Reference this group by using
+
+```json
+{"$ref":"engineInputGHCSchema#/definitions/restrictionType"}
+```
+
+| Property | Type | Required | Nullable | Defined by |
+| :------- | ---- | -------- | -------- | :--------- |
+
+## Definitions group ocupationSetting
+
+Reference this group by using
+
+```json
+{"$ref":"engineInputGHCSchema#/definitions/ocupationSetting"}
+```
+
+| Property | Type | Required | Nullable | Defined by |
+| :------- | ---- | -------- | -------- | :--------- |
+
 ## Definitions group frameTemplate
 
 Reference this group by using
@@ -196,7 +218,7 @@ Reference this group by using
 
 ### strict
 
-Strict time in minutes of maximum weekly stay.
+Strict time in minutes of maximum daily stay.
 
 
 `strict`
@@ -272,7 +294,7 @@ Reference this group by using
 | Property              | Type          | Required | Nullable       | Defined by                                                                                                                                                          |
 | :-------------------- | ------------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | [type](#type)         | Not specified | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-maxcontinuousteaching-properties-conditiontype.md "engineInputGHCSchema#/definitions/maxContinuousTeaching/properties/type") |
-| [minutes](#minutes)   | `integer`     | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-maxcontinuousteaching-properties-minutes.md "engineInputGHCSchema#/definitions/maxContinuousTeaching/properties/minutes")    |
+| [minutes](#minutes)   | `integer`     | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-maxcontinuousteaching-properties-minutes.md "engineInputGHCSchema#/definitions/maxContinuousTeaching/properties/minutes")    |
 | [minBreak](#minbreak) | `integer`     | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-maxcontinuousteaching-properties-minbreak.md "engineInputGHCSchema#/definitions/maxContinuousTeaching/properties/minBreak")  |
 
 ### type
@@ -308,7 +330,7 @@ Maximum continuous teaching time in minutes.
 
 `minutes`
 
--   is required
+-   is optional
 -   Type: `integer`
 -   cannot be null
 -   defined in: [EngineInputGHCSchema](ghc-definitions-maxcontinuousteaching-properties-minutes.md "engineInputGHCSchema#/definitions/maxContinuousTeaching/properties/minutes")
