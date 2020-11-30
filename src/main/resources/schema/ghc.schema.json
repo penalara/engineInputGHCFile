@@ -1834,8 +1834,7 @@
             "properties": {
                 "allowFreeDays": {
                     "description": "Indicates whether the check of the minimums is omitted in case of days without allocation. Prohibited days never are not checked.",
-                    "type": "boolean",
-                    "default": false
+                    "type": "boolean"
                 },
                 "minimumTeaching": {
                     "title": "MinimumTeaching",
