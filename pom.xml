@@ -44,7 +44,7 @@
                 <version>1.0.2</version>
                 <configuration> <!-- Documentation at http://joelittlejohn.github.io/jsonschema2pojo/site/1.0.2/generate-mojo.html -->
                     <sourceDirectory>${basedir}/src/main/resources/schema</sourceDirectory>
-                    <targetPackage>com.penalara.ghc.jsonghcfile</targetPackage>
+                    <targetPackage>com.penalara.ghc.jsonghcfile.engineinput</targetPackage>
                     <removeOldOutput>true</removeOldOutput>
                     <includeHashcodeAndEquals>false</includeHashcodeAndEquals>
                     <includeToString>false</includeToString>

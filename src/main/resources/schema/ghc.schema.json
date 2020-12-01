@@ -1386,7 +1386,7 @@
         "conditionType": {
             "title": "ConditionType",
             "description": "Indicate if the incompatibility is a strict, avoid (ponderable for optimization) or ignore.",
-            "javaType" : "com.penalara.ghc.jsonghcfile.ConditionType",
+            "javaType" : "com.penalara.ghc.jsonghcfile.engineinput.ConditionType",
             "enum": [
                 "ignore",
                 "avoid",
@@ -1396,7 +1396,7 @@
         "restrictionType": {
             "title": "RestrictionType",
             "description": "Kind of 'dailyOcupation' restriction. It can be 'ignore', 'strict', 'preferred' or according to the related rule of optimization.",
-            "javaType" : "com.penalara.ghc.jsonghcfile.RestrictionType",
+            "javaType" : "com.penalara.ghc.jsonghcfile.engineinput.RestrictionType",
             "enum": [
                 "ignore",
                 "strict",
@@ -1407,7 +1407,7 @@
         "ocupationSetting": {
             "title": "OcupationSettingType",
             "description": "Indicates whether the automatic calculation of the value must be adjusted to higher or lower. The adjustment is made with the duration of the greater section.",
-            "javaType" : "com.penalara.ghc.jsonghcfile.OcupationSettingType",
+            "javaType" : "com.penalara.ghc.jsonghcfile.engineinput.OcupationSettingType",
             "enum": [
                 "auto",
                 "higher",
