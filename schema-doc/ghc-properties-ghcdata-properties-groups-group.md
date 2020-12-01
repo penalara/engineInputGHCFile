@@ -21,9 +21,9 @@ engineInputGHCSchema#/properties/ghcData/properties/groups/items
 | :---------------------------------------------------- | --------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [id](#id)                                             | `string`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-id.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/id")                                             |
 | [refFrame](#refframe)                                 | `string`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-refframe.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/refFrame")                                 |
-| [freeAfternoons](#freeafternoons)                     | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-freeafternoons.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/freeAfternoons")                     |
 | [frameTemplate](#frametemplate)                       | `array`   | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-frametemplate.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/frameTemplate")                                                                 |
 | [numStudents](#numstudents)                           | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-numstudents.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/numStudents")                           |
+| [freeAfternoons](#freeafternoons)                     | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-freeafternoons.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/freeAfternoons")                     |
 | [notGaps](#notgaps)                                   | `boolean` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-notgaps.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/notGaps")                                   |
 | [gapsAlwaysInNonPreferred](#gapsalwaysinnonpreferred) | `boolean` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-gapsalwaysinnonpreferred.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/gapsAlwaysInNonPreferred") |
 
@@ -59,22 +59,6 @@ Identifier name of the group's frame.
 
 `string`
 
-## freeAfternoons
-
-Stric number of free afternoons for the group.
-
-
-`freeAfternoons`
-
--   is optional
--   Type: `integer`
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-freeafternoons.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/freeAfternoons")
-
-### freeAfternoons Type
-
-`integer`
-
 ## frameTemplate
 
 Templates with assignment preferences to section of the frames.
@@ -104,6 +88,22 @@ Number of students in the group.
 -   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-numstudents.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/numStudents")
 
 ### numStudents Type
+
+`integer`
+
+## freeAfternoons
+
+Stric number of free afternoons for the group.
+
+
+`freeAfternoons`
+
+-   is optional
+-   Type: `integer`
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-freeafternoons.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/freeAfternoons")
+
+### freeAfternoons Type
 
 `integer`
 

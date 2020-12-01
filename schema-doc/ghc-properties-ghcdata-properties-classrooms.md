@@ -1,16 +1,16 @@
-# Untitled boolean in EngineInputGHCSchema Schema
+# ClassRooms Schema
 
 ```txt
-engineInputGHCSchema#/properties/ghcData/properties/subjects/items/properties/student-mentoring
+engineInputGHCSchema#/properties/ghcData/properties/classRooms
 ```
 
-Indicates if the subject is a tutorship.
+Contains the rooms to put on the sessions.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
 | :------------------ | ---------- | -------------- | ----------------------- | :---------------- | --------------------- | ------------------- | ------------------------------------------------------------------ |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [ghc.schema.json\*](../out/ghc.schema.json "open original schema") |
 
-## student-mentoring Type
+## classRooms Type
 
-`boolean`
+`object[]` ([Classroom](ghc-properties-ghcdata-properties-classrooms-classroom.md))

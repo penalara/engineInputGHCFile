@@ -41,7 +41,7 @@ Identifier name of the subject.
 
 ## student-mentoring
 
-Indicates if the subject is a tutorship
+Indicates if the subject is a tutorship.
 
 
 `student-mentoring`

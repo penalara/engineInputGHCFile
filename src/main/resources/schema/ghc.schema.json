@@ -188,12 +188,12 @@
                     }
                 },
                 "classRooms": {
-                    "title": "ClassRoms",
+                    "title": "ClassRooms",
                     "description": "Contains the rooms to put on the sessions.",
                     "type": "array",
                     "additionalItems": false,
                     "items": {
-                        "title": "Classrom",
+                        "title": "Classroom",
                         "type": "object",
                         "required": [
                             "id"
@@ -419,7 +419,7 @@
                                 "type": "string"
                             },
                             "student-mentoring": {
-                                "description": "Indicates if the subject is a tutorship",
+                                "description": "Indicates if the subject is a tutorship.",
                                 "type": "boolean",
                                 "default": false
                             },
@@ -449,16 +449,16 @@
                             "refFrame": {
                                 "description": "Identifier name of the group's frame.",
                                 "type": "string"
-                            },                       
-                            "freeAfternoons": {
-                                "description": "Stric number of free afternoons for the group.",
-                                "type": "integer"
-                            },
+                            },  
                             "frameTemplate":{
                                 "$ref": "#/definitions/frameTemplate"
                             },
                             "numStudents": {
                                 "description": "Number of students in the group.",
+                                "type": "integer"
+                            },
+                            "freeAfternoons": {
+                                "description": "Stric number of free afternoons for the group.",
                                 "type": "integer"
                             },
                             "notGaps": {
@@ -1916,7 +1916,7 @@
         },
         "dailyBuildingTransfers": {
             "title": "DailyBuildingTransfers",
-            "description": ".",
+            "description": "Número de traslados entre edificios máximos que se pueden realizar al día de manera obligatoria.",
             "type": "object",
             "properties": {
                 "strict": {

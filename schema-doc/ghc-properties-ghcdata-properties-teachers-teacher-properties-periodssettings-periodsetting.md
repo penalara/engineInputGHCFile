@@ -213,7 +213,7 @@ Maximum and minimum values for teaching or activity time for teachers. This obje
 
 ## dailyBuildingTransfers
 
-.
+Número de traslados entre edificios máximos que se pueden realizar al día de manera obligatoria.
 
 
 `dailyBuildingTransfers`
