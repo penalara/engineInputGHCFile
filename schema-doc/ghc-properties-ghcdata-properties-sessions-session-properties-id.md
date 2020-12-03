@@ -1,4 +1,4 @@
-# Untitled string in EngineInputGHCSchema Schema
+# Untitled integer in EngineInputGHCSchema Schema
 
 ```txt
 engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/id
@@ -13,4 +13,4 @@ Identifier name of the session.
 
 ## id Type
 
-`string`
+`integer`

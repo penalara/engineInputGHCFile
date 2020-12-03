@@ -727,6 +727,16 @@
                 } 
             }
         ],
+        "studentsOptatives": [
+            {
+                "idStundent": "st01",
+                "refGroup": "1AESO",
+                "sessionsChosen": ["0", "1", "2"]
+            },{
+                "idStundent": "st02",
+                "sessionsChosen": ["0", "1", "2"]
+            }
+        ],
         "onCallServices": [
             {
                "id": "breakOnCall",

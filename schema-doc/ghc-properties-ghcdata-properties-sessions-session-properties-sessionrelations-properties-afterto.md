@@ -13,7 +13,7 @@ Indicates that this session should be assigned in a later day to the sessions of
 
 ## afterTo Type
 
-`string[]` ([SessionRef](ghc-properties-ghcdata-properties-sessions-session-properties-sessionrelations-properties-afterto-sessionref.md))
+`integer[]` ([SessionRef](ghc-properties-ghcdata-properties-sessions-session-properties-sessionrelations-properties-afterto-sessionref.md))
 
 ## afterTo Constraints
 

@@ -46,13 +46,13 @@ List of sessions references which must be simultaneus.
 `refSessions`
 
 -   is required
--   Type: `string[]` ([SessionRef](ghc-properties-ghcdata-properties-relationslist-properties-simultaneusgroups-simultaneusgroup-properties-sessionrefs-sessionref.md))
+-   Type: `integer[]` ([SessionRef](ghc-properties-ghcdata-properties-relationslist-properties-simultaneusgroups-simultaneusgroup-properties-sessionrefs-sessionref.md))
 -   cannot be null
 -   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-relationslist-properties-simultaneusgroups-simultaneusgroup-properties-sessionrefs.md "engineInputGHCSchema#/properties/ghcData/properties/relationsList/properties/simultaneusGroups/items/properties/refSessions")
 
 ### refSessions Type
 
-`string[]` ([SessionRef](ghc-properties-ghcdata-properties-relationslist-properties-simultaneusgroups-simultaneusgroup-properties-sessionrefs-sessionref.md))
+`integer[]` ([SessionRef](ghc-properties-ghcdata-properties-relationslist-properties-simultaneusgroups-simultaneusgroup-properties-sessionrefs-sessionref.md))
 
 ### refSessions Constraints
 

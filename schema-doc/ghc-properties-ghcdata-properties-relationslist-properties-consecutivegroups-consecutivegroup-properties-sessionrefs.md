@@ -13,7 +13,7 @@ List of sessions references which must be consecutive.
 
 ## refSessions Type
 
-`string[]` ([SessionRef](ghc-properties-ghcdata-properties-relationslist-properties-consecutivegroups-consecutivegroup-properties-sessionrefs-sessionref.md))
+`integer[]` ([SessionRef](ghc-properties-ghcdata-properties-relationslist-properties-consecutivegroups-consecutivegroup-properties-sessionrefs-sessionref.md))
 
 ## refSessions Constraints
 

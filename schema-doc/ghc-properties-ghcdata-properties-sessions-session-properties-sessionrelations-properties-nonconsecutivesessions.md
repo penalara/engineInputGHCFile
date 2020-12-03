@@ -13,7 +13,7 @@ Identifiers of the sessions that they should not be consecutive. It is a strict 
 
 ## nonConsecutiveSessions Type
 
-`string[]` ([SessionRef](ghc-properties-ghcdata-properties-sessions-session-properties-sessionrelations-properties-nonconsecutivesessions-sessionref.md))
+`integer[]` ([SessionRef](ghc-properties-ghcdata-properties-sessions-session-properties-sessionrelations-properties-nonconsecutivesessions-sessionref.md))
 
 ## nonConsecutiveSessions Constraints
 

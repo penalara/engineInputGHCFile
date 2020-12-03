@@ -17,19 +17,19 @@ engineInputGHCSchema#/properties/ghcData/properties/sessions/items
 
 # Session Properties
 
-| Property                                | Type     | Required | Nullable       | Defined by                                                                                                                                                                                                   |
-| :-------------------------------------- | -------- | -------- | -------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [id](#id)                               | `string` | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-id.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/id")                               |
-| [refFrame](#refframe)                   | `string` | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-refframe.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/refFrame")                   |
-| [refTasks](#reftasks)                   | `array`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-reftasks.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/refTasks")                   |
-| [refTeachers](#refteachers)             | `array`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-refteachers.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/refTeachers")             |
-| [refSubjects](#refsubjects)             | `array`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-refsubjects.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/refSubjects")             |
-| [refGroups](#refgroups)                 | `array`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-refgroups.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/refGroups")                 |
-| [distribution](#distribution)           | `object` | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-distribution.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/distribution")           |
-| [sessionClassRooms](#sessionclassrooms) | `object` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionclassrooms.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionClassRooms") |
-| [frameTemplate](#frametemplate)         | `array`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionframetemplate.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/frameTemplate")  |
-| [sessionSettings](#sessionsettings)     | `object` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings")     |
-| [sessionRelations](#sessionrelations)   | `object` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionrelations.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionRelations")   |
+| Property                                | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                   |
+| :-------------------------------------- | --------- | -------- | -------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [id](#id)                               | `integer` | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-id.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/id")                               |
+| [refFrame](#refframe)                   | `string`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-refframe.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/refFrame")                   |
+| [refTasks](#reftasks)                   | `array`   | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-reftasks.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/refTasks")                   |
+| [refTeachers](#refteachers)             | `array`   | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-refteachers.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/refTeachers")             |
+| [refSubjects](#refsubjects)             | `array`   | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-refsubjects.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/refSubjects")             |
+| [refGroups](#refgroups)                 | `array`   | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-refgroups.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/refGroups")                 |
+| [distribution](#distribution)           | `object`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-distribution.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/distribution")           |
+| [sessionClassRooms](#sessionclassrooms) | `object`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionclassrooms.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionClassRooms") |
+| [frameTemplate](#frametemplate)         | `array`   | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionframetemplate.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/frameTemplate")  |
+| [sessionSettings](#sessionsettings)     | `object`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings")     |
+| [sessionRelations](#sessionrelations)   | `object`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionrelations.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionRelations")   |
 
 ## id
 
@@ -39,13 +39,13 @@ Identifier name of the session.
 `id`
 
 -   is required
--   Type: `string`
+-   Type: `integer`
 -   cannot be null
 -   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-id.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/id")
 
 ### id Type
 
-`string`
+`integer`
 
 ## refFrame
 

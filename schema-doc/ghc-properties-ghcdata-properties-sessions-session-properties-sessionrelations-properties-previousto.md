@@ -13,7 +13,7 @@ Indicates that this session should be assigned in a previous day to the sessions
 
 ## previousTo Type
 
-`string[]` ([SessionRef](ghc-properties-ghcdata-properties-sessions-session-properties-sessionrelations-properties-previousto-sessionref.md))
+`integer[]` ([SessionRef](ghc-properties-ghcdata-properties-sessions-session-properties-sessionrelations-properties-previousto-sessionref.md))
 
 ## previousTo Constraints
 

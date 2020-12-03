@@ -13,7 +13,7 @@ List of sessions references.
 
 ## refSessions Type
 
-`string[]` ([SessionRef](ghc-properties-ghcdata-properties-sessions-session-properties-sessionrelations-properties-maximumseparationto-maximumseparationtosession-properties-sessionrefs-sessionref.md))
+`integer[]` ([SessionRef](ghc-properties-ghcdata-properties-sessions-session-properties-sessionrelations-properties-maximumseparationto-maximumseparationtosession-properties-sessionrefs-sessionref.md))
 
 ## refSessions Constraints
 

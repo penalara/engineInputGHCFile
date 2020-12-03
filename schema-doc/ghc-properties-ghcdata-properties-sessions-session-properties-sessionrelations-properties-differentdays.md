@@ -30,13 +30,13 @@ Identifiers of the sessions that they should not be assigned at the same day whe
 `refSesions`
 
 -   is required
--   Type: `string[]` ([SessionRef](ghc-properties-ghcdata-properties-sessions-session-properties-sessionrelations-properties-differentdays-properties-refsesions-sessionref.md))
+-   Type: `integer[]` ([SessionRef](ghc-properties-ghcdata-properties-sessions-session-properties-sessionrelations-properties-differentdays-properties-refsesions-sessionref.md))
 -   cannot be null
 -   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionrelations-properties-differentdays-properties-refsesions.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionRelations/properties/differentDays/properties/refSesions")
 
 ### refSesions Type
 
-`string[]` ([SessionRef](ghc-properties-ghcdata-properties-sessions-session-properties-sessionrelations-properties-differentdays-properties-refsesions-sessionref.md))
+`integer[]` ([SessionRef](ghc-properties-ghcdata-properties-sessions-session-properties-sessionrelations-properties-differentdays-properties-refsesions-sessionref.md))
 
 ### refSesions Constraints
 

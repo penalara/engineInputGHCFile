@@ -13,4 +13,4 @@ Identifier of session.
 
 ## items Type
 
-`string` ([SessionRef](ghc-properties-ghcdata-properties-relationslist-properties-consecutivegroups-consecutivegroup-properties-sessionrefs-sessionref.md))
+`integer` ([SessionRef](ghc-properties-ghcdata-properties-relationslist-properties-consecutivegroups-consecutivegroup-properties-sessionrefs-sessionref.md))

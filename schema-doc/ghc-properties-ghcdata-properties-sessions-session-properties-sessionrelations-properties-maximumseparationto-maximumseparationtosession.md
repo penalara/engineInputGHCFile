@@ -30,13 +30,13 @@ List of sessions references.
 `refSessions`
 
 -   is required
--   Type: `string[]` ([SessionRef](ghc-properties-ghcdata-properties-sessions-session-properties-sessionrelations-properties-maximumseparationto-maximumseparationtosession-properties-sessionrefs-sessionref.md))
+-   Type: `integer[]` ([SessionRef](ghc-properties-ghcdata-properties-sessions-session-properties-sessionrelations-properties-maximumseparationto-maximumseparationtosession-properties-sessionrefs-sessionref.md))
 -   cannot be null
 -   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionrelations-properties-maximumseparationto-maximumseparationtosession-properties-sessionrefs.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionRelations/properties/maximumSeparationTo/items/properties/refSessions")
 
 ### refSessions Type
 
-`string[]` ([SessionRef](ghc-properties-ghcdata-properties-sessions-session-properties-sessionrelations-properties-maximumseparationto-maximumseparationtosession-properties-sessionrefs-sessionref.md))
+`integer[]` ([SessionRef](ghc-properties-ghcdata-properties-sessions-session-properties-sessionrelations-properties-maximumseparationto-maximumseparationtosession-properties-sessionrefs-sessionref.md))
 
 ### refSessions Constraints
 

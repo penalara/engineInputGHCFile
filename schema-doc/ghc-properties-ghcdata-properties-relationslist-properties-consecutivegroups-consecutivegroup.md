@@ -47,13 +47,13 @@ List of sessions references which must be consecutive.
 `refSessions`
 
 -   is required
--   Type: `string[]` ([SessionRef](ghc-properties-ghcdata-properties-relationslist-properties-consecutivegroups-consecutivegroup-properties-sessionrefs-sessionref.md))
+-   Type: `integer[]` ([SessionRef](ghc-properties-ghcdata-properties-relationslist-properties-consecutivegroups-consecutivegroup-properties-sessionrefs-sessionref.md))
 -   cannot be null
 -   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-relationslist-properties-consecutivegroups-consecutivegroup-properties-sessionrefs.md "engineInputGHCSchema#/properties/ghcData/properties/relationsList/properties/consecutiveGroups/items/properties/refSessions")
 
 ### refSessions Type
 
-`string[]` ([SessionRef](ghc-properties-ghcdata-properties-relationslist-properties-consecutivegroups-consecutivegroup-properties-sessionrefs-sessionref.md))
+`integer[]` ([SessionRef](ghc-properties-ghcdata-properties-relationslist-properties-consecutivegroups-consecutivegroup-properties-sessionrefs-sessionref.md))
 
 ### refSessions Constraints
 

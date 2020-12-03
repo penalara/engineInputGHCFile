@@ -13,7 +13,7 @@ Identifiers of the sessions that they should not be assigned at the same day whe
 
 ## refSesions Type
 
-`string[]` ([SessionRef](ghc-properties-ghcdata-properties-sessions-session-properties-sessionrelations-properties-differentdays-properties-refsesions-sessionref.md))
+`integer[]` ([SessionRef](ghc-properties-ghcdata-properties-sessions-session-properties-sessionrelations-properties-differentdays-properties-refsesions-sessionref.md))
 
 ## refSesions Constraints
 
