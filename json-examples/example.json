@@ -20,6 +20,7 @@
                         "index":0,
                         "entryTime": "08:30:00",
                         "exitTime": "09:20:00",
+                        "duration": 50,
                         "type":"teaching"
                     },
                     {
@@ -27,6 +28,7 @@
                         "index":1,
                         "entryTime": "09:25:00",
                         "exitTime": "10:15:00",
+                        "duration": 50,
                         "type":"teaching"
                     },
                     {
@@ -34,6 +36,7 @@
                         "index":2,
                         "entryTime": "10:15:00",
                         "exitTime": "10:30:00",
+                        "duration": 15,
                         "type":"break"
                     },
                     {
@@ -41,6 +44,7 @@
                         "index":3,
                         "entryTime": "10:30:00",
                         "exitTime": "11:20:00",
+                        "duration": 50,
                         "type":"teaching"
                     },
                     {
@@ -48,6 +52,7 @@
                         "index":4,
                         "entryTime": "11:25:00",
                         "exitTime": "12:15:00",
+                        "duration": 50,
                         "type":"teaching"
                     },
                     {
@@ -55,6 +60,7 @@
                         "index":5,
                         "entryTime": "12:15:00",
                         "exitTime": "12:30:00",
+                        "duration": 15,
                         "type":"break"
                     },
                     {
@@ -62,6 +68,7 @@
                         "index":6,
                         "entryTime": "12:30:00",
                         "exitTime": "13:20:00",
+                        "duration": 50,
                         "type":"teaching"
                     },
                     {
@@ -69,6 +76,7 @@
                         "index":7,
                         "entryTime": "13:25:00",
                         "exitTime": "14:15:00",
+                        "duration": 50,
                         "type":"teaching"
                     },
                     {
@@ -76,6 +84,7 @@
                         "index":8,
                         "entryTime": "14:15:00",
                         "exitTime": "14:45:00",
+                        "duration": 30,
                         "type":"midday"
                     },
                     {
@@ -83,6 +92,7 @@
                         "index":9,
                         "entryTime": "14:45:00",
                         "exitTime": "15:10:00",
+                        "duration": 50,
                         "type":"teaching"
                     },
                     {
@@ -90,6 +100,7 @@
                         "index":0,
                         "entryTime": "08:30:00",
                         "exitTime": "09:20:00",
+                        "duration": 50,
                         "type":"teaching"
                     },
                     {
@@ -97,6 +108,7 @@
                         "index":1,
                         "entryTime": "09:25:00",
                         "exitTime": "10:15:00",
+                        "duration": 50,
                         "type":"teaching"
                     },
                     {
@@ -104,6 +116,7 @@
                         "index":2,
                         "entryTime": "10:15:00",
                         "exitTime": "10:30:00",
+                        "duration": 15,
                         "type":"break"
                     },
                     {
@@ -111,6 +124,7 @@
                         "index":3,
                         "entryTime": "10:30:00",
                         "exitTime": "11:20:00",
+                        "duration": 50,
                         "type":"teaching"
                     },
                     {
@@ -118,6 +132,7 @@
                         "index":4,
                         "entryTime": "11:25:00",
                         "exitTime": "12:15:00",
+                        "duration": 50,
                         "type":"teaching"
                     },
                     {
@@ -125,6 +140,7 @@
                         "index":5,
                         "entryTime": "12:15:00",
                         "exitTime": "12:30:00",
+                        "duration": 15,
                         "type":"break"
                     },
                     {
@@ -132,6 +148,7 @@
                         "index":6,
                         "entryTime": "12:30:00",
                         "exitTime": "13:20:00",
+                        "duration": 50,
                         "type":"teaching"
                     },
                     {
@@ -139,6 +156,7 @@
                         "index":7,
                         "entryTime": "13:25:00",
                         "exitTime": "14:15:00",
+                        "duration": 50,
                         "type":"teaching"
                     },
                     {
@@ -146,6 +164,7 @@
                         "index":8,
                         "entryTime": "14:15:00",
                         "exitTime": "14:45:00",
+                        "duration": 30,
                         "type":"midday"
                     },
                     {
@@ -153,6 +172,7 @@
                         "index":9,
                         "entryTime": "14:45:00",
                         "exitTime": "15:10:00",
+                        "duration": 50,
                         "type":"teaching"
                     },
                     {
@@ -160,6 +180,7 @@
                         "index":0,
                         "entryTime": "08:30:00",
                         "exitTime": "09:20:00",
+                        "duration": 50,
                         "type":"teaching"
                     },
                     {
@@ -167,6 +188,7 @@
                         "index":1,
                         "entryTime": "09:25:00",
                         "exitTime": "10:15:00",
+                        "duration": 50,
                         "type":"teaching"
                     },
                     {
@@ -174,6 +196,7 @@
                         "index":2,
                         "entryTime": "10:15:00",
                         "exitTime": "10:30:00",
+                        "duration": 15,
                         "type":"break"
                     },
                     {
@@ -181,6 +204,7 @@
                         "index":3,
                         "entryTime": "10:30:00",
                         "exitTime": "11:20:00",
+                        "duration": 50,
                         "type":"teaching"
                     },
                     {
@@ -188,6 +212,7 @@
                         "index":4,
                         "entryTime": "11:25:00",
                         "exitTime": "12:15:00",
+                        "duration": 50,
                         "type":"teaching"
                     },
                     {
@@ -195,6 +220,7 @@
                         "index":5,
                         "entryTime": "12:15:00",
                         "exitTime": "12:30:00",
+                        "duration": 15,
                         "type":"break"
                     },
                     {
@@ -202,6 +228,7 @@
                         "index":6,
                         "entryTime": "12:30:00",
                         "exitTime": "13:20:00",
+                        "duration": 50,
                         "type":"teaching"
                     },
                     {
@@ -209,6 +236,7 @@
                         "index":7,
                         "entryTime": "13:25:00",
                         "exitTime": "14:15:00",
+                        "duration": 50,
                         "type":"teaching"
                     },
                     {
@@ -216,6 +244,7 @@
                         "index":8,
                         "entryTime": "14:15:00",
                         "exitTime": "14:45:00",
+                        "duration": 30,
                         "type":"midday"
                     },
                     {
@@ -223,6 +252,7 @@
                         "index":9,
                         "entryTime": "14:45:00",
                         "exitTime": "15:10:00",
+                        "duration": 50,
                         "type":"teaching"
                     },
                     {
@@ -230,6 +260,7 @@
                         "index":0,
                         "entryTime": "08:30:00",
                         "exitTime": "09:20:00",
+                        "duration": 50,
                         "type":"teaching"
                     },
                     {
@@ -237,6 +268,7 @@
                         "index":1,
                         "entryTime": "09:25:00",
                         "exitTime": "10:15:00",
+                        "duration": 50,
                         "type":"teaching"
                     },
                     {
@@ -244,6 +276,7 @@
                         "index":2,
                         "entryTime": "10:15:00",
                         "exitTime": "10:30:00",
+                        "duration": 15,
                         "type":"break"
                     },
                     {
@@ -251,6 +284,7 @@
                         "index":3,
                         "entryTime": "10:30:00",
                         "exitTime": "11:20:00",
+                        "duration": 50,
                         "type":"teaching"
                     },
                     {
@@ -258,6 +292,7 @@
                         "index":4,
                         "entryTime": "11:25:00",
                         "exitTime": "12:15:00",
+                        "duration": 50,
                         "type":"teaching"
                     },
                     {
@@ -265,6 +300,7 @@
                         "index":5,
                         "entryTime": "12:15:00",
                         "exitTime": "12:30:00",
+                        "duration": 15,
                         "type":"break"
                     },
                     {
@@ -272,6 +308,7 @@
                         "index":6,
                         "entryTime": "12:30:00",
                         "exitTime": "13:20:00",
+                        "duration": 50,
                         "type":"teaching"
                     },
                     {
@@ -279,6 +316,7 @@
                         "index":7,
                         "entryTime": "13:25:00",
                         "exitTime": "14:15:00",
+                        "duration": 50,
                         "type":"teaching"
                     },
                     {
@@ -286,6 +324,7 @@
                         "index":8,
                         "entryTime": "14:15:00",
                         "exitTime": "14:45:00",
+                        "duration": 30,
                         "type":"midday"
                     },
                     {
@@ -293,6 +332,7 @@
                         "index":9,
                         "entryTime": "14:45:00",
                         "exitTime": "15:10:00",
+                        "duration": 50,
                         "type":"teaching"
                     },
                     {
@@ -300,6 +340,7 @@
                         "index":0,
                         "entryTime": "08:30:00",
                         "exitTime": "09:20:00",
+                        "duration": 50,
                         "type":"teaching"
                     },
                     {
@@ -307,6 +348,7 @@
                         "index":1,
                         "entryTime": "09:25:00",
                         "exitTime": "10:15:00",
+                        "duration": 50,
                         "type":"teaching"
                     },
                     {
@@ -314,6 +356,7 @@
                         "index":2,
                         "entryTime": "10:15:00",
                         "exitTime": "10:30:00",
+                        "duration": 15,
                         "type":"break"
                     },
                     {
@@ -321,6 +364,7 @@
                         "index":3,
                         "entryTime": "10:30:00",
                         "exitTime": "11:20:00",
+                        "duration": 50,
                         "type":"teaching"
                     },
                     {
@@ -328,6 +372,7 @@
                         "index":4,
                         "entryTime": "11:25:00",
                         "exitTime": "12:15:00",
+                        "duration": 50,
                         "type":"teaching"
                     },
                     {
@@ -335,6 +380,7 @@
                         "index":5,
                         "entryTime": "12:15:00",
                         "exitTime": "12:30:00",
+                        "duration": 15,
                         "type":"break"
                     },
                     {
@@ -342,6 +388,7 @@
                         "index":6,
                         "entryTime": "12:30:00",
                         "exitTime": "13:20:00",
+                        "duration": 50,
                         "type":"teaching"
                     },
                     {
@@ -349,6 +396,7 @@
                         "index":7,
                         "entryTime": "13:25:00",
                         "exitTime": "14:15:00",
+                        "duration": 50,
                         "type":"teaching"
                     },
                     {
@@ -356,6 +404,7 @@
                         "index":8,
                         "entryTime": "14:15:00",
                         "exitTime": "14:45:00",
+                        "duration": 30,
                         "type":"midday"
                     },
                     {
@@ -363,6 +412,7 @@
                         "index":9,
                         "entryTime": "14:45:00",
                         "exitTime": "15:10:00",
+                        "duration": 50,
                         "type":"teaching"
                     }
                 ]
