@@ -20,12 +20,12 @@ The total of the classes of the distribution, are divided among the periods.
 
 # VariablePeriods Properties
 
-| Property                                              | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                                                                                                                                       |
-| :---------------------------------------------------- | --------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [weeklyStable](#weeklystable)                         | `array`   | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-weeklystable.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/distribution/properties/variablePeriods/properties/weeklyStable")                                                                                                                          |
-| [weeklyVariable](#weeklyvariable)                     | `object`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-weeklyvariable.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/distribution/properties/variablePeriods/properties/weeklyVariable")                                                                                                                      |
-| [maximunSectionsInPeriod](#maximunsectionsinperiod)   | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-distribution-properties-variableperiods-properties-maximunsectionsinperiod.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/distribution/properties/variablePeriods/properties/maximunSectionsInPeriod")   |
-| [minimnunSectionsInPeriod](#minimnunsectionsinperiod) | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-distribution-properties-variableperiods-properties-minimnunsectionsinperiod.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/distribution/properties/variablePeriods/properties/minimnunSectionsInPeriod") |
+| Property                                      | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                                                                                                                               |
+| :-------------------------------------------- | --------- | -------- | -------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [weeklyStable](#weeklystable)                 | `array`   | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-weeklystable.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/distribution/properties/variablePeriods/properties/weeklyStable")                                                                                                                  |
+| [weeklyVariable](#weeklyvariable)             | `object`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-weeklyvariable.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/distribution/properties/variablePeriods/properties/weeklyVariable")                                                                                                              |
+| [maximunTimeInPeriod](#maximuntimeinperiod)   | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-distribution-properties-variableperiods-properties-maximuntimeinperiod.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/distribution/properties/variablePeriods/properties/maximunTimeInPeriod")   |
+| [minimnunTimeInPeriod](#minimnuntimeinperiod) | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-distribution-properties-variableperiods-properties-minimnuntimeinperiod.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/distribution/properties/variablePeriods/properties/minimnunTimeInPeriod") |
 
 ## weeklyStable
 
@@ -65,34 +65,34 @@ Define the distribution as a number of sections per week and a maximum range of 
 
 `object` ([WeeklyVariable](ghc-definitions-weeklyvariable.md))
 
-## maximunSectionsInPeriod
+## maximunTimeInPeriod
 
-Maximum number of sections to assign in each Period. If not defined, it is considered that there is no maximum limit.
+Maximum of minutes to assign in each Period. If not defined, it is considered that there is no maximum limit.
 
 
-`maximunSectionsInPeriod`
+`maximunTimeInPeriod`
 
 -   is optional
 -   Type: `integer`
 -   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-distribution-properties-variableperiods-properties-maximunsectionsinperiod.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/distribution/properties/variablePeriods/properties/maximunSectionsInPeriod")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-distribution-properties-variableperiods-properties-maximuntimeinperiod.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/distribution/properties/variablePeriods/properties/maximunTimeInPeriod")
 
-### maximunSectionsInPeriod Type
+### maximunTimeInPeriod Type
 
 `integer`
 
-## minimnunSectionsInPeriod
+## minimnunTimeInPeriod
 
-Minimum number of sections to assign in each Period.
+Minimum of minutes to assign in each Period.
 
 
-`minimnunSectionsInPeriod`
+`minimnunTimeInPeriod`
 
 -   is optional
 -   Type: `integer`
 -   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-distribution-properties-variableperiods-properties-minimnunsectionsinperiod.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/distribution/properties/variablePeriods/properties/minimnunSectionsInPeriod")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-distribution-properties-variableperiods-properties-minimnuntimeinperiod.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/distribution/properties/variablePeriods/properties/minimnunTimeInPeriod")
 
-### minimnunSectionsInPeriod Type
+### minimnunTimeInPeriod Type
 
 `integer`

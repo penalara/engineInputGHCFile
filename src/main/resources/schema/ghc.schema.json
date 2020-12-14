@@ -624,12 +624,12 @@
                                                 "$ref": "#/definitions/weeklyVariable",
                                                 "$comment": "It indicates a variable distribution, among all the periods between which it is distributed. It is not the distribution of each period, but the total of this session."
                                             },
-                                            "maximunSectionsInPeriod": {
-                                                "description": "Maximum number of sections to assign in each Period. If not defined, it is considered that there is no maximum limit.",
+                                            "maximunTimeInPeriod": {
+                                                "description": "Maximum of minutes to assign in each Period. If not defined, it is considered that there is no maximum limit.",
                                                 "type":"integer"
                                             },
-                                            "minimnunSectionsInPeriod": {
-                                                "description": "Minimum number of sections to assign in each Period.",
+                                            "minimnunTimeInPeriod": {
+                                                "description": "Minimum of minutes to assign in each Period.",
                                                 "type":"integer",
                                                 "default": 0
                                             }
