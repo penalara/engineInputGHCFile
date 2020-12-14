@@ -23,6 +23,7 @@ engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sect
 | [index](#index)         | `integer`     | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames-frame-properties-sections-section-properties-index.md "engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/index")         |
 | [entryTime](#entrytime) | `string`      | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames-frame-properties-sections-section-properties-entrytime.md "engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/entryTime") |
 | [exitTime](#exittime)   | `string`      | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames-frame-properties-sections-section-properties-exittime.md "engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/exitTime")   |
+| [duration](#duration)   | `integer`     | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames-frame-properties-sections-section-properties-duration.md "engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/duration")   |
 | [type](#type)           | Not specified | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames-frame-properties-sections-section-properties-type.md "engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/type")           |
 | [allowed](#allowed)     | `boolean`     | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames-frame-properties-sections-section-properties-allowed.md "engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/allowed")     |
 
@@ -97,6 +98,25 @@ End time of the section.
 ### exitTime Constraints
 
 **time**: the string must be a time string, according to [RFC 3339, section 5.6](https://tools.ietf.org/html/rfc3339 "check the specification")
+
+## duration
+
+Indicates the (real or proporcional) duration of the section in minutes.
+
+
+> Indicates the duration of the section that the engine will use to assign sessions. It can be the real duration between the entry ant exit time, otherwise it can be a proporcional time to simplfy ( hour, half hour, three quarters of an hour...). The distribution of the sessions will be consistent with this duration.
+>
+
+`duration`
+
+-   is required
+-   Type: `integer`
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames-frame-properties-sections-section-properties-duration.md "engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/duration")
+
+### duration Type
+
+`integer`
 
 ## type
 
