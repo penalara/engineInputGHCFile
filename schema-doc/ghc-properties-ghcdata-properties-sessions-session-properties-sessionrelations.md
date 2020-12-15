@@ -23,6 +23,7 @@ It contains the information on relationships between this and other sessions. Th
 | [differentDays](#differentdays)                   | `object`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionrelations-properties-differentdays.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionRelations/properties/differentDays")                   |
 | [refConsecutiveGroup](#refconsecutivegroup)       | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionrelations-properties-refconsecutivegroup.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionRelations/properties/refConsecutiveGroup")       |
 | [nonConsecutiveSessions](#nonconsecutivesessions) | `array`   | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionrelations-properties-nonconsecutivesessions.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionRelations/properties/nonConsecutiveSessions") |
+| [nonSimultaneus](#nonsimultaneus)                 | `array`   | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionrelations-properties-nonsimultaneus.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionRelations/properties/nonSimultaneus")                 |
 | [previousTo](#previousto)                         | `array`   | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionrelations-properties-previousto.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionRelations/properties/previousTo")                         |
 | [afterTo](#afterto)                               | `array`   | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionrelations-properties-afterto.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionRelations/properties/afterTo")                               |
 | [maximumSeparationTo](#maximumseparationto)       | `array`   | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionrelations-properties-maximumseparationto.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionRelations/properties/maximumSeparationTo")       |
@@ -93,6 +94,26 @@ Identifiers of the sessions that they should not be consecutive. It is a strict 
 `integer[]` ([SessionRef](ghc-properties-ghcdata-properties-sessions-session-properties-sessionrelations-properties-nonconsecutivesessions-sessionref.md))
 
 ### nonConsecutiveSessions Constraints
+
+**minimum number of items**: the minimum number of items for this array is: `1`
+
+## nonSimultaneus
+
+Identifiers of the sessions that they should not be assigned at the same time. It is a strict condition..
+
+
+`nonSimultaneus`
+
+-   is optional
+-   Type: `integer[]` ([SessionRef](ghc-properties-ghcdata-properties-sessions-session-properties-sessionrelations-properties-nonsimultaneus-sessionref.md))
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionrelations-properties-nonsimultaneus.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionRelations/properties/nonSimultaneus")
+
+### nonSimultaneus Type
+
+`integer[]` ([SessionRef](ghc-properties-ghcdata-properties-sessions-session-properties-sessionrelations-properties-nonsimultaneus-sessionref.md))
+
+### nonSimultaneus Constraints
 
 **minimum number of items**: the minimum number of items for this array is: `1`
 

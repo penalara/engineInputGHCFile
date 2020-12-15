@@ -74,5 +74,5 @@ unknown
 The default value is:
 
 ```json
-"nonConsecutiveDaysPreferred"
+"indifferentDaysPreferred"
 ```
