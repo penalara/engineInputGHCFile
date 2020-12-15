@@ -856,7 +856,7 @@
                                                 "description": "Keep the same position each week or period for the classes of the session.",
                                                 "enum": [
                                                     "nonConsecutiveDaysPreferred",
-                                                    "consecutiveDaysPreferred",
+                                                    "indifferentDaysPreferred",
                                                     "strictNonConsecutiveDays",
                                                     "strictConsecutiveDays"
                                                 ],

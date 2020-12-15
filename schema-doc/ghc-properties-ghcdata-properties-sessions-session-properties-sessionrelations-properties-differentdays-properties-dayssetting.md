@@ -22,7 +22,7 @@ unknown
 | Value                           | Explanation |
 | :------------------------------ | ----------- |
 | `"nonConsecutiveDaysPreferred"` |             |
-| `"consecutiveDaysPreferred"`    |             |
+| `"indifferentDaysPreferred"`    |             |
 | `"strictNonConsecutiveDays"`    |             |
 | `"strictConsecutiveDays"`       |             |
 
