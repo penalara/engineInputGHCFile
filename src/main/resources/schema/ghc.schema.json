@@ -744,6 +744,12 @@
                                 "description": "Conditions about the position of the session units.",
                                 "type": "object",
                                 "properties":{
+                                    "computeForMaxMinOccupancy": {
+                                        "description": "Indicates if the session computes for teacher's daily maximum and minimum of occupancy. By default the engine computes sessions with students.",
+                                        "type": "boolean",
+                                        "default": false,
+                                        "$comment": "If session with students indicate false in this field, is ignored."
+                                    },
                                     "avoidFirstHourSessions": {
                                         "description": "Penalize the position of the session if more than 50% of the classes are at first hour.",
                                         "type": "boolean",
@@ -821,8 +827,8 @@
                                 "description": "It contains the information on relationships between this and other sessions. These conditions only can apply for teaching sessions with students.",
                                 "type": "object",
                                 "properties":{
-                                    "simultaneusGroup": {
-                                        "title": "SimultaneusGroup",
+                                    "refSimultaneusGroup": {
+                                        "title": "RefSimultaneusGroup",
                                         "description": "Identifier of the simultaneous sessions group of the session. Indicates that the sessions must be taught at same time as the sessions of the group.",
                                         "type": "integer"
                                     },
@@ -860,8 +866,8 @@
                                         },
                                         "additionalProperties": false
                                     },
-                                    "consecutiveGroup": {
-                                        "title": "ConsecutiveGroup",
+                                    "refConsecutiveGroup": {
+                                        "title": "RefConsecutiveGroup",
                                         "description": "Identifier of the consecutive sessions group of the session. Indicates that the sessions must be taught consecutive to the sessions of the group.",
                                         "type": "integer"
                                     },

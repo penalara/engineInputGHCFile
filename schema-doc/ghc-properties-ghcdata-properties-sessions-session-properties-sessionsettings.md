@@ -19,6 +19,7 @@ Conditions about the position of the session units.
 
 | Property                                                                  | Type          | Required | Nullable       | Defined by                                                                                                                                                                                                                                                                                           |
 | :------------------------------------------------------------------------ | ------------- | -------- | -------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [computeForMaxMinOccupancy](#computeformaxminoccupancy)                   | `boolean`     | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings-properties-computeformaxminoccupancy.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/computeForMaxMinOccupancy")                   |
 | [avoidFirstHourSessions](#avoidfirsthoursessions)                         | `boolean`     | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings-properties-avoidfirsthoursessions.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/avoidFirstHourSessions")                         |
 | [avoidLastHourSessions](#avoidlasthoursessions)                           | `boolean`     | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings-properties-avoidlasthoursessions.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/avoidLastHourSessions")                           |
 | [avoidAssingLastHourAndFirstNextDay](#avoidassinglasthourandfirstnextday) | `boolean`     | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings-properties-avoidassinglasthourandfirstnextday.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/avoidAssingLastHourAndFirstNextDay") |
@@ -30,6 +31,25 @@ Conditions about the position of the session units.
 | [followedDaysPreference](#followeddayspreference)                         | Not specified | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings-properties-followeddayspreference.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/followedDaysPreference")                         |
 | [consecutiveWeeksBorders](#consecutiveweeksborders)                       | `boolean`     | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings-properties-consecutiveweeksborders.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/consecutiveWeeksBorders")                       |
 | [samePositionEveryPeriod](#samepositioneveryperiod)                       | Not specified | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings-properties-samepositioneveryperiod.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/samePositionEveryPeriod")                       |
+
+## computeForMaxMinOccupancy
+
+Indicates if the session computes for teacher's daily maximum and minimum of occupancy. By default the engine computes sessions with students.
+
+
+> If session with students indicate false in this field, is ignored.
+>
+
+`computeForMaxMinOccupancy`
+
+-   is optional
+-   Type: `boolean`
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings-properties-computeformaxminoccupancy.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/computeForMaxMinOccupancy")
+
+### computeForMaxMinOccupancy Type
+
+`boolean`
 
 ## avoidFirstHourSessions
 
