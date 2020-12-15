@@ -19,9 +19,17 @@ unknown
 
 **enum**: the value of this property must be equal to one of the following values:
 
-| Value                                 | Explanation |
-| :------------------------------------ | ----------- |
-| `"nonConsecutiveDaysPreferred"`       |             |
-| `"consecutiveDaysPreferred"`          |             |
-| `"strictNonConsecutiveDaysPreferred"` |             |
-| `"strictConsecutiveDaysPreferred"`    |             |
+| Value                           | Explanation |
+| :------------------------------ | ----------- |
+| `"nonConsecutiveDaysPreferred"` |             |
+| `"consecutiveDaysPreferred"`    |             |
+| `"strictNonConsecutiveDays"`    |             |
+| `"strictConsecutiveDays"`       |             |
+
+## daysSetting Default Value
+
+The default value is:
+
+```json
+"nonConsecutiveDaysPreferred"
+```

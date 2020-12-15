@@ -20,7 +20,7 @@ Conditions about this and other session can not coincide in the same day.
 | Property                    | Type          | Required | Nullable       | Defined by                                                                                                                                                                                                                                                                                                 |
 | :-------------------------- | ------------- | -------- | -------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [refSesions](#refsesions)   | `array`       | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionrelations-properties-differentdays-properties-refsesions.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionRelations/properties/differentDays/properties/refSesions")   |
-| [daysSetting](#dayssetting) | Not specified | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionrelations-properties-differentdays-properties-dayssetting.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionRelations/properties/differentDays/properties/daysSetting") |
+| [daysSetting](#dayssetting) | Not specified | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionrelations-properties-differentdays-properties-dayssetting.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionRelations/properties/differentDays/properties/daysSetting") |
 
 ## refSesions
 
@@ -49,7 +49,7 @@ Keep the same position each week or period for the classes of the session.
 
 `daysSetting`
 
--   is required
+-   is optional
 -   Type: unknown
 -   cannot be null
 -   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionrelations-properties-differentdays-properties-dayssetting.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionRelations/properties/differentDays/properties/daysSetting")
@@ -62,9 +62,17 @@ unknown
 
 **enum**: the value of this property must be equal to one of the following values:
 
-| Value                                 | Explanation |
-| :------------------------------------ | ----------- |
-| `"nonConsecutiveDaysPreferred"`       |             |
-| `"consecutiveDaysPreferred"`          |             |
-| `"strictNonConsecutiveDaysPreferred"` |             |
-| `"strictConsecutiveDaysPreferred"`    |             |
+| Value                           | Explanation |
+| :------------------------------ | ----------- |
+| `"nonConsecutiveDaysPreferred"` |             |
+| `"consecutiveDaysPreferred"`    |             |
+| `"strictNonConsecutiveDays"`    |             |
+| `"strictConsecutiveDays"`       |             |
+
+### daysSetting Default Value
+
+The default value is:
+
+```json
+"nonConsecutiveDaysPreferred"
+```

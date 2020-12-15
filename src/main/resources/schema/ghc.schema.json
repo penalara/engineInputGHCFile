@@ -837,8 +837,7 @@
                                         "description": "Conditions about this and other session can not coincide in the same day.",
                                         "type": "object",
                                         "required":[
-                                            "refSesions",
-                                            "daysSetting"
+                                            "refSesions"
                                         ],
                                         "properties":{
                                             "refSesions": {
@@ -858,9 +857,10 @@
                                                 "enum": [
                                                     "nonConsecutiveDaysPreferred",
                                                     "consecutiveDaysPreferred",
-                                                    "strictNonConsecutiveDaysPreferred",
-                                                    "strictConsecutiveDaysPreferred"
-                                                ]
+                                                    "strictNonConsecutiveDays",
+                                                    "strictConsecutiveDays"
+                                                ],
+                                                "default": "nonConsecutiveDaysPreferred"
                                             }
 
                                         },
