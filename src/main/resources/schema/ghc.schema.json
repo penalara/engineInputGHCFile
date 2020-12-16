@@ -1068,8 +1068,8 @@
                                         ],
                                         "default": "disordered"
                                     },
-                                    "breakDivideConsecutiveSessions": {
-                                        "description": "Indicates if breaks divide sessions conditioned as consecutive.",
+                                    "allowBreakBetweenSessions": {
+                                        "description": "Indicates if break between sessions is allowed to keep the relation .",
                                         "type": "boolean",
                                         "default": false
                                     }
