@@ -474,7 +474,7 @@
             {
                 "id":"General",
                 "rooms":["A1","A2"],
-                "anonymousRooms":0
+                "anonymousRooms":4
             },
             {
                 "id":"Dedicated",
@@ -668,8 +668,8 @@
                 "id": "0",
                 "refFrame": "A",
                 "refTasks": ["LEC"],
-                "refTeachers": ["David"],
-                "refSubjects": ["Basic Mathematics"],
+                "refTeachers": ["DavH"],
+                "refSubjects": ["BMaths"],
                 "refGroups": [
                     {
                         "refGroup": "1AESO",
@@ -724,7 +724,7 @@
                 "id": "1",
                 "refFrame": "A",
                 "refTasks": ["LEC"],
-                "refTeachers": ["David"],
+                "refTeachers": ["DavH"],
                 "refSubjects": ["Computing"],
                 "refGroups": [
                     {
@@ -751,8 +751,8 @@
                 "id": "2",
                 "refFrame": "A",
                 "refTasks": ["LEC"],
-                "refTeachers": ["David"],
-                "refSubjects": ["Basic Mathematics"],
+                "refTeachers": ["DavH"],
+                "refSubjects": ["BMaths"],
                 "refGroups": [
                     {
                         "refGroup": "1AESO",
