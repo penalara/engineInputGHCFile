@@ -789,11 +789,6 @@
                                         "type": "boolean",
                                         "default": false
                                     },
-                                    "breakDivideConsecutiveSessions": {
-                                        "description": "Breaks divide sessions conditioned as consecutive.",
-                                        "type": "boolean",
-                                        "default": false
-                                    },
                                     "followedDaysPreference": {
                                         "description": "If the session has more than one class, it indicates the preference about assign them in consecutive days.",
                                         "enum": [
@@ -1072,6 +1067,11 @@
                                             "separated"
                                         ],
                                         "default": "disordered"
+                                    },
+                                    "breakDivideConsecutiveSessions": {
+                                        "description": "Indicates if breaks divide sessions conditioned as consecutive.",
+                                        "type": "boolean",
+                                        "default": false
                                     }
                                 },
                                 "additionalProperties": false

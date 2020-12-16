@@ -27,7 +27,6 @@ Conditions about the position of the session units.
 | [avoidAfternoonSessions](#avoidafternoonsessions)                         | `boolean`     | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings-properties-avoidafternoonsessions.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/avoidAfternoonSessions")                         |
 | [avoidSectionsAfterBreak](#avoidsectionsafterbreak)                       | `boolean`     | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings-properties-avoidsectionsafterbreak.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/avoidSectionsAfterBreak")                       |
 | [nonBreakInTheMiddleOfSession](#nonbreakinthemiddleofsession)             | `boolean`     | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings-properties-nonbreakinthemiddleofsession.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/nonBreakInTheMiddleOfSession")             |
-| [breakDivideConsecutiveSessions](#breakdivideconsecutivesessions)         | `boolean`     | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings-properties-breakdivideconsecutivesessions.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/breakDivideConsecutiveSessions")         |
 | [followedDaysPreference](#followeddayspreference)                         | Not specified | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings-properties-followeddayspreference.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/followedDaysPreference")                         |
 | [consecutiveWeeksBorders](#consecutiveweeksborders)                       | `boolean`     | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings-properties-consecutiveweeksborders.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/consecutiveWeeksBorders")                       |
 | [samePositionEveryPeriod](#samepositioneveryperiod)                       | Not specified | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings-properties-samepositioneveryperiod.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/samePositionEveryPeriod")                       |
@@ -218,22 +217,6 @@ Do not allow breaks between classes of multiple duration (classes duration of mo
 -   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings-properties-nonbreakinthemiddleofsession.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/nonBreakInTheMiddleOfSession")
 
 ### nonBreakInTheMiddleOfSession Type
-
-`boolean`
-
-## breakDivideConsecutiveSessions
-
-Breaks divide sessions conditioned as consecutive.
-
-
-`breakDivideConsecutiveSessions`
-
--   is optional
--   Type: `boolean`
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings-properties-breakdivideconsecutivesessions.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/breakDivideConsecutiveSessions")
-
-### breakDivideConsecutiveSessions Type
 
 `boolean`
 

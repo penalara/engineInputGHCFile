@@ -17,11 +17,12 @@ Contains the references of a continuous sessions group.
 
 # ConsecutiveGroup Properties
 
-| Property                    | Type          | Required | Nullable       | Defined by                                                                                                                                                                                                                                                                    |
-| :-------------------------- | ------------- | -------- | -------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [id](#id)                   | `integer`     | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-relationslist-properties-consecutivegroups-consecutivegroup-properties-id.md "engineInputGHCSchema#/properties/ghcData/properties/relationsList/properties/consecutiveGroups/items/properties/id")                   |
-| [refSessions](#refsessions) | `array`       | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-relationslist-properties-consecutivegroups-consecutivegroup-properties-sessionrefs.md "engineInputGHCSchema#/properties/ghcData/properties/relationsList/properties/consecutiveGroups/items/properties/refSessions") |
-| [order](#order)             | Not specified | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-relationslist-properties-consecutivegroups-consecutivegroup-properties-order.md "engineInputGHCSchema#/properties/ghcData/properties/relationsList/properties/consecutiveGroups/items/properties/order")             |
+| Property                                                          | Type          | Required | Nullable       | Defined by                                                                                                                                                                                                                                                                                                          |
+| :---------------------------------------------------------------- | ------------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [id](#id)                                                         | `integer`     | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-relationslist-properties-consecutivegroups-consecutivegroup-properties-id.md "engineInputGHCSchema#/properties/ghcData/properties/relationsList/properties/consecutiveGroups/items/properties/id")                                                         |
+| [refSessions](#refsessions)                                       | `array`       | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-relationslist-properties-consecutivegroups-consecutivegroup-properties-sessionrefs.md "engineInputGHCSchema#/properties/ghcData/properties/relationsList/properties/consecutiveGroups/items/properties/refSessions")                                       |
+| [order](#order)                                                   | Not specified | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-relationslist-properties-consecutivegroups-consecutivegroup-properties-order.md "engineInputGHCSchema#/properties/ghcData/properties/relationsList/properties/consecutiveGroups/items/properties/order")                                                   |
+| [breakDivideConsecutiveSessions](#breakdivideconsecutivesessions) | `boolean`     | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-relationslist-properties-consecutivegroups-consecutivegroup-properties-breakdivideconsecutivesessions.md "engineInputGHCSchema#/properties/ghcData/properties/relationsList/properties/consecutiveGroups/items/properties/breakDivideConsecutiveSessions") |
 
 ## id
 
@@ -92,3 +93,19 @@ The default value is:
 ```json
 "disordered"
 ```
+
+## breakDivideConsecutiveSessions
+
+Indicates if breaks divide sessions conditioned as consecutive.
+
+
+`breakDivideConsecutiveSessions`
+
+-   is optional
+-   Type: `boolean`
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-relationslist-properties-consecutivegroups-consecutivegroup-properties-breakdivideconsecutivesessions.md "engineInputGHCSchema#/properties/ghcData/properties/relationsList/properties/consecutiveGroups/items/properties/breakDivideConsecutiveSessions")
+
+### breakDivideConsecutiveSessions Type
+
+`boolean`
