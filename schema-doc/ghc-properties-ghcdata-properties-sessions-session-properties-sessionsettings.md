@@ -142,11 +142,11 @@ unknown
 
 **enum**: the value of this property must be equal to one of the following values:
 
-| Value       | Explanation |
-| :---------- | ----------- |
-| `"avoid"`   |             |
-| `"attempt"` |             |
-| `"ignore"`  |             |
+| Value         | Explanation |
+| :------------ | ----------- |
+| `"avoid"`     |             |
+| `"same"`      |             |
+| `"different"` |             |
 
 ### sameHourPreference Default Value
 
@@ -240,11 +240,13 @@ unknown
 
 **enum**: the value of this property must be equal to one of the following values:
 
-| Value       | Explanation |
-| :---------- | ----------- |
-| `"ignore"`  |             |
-| `"attempt"` |             |
-| `"avoid"`   |             |
+| Value         | Explanation |
+| :------------ | ----------- |
+| `"ignore"`    |             |
+| `"attempt"`   |             |
+| `"avoid"`     |             |
+| `"strict"`    |             |
+| `"forbidden"` |             |
 
 ### followedDaysPreference Default Value
 
