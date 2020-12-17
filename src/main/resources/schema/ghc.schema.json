@@ -769,8 +769,8 @@
                                         "description": "Preference about the session classes coincide in the same time slot.",
                                         "enum": [
                                             "avoid",
-                                            "same",
-                                            "different"
+                                            "attempt",
+                                            "ignore"
                                         ],
                                         "default": "ignore"
                                     },
@@ -794,9 +794,7 @@
                                         "enum": [
                                             "ignore",
                                             "attempt",
-                                            "avoid",
-                                            "strict",
-                                            "forbidden"
+                                            "avoid"
                                         ],
                                         "default": "ignore"
                                     },
