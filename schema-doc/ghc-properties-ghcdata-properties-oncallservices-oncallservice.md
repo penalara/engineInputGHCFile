@@ -20,17 +20,18 @@ On call service of teachers who supervise the free time of students.
 
 # OnCallService Properties
 
-| Property                                    | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                                         |
-| :------------------------------------------ | --------- | -------- | -------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [id](#id)                                   | `string`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-oncallservices-oncallservice-properties-id.md "engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/id")                                   |
-| [refFrame](#refframe)                       | `string`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-oncallservices-oncallservice-properties-refframe.md "engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/refFrame")                       |
-| [refPeriods](#refperiods)                   | `object`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-oncallservices-oncallservice-properties-oncallperiodsinfo.md "engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/refPeriods")            |
-| [refTask](#reftask)                         | `string`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-oncallservices-oncallservice-properties-reftask.md "engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/refTask")                         |
-| [inBreak](#inbreak)                         | `boolean` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-oncallservices-oncallservice-properties-inbreak.md "engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/inBreak")                         |
-| [teachersEachSection](#teacherseachsection) | `object`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-oncallservices-oncallservice-properties-teacherseachsection.md "engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/teachersEachSection") |
-| [refTeachers](#refteachers)                 | `array`   | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-oncallservices-oncallservice-properties-refteachers.md "engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/refTeachers")                 |
-| [frameTemplate](#frametemplate)             | `array`   | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-bannedframetemplate.md "engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/frameTemplate")                                                                 |
-| [refBuilding](#refbuilding)                 | `string`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-oncallservices-oncallservice-properties-refbuilding.md "engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/refBuilding")                 |
+| Property                                                | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                                                     |
+| :------------------------------------------------------ | --------- | -------- | -------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [id](#id)                                               | `string`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-oncallservices-oncallservice-properties-id.md "engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/id")                                               |
+| [refFrame](#refframe)                                   | `string`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-oncallservices-oncallservice-properties-refframe.md "engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/refFrame")                                   |
+| [refPeriods](#refperiods)                               | `object`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-oncallservices-oncallservice-properties-oncallperiodsinfo.md "engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/refPeriods")                        |
+| [refTask](#reftask)                                     | `string`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-oncallservices-oncallservice-properties-reftask.md "engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/refTask")                                     |
+| [inBreak](#inbreak)                                     | `boolean` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-oncallservices-oncallservice-properties-inbreak.md "engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/inBreak")                                     |
+| [teachersEachSection](#teacherseachsection)             | `object`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-oncallservices-oncallservice-properties-teacherseachsection.md "engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/teachersEachSection")             |
+| [refTeachers](#refteachers)                             | `array`   | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-oncallservices-oncallservice-properties-refteachers.md "engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/refTeachers")                             |
+| [frameTemplate](#frametemplate)                         | `array`   | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-oncalltemplate.md "engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/frameTemplate")                                                                                  |
+| [refBuilding](#refbuilding)                             | `string`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-oncallservices-oncallservice-properties-refbuilding.md "engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/refBuilding")                             |
+| [computeForMaxMinOccupancy](#computeformaxminoccupancy) | `boolean` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-oncallservices-oncallservice-properties-computeformaxminoccupancy.md "engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/computeForMaxMinOccupancy") |
 
 ## id
 
@@ -117,7 +118,7 @@ Indicates if it will be a break oversight service.
 Information about number of teacher in all sections.
 
 
-> Propeties 'amount' and 'bySection' are mutually exclusive (Schema tag 'One Of' is not specified because POJO automatic generation incompatibility)
+> 'byDefault' value will be used for all sections, if 'bySection' field is not informed. Also it value is used when one section is not informed at 'bySection'.
 >
 
 `teachersEachSection`
@@ -149,22 +150,19 @@ List of teachers who make the service.
 
 ## frameTemplate
 
-Templates with only banned sections of the frames.
+Templates with teacher on-call assignment preferences.
 
-
-> It is used when the element cannot have non preferred sections.
->
 
 `frameTemplate`
 
 -   is optional
--   Type: `object[]` ([BannedSectionPreference](ghc-definitions-bannedframetemplate-bannedsectionpreference.md))
+-   Type: `object[]` ([OnCallSectionPreference](ghc-definitions-oncalltemplate-oncallsectionpreference.md))
 -   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-definitions-bannedframetemplate.md "engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/frameTemplate")
+-   defined in: [EngineInputGHCSchema](ghc-definitions-oncalltemplate.md "engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/frameTemplate")
 
 ### frameTemplate Type
 
-`object[]` ([BannedSectionPreference](ghc-definitions-bannedframetemplate-bannedsectionpreference.md))
+`object[]` ([OnCallSectionPreference](ghc-definitions-oncalltemplate-oncallsectionpreference.md))
 
 ## refBuilding
 
@@ -181,3 +179,19 @@ Identifier name of the building where is the service. It is used to know transfe
 ### refBuilding Type
 
 `string`
+
+## computeForMaxMinOccupancy
+
+Indicates if the service computes for teacher's daily maximum and minimum of occupancy.
+
+
+`computeForMaxMinOccupancy`
+
+-   is optional
+-   Type: `boolean`
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-oncallservices-oncallservice-properties-computeformaxminoccupancy.md "engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/computeForMaxMinOccupancy")
+
+### computeForMaxMinOccupancy Type
+
+`boolean`

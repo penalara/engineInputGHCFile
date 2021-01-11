@@ -19,7 +19,7 @@ Teacher's maximum time of teaching with students.
 
 | Property                    | Type          | Required | Nullable       | Defined by                                                                                                                                                       |
 | :-------------------------- | ------------- | -------- | -------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [restriction](#restriction) | Not specified | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-restrictiontype.md "engineInputGHCSchema#/definitions/dailyOcupation/properties/maximumTeaching/properties/restriction")  |
+| [restriction](#restriction) | Not specified | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-restrictiontype.md "engineInputGHCSchema#/definitions/dailyOcupation/properties/maximumTeaching/properties/restriction")  |
 | [setting](#setting)         | Not specified | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-ocupationsettingtype.md "engineInputGHCSchema#/definitions/dailyOcupation/properties/maximumTeaching/properties/setting") |
 
 ## restriction
@@ -29,7 +29,7 @@ Kind of 'dailyOcupation' restriction. It can be 'ignore', 'strict', 'preferred' 
 
 `restriction`
 
--   is required
+-   is optional
 -   Type: unknown ([RestrictionType](ghc-definitions-restrictiontype.md))
 -   cannot be null
 -   defined in: [EngineInputGHCSchema](ghc-definitions-restrictiontype.md "engineInputGHCSchema#/definitions/dailyOcupation/properties/maximumTeaching/properties/restriction")

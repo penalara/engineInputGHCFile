@@ -1,34 +1,16 @@
-# Untitled undefined type in EngineInputGHCSchema Schema
+# TeachersBySection Schema
 
 ```txt
-engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/sameHourPreference
+engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/teachersEachSection/properties/bySection
 ```
 
-Preference about the session classes coincide in the same time slot.
+Custom number of teachers in each section.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
 | :------------------ | ---------- | -------------- | ----------------------- | :---------------- | --------------------- | ------------------- | ------------------------------------------------------------------ |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [ghc.schema.json\*](../out/ghc.schema.json "open original schema") |
 
-## sameHourPreference Type
+## bySection Type
 
-unknown
-
-## sameHourPreference Constraints
-
-**enum**: the value of this property must be equal to one of the following values:
-
-| Value      | Explanation |
-| :--------- | ----------- |
-| `"ignore"` |             |
-| `"avoid"`  |             |
-| `"same"`   |             |
-
-## sameHourPreference Default Value
-
-The default value is:
-
-```json
-"ignore"
-```
+unknown\[]

@@ -214,7 +214,35 @@
                                 "type": "integer"
                             },
                             "frameTemplate": {
-                                "$ref": "#/definitions/bannedFrameTemplate"
+                                "title": "BannedFrameTemplate",
+                                "description": "Templates with only banned sections of the frames.",
+                                "$comment": "It is used when the element cannot have non preferred sections.",
+                                "type": "array",
+                                "additionalItems": false,
+                                "items": {                                    
+                                    "title": "BannedSectionPreference",
+                                    "description": "Template with only banned section assignment preference.",
+                                    "type": "object",
+                                    "required": [
+                                        "day",
+                                        "index",
+                                        "frame"
+                                    ],                                    
+                                    "properties": {
+                                        "day": {
+                                            "description": "Day of the week when is located the section.",
+                                            "type": "integer"
+                                        },
+                                        "index": {
+                                            "description": "Index inside the day where is located the section.",
+                                            "type": "integer"
+                                        },
+                                        "frame": {
+                                            "description": "Identifier name of the frame.",
+                                            "type": "string"
+                                        }
+                                    }
+                                }
                             },
                             "refBuilding": {
                                 "description": "Identifier name building where is located the classroom.",
@@ -768,9 +796,9 @@
                                     "sameHourPreference": {
                                         "description": "Preference about the session classes coincide in the same time slot.",
                                         "enum": [
+                                            "ignore",
                                             "avoid",
-                                            "same",
-                                            "different"
+                                            "same"
                                         ],
                                         "default": "ignore"
                                     },
@@ -1152,30 +1180,41 @@
                                 "title": "TeachersEachSection",
                                 "description": "Information about number of teacher in all sections.",
                                 "type": "object",
-                                "$comment": "Propeties 'amount' and 'bySection' are mutually exclusive (Schema tag 'One Of' is not specified because POJO automatic generation incompatibility)", 
+                                "$comment": "'byDefault' value will be used for all sections, if 'bySection' field is not informed. Also it value is used when one section is not informed at 'bySection'.", 
                                 "properties": {
-                                    "amount": {
-                                        "description": "General value for number of teacher in all sections.",
+                                    "byDefault": {
+                                        "description": "Default value for number of teacher in all sections.",
                                         "type": "integer"
                                     },
                                     "bySection": {
-                                        "title": "OnCallServices",
+                                        "title": "TeachersBySections",
                                         "description": "Custom number of teachers in each section.",
                                         "type": "array",
                                         "additionalItems": false,
                                         "items": {
-                                            "day": {
-                                                "description": "Day of the week.",
-                                                "type": "integer"
+                                            "title": "TeachersBySection",
+                                            "description": "Custom number of teachers in one timetable section.",
+                                            "type": "object",
+                                            "required": [
+                                                "day",
+                                                "index",
+                                                "numTeachers"
+                                            ],
+                                            "properties": {
+                                                "day": {
+                                                    "description": "Day of the week.",
+                                                    "type": "integer"
+                                                },
+                                                "index": {
+                                                    "description": "Index of the section.",
+                                                    "type": "integer"
+                                                },
+                                                "numTeachers": {
+                                                    "description": "Custom number of tachers for the section.",
+                                                    "type": "integer"
+                                                }
                                             },
-                                            "index": {
-                                                "description": "Index of the section.",
-                                                "type": "integer"
-                                            },
-                                            "numTeachers": {
-                                                "description": "Custom number of tachers for the section.",
-                                                "type": "integer"
-                                            }
+                                            "additionalProperties": false
                                         }
                                     }
                                 },
@@ -1203,51 +1242,24 @@
                                             "type": "integer",
                                             "default": 1
                                         },
-                                        "frameTemplate": {
-                                            "title": "OnCallTemplate",
-                                            "description": "Templates with teacher on-call assignment preferences.",
-                                            "type": "array",
-                                            "additionalItems": false,
-                                            "items": {                                    
-                                                "title": "OnCallSectionPreference",
-                                                "description": "Template with a teacher section assignment preference about the service.",
-                                                "type": "object",
-                                                "required": [
-                                                    "day",
-                                                    "index",
-                                                    "frame",
-                                                    "type"
-                                                ],                                    
-                                                "properties": {
-                                                    "day": {
-                                                        "description": "Day of the week when is located the section.",
-                                                        "type": "integer"
-                                                    },
-                                                    "index": {
-                                                        "description": "Index inside the day where is located the section.",
-                                                        "type": "integer"
-                                                    },
-                                                    "frame": {
-                                                        "description": "Identifier name of the frame.",
-                                                        "type": "string"
-                                                    },
-                                                    "type": { 
-                                                        "description": "Teacher availability to be assigned to the section.",
-                                                        "enum": ["banned", "preset"] 
-                                                    }
-                                                }
-                                            }
+                                        "teacherFrameTemplate": {
+                                            "$ref": "#/definitions/onCallServiceframeTemplate"
                                         }
                                     },
                                     "additionalProperties": false
                                 }
                             },
                             "frameTemplate": {
-                                "$ref": "#/definitions/bannedFrameTemplate"
+                                "$ref": "#/definitions/onCallServiceframeTemplate"
                             },
                             "refBuilding": {
                                 "description": "Identifier name of the building where is the service. It is used to know transfer time and number of transfers between buildings for teachers.",
                                 "type": "string"
+                            },
+                            "computeForMaxMinOccupancy": {
+                                "description": "Indicates if the service computes for teacher's daily maximum and minimum of occupancy.",
+                                "type": "boolean",
+                                "default": false
                             }
                         }
                     }
@@ -1475,21 +1487,21 @@
                     }
                 }
             }
-        },
-        "bannedFrameTemplate": {
-            "title": "BannedFrameTemplate",
-            "description": "Templates with only banned sections of the frames.",
-            "$comment": "It is used when the element cannot have non preferred sections.",
+        },        
+        "onCallServiceframeTemplate": {
+            "title": "OnCallTemplate",
+            "description": "Templates with teacher on-call assignment preferences.",
             "type": "array",
             "additionalItems": false,
             "items": {                                    
-                "title": "BannedSectionPreference",
-                "description": "Template with only banned section assignment preference.",
+                "title": "OnCallSectionPreference",
+                "description": "Template with a teacher section assignment preference about the service.",
                 "type": "object",
                 "required": [
                     "day",
                     "index",
-                    "frame"
+                    "frame",
+                    "type"
                 ],                                    
                 "properties": {
                     "day": {
@@ -1503,6 +1515,10 @@
                     "frame": {
                         "description": "Identifier name of the frame.",
                         "type": "string"
+                    },
+                    "type": { 
+                        "description": "Teacher availability to be assigned to the section.",
+                        "enum": ["banned", "preset"] 
                     }
                 }
             }
@@ -1866,10 +1882,7 @@
                 "minimumTeaching": {
                     "title": "MinimumTeaching",
                     "description": "Teacher's minimum time of teaching with students.",
-                    "type": "object",
-                    "required":[
-                        "restriction"
-                     ],                                                                          
+                    "type": "object",                                                                          
                     "properties": {
                         "restriction": {
                             "$ref": "#/definitions/restrictionType"
@@ -1882,10 +1895,7 @@
                 "maximumTeaching": {
                     "title": "MaximumTeaching",
                     "description": "Teacher's maximum time of teaching with students.",
-                    "type": "object",
-                    "required":[
-                       "restriction"
-                    ],                                                                          
+                    "type": "object",                                                                       
                     "properties": {
                         "restriction": {
                             "$ref": "#/definitions/restrictionType"

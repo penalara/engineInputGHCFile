@@ -17,11 +17,11 @@ Contains a teacher reference, the number of break oversight.
 
 # RefTeacher Properties
 
-| Property                        | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                                                                                             |
-| :------------------------------ | --------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [teacherId](#teacherid)         | `string`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-oncallservices-oncallservice-properties-refteachers-refteacher-properties-teacherid.md "engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/refTeachers/items/properties/teacherId")          |
-| [numOfSections](#numofsections) | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-oncallservices-oncallservice-properties-refteachers-refteacher-properties-numofsections.md "engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/refTeachers/items/properties/numOfSections")  |
-| [frameTemplate](#frametemplate) | `array`   | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-oncallservices-oncallservice-properties-refteachers-refteacher-properties-oncalltemplate.md "engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/refTeachers/items/properties/frameTemplate") |
+| Property                                      | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                                                                                            |
+| :-------------------------------------------- | --------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [teacherId](#teacherid)                       | `string`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-oncallservices-oncallservice-properties-refteachers-refteacher-properties-teacherid.md "engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/refTeachers/items/properties/teacherId")         |
+| [numOfSections](#numofsections)               | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-oncallservices-oncallservice-properties-refteachers-refteacher-properties-numofsections.md "engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/refTeachers/items/properties/numOfSections") |
+| [teacherFrameTemplate](#teacherframetemplate) | `array`   | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-oncalltemplate.md "engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/refTeachers/items/properties/teacherFrameTemplate")                                                                                     |
 
 ## teacherId
 
@@ -63,18 +63,18 @@ The default value is:
 1
 ```
 
-## frameTemplate
+## teacherFrameTemplate
 
 Templates with teacher on-call assignment preferences.
 
 
-`frameTemplate`
+`teacherFrameTemplate`
 
 -   is optional
--   Type: `object[]` ([OnCallSectionPreference](ghc-properties-ghcdata-properties-oncallservices-oncallservice-properties-refteachers-refteacher-properties-oncalltemplate-oncallsectionpreference.md))
+-   Type: `object[]` ([OnCallSectionPreference](ghc-definitions-oncalltemplate-oncallsectionpreference.md))
 -   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-oncallservices-oncallservice-properties-refteachers-refteacher-properties-oncalltemplate.md "engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/refTeachers/items/properties/frameTemplate")
+-   defined in: [EngineInputGHCSchema](ghc-definitions-oncalltemplate.md "engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/refTeachers/items/properties/teacherFrameTemplate")
 
-### frameTemplate Type
+### teacherFrameTemplate Type
 
-`object[]` ([OnCallSectionPreference](ghc-properties-ghcdata-properties-oncallservices-oncallservice-properties-refteachers-refteacher-properties-oncalltemplate-oncallsectionpreference.md))
+`object[]` ([OnCallSectionPreference](ghc-definitions-oncalltemplate-oncallsectionpreference.md))

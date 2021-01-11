@@ -661,11 +661,16 @@
                 "id": "1BESO",
                 "refFrame": "A",
                 "name": "1ºB ESO"
+            },
+            {
+                "id": "1CESO",
+                "refFrame": "A",
+                "name": "1ºC ESO"
             }
         ],
         "sessions": [
             {
-                "id": "0",
+                "id": 0,
                 "refFrame": "A",
                 "refTasks": ["LEC"],
                 "refTeachers": ["DavH"],
@@ -688,8 +693,8 @@
                 "sessionClassRooms": {
                     "classRoomsToAssign": [
                         {
-                        "classRoomsList": ["Aula1"],
-                        "classRoomsSetsList": ["Dedicated classroms"]
+							"classRoomsList": ["A1"],
+							"classRoomsSetsList": ["Dedicated"]
                         }
                     ],
                     "capacityPreference": "strict",
@@ -709,19 +714,19 @@
                 },
                 "sessionRelations": {
                     "differentDays": {
-                        "refSesions": ["1"],
+                        "refSesions": [1],
                         "daysSetting": "nonConsecutiveDaysPreferred"
                     },
                     "minimumSeparationTo": [
                         {
-                            "refSessions": ["2"],
+                            "refSessions": [2],
                             "days": 2
                         }
                     ]
                 }
             },
             {
-                "id": "1",
+                "id": 1,
                 "refFrame": "A",
                 "refTasks": ["LEC"],
                 "refTeachers": ["DavH"],
@@ -745,10 +750,25 @@
                             "allowDiscontinuity": false
                         }
                     }
+                },
+				"sessionClassRooms": {
+                    "classRoomsToAssign": [
+                        {
+							"classRoomsSetsList": ["General"]
+                        }
+                    ],
+                    "capacityPreference": "strict",
+                    "capacityType": "individual"
+                },
+                "sessionRelations": {
+                    "differentDays": {
+                        "refSesions": [0],
+                        "daysSetting": "nonConsecutiveDaysPreferred"
+                    }
                 }
             },
             {
-                "id": "2",
+                "id": 2,
                 "refFrame": "A",
                 "refTasks": ["LEC"],
                 "refTeachers": ["DavH"],
@@ -769,14 +789,100 @@
                         "SegundoCuatri"
                     ],
                     "stablePeriods": {
-                        "weeklyCustom": [
-                            [100,100,50],
-                            [100,50,50,50]
-                        ]
+                        "weeklyStable": [100,100,50]
                     }
+                },
+				"sessionClassRooms": {
+                    "classRoomsToAssign": [
+                        {
+							"classRoomsSetsList": ["General"]
+                        },
+						{
+							"classRoomsSetsList": ["Dedicated"]
+                        }
+                    ]
+                },
+                "sessionRelations": {
+                    "minimumSeparationTo": [
+                        {
+                            "refSessions": [0],
+                            "days": 2
+                        }
+                    ]
+                }
+            },
+            {
+                "id": 3,
+                "refFrame": "A",
+                "refTasks": ["LEC"],
+                "refTeachers": ["DavH"],
+                "refSubjects": ["Computing"],
+                "refGroups": [
+                    {
+                        "refGroup": "1BESO"
+                    }
+                ],                
+                "distribution": {
+                    "periods": [
+                        "PrimerCuatri",
+                        "SegundoCuatri"
+                    ],
+                    "stablePeriods": {
+                        "weeklyStable": [100,100,50]
+                    }
+                },
+				"sessionClassRooms": {
+                    "classRoomsToAssign": [
+                        {
+							"classRoomsSetsList": ["General"]
+                        }
+                    ]
+                },
+                "sessionRelations": {
+                    "refSimultaneusGroup": 1
                 } 
+            },
+            {
+                "id": 4,
+                "refFrame": "A",
+                "refTasks": ["LEC"],
+                "refTeachers": ["DavH"],
+                "refSubjects": ["Computing"],
+                "refGroups": [
+                    {
+                        "refGroup": "1CESO"
+                    }
+                ],                
+                "distribution": {
+                    "periods": [
+                        "PrimerCuatri",
+                        "SegundoCuatri"
+                    ],
+                    "stablePeriods": {
+                        "weeklyStable": [100,100,50]
+                    }
+                },
+				"sessionClassRooms": {
+                    "classRoomsToAssign": [
+                        {
+							"classRoomsSetsList": ["General"]
+                        }
+                    ]
+                },
+                "sessionRelations": {
+                    "refSimultaneusGroup": 1
+                }
             }
         ],
+        "relationsList":{
+            "simultaneusGroups": [
+                {
+                    "id": 1,
+                    "refSessions": [3,4]
+                }
+            ]
+
+        },
         "studentsOptatives": [
             {
                 "idStundent": "st01",

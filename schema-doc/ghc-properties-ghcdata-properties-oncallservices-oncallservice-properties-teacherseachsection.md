@@ -7,7 +7,7 @@ engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/propert
 Information about number of teacher in all sections.
 
 
-> Propeties 'amount' and 'bySection' are mutually exclusive (Schema tag 'One Of' is not specified because POJO automatic generation incompatibility)
+> 'byDefault' value will be used for all sections, if 'bySection' field is not informed. Also it value is used when one section is not informed at 'bySection'.
 >
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
@@ -20,24 +20,24 @@ Information about number of teacher in all sections.
 
 # TeachersEachSection Properties
 
-| Property                | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                                                                                        |
-| :---------------------- | --------- | -------- | -------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [amount](#amount)       | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-oncallservices-oncallservice-properties-teacherseachsection-properties-amount.md "engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/teachersEachSection/properties/amount")            |
-| [bySection](#bysection) | `array`   | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-oncallservices-oncallservice-properties-teacherseachsection-properties-oncallservices.md "engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/teachersEachSection/properties/bySection") |
+| Property                | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                                                                                            |
+| :---------------------- | --------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [byDefault](#bydefault) | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-oncallservices-oncallservice-properties-teacherseachsection-properties-bydefault.md "engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/teachersEachSection/properties/byDefault")          |
+| [bySection](#bysection) | `array`   | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-oncallservices-oncallservice-properties-teacherseachsection-properties-teachersbysections.md "engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/teachersEachSection/properties/bySection") |
 
-## amount
+## byDefault
 
-General value for number of teacher in all sections.
+Default value for number of teacher in all sections.
 
 
-`amount`
+`byDefault`
 
 -   is optional
 -   Type: `integer`
 -   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-oncallservices-oncallservice-properties-teacherseachsection-properties-amount.md "engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/teachersEachSection/properties/amount")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-oncallservices-oncallservice-properties-teacherseachsection-properties-bydefault.md "engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/teachersEachSection/properties/byDefault")
 
-### amount Type
+### byDefault Type
 
 `integer`
 
@@ -49,10 +49,10 @@ Custom number of teachers in each section.
 `bySection`
 
 -   is optional
--   Type: unknown\[]
+-   Type: `object[]` ([TeachersBySection](ghc-properties-ghcdata-properties-oncallservices-oncallservice-properties-teacherseachsection-properties-teachersbysections-teachersbysection.md))
 -   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-oncallservices-oncallservice-properties-teacherseachsection-properties-oncallservices.md "engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/teachersEachSection/properties/bySection")
+-   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-oncallservices-oncallservice-properties-teacherseachsection-properties-teachersbysections.md "engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/teachersEachSection/properties/bySection")
 
 ### bySection Type
 
-unknown\[]
+`object[]` ([TeachersBySection](ghc-properties-ghcdata-properties-oncallservices-oncallservice-properties-teacherseachsection-properties-teachersbysections-teachersbysection.md))

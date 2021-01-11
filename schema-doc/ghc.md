@@ -121,12 +121,12 @@ Reference this group by using
 | Property | Type | Required | Nullable | Defined by |
 | :------- | ---- | -------- | -------- | :--------- |
 
-## Definitions group bannedFrameTemplate
+## Definitions group onCallServiceframeTemplate
 
 Reference this group by using
 
 ```json
-{"$ref":"engineInputGHCSchema#/definitions/bannedFrameTemplate"}
+{"$ref":"engineInputGHCSchema#/definitions/onCallServiceframeTemplate"}
 ```
 
 | Property | Type | Required | Nullable | Defined by |

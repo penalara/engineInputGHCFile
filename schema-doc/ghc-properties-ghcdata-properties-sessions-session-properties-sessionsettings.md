@@ -142,11 +142,11 @@ unknown
 
 **enum**: the value of this property must be equal to one of the following values:
 
-| Value         | Explanation |
-| :------------ | ----------- |
-| `"avoid"`     |             |
-| `"same"`      |             |
-| `"different"` |             |
+| Value      | Explanation |
+| :--------- | ----------- |
+| `"ignore"` |             |
+| `"avoid"`  |             |
+| `"same"`   |             |
 
 ### sameHourPreference Default Value
 
