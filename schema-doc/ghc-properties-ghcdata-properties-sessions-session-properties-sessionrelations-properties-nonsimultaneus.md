@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionRelations/properties/nonSimultaneus
 ```
 
-Identifiers of the sessions that they should not be assigned at the same time. It is a strict condition..
+Identifiers of the sessions that they should not be assigned at the same time. It is a strict condition.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

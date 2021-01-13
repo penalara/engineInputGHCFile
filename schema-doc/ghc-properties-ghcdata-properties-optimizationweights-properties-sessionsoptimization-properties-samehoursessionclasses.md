@@ -1,16 +1,24 @@
-# Untitled boolean in EngineInputGHCSchema Schema
+# Untitled integer in EngineInputGHCSchema Schema
 
 ```txt
-engineInputGHCSchema#/definitions/dailyOcupation/properties/allowFreeDays
+engineInputGHCSchema#/properties/ghcData/properties/optimizationWeights/properties/sessions/properties/sameHourSessionClasses
 ```
 
-Indicates whether the check of the minimums is omitted in case of days without allocation. Prohibited days never are checked.
+Indicates the weight of penalization of not fulfilling the preferred about assignment on consecutive days.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
 | :------------------ | ---------- | -------------- | ----------------------- | :---------------- | --------------------- | ------------------- | ------------------------------------------------------------------ |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [ghc.schema.json\*](../out/ghc.schema.json "open original schema") |
 
-## allowFreeDays Type
+## sameHourSessionClasses Type
 
-`boolean`
+`integer`
+
+## sameHourSessionClasses Default Value
+
+The default value is:
+
+```json
+3
+```

@@ -344,7 +344,7 @@ Maximum continuous teaching time in minutes.
 Minimum time gap to considered it as a break.
 
 
-> If did not specify, the motor will assign the general value or default time of 30 minutes.
+> If did not specify, the engine will assign the general value or default time of 30 minutes.
 >
 
 `minBreak`
@@ -742,7 +742,7 @@ Reference this group by using
 
 ### allowFreeDays
 
-Indicates whether the check of the minimums is omitted in case of days without allocation. Prohibited days never are not checked.
+Indicates whether the check of the minimums is omitted in case of days without allocation. Prohibited days never are checked.
 
 
 `allowFreeDays`

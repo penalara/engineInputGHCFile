@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/optimizationWeights/properties/teachers/properties/excessPermanence
 ```
 
-Indicates the weight of assign more daily or weekly permanence than declared in its settings (contando los huecos entre sesiones).
+Indicates the weight of assign more daily or weekly permanence than declared in its settings.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

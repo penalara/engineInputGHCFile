@@ -7,7 +7,7 @@ engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/di
 Contains information on how the classes of the session are distributed throughout the week. Only should contain one element between 'stablePeriods' and 'variablePeriods'.
 
 
-> Property 'periods' is required if there are more than one period in the timetable. Propeties 'stablePeriods' and 'variablePeriods' are mutually exclusive (Schema tag 'One Of' is not specified because POJO automatic generation incompatibility).
+> Property 'periods' is required if there are more than one period in the timetable. Properties 'stablePeriods' and 'variablePeriods' are mutually exclusive.
 >
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
@@ -47,7 +47,7 @@ List of periods or weeks when the session must be assigned.
 The session's distribution is equals in each period.
 
 
-> Only one property can be applied (Schema tag 'One Of' is not specified because POJO automatic generation incompatibility).
+> Only one property can be applied .
 >
 
 `stablePeriods`
@@ -66,7 +66,7 @@ The session's distribution is equals in each period.
 The total of the classes of the distribution, are divided among the periods.
 
 
-> Propeties 'weeklyStable' and 'weeklyVariable' are mutually exclusive (Schema tag 'One Of' is not specified because POJO automatic generation incompatibility).
+> Properties 'weeklyStable' and 'weeklyVariable' are mutually exclusive.
 >
 
 `variablePeriods`

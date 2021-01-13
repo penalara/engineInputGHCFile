@@ -136,7 +136,7 @@ List of group's identifier which is teach at the session. At least one is requir
 Contains information on how the classes of the session are distributed throughout the week. Only should contain one element between 'stablePeriods' and 'variablePeriods'.
 
 
-> Property 'periods' is required if there are more than one period in the timetable. Propeties 'stablePeriods' and 'variablePeriods' are mutually exclusive (Schema tag 'One Of' is not specified because POJO automatic generation incompatibility).
+> Property 'periods' is required if there are more than one period in the timetable. Properties 'stablePeriods' and 'variablePeriods' are mutually exclusive.
 >
 
 `distribution`

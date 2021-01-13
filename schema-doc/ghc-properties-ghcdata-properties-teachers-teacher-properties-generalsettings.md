@@ -68,7 +68,7 @@ Indicates the maximum teacher´s permanence time,  preferred  and strict , for t
 Indicates if it should avoid free gaps between sessions for the teacher. It is a ponderable condition.
 
 
-> If did not specify, the motor will assign a true value.
+> If did not specify, the engine will assign a true value.
 >
 
 `avoidGapsBetweenSesions`
@@ -196,7 +196,7 @@ Maximum and minimum values for teaching or activity time for teachers. This obje
 
 ## dailyBuildingTransfers
 
-Número de traslados entre edificios máximos que se pueden realizar al día de manera obligatoria.
+Maximum number of transfers between buildings that can do the teacher per day.
 
 
 `dailyBuildingTransfers`

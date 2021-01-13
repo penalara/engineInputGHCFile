@@ -99,7 +99,7 @@ Identifiers of the sessions that they should not be consecutive. It is a strict 
 
 ## nonSimultaneus
 
-Identifiers of the sessions that they should not be assigned at the same time. It is a strict condition..
+Identifiers of the sessions that they should not be assigned at the same time. It is a strict condition.
 
 
 `nonSimultaneus`

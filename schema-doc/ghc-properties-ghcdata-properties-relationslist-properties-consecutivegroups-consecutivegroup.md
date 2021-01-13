@@ -42,7 +42,7 @@ Identifier of continuous sessions group.
 
 ## refSessions
 
-List of sessions references which must be consecutive.
+Contains the references of a continuous sessions group.
 
 
 `refSessions`

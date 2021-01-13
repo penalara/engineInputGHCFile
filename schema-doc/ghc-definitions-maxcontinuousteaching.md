@@ -70,7 +70,7 @@ Maximum continuous teaching time in minutes.
 Minimum time gap to considered it as a break.
 
 
-> If did not specify, the motor will assign the general value or default time of 30 minutes.
+> If did not specify, the engine will assign the general value or default time of 30 minutes.
 >
 
 `minBreak`

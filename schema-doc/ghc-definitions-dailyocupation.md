@@ -27,7 +27,7 @@ Maximum and minimum values for teaching or activity time for teachers. This obje
 
 ## allowFreeDays
 
-Indicates whether the check of the minimums is omitted in case of days without allocation. Prohibited days never are not checked.
+Indicates whether the check of the minimums is omitted in case of days without allocation. Prohibited days never are checked.
 
 
 `allowFreeDays`

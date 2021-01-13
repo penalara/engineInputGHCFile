@@ -7,7 +7,7 @@ engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/di
 The session's distribution is equals in each period.
 
 
-> Only one property can be applied (Schema tag 'One Of' is not specified because POJO automatic generation incompatibility).
+> Only one property can be applied .
 >
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

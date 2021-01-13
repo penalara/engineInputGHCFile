@@ -593,7 +593,7 @@
                                 "title":"Distribution",
                                 "description": "Contains information on how the classes of the session are distributed throughout the week. Only should contain one element between 'stablePeriods' and 'variablePeriods'.",
                                 "type":"object",
-                                "$comment": "Property 'periods' is required if there are more than one period in the timetable. Propeties 'stablePeriods' and 'variablePeriods' are mutually exclusive (Schema tag 'One Of' is not specified because POJO automatic generation incompatibility).",
+                                "$comment": "Property 'periods' is required if there are more than one period in the timetable. Properties 'stablePeriods' and 'variablePeriods' are mutually exclusive.",
                                 "properties":{
                                     "periods": {
                                         "title": "RefPeriods",
@@ -610,7 +610,7 @@
                                         "title":"StablePeriods",
                                         "description": "The session's distribution is equals in each period.",
                                         "type":"object",
-                                        "$comment": "Only one property can be applied (Schema tag 'One Of' is not specified because POJO automatic generation incompatibility).",
+                                        "$comment": "Only one property can be applied .",
                                         "properties":{
                                             "weeklyStable": {
                                                 "$ref": "#/definitions/weeklyStable"
@@ -642,7 +642,7 @@
                                         "title":"VariablePeriods",
                                         "description": "The total of the classes of the distribution, are divided among the periods.",
                                         "type":"object",
-                                        "$comment": "Propeties 'weeklyStable' and 'weeklyVariable' are mutually exclusive (Schema tag 'One Of' is not specified because POJO automatic generation incompatibility).",
+                                        "$comment": "Properties 'weeklyStable' and 'weeklyVariable' are mutually exclusive.",
                                         "properties":{
                                             "weeklyStable": {
                                                 "$ref": "#/definitions/weeklyStable",
@@ -910,7 +910,7 @@
                                     },                                    
                                     "nonSimultaneus": {
                                         "title":"NonSimultaneus",
-                                        "description":"Identifiers of the sessions that they should not be assigned at the same time. It is a strict condition..",
+                                        "description":"Identifiers of the sessions that they should not be assigned at the same time. It is a strict condition.",
                                         "type":"array",
                                         "minItems": 1,
                                         "additionalItems": false,
@@ -1027,7 +1027,7 @@
                     "properties": {
                         "simultaneusGroups": {
                             "title": "SimultaneusGroups",
-                            "description": "Contains relations list of simultaneous and consecutive sessions.",
+                            "description": "Contains relations list of simultaneous sessions.",
                             "type": "array",
                             "additionalItems": false,
                             "items": {
@@ -1079,7 +1079,7 @@
                                     },
                                     "refSessions": {
                                         "title":"SessionRefs",
-                                        "description":"List of sessions references which must be consecutive.",
+                                        "description":"Contains the references of a continuous sessions group.",
                                         "type":"array",
                                         "minItems": 1,
                                         "additionalItems": false,
@@ -1227,7 +1227,7 @@
                                 "additionalItems": false,
                                 "items": {
                                     "title": "RefTeacher",
-                                    "description": "Contains a teacher reference, the number of break oversight.",
+                                    "description": "Contains a teacher reference and it number of section oversight.",
                                     "type": "object",
                                     "required": [
                                         "teacherId"
@@ -1261,7 +1261,8 @@
                                 "type": "boolean",
                                 "default": false
                             }
-                        }
+                        },
+                        "additionalProperties": false
                     }
                 },
                 "optimizationWeights": {
@@ -1284,7 +1285,8 @@
                                     "type": "integer",
                                     "default": 2
                                 }
-                            }
+                            },
+                            "additionalProperties": false
                         },
                         "nonPreferredPositions": {
                             "title": "NonPreferredPositionsOptimization",
@@ -1311,11 +1313,12 @@
                                     "type": "integer",
                                     "default": 2
                                 }
-                            }
+                            },
+                            "additionalProperties": false
                         },
                         "sessions": {
                             "title": "SessionsOptimization",
-                            "description": "Contains options related to optimizable conditions for all sessions.",
+                            "description": "Contains options related to optimizable conditions for sessions.",
                             "type": "object",
                             "properties": {
                                 "nonPreferredClassRoom": {
@@ -1327,14 +1330,7 @@
                                     "description": "Indicates the weight of placing the entities of a session that belongs to several periods in the same positions or not (it affects the on call services too).",
                                     "type": "integer",
                                     "default": 1
-                                }
-                            }
-                        },
-                        "teachingSessions": {
-                            "title": "TeachingSessionsOptimization",
-                            "description": "Contains options related to optimizable conditions for teaching sessions with students.",
-                            "type": "object",
-                            "properties": {
+                                },
                                 "consecutiveDays": {
                                     "description": " Indicates the weight of the condition which it has been established in each case on the properties of each session, to be placed two or three class units, that is, all of them on consecutive days.",
                                     "type": "integer",
@@ -1356,11 +1352,12 @@
                                     "default": 3
                                 },
                                 "classRoomsChanges": {
-                                    "description": " Indicates the weight of all class units of each subject is not taught in the same classroom, and also to avoid changes in the classroom of groups. It means a change of classroom of a group only between consecutive intervals, not the ones divided by a break.",
+                                    "description": "Indicates the weight of all class units of each subject is not taught in the same classroom, and also to avoid changes in the classroom of groups. It means a change of classroom of a group only between consecutive intervals, not the ones divided by a break.",
                                     "type": "integer",
                                     "default": 3
                                 }
-                            }
+                            },
+                            "additionalProperties": false
                         },
                         "teachers": {
                             "title": "TeachersOptimization",
@@ -1383,7 +1380,7 @@
                                     "default": 2
                                 },
                                 "excessPermanence": {
-                                    "description": "Indicates the weight of assign more daily or weekly permanence than declared in its settings (contando los huecos entre sesiones).",
+                                    "description": "Indicates the weight of assign more daily or weekly permanence than declared in its settings.",
                                     "type": "integer",
                                     "default": 2
                                 },
@@ -1397,9 +1394,11 @@
                                     "type": "integer",
                                     "default": 1
                                 }
-                            }
+                            },
+                            "additionalProperties": false
                         }
-                    }
+                    },
+                    "additionalProperties": false
                 },
                 "engineSettings": {
                     "title": "EngineSettings",
@@ -1416,7 +1415,8 @@
                             "type": "boolean",
                             "default": true
                         }
-                    }
+                    },
+                    "additionalProperties": false
                 }  
             }
         }      
@@ -1568,7 +1568,7 @@
         "avoidGapsBetweenSesions": {
             "description": "Indicates if it should avoid free gaps between sessions for the teacher. It is a ponderable condition.",
             "type": "boolean",
-            "$comment": "If did not specify, the motor will assign a true value."
+            "$comment": "If did not specify, the engine will assign a true value."
         },
         "maxContinuousTeaching": {
             "title": "MaxContinuousTeaching",
@@ -1585,7 +1585,7 @@
                 "minBreak": {
                     "description": "Minimum time gap to considered it as a break.",
                     "type": "integer",
-                    "$comment": "If did not specify, the motor will assign the general value or default time of 30 minutes."
+                    "$comment": "If did not specify, the engine will assign the general value or default time of 30 minutes."
                 }
             },
             "additionalProperties": false
@@ -1876,7 +1876,7 @@
             "type": "object",                                                                    
             "properties": {
                 "allowFreeDays": {
-                    "description": "Indicates whether the check of the minimums is omitted in case of days without allocation. Prohibited days never are not checked.",
+                    "description": "Indicates whether the check of the minimums is omitted in case of days without allocation. Prohibited days never are checked.",
                     "type": "boolean"
                 },
                 "minimumTeaching": {
@@ -1953,7 +1953,7 @@
         },
         "dailyBuildingTransfers": {
             "title": "DailyBuildingTransfers",
-            "description": "Número de traslados entre edificios máximos que se pueden realizar al día de manera obligatoria.",
+            "description": "Maximum number of transfers between buildings that can do the teacher per day.",
             "type": "object",
             "properties": {
                 "strict": {

@@ -7,7 +7,7 @@ engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/di
 The total of the classes of the distribution, are divided among the periods.
 
 
-> Propeties 'weeklyStable' and 'weeklyVariable' are mutually exclusive (Schema tag 'One Of' is not specified because POJO automatic generation incompatibility).
+> Properties 'weeklyStable' and 'weeklyVariable' are mutually exclusive.
 >
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

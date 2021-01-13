@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/refTeachers/items
 ```
 
-Contains a teacher reference, the number of break oversight.
+Contains a teacher reference and it number of section oversight.
 
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

@@ -4,7 +4,7 @@
 engineInputGHCSchema#/definitions/dailyBuildingTransfers
 ```
 
-Número de traslados entre edificios máximos que se pueden realizar al día de manera obligatoria.
+Maximum number of transfers between buildings that can do the teacher per day.
 
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

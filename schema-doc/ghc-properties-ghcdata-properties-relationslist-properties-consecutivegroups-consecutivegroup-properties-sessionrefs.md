@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/relationsList/properties/consecutiveGroups/items/properties/refSessions
 ```
 
-List of sessions references which must be consecutive.
+Contains the references of a continuous sessions group.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

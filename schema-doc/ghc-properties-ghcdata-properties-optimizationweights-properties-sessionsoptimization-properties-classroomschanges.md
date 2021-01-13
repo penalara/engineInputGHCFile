@@ -1,16 +1,24 @@
-# Untitled boolean in EngineInputGHCSchema Schema
+# Untitled integer in EngineInputGHCSchema Schema
 
 ```txt
-engineInputGHCSchema#/definitions/dailyOcupation/properties/allowFreeDays
+engineInputGHCSchema#/properties/ghcData/properties/optimizationWeights/properties/sessions/properties/classRoomsChanges
 ```
 
-Indicates whether the check of the minimums is omitted in case of days without allocation. Prohibited days never are checked.
+Indicates the weight of all class units of each subject is not taught in the same classroom, and also to avoid changes in the classroom of groups. It means a change of classroom of a group only between consecutive intervals, not the ones divided by a break.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
 | :------------------ | ---------- | -------------- | ----------------------- | :---------------- | --------------------- | ------------------- | ------------------------------------------------------------------ |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [ghc.schema.json\*](../out/ghc.schema.json "open original schema") |
 
-## allowFreeDays Type
+## classRoomsChanges Type
 
-`boolean`
+`integer`
+
+## classRoomsChanges Default Value
+
+The default value is:
+
+```json
+3
+```

@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/relationsList/properties/simultaneusGroups
 ```
 
-Contains relations list of simultaneous and consecutive sessions.
+Contains relations list of simultaneous sessions.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

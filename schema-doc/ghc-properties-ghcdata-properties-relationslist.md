@@ -24,7 +24,7 @@ Contains relations list of simultaneous and consecutive sessions.
 
 ## simultaneusGroups
 
-Contains relations list of simultaneous and consecutive sessions.
+Contains relations list of simultaneous sessions.
 
 
 `simultaneusGroups`
