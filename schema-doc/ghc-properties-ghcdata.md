@@ -199,7 +199,7 @@ Teachers sessions. These can be with students groups, meetings with other teache
 
 ## relationsList
 
-Contains relations list of simultaneous and consecutive sessions.
+Contains relations list of consecutive sessions.
 
 
 `relationsList`

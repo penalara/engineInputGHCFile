@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/relationsList
 ```
 
-Contains relations list of simultaneous and consecutive sessions.
+Contains relations list of consecutive sessions.
 
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
@@ -19,24 +19,7 @@ Contains relations list of simultaneous and consecutive sessions.
 
 | Property                                | Type    | Required | Nullable       | Defined by                                                                                                                                                                                               |
 | :-------------------------------------- | ------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [simultaneusGroups](#simultaneusgroups) | `array` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-relationslist-properties-simultaneusgroups.md "engineInputGHCSchema#/properties/ghcData/properties/relationsList/properties/simultaneusGroups") |
 | [consecutiveGroups](#consecutivegroups) | `array` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-relationslist-properties-consecutivegroups.md "engineInputGHCSchema#/properties/ghcData/properties/relationsList/properties/consecutiveGroups") |
-
-## simultaneusGroups
-
-Contains relations list of simultaneous sessions.
-
-
-`simultaneusGroups`
-
--   is optional
--   Type: `object[]` ([SimultaneusGroup](ghc-properties-ghcdata-properties-relationslist-properties-simultaneusgroups-simultaneusgroup.md))
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-relationslist-properties-simultaneusgroups.md "engineInputGHCSchema#/properties/ghcData/properties/relationsList/properties/simultaneusGroups")
-
-### simultaneusGroups Type
-
-`object[]` ([SimultaneusGroup](ghc-properties-ghcdata-properties-relationslist-properties-simultaneusgroups-simultaneusgroup.md))
 
 ## consecutiveGroups
 
