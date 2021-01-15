@@ -11,7 +11,7 @@
                         "index":0,
                         "entryTime": "08:30:00",
                         "exitTime": "09:20:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     },
                     {
@@ -19,7 +19,7 @@
                         "index":1,
                         "entryTime": "09:25:00",
                         "exitTime": "10:15:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     },
                     {
@@ -35,7 +35,7 @@
                         "index":3,
                         "entryTime": "10:30:00",
                         "exitTime": "11:20:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     },
                     {
@@ -43,7 +43,7 @@
                         "index":4,
                         "entryTime": "11:25:00",
                         "exitTime": "12:15:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     },
                     {
@@ -59,7 +59,7 @@
                         "index":6,
                         "entryTime": "12:30:00",
                         "exitTime": "13:20:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     },
                     {
@@ -67,7 +67,7 @@
                         "index":7,
                         "entryTime": "13:25:00",
                         "exitTime": "14:15:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     },                   
                     {
@@ -75,7 +75,7 @@
                         "index":0,
                         "entryTime": "08:30:00",
                         "exitTime": "09:20:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     },
                     {
@@ -83,7 +83,7 @@
                         "index":1,
                         "entryTime": "09:25:00",
                         "exitTime": "10:15:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     },
                     {
@@ -99,7 +99,7 @@
                         "index":3,
                         "entryTime": "10:30:00",
                         "exitTime": "11:20:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     },
                     {
@@ -107,7 +107,7 @@
                         "index":4,
                         "entryTime": "11:25:00",
                         "exitTime": "12:15:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     },
                     {
@@ -123,7 +123,7 @@
                         "index":6,
                         "entryTime": "12:30:00",
                         "exitTime": "13:20:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     },
                     {
@@ -131,7 +131,7 @@
                         "index":7,
                         "entryTime": "13:25:00",
                         "exitTime": "14:15:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     },                   
                     {
@@ -139,7 +139,7 @@
                         "index":0,
                         "entryTime": "08:30:00",
                         "exitTime": "09:20:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     },
                     {
@@ -147,7 +147,7 @@
                         "index":1,
                         "entryTime": "09:25:00",
                         "exitTime": "10:15:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     },
                     {
@@ -163,7 +163,7 @@
                         "index":3,
                         "entryTime": "10:30:00",
                         "exitTime": "11:20:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     },
                     {
@@ -171,7 +171,7 @@
                         "index":4,
                         "entryTime": "11:25:00",
                         "exitTime": "12:15:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     },
                     {
@@ -187,7 +187,7 @@
                         "index":6,
                         "entryTime": "12:30:00",
                         "exitTime": "13:20:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     },
                     {
@@ -195,7 +195,7 @@
                         "index":7,
                         "entryTime": "13:25:00",
                         "exitTime": "14:15:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     },                    
                     {
@@ -203,7 +203,7 @@
                         "index":0,
                         "entryTime": "08:30:00",
                         "exitTime": "09:20:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     },
                     {
@@ -211,7 +211,7 @@
                         "index":1,
                         "entryTime": "09:25:00",
                         "exitTime": "10:15:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     },
                     {
@@ -227,7 +227,7 @@
                         "index":3,
                         "entryTime": "10:30:00",
                         "exitTime": "11:20:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     },
                     {
@@ -235,7 +235,7 @@
                         "index":4,
                         "entryTime": "11:25:00",
                         "exitTime": "12:15:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     },
                     {
@@ -251,7 +251,7 @@
                         "index":6,
                         "entryTime": "12:30:00",
                         "exitTime": "13:20:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     },
                     {
@@ -259,7 +259,7 @@
                         "index":7,
                         "entryTime": "13:25:00",
                         "exitTime": "14:15:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     },                   
                     {
@@ -267,7 +267,7 @@
                         "index":0,
                         "entryTime": "08:30:00",
                         "exitTime": "09:20:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     },
                     {
@@ -275,7 +275,7 @@
                         "index":1,
                         "entryTime": "09:25:00",
                         "exitTime": "10:15:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     },
                     {
@@ -291,7 +291,7 @@
                         "index":3,
                         "entryTime": "10:30:00",
                         "exitTime": "11:20:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     },
                     {
@@ -299,7 +299,7 @@
                         "index":4,
                         "entryTime": "11:25:00",
                         "exitTime": "12:15:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     },
                     {
@@ -315,7 +315,7 @@
                         "index":6,
                         "entryTime": "12:30:00",
                         "exitTime": "13:20:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     },
                     {
@@ -323,7 +323,7 @@
                         "index":7,
                         "entryTime": "13:25:00",
                         "exitTime": "14:15:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     }
                 ]
@@ -335,8 +335,8 @@
                         "day":0,
                         "index":0,
                         "entryTime": "09:00:00",
-                        "exitTime": "09:50:00",
-                        "duration": 50,
+                        "exitTime": "09:60:00",
+                        "duration": 60,
                         "type":"teaching"
                     },
 					{
@@ -344,7 +344,7 @@
                         "index":1,
                         "entryTime": "09:55:00",
                         "exitTime": "10:45:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     },
 					{
@@ -359,8 +359,8 @@
                         "day":0,
                         "index":3,
                         "entryTime": "11:00:00",
-                        "exitTime": "11:50:00",
-                        "duration": 50,
+                        "exitTime": "11:60:00",
+                        "duration": 60,
                         "type":"teaching"
                     },
 					{
@@ -368,15 +368,15 @@
                         "index":4,
                         "entryTime": "11:55:00",
                         "exitTime": "12:45:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     },
 					{
                         "day":0,
                         "index":5,
-                        "entryTime": "12:50:00",
+                        "entryTime": "12:60:00",
                         "exitTime": "13:40:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     },
 					{
@@ -391,8 +391,8 @@
                         "day":0,
                         "index":7,
                         "entryTime": "16:00:00",
-                        "exitTime": "16:50:00",
-                        "duration": 50,
+                        "exitTime": "16:60:00",
+                        "duration": 60,
                         "type":"teaching"
                     },
 					{
@@ -400,15 +400,15 @@
                         "index":8,
                         "entryTime": "16:55:00",
                         "exitTime": "17:45:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     },
 					{
                         "day":1,
                         "index":0,
                         "entryTime": "09:00:00",
-                        "exitTime": "09:50:00",
-                        "duration": 50,
+                        "exitTime": "09:60:00",
+                        "duration": 60,
                         "type":"teaching"
                     },
 					{
@@ -416,7 +416,7 @@
                         "index":1,
                         "entryTime": "09:55:00",
                         "exitTime": "10:45:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     },
 					{
@@ -431,8 +431,8 @@
                         "day":1,
                         "index":3,
                         "entryTime": "11:00:00",
-                        "exitTime": "11:50:00",
-                        "duration": 50,
+                        "exitTime": "11:60:00",
+                        "duration": 60,
                         "type":"teaching"
                     },
 					{
@@ -440,15 +440,15 @@
                         "index":4,
                         "entryTime": "11:55:00",
                         "exitTime": "12:45:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     },
 					{
                         "day":1,
                         "index":5,
-                        "entryTime": "12:50:00",
+                        "entryTime": "12:60:00",
                         "exitTime": "13:40:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     },
 					{
@@ -463,8 +463,8 @@
                         "day":1,
                         "index":7,
                         "entryTime": "16:00:00",
-                        "exitTime": "16:50:00",
-                        "duration": 50,
+                        "exitTime": "16:60:00",
+                        "duration": 60,
                         "type":"teaching"
                     },
 					{
@@ -472,15 +472,15 @@
                         "index":8,
                         "entryTime": "16:55:00",
                         "exitTime": "17:45:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     },
 					{
                         "day":2,
                         "index":0,
                         "entryTime": "09:00:00",
-                        "exitTime": "09:50:00",
-                        "duration": 50,
+                        "exitTime": "09:60:00",
+                        "duration": 60,
                         "type":"teaching"
                     },
 					{
@@ -488,7 +488,7 @@
                         "index":1,
                         "entryTime": "09:55:00",
                         "exitTime": "10:45:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     },
 					{
@@ -503,8 +503,8 @@
                         "day":2,
                         "index":3,
                         "entryTime": "11:00:00",
-                        "exitTime": "11:50:00",
-                        "duration": 50,
+                        "exitTime": "11:60:00",
+                        "duration": 60,
                         "type":"teaching"
                     },
 					{
@@ -512,15 +512,15 @@
                         "index":4,
                         "entryTime": "11:55:00",
                         "exitTime": "12:45:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     },
 					{
                         "day":2,
                         "index":5,
-                        "entryTime": "12:50:00",
+                        "entryTime": "12:60:00",
                         "exitTime": "13:40:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     },
 					{
@@ -535,8 +535,8 @@
                         "day":2,
                         "index":7,
                         "entryTime": "16:00:00",
-                        "exitTime": "16:50:00",
-                        "duration": 50,
+                        "exitTime": "16:60:00",
+                        "duration": 60,
                         "type":"teaching"
                     },
 					{
@@ -544,15 +544,15 @@
                         "index":8,
                         "entryTime": "16:55:00",
                         "exitTime": "17:45:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     },
 					{
                         "day":3,
                         "index":0,
                         "entryTime": "09:00:00",
-                        "exitTime": "09:50:00",
-                        "duration": 50,
+                        "exitTime": "09:60:00",
+                        "duration": 60,
                         "type":"teaching"
                     },
 					{
@@ -560,7 +560,7 @@
                         "index":1,
                         "entryTime": "09:55:00",
                         "exitTime": "10:45:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     },
 					{
@@ -575,8 +575,8 @@
                         "day":3,
                         "index":3,
                         "entryTime": "11:00:00",
-                        "exitTime": "11:50:00",
-                        "duration": 50,
+                        "exitTime": "11:60:00",
+                        "duration": 60,
                         "type":"teaching"
                     },
 					{
@@ -584,15 +584,15 @@
                         "index":4,
                         "entryTime": "11:55:00",
                         "exitTime": "12:45:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     },
 					{
                         "day":3,
                         "index":5,
-                        "entryTime": "12:50:00",
+                        "entryTime": "12:60:00",
                         "exitTime": "13:40:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     },
 					{
@@ -607,8 +607,8 @@
                         "day":3,
                         "index":7,
                         "entryTime": "16:00:00",
-                        "exitTime": "16:50:00",
-                        "duration": 50,
+                        "exitTime": "16:60:00",
+                        "duration": 60,
                         "type":"teaching"
                     },
 					{
@@ -616,15 +616,15 @@
                         "index":8,
                         "entryTime": "16:55:00",
                         "exitTime": "17:45:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     },
 					{
                         "day":4,
                         "index":0,
                         "entryTime": "09:00:00",
-                        "exitTime": "09:50:00",
-                        "duration": 50,
+                        "exitTime": "09:60:00",
+                        "duration": 60,
                         "type":"teaching"
                     },
 					{
@@ -632,7 +632,7 @@
                         "index":1,
                         "entryTime": "09:55:00",
                         "exitTime": "10:45:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     },
 					{
@@ -647,8 +647,8 @@
                         "day":4,
                         "index":3,
                         "entryTime": "11:00:00",
-                        "exitTime": "11:50:00",
-                        "duration": 50,
+                        "exitTime": "11:60:00",
+                        "duration": 60,
                         "type":"teaching"
                     },
 					{
@@ -656,15 +656,15 @@
                         "index":4,
                         "entryTime": "11:55:00",
                         "exitTime": "12:45:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     },
 					{
                         "day":4,
                         "index":5,
-                        "entryTime": "12:50:00",
+                        "entryTime": "12:60:00",
                         "exitTime": "13:40:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     },
 					{
@@ -679,8 +679,8 @@
                         "day":4,
                         "index":7,
                         "entryTime": "16:00:00",
-                        "exitTime": "16:50:00",
-                        "duration": 50,
+                        "exitTime": "16:60:00",
+                        "duration": 60,
                         "type":"teaching"
                     },
 					{
@@ -688,7 +688,7 @@
                         "index":8,
                         "entryTime": "16:55:00",
                         "exitTime": "17:45:00",
-                        "duration": 50,
+                        "duration": 60,
                         "type":"teaching"
                     }
 				]
@@ -769,11 +769,11 @@
                 ],
                 "generalSettings": {
                     "weeklyStay": {
-                        "strict": 2000,
+                        "strict": 2400,
                         "preferable": 1800
                     },
                     "dailyStay": {
-                        "strict": 500,
+                        "strict": 600,
                         "preferable": 360
                     },
                     "avoidGapsBetweenSesions": true,
@@ -787,11 +787,11 @@
                 "id": "Andrew",
                 "generalSettings": {
                     "weeklyStay": {
-                        "strict": 2000,
+                        "strict": 2400,
                         "preferable": 1800
                     },
                     "dailyStay": {
-                        "strict": 500,
+                        "strict": 600,
                         "preferable": 360
                     },
                     "avoidGapsBetweenSesions": true
@@ -1414,7 +1414,7 @@
                 ],                
                 "distribution": {
                     "stablePeriods": {
-						"weeklyStable": [50,50]
+						"weeklyStable": [60,60]
                     }
                 },
                 "sessionClassRooms": {
@@ -1446,7 +1446,7 @@
                 ],                
                 "distribution": {
                     "stablePeriods": {
-						"weeklyStable": [50,50]
+						"weeklyStable": [60,60]
                     }
                 },
                 "sessionClassRooms": {
@@ -1481,7 +1481,7 @@
                 ],                
                 "distribution": {
                     "stablePeriods": {
-						"weeklyStable": [50]
+						"weeklyStable": [60]
                     }
                 },
                 "sessionClassRooms": {
@@ -1515,7 +1515,7 @@
                 ],                
                 "distribution": {
                     "stablePeriods": {
-						"weeklyStable": [50]
+						"weeklyStable": [60]
                     }
                 },
                 "sessionClassRooms": {
@@ -1549,7 +1549,7 @@
                 ],                
                 "distribution": {
                     "stablePeriods": {
-						"weeklyStable": [50]
+						"weeklyStable": [60]
                     }
                 },
                 "sessionClassRooms": {
@@ -1583,7 +1583,7 @@
                 ],                
                 "distribution": {
                     "stablePeriods": {
-						"weeklyStable": [50]
+						"weeklyStable": [60]
                     }
                 },
                 "sessionClassRooms": {
@@ -1617,7 +1617,7 @@
                 ],                
                 "distribution": {
                     "stablePeriods": {
-						"weeklyStable": [50]
+						"weeklyStable": [60]
                     }
                 },
                 "sessionClassRooms": {
@@ -1651,7 +1651,7 @@
                 ],                
                 "distribution": {
                     "stablePeriods": {
-						"weeklyStable": [50]
+						"weeklyStable": [60]
                     }
                 },
                 "sessionClassRooms": {
@@ -1682,7 +1682,7 @@
                 ],                
                 "distribution": {
                     "stablePeriods": {
-						"weeklyStable": [50,50,50]
+						"weeklyStable": [60,60,60]
                     }
                 },
                 "sessionClassRooms": {
@@ -1706,7 +1706,7 @@
                 ],                
                 "distribution": {
                     "stablePeriods": {
-						"weeklyStable": [50,50,50]
+						"weeklyStable": [60,60,60]
                     }
                 },
                 "sessionClassRooms": {
@@ -1730,7 +1730,7 @@
                 ],                
                 "distribution": {
                     "stablePeriods": {
-						"weeklyStable": [50,50]
+						"weeklyStable": [60,60]
                     }
                 },
                 "sessionClassRooms": {
@@ -1754,7 +1754,7 @@
                 ],                
                 "distribution": {
                     "stablePeriods": {
-						"weeklyStable": [50,50]
+						"weeklyStable": [60,60]
                     }
                 },
                 "sessionClassRooms": {
@@ -1778,7 +1778,7 @@
                 ],                
                 "distribution": {
                     "stablePeriods": {
-						"weeklyStable": [50,50,50]
+						"weeklyStable": [60,60,60]
                     }
                 },
                 "sessionClassRooms": {
@@ -1802,7 +1802,7 @@
                 ],                
                 "distribution": {
                     "stablePeriods": {
-						"weeklyStable": [50,50,50]
+						"weeklyStable": [60,60,60]
                     }
                 },
                 "sessionClassRooms": {
@@ -1826,7 +1826,7 @@
                 ],                
                 "distribution": {
                     "stablePeriods": {
-						"weeklyStable": [50,50]
+						"weeklyStable": [60,60]
                     }
                 },
                 "sessionClassRooms": {
@@ -1850,7 +1850,7 @@
                 ],                
                 "distribution": {
                     "stablePeriods": {
-						"weeklyStable": [50,50]
+						"weeklyStable": [60,60]
                     }
                 },
                 "sessionClassRooms": {
@@ -1874,7 +1874,7 @@
                 ],                
                 "distribution": {
                     "stablePeriods": {
-						"weeklyStable": [50,50,50,50]
+						"weeklyStable": [60,60,60,60]
                     }
                 },
                 "sessionClassRooms": {
@@ -1904,7 +1904,7 @@
                 ],                
                 "distribution": {
                     "stablePeriods": {
-						"weeklyStable": [50,50,50,50]
+						"weeklyStable": [60,60,60,60]
                     }
                 },
                 "sessionClassRooms": {
@@ -1928,7 +1928,7 @@
                 ],                
                 "distribution": {
                     "stablePeriods": {
-						"weeklyStable": [50,50]
+						"weeklyStable": [60,60]
                     }
                 },
                 "sessionClassRooms": {
@@ -1952,7 +1952,7 @@
                 ],                
                 "distribution": {
                     "stablePeriods": {
-						"weeklyStable": [50,50]
+						"weeklyStable": [60,60]
                     }
                 },
                 "sessionClassRooms": {
@@ -1976,7 +1976,7 @@
                 ],                
                 "distribution": {
                     "stablePeriods": {
-						"weeklyStable": [50,50]
+						"weeklyStable": [60,60]
                     }
                 },
                 "sessionClassRooms": {
@@ -2000,7 +2000,7 @@
                 ],                
                 "distribution": {
                     "stablePeriods": {
-						"weeklyStable": [50,50]
+						"weeklyStable": [60,60]
                     }
                 },
                 "sessionClassRooms": {
@@ -2025,8 +2025,8 @@
                 "distribution": {
                     "stablePeriods": {
 						"weeklyVariable": {
-                            "minutesAmount": 450,
-                            "maxMinutesDaily":150,
+                            "minutesAmount": 460,
+                            "maxMinutesDaily":160,
                             "minDurationDaily": "avoid",
                             "avoidMaxDuration": true,
                             "allowDiscontinuity": false
@@ -2055,8 +2055,8 @@
                 "distribution": {
                     "stablePeriods": {
 						"weeklyVariable": {
-                            "minutesAmount": 450,
-                            "maxMinutesDaily":150,
+                            "minutesAmount": 460,
+                            "maxMinutesDaily":160,
                             "minDurationDaily": "avoid",
                             "avoidMaxDuration": true,
                             "allowDiscontinuity": false
@@ -2085,8 +2085,8 @@
                 "distribution": {
                     "stablePeriods": {
 						"weeklyVariable": {
-                            "minutesAmount": 350,
-                            "maxMinutesDaily":100,
+                            "minutesAmount": 360,
+                            "maxMinutesDaily":120,
                             "minDurationDaily": "avoid"
                         }
                     }
@@ -2114,8 +2114,8 @@
                 "distribution": {
                     "stablePeriods": {
 						"weeklyVariable": {
-                            "minutesAmount": 350,
-                            "maxMinutesDaily":100,
+                            "minutesAmount": 360,
+                            "maxMinutesDaily":120,
                             "minDurationDaily": "avoid"
                         }
                     }
@@ -2143,8 +2143,8 @@
                 "distribution": {
                     "stablePeriods": {
 						"weeklyVariable": {
-                            "minutesAmount": 450,
-                            "maxMinutesDaily":150,
+                            "minutesAmount": 460,
+                            "maxMinutesDaily":160,
                             "minDurationDaily": "avoid",
 							"avoidMaxDuration": true
                         }
@@ -2172,8 +2172,8 @@
                 "distribution": {
                     "stablePeriods": {
 						"weeklyVariable": {
-                            "minutesAmount": 450,
-                            "maxMinutesDaily":150,
+                            "minutesAmount": 460,
+                            "maxMinutesDaily":160,
                             "minDurationDaily": "avoid",
 							"avoidMaxDuration": true
                         }
@@ -2200,7 +2200,7 @@
                 ],                
                 "distribution": {
                     "stablePeriods": {
-						"weeklyStable": [50,50,50]
+						"weeklyStable": [60,60,60]
                     }
                 },
                 "sessionClassRooms": {
@@ -2224,7 +2224,7 @@
                 ],                
                 "distribution": {
                     "stablePeriods": {
-						"weeklyStable": [50,50,50]
+						"weeklyStable": [60,60,60]
                     }
                 },
                 "sessionClassRooms": {
@@ -2248,7 +2248,7 @@
                 ],                
                 "distribution": {
                     "stablePeriods": {
-						"weeklyStable": [50,50,50]
+						"weeklyStable": [60,60,60]
                     }
                 },
                 "sessionClassRooms": {
@@ -2272,7 +2272,7 @@
                 ],                
                 "distribution": {
                     "stablePeriods": {
-						"weeklyStable": [50,50,50]
+						"weeklyStable": [60,60,60]
                     }
                 },
                 "sessionClassRooms": {
@@ -2302,7 +2302,7 @@
                 ],                
                 "distribution": {
                     "stablePeriods": {
-						"weeklyStable": [50]
+						"weeklyStable": [60]
                     }
                 },
                 "sessionClassRooms": {
@@ -2329,7 +2329,7 @@
                 ],                
                 "distribution": {
                     "stablePeriods": {
-						"weeklyStable": [100]
+						"weeklyStable": [120]
                     }
                 },
                 "sessionClassRooms": {
@@ -2356,7 +2356,7 @@
                 ],                
                 "distribution": {
                     "stablePeriods": {
-						"weeklyStable": [100]
+						"weeklyStable": [120]
                     }
                 },
                 "sessionClassRooms": {
@@ -2380,7 +2380,7 @@
                 ],                
                 "distribution": {
                     "stablePeriods": {
-						"weeklyStable": [50]
+						"weeklyStable": [60]
                     }
                 },
                 "sessionClassRooms": {
@@ -2404,7 +2404,7 @@
                 ],                
                 "distribution": {
                     "stablePeriods": {
-						"weeklyStable": [50]
+						"weeklyStable": [60]
                     }
                 },
                 "sessionClassRooms": {
@@ -2434,7 +2434,7 @@
                 ],                
                 "distribution": {
                     "stablePeriods": {
-						"weeklyStable": [50]
+						"weeklyStable": [60]
                     }
                 },
                 "sessionClassRooms": {
@@ -2458,7 +2458,7 @@
                 "refTeachers": ["Alice","James"],
                 "distribution": {
                     "stablePeriods": {
-						"weeklyStable": [50]
+						"weeklyStable": [60]
                     }
                 }
             },
@@ -2469,7 +2469,7 @@
                 "refTeachers": ["Philip","Ernest","Nuria"],
                 "distribution": {
                     "stablePeriods": {
-						"weeklyStable": [50]
+						"weeklyStable": [60]
                     }
                 }
             },
@@ -2481,8 +2481,8 @@
                 "distribution": {
 					"stablePeriods": {
 						"weeklyVariable": {
-							"minutesAmount": 250,
-							"maxMinutesDaily":150
+							"minutesAmount": 300,
+							"maxMinutesDaily":160
 						}
 					}
                 }
@@ -2495,22 +2495,22 @@
                 "distribution": {
 					"stablePeriods": {
 						"weeklyVariable": {
-							"minutesAmount": 250,
-							"maxMinutesDaily":150
+							"minutesAmount": 300,
+							"maxMinutesDaily":160
 						}
 					}
                 }
             },
 			{
-                "id": 50,
+                "id": 60,
                 "refFrame": "A",
                 "refTasks": ["MAN"],
                 "refTeachers": ["Nuria"],
                 "distribution": {
 					"stablePeriods": {
 						"weeklyVariable": {
-							"minutesAmount": 250,
-							"maxMinutesDaily":150
+							"minutesAmount": 300,
+							"maxMinutesDaily":160
 						}
 					}
                 }
