@@ -891,10 +891,47 @@
                                         },
                                         "additionalProperties": false
                                     },
-                                    "refConsecutiveGroup": {
-                                        "title": "RefConsecutiveGroup",
-                                        "description": "Identifier of the consecutive sessions group of the session. Indicates that the sessions must be taught consecutive to the sessions of the group.",
-                                        "type": "integer"
+                                    "consecutiveGroup": {
+                                        "title":"ConsecutiveGroup",
+                                        "description":"Contains the references of a continuous sessions group.",                                        
+                                        "type":"object",
+                                        "required":[
+                                            "id",
+                                            "refSessions"
+                                        ],
+                                        "properties":{
+                                            "id": {
+                                                "description":"Identifier of continuous sessions group.",                                        
+                                                "type": "integer"
+                                            },
+                                            "refSessions": {
+                                                "title":"SessionRefs",
+                                                "description":"Contains the references of a continuous sessions group. Must contain the sesion itself. And the proper order of continuity (for 'order' property).",
+                                                "type":"array",
+                                                "minItems": 1,
+                                                "additionalItems": false,
+                                                "items": {                                    
+                                                    "title":"SessionRef",
+                                                    "description":"Identifier of session.",
+                                                    "type":"integer"
+                                                }
+                                            },
+                                            "order": {
+                                                "description": "Indicates if the sessions must be 'ordered', 'disordered' or 'sameDay' (it does not matter as long as they are assigned on the same day.",
+                                                "enum": [
+                                                    "disordered",
+                                                    "ordered",
+                                                    "sameDay"
+                                                ],
+                                                "default": "disordered"
+                                            },
+                                            "allowBreakBetweenSessions": {
+                                                "description": "Indicates if break between sessions is allowed to keep the relation .",
+                                                "type": "boolean",
+                                                "default": false
+                                            }
+                                        },
+                                        "additionalProperties": false
                                     },
                                     "nonConsecutiveSessions": {
                                         "title":"NonConsecutiveSessions",
@@ -1019,63 +1056,7 @@
                             }
                         }
                     }
-                },
-                "relationsList":{
-                    "title": "RelationsList",
-                    "description": "Contains relations list of consecutive sessions.",
-                    "type": "object",
-                    "properties": {
-                        "consecutiveGroups": {
-                            "title": "ConsecutiveGroups",
-                            "description": "List of groups of sessions that must be consecutive or on the same day.",
-                            "type": "array",
-                            "additionalItems": false,
-                            "items": {
-                                "title":"ConsecutiveGroup",
-                                "description":"Contains the references of a continuous sessions group.",                                        
-                                "type":"object",
-                                "required":[
-                                    "id",
-                                    "refSessions"
-                                ],
-                                "properties":{
-                                    "id": {
-                                        "description":"Identifier of continuous sessions group.",                                        
-                                        "type": "integer"
-                                    },
-                                    "refSessions": {
-                                        "title":"SessionRefs",
-                                        "description":"Contains the references of a continuous sessions group.",
-                                        "type":"array",
-                                        "minItems": 1,
-                                        "additionalItems": false,
-                                        "items": {                                    
-                                            "title":"SessionRef",
-                                            "description":"Identifier of session.",
-                                            "type":"integer"
-                                        }
-                                    },
-                                    "order": {
-                                        "description": "Indicates if the sessions must be followed, separated, or it does not matter as long as they are assigned on the same day.",
-                                        "enum": [
-                                            "disordered",
-                                            "followed",
-                                            "separated"
-                                        ],
-                                        "default": "disordered"
-                                    },
-                                    "allowBreakBetweenSessions": {
-                                        "description": "Indicates if break between sessions is allowed to keep the relation .",
-                                        "type": "boolean",
-                                        "default": false
-                                    }
-                                },
-                                "additionalProperties": false
-                            }
-                        }
-                    },
-                    "additionalProperties": false
-                },
+                },                
                 "onCallServices":{
                     "title": "OnCallServices",
                     "description": "List of on call services of teachers defined in the timetable.",

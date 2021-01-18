@@ -29,7 +29,6 @@ Schema of the object that contains the timetable planning data.
 | [subjects](#subjects)                       | `array`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-subjects.md "engineInputGHCSchema#/properties/ghcData/properties/subjects")                       |
 | [groups](#groups)                           | `array`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups.md "engineInputGHCSchema#/properties/ghcData/properties/groups")                           |
 | [sessions](#sessions)                       | `array`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions.md "engineInputGHCSchema#/properties/ghcData/properties/sessions")                       |
-| [relationsList](#relationslist)             | `object` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-relationslist.md "engineInputGHCSchema#/properties/ghcData/properties/relationsList")             |
 | [onCallServices](#oncallservices)           | `array`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-oncallservices.md "engineInputGHCSchema#/properties/ghcData/properties/onCallServices")           |
 | [optimizationWeights](#optimizationweights) | `object` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-optimizationweights.md "engineInputGHCSchema#/properties/ghcData/properties/optimizationWeights") |
 | [engineSettings](#enginesettings)           | `object` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-enginesettings.md "engineInputGHCSchema#/properties/ghcData/properties/engineSettings")           |
@@ -196,22 +195,6 @@ Teachers sessions. These can be with students groups, meetings with other teache
 ### sessions Type
 
 `object[]` ([Session](ghc-properties-ghcdata-properties-sessions-session.md))
-
-## relationsList
-
-Contains relations list of consecutive sessions.
-
-
-`relationsList`
-
--   is optional
--   Type: `object` ([RelationsList](ghc-properties-ghcdata-properties-relationslist.md))
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-relationslist.md "engineInputGHCSchema#/properties/ghcData/properties/relationsList")
-
-### relationsList Type
-
-`object` ([RelationsList](ghc-properties-ghcdata-properties-relationslist.md))
 
 ## onCallServices
 
