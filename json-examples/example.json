@@ -1189,16 +1189,11 @@
                     "sameHourPreference": "avoid"
                 },
 				"sessionRelations": {
-                    "differentDays": {
-                        "refSesions": [1],
-                        "daysSetting": "nonConsecutiveDaysPreferred"
-                    },
-					"minimumSeparationTo": [
-                        {
-                            "refSessions": [2],
-                            "days": 2
-                        }
-                    ]
+					"consecutiveGroup": {
+						"id" : 1,
+						"refSessions": [0,2],
+						"order": "ordered"
+					}
                 }
             },
             {
@@ -1279,12 +1274,11 @@
                     ]
                 },
                 "sessionRelations": {
-                    "minimumSeparationTo": [
-                        {
-                            "refSessions": [0],
-                            "days": 2
-                        }
-                    ]
+					"consecutiveGroup": {
+						"id" : 1,
+						"refSessions": [0,2],
+						"order": "ordered"
+					}
                 }
             },
             {
