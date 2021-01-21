@@ -22,7 +22,7 @@ On call service of teachers who supervise the free time of students.
 
 | Property                                                | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                                                     |
 | :------------------------------------------------------ | --------- | -------- | -------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [id](#id)                                               | `string`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-oncallservices-oncallservice-properties-id.md "engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/id")                                               |
+| [id](#id)                                               | `integer` | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-oncallservices-oncallservice-properties-id.md "engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/id")                                               |
 | [refFrame](#refframe)                                   | `string`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-oncallservices-oncallservice-properties-refframe.md "engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/refFrame")                                   |
 | [refPeriods](#refperiods)                               | `object`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-oncallservices-oncallservice-properties-oncallperiodsinfo.md "engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/refPeriods")                        |
 | [refTask](#reftask)                                     | `string`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-oncallservices-oncallservice-properties-reftask.md "engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/refTask")                                     |
@@ -35,19 +35,22 @@ On call service of teachers who supervise the free time of students.
 
 ## id
 
-Identifier name of the On-Call service.
+Identifier of the On-Call service.
 
+
+> This identifier can not be equals to any session identifier.
+>
 
 `id`
 
 -   is required
--   Type: `string`
+-   Type: `integer`
 -   cannot be null
 -   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-oncallservices-oncallservice-properties-id.md "engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/id")
 
 ### id Type
 
-`string`
+`integer`
 
 ## refFrame
 

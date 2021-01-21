@@ -2518,7 +2518,7 @@
         ],
         "onCallServices": [
             {
-               "id": "G Hor B",
+               "id": 61,
                "refFrame": "B",
                "refTask": "G",
                "teachersEachSection": {

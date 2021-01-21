@@ -524,7 +524,7 @@
                         ],
                         "properties":{
                             "id": {
-                                "description": "Identifier name of the session.",
+                                "description": "Identifier of the session.",
                                 "type": "integer"
                             },
                             "refFrame": {
@@ -1076,8 +1076,9 @@
                         ],
                         "properties": {
                             "id": {
-                                "description": "Identifier name of the On-Call service.",
-                                "type": "string"
+                                "description": "Identifier of the On-Call service.",
+                                "$comment": "This identifier can not be equals to any session identifier.", 
+                                "type": "integer"
                             },
                             "refFrame": {
                                 "description": "Identifier name of the frame where will be set the service.",

@@ -956,137 +956,12 @@
         "teachers":[
             {
                 "id": "DavH",
-                "name":"David",
-                "associationIdentifier": "exmpleOtherCityGroup",
                 "frameTemplate":[
                     {
                         "day":0,
                         "index":0,
                         "frame":"A",
                         "type":"strong-non-preferred"
-                    }
-                ],
-                "generalSettings": {
-                    "weeklyStay": {
-                        "strict": 1860,
-                        "preferable": 1800,
-                        "countAroundMidday": true
-                    },
-                    "dailyStay": {
-                        "strict": 360,
-                        "preferable": 300
-                    },
-                    "avoidGapsBetweenSesions": false,
-                    "maxContinuousTeaching": {
-                        "type": "avoid",
-                        "minutes": 300,
-                        "minBreak": 15
-                    },
-                    "avoidClassesAroundBreak": false,
-                    "freeTimes": {
-                        "fullDay":{
-                            "strictDays":1,
-                            "preferredDays": 2
-                        },
-                        "consecutiveAnyTime":{
-                            "strictDays":1,
-                            "preferredDays": 2,
-                            "minutes":60
-                        }
-                    },
-                    "freePartTimes":{
-                        "mornings": {
-                            "strict": 1
-                        },
-                        "afternoons": {
-                            "preferable": 1
-                        },
-                        "indistinctly":{
-                            "strict": 2
-                        }
-                    },
-					"incompatibilities": {
-						"freeTimeBetweenDayBeforeAndCurrent" :{
-							"type": "strict",
-							"minutes": 60
-						},
-                        "doNotFinishAtLastAfternoonSectionIfStartedAtFirstAfternoonSection": "strict",
-                        "freeTimeAroundMidday": {
-                            "type": "strict",
-                            "minutes":120
-                        }
-                    },
-                    "dailyOcupation": {
-                        "allowFreeDays": true,
-                        "minimumTeaching": {
-                            "restriction": "strict"
-                        }
-                    },
-                    "middayReference": {
-						"refFrame": "A",
-                        "strict": true
-                    },
-					 "dailyBuildingTransfers": {
-						"strict": 2  
-					}
-                },
-                "periodSettings":[
-                    {
-                        "refPeriod":"PrimerCuatri",
-                        "weeklyStay": {
-                            "strict": 1800
-                        },
-						"maxContinuousTeaching": {
-							"type": "ignore"
-						},
-                        "freeTimes": {
-                            "fullDay":{
-                                "strictDays":0,
-                                "preferredDays": 0
-                            },
-							"consecutiveAnyTime":{
-								"strictDays":0,
-								"preferredDays": 0,
-								"minutes":60
-							}
-                        },
-						"freePartTimes":{
-							"mornings": {
-								"preferable": 2
-							},
-							"afternoons": {
-                            "preferable": 0
-							},
-							"indistinctly":{
-								"strict": 0,
-								"preferable": 2
-							}
-						},
-						"incompatibilities": {
-							"freeTimeBetweenDayBeforeAndCurrent" :{
-								"minutes": 120
-							},
-							"freeTimeBetweenEndWeekAndStartWeekDays":{
-								"type": "strict",
-								"minutes": 60
-							},
-							"doNotFinishAtLastAfternoonSectionIfStartedAtFirstAfternoonSection": "ignore",
-							"freeTimeAroundMidday": {								
-								"minutes":60
-							}
-						},
-						"dailyOcupation": {
-							"allowFreeDays": false,
-							"minimumTeaching": {
-								"setting": "higher"
-							}
-						},
-						"middayReference": {
-							"strict": false
-						},
-						"dailyBuildingTransfers": {
-							"preferable": 1
-						}
                     }
                 ]
             },
@@ -1159,11 +1034,7 @@
                         "SegundoCuatri"
                     ],
                     "stablePeriods": {
-                        "weeklyCustom":[
-							[120,120,60],
-							[60,60,60,60,60],
-							[120,60,60,60]
-						]
+						"weeklyStable": [60,60,60]
                     }
                 },
                 "sessionClassRooms": {
@@ -1230,12 +1101,6 @@
                     ],
                     "capacityPreference": "strict",
                     "capacityType": "individual"
-                },
-                "sessionRelations": {
-                    "differentDays": {
-                        "refSesions": [0],
-                        "daysSetting": "nonConsecutiveDaysPreferred"
-                    }
                 }
             },
             {
@@ -1260,7 +1125,7 @@
                         "SegundoCuatri"
                     ],
                     "stablePeriods": {
-                        "weeklyStable": [120,120,60]
+                        "weeklyStable": [60,60,60]
                     }
                 },
 				"sessionClassRooms": {
@@ -1391,14 +1256,13 @@
                 "refTeachers": ["DavH","Bur"],                
                 "distribution": {
                     "periods": [                        
+						"PrimerCuatri",
                         "SegundoCuatri"
                     ],
-                    "stablePeriods": {
-                        "weeklyCustom":[
-							[120],
-							[60,60]
-						]
-                    }
+                    "variablePeriods": {                        
+						"weeklyStable": [60,60,60,60],
+						"minimnunTimeInPeriod" : 60
+					}
                 },
 				"sessionClassRooms": {
 					"classRoomsToAssign": [
@@ -1411,7 +1275,7 @@
         ],
         "onCallServices": [
             {
-               "id": "breakOnCall",
+               "id": 100,
                "refFrame": "A",
                "refPeriods": {
                 "periods": [

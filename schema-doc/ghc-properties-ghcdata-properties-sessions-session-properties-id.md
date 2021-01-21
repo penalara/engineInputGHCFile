@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/id
 ```
 
-Identifier name of the session.
+Identifier of the session.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

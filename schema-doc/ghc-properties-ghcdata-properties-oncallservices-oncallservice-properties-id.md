@@ -1,11 +1,14 @@
-# Untitled string in EngineInputGHCSchema Schema
+# Untitled integer in EngineInputGHCSchema Schema
 
 ```txt
 engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/id
 ```
 
-Identifier name of the On-Call service.
+Identifier of the On-Call service.
 
+
+> This identifier can not be equals to any session identifier.
+>
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
 | :------------------ | ---------- | -------------- | ----------------------- | :---------------- | --------------------- | ------------------- | ------------------------------------------------------------------ |
@@ -13,4 +16,4 @@ Identifier name of the On-Call service.
 
 ## id Type
 
-`string`
+`integer`

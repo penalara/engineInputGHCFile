@@ -33,7 +33,7 @@ engineInputGHCSchema#/properties/ghcData/properties/sessions/items
 
 ## id
 
-Identifier name of the session.
+Identifier of the session.
 
 
 `id`
