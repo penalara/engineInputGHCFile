@@ -1749,7 +1749,7 @@
                 "refSubjects": ["History"],
                 "refGroups": [
                     {
-                        "refGroup": "3º A"
+                        "refGroup": "3º B"
                     }
                 ],                
                 "distribution": {
@@ -2338,6 +2338,9 @@
 							"classRoomsSetsList": ["general"]
                         }
                     ]
+                },
+				"sessionRelations": {
+                    "refSimultaneusGroup": 3
                 }
             },
 			{
@@ -2365,6 +2368,9 @@
 							"classRoomsList": ["A-23"]
                         }
                     ]
+                },
+				"sessionRelations": {
+                    "refSimultaneusGroup": 3
                 }
             },
 			{
