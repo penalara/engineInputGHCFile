@@ -769,12 +769,12 @@
                 ],
                 "generalSettings": {
                     "weeklyStay": {
-                        "strict": 2400,
+                        "strict": 5400,
                         "preferable": 1800
                     },
                     "dailyStay": {
-                        "strict": 600,
-                        "preferable": 360
+                        "strict": 1320,
+                        "preferable": 420
                     },
                     "avoidGapsBetweenSesions": true,
                     "maxContinuousTeaching": {
@@ -787,12 +787,12 @@
                 "id": "Andrew",
                 "generalSettings": {
                     "weeklyStay": {
-                        "strict": 2400,
+                        "strict": 5400,
                         "preferable": 1800
                     },
                     "dailyStay": {
                         "strict": 600,
-                        "preferable": 360
+                        "preferable": 420
                     },
                     "avoidGapsBetweenSesions": true
                 }
@@ -894,7 +894,7 @@
                         "day":0,
                         "index":0,
                         "frame":"A",
-                        "type":"banned"
+                        "type":"strong-non-preferred"
                     },
                     {
                         "day":0,
@@ -924,7 +924,7 @@
                         "day":1,
                         "index":0,
                         "frame":"A",
-                        "type":"banned"
+                        "type":"strong-non-preferred"
                     },
                     {
                         "day":1,
@@ -954,7 +954,7 @@
                         "day":2,
                         "index":0,
                         "frame":"A",
-                        "type":"banned"
+                        "type":"strong-non-preferred"
                     },
                     {
                         "day":2,
@@ -984,7 +984,7 @@
                         "day":3,
                         "index":0,
                         "frame":"A",
-                        "type":"banned"
+                        "type":"strong-non-preferred"
                     },
                     {
                         "day":3,
@@ -1014,7 +1014,7 @@
                         "day":4,
                         "index":0,
                         "frame":"A",
-                        "type":"banned"
+                        "type":"strong-non-preferred"
                     },
                     {
                         "day":4,
@@ -2025,8 +2025,8 @@
                 "distribution": {
                     "stablePeriods": {
 						"weeklyVariable": {
-                            "minutesAmount": 460,
-                            "maxMinutesDaily":160,
+                            "minutesAmount": 540,
+                            "maxMinutesDaily":180,
                             "minDurationDaily": "avoid",
                             "avoidMaxDuration": true,
                             "allowDiscontinuity": false
@@ -2039,7 +2039,10 @@
 							"classRoomsList": ["A-23"]
                         }
                     ]
-                }
+                },
+				"sessionSettings": {
+					"nonBreakInTheMiddleOfSession": true
+				}
             },
 			{
                 "id": 29,
@@ -2055,8 +2058,8 @@
                 "distribution": {
                     "stablePeriods": {
 						"weeklyVariable": {
-                            "minutesAmount": 460,
-                            "maxMinutesDaily":160,
+                            "minutesAmount": 540,
+                            "maxMinutesDaily":180,
                             "minDurationDaily": "avoid",
                             "avoidMaxDuration": true,
                             "allowDiscontinuity": false
@@ -2085,7 +2088,7 @@
                 "distribution": {
                     "stablePeriods": {
 						"weeklyVariable": {
-                            "minutesAmount": 360,
+                            "minutesAmount": 420,
                             "maxMinutesDaily":120,
                             "minDurationDaily": "avoid"
                         }
@@ -2098,7 +2101,10 @@
 							"classRoomsSetsList": ["Workshops"]
                         }
                     ]
-                }
+                },
+				"sessionSettings": {
+					"nonBreakInTheMiddleOfSession": true
+				}
             },
 			{
                 "id": 31,
@@ -2114,7 +2120,7 @@
                 "distribution": {
                     "stablePeriods": {
 						"weeklyVariable": {
-                            "minutesAmount": 360,
+                            "minutesAmount": 420,
                             "maxMinutesDaily":120,
                             "minDurationDaily": "avoid"
                         }
@@ -2127,7 +2133,10 @@
 							"classRoomsSetsList": ["Workshops"]
                         }
                     ]
-                }
+                },
+				"sessionSettings": {
+					"nonBreakInTheMiddleOfSession": true
+				}
             },
 			{
                 "id": 32,
@@ -2143,8 +2152,8 @@
                 "distribution": {
                     "stablePeriods": {
 						"weeklyVariable": {
-                            "minutesAmount": 460,
-                            "maxMinutesDaily":160,
+                            "minutesAmount": 540,
+                            "maxMinutesDaily":180,
                             "minDurationDaily": "avoid",
 							"avoidMaxDuration": true
                         }
@@ -2156,7 +2165,10 @@
 							"classRoomsSetsList": ["Workshops"]
                         }
                     ]
-                }
+                },
+				"sessionSettings": {
+					"nonBreakInTheMiddleOfSession": true
+				}
             },
 			{
                 "id": 33,
@@ -2172,8 +2184,8 @@
                 "distribution": {
                     "stablePeriods": {
 						"weeklyVariable": {
-                            "minutesAmount": 460,
-                            "maxMinutesDaily":160,
+                            "minutesAmount": 540,
+                            "maxMinutesDaily":180,
                             "minDurationDaily": "avoid",
 							"avoidMaxDuration": true
                         }
@@ -2185,7 +2197,10 @@
 							"classRoomsSetsList": ["Workshops"]
                         }
                     ]
-                }
+                },
+				"sessionSettings": {
+					"nonBreakInTheMiddleOfSession": true
+				}
             },
 			{
                 "id": 34,
@@ -2488,7 +2503,7 @@
 					"stablePeriods": {
 						"weeklyVariable": {
 							"minutesAmount": 300,
-							"maxMinutesDaily":160
+							"maxMinutesDaily":180
 						}
 					}
                 }
@@ -2502,7 +2517,7 @@
 					"stablePeriods": {
 						"weeklyVariable": {
 							"minutesAmount": 300,
-							"maxMinutesDaily":160
+							"maxMinutesDaily":180
 						}
 					}
                 }
@@ -2516,7 +2531,7 @@
 					"stablePeriods": {
 						"weeklyVariable": {
 							"minutesAmount": 300,
-							"maxMinutesDaily":160
+							"maxMinutesDaily":180
 						}
 					}
                 }
