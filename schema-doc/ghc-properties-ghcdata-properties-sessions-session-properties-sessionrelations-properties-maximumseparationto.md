@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionRelations/properties/maximumSeparationTo
 ```
 
-Contains sessions that must be taught a maximum number of days apart from the current session classes.
+It contains class units to be taught within a maximum number of days of the current class units.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

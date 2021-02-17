@@ -25,7 +25,7 @@ Template with only banned section assignment preference.
 
 ## day
 
-Day of the week when is located the section.
+Day of the week when the section is located.
 
 
 `day`
@@ -41,7 +41,7 @@ Day of the week when is located the section.
 
 ## index
 
-Index inside the day where is located the section.
+Index built into the day where the section is located.
 
 
 `index`
@@ -57,7 +57,7 @@ Index inside the day where is located the section.
 
 ## frame
 
-Identifier name of the frame.
+Frame identifier.
 
 
 `frame`

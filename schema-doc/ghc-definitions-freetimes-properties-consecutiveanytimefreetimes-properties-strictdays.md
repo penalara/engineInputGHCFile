@@ -4,7 +4,7 @@
 engineInputGHCSchema#/definitions/freeTimes/properties/consecutiveAnyTime/properties/strictDays
 ```
 
-Number of strict days when teacher should have the free interval.
+Strict number of days on which the teacher must have the interval free. 
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

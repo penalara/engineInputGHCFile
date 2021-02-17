@@ -4,7 +4,7 @@
 engineInputGHCSchema#/definitions/maxContinuousTeaching
 ```
 
-Indicates the continuous maximum time teaching sessions, that are allowed without have a free gap or a non teaching session in between.
+It indicates the maximum continuous time of class units, which are allowed without having a gap or a non-class units between them.
 
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
@@ -25,7 +25,7 @@ Indicates the continuous maximum time teaching sessions, that are allowed withou
 
 ## type
 
-Indicate if the incompatibility is a strict, avoid (ponderable for optimization) or ignore.
+Indicate if the incompatibility is a strict, avoid (penalisable at optimization) or ignore.
 
 
 `type`
@@ -67,10 +67,10 @@ Maximum continuous teaching time in minutes.
 
 ## minBreak
 
-Minimum time gap to considered it as a break.
+Minimum time period to be considered as break time
 
 
-> If did not specify, the engine will assign the general value or default time of 30 minutes.
+> If not specified, the engine will assign the general value or the default time of 30 minutes.
 >
 
 `minBreak`

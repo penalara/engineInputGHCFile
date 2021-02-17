@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/teachersEachSection/properties/bySection/items/properties/numTeachers
 ```
 
-Custom number of tachers for the section.
+Custom number of teachers to be assigned in the section.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

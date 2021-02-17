@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/refTasks/items
 ```
 
-Identifier name of the task.
+Task identifier.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

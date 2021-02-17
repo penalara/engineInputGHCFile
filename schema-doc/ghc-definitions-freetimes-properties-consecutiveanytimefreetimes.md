@@ -25,7 +25,7 @@ Teacher's free intervals at any time of the day.
 
 ## strictDays
 
-Number of strict days when teacher should have the free interval.
+Strict number of days on which the teacher must have the interval free. 
 
 
 `strictDays`
@@ -41,7 +41,7 @@ Number of strict days when teacher should have the free interval.
 
 ## preferredDays
 
-Number of preferred days when teacher should have the free interval.
+Preferred number of days on which the teacher should have the interval free. 
 
 
 `preferredDays`

@@ -24,7 +24,7 @@ engineInputGHCSchema#/properties/ghcData/properties/buildings/items
 
 ## id
 
-Identifier name of the building.
+Building identifier.
 
 
 `id`
@@ -40,7 +40,7 @@ Identifier name of the building.
 
 ## distances
 
-Distances in minutes to another building of the school.
+Distance in minutes to another school building.
 
 
 `distances`

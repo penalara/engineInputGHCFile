@@ -4,7 +4,7 @@
 engineInputGHCSchema#/definitions/weeklyStay/properties/countAroundMidday
 ```
 
-Indicates, in case of a split day, that the unoccupied intervals between the morning and afternoon class units are counted each day.
+It indicates, in the case of split shifts, that the unoccupied intervals between the morning and afternoon class units are counted each day.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

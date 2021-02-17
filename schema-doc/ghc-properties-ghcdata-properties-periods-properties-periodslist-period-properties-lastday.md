@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/periods/properties/periodsList/items/properties/lastDay
 ```
 
-End day of the period, the period include it.
+The end day of the period (included).
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

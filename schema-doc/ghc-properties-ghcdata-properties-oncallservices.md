@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/onCallServices
 ```
 
-List of on call services of teachers defined in the timetable.
+List of on-call services of teachers defined in the timetable.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

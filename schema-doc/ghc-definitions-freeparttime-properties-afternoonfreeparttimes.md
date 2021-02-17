@@ -4,7 +4,7 @@
 engineInputGHCSchema#/definitions/freePartTimes/properties/afternoons
 ```
 
-Afternoons off periods.
+Afternoons off.
 
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
@@ -24,7 +24,7 @@ Afternoons off periods.
 
 ## strict
 
-Strict number of afternoons off periods.
+Strict number of afternoons off..
 
 
 `strict`
@@ -40,7 +40,7 @@ Strict number of afternoons off periods.
 
 ## preferable
 
-Preferable number of afternoons off periods.
+Preferable number of afternoons off.
 
 
 `preferable`

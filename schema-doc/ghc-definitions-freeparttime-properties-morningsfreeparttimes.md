@@ -4,7 +4,7 @@
 engineInputGHCSchema#/definitions/freePartTimes/properties/mornings
 ```
 
-Mornings off periods.
+Mornings off.
 
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
@@ -24,7 +24,7 @@ Mornings off periods.
 
 ## strict
 
-Strict number of mornings off periods.
+Strict number of mornings off.
 
 
 `strict`
@@ -40,7 +40,7 @@ Strict number of mornings off periods.
 
 ## preferable
 
-Preferable number of mornings off periods.
+Preferable number of mornings off.
 
 
 `preferable`

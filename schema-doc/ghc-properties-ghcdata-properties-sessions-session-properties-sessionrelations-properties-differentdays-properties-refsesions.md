@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionRelations/properties/differentDays/properties/refSesions
 ```
 
-Identifiers of the sessions that they should not be assigned at the same day when this one.
+ Sessions identifiers which class units should not be assigned on the same day.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

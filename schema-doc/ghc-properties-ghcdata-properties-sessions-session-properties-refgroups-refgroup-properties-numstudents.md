@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/refGroups/items/properties/numStudents
 ```
 
-Custom number of students who are in the sessions. If is not specified, the engine takes by default the value of the Group object.
+Custom number of students that are in the class units. If it is not specified, the engine defaults to the value of the Group object.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

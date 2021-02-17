@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionRelations/properties/differentDays
 ```
 
-Conditions about this and other session can not coincide in the same day.
+Conditions on this and another class unit cannot coincide on the same day.
 
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
@@ -24,7 +24,7 @@ Conditions about this and other session can not coincide in the same day.
 
 ## refSesions
 
-Identifiers of the sessions that they should not be assigned at the same day when this one.
+ Sessions identifiers which class units should not be assigned on the same day.
 
 
 `refSesions`
@@ -44,7 +44,7 @@ Identifiers of the sessions that they should not be assigned at the same day whe
 
 ## daysSetting
 
-Keep the same position each week or period for the classes of the session.
+Keep the same position each week or period for the class units.
 
 
 `daysSetting`

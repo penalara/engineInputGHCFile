@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/nonBreakInTheMiddleOfSession
 ```
 
-Do not allow breaks between classes of multiple duration (classes duration of more than one section).
+Do not allow breaks between class units of multiple duration (class duration of more than one section).
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

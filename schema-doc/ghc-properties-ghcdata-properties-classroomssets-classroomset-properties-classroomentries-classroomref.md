@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/classRoomsSets/items/properties/rooms/items
 ```
 
-Identifier name of the classroom.
+Classroom identifier.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

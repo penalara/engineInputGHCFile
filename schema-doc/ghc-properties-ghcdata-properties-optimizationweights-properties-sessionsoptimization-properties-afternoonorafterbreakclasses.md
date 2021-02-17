@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/optimizationWeights/properties/sessions/properties/afternoonOrAfterBreakClasses
 ```
 
-Indicates the weight of penalization of have classes after the last break or in the afternoon.
+It indicates the weight of the penalty of having class units after the last break or in the afternoon.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

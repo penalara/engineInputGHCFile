@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/optimizationWeights/properties/teachers/properties/continuousSessionsWithGroup
 ```
 
-Indicates the weight of having consecutive sessions taught to the same group.
+It indicates the weight of having consecutive class units taught to the same group.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

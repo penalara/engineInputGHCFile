@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/optimizationWeights/properties/teachers/properties/teacherIncompatibities
 ```
 
-Indicates the weight for optimizable teacher's incompatibilities.
+It indicates the weight of the teacher's incompatibilities that can be optimised.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

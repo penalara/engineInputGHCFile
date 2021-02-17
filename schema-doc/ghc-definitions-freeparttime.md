@@ -4,7 +4,7 @@
 engineInputGHCSchema#/definitions/freePartTimes
 ```
 
-Half day off periods.
+Free half-time periods .
 
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
@@ -25,7 +25,7 @@ Half day off periods.
 
 ## mornings
 
-Mornings off periods.
+Mornings off.
 
 
 `mornings`
@@ -41,7 +41,7 @@ Mornings off periods.
 
 ## afternoons
 
-Afternoons off periods.
+Afternoons off.
 
 
 `afternoons`
@@ -57,7 +57,7 @@ Afternoons off periods.
 
 ## indistinctly
 
-Indistinctly, mornings or afternoons, off periods.
+Free mornings or evenings indistinctly.
 
 
 `indistinctly`

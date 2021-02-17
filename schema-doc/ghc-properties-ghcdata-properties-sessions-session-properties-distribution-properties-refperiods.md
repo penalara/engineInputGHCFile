@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/distribution/properties/periods
 ```
 
-List of periods or weeks when the session must be assigned.
+List of periods or weeks in which the class unit must be assigned.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

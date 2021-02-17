@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/refPeriods/properties/periods
 ```
 
-List of Periods that must have the service.
+List of Periods when the service must be set.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

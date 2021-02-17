@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/day
 ```
 
-Day of the week when is located the section.
+Day of the week where the section is located.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

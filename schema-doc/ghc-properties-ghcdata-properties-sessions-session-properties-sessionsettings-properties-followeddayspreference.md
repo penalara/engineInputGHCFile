@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/followedDaysPreference
 ```
 
-If the session has more than one class, it indicates the preference about assign them in consecutive days.
+If the class unit has more than one lesson, indicates the preference on assigning them on consecutive days.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

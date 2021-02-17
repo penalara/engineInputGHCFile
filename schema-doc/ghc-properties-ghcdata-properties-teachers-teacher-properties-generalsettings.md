@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/generalSettings
 ```
 
-Teacher's strict and ponderable conditions for the timetable. If there is not unique periods, these conditios are the default value, but they can be custom specified for each period in the 'periodSettings' tag.
+Strict and measurable teacher's conditions for the timetable. If there are not single periods, these conditions are the default, but can be specified individually for each period in the 'periodSettings' tag.
 
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
@@ -33,7 +33,7 @@ Teacher's strict and ponderable conditions for the timetable. If there is not un
 
 ## weeklyStay
 
-Indicates the maximum teacher´s permanence time,  preferred  and strict , for the weekly stay that the teacher can be in the school.
+It indicates the maximum preferential and strict teacher's stay, for the weekly stay that the teacher can be in the academic institution.
 
 
 `weeklyStay`
@@ -49,7 +49,7 @@ Indicates the maximum teacher´s permanence time,  preferred  and strict , for t
 
 ## dailyStay
 
-Indicates the maximum teacher´s permanence time,  preferred  and strict , for the daily stay that the teacher can be in the school.
+This indicates the maximum preferential and strict time of stay of the teacher, for the daily stay that the teacher can be in the educational institution.
 
 
 `dailyStay`
@@ -65,7 +65,7 @@ Indicates the maximum teacher´s permanence time,  preferred  and strict , for t
 
 ## avoidGapsBetweenSesions
 
-Indicates if it should avoid free gaps between sessions for the teacher. It is a ponderable condition.
+It indicates whether gaps between class units for the teacher should be avoided. This is a weighting condition.
 
 
 > If did not specify, the engine will assign a true value.
@@ -84,7 +84,7 @@ Indicates if it should avoid free gaps between sessions for the teacher. It is a
 
 ## maxContinuousTeaching
 
-Indicates the continuous maximum time teaching sessions, that are allowed without have a free gap or a non teaching session in between.
+It indicates the maximum continuous time of class units, which are allowed without having a gap or a non-class units between them.
 
 
 `maxContinuousTeaching`
@@ -100,7 +100,7 @@ Indicates the continuous maximum time teaching sessions, that are allowed withou
 
 ## avoidClassesAroundBreak
 
-Indicate if will penalize the existence of sessions on both sides of a recess guard taught by this teacher.
+It indicates whether the existence of class units on both sides of a playground supervision taught by this teacher will be penalised.
 
 
 `avoidClassesAroundBreak`
@@ -116,7 +116,7 @@ Indicate if will penalize the existence of sessions on both sides of a recess gu
 
 ## freeTimes
 
-Contains the free spaces of time that the teacher should have.
+It contains the free time spaces that the teacher must have.
 
 
 `freeTimes`
@@ -132,7 +132,7 @@ Contains the free spaces of time that the teacher should have.
 
 ## freePartTimes
 
-Half day off periods.
+Free half-time periods .
 
 
 `freePartTimes`
@@ -148,7 +148,7 @@ Half day off periods.
 
 ## incompatibilities
 
-Contains teacher's incompatibilities about sessions assignation and rests times.
+It contains the teacher's incompatibilities on the allocation of class units and rest periods.
 
 
 `incompatibilities`
@@ -164,7 +164,7 @@ Contains teacher's incompatibilities about sessions assignation and rests times.
 
 ## dailyOcupation
 
-Maximum and minimum values for teaching or activity time for teachers. This object indicates the kind of condition (estrict or ponderable) and if it should be adjusted the automatic calcultation in minutes at engine.
+Maximum and minimum values of teaching or activity time for teachers. This object indicates the type of condition (strict or weighting) and whether the automatic calculation in minutes in the engine should be set.
 
 
 `dailyOcupation`
@@ -180,7 +180,7 @@ Maximum and minimum values for teaching or activity time for teachers. This obje
 
 ## middayReference
 
-.
+It indicate the frame where the teacher takes noon pause.
 
 
 `middayReference`
@@ -196,7 +196,7 @@ Maximum and minimum values for teaching or activity time for teachers. This obje
 
 ## dailyBuildingTransfers
 
-Maximum number of transfers between buildings that can do the teacher per day.
+Maximum number of movements between buildings that the teacher can make per day.
 
 
 `dailyBuildingTransfers`

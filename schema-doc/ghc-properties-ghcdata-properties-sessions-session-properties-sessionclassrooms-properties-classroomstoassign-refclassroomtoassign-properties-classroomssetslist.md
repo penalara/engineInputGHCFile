@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionClassRooms/properties/classRoomsToAssign/items/properties/classRoomsSetsList
 ```
 
-Identifier name of classroom set, where one classroom could be taken to assign to session.
+Classroom set list where one classroom could be taken to assign to session.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

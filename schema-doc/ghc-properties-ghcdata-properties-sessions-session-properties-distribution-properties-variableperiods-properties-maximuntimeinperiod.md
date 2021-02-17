@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/distribution/properties/variablePeriods/properties/maximunTimeInPeriod
 ```
 
-Maximum of minutes to assign in each Period. If not defined, it is considered that there is no maximum limit.
+Maximum number of minutes to be allocated in each Period. If not defined, it is considered that there is no maximum limit.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

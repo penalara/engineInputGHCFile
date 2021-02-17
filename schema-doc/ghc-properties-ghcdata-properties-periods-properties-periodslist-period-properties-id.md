@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/periods/properties/periodsList/items/properties/id
 ```
 
-Identifier name of the period.
+Period identifier.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

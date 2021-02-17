@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/refTask
 ```
 
-Identifier name of the service's task.
+Task identifier.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

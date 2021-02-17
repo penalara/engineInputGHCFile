@@ -4,7 +4,7 @@
 engineInputGHCSchema#/definitions/freeTimes/properties/lastMinutes/properties/preferredDays
 ```
 
-Number of preferred days when teacher should have the free interval at the end of the day.
+Preferred number of days on which the teacher should have the interval free at the end of the day. .
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

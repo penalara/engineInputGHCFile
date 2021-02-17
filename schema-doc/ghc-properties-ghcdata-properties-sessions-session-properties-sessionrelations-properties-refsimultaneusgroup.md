@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionRelations/properties/refSimultaneusGroup
 ```
 
-Identifier of the simultaneous sessions group of the session. Indicates that the sessions must be taught at same time as the sessions of the group.
+Identifier of the group of simultaneous class units of the subject. Indicates that the class units are to be taught at the same time as the group class units. 
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

@@ -4,7 +4,7 @@
 engineInputGHCSchema#/definitions/dailyOcupation/properties/maximumOccupancy
 ```
 
-Teacher's maximum time of teaching with students and other non-teaching activities indicated as computable.
+Maximum teaching time of the teacher with students and other non-teaching activities indicated as eligible for calculation.
 
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
@@ -24,7 +24,7 @@ Teacher's maximum time of teaching with students and other non-teaching activiti
 
 ## restriction
 
-Kind of 'dailyOcupation' restriction. It can be 'ignore', 'strict', 'preferred' or according to the related rule of optimization.
+Indicate if the incompatibility is a strict, avoid (penalisable at optimization) or ignore.
 
 
 `restriction`

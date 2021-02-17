@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/refSubjects
 ```
 
-List of subject's identifier which is teach at the session. At least one is required for teaching sessions with students groups.
+List of subject taught in the session. At least one is required for session with groups of students.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

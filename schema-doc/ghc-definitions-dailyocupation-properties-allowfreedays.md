@@ -4,7 +4,7 @@
 engineInputGHCSchema#/definitions/dailyOcupation/properties/allowFreeDays
 ```
 
-Indicates whether the check of the minimums is omitted in case of days without allocation. Prohibited days never are checked.
+It indicates whether checking of minimums is omitted in the case of non-assigned days. Forbidden days are never checked.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

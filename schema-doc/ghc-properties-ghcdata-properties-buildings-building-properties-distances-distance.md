@@ -24,7 +24,7 @@ engineInputGHCSchema#/properties/ghcData/properties/buildings/items/properties/d
 
 ## refBuilding
 
-Identifier name of the other building that refer the distance.
+Identifier of the other building that refers to the distance.
 
 
 `refBuilding`
@@ -40,7 +40,7 @@ Identifier name of the other building that refer the distance.
 
 ## minutes
 
-Distance minutes from the building from the referred building.
+Distance in minutes from the building of the referred building.
 
 
 `minutes`

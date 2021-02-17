@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/classRooms/items/properties/refBuilding
 ```
 
-Identifier name building where is located the classroom.
+Building identifier where the class is located.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/avoidAssingLastHourAndFirstNextDay
 ```
 
-Penalize that the last hour ande the first one of the following day coincide.
+It penalises if the last hour and the first hour of the following day match.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

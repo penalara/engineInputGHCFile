@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/inBreak
 ```
 
-Indicates if it will be a break oversight service.
+It indicates whether it is a break supervision.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

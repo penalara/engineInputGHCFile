@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/buildings/items/properties/distances/items/properties/refBuilding
 ```
 
-Identifier name of the other building that refer the distance.
+Identifier of the other building that refers to the distance.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

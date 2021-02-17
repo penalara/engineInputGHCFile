@@ -4,7 +4,7 @@
 engineInputGHCSchema#/definitions/incompatibilities/properties/doNotFinishAtLastMorningSectionIfHasAfternoonAssignment
 ```
 
-Do not finish at the last hour in the morning and have the afternoon occupied.
+Do not finish at the last hour in the morning and have the evening busy.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

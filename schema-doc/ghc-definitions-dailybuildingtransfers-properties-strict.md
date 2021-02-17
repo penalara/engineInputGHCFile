@@ -4,7 +4,7 @@
 engineInputGHCSchema#/definitions/dailyBuildingTransfers/properties/strict
 ```
 
-Strict maximum number of displacement per day.
+Strict maximum number of movements per day.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

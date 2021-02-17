@@ -4,7 +4,7 @@
 engineInputGHCSchema#/definitions/freePartTimes/properties/indistinctly/properties/preferable
 ```
 
-Preferable number of mornings or afternoons off periods.
+Preferable number of mornings or afternoons indistinctly off.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

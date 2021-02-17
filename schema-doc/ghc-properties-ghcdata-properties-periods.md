@@ -7,7 +7,7 @@ engineInputGHCSchema#/properties/ghcData/properties/periods
 Weeks or periods with different assignments which contains the timetable.
 
 
-> If there is not periods defined the engine will created unique period with all days of the timetable.
+> If there are no defined periods, the engine will create a single period with all the days of the timetable.
 >
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

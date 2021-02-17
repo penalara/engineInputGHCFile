@@ -4,7 +4,7 @@
 engineInputGHCSchema#/definitions/middayReference/properties/strict
 ```
 
-Indicates if the teacher's midday break must be respected without placing their sessions in sections of other frames that overlap with their midday.
+It indicates whether the teacher's noon pause should be respected without placing his or her class units in sections of other frameworks that overlap with his or her noon pause.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

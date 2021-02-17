@@ -29,7 +29,7 @@ engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sect
 
 ## day
 
-Day of the week when is located the section.
+Day of the week where the section is located.
 
 
 `day`
@@ -45,7 +45,7 @@ Day of the week when is located the section.
 
 ## index
 
-Index inside the day where is located the section.
+Index built into the day where the section is located.
 
 
 `index`
@@ -101,10 +101,10 @@ End time of the section.
 
 ## duration
 
-Indicates the (real or proporcional) duration of the section in minutes.
+It indicates the duration (real or proportional) of the section in minutes.
 
 
-> Indicates the duration of the section that the engine will use to assign sessions. It can be the real duration between the entry ant exit time, otherwise it can be a proporcional time to simplfy ( hour, half hour, three quarters of an hour...). The distribution of the sessions will be consistent with this duration.
+> This indicates the duration of the section that the engine will use to assign class units. It can be the actual duration between check-in and check-out, or it can be a proportional time to simplify (hour, half hour, three-quarters of an hour...). The distribution of class units will be consistent with this duration.
 >
 
 `duration`
@@ -146,7 +146,7 @@ unknown
 
 ## allowed
 
-Indicates if the section is available to assign.
+It indicates if the section is available to assign.
 
 
 `allowed`

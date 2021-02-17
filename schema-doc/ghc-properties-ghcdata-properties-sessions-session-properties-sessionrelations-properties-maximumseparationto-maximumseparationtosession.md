@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionRelations/properties/maximumSeparationTo/items
 ```
 
-Contains the identifier of the session that must be taught a number of days apart, and the maximum days.
+It contains the session identifier of the class unit to be taught with a number of days in between, and maximum days.
 
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
@@ -44,7 +44,7 @@ List of sessions references.
 
 ## days
 
-Condition's Days of separation.
+Days of separation condition.
 
 
 `days`

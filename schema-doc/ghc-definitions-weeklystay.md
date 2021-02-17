@@ -4,7 +4,7 @@
 engineInputGHCSchema#/definitions/weeklyStay
 ```
 
-Indicates the maximum teacher´s permanence time,  preferred  and strict , for the weekly stay that the teacher can be in the school.
+It indicates the maximum preferential and strict teacher's stay, for the weekly stay that the teacher can be in the academic institution.
 
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
@@ -57,7 +57,7 @@ Ponderable Time in minutes of maximum weeekly stay.
 
 ## countAroundMidday
 
-Indicates, in case of a split day, that the unoccupied intervals between the morning and afternoon class units are counted each day.
+It indicates, in the case of split shifts, that the unoccupied intervals between the morning and afternoon class units are counted each day.
 
 
 `countAroundMidday`

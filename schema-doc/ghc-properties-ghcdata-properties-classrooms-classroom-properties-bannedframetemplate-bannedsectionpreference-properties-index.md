@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/classRooms/items/properties/frameTemplate/items/properties/index
 ```
 
-Index inside the day where is located the section.
+Index built into the day where the section is located.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

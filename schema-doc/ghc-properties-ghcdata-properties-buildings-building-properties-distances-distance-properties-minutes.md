@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/buildings/items/properties/distances/items/properties/minutes
 ```
 
-Distance minutes from the building from the referred building.
+Distance in minutes from the building of the referred building.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

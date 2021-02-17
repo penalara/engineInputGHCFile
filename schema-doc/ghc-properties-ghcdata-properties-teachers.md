@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/teachers
 ```
 
-Teacher object with personal data, preferences template and settings.
+Teachers list of the timetable.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

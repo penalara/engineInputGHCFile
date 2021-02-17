@@ -29,7 +29,7 @@ engineInputGHCSchema#/properties/ghcData/properties/groups/items
 
 ## id
 
-Identifier name of the group.
+Group identifier.
 
 
 `id`
@@ -45,7 +45,7 @@ Identifier name of the group.
 
 ## refFrame
 
-Identifier name of the group's frame.
+Group's frame identifier.
 
 
 `refFrame`
@@ -61,7 +61,7 @@ Identifier name of the group's frame.
 
 ## frameTemplate
 
-Templates with assignment preferences to section of the frames.
+Templates with frame sections assignment preferences.
 
 
 `frameTemplate`
@@ -109,7 +109,7 @@ Stric number of free afternoons for the group.
 
 ## notGaps
 
-Indicates If the group can have gaps in its timetable.
+It indicates if the group can have gaps in its timetable.
 
 
 `notGaps`
@@ -125,7 +125,7 @@ Indicates If the group can have gaps in its timetable.
 
 ## gapsAlwaysInNonPreferred
 
-Indicates If the engine, for free intervals or gaps, to be in positions marked as non-preferred in the template.
+This indicates whether the engine should be in the positions marked as non-preferred in the template for free intervals or gaps.
 
 
 `gapsAlwaysInNonPreferred`

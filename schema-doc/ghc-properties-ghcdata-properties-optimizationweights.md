@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/optimizationWeights
 ```
 
-Indicates the weights that the ponderable options will have for engine optimization process. The engine will apply default values for elements that did not specify.
+This indicates the weights that the weighting options will have for the engine optimisation process. The engine shall apply default values for elements that have not been specified.
 
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
@@ -26,7 +26,7 @@ Indicates the weights that the ponderable options will have for engine optimizat
 
 ## timetableGaps
 
-Contains options related to timetable-gaps weights.
+It contains options related to timetable-gaps weights.
 
 
 `timetableGaps`
@@ -42,7 +42,7 @@ Contains options related to timetable-gaps weights.
 
 ## nonPreferredPositions
 
-Contains options related to allocation in non-preferred sections.
+It contains options related to allocation in non-preferred sections.
 
 
 `nonPreferredPositions`
@@ -58,7 +58,7 @@ Contains options related to allocation in non-preferred sections.
 
 ## sessions
 
-Contains options related to optimizable conditions for sessions.
+It contains options related to optimisable conditions for sessions.
 
 
 `sessions`
@@ -74,7 +74,7 @@ Contains options related to optimizable conditions for sessions.
 
 ## teachers
 
-Contains options related to optimizable conditions for teachers.
+It contains options related to optimisable conditions for teachers.
 
 
 `teachers`

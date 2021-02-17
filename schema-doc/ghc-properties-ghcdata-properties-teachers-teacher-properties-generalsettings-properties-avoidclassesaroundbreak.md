@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/generalSettings/properties/avoidClassesAroundBreak
 ```
 
-Indicate if will penalize the existence of sessions on both sides of a recess guard taught by this teacher.
+It indicates whether the existence of class units on both sides of a playground supervision taught by this teacher will be penalised.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

@@ -4,7 +4,7 @@
 engineInputGHCSchema#/definitions/freeTimes
 ```
 
-Contains the free spaces of time that the teacher should have.
+It contains the free time spaces that the teacher must have.
 
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

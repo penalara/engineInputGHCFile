@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/refBuilding
 ```
 
-Identifier name of the building where is the service. It is used to know transfer time and number of transfers between buildings for teachers.
+Identifier of the building where the service is located. It is used to know the transfer time and the number of transfers between buildings for teachers.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

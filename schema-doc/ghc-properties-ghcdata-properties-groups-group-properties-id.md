@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/id
 ```
 
-Identifier name of the group.
+Group identifier.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

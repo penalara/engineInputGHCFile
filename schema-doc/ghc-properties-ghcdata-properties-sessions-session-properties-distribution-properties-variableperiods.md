@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/distribution/properties/variablePeriods
 ```
 
-The total of the classes of the distribution, are divided among the periods.
+The total of the class units of the distribution are divided between the periods.
 
 
 > Properties 'weeklyStable' and 'weeklyVariable' are mutually exclusive.
@@ -29,10 +29,10 @@ The total of the classes of the distribution, are divided among the periods.
 
 ## weeklyStable
 
-Contains a single possible weekly distribution.
+It contains only one possible weekly distribution. Each value is a assignation day.
 
 
-> It indicates a stable distribution (numbers of days and number of sections per asignation day), among all the periods between which it is distributed. It is not the distribution of each period, but the total of this session.
+> It indicates a stable distribution (number of days and number of sections per day of allocation), among all the periods over which it is distributed. It is not the distribution of each period, but the total of this class unit.
 >
 
 `weeklyStable`
@@ -48,10 +48,10 @@ Contains a single possible weekly distribution.
 
 ## weeklyVariable
 
-Define the distribution as a number of sections per week and a maximum range of sections per day.
+It defines the distribution as a number of sections per week and a maximum range of sections per day.
 
 
-> It indicates a variable distribution, among all the periods between which it is distributed. It is not the distribution of each period, but the total of this session.
+> It indicates a variable distribution among all the periods over which it is distributed. It is not the distribution of each period, but the total of this class unit.
 >
 
 `weeklyVariable`
@@ -67,7 +67,7 @@ Define the distribution as a number of sections per week and a maximum range of 
 
 ## maximunTimeInPeriod
 
-Maximum of minutes to assign in each Period. If not defined, it is considered that there is no maximum limit.
+Maximum number of minutes to be allocated in each Period. If not defined, it is considered that there is no maximum limit.
 
 
 `maximunTimeInPeriod`
@@ -83,7 +83,7 @@ Maximum of minutes to assign in each Period. If not defined, it is considered th
 
 ## minimnunTimeInPeriod
 
-Minimum of minutes to assign in each Period.
+Minimum number of minutes to be allocated in each Period.
 
 
 `minimnunTimeInPeriod`

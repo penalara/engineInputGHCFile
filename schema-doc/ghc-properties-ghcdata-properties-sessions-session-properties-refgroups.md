@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/refGroups
 ```
 
-List of group's identifier which is teach at the session. At least one is required for teaching sessions.
+List of groups who are taught in the class unit. At least one is required for teaching sessions.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

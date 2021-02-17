@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/classRoomsSets/items/properties/anonymousRooms
 ```
 
-Number of classrooms non-specific defined that it contains the group.
+Number of non-specific defined classrooms that the group contains.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

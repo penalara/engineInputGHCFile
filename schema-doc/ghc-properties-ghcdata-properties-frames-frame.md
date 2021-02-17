@@ -24,7 +24,7 @@ engineInputGHCSchema#/properties/ghcData/properties/frames/items
 
 ## id
 
-Identifier name of the frame.
+Frame identifier.
 
 
 `id`
@@ -40,7 +40,7 @@ Identifier name of the frame.
 
 ## sections
 
-Timetable cells where sesions are localted.
+Timetable cells where class units are located.
 
 
 `sections`

@@ -26,7 +26,7 @@ Contains the references of a continuous sessions group.
 
 ## id
 
-Identifier of continuous sessions group.
+Continuous sessions group identifier.
 
 
 `id`
@@ -42,7 +42,7 @@ Identifier of continuous sessions group.
 
 ## refSessions
 
-Contains the references of a continuous sessions group. Must contain the sesion itself. And the proper order of continuity (for 'order' property).
+List of the consecutive sessions. Must contain the sesion itself and the proper order of continuity (see 'order' property).
 
 
 `refSessions`
@@ -62,7 +62,7 @@ Contains the references of a continuous sessions group. Must contain the sesion 
 
 ## order
 
-Indicates if the sessions must be 'ordered', 'disordered' or 'sameDay' (it does not matter as long as they are assigned on the same day.
+Indicates if the sessions must be 'ordered', 'unordered' or 'sameDay'  (it does not matter as long as they are allocated on the same day).
 
 
 `order`
@@ -80,23 +80,23 @@ unknown
 
 **enum**: the value of this property must be equal to one of the following values:
 
-| Value          | Explanation |
-| :------------- | ----------- |
-| `"disordered"` |             |
-| `"ordered"`    |             |
-| `"sameDay"`    |             |
+| Value         | Explanation |
+| :------------ | ----------- |
+| `"unordered"` |             |
+| `"ordered"`   |             |
+| `"sameDay"`   |             |
 
 ### order Default Value
 
 The default value is:
 
 ```json
-"disordered"
+"unordered"
 ```
 
 ## allowBreakBetweenSessions
 
-Indicates if break between sessions is allowed to keep the relation .
+Indicates if break between sessions is allowed to keep the relation.
 
 
 `allowBreakBetweenSessions`

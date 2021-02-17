@@ -4,7 +4,7 @@
 engineInputGHCSchema#/definitions/dailyOcupation/properties/minimumTeaching
 ```
 
-Teacher's minimum time of teaching with students.
+Minimum teaching time of the teacher with students.
 
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
@@ -24,7 +24,7 @@ Teacher's minimum time of teaching with students.
 
 ## restriction
 
-Kind of 'dailyOcupation' restriction. It can be 'ignore', 'strict', 'preferred' or according to the related rule of optimization.
+Indicate if the incompatibility is a strict, avoid (penalisable at optimization) or ignore.
 
 
 `restriction`

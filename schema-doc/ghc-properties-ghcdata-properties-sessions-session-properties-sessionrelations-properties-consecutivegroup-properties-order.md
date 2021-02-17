@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionRelations/properties/consecutiveGroup/properties/order
 ```
 
-Indicates if the sessions must be 'ordered', 'disordered' or 'sameDay' (it does not matter as long as they are assigned on the same day.
+Indicates if the sessions must be 'ordered', 'unordered' or 'sameDay'  (it does not matter as long as they are allocated on the same day).
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
@@ -19,16 +19,16 @@ unknown
 
 **enum**: the value of this property must be equal to one of the following values:
 
-| Value          | Explanation |
-| :------------- | ----------- |
-| `"disordered"` |             |
-| `"ordered"`    |             |
-| `"sameDay"`    |             |
+| Value         | Explanation |
+| :------------ | ----------- |
+| `"unordered"` |             |
+| `"ordered"`   |             |
+| `"sameDay"`   |             |
 
 ## order Default Value
 
 The default value is:
 
 ```json
-"disordered"
+"unordered"
 ```

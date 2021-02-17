@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/optimizationWeights/properties/teachers/properties/uniformDailyDistribution
 ```
 
-Indicates the weight of placing the sessions of a teacher in a non-uniform way during the week.
+It indicates the weight of placing a teacher's class units in a non-uniform way during the week.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

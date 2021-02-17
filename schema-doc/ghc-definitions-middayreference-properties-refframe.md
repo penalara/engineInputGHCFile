@@ -4,7 +4,7 @@
 engineInputGHCSchema#/definitions/middayReference/properties/refFrame
 ```
 
-Identifier name of a frame where the teacher take the midday. If it is not not specified, the engine will take the midday of the frame with the highest allocation.
+Identifier of a frame where the teacher takes noon pause. If not specified, the engine shall take the noon pause of the frame with the highest allocation.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

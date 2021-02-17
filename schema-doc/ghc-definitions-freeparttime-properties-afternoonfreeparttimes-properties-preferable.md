@@ -4,7 +4,7 @@
 engineInputGHCSchema#/definitions/freePartTimes/properties/afternoons/properties/preferable
 ```
 
-Preferable number of afternoons off periods.
+Preferable number of afternoons off.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

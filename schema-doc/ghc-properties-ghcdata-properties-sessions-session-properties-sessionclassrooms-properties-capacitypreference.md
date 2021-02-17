@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionClassRooms/properties/capacityPreference
 ```
 
-Preference about if the engine should evaluate the classroom capacity to assign the session.
+Preference on whether the engine should assess the capacity of the classroom to allocate each class unit.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

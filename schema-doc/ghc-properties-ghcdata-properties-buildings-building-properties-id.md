@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/buildings/items/properties/id
 ```
 
-Identifier name of the building.
+Building identifier.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

@@ -4,7 +4,7 @@
 engineInputGHCSchema#/definitions/incompatibilities/properties/freeTimeBetweenDayBeforeAndCurrent
 ```
 
-Minutes between the departure and the next day's entry.
+Minutes between departure and arrival of the following day.
 
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
@@ -24,7 +24,7 @@ Minutes between the departure and the next day's entry.
 
 ## type
 
-Indicate if the incompatibility is a strict, avoid (ponderable for optimization) or ignore.
+Indicate if the incompatibility is a strict, avoid (penalisable at optimization) or ignore.
 
 
 `type`

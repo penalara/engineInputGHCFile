@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/optimizationWeights/properties/sessions/properties/classRoomsChanges
 ```
 
-Indicates the weight of all class units of each subject is not taught in the same classroom, and also to avoid changes in the classroom of groups. It means a change of classroom of a group only between consecutive intervals, not the ones divided by a break.
+It indicates the weight of all class units of each subject not taught in the same classroom, and also to avoid classroom changes of groups. This means a change of classrooms of a group only between consecutive intervals, not those divided by a break.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

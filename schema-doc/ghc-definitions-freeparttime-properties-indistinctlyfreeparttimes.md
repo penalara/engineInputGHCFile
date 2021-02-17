@@ -4,7 +4,7 @@
 engineInputGHCSchema#/definitions/freePartTimes/properties/indistinctly
 ```
 
-Indistinctly, mornings or afternoons, off periods.
+Free mornings or evenings indistinctly.
 
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
@@ -24,7 +24,7 @@ Indistinctly, mornings or afternoons, off periods.
 
 ## strict
 
-Strict number of mornings or afternoons off periods.
+Strict number of mornings or afternoons indistinctly off.
 
 
 `strict`
@@ -40,7 +40,7 @@ Strict number of mornings or afternoons off periods.
 
 ## preferable
 
-Preferable number of mornings or afternoons off periods.
+Preferable number of mornings or afternoons indistinctly off.
 
 
 `preferable`

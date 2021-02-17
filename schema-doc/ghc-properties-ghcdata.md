@@ -38,7 +38,7 @@ Schema of the object that contains the timetable planning data.
 Weeks or periods with different assignments which contains the timetable.
 
 
-> If there is not periods defined the engine will created unique period with all days of the timetable.
+> If there are no defined periods, the engine will create a single period with all the days of the timetable.
 >
 
 `periods`
@@ -54,7 +54,7 @@ Weeks or periods with different assignments which contains the timetable.
 
 ## frames
 
-Tables of Timetable which it contains sections where subject sessions are located.
+Tables of the timetable that contain sections where the class units are located.
 
 
 `frames`
@@ -70,7 +70,7 @@ Tables of Timetable which it contains sections where subject sessions are locate
 
 ## buildings
 
-Contains the buildings of the school or education centre.
+It contains the school or educational institution buildings.
 
 
 `buildings`
@@ -86,7 +86,7 @@ Contains the buildings of the school or education centre.
 
 ## classRooms
 
-Contains the rooms to put on the sessions.
+It contains the classrooms to organize the class units.
 
 
 `classRooms`
@@ -102,7 +102,7 @@ Contains the rooms to put on the sessions.
 
 ## classRoomsSets
 
-A divisions of classrooms, group by characteristics or organizational needs.
+A division of the classrooms, grouped by organizational characteristics or needs.
 
 
 `classRoomsSets`
@@ -134,7 +134,7 @@ Types of tasks or activities for the teachers.
 
 ## teachers
 
-Teacher object with personal data, preferences template and settings.
+Teachers list of the timetable.
 
 
 `teachers`
@@ -150,7 +150,7 @@ Teacher object with personal data, preferences template and settings.
 
 ## subjects
 
-School subjects which are teach at sessions.
+School subjects taught in the class units.
 
 
 `subjects`
@@ -182,7 +182,7 @@ Sets of students.
 
 ## sessions
 
-Teachers sessions. These can be with students groups, meetings with other teachers or complementary activities.
+Definition of the teacher class units. These may be with groups of students, meetings with other teachers or complementary activities.
 
 
 `sessions`
@@ -198,7 +198,7 @@ Teachers sessions. These can be with students groups, meetings with other teache
 
 ## onCallServices
 
-List of on call services of teachers defined in the timetable.
+List of on-call services of teachers defined in the timetable.
 
 
 `onCallServices`
@@ -214,7 +214,7 @@ List of on call services of teachers defined in the timetable.
 
 ## optimizationWeights
 
-Indicates the weights that the ponderable options will have for engine optimization process. The engine will apply default values for elements that did not specify.
+This indicates the weights that the weighting options will have for the engine optimisation process. The engine shall apply default values for elements that have not been specified.
 
 
 `optimizationWeights`

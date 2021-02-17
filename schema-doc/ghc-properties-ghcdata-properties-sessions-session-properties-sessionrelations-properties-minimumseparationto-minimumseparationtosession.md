@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionRelations/properties/minimumSeparationTo/items
 ```
 
-Contains the identifier of the session that must be taught a number of days apart, and the minimun days.
+It contains session identifier of the class unit to be taught with a number of days apart, and the minimum days.
 
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
@@ -44,7 +44,7 @@ List of sessions references.
 
 ## days
 
-Condition's Days of separation. If value is 0 or 1 is equivalent to 'DifferentDays' condition.
+Days of separation condition. If the value is 0 or 1 it is equivalent to the condition 'DifferentDays'.
 
 
 `days`

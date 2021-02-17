@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/refPeriods/properties/samePositionEveryPeriod
 ```
 
-Keep the same position each week or period for the classes of the session.
+Keep the same position each week or period for the service units.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

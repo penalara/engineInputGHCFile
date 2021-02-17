@@ -25,7 +25,7 @@ Teacher's free intervals at the beginning of the day.
 
 ## strictDays
 
-Number of strict days when teacher should have the free interval at the beginning of the day.
+Strict number of days on which the teacher must have the interval free at the beginning of the day.
 
 
 `strictDays`
@@ -41,7 +41,7 @@ Number of strict days when teacher should have the free interval at the beginnin
 
 ## preferredDays
 
-Number of preferred days when teacher should have the free interval at the beginning of the day.
+Preferred number of days on which the teacher should have the interval free at the beginning of the day.
 
 
 `preferredDays`

@@ -4,7 +4,7 @@
 engineInputGHCSchema#/definitions/freePartTimes/properties/mornings/properties/strict
 ```
 
-Strict number of mornings off periods.
+Strict number of mornings off.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

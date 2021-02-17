@@ -4,7 +4,7 @@
 engineInputGHCSchema#/definitions/incompatibilities/properties/doNotFinishAtLastMorningSectionIfStartedAtFirstMorningSection
 ```
 
-Do not start at first hour and and finish at the last hour of the morning.
+Do not start at the first hour and finish at the last hour of the morning.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

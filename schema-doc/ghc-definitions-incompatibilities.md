@@ -4,7 +4,7 @@
 engineInputGHCSchema#/definitions/incompatibilities
 ```
 
-Contains teacher's incompatibilities about sessions assignation and rests times.
+It contains the teacher's incompatibilities on the allocation of class units and rest periods.
 
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
@@ -31,7 +31,7 @@ Contains teacher's incompatibilities about sessions assignation and rests times.
 
 ## freeTimeBetweenDayBeforeAndCurrent
 
-Minutes between the departure and the next day's entry.
+Minutes between departure and arrival of the following day.
 
 
 `freeTimeBetweenDayBeforeAndCurrent`
@@ -47,7 +47,7 @@ Minutes between the departure and the next day's entry.
 
 ## freeTimeBetweenEndWeekAndStartWeekDays
 
-Minutes between finishing time on week's last day, and starting time the next week.
+Minutes between the end time of the last day of the week and the start time of the following week.
 
 
 `freeTimeBetweenEndWeekAndStartWeekDays`
@@ -79,7 +79,7 @@ Minutes of free time at first or last hours of the day.
 
 ## doNotFinishAtLastAfternoonSectionIfStartedAtFirstAfternoonSection
 
-Do not finish at last hour in the afternoon and start at the first one.
+o not finish at the last hour of the evening and start at the first.
 
 
 `doNotFinishAtLastAfternoonSectionIfStartedAtFirstAfternoonSection`
@@ -105,7 +105,7 @@ unknown ([DoNotFinishAtLastAfternoonSection](ghc-definitions-incompatibilities-p
 
 ## doNotFinishAtLastMorningSectionIfStartedAtFirstMorningSection
 
-Do not start at first hour and and finish at the last hour of the morning.
+Do not start at the first hour and finish at the last hour of the morning.
 
 
 `doNotFinishAtLastMorningSectionIfStartedAtFirstMorningSection`
@@ -131,7 +131,7 @@ unknown ([DoNotFinishAtLastMorningSection](ghc-definitions-incompatibilities-pro
 
 ## doNotFinishAtLastMorningSectionIfStartAtFirstAfternoonSection
 
-Do not finish at the last hour in the morning and start at the first one in the afternoon.
+Do not finish at the last hour of the morning and start at the first hour of the evening.
 
 
 `doNotFinishAtLastMorningSectionIfStartAtFirstAfternoonSection`
@@ -157,7 +157,7 @@ unknown ([DoNotFinishAtLastMorningSectionIfStartAtFirstAfternoon](ghc-definition
 
 ## doNotFinishAtLastMorningSectionIfHasAfternoonAssignment
 
-Do not finish at the last hour in the morning and have the afternoon occupied.
+Do not finish at the last hour in the morning and have the evening busy.
 
 
 `doNotFinishAtLastMorningSectionIfHasAfternoonAssignment`
@@ -183,7 +183,7 @@ unknown ([DoNotFinishAtLastMorningSectionIfHasAfternoon](ghc-definitions-incompa
 
 ## doNotStartAtFirstMorningSectionIfHasAfternoonAssignment
 
-Do not start at the first hour and have occupation in the afternoon.
+Do not start at the first hour and keep the evening busy.
 
 
 `doNotStartAtFirstMorningSectionIfHasAfternoonAssignment`

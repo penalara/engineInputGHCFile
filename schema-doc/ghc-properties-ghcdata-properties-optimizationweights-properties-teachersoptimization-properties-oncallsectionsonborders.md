@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/optimizationWeights/properties/teachers/properties/onCallSectionsOnBorders
 ```
 
-Indicates the weight of the teacher got assigned a on call service at the borders of his schedule, thus trying to fit them into the gaps of his class sessions.
+It indicates the weight of the teacher being assigned an on-call hour within the limits of his or her timetable, thus trying to fit it into the gaps in his or her class units.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

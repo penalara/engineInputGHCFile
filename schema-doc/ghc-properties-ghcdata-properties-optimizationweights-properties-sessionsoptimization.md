@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/optimizationWeights/properties/sessions
 ```
 
-Contains options related to optimizable conditions for sessions.
+It contains options related to optimisable conditions for sessions.
 
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
@@ -29,7 +29,7 @@ Contains options related to optimizable conditions for sessions.
 
 ## nonPreferredClassRoom
 
-Indicates the weight of if class units are configured with a preferred classroom and with a group of alternative classrooms, it will be punished with the weight to be placed in one of the alternative classrooms.
+It indicates the weight if the class units are configured with a preferred classroom and with a set of alternative classrooms, the weight placed in one of the alternative classrooms will be penalised.
 
 
 `nonPreferredClassRoom`
@@ -53,7 +53,7 @@ The default value is:
 
 ## samePositionEveryPeriod
 
-Indicates the weight of placing the entities of a session that belongs to several periods in the same positions or not (it affects the on call services too).
+It indicates the weight of placing the entities of a class unit belonging to several periods in the same positions or not (also affects on-call services).
 
 
 `samePositionEveryPeriod`
@@ -77,7 +77,7 @@ The default value is:
 
 ## consecutiveDays
 
- Indicates the weight of the condition which it has been established in each case on the properties of each session, to be placed two or three class units, that is, all of them on consecutive days.
+It indicates the weight of the condition that has been set in each case on the properties of each class unit to place two or three class units, that is, all of them on consecutive days.
 
 
 `consecutiveDays`
@@ -101,7 +101,7 @@ The default value is:
 
 ## bordersTimetable
 
-Indicates the weight of have assigned classes at the borders of the timetable.
+It indicates the weight of the class units assigned at the ends of the timetable.
 
 
 `bordersTimetable`
@@ -125,7 +125,7 @@ The default value is:
 
 ## afternoonOrAfterBreakClasses
 
-Indicates the weight of penalization of have classes after the last break or in the afternoon.
+It indicates the weight of the penalty of having class units after the last break or in the afternoon.
 
 
 `afternoonOrAfterBreakClasses`
@@ -149,7 +149,7 @@ The default value is:
 
 ## sameHourSessionClasses
 
-Indicates the weight of penalization of not fulfilling the preferred about assignment on consecutive days.
+It indicates the weight of the penalty for not complying with the preference allocation on consecutive days.
 
 
 `sameHourSessionClasses`
@@ -173,7 +173,7 @@ The default value is:
 
 ## classRoomsChanges
 
-Indicates the weight of all class units of each subject is not taught in the same classroom, and also to avoid changes in the classroom of groups. It means a change of classroom of a group only between consecutive intervals, not the ones divided by a break.
+It indicates the weight of all class units of each subject not taught in the same classroom, and also to avoid classroom changes of groups. This means a change of classrooms of a group only between consecutive intervals, not those divided by a break.
 
 
 `classRoomsChanges`

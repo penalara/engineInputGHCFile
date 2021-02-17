@@ -4,7 +4,7 @@
 engineInputGHCSchema#/definitions/incompatibilities/properties/doNotStartAtFirstMorningSectionIfHasAfternoonAssignment
 ```
 
-Do not start at the first hour and have occupation in the afternoon.
+Do not start at the first hour and keep the evening busy.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

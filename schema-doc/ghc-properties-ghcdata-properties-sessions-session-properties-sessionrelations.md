@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionRelations
 ```
 
-It contains the information on relationships between this and other sessions. These conditions only can apply for teaching sessions with students.
+It contains information on the relationships between this and other class units. These conditions can only apply to class units with students.
 
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
@@ -31,7 +31,7 @@ It contains the information on relationships between this and other sessions. Th
 
 ## refSimultaneusGroup
 
-Identifier of the simultaneous sessions group of the session. Indicates that the sessions must be taught at same time as the sessions of the group.
+Identifier of the group of simultaneous class units of the subject. Indicates that the class units are to be taught at the same time as the group class units. 
 
 
 `refSimultaneusGroup`
@@ -47,7 +47,7 @@ Identifier of the simultaneous sessions group of the session. Indicates that the
 
 ## differentDays
 
-Conditions about this and other session can not coincide in the same day.
+Conditions on this and another class unit cannot coincide on the same day.
 
 
 `differentDays`
@@ -79,7 +79,7 @@ Contains the references of a continuous sessions group.
 
 ## nonConsecutiveSessions
 
-Identifiers of the sessions that they should not be consecutive. It is a strict condition.
+Identifiers of the sessions which class units must not be consecutive. This is a strict condition.
 
 
 `nonConsecutiveSessions`
@@ -119,7 +119,7 @@ Identifiers of the sessions that they should not be assigned at the same time. I
 
 ## previousTo
 
-Indicates that this session should be assigned in a previous day to the sessions of the list. It is a strict condition.
+This indicates that this class unit must be allocated on a previous day to the class units in the list. This is a strict condition.
 
 
 `previousTo`
@@ -139,7 +139,7 @@ Indicates that this session should be assigned in a previous day to the sessions
 
 ## afterTo
 
-Indicates that this session should be assigned in a later day to the sessions of the list. It is a strict condition.
+This indicates that this class unit must be allocated on a subsequent day to the class units in the list. This is a strict condition.
 
 
 `afterTo`
@@ -159,7 +159,7 @@ Indicates that this session should be assigned in a later day to the sessions of
 
 ## maximumSeparationTo
 
-Contains sessions that must be taught a maximum number of days apart from the current session classes.
+It contains class units to be taught within a maximum number of days of the current class units.
 
 
 `maximumSeparationTo`
@@ -179,7 +179,7 @@ Contains sessions that must be taught a maximum number of days apart from the cu
 
 ## minimumSeparationTo
 
-Contains sessions that must be taught a minimun number of days apart from the current session classes.
+It contains class units that must be taught at least a minimum number of days apart from the current class unit. .
 
 
 `minimumSeparationTo`

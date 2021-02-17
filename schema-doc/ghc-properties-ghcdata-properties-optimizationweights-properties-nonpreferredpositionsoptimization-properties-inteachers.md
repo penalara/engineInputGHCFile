@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/optimizationWeights/properties/nonPreferredPositions/properties/inTeachers
 ```
 
-Indicates the weight to be placed in a non-preferential section of a teacher.
+It indicates the weight to be placed in a non-preferential section of a teacher.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

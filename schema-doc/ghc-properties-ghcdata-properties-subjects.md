@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/subjects
 ```
 
-School subjects which are teach at sessions.
+School subjects taught in the class units.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

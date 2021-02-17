@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items
 ```
 
-On call service of teachers who supervise the free time of students.
+On-call service of teachers who supervise the free time of students.
 
 
 > Property 'refPeriods' is required if there are more than one period in the timetable.
@@ -35,7 +35,7 @@ On call service of teachers who supervise the free time of students.
 
 ## id
 
-Identifier of the On-Call service.
+On-Call service identifier.
 
 
 > This identifier can not be equals to any session identifier.
@@ -54,7 +54,7 @@ Identifier of the On-Call service.
 
 ## refFrame
 
-Identifier name of the frame where will be set the service.
+Identifier of the frame where the service will be set.
 
 
 `refFrame`
@@ -70,7 +70,7 @@ Identifier name of the frame where will be set the service.
 
 ## refPeriods
 
-Information about the periods that have the service and mirror placement in periods condition (same placement in periods).
+It contains the periods when the service must be set and mirror placement in periods condition (same placement in periods).
 
 
 `refPeriods`
@@ -86,7 +86,7 @@ Information about the periods that have the service and mirror placement in peri
 
 ## refTask
 
-Identifier name of the service's task.
+Task identifier.
 
 
 `refTask`
@@ -102,7 +102,7 @@ Identifier name of the service's task.
 
 ## inBreak
 
-Indicates if it will be a break oversight service.
+It indicates whether it is a break supervision.
 
 
 `inBreak`
@@ -121,7 +121,7 @@ Indicates if it will be a break oversight service.
 Information about number of teacher in all sections.
 
 
-> 'byDefault' value will be used for all sections, if 'bySection' field is not informed. Also it value is used when one section is not informed at 'bySection'.
+> The value 'byDefault' shall be used for all sections, if the field 'bySection' is not informed. This value is also used when a section is not informed in 'bySection'.
 >
 
 `teachersEachSection`
@@ -137,7 +137,7 @@ Information about number of teacher in all sections.
 
 ## refTeachers
 
-List of teachers who make the service.
+List of teachers who in the service.
 
 
 `refTeachers`
@@ -169,7 +169,7 @@ Templates with teacher on-call assignment preferences.
 
 ## refBuilding
 
-Identifier name of the building where is the service. It is used to know transfer time and number of transfers between buildings for teachers.
+Identifier of the building where the service is located. It is used to know the transfer time and the number of transfers between buildings for teachers.
 
 
 `refBuilding`
@@ -185,7 +185,7 @@ Identifier name of the building where is the service. It is used to know transfe
 
 ## computeForMaxMinOccupancy
 
-Indicates if the service computes for teacher's daily maximum and minimum of occupancy.
+It indicates whether the service calculates the maximum and minimum daily occupancy of the teacher.
 
 
 `computeForMaxMinOccupancy`

@@ -4,7 +4,7 @@
 engineInputGHCSchema#/definitions/dailyBuildingTransfers
 ```
 
-Maximum number of transfers between buildings that can do the teacher per day.
+Maximum number of movements between buildings that the teacher can make per day.
 
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
@@ -24,7 +24,7 @@ Maximum number of transfers between buildings that can do the teacher per day.
 
 ## strict
 
-Strict maximum number of displacement per day.
+Strict maximum number of movements per day.
 
 
 `strict`
@@ -40,7 +40,7 @@ Strict maximum number of displacement per day.
 
 ## preferable
 
-Ponderable/preferable maximum number of displacement per day.
+Maximum number of movements per day that can be weighted/preferred.
 
 
 `preferable`

@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/computeForMaxMinOccupancy
 ```
 
-Indicates if the service computes for teacher's daily maximum and minimum of occupancy.
+It indicates whether the service calculates the maximum and minimum daily occupancy of the teacher.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

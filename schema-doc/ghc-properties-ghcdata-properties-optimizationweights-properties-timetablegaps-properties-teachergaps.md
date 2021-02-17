@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/optimizationWeights/properties/timetableGaps/properties/teacherGaps
 ```
 
-Indicates the weight that is assigned to the fact of leaving gaps in the teacher timetables.
+It indicates the weight given to the fact of leaving gaps in teachers' timetables.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

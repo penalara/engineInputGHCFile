@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/buildings/items/properties/distances
 ```
 
-Distances in minutes to another building of the school.
+Distance in minutes to another school building.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

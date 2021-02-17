@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/tasks/items
 ```
 
-Teacher's activity type.
+Teacher activity type.
 
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
@@ -24,7 +24,7 @@ Teacher's activity type.
 
 ## id
 
-Task's identifier name.
+Task identifier.
 
 
 `id`
@@ -40,7 +40,7 @@ Task's identifier name.
 
 ## frameTemplate
 
-Templates with assignment preferences to section of the frames.
+Templates with frame sections assignment preferences.
 
 
 `frameTemplate`

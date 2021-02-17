@@ -4,7 +4,7 @@
 engineInputGHCSchema#/definitions/weeklyStable
 ```
 
-Contains a single possible weekly distribution.
+It contains only one possible weekly distribution. Each value is a assignation day.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

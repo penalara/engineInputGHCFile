@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionClassRooms
 ```
 
-Contains the information about classrooms for the sessions. At least one classroom  is required for teaching sessions.
+It contains the information about the classrooms for the class units. At least one classroom is required for the class units.
 
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
@@ -26,7 +26,7 @@ Contains the information about classrooms for the sessions. At least one classro
 
 ## classRoomsToAssign
 
-List of classrooms to the session. Each object in the list represent one classroom that should be assigned.
+List of classrooms to the session. Each object in the list represent one classroom that must be assigned.
 
 
 `classRoomsToAssign`
@@ -42,7 +42,7 @@ List of classrooms to the session. Each object in the list represent one classro
 
 ## capacityPreference
 
-Preference about if the engine should evaluate the classroom capacity to assign the session.
+Preference on whether the engine should assess the capacity of the classroom to allocate each class unit.
 
 
 `capacityPreference`
@@ -76,7 +76,7 @@ The default value is:
 
 ## capacityType
 
-Indicates if all students of the sessions should fit on in each classroom, or in the amount of all classrooms.
+It indicates whether all students in the class units should fit in each classroom, or in the amount of all classrooms.
 
 
 `capacityType`
@@ -109,10 +109,10 @@ The default value is:
 
 ## refBuilding
 
-Identifier name of the building where is session. Only allowed in sessions without groups os students. It is used to know transfer time and number of transfers between buildings for teachers without specfy a classroom.
+Building identifier of the building where the class unit takes place. Only allowed for sessions without groups of students. This is used to know the moving time and the number of moves between buildings for teachers without specifying a classroom.
 
 
-> It is incompatible with the other properties of object 'sessionClassRooms'.
+> It is incompatible with the other properties of 'sessionClassRooms' object.
 >
 
 `refBuilding`

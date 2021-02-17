@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/optimizationWeights/properties/sessions/properties/nonPreferredClassRoom
 ```
 
-Indicates the weight of if class units are configured with a preferred classroom and with a group of alternative classrooms, it will be punished with the weight to be placed in one of the alternative classrooms.
+It indicates the weight if the class units are configured with a preferred classroom and with a set of alternative classrooms, the weight placed in one of the alternative classrooms will be penalised.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

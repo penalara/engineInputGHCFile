@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/gapsAlwaysInNonPreferred
 ```
 
-Indicates If the engine, for free intervals or gaps, to be in positions marked as non-preferred in the template.
+This indicates whether the engine should be in the positions marked as non-preferred in the template for free intervals or gaps.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

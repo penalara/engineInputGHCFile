@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/allowed
 ```
 
-Indicates if the section is available to assign.
+It indicates if the section is available to assign.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

@@ -43,7 +43,7 @@ Identifier name of the classroom.
 
 ## capacity
 
-Maximum students number who the classroom can accommodate.
+The maximum number of students the classroom can hold.
 
 
 `capacity`
@@ -62,7 +62,7 @@ Maximum students number who the classroom can accommodate.
 Templates with only banned sections of the frames.
 
 
-> It is used when the element cannot have non preferred sections.
+> It is used when the element cannot have non-preferred sections.
 >
 
 `frameTemplate`
@@ -78,7 +78,7 @@ Templates with only banned sections of the frames.
 
 ## refBuilding
 
-Identifier name building where is located the classroom.
+Building identifier where the class is located.
 
 
 `refBuilding`
@@ -94,7 +94,7 @@ Identifier name building where is located the classroom.
 
 ## fullDay
 
-Indicates if the classroom must be reserved all day after it have one assignment.
+This indicates whether the classroom should be booked all day after holding a subject.
 
 
 `fullDay`

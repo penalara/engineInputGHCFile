@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/avoidSectionsAfterBreak
 ```
 
-Penalize if more than 50% of the classes are after the last break of the day.
+It penalises if more than 50% of the class unit are after the last break of the day.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

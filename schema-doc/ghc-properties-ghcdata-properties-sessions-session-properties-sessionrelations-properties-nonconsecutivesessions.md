@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionRelations/properties/nonConsecutiveSessions
 ```
 
-Identifiers of the sessions that they should not be consecutive. It is a strict condition.
+Identifiers of the sessions which class units must not be consecutive. This is a strict condition.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

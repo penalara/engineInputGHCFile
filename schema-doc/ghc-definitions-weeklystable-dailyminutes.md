@@ -4,7 +4,7 @@
 engineInputGHCSchema#/definitions/weeklyStable/items
 ```
 
-Minutes that must have the session class on the day. Each value is a assignation day.
+This indicates how many minutes the session should be on the day.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

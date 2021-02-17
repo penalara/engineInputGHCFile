@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionClassRooms/properties/classRoomsToAssign/items
 ```
 
-Object, with classrooms and/or set of classrooms, where the engine should take one of them for assign the session.
+Object, with classrooms and/or set of classrooms, where the engine should assign classroom to each class unit of the session.
 
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
@@ -24,7 +24,7 @@ Object, with classrooms and/or set of classrooms, where the engine should take o
 
 ## classRoomsList
 
-Classroom's identifier name that could be assigned to session.
+Available classroom list to be assigned to session.
 
 
 `classRoomsList`
@@ -40,7 +40,7 @@ Classroom's identifier name that could be assigned to session.
 
 ## classRoomsSetsList
 
-Identifier name of classroom set, where one classroom could be taken to assign to session.
+Classroom set list where one classroom could be taken to assign to session.
 
 
 `classRoomsSetsList`

@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/optimizationWeights/properties/teachers
 ```
 
-Contains options related to optimizable conditions for teachers.
+It contains options related to optimisable conditions for teachers.
 
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
@@ -28,7 +28,7 @@ Contains options related to optimizable conditions for teachers.
 
 ## teacherIncompatibities
 
-Indicates the weight for optimizable teacher's incompatibilities.
+It indicates the weight of the teacher's incompatibilities that can be optimised.
 
 
 `teacherIncompatibities`
@@ -52,7 +52,7 @@ The default value is:
 
 ## uniformDailyDistribution
 
-Indicates the weight of placing the sessions of a teacher in a non-uniform way during the week.
+It indicates the weight of placing a teacher's class units in a non-uniform way during the week.
 
 
 `uniformDailyDistribution`
@@ -76,7 +76,7 @@ The default value is:
 
 ## excessContinuousTeaching
 
-Indicates the weight of placing more continuous sessions than declared in its settings.
+It indicates the weight of placing more continuous class units than those declared in the settings.
 
 
 `excessContinuousTeaching`
@@ -100,7 +100,7 @@ The default value is:
 
 ## excessPermanence
 
-Indicates the weight of assign more daily or weekly permanence than declared in its settings.
+It indicates the weight of assigning more daily or weekly stay than the declared in the settings.
 
 
 `excessPermanence`
@@ -124,7 +124,7 @@ The default value is:
 
 ## continuousSessionsWithGroup
 
-Indicates the weight of having consecutive sessions taught to the same group.
+It indicates the weight of having consecutive class units taught to the same group.
 
 
 `continuousSessionsWithGroup`
@@ -148,7 +148,7 @@ The default value is:
 
 ## onCallSectionsOnBorders
 
-Indicates the weight of the teacher got assigned a on call service at the borders of his schedule, thus trying to fit them into the gaps of his class sessions.
+It indicates the weight of the teacher being assigned an on-call hour within the limits of his or her timetable, thus trying to fit it into the gaps in his or her class units.
 
 
 `onCallSectionsOnBorders`

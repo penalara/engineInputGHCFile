@@ -4,7 +4,7 @@
 engineInputGHCSchema#/definitions/frameTemplate
 ```
 
-Templates with assignment preferences to section of the frames.
+Templates with frame sections assignment preferences.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

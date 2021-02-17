@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/notGaps
 ```
 
-Indicates If the group can have gaps in its timetable.
+It indicates if the group can have gaps in its timetable.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

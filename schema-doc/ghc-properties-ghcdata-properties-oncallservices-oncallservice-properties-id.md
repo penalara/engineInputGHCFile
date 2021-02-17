@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/id
 ```
 
-Identifier of the On-Call service.
+On-Call service identifier.
 
 
 > This identifier can not be equals to any session identifier.

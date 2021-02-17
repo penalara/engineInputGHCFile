@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/optimizationWeights/properties/nonPreferredPositions
 ```
 
-Contains options related to allocation in non-preferred sections.
+It contains options related to allocation in non-preferred sections.
 
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
@@ -26,7 +26,7 @@ Contains options related to allocation in non-preferred sections.
 
 ## inGroups
 
-Indicates the weight to be placed in a non-preferential section of a group.
+It indicates the weight to be placed in a non-preferential section of a group.
 
 
 `inGroups`
@@ -50,7 +50,7 @@ The default value is:
 
 ## inTeachers
 
-Indicates the weight to be placed in a non-preferential section of a teacher.
+It indicates the weight to be placed in a non-preferential section of a teacher.
 
 
 `inTeachers`
@@ -74,7 +74,7 @@ The default value is:
 
 ## inSubjectsAndTask
 
-Indicates the weight to be placed in a non-preferential section of a subject or a task.
+It indicates the weight to be placed in a non-preferential section of a subject or a task.
 
 
 `inSubjectsAndTask`

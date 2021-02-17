@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/frameTemplate
 ```
 
-Templates with assignment preferences to section of the frames.
+Class unit availability to be assigned to the sections.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

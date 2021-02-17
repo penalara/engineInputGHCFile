@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/optimizationWeights/properties/nonPreferredPositions/properties/inGroups
 ```
 
-Indicates the weight to be placed in a non-preferential section of a group.
+It indicates the weight to be placed in a non-preferential section of a group.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

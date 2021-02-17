@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/classRooms/items/properties/capacity
 ```
 
-Maximum students number who the classroom can accommodate.
+The maximum number of students the classroom can hold.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

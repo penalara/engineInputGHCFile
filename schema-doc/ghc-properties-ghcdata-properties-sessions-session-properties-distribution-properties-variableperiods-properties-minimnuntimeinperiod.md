@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/distribution/properties/variablePeriods/properties/minimnunTimeInPeriod
 ```
 
-Minimum of minutes to assign in each Period.
+Minimum number of minutes to be allocated in each Period.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/classRoomsSets/items/properties/rooms
 ```
 
-ClassRooms which it contains the group
+Classrooms identifiers which contain the group.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

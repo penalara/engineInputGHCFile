@@ -24,7 +24,7 @@ engineInputGHCSchema#/properties/ghcData/properties/periods/properties/periodsLi
 
 ## id
 
-Identifier name of the period.
+Period identifier.
 
 
 `id`
@@ -40,7 +40,7 @@ Identifier name of the period.
 
 ## lastDay
 
-End day of the period, the period include it.
+The end day of the period (included).
 
 
 `lastDay`

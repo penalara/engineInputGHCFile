@@ -4,7 +4,7 @@
 engineInputGHCSchema#/definitions/dailyOcupation
 ```
 
-Maximum and minimum values for teaching or activity time for teachers. This object indicates the kind of condition (estrict or ponderable) and if it should be adjusted the automatic calcultation in minutes at engine.
+Maximum and minimum values of teaching or activity time for teachers. This object indicates the type of condition (strict or weighting) and whether the automatic calculation in minutes in the engine should be set.
 
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
@@ -27,7 +27,7 @@ Maximum and minimum values for teaching or activity time for teachers. This obje
 
 ## allowFreeDays
 
-Indicates whether the check of the minimums is omitted in case of days without allocation. Prohibited days never are checked.
+It indicates whether checking of minimums is omitted in the case of non-assigned days. Forbidden days are never checked.
 
 
 `allowFreeDays`
@@ -43,7 +43,7 @@ Indicates whether the check of the minimums is omitted in case of days without a
 
 ## minimumTeaching
 
-Teacher's minimum time of teaching with students.
+Minimum teaching time of the teacher with students.
 
 
 `minimumTeaching`
@@ -59,7 +59,7 @@ Teacher's minimum time of teaching with students.
 
 ## maximumTeaching
 
-Teacher's maximum time of teaching with students.
+Minimum teaching time of the teacher with students.
 
 
 `maximumTeaching`
@@ -75,7 +75,7 @@ Teacher's maximum time of teaching with students.
 
 ## minimumOccupancy
 
-Teacher's minimum time of teaching with students and other non-teaching activities indicated as computable.
+Minimum teaching time of the teacher with students and other non-teaching activities indicated as eligible for calculation.
 
 
 `minimumOccupancy`
@@ -91,7 +91,7 @@ Teacher's minimum time of teaching with students and other non-teaching activiti
 
 ## maximumOccupancy
 
-Teacher's maximum time of teaching with students and other non-teaching activities indicated as computable.
+Maximum teaching time of the teacher with students and other non-teaching activities indicated as eligible for calculation.
 
 
 `maximumOccupancy`

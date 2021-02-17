@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/teachers/items
 ```
 
-Object with personal information and preferences from the teacher.
+Object with personal information and teachers' preferences.
 
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
@@ -43,7 +43,7 @@ Object with personal information and preferences from the teacher.
 
 ## associationIdentifier
 
-Group or association of teachers that should have similar of entry and out hours, if it is possible. It's useful for teachers that share transport.
+Group or association of teachers who should have similar check-in and check-out times, if possible. This is useful for teachers who share transport.
 
 
 `associationIdentifier`
@@ -59,7 +59,7 @@ Group or association of teachers that should have similar of entry and out hours
 
 ## frameTemplate
 
-Templates with assignment preferences to section of the frames.
+Templates with frame sections assignment preferences.
 
 
 `frameTemplate`
@@ -75,7 +75,7 @@ Templates with assignment preferences to section of the frames.
 
 ## generalSettings
 
-Teacher's strict and ponderable conditions for the timetable. If there is not unique periods, these conditios are the default value, but they can be custom specified for each period in the 'periodSettings' tag.
+Strict and measurable teacher's conditions for the timetable. If there are not single periods, these conditions are the default, but can be specified individually for each period in the 'periodSettings' tag.
 
 
 `generalSettings`
@@ -91,7 +91,7 @@ Teacher's strict and ponderable conditions for the timetable. If there is not un
 
 ## periodSettings
 
-Teacher's strict and ponderable conditions,customized for each week/period
+Strict and measurable teacher's conditions customized by week/period
 
 
 `periodSettings`

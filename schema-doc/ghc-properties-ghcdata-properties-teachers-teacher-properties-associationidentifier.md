@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/associationIdentifier
 ```
 
-Group or association of teachers that should have similar of entry and out hours, if it is possible. It's useful for teachers that share transport.
+Group or association of teachers who should have similar check-in and check-out times, if possible. This is useful for teachers who share transport.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

@@ -4,7 +4,7 @@
 engineInputGHCSchema#/definitions/weeklyVariable/properties/minDurationDaily
 ```
 
-Indicates de preference about the session's classes of the minimum duration.
+It indicates the preference for class units of minimum duration.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

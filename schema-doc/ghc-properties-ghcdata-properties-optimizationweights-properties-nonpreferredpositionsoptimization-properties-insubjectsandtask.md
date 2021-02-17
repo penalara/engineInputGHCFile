@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/optimizationWeights/properties/nonPreferredPositions/properties/inSubjectsAndTask
 ```
 
-Indicates the weight to be placed in a non-preferential section of a subject or a task.
+It indicates the weight to be placed in a non-preferential section of a subject or a task.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

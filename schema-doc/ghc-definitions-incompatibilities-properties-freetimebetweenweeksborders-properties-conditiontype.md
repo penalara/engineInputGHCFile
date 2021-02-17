@@ -4,7 +4,7 @@
 engineInputGHCSchema#/definitions/incompatibilities/properties/freeTimeBetweenEndWeekAndStartWeekDays/properties/type
 ```
 
-Indicate if the incompatibility is a strict, avoid (ponderable for optimization) or ignore.
+Indicate if the incompatibility is a strict, avoid (penalisable at optimization) or ignore.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

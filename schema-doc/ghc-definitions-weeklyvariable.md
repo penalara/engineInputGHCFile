@@ -4,7 +4,7 @@
 engineInputGHCSchema#/definitions/weeklyVariable
 ```
 
-Define the distribution as a number of sections per week and a maximum range of sections per day.
+It defines the distribution as a number of sections per week and a maximum range of sections per day.
 
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
@@ -59,7 +59,7 @@ Maximum of minutes per day.
 
 ## minDurationDaily
 
-Indicates de preference about the session's classes of the minimum duration.
+It indicates the preference for class units of minimum duration.
 
 
 `minDurationDaily`
@@ -93,7 +93,7 @@ The default value is:
 
 ## avoidMaxDuration
 
-Indicates de preference about the session's classes of the maximum duration.
+It indicates the preference for class units of maximum duration.
 
 
 `avoidMaxDuration`
@@ -109,7 +109,7 @@ Indicates de preference about the session's classes of the maximum duration.
 
 ## allowDiscontinuity
 
-Indicates if discontinuous sections are allowed, that is, they have sections of other sessions or breaks in between.
+It indicates whether discontinuous sections are allowed, that is, having sections of other class units or breaks in between them.
 
 
 `allowDiscontinuity`

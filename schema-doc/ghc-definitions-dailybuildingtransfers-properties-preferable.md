@@ -4,7 +4,7 @@
 engineInputGHCSchema#/definitions/dailyBuildingTransfers/properties/preferable
 ```
 
-Ponderable/preferable maximum number of displacement per day.
+Maximum number of movements per day that can be weighted/preferred.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

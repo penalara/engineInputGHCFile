@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/periodSettings/items/properties/refPeriod
 ```
 
-Identifier name of the period to which the settings affect.
+Identifier of the period to which the settings affect.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

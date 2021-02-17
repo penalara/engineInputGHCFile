@@ -7,7 +7,7 @@ engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/propert
 Information about number of teacher in all sections.
 
 
-> 'byDefault' value will be used for all sections, if 'bySection' field is not informed. Also it value is used when one section is not informed at 'bySection'.
+> The value 'byDefault' shall be used for all sections, if the field 'bySection' is not informed. This value is also used when a section is not informed in 'bySection'.
 >
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

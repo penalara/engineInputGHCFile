@@ -7,7 +7,7 @@ engineInputGHCSchema#/properties/ghcData/properties/classRooms/items/properties/
 Templates with only banned sections of the frames.
 
 
-> It is used when the element cannot have non preferred sections.
+> It is used when the element cannot have non-preferred sections.
 >
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

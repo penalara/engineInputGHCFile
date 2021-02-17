@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionRelations/properties/consecutiveGroup/properties/refSessions
 ```
 
-Contains the references of a continuous sessions group. Must contain the sesion itself. And the proper order of continuity (for 'order' property).
+List of the consecutive sessions. Must contain the sesion itself and the proper order of continuity (see 'order' property).
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

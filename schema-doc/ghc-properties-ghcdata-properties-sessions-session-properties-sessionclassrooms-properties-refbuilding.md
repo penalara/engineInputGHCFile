@@ -4,10 +4,10 @@
 engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionClassRooms/properties/refBuilding
 ```
 
-Identifier name of the building where is session. Only allowed in sessions without groups os students. It is used to know transfer time and number of transfers between buildings for teachers without specfy a classroom.
+Building identifier of the building where the class unit takes place. Only allowed for sessions without groups of students. This is used to know the moving time and the number of moves between buildings for teachers without specifying a classroom.
 
 
-> It is incompatible with the other properties of object 'sessionClassRooms'.
+> It is incompatible with the other properties of 'sessionClassRooms' object.
 >
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

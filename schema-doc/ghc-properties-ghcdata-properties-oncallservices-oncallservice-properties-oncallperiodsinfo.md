@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/refPeriods
 ```
 
-Information about the periods that have the service and mirror placement in periods condition (same placement in periods).
+It contains the periods when the service must be set and mirror placement in periods condition (same placement in periods).
 
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
@@ -24,7 +24,7 @@ Information about the periods that have the service and mirror placement in peri
 
 ## periods
 
-List of Periods that must have the service.
+List of Periods when the service must be set.
 
 
 `periods`
@@ -40,7 +40,7 @@ List of Periods that must have the service.
 
 ## samePositionEveryPeriod
 
-Keep the same position each week or period for the classes of the session.
+Keep the same position each week or period for the service units.
 
 
 `samePositionEveryPeriod`

@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings
 ```
 
-Conditions about the position of the session units.
+Conditions on the position of the class unit.
 
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
@@ -33,10 +33,10 @@ Conditions about the position of the session units.
 
 ## computeForMaxMinOccupancy
 
-Indicates if the session computes for teacher's daily maximum and minimum of occupancy. By default the engine computes sessions with students.
+ It indicates whether the class unit counts for the maximum and minimum daily teacher occupancy. By default, the engine computes class units with students.
 
 
-> If session with students indicate false in this field, is ignored.
+> If false is indicated in this field in the class unit with the students, it is ignored.
 >
 
 `computeForMaxMinOccupancy`
@@ -52,7 +52,7 @@ Indicates if the session computes for teacher's daily maximum and minimum of occ
 
 ## avoidFirstHourSessions
 
-Penalize the position of the session if more than 50% of the classes are at first hour.
+It penalises the position of the class units if more than 50% of the class units are at first hour.
 
 
 `avoidFirstHourSessions`
@@ -76,7 +76,7 @@ true
 
 ## avoidLastHourSessions
 
-Penalize the position of the session if more than 50% of the classes are at last hour.
+It penalises the position of the class units if more than 50% of the class units are at last hour.
 
 
 `avoidLastHourSessions`
@@ -100,7 +100,7 @@ true
 
 ## avoidAssingLastHourAndFirstNextDay
 
-Penalize that the last hour ande the first one of the following day coincide.
+It penalises if the last hour and the first hour of the following day match.
 
 
 `avoidAssingLastHourAndFirstNextDay`
@@ -124,7 +124,7 @@ true
 
 ## sameHourPreference
 
-Preference about the session classes coincide in the same time slot.
+Preference over class units that coincide in the same time slot.
 
 
 `sameHourPreference`
@@ -158,7 +158,7 @@ The default value is:
 
 ## avoidAfternoonSessions
 
-Penalize if there are more than one session class after the midday.
+It penalises if there is more than one class unit after noon stop..
 
 
 `avoidAfternoonSessions`
@@ -182,7 +182,7 @@ true
 
 ## avoidSectionsAfterBreak
 
-Penalize if more than 50% of the classes are after the last break of the day.
+It penalises if more than 50% of the class unit are after the last break of the day.
 
 
 `avoidSectionsAfterBreak`
@@ -206,7 +206,7 @@ true
 
 ## nonBreakInTheMiddleOfSession
 
-Do not allow breaks between classes of multiple duration (classes duration of more than one section).
+Do not allow breaks between class units of multiple duration (class duration of more than one section).
 
 
 `nonBreakInTheMiddleOfSession`
@@ -222,7 +222,7 @@ Do not allow breaks between classes of multiple duration (classes duration of mo
 
 ## followedDaysPreference
 
-If the session has more than one class, it indicates the preference about assign them in consecutive days.
+If the class unit has more than one lesson, indicates the preference on assigning them on consecutive days.
 
 
 `followedDaysPreference`
@@ -258,7 +258,7 @@ The default value is:
 
 ## consecutiveWeeksBorders
 
-Consider the end week day, and start week day, as consecutive days for 'followedDaysPreference'.
+It considers the end-of-week day, and the start-of-week day, as consecutive days for 'followedDaysPreference'.
 
 
 `consecutiveWeeksBorders`
@@ -274,7 +274,7 @@ Consider the end week day, and start week day, as consecutive days for 'followed
 
 ## samePositionEveryPeriod
 
-Keep the same position each week or period for the classes of the session.
+Keep the same position every week or period for the class units.
 
 
 `samePositionEveryPeriod`

@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/subjects/items/properties/student-mentoring
 ```
 
-Indicates if the subject is a tutorship.
+It indicates whether the subject is a tutorial.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

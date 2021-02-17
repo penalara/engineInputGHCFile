@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/tasks/items/properties/id
 ```
 
-Task's identifier name.
+Task identifier.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

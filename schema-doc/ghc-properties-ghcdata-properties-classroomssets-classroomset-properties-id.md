@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/classRoomsSets/items/properties/id
 ```
 
-Identifier name of the ClassRooms group.
+ClassRooms group identifier.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

@@ -25,7 +25,7 @@ engineInputGHCSchema#/properties/ghcData/properties/classRoomsSets/items
 
 ## id
 
-Identifier name of the ClassRooms group.
+ClassRooms group identifier.
 
 
 `id`
@@ -41,7 +41,7 @@ Identifier name of the ClassRooms group.
 
 ## rooms
 
-ClassRooms which it contains the group
+Classrooms identifiers which contain the group.
 
 
 `rooms`
@@ -57,7 +57,7 @@ ClassRooms which it contains the group
 
 ## anonymousRooms
 
-Number of classrooms non-specific defined that it contains the group.
+Number of non-specific defined classrooms that the group contains.
 
 
 `anonymousRooms`

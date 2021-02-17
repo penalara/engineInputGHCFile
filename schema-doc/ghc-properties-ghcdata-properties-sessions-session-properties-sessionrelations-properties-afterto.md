@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionRelations/properties/afterTo
 ```
 
-Indicates that this session should be assigned in a later day to the sessions of the list. It is a strict condition.
+This indicates that this class unit must be allocated on a subsequent day to the class units in the list. This is a strict condition.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

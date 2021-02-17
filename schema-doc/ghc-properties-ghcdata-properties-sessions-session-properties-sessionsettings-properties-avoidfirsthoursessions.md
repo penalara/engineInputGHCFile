@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/avoidFirstHourSessions
 ```
 
-Penalize the position of the session if more than 50% of the classes are at first hour.
+It penalises the position of the class units if more than 50% of the class units are at first hour.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

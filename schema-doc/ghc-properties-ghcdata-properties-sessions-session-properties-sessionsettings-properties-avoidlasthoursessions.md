@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/avoidLastHourSessions
 ```
 
-Penalize the position of the session if more than 50% of the classes are at last hour.
+It penalises the position of the class units if more than 50% of the class units are at last hour.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

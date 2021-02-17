@@ -4,10 +4,10 @@
 engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/computeForMaxMinOccupancy
 ```
 
-Indicates if the session computes for teacher's daily maximum and minimum of occupancy. By default the engine computes sessions with students.
+ It indicates whether the class unit counts for the maximum and minimum daily teacher occupancy. By default, the engine computes class units with students.
 
 
-> If session with students indicate false in this field, is ignored.
+> If false is indicated in this field in the class unit with the students, it is ignored.
 >
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

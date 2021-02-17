@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/optimizationWeights/properties/sessions/properties/samePositionEveryPeriod
 ```
 
-Indicates the weight of placing the entities of a session that belongs to several periods in the same positions or not (it affects the on call services too).
+It indicates the weight of placing the entities of a class unit belonging to several periods in the same positions or not (also affects on-call services).
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

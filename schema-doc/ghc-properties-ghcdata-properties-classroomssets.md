@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/classRoomsSets
 ```
 
-A divisions of classrooms, group by characteristics or organizational needs.
+A division of the classrooms, grouped by organizational characteristics or needs.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

@@ -4,7 +4,7 @@
 engineInputGHCSchema#/definitions/freeTimes/properties/consecutiveAnyTime/properties/preferredDays
 ```
 
-Number of preferred days when teacher should have the free interval.
+Preferred number of days on which the teacher should have the interval free. 
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

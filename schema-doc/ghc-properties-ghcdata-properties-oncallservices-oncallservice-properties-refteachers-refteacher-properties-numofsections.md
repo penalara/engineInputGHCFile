@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/onCallServices/items/properties/refTeachers/items/properties/numOfSections
 ```
 
-Number of sections of on-call service that the teacher must do weekly.
+Number of on-call services to be done weekly by the teacher.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionClassRooms/properties/capacityType
 ```
 
-Indicates if all students of the sessions should fit on in each classroom, or in the amount of all classrooms.
+It indicates whether all students in the class units should fit in each classroom, or in the amount of all classrooms.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

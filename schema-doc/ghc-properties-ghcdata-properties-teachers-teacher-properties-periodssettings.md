@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/periodSettings
 ```
 
-Teacher's strict and ponderable conditions,customized for each week/period
+Strict and measurable teacher's conditions customized by week/period
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

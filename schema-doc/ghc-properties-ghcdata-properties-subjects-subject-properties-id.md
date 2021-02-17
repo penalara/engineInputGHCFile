@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/subjects/items/properties/id
 ```
 
-Identifier name of the subject.
+Subject identifier.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

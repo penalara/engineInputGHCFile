@@ -4,10 +4,10 @@
 engineInputGHCSchema#/definitions/maxContinuousTeaching/properties/minBreak
 ```
 
-Minimum time gap to considered it as a break.
+Minimum time period to be considered as break time
 
 
-> If did not specify, the engine will assign the general value or default time of 30 minutes.
+> If not specified, the engine will assign the general value or the default time of 30 minutes.
 >
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

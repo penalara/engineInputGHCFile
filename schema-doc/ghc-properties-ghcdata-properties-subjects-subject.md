@@ -25,7 +25,7 @@ engineInputGHCSchema#/properties/ghcData/properties/subjects/items
 
 ## id
 
-Identifier name of the subject.
+Subject identifier.
 
 
 `id`
@@ -41,7 +41,7 @@ Identifier name of the subject.
 
 ## student-mentoring
 
-Indicates if the subject is a tutorship.
+It indicates whether the subject is a tutorial.
 
 
 `student-mentoring`
@@ -57,7 +57,7 @@ Indicates if the subject is a tutorship.
 
 ## frameTemplate
 
-Templates with assignment preferences to section of the frames.
+Templates with frame sections assignment preferences.
 
 
 `frameTemplate`

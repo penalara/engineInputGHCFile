@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionRelations/properties/minimumSeparationTo/items/properties/days
 ```
 
-Condition's Days of separation. If value is 0 or 1 is equivalent to 'DifferentDays' condition.
+Days of separation condition. If the value is 0 or 1 it is equivalent to the condition 'DifferentDays'.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

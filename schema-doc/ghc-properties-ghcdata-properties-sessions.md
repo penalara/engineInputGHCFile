@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/sessions
 ```
 
-Teachers sessions. These can be with students groups, meetings with other teachers or complementary activities.
+Definition of the teacher class units. These may be with groups of students, meetings with other teachers or complementary activities.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

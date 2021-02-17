@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/optimizationWeights/properties/sessions/properties/sameHourSessionClasses
 ```
 
-Indicates the weight of penalization of not fulfilling the preferred about assignment on consecutive days.
+It indicates the weight of the penalty for not complying with the preference allocation on consecutive days.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

@@ -33,7 +33,7 @@ engineInputGHCSchema#/properties/ghcData/properties/sessions/items
 
 ## id
 
-Identifier of the session.
+Session identifier.
 
 
 `id`
@@ -49,7 +49,7 @@ Identifier of the session.
 
 ## refFrame
 
-Identifier name of the session's frame.
+Session's frame identifier.
 
 
 `refFrame`
@@ -85,7 +85,7 @@ List of task in the session.
 
 ## refTeachers
 
-List of teachers who teach or interact in the session.
+List of teachers who teach or interact in the session.
 
 
 `refTeachers`
@@ -101,7 +101,7 @@ List of teachers who teach or interact in the session.
 
 ## refSubjects
 
-List of subject's identifier which is teach at the session. At least one is required for teaching sessions with students groups.
+List of subject taught in the session. At least one is required for session with groups of students.
 
 
 `refSubjects`
@@ -117,7 +117,7 @@ List of subject's identifier which is teach at the session. At least one is requ
 
 ## refGroups
 
-List of group's identifier which is teach at the session. At least one is required for teaching sessions.
+List of groups who are taught in the class unit. At least one is required for teaching sessions.
 
 
 `refGroups`
@@ -133,10 +133,10 @@ List of group's identifier which is teach at the session. At least one is requir
 
 ## distribution
 
-Contains information on how the classes of the session are distributed throughout the week. Only should contain one element between 'stablePeriods' and 'variablePeriods'.
+It contains information on how the class units of the session are distributed throughout the week. It must contain only one element between 'stablePeriods' and 'variablePeriods'.
 
 
-> Property 'periods' is required if there are more than one period in the timetable. Properties 'stablePeriods' and 'variablePeriods' are mutually exclusive.
+> The 'periods' property is required if there is more than one period in the timetable. The 'stablePeriods' and 'variablePeriods' properties are mutually exclusive.
 >
 
 `distribution`
@@ -152,7 +152,7 @@ Contains information on how the classes of the session are distributed throughou
 
 ## sessionClassRooms
 
-Contains the information about classrooms for the sessions. At least one classroom  is required for teaching sessions.
+It contains the information about the classrooms for the class units. At least one classroom is required for the class units.
 
 
 `sessionClassRooms`
@@ -168,7 +168,7 @@ Contains the information about classrooms for the sessions. At least one classro
 
 ## frameTemplate
 
-Templates with assignment preferences to section of the frames.
+Class unit availability to be assigned to the sections.
 
 
 `frameTemplate`
@@ -184,7 +184,7 @@ Templates with assignment preferences to section of the frames.
 
 ## sessionSettings
 
-Conditions about the position of the session units.
+Conditions on the position of the class unit.
 
 
 `sessionSettings`
@@ -200,7 +200,7 @@ Conditions about the position of the session units.
 
 ## sessionRelations
 
-It contains the information on relationships between this and other sessions. These conditions only can apply for teaching sessions with students.
+It contains information on the relationships between this and other class units. These conditions can only apply to class units with students.
 
 
 `sessionRelations`

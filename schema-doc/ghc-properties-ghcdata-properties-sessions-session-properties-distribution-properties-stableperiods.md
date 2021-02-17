@@ -4,10 +4,10 @@
 engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/distribution/properties/stablePeriods
 ```
 
-The session's distribution is equals in each period.
+The distribution of the class unit of the session is the same in each period.
 
 
-> Only one property can be applied .
+> Only one property must be specified.
 >
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
@@ -28,7 +28,7 @@ The session's distribution is equals in each period.
 
 ## weeklyStable
 
-Contains a single possible weekly distribution.
+It contains only one possible weekly distribution. Each value is a assignation day.
 
 
 `weeklyStable`
@@ -44,7 +44,7 @@ Contains a single possible weekly distribution.
 
 ## weeklyVariable
 
-Define the distribution as a number of sections per week and a maximum range of sections per day.
+It defines the distribution as a number of sections per week and a maximum range of sections per day.
 
 
 `weeklyVariable`
@@ -60,7 +60,7 @@ Define the distribution as a number of sections per week and a maximum range of 
 
 ## weeklyCustom
 
-Contains an array of 'WeeklyStable' distributions.
+It contains an array of 'WeeklyStable' distributions.
 
 
 `weeklyCustom`

@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/buildings
 ```
 
-Contains the buildings of the school or education centre.
+It contains the school or educational institution buildings.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

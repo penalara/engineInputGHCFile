@@ -57,7 +57,7 @@ Index of the section.
 
 ## numTeachers
 
-Custom number of tachers for the section.
+Custom number of teachers to be assigned in the section.
 
 
 `numTeachers`

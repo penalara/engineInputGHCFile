@@ -4,7 +4,7 @@
 engineInputGHCSchema#/definitions/middayReference
 ```
 
-.
+It indicate the frame where the teacher takes noon pause.
 
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
@@ -24,7 +24,7 @@ engineInputGHCSchema#/definitions/middayReference
 
 ## refFrame
 
-Identifier name of a frame where the teacher take the midday. If it is not not specified, the engine will take the midday of the frame with the highest allocation.
+Identifier of a frame where the teacher takes noon pause. If not specified, the engine shall take the noon pause of the frame with the highest allocation.
 
 
 `refFrame`
@@ -40,7 +40,7 @@ Identifier name of a frame where the teacher take the midday. If it is not not s
 
 ## strict
 
-Indicates if the teacher's midday break must be respected without placing their sessions in sections of other frames that overlap with their midday.
+It indicates whether the teacher's noon pause should be respected without placing his or her class units in sections of other frameworks that overlap with his or her noon pause.
 
 
 `strict`

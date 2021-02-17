@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionClassRooms/properties/classRoomsToAssign
 ```
 
-List of classrooms to the session. Each object in the list represent one classroom that should be assigned.
+List of classrooms to the session. Each object in the list represent one classroom that must be assigned.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

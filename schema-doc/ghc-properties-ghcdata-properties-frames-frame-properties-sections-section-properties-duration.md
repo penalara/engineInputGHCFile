@@ -4,10 +4,10 @@
 engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sections/items/properties/duration
 ```
 
-Indicates the (real or proporcional) duration of the section in minutes.
+It indicates the duration (real or proportional) of the section in minutes.
 
 
-> Indicates the duration of the section that the engine will use to assign sessions. It can be the real duration between the entry ant exit time, otherwise it can be a proporcional time to simplfy ( hour, half hour, three quarters of an hour...). The distribution of the sessions will be consistent with this duration.
+> This indicates the duration of the section that the engine will use to assign class units. It can be the actual duration between check-in and check-out, or it can be a proportional time to simplify (hour, half hour, three-quarters of an hour...). The distribution of class units will be consistent with this duration.
 >
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

@@ -4,7 +4,7 @@
 engineInputGHCSchema#/definitions/incompatibilities/properties/freeTimeBetweenEndWeekAndStartWeekDays
 ```
 
-Minutes between finishing time on week's last day, and starting time the next week.
+Minutes between the end time of the last day of the week and the start time of the following week.
 
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
@@ -24,7 +24,7 @@ Minutes between finishing time on week's last day, and starting time the next we
 
 ## type
 
-Indicate if the incompatibility is a strict, avoid (ponderable for optimization) or ignore.
+Indicate if the incompatibility is a strict, avoid (penalisable at optimization) or ignore.
 
 
 `type`

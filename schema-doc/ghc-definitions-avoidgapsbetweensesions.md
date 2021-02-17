@@ -4,7 +4,7 @@
 engineInputGHCSchema#/definitions/avoidGapsBetweenSesions
 ```
 
-Indicates if it should avoid free gaps between sessions for the teacher. It is a ponderable condition.
+It indicates whether gaps between class units for the teacher should be avoided. This is a weighting condition.
 
 
 > If did not specify, the engine will assign a true value.

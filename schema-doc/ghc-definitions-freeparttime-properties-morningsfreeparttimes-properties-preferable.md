@@ -4,7 +4,7 @@
 engineInputGHCSchema#/definitions/freePartTimes/properties/mornings/properties/preferable
 ```
 
-Preferable number of mornings off periods.
+Preferable number of mornings off.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

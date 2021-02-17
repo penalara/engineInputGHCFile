@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/optimizationWeights/properties/timetableGaps
 ```
 
-Contains options related to timetable-gaps weights.
+It contains options related to timetable-gaps weights.
 
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
@@ -24,7 +24,7 @@ Contains options related to timetable-gaps weights.
 
 ## groupGaps
 
-Indicates the weight that is assigned to the fact of leaving gaps in the group timetables.
+It indicates the weight given to the fact of leaving gaps in groups' timetables.
 
 
 `groupGaps`
@@ -48,7 +48,7 @@ The default value is:
 
 ## teacherGaps
 
-Indicates the weight that is assigned to the fact of leaving gaps in the teacher timetables.
+It indicates the weight given to the fact of leaving gaps in teachers' timetables.
 
 
 `teacherGaps`

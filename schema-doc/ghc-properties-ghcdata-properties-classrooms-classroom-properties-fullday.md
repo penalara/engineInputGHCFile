@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/classRooms/items/properties/fullDay
 ```
 
-Indicates if the classroom must be reserved all day after it have one assignment.
+This indicates whether the classroom should be booked all day after holding a subject.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

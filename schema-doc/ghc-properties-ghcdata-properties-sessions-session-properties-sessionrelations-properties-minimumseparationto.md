@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionRelations/properties/minimumSeparationTo
 ```
 
-Contains sessions that must be taught a minimun number of days apart from the current session classes.
+It contains class units that must be taught at least a minimum number of days apart from the current class unit. .
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

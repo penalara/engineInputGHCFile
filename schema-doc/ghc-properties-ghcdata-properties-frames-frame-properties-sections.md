@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/sections
 ```
 
-Timetable cells where sesions are localted.
+Timetable cells where class units are located.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

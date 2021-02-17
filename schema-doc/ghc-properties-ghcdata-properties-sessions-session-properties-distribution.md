@@ -4,10 +4,10 @@
 engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/distribution
 ```
 
-Contains information on how the classes of the session are distributed throughout the week. Only should contain one element between 'stablePeriods' and 'variablePeriods'.
+It contains information on how the class units of the session are distributed throughout the week. It must contain only one element between 'stablePeriods' and 'variablePeriods'.
 
 
-> Property 'periods' is required if there are more than one period in the timetable. Properties 'stablePeriods' and 'variablePeriods' are mutually exclusive.
+> The 'periods' property is required if there is more than one period in the timetable. The 'stablePeriods' and 'variablePeriods' properties are mutually exclusive.
 >
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
@@ -28,7 +28,7 @@ Contains information on how the classes of the session are distributed throughou
 
 ## periods
 
-List of periods or weeks when the session must be assigned.
+List of periods or weeks in which the class unit must be assigned.
 
 
 `periods`
@@ -44,10 +44,10 @@ List of periods or weeks when the session must be assigned.
 
 ## stablePeriods
 
-The session's distribution is equals in each period.
+The distribution of the class unit of the session is the same in each period.
 
 
-> Only one property can be applied .
+> Only one property must be specified.
 >
 
 `stablePeriods`
@@ -63,7 +63,7 @@ The session's distribution is equals in each period.
 
 ## variablePeriods
 
-The total of the classes of the distribution, are divided among the periods.
+The total of the class units of the distribution are divided between the periods.
 
 
 > Properties 'weeklyStable' and 'weeklyVariable' are mutually exclusive.
