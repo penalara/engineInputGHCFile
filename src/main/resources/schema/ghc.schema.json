@@ -46,7 +46,7 @@
                     "properties": {
                         "followedPeriods":{
                             "title": "FollowedPeriods",
-                            "description": "Indicates whether, the periods or weeks, considered consecutive days the last day of the previous one, with the first of the next.",
+                            "description": "It indicates whether periods or weeks consider the last day of the previous period or week as consecutive days with the first day of the following period or week.",
                             "type": "boolean",
                             "default": false
                         },
@@ -215,7 +215,7 @@
                             },
                             "frameTemplate": {
                                 "title": "BannedFrameTemplate",
-                                "description": "Templates with only banned sections of the frames.",
+                                "description": "Template with only banned preferences.",
                                 "$comment": "It is used when the element cannot have non-preferred sections.",
                                 "type": "array",
                                 "additionalItems": false,
@@ -734,7 +734,8 @@
                             },
                             "frameTemplate": {
                                 "title": "SessionFrameTemplate",
-                                "description": "Class unit availability to be assigned to the sections.",
+                                "description": "Complete template of preferences.",
+                                "$comment": "It have non-preferred sections.",
                                 "type": "array",
                                 "additionalItems": false,
                                 "items": {                                    
@@ -1350,16 +1351,16 @@
                 },
                 "engineSettings": {
                     "title": "EngineSettings",
-                    "description": "Custom parameters about engine configuration.",
+                    "description": "Customised engine configuration parameters.",
                     "type": "object",
                     "properties": {
                         "teacherBalance": {
-                            "description": "Indicates If the optimizer should balance the timetables of the different teachers, to avoid very bad schedules for a particular teacher.",
+                            "description": "It indicates whether the optimiser should balance the timetables of different teachers, to avoid very bad timetables for a particular teacher.",
                             "type": "boolean",
                             "default": true
                         },
                         "countGapsAroundMidday": {
-                            "description": "Indicates, in case of a split day (with midday break), that the unoccupied intervals between the morning and afternoon class units are counted. This option affect to ponderation at teacher optimization about gaps in it timetable.",
+                            "description": "It indicates, in the case of a split day (with a noon pause), that the unoccupied intervals between the morning and afternoon class units should be counted. This option affects the weighting in the teacher's optimisation of the gaps in their timetable.",
                             "type": "boolean",
                             "default": true
                         }
@@ -1372,7 +1373,7 @@
     "definitions": {
         "conditionType": {
             "title": "ConditionType",
-            "description": "Indicate if the incompatibility is a strict, avoid (penalisable at optimization) or ignore.",
+            "description": "Indicate whether the incompatibility is strict, avoid (penalisable in optimisation) or ignored.",
             "javaType" : "com.penalara.ghc.jsonghcfile.engineinput.ConditionType",
             "enum": [
                 "ignore",
@@ -1382,7 +1383,7 @@
         },
         "restrictionType": {
             "title": "RestrictionType",
-            "description": "Indicate if the incompatibility is a strict, avoid (penalisable at optimization) or ignore.",
+            "description": "Indicate whether the incompatibility is a strict, ignore, preferred (strong optimization weight) or accordingToRule (weight according to optimization rule).",
             "javaType" : "com.penalara.ghc.jsonghcfile.engineinput.RestrictionType",
             "enum": [
                 "ignore",
@@ -1393,7 +1394,7 @@
         },
         "ocupationSetting": {
             "title": "OcupationSettingType",
-            "description": "Indicates whether the automatic calculation of the value must be adjusted to higher or lower. The adjustment is made with the duration of the greater section.",
+            "description": "Indicates whether the automatic calculation of the value must be adjusted to higher or lower. The adjustment will set with the duration of the greater section.",
             "javaType" : "com.penalara.ghc.jsonghcfile.engineinput.OcupationSettingType",
             "enum": [
                 "auto",
@@ -1438,7 +1439,7 @@
         },        
         "onCallServiceframeTemplate": {
             "title": "OnCallTemplate",
-            "description": "Templates with teacher on-call assignment preferences.",
+            "description": "Template with teacher's preferences in the on-call service.",
             "type": "array",
             "additionalItems": false,
             "items": {                                    

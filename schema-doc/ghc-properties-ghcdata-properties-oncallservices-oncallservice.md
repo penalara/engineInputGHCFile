@@ -153,7 +153,7 @@ List of teachers who in the service.
 
 ## frameTemplate
 
-Templates with teacher on-call assignment preferences.
+Template with teacher's preferences in the on-call service.
 
 
 `frameTemplate`

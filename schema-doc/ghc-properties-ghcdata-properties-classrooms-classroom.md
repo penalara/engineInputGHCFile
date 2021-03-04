@@ -59,7 +59,7 @@ The maximum number of students the classroom can hold.
 
 ## frameTemplate
 
-Templates with only banned sections of the frames.
+Template with only banned preferences.
 
 
 > It is used when the element cannot have non-preferred sections.

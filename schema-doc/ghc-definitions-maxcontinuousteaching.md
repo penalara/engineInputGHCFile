@@ -25,7 +25,7 @@ It indicates the maximum continuous time of class units, which are allowed witho
 
 ## type
 
-Indicate if the incompatibility is a strict, avoid (penalisable at optimization) or ignore.
+Indicate whether the incompatibility is strict, avoid (penalisable in optimisation) or ignored.
 
 
 `type`

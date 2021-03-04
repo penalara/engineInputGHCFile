@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/classRooms/items/properties/frameTemplate
 ```
 
-Templates with only banned sections of the frames.
+Template with only banned preferences.
 
 
 > It is used when the element cannot have non-preferred sections.

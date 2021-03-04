@@ -4,7 +4,7 @@
 engineInputGHCSchema#/definitions/dailyOcupation/properties/maximumOccupancy/properties/restriction
 ```
 
-Indicate if the incompatibility is a strict, avoid (penalisable at optimization) or ignore.
+Indicate whether the incompatibility is a strict, ignore, preferred (strong optimization weight) or accordingToRule (weight according to optimization rule).
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

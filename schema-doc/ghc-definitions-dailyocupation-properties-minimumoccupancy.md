@@ -24,7 +24,7 @@ Minimum teaching time of the teacher with students and other non-teaching activi
 
 ## restriction
 
-Indicate if the incompatibility is a strict, avoid (penalisable at optimization) or ignore.
+Indicate whether the incompatibility is a strict, ignore, preferred (strong optimization weight) or accordingToRule (weight according to optimization rule).
 
 
 `restriction`
@@ -51,7 +51,7 @@ unknown ([RestrictionType](ghc-definitions-restrictiontype.md))
 
 ## setting
 
-Indicates whether the automatic calculation of the value must be adjusted to higher or lower. The adjustment is made with the duration of the greater section.
+Indicates whether the automatic calculation of the value must be adjusted to higher or lower. The adjustment will set with the duration of the greater section.
 
 
 `setting`

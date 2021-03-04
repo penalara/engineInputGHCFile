@@ -4,7 +4,7 @@
 engineInputGHCSchema#/definitions/dailyOcupation/properties/minimumOccupancy/properties/setting
 ```
 
-Indicates whether the automatic calculation of the value must be adjusted to higher or lower. The adjustment is made with the duration of the greater section.
+Indicates whether the automatic calculation of the value must be adjusted to higher or lower. The adjustment will set with the duration of the greater section.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

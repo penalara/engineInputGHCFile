@@ -4,7 +4,7 @@
 engineInputGHCSchema#/definitions/onCallServiceframeTemplate
 ```
 
-Templates with teacher on-call assignment preferences.
+Template with teacher's preferences in the on-call service.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

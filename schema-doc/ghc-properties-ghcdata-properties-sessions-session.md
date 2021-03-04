@@ -168,8 +168,11 @@ It contains the information about the classrooms for the class units. At least o
 
 ## frameTemplate
 
-Class unit availability to be assigned to the sections.
+Complete template of preferences.
 
+
+> It have non-preferred sections.
+>
 
 `frameTemplate`
 

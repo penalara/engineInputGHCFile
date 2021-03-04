@@ -65,7 +65,7 @@ The default value is:
 
 ## teacherFrameTemplate
 
-Templates with teacher on-call assignment preferences.
+Template with teacher's preferences in the on-call service.
 
 
 `teacherFrameTemplate`

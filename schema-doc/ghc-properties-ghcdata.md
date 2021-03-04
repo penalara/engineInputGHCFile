@@ -230,7 +230,7 @@ This indicates the weights that the weighting options will have for the engine o
 
 ## engineSettings
 
-Custom parameters about engine configuration.
+Customised engine configuration parameters.
 
 
 `engineSettings`

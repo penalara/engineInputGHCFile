@@ -4,8 +4,11 @@
 engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/frameTemplate
 ```
 
-Class unit availability to be assigned to the sections.
+Complete template of preferences.
 
+
+> It have non-preferred sections.
+>
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
 | :------------------ | ---------- | -------------- | ----------------------- | :---------------- | --------------------- | ------------------- | ------------------------------------------------------------------ |

@@ -4,7 +4,7 @@
 engineInputGHCSchema#/properties/ghcData/properties/engineSettings/properties/teacherBalance
 ```
 
-Indicates If the optimizer should balance the timetables of the different teachers, to avoid very bad schedules for a particular teacher.
+It indicates whether the optimiser should balance the timetables of different teachers, to avoid very bad timetables for a particular teacher.
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |

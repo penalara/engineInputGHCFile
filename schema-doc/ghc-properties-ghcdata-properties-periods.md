@@ -27,7 +27,7 @@ Weeks or periods with different assignments which contains the timetable.
 
 ## followedPeriods
 
-Indicates whether, the periods or weeks, considered consecutive days the last day of the previous one, with the first of the next.
+It indicates whether periods or weeks consider the last day of the previous period or week as consecutive days with the first day of the following period or week.
 
 
 `followedPeriods`

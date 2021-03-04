@@ -24,7 +24,7 @@ Minutes of free time at first or last hours of the day.
 
 ## type
 
-Indicate if the incompatibility is a strict, avoid (penalisable at optimization) or ignore.
+Indicate whether the incompatibility is strict, avoid (penalisable in optimisation) or ignored.
 
 
 `type`
