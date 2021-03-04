@@ -13,13 +13,7 @@
         <name>Peñalara Software S.L.</name>
         <url>https://www.penalara.com</url>
     </organization>
-    <licenses>
-		<license>
-			<name>GNU Lesser General Public License v2.1</name>
-			<url>https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html</url>
-		</license>
-    </licenses>
-  
+    
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>    
         <java.version>11</java.version>
@@ -27,6 +21,31 @@
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
     
+     <!-- License for the project -->
+    <licenses>
+		<license>
+			<name>GNU Lesser General Public License v2.1</name>
+			<url>https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html</url>
+		</license>
+    </licenses> 
+    
+    <!-- developers on project -->
+	<developers>
+	   	<developer>
+	      <name>David B.</name>
+	      <email>dburgos@penalara.com</email>
+	      <organization>${project.organization.name}</organization>
+	      <organizationUrl>${project.organization.url}</organizationUrl>
+	    </developer>
+		<developer>
+	      <name>Javier A.B.</name>
+	      <email>jabellota@penalara.com</email>
+	      <organization>${project.organization.name}</organization>
+	      <organizationUrl>${project.organization.url}</organizationUrl>
+	    </developer>
+  	</developers>
+  
+    <!-- Project Dependencies -->
     <dependencies>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
@@ -50,7 +69,6 @@
                     <includeToString>false</includeToString>
                     <useTitleAsClassname>true</useTitleAsClassname>
                     <useDoubleNumbers>false</useDoubleNumbers>
-                    <!--<timeType></timeType>-->
                 </configuration>
                 <executions>
                     <execution>
@@ -59,8 +77,54 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>          
+            </plugin>
+            <!-- GnuPG Sign -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-gpg-plugin</artifactId>
+				<version>1.5</version>
+  				<executions>
+					<execution>
+						<id>sign-artifacts</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>sign</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<!-- Sonatype -->
+			<plugin>
+				<groupId>org.sonatype.plugins</groupId>
+				<artifactId>nexus-staging-maven-plugin</artifactId>
+				<version>1.6.7</version>
+				<extensions>true</extensions>
+				<configuration>
+					<serverId>ossrh</serverId>
+					<nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
+					<autoReleaseAfterClose>true</autoReleaseAfterClose>
+				</configuration>
+			</plugin>          
         </plugins>
     </build>
+    
+    <!-- Source Control Information -->
+	<scm>
+	  <connection>scm:git:git://github.com/penalara/engineInputGHCFile.git</connection>
+	  <developerConnection>scm:git:ssh://github.com/penalara/engineInputGHCFile.git</developerConnection>
+	  <url>https://github.com/penalara/engineInputGHCFile/tree/main</url>
+	</scm>
+	
+	<!-- Distribution Information -->
+	<distributionManagement>
+		<snapshotRepository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+		<repository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
+	</distributionManagement>
     
 </project>
