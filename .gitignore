@@ -5,7 +5,7 @@ tmp/
 *.bak
 *.swp
 *~.nib
-local.properties
+*.properties
 .classpath
 .settings/
 .project
