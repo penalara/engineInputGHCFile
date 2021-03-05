@@ -3,7 +3,7 @@
 
     <groupId>com.penalara.ghc</groupId>
     <artifactId>engineInputGHCFile</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.1</version>
     <packaging>jar</packaging>
 
     <name>EngineInputGHCFile</name>
@@ -144,7 +144,7 @@
 	  <connection>scm:git:ssh://git@github.com/penalara/engineInputGHCFile.git</connection>
 	  <developerConnection>scm:git:ssh://git@github.com/penalara/engineInputGHCFile.git</developerConnection>
 	  <url>https://github.com/penalara/engineInputGHCFile/tree/main</url>
-  	  <tag>HEAD</tag>
+  	  <tag>engineInputGHCFile-1.0.1</tag>
   	</scm>
   	
   	
