@@ -71,12 +71,42 @@
                 </configuration>
                 <executions>
                     <execution>
+                    	<phase>prepare-package</phase>
                         <goals>
                             <goal>generate</goal>
                         </goals>
                     </execution>
                 </executions>
             </plugin>
+        	<!-- Sources -->
+        	<plugin>
+    			<groupId>org.apache.maven.plugins</groupId>
+    			<artifactId>maven-source-plugin</artifactId>
+    			<version>3.2.1</version>
+    			<executions>
+     				<execution>
+      					<id>attach-sources</id>
+      					<goals>
+       						<goal>jar-no-fork</goal>
+      					</goals>
+    				</execution>
+    			</executions>
+   			</plugin>
+   			<!-- Javadocs -->
+   			<plugin>
+    			<groupId>org.apache.maven.plugins</groupId>
+    			<artifactId>maven-javadoc-plugin</artifactId>
+    			<version>3.2.0</version>
+    			<executions>
+     				<execution>
+      					<id>attach-javadocs</id>
+      					<phase>package</phase>      					
+      					<goals>
+       						<goal>javadoc</goal>
+      					</goals>
+    				</execution>
+    			</executions>
+   			</plugin>
             <!-- GnuPG Sign -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -84,7 +114,7 @@
 				<version>1.5</version>
   				<executions>
 					<execution>
-						<id>sign-artifacts</id>
+						<id>sign-artifacts</id>						
 						<phase>verify</phase>
 						<goals>
 							<goal>sign</goal>
@@ -107,8 +137,15 @@
         </plugins>
     </build>
     
-
-	
+    
+    <!-- Source Control Information -->
+	<scm>
+	  <connection>scm:git:git://github.com/penalara/engineInputGHCFile.git</connection>
+	  <developerConnection>scm:git:ssh://github.com/penalara/engineInputGHCFile.git</developerConnection>
+	  <url>https://github.com/penalara/engineInputGHCFile/tree/main</url>
+  	</scm>
+  	
+  	
 	<!-- Distribution Information -->
 	<distributionManagement>
 		<snapshotRepository>
