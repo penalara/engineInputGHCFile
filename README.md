@@ -1,4 +1,4 @@
-# engineInputGHCFile
+# EngineInputGHCFile
 
 EngineInputGHCFile is a project from Peñalara.  Peñalara is a Spanish company with more than 20 years of experience. We provide the reference software for the creation of school timetables around the world. More information about at [Peñalara Website](https://www.penalara.com)
 
@@ -17,7 +17,7 @@ The projects contains:
 
 Check the [Reference Documentation about Schema](schema-doc/README.md)
 
-# Get POJO Classes as Maven Dependency
+### Get POJO Classes as Maven Dependency
 
 You can add this code to your pom.xml to get the Java Class to serialize/deserialize the GHC-Engine input json .
 
