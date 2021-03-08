@@ -63,6 +63,7 @@
                 <version>1.0.2</version>
                 <configuration> <!-- Documentation at http://joelittlejohn.github.io/jsonschema2pojo/site/1.0.2/generate-mojo.html -->
                     <sourceDirectory>${basedir}/src/main/resources/schema</sourceDirectory>
+                    <outputDirectory>${basedir}/src/main/java</outputDirectory>
                     <targetPackage>com.penalara.ghc.jsonghcfile.engineinput</targetPackage>
                     <removeOldOutput>true</removeOldOutput>
                     <includeHashcodeAndEquals>false</includeHashcodeAndEquals>
@@ -72,7 +73,7 @@
                 </configuration>
                 <executions>
                     <execution>
-                    	<phase>prepare-package</phase>
+                    	<phase>generate-sources</phase>
                         <goals>
                             <goal>generate</goal>
                         </goals>
