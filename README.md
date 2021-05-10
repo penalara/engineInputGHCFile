@@ -9,6 +9,7 @@ The projects contains:
  -   Json Schema specification.
  - Simple Json example.
  - Plugin for automatic generation of Java POJO classes.
+ - Java POJO classes.
  - Markdown Documentation about the file structure.
 
 
