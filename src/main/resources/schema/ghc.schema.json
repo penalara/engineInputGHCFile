@@ -5,8 +5,6 @@
     "description": "Schema document to keep the timetable information that will be created by the PenalaraGHC.",
     "type": "object",
     "required": [
-        "versionJson",
-        "date",
         "ghcData"
     ],
     "properties": {
@@ -15,9 +13,15 @@
             "description":"Version of EngineInputGHCSchema used",
             "type":"string"
         },
-        "date": {
+        "createdDate": {
+            "title": "JsonCreatedDate",
+            "description": "Json generation date.",
+            "type": "string",
+            "format": "date-time"
+        },
+		"lastModifiedDate": {
             "title": "JsonGenerationDate",
-            "description": "Json's generation date.",
+            "description": "Json last modification date.",
             "type": "string",
             "format": "date-time"
         },
