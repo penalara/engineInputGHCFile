@@ -17,11 +17,12 @@ Schema document to keep the timetable information that will be created by the
 
 # EngineInputGHCSchema Properties
 
-| Property                    | Type     | Required | Nullable       | Defined by                                                                                             |
-| :-------------------------- | -------- | -------- | -------------- | :----------------------------------------------------------------------------------------------------- |
-| [versionJson](#versionjson) | `string` | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-schemaversion.md "engineInputGHCSchema#/properties/versionJson") |
-| [date](#date)               | `string` | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-jsongenerationdate.md "engineInputGHCSchema#/properties/date")   |
-| [ghcData](#ghcdata)         | `object` | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata.md "engineInputGHCSchema#/properties/ghcData")           |
+| Property                              | Type     | Required | Nullable       | Defined by                                                                                                       |
+| :------------------------------------ | -------- | -------- | -------------- | :--------------------------------------------------------------------------------------------------------------- |
+| [versionJson](#versionjson)           | `string` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-schemaversion.md "engineInputGHCSchema#/properties/versionJson")           |
+| [createdDate](#createddate)           | `string` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-jsoncreateddate.md "engineInputGHCSchema#/properties/createdDate")         |
+| [lastModifiedDate](#lastmodifieddate) | `string` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-jsongenerationdate.md "engineInputGHCSchema#/properties/lastModifiedDate") |
+| [ghcData](#ghcdata)                   | `object` | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata.md "engineInputGHCSchema#/properties/ghcData")                     |
 
 ## versionJson
 
@@ -30,7 +31,7 @@ Version of EngineInputGHCSchema used
 
 `versionJson`
 
--   is required
+-   is optional
 -   Type: `string` ([SchemaVersion](ghc-properties-schemaversion.md))
 -   cannot be null
 -   defined in: [EngineInputGHCSchema](ghc-properties-schemaversion.md "engineInputGHCSchema#/properties/versionJson")
@@ -39,23 +40,43 @@ Version of EngineInputGHCSchema used
 
 `string` ([SchemaVersion](ghc-properties-schemaversion.md))
 
-## date
+## createdDate
 
-Json's generation date.
+Json generation date.
 
 
-`date`
+`createdDate`
 
--   is required
+-   is optional
+-   Type: `string` ([JsonCreatedDate](ghc-properties-jsoncreateddate.md))
+-   cannot be null
+-   defined in: [EngineInputGHCSchema](ghc-properties-jsoncreateddate.md "engineInputGHCSchema#/properties/createdDate")
+
+### createdDate Type
+
+`string` ([JsonCreatedDate](ghc-properties-jsoncreateddate.md))
+
+### createdDate Constraints
+
+**date time**: the string must be a date time string, according to [RFC 3339, section 5.6](https://tools.ietf.org/html/rfc3339 "check the specification")
+
+## lastModifiedDate
+
+Json last modification date.
+
+
+`lastModifiedDate`
+
+-   is optional
 -   Type: `string` ([JsonGenerationDate](ghc-properties-jsongenerationdate.md))
 -   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-properties-jsongenerationdate.md "engineInputGHCSchema#/properties/date")
+-   defined in: [EngineInputGHCSchema](ghc-properties-jsongenerationdate.md "engineInputGHCSchema#/properties/lastModifiedDate")
 
-### date Type
+### lastModifiedDate Type
 
 `string` ([JsonGenerationDate](ghc-properties-jsongenerationdate.md))
 
-### date Constraints
+### lastModifiedDate Constraints
 
 **date time**: the string must be a date time string, according to [RFC 3339, section 5.6](https://tools.ietf.org/html/rfc3339 "check the specification")
 
