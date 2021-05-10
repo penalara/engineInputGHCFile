@@ -56,6 +56,26 @@ public class Subject {
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public Subject() {
+    }
+
+    /**
+     * 
+     * @param frameTemplate
+     * @param studentMentoring
+     * @param id
+     */
+    public Subject(String id, Boolean studentMentoring, List<SectionPreference> frameTemplate) {
+        super();
+        this.id = id;
+        this.studentMentoring = studentMentoring;
+        this.frameTemplate = frameTemplate;
+    }
+
+    /**
      * Subject identifier.
      * (Required)
      * 

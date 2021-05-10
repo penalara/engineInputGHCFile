@@ -75,6 +75,30 @@ public class Teacher {
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public Teacher() {
+    }
+
+    /**
+     * 
+     * @param associationIdentifier
+     * @param frameTemplate
+     * @param periodSettings
+     * @param generalSettings
+     * @param id
+     */
+    public Teacher(String id, String associationIdentifier, List<SectionPreference> frameTemplate, GeneralSettings generalSettings, List<PeriodSetting> periodSettings) {
+        super();
+        this.id = id;
+        this.associationIdentifier = associationIdentifier;
+        this.frameTemplate = frameTemplate;
+        this.generalSettings = generalSettings;
+        this.periodSettings = periodSettings;
+    }
+
+    /**
      * 
      * (Required)
      * 

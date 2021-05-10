@@ -38,6 +38,24 @@ public class Distance {
     private Integer minutes;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public Distance() {
+    }
+
+    /**
+     * 
+     * @param minutes
+     * @param refBuilding
+     */
+    public Distance(String refBuilding, Integer minutes) {
+        super();
+        this.refBuilding = refBuilding;
+        this.minutes = minutes;
+    }
+
+    /**
      * Identifier of the other building that refers to the distance.
      * (Required)
      * 

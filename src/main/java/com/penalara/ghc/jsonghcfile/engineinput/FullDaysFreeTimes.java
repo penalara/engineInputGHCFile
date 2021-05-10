@@ -43,6 +43,24 @@ public class FullDaysFreeTimes {
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public FullDaysFreeTimes() {
+    }
+
+    /**
+     * 
+     * @param strictDays
+     * @param preferredDays
+     */
+    public FullDaysFreeTimes(Integer strictDays, Integer preferredDays) {
+        super();
+        this.strictDays = strictDays;
+        this.preferredDays = preferredDays;
+    }
+
+    /**
      * Number of strict days when teacher should be free.
      * 
      */

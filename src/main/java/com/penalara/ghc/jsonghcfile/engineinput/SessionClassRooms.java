@@ -60,6 +60,28 @@ public class SessionClassRooms {
     private String refBuilding;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public SessionClassRooms() {
+    }
+
+    /**
+     * 
+     * @param capacityPreference
+     * @param capacityType
+     * @param classRoomsToAssign
+     * @param refBuilding
+     */
+    public SessionClassRooms(List<RefClassRoomToAssign> classRoomsToAssign, SessionClassRooms.CapacityPreference capacityPreference, SessionClassRooms.CapacityType capacityType, String refBuilding) {
+        super();
+        this.classRoomsToAssign = classRoomsToAssign;
+        this.capacityPreference = capacityPreference;
+        this.capacityType = capacityType;
+        this.refBuilding = refBuilding;
+    }
+
+    /**
      * ClassRoomsToAssign
      * <p>
      * List of classrooms to the session. Each object in the list represent one classroom that must be assigned.

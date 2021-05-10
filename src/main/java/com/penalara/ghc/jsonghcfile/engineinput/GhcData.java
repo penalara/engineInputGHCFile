@@ -166,6 +166,46 @@ public class GhcData {
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public GhcData() {
+    }
+
+    /**
+     * 
+     * @param classRoomsSets
+     * @param sessions
+     * @param frames
+     * @param subjects
+     * @param groups
+     * @param optimizationWeights
+     * @param teachers
+     * @param buildings
+     * @param periods
+     * @param classRooms
+     * @param engineSettings
+     * @param onCallServices
+     * @param tasks
+     */
+    public GhcData(Periods periods, List<Frame> frames, List<Building> buildings, List<Classroom> classRooms, List<ClassRoomSet> classRoomsSets, List<Task> tasks, List<Teacher> teachers, List<Subject> subjects, List<Group> groups, List<Session> sessions, List<OnCallService> onCallServices, OptimizationWeights optimizationWeights, EngineSettings engineSettings) {
+        super();
+        this.periods = periods;
+        this.frames = frames;
+        this.buildings = buildings;
+        this.classRooms = classRooms;
+        this.classRoomsSets = classRoomsSets;
+        this.tasks = tasks;
+        this.teachers = teachers;
+        this.subjects = subjects;
+        this.groups = groups;
+        this.sessions = sessions;
+        this.onCallServices = onCallServices;
+        this.optimizationWeights = optimizationWeights;
+        this.engineSettings = engineSettings;
+    }
+
+    /**
      * Periods
      * <p>
      * Weeks or periods with different assignments which contains the timetable.

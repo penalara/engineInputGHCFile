@@ -39,6 +39,24 @@ public class FreeTimeFirstOrLastHoursDay {
     private Integer minutes;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public FreeTimeFirstOrLastHoursDay() {
+    }
+
+    /**
+     * 
+     * @param minutes
+     * @param type
+     */
+    public FreeTimeFirstOrLastHoursDay(ConditionType type, Integer minutes) {
+        super();
+        this.type = type;
+        this.minutes = minutes;
+    }
+
+    /**
      * ConditionType
      * <p>
      * Indicate whether the incompatibility is strict, avoid (penalisable in optimisation) or ignored.

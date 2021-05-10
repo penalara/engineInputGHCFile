@@ -68,6 +68,32 @@ public class TeachersOptimization {
     private Integer onCallSectionsOnBorders = 1;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public TeachersOptimization() {
+    }
+
+    /**
+     * 
+     * @param onCallSectionsOnBorders
+     * @param uniformDailyDistribution
+     * @param excessPermanence
+     * @param excessContinuousTeaching
+     * @param teacherIncompatibities
+     * @param continuousSessionsWithGroup
+     */
+    public TeachersOptimization(Integer teacherIncompatibities, Integer uniformDailyDistribution, Integer excessContinuousTeaching, Integer excessPermanence, Integer continuousSessionsWithGroup, Integer onCallSectionsOnBorders) {
+        super();
+        this.teacherIncompatibities = teacherIncompatibities;
+        this.uniformDailyDistribution = uniformDailyDistribution;
+        this.excessContinuousTeaching = excessContinuousTeaching;
+        this.excessPermanence = excessPermanence;
+        this.continuousSessionsWithGroup = continuousSessionsWithGroup;
+        this.onCallSectionsOnBorders = onCallSectionsOnBorders;
+    }
+
+    /**
      * It indicates the weight of the teacher's incompatibilities that can be optimised.
      * 
      */

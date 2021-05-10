@@ -47,6 +47,24 @@ public class MinimumOccupancy {
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public MinimumOccupancy() {
+    }
+
+    /**
+     * 
+     * @param restriction
+     * @param setting
+     */
+    public MinimumOccupancy(RestrictionType restriction, OcupationSettingType setting) {
+        super();
+        this.restriction = restriction;
+        this.setting = setting;
+    }
+
+    /**
      * RestrictionType
      * <p>
      * Indicate whether the incompatibility is a strict, ignore, preferred (strong optimization weight) or accordingToRule (weight according to optimization rule).

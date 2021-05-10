@@ -36,6 +36,24 @@ public class EngineSettings {
     private Boolean countGapsAroundMidday = true;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public EngineSettings() {
+    }
+
+    /**
+     * 
+     * @param teacherBalance
+     * @param countGapsAroundMidday
+     */
+    public EngineSettings(Boolean teacherBalance, Boolean countGapsAroundMidday) {
+        super();
+        this.teacherBalance = teacherBalance;
+        this.countGapsAroundMidday = countGapsAroundMidday;
+    }
+
+    /**
      * It indicates whether the optimiser should balance the timetables of different teachers, to avoid very bad timetables for a particular teacher.
      * 
      */

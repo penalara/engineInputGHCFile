@@ -89,6 +89,34 @@ public class Group {
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public Group() {
+    }
+
+    /**
+     * 
+     * @param refFrame
+     * @param frameTemplate
+     * @param gapsAlwaysInNonPreferred
+     * @param freeAfternoons
+     * @param numStudents
+     * @param id
+     * @param notGaps
+     */
+    public Group(String id, String refFrame, List<SectionPreference> frameTemplate, Integer numStudents, Integer freeAfternoons, Boolean notGaps, Boolean gapsAlwaysInNonPreferred) {
+        super();
+        this.id = id;
+        this.refFrame = refFrame;
+        this.frameTemplate = frameTemplate;
+        this.numStudents = numStudents;
+        this.freeAfternoons = freeAfternoons;
+        this.notGaps = notGaps;
+        this.gapsAlwaysInNonPreferred = gapsAlwaysInNonPreferred;
+    }
+
+    /**
      * Group identifier.
      * (Required)
      * 

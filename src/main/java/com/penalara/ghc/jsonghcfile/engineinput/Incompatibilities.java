@@ -114,6 +114,38 @@ public class Incompatibilities {
     private FreeTimeAroundMidday freeTimeAroundMidday;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public Incompatibilities() {
+    }
+
+    /**
+     * 
+     * @param doNotFinishAtLastMorningSectionIfStartAtFirstAfternoonSection
+     * @param freeTimeBetweenDayBeforeAndCurrent
+     * @param doNotFinishAtLastMorningSectionIfStartedAtFirstMorningSection
+     * @param freeTimeFirstOrLastHoursDay
+     * @param doNotFinishAtLastAfternoonSectionIfStartedAtFirstAfternoonSection
+     * @param doNotFinishAtLastMorningSectionIfHasAfternoonAssignment
+     * @param freeTimeBetweenEndWeekAndStartWeekDays
+     * @param freeTimeAroundMidday
+     * @param doNotStartAtFirstMorningSectionIfHasAfternoonAssignment
+     */
+    public Incompatibilities(FreeTimeBetweenDays freeTimeBetweenDayBeforeAndCurrent, FreeTimeBetweenWeeksBorders freeTimeBetweenEndWeekAndStartWeekDays, FreeTimeFirstOrLastHoursDay freeTimeFirstOrLastHoursDay, Incompatibilities.DoNotFinishAtLastAfternoonSection doNotFinishAtLastAfternoonSectionIfStartedAtFirstAfternoonSection, Incompatibilities.DoNotFinishAtLastMorningSection doNotFinishAtLastMorningSectionIfStartedAtFirstMorningSection, Incompatibilities.DoNotFinishAtLastMorningSectionIfStartAtFirstAfternoon doNotFinishAtLastMorningSectionIfStartAtFirstAfternoonSection, Incompatibilities.DoNotFinishAtLastMorningSectionIfHasAfternoon doNotFinishAtLastMorningSectionIfHasAfternoonAssignment, Incompatibilities.DoNotStartAtFirstMorningSection doNotStartAtFirstMorningSectionIfHasAfternoonAssignment, FreeTimeAroundMidday freeTimeAroundMidday) {
+        super();
+        this.freeTimeBetweenDayBeforeAndCurrent = freeTimeBetweenDayBeforeAndCurrent;
+        this.freeTimeBetweenEndWeekAndStartWeekDays = freeTimeBetweenEndWeekAndStartWeekDays;
+        this.freeTimeFirstOrLastHoursDay = freeTimeFirstOrLastHoursDay;
+        this.doNotFinishAtLastAfternoonSectionIfStartedAtFirstAfternoonSection = doNotFinishAtLastAfternoonSectionIfStartedAtFirstAfternoonSection;
+        this.doNotFinishAtLastMorningSectionIfStartedAtFirstMorningSection = doNotFinishAtLastMorningSectionIfStartedAtFirstMorningSection;
+        this.doNotFinishAtLastMorningSectionIfStartAtFirstAfternoonSection = doNotFinishAtLastMorningSectionIfStartAtFirstAfternoonSection;
+        this.doNotFinishAtLastMorningSectionIfHasAfternoonAssignment = doNotFinishAtLastMorningSectionIfHasAfternoonAssignment;
+        this.doNotStartAtFirstMorningSectionIfHasAfternoonAssignment = doNotStartAtFirstMorningSectionIfHasAfternoonAssignment;
+        this.freeTimeAroundMidday = freeTimeAroundMidday;
+    }
+
+    /**
      * FreeTimeBetweenDays
      * <p>
      * Minutes between departure and arrival of the following day.

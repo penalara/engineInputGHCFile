@@ -42,6 +42,24 @@ public class MinimumSeparationToSession {
     private Integer days;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public MinimumSeparationToSession() {
+    }
+
+    /**
+     * 
+     * @param days
+     * @param refSessions
+     */
+    public MinimumSeparationToSession(List<Integer> refSessions, Integer days) {
+        super();
+        this.refSessions = refSessions;
+        this.days = days;
+    }
+
+    /**
      * SessionRefs
      * <p>
      * List of sessions references.

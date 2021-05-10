@@ -72,6 +72,30 @@ public class Classroom {
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public Classroom() {
+    }
+
+    /**
+     * 
+     * @param frameTemplate
+     * @param id
+     * @param fullDay
+     * @param refBuilding
+     * @param capacity
+     */
+    public Classroom(String id, Integer capacity, List<BannedSectionPreference> frameTemplate, String refBuilding, Boolean fullDay) {
+        super();
+        this.id = id;
+        this.capacity = capacity;
+        this.frameTemplate = frameTemplate;
+        this.refBuilding = refBuilding;
+        this.fullDay = fullDay;
+    }
+
+    /**
      * Identifier name of the classroom.
      * (Required)
      * 

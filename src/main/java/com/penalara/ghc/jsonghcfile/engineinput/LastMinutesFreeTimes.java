@@ -52,6 +52,26 @@ public class LastMinutesFreeTimes {
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public LastMinutesFreeTimes() {
+    }
+
+    /**
+     * 
+     * @param minutes
+     * @param strictDays
+     * @param preferredDays
+     */
+    public LastMinutesFreeTimes(Integer strictDays, Integer preferredDays, Integer minutes) {
+        super();
+        this.strictDays = strictDays;
+        this.preferredDays = preferredDays;
+        this.minutes = minutes;
+    }
+
+    /**
      * Strict number of days on which the teacher must have the interval free at the end of the day.
      * 
      */

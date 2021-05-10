@@ -112,6 +112,42 @@ public class SessionSettings {
     private SessionSettings.SamePositionEveryPeriod samePositionEveryPeriod = SessionSettings.SamePositionEveryPeriod.fromValue("ignore");
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public SessionSettings() {
+    }
+
+    /**
+     * 
+     * @param avoidSectionsAfterBreak
+     * @param avoidAfternoonSessions
+     * @param nonBreakInTheMiddleOfSession
+     * @param avoidAssingLastHourAndFirstNextDay
+     * @param computeForMaxMinOccupancy
+     * @param avoidFirstHourSessions
+     * @param avoidLastHourSessions
+     * @param samePositionEveryPeriod
+     * @param sameHourPreference
+     * @param consecutiveWeeksBorders
+     * @param followedDaysPreference
+     */
+    public SessionSettings(Boolean computeForMaxMinOccupancy, Boolean avoidFirstHourSessions, Boolean avoidLastHourSessions, Boolean avoidAssingLastHourAndFirstNextDay, SessionSettings.SameHourPreference sameHourPreference, Boolean avoidAfternoonSessions, Boolean avoidSectionsAfterBreak, Boolean nonBreakInTheMiddleOfSession, SessionSettings.FollowedDaysPreference followedDaysPreference, Boolean consecutiveWeeksBorders, SessionSettings.SamePositionEveryPeriod samePositionEveryPeriod) {
+        super();
+        this.computeForMaxMinOccupancy = computeForMaxMinOccupancy;
+        this.avoidFirstHourSessions = avoidFirstHourSessions;
+        this.avoidLastHourSessions = avoidLastHourSessions;
+        this.avoidAssingLastHourAndFirstNextDay = avoidAssingLastHourAndFirstNextDay;
+        this.sameHourPreference = sameHourPreference;
+        this.avoidAfternoonSessions = avoidAfternoonSessions;
+        this.avoidSectionsAfterBreak = avoidSectionsAfterBreak;
+        this.nonBreakInTheMiddleOfSession = nonBreakInTheMiddleOfSession;
+        this.followedDaysPreference = followedDaysPreference;
+        this.consecutiveWeeksBorders = consecutiveWeeksBorders;
+        this.samePositionEveryPeriod = samePositionEveryPeriod;
+    }
+
+    /**
      *  It indicates whether the class unit counts for the maximum and minimum daily teacher occupancy. By default, the engine computes class units with students.
      * 
      */

@@ -91,6 +91,34 @@ public class Section {
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public Section() {
+    }
+
+    /**
+     * 
+     * @param duration
+     * @param entryTime
+     * @param exitTime
+     * @param allowed
+     * @param index
+     * @param type
+     * @param day
+     */
+    public Section(Integer day, Integer index, String entryTime, String exitTime, Integer duration, Section.Type type, Boolean allowed) {
+        super();
+        this.day = day;
+        this.index = index;
+        this.entryTime = entryTime;
+        this.exitTime = exitTime;
+        this.duration = duration;
+        this.type = type;
+        this.allowed = allowed;
+    }
+
+    /**
      * Day of the week where the section is located.
      * (Required)
      * 

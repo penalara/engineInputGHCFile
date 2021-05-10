@@ -39,6 +39,24 @@ public class FreeTimeBetweenWeeksBorders {
     private Integer minutes;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public FreeTimeBetweenWeeksBorders() {
+    }
+
+    /**
+     * 
+     * @param minutes
+     * @param type
+     */
+    public FreeTimeBetweenWeeksBorders(ConditionType type, Integer minutes) {
+        super();
+        this.type = type;
+        this.minutes = minutes;
+    }
+
+    /**
      * ConditionType
      * <p>
      * Indicate whether the incompatibility is strict, avoid (penalisable in optimisation) or ignored.

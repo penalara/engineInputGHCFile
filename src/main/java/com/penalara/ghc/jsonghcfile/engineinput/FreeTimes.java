@@ -60,6 +60,28 @@ public class FreeTimes {
     private ConsecutiveAnyTimeFreeTimes consecutiveAnyTime;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public FreeTimes() {
+    }
+
+    /**
+     * 
+     * @param consecutiveAnyTime
+     * @param fullDay
+     * @param firstMinutes
+     * @param lastMinutes
+     */
+    public FreeTimes(FullDaysFreeTimes fullDay, FirstMinutesFreeTimes firstMinutes, LastMinutesFreeTimes lastMinutes, ConsecutiveAnyTimeFreeTimes consecutiveAnyTime) {
+        super();
+        this.fullDay = fullDay;
+        this.firstMinutes = firstMinutes;
+        this.lastMinutes = lastMinutes;
+        this.consecutiveAnyTime = consecutiveAnyTime;
+    }
+
+    /**
      * FullDaysFreeTimes
      * <p>
      * Teacher's full days of free time.

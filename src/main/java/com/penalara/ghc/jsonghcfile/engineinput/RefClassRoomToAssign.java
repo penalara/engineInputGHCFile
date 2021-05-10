@@ -49,6 +49,24 @@ public class RefClassRoomToAssign {
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public RefClassRoomToAssign() {
+    }
+
+    /**
+     * 
+     * @param classRoomsSetsList
+     * @param classRoomsList
+     */
+    public RefClassRoomToAssign(List<String> classRoomsList, List<String> classRoomsSetsList) {
+        super();
+        this.classRoomsList = classRoomsList;
+        this.classRoomsSetsList = classRoomsSetsList;
+    }
+
+    /**
      * ClassRoomRef
      * <p>
      * Available classroom list to be assigned to session.

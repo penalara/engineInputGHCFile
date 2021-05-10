@@ -45,6 +45,24 @@ public class Period {
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public Period() {
+    }
+
+    /**
+     * 
+     * @param lastDay
+     * @param id
+     */
+    public Period(String id, Integer lastDay) {
+        super();
+        this.id = id;
+        this.lastDay = lastDay;
+    }
+
+    /**
      * Period identifier.
      * (Required)
      * 

@@ -44,6 +44,26 @@ public class WeeklyStay {
     private Boolean countAroundMidday = true;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public WeeklyStay() {
+    }
+
+    /**
+     * 
+     * @param preferable
+     * @param countAroundMidday
+     * @param strict
+     */
+    public WeeklyStay(Integer strict, Integer preferable, Boolean countAroundMidday) {
+        super();
+        this.strict = strict;
+        this.preferable = preferable;
+        this.countAroundMidday = countAroundMidday;
+    }
+
+    /**
      * Strict time in minutes of maximum weekly stay.
      * 
      */

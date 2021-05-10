@@ -52,6 +52,26 @@ public class ConsecutiveAnyTimeFreeTimes {
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public ConsecutiveAnyTimeFreeTimes() {
+    }
+
+    /**
+     * 
+     * @param minutes
+     * @param strictDays
+     * @param preferredDays
+     */
+    public ConsecutiveAnyTimeFreeTimes(Integer strictDays, Integer preferredDays, Integer minutes) {
+        super();
+        this.strictDays = strictDays;
+        this.preferredDays = preferredDays;
+        this.minutes = minutes;
+    }
+
+    /**
      * Strict number of days on which the teacher must have the interval free. 
      * 
      */

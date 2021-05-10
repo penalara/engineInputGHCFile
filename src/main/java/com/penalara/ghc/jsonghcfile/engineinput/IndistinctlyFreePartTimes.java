@@ -43,6 +43,24 @@ public class IndistinctlyFreePartTimes {
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public IndistinctlyFreePartTimes() {
+    }
+
+    /**
+     * 
+     * @param preferable
+     * @param strict
+     */
+    public IndistinctlyFreePartTimes(Integer strict, Integer preferable) {
+        super();
+        this.strict = strict;
+        this.preferable = preferable;
+    }
+
+    /**
      * Strict number of mornings or afternoons indistinctly off.
      * 
      */

@@ -62,6 +62,28 @@ public class ConsecutiveGroup {
     private Boolean allowBreakBetweenSessions = false;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public ConsecutiveGroup() {
+    }
+
+    /**
+     * 
+     * @param allowBreakBetweenSessions
+     * @param id
+     * @param refSessions
+     * @param order
+     */
+    public ConsecutiveGroup(Integer id, List<Integer> refSessions, ConsecutiveGroup.Order order, Boolean allowBreakBetweenSessions) {
+        super();
+        this.id = id;
+        this.refSessions = refSessions;
+        this.order = order;
+        this.allowBreakBetweenSessions = allowBreakBetweenSessions;
+    }
+
+    /**
      * Continuous sessions group identifier.
      * (Required)
      * 

@@ -22,7 +22,8 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
     "versionJson",
-    "date",
+    "createdDate",
+    "lastModifiedDate",
     "ghcData"
 })
 public class EngineInputGHCSchema {
@@ -31,22 +32,29 @@ public class EngineInputGHCSchema {
      * SchemaVersion
      * <p>
      * Version of EngineInputGHCSchema used
-     * (Required)
      * 
      */
     @JsonProperty("versionJson")
     @JsonPropertyDescription("Version of EngineInputGHCSchema used")
     private String versionJson;
     /**
-     * JsonGenerationDate
+     * JsonCreatedDate
      * <p>
-     * Json's generation date.
-     * (Required)
+     * Json generation date.
      * 
      */
-    @JsonProperty("date")
-    @JsonPropertyDescription("Json's generation date.")
-    private Date date;
+    @JsonProperty("createdDate")
+    @JsonPropertyDescription("Json generation date.")
+    private Date createdDate;
+    /**
+     * JsonGenerationDate
+     * <p>
+     * Json last modification date.
+     * 
+     */
+    @JsonProperty("lastModifiedDate")
+    @JsonPropertyDescription("Json last modification date.")
+    private Date lastModifiedDate;
     /**
      * GhcData
      * <p>
@@ -61,10 +69,31 @@ public class EngineInputGHCSchema {
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public EngineInputGHCSchema() {
+    }
+
+    /**
+     * 
+     * @param ghcData
+     * @param createdDate
+     * @param lastModifiedDate
+     * @param versionJson
+     */
+    public EngineInputGHCSchema(String versionJson, Date createdDate, Date lastModifiedDate, GhcData ghcData) {
+        super();
+        this.versionJson = versionJson;
+        this.createdDate = createdDate;
+        this.lastModifiedDate = lastModifiedDate;
+        this.ghcData = ghcData;
+    }
+
+    /**
      * SchemaVersion
      * <p>
      * Version of EngineInputGHCSchema used
-     * (Required)
      * 
      */
     @JsonProperty("versionJson")
@@ -76,7 +105,6 @@ public class EngineInputGHCSchema {
      * SchemaVersion
      * <p>
      * Version of EngineInputGHCSchema used
-     * (Required)
      * 
      */
     @JsonProperty("versionJson")
@@ -85,27 +113,47 @@ public class EngineInputGHCSchema {
     }
 
     /**
-     * JsonGenerationDate
+     * JsonCreatedDate
      * <p>
-     * Json's generation date.
-     * (Required)
+     * Json generation date.
      * 
      */
-    @JsonProperty("date")
-    public Date getDate() {
-        return date;
+    @JsonProperty("createdDate")
+    public Date getCreatedDate() {
+        return createdDate;
+    }
+
+    /**
+     * JsonCreatedDate
+     * <p>
+     * Json generation date.
+     * 
+     */
+    @JsonProperty("createdDate")
+    public void setCreatedDate(Date createdDate) {
+        this.createdDate = createdDate;
     }
 
     /**
      * JsonGenerationDate
      * <p>
-     * Json's generation date.
-     * (Required)
+     * Json last modification date.
      * 
      */
-    @JsonProperty("date")
-    public void setDate(Date date) {
-        this.date = date;
+    @JsonProperty("lastModifiedDate")
+    public Date getLastModifiedDate() {
+        return lastModifiedDate;
+    }
+
+    /**
+     * JsonGenerationDate
+     * <p>
+     * Json last modification date.
+     * 
+     */
+    @JsonProperty("lastModifiedDate")
+    public void setLastModifiedDate(Date lastModifiedDate) {
+        this.lastModifiedDate = lastModifiedDate;
     }
 
     /**

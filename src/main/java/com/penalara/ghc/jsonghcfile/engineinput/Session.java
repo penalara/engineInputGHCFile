@@ -140,6 +140,42 @@ public class Session {
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public Session() {
+    }
+
+    /**
+     * 
+     * @param refFrame
+     * @param refTeachers
+     * @param frameTemplate
+     * @param sessionRelations
+     * @param sessionClassRooms
+     * @param refGroups
+     * @param refSubjects
+     * @param id
+     * @param refTasks
+     * @param distribution
+     * @param sessionSettings
+     */
+    public Session(Integer id, String refFrame, List<String> refTasks, List<String> refTeachers, List<String> refSubjects, List<RefGroup> refGroups, Distribution distribution, SessionClassRooms sessionClassRooms, List<SessionSectionPreference> frameTemplate, SessionSettings sessionSettings, SessionRelations sessionRelations) {
+        super();
+        this.id = id;
+        this.refFrame = refFrame;
+        this.refTasks = refTasks;
+        this.refTeachers = refTeachers;
+        this.refSubjects = refSubjects;
+        this.refGroups = refGroups;
+        this.distribution = distribution;
+        this.sessionClassRooms = sessionClassRooms;
+        this.frameTemplate = frameTemplate;
+        this.sessionSettings = sessionSettings;
+        this.sessionRelations = sessionRelations;
+    }
+
+    /**
      * Session identifier.
      * (Required)
      * 

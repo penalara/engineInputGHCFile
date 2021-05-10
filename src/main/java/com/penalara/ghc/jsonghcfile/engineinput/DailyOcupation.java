@@ -68,6 +68,30 @@ public class DailyOcupation {
     private MaximumOccupancy maximumOccupancy;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public DailyOcupation() {
+    }
+
+    /**
+     * 
+     * @param allowFreeDays
+     * @param minimumOccupancy
+     * @param maximumOccupancy
+     * @param minimumTeaching
+     * @param maximumTeaching
+     */
+    public DailyOcupation(Boolean allowFreeDays, MinimumTeaching minimumTeaching, MaximumTeaching maximumTeaching, MinimumOccupancy minimumOccupancy, MaximumOccupancy maximumOccupancy) {
+        super();
+        this.allowFreeDays = allowFreeDays;
+        this.minimumTeaching = minimumTeaching;
+        this.maximumTeaching = maximumTeaching;
+        this.minimumOccupancy = minimumOccupancy;
+        this.maximumOccupancy = maximumOccupancy;
+    }
+
+    /**
      * It indicates whether checking of minimums is omitted in the case of non-assigned days. Forbidden days are never checked.
      * 
      */

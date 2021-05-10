@@ -48,6 +48,24 @@ public class Building {
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public Building() {
+    }
+
+    /**
+     * 
+     * @param distances
+     * @param id
+     */
+    public Building(String id, List<Distance> distances) {
+        super();
+        this.id = id;
+        this.distances = distances;
+    }
+
+    /**
      * Building identifier.
      * (Required)
      * 

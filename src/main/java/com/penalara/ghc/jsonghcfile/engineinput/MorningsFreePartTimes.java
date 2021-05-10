@@ -43,6 +43,24 @@ public class MorningsFreePartTimes {
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public MorningsFreePartTimes() {
+    }
+
+    /**
+     * 
+     * @param preferable
+     * @param strict
+     */
+    public MorningsFreePartTimes(Integer strict, Integer preferable) {
+        super();
+        this.strict = strict;
+        this.preferable = preferable;
+    }
+
+    /**
      * Strict number of mornings off.
      * 
      */

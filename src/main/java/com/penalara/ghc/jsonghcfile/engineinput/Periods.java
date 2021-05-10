@@ -43,6 +43,24 @@ public class Periods {
     private List<Period> periodsList = new ArrayList<Period>();
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public Periods() {
+    }
+
+    /**
+     * 
+     * @param followedPeriods
+     * @param periodsList
+     */
+    public Periods(Boolean followedPeriods, List<Period> periodsList) {
+        super();
+        this.followedPeriods = followedPeriods;
+        this.periodsList = periodsList;
+    }
+
+    /**
      * FollowedPeriods
      * <p>
      * It indicates whether periods or weeks consider the last day of the previous period or week as consecutive days with the first day of the following period or week.

@@ -45,6 +45,24 @@ public class DifferentDays {
     private DifferentDays.DaysSetting daysSetting = DifferentDays.DaysSetting.fromValue("indifferentDaysPreferred");
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public DifferentDays() {
+    }
+
+    /**
+     * 
+     * @param refSesions
+     * @param daysSetting
+     */
+    public DifferentDays(List<Integer> refSesions, DifferentDays.DaysSetting daysSetting) {
+        super();
+        this.refSesions = refSesions;
+        this.daysSetting = daysSetting;
+    }
+
+    /**
      * RefSesions
      * <p>
      *  Sessions identifiers which class units should not be assigned on the same day.

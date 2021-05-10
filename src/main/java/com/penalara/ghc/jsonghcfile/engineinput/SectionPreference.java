@@ -65,6 +65,28 @@ public class SectionPreference {
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public SectionPreference() {
+    }
+
+    /**
+     * 
+     * @param index
+     * @param type
+     * @param day
+     * @param frame
+     */
+    public SectionPreference(Integer day, Integer index, String frame, SectionPreference.Type type) {
+        super();
+        this.day = day;
+        this.index = index;
+        this.frame = frame;
+        this.type = type;
+    }
+
+    /**
      * Day of the week when is located the section.
      * (Required)
      * 

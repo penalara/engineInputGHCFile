@@ -76,6 +76,34 @@ public class SessionsOptimization {
     private Integer classRoomsChanges = 3;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public SessionsOptimization() {
+    }
+
+    /**
+     * 
+     * @param classRoomsChanges
+     * @param bordersTimetable
+     * @param afternoonOrAfterBreakClasses
+     * @param nonPreferredClassRoom
+     * @param consecutiveDays
+     * @param samePositionEveryPeriod
+     * @param sameHourSessionClasses
+     */
+    public SessionsOptimization(Integer nonPreferredClassRoom, Integer samePositionEveryPeriod, Integer consecutiveDays, Integer bordersTimetable, Integer afternoonOrAfterBreakClasses, Integer sameHourSessionClasses, Integer classRoomsChanges) {
+        super();
+        this.nonPreferredClassRoom = nonPreferredClassRoom;
+        this.samePositionEveryPeriod = samePositionEveryPeriod;
+        this.consecutiveDays = consecutiveDays;
+        this.bordersTimetable = bordersTimetable;
+        this.afternoonOrAfterBreakClasses = afternoonOrAfterBreakClasses;
+        this.sameHourSessionClasses = sameHourSessionClasses;
+        this.classRoomsChanges = classRoomsChanges;
+    }
+
+    /**
      * It indicates the weight if the class units are configured with a preferred classroom and with a set of alternative classrooms, the weight placed in one of the alternative classrooms will be penalised.
      * 
      */

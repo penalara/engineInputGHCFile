@@ -48,6 +48,24 @@ public class Task {
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public Task() {
+    }
+
+    /**
+     * 
+     * @param frameTemplate
+     * @param id
+     */
+    public Task(String id, List<SectionPreference> frameTemplate) {
+        super();
+        this.id = id;
+        this.frameTemplate = frameTemplate;
+    }
+
+    /**
      * Task identifier.
      * (Required)
      * 

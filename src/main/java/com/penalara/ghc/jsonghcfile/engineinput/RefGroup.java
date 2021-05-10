@@ -44,6 +44,24 @@ public class RefGroup {
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public RefGroup() {
+    }
+
+    /**
+     * 
+     * @param numStudents
+     * @param refGroup
+     */
+    public RefGroup(String refGroup, Integer numStudents) {
+        super();
+        this.refGroup = refGroup;
+        this.numStudents = numStudents;
+    }
+
+    /**
      * Group identifier.
      * (Required)
      * 

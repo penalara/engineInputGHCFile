@@ -66,6 +66,30 @@ public class WeeklyVariable {
     private Boolean allowDiscontinuity = false;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public WeeklyVariable() {
+    }
+
+    /**
+     * 
+     * @param allowDiscontinuity
+     * @param minDurationDaily
+     * @param avoidMaxDuration
+     * @param minutesAmount
+     * @param maxMinutesDaily
+     */
+    public WeeklyVariable(Integer minutesAmount, Integer maxMinutesDaily, WeeklyVariable.MinDurationDaily minDurationDaily, Boolean avoidMaxDuration, Boolean allowDiscontinuity) {
+        super();
+        this.minutesAmount = minutesAmount;
+        this.maxMinutesDaily = maxMinutesDaily;
+        this.minDurationDaily = minDurationDaily;
+        this.avoidMaxDuration = avoidMaxDuration;
+        this.allowDiscontinuity = allowDiscontinuity;
+    }
+
+    /**
      * Total of session's weekly minutes.
      * (Required)
      * 

@@ -54,6 +54,26 @@ public class BannedSectionPreference {
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public BannedSectionPreference() {
+    }
+
+    /**
+     * 
+     * @param index
+     * @param day
+     * @param frame
+     */
+    public BannedSectionPreference(Integer day, Integer index, String frame) {
+        super();
+        this.day = day;
+        this.index = index;
+        this.frame = frame;
+    }
+
+    /**
      * Day of the week when the section is located.
      * (Required)
      * 

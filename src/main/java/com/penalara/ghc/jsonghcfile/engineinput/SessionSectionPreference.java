@@ -65,6 +65,28 @@ public class SessionSectionPreference {
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public SessionSectionPreference() {
+    }
+
+    /**
+     * 
+     * @param index
+     * @param type
+     * @param day
+     * @param frame
+     */
+    public SessionSectionPreference(Integer day, Integer index, String frame, SessionSectionPreference.Type type) {
+        super();
+        this.day = day;
+        this.index = index;
+        this.frame = frame;
+        this.type = type;
+    }
+
+    /**
      * Day of the week when the section is located.
      * (Required)
      * 

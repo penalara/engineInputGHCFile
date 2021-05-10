@@ -49,6 +49,24 @@ public class Frame {
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public Frame() {
+    }
+
+    /**
+     * 
+     * @param id
+     * @param sections
+     */
+    public Frame(String id, List<Section> sections) {
+        super();
+        this.id = id;
+        this.sections = sections;
+    }
+
+    /**
      * Frame identifier.
      * (Required)
      * 

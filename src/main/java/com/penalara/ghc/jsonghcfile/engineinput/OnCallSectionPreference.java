@@ -65,6 +65,28 @@ public class OnCallSectionPreference {
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public OnCallSectionPreference() {
+    }
+
+    /**
+     * 
+     * @param index
+     * @param type
+     * @param day
+     * @param frame
+     */
+    public OnCallSectionPreference(Integer day, Integer index, String frame, OnCallSectionPreference.Type type) {
+        super();
+        this.day = day;
+        this.index = index;
+        this.frame = frame;
+        this.type = type;
+    }
+
+    /**
      * Day of the week when is located the section.
      * (Required)
      * 

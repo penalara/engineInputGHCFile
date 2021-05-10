@@ -52,6 +52,26 @@ public class Distribution {
     private VariablePeriods variablePeriods;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public Distribution() {
+    }
+
+    /**
+     * 
+     * @param variablePeriods
+     * @param periods
+     * @param stablePeriods
+     */
+    public Distribution(List<String> periods, StablePeriods stablePeriods, VariablePeriods variablePeriods) {
+        super();
+        this.periods = periods;
+        this.stablePeriods = stablePeriods;
+        this.variablePeriods = variablePeriods;
+    }
+
+    /**
      * RefPeriods
      * <p>
      * List of periods or weeks in which the class unit must be assigned.

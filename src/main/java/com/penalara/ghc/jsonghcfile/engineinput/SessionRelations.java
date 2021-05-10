@@ -112,6 +112,38 @@ public class SessionRelations {
     private List<MinimumSeparationToSession> minimumSeparationTo = new ArrayList<MinimumSeparationToSession>();
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public SessionRelations() {
+    }
+
+    /**
+     * 
+     * @param differentDays
+     * @param nonSimultaneus
+     * @param previousTo
+     * @param consecutiveGroup
+     * @param minimumSeparationTo
+     * @param afterTo
+     * @param refSimultaneusGroup
+     * @param nonConsecutiveSessions
+     * @param maximumSeparationTo
+     */
+    public SessionRelations(Integer refSimultaneusGroup, DifferentDays differentDays, ConsecutiveGroup consecutiveGroup, List<Integer> nonConsecutiveSessions, List<Integer> nonSimultaneus, List<Integer> previousTo, List<Integer> afterTo, List<MaximumSeparationToSession> maximumSeparationTo, List<MinimumSeparationToSession> minimumSeparationTo) {
+        super();
+        this.refSimultaneusGroup = refSimultaneusGroup;
+        this.differentDays = differentDays;
+        this.consecutiveGroup = consecutiveGroup;
+        this.nonConsecutiveSessions = nonConsecutiveSessions;
+        this.nonSimultaneus = nonSimultaneus;
+        this.previousTo = previousTo;
+        this.afterTo = afterTo;
+        this.maximumSeparationTo = maximumSeparationTo;
+        this.minimumSeparationTo = minimumSeparationTo;
+    }
+
+    /**
      * RefSimultaneusGroup
      * <p>
      * Identifier of the group of simultaneous class units of the subject. Indicates that the class units are to be taught at the same time as the group class units. 

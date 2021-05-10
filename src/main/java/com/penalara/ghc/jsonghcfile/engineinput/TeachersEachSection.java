@@ -40,6 +40,24 @@ public class TeachersEachSection {
     private List<TeachersBySection> bySection = new ArrayList<TeachersBySection>();
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public TeachersEachSection() {
+    }
+
+    /**
+     * 
+     * @param bySection
+     * @param byDefault
+     */
+    public TeachersEachSection(Integer byDefault, List<TeachersBySection> bySection) {
+        super();
+        this.byDefault = byDefault;
+        this.bySection = bySection;
+    }
+
+    /**
      * Default value for number of teacher in all sections.
      * 
      */

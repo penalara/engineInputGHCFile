@@ -60,6 +60,28 @@ public class OptimizationWeights {
     private TeachersOptimization teachers;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public OptimizationWeights() {
+    }
+
+    /**
+     * 
+     * @param sessions
+     * @param nonPreferredPositions
+     * @param timetableGaps
+     * @param teachers
+     */
+    public OptimizationWeights(TimetableGaps timetableGaps, NonPreferredPositionsOptimization nonPreferredPositions, SessionsOptimization sessions, TeachersOptimization teachers) {
+        super();
+        this.timetableGaps = timetableGaps;
+        this.nonPreferredPositions = nonPreferredPositions;
+        this.sessions = sessions;
+        this.teachers = teachers;
+    }
+
+    /**
      * TimetableGaps
      * <p>
      * It contains options related to timetable-gaps weights.

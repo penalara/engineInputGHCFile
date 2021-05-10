@@ -50,6 +50,24 @@ public class OnCallPeriodsInfo {
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public OnCallPeriodsInfo() {
+    }
+
+    /**
+     * 
+     * @param periods
+     * @param samePositionEveryPeriod
+     */
+    public OnCallPeriodsInfo(List<String> periods, OnCallPeriodsInfo.SamePositionEveryPeriod samePositionEveryPeriod) {
+        super();
+        this.periods = periods;
+        this.samePositionEveryPeriod = samePositionEveryPeriod;
+    }
+
+    /**
      * PeriodsList
      * <p>
      * List of Periods when the service must be set.

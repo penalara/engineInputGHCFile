@@ -47,6 +47,26 @@ public class TeachersBySection {
     private Integer numTeachers;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public TeachersBySection() {
+    }
+
+    /**
+     * 
+     * @param index
+     * @param day
+     * @param numTeachers
+     */
+    public TeachersBySection(Integer day, Integer index, Integer numTeachers) {
+        super();
+        this.day = day;
+        this.index = index;
+        this.numTeachers = numTeachers;
+    }
+
+    /**
      * Day of the week.
      * (Required)
      * 

@@ -57,6 +57,26 @@ public class ClassRoomSet {
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public ClassRoomSet() {
+    }
+
+    /**
+     * 
+     * @param anonymousRooms
+     * @param rooms
+     * @param id
+     */
+    public ClassRoomSet(String id, List<String> rooms, Integer anonymousRooms) {
+        super();
+        this.id = id;
+        this.rooms = rooms;
+        this.anonymousRooms = anonymousRooms;
+    }
+
+    /**
      * ClassRooms group identifier.
      * (Required)
      * 

@@ -115,6 +115,40 @@ public class OnCallService {
     private Boolean computeForMaxMinOccupancy = false;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public OnCallService() {
+    }
+
+    /**
+     * 
+     * @param refPeriods
+     * @param inBreak
+     * @param teachersEachSection
+     * @param refFrame
+     * @param refTeachers
+     * @param computeForMaxMinOccupancy
+     * @param frameTemplate
+     * @param id
+     * @param refTask
+     * @param refBuilding
+     */
+    public OnCallService(Integer id, String refFrame, OnCallPeriodsInfo refPeriods, String refTask, Boolean inBreak, TeachersEachSection teachersEachSection, List<RefTeacher> refTeachers, List<OnCallSectionPreference> frameTemplate, String refBuilding, Boolean computeForMaxMinOccupancy) {
+        super();
+        this.id = id;
+        this.refFrame = refFrame;
+        this.refPeriods = refPeriods;
+        this.refTask = refTask;
+        this.inBreak = inBreak;
+        this.teachersEachSection = teachersEachSection;
+        this.refTeachers = refTeachers;
+        this.frameTemplate = frameTemplate;
+        this.refBuilding = refBuilding;
+        this.computeForMaxMinOccupancy = computeForMaxMinOccupancy;
+    }
+
+    /**
      * On-Call service identifier.
      * (Required)
      * 
