@@ -69,6 +69,7 @@
                     <includeHashcodeAndEquals>false</includeHashcodeAndEquals>
                     <includeToString>false</includeToString>
                     <useTitleAsClassname>true</useTitleAsClassname>
+                    <includeConstructors>true</includeConstructors>
                     <useDoubleNumbers>false</useDoubleNumbers>
                 </configuration>
                 <executions>
