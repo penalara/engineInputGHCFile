@@ -535,64 +535,58 @@
                                 "description": "Session's frame identifier.",
                                 "type": "string"
                             },
-                            "refTasks": {
-                                "title": "RefTasks",
-                                "description": "List of task in the session.",
-                                "type": "array",
-                                "minItems": 1,
-                                "additionalItems": false,
-                                "items": {
-                                    "title": "RefTasks",
-                                    "description": "Task identifier.",
-                                    "type": "string"
-                                }
+                            "refMainTask": {
+								"title": "RefMainTask",
+								"description": "Main Task identifier.",
+								"type": "string"     
                             },
-                            "refTeachers":{
-                                "title": "RefTeachers",
-                                "description": "List of teachers who teach or interact in the session.",
-                                "type": "array",
-                                "additionalItems": false,
-                                "items": {
-                                    "title": "RefTeacher",
-                                    "description": "Teacher identifier.",
-                                    "type": "string"
-                                }
+                            "refMainTeacher":{
+								"title": "RefMainTeacher",
+								"description": "Main Teacher identifier.",
+								"type": "string"                          
                             },
-                            "refSubjects": {
-                                "title": "RefSubjects",
-                                "description": "List of subject taught in the session. At least one is required for session with groups of students.",
-                                "type": "array",
-                                "additionalItems": false,
-                                "items": {
-                                    "title": "RefSubject",
-                                    "description": "Identifier name of the subject.",
-                                    "type": "string"
-                                }
+                            "refMainSubject": {
+								"title": "RefMainSubject",
+								"description": "Identifier name of the main subject.",
+								"type": "string"
+                          
                             },
-                            "refGroups": {
-                                "title": "RefGroups",
-                                "description": "List of groups who are taught in the class unit. At least one is required for teaching sessions.",
-                                "type": "array",
-                                "additionalItems": false,
-                                "items": {
-                                    "title": "RefGroup",
-                                    "description": "Value pair: group identifier and number of students.",
-                                    "type": "object",
-                                    "required":[
-                                        "refGroup"
-                                    ],
-                                    "properties":{
-                                        "refGroup": {
-                                            "description": "Group identifier.",
-                                            "type": "string"
-                                        },
-                                        "numStudents": {
-                                            "description": "Custom number of students that are in the class units. If it is not specified, the engine defaults to the value of the Group object.",
-                                            "type": "integer"
-                                        }
-                                    }
-                                }
+                            "refMainGroup": {
+								"$ref": "#/definitions/refGroup"                           
                             },
+							"otherElementsInClassRooms": {
+								"title": "OtherElementsInClassRoomsList",
+								"description": "List of other time elements in the classroom related to each other.",
+								"type": "array",
+								"additionalItems": false,
+								"items": {
+									"title": "OtherElementsInClassRooms",
+									"description": "It contains interrelated elements that are present in the session in addition to the main ones.",
+									"type": "object",
+									"$comment": "If a subject reference is not included, or of the other elements of the session (teacher and/or group), the relationship is understood by default with the corresponding main element of the session.",
+									"properties": {
+										"refSubject": {
+											"title": "SubjectReference",
+											"description": "Identifier name of other subject in the classroom.",
+											"type": "string"
+										},
+										"refTeacher":{
+											"title": "TeacherReference",
+											"description": "Identifier name of other teacher in the classroom.",
+											"type": "string"                          
+										},
+										"refGroup": {
+											"$ref": "#/definitions/refGroup"
+										},
+										"refTask": {
+											"title": "TaskReference",
+											"description": "Identifier name of the task of the other teacher.",
+											"type": "string"     
+										}										
+									}
+								}
+								
+							},
                             "distribution": { 
                                 "title":"Distribution",
                                 "description": "It contains information on how the class units of the session are distributed throughout the week. It must contain only one element between 'stablePeriods' and 'variablePeriods'.",
@@ -1920,6 +1914,24 @@
             },
             "additionalProperties": false
         },
+		"refGroup": {
+			"title": "GroupReferenceType",
+			"description": "Contains the reference to a group of the session, and optionally, the number of students of the group that attend the session.",
+			"type": "object",
+			"required":[
+				"refGroup"
+			],
+			"properties":{
+				"refIdGroup": {
+					"description": "Group identifier.",
+					"type": "string"
+				},
+				"numStudents": {
+					"description": "Custom number of students that are in the class units. If it is not specified, the engine defaults to the value of the Group object.",
+					"type": "integer"
+				}
+			}                               
+		},
         "weeklyStable": {
             "title": "WeeklyStable",
             "description": "It contains only one possible weekly distribution. Each value is a assignation day.",
