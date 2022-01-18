@@ -25,6 +25,6 @@ You can add this code to your pom.xml to get the Java Class to serialize/deseria
         <dependency>
         	<groupId>com.penalara.ghc</groupId>
         	<artifactId>engineInputGHCFile</artifactId>
-        	<version>1.0.2</version>
+        	<version>1.0.3</version>
         </dependency>
 
