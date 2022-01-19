@@ -91,62 +91,78 @@
                         "type": "object",
                         "required": [
                             "id",
-                            "sections"
+                            "days"
                         ],
                         "properties": {
                             "id": {
                                 "description": "Frame identifier.",
                                 "type": "string"
                             },
-                            "sections": {
-                                "title": "Sections",
-                                "description": "Timetable cells where class units are located.",
+                            "days": {
+                                "title": "Days",
+                                "description": "List of the days in the frame",
                                 "type": "array",
                                 "additionalItems": false,
                                 "items": {
                                     "required": [
                                         "day",
-                                        "index",
-                                        "entryTime",
-                                        "exitTime",
-                                        "duration",
-                                        "type"
+                                        "sections"
                                     ],
-                                    "title": "Section",
+                                    "title": "FrameDay",
+									"description": "Day with its sections.",
                                     "type": "object",
                                     "properties": {
                                         "day": {
-                                            "description": "Day of the week where the section is located.",
+                                            "description": "Day of the week.",
                                             "type": "integer"
                                         },
-                                        "index": {
-                                            "description": "Index built into the day where the section is located.",
-                                            "type": "integer"
-                                        },
-                                        "entryTime": {
-                                            "description": "Start time of the section.",
-                                            "type": "string",
-                                            "format": "time"
-                                        },
-                                        "exitTime": {
-                                            "description": "End time of the section.",
-                                            "type": "string",
-                                            "format": "time"
-                                        },
-                                        "duration": {
-                                            "description": "It indicates the duration (real or proportional) of the section in minutes.",
-                                            "type": "integer",
-                                            "$comment": "This indicates the duration of the section that the engine will use to assign class units. It can be the actual duration between check-in and check-out, or it can be a proportional time to simplify (hour, half hour, three-quarters of an hour...). The distribution of class units will be consistent with this duration."
-                                        },
-                                        "type": {                                            
-                                            "description": "Kind of section.",
-                                            "enum": ["teaching", "break", "midday"]
-                                        },
-                                        "allowed": {
-                                            "description": "It indicates if the section is available to assign.",
-                                            "type": "boolean",
-                                            "default": true
-                                        }
+										"sections": {
+											"title": "Sections",
+											"description": "Timetable cells where class units are located.",
+											"type": "array",
+											"additionalItems": false,
+											"items": {
+												"required": [
+													"index",
+													"entryTime",
+													"exitTime",
+													"duration",
+													"type"
+												],
+												"title": "Section",
+												"type": "object",
+												"properties": {
+													"index": {
+														"description": "Index built into the day where the section is located.",
+														"type": "integer"
+													},
+													"entryTime": {
+														"description": "Start time of the section.",
+														"type": "string",
+														"format": "time"
+													},
+													"exitTime": {
+														"description": "End time of the section.",
+														"type": "string",
+														"format": "time"
+													},
+													"duration": {
+														"description": "It indicates the duration (real or proportional) of the section in minutes.",
+														"type": "integer",
+														"$comment": "This indicates the duration of the section that the engine will use to assign class units. It can be the actual duration between check-in and check-out, or it can be a proportional time to simplify (hour, half hour, three-quarters of an hour...). The distribution of class units will be consistent with this duration."
+													},
+													"type": {                                            
+														"description": "Kind of section.",
+														"enum": ["teaching", "break", "midday"]
+													},
+													"allowed": {
+														"description": "It indicates if the section is available to assign.",
+														"type": "boolean",
+														"default": true
+													}
+												}
+											}
+										}
                                     }
                                 }
                             }
