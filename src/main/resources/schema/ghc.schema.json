@@ -603,83 +603,8 @@
 								}
 								
 							},
-                            "distribution": { 
-                                "title":"Distribution",
-                                "description": "It contains information on how the class units of the session are distributed throughout the week. It must contain only one element between 'stablePeriods' and 'variablePeriods'.",
-                                "type":"object",
-                                "$comment": "The 'periods' property is required if there is more than one period in the timetable. The 'stablePeriods' and 'variablePeriods' properties are mutually exclusive.",
-                                "properties":{
-                                    "periods": {
-                                        "title": "RefPeriods",
-                                        "description": "List of periods or weeks in which the class unit must be assigned.",
-                                        "type": "array",
-                                        "additionalItems": false,
-                                        "items": {
-                                            "title": "RefPeriod",
-                                            "description": "Period identifier.",
-                                            "type": "string"
-                                        }
-                                    },
-                                    "stablePeriods": {
-                                        "title":"StablePeriods",
-                                        "description": "The distribution of the class unit of the session is the same in each period.",
-                                        "type":"object",
-                                        "$comment": "Only one property must be specified.",
-                                        "properties":{
-                                            "weeklyStable": {
-                                                "$ref": "#/definitions/weeklyStable"
-                                            },   
-                                            "weeklyVariable": {
-                                                "$ref": "#/definitions/weeklyVariable"
-                                            },
-                                            "weeklyCustom": {
-                                                "title": "WeeklyCustom",
-                                                "description": "It contains an array of 'WeeklyStable' distributions.",
-                                                "type": "array",
-                                                "additionalItems": false,
-                                                "items": {
-                                                    "title": "CustomWeeklyStable",
-                                                    "description": "'WeeklyStable' distributions array.",
-                                                    "type": "array",
-                                                    "additionalItems": false,
-                                                    "items": {
-                                                        "title": "DailyMinutes",
-                                                        "description": "Indicates the minutes wich must have the session on the day.",
-                                                        "type": "integer"   
-                                                    }
-                                                }
-                                            }
-                                        },
-                                        "additionalProperties": false
-                                    },
-                                    "variablePeriods": {
-                                        "title":"VariablePeriods",
-                                        "description": "The total of the class units of the distribution are divided between the periods.",
-                                        "type":"object",
-                                        "$comment": "Properties 'weeklyStable' and 'weeklyVariable' are mutually exclusive.",
-                                        "properties":{
-                                            "weeklyStable": {
-                                                "$ref": "#/definitions/weeklyStable",
-                                                "$comment": "It indicates a stable distribution (number of days and number of sections per day of allocation), among all the periods over which it is distributed. It is not the distribution of each period, but the total of this class unit."
-                                            },   
-                                            "weeklyVariable": {
-                                                "$ref": "#/definitions/weeklyVariable",
-                                                "$comment": "It indicates a variable distribution among all the periods over which it is distributed. It is not the distribution of each period, but the total of this class unit."
-                                            },
-                                            "maximunTimeInPeriod": {
-                                                "description": "Maximum number of minutes to be allocated in each Period. If not defined, it is considered that there is no maximum limit.",
-                                                "type":"integer"
-                                            },
-                                            "minimnunTimeInPeriod": {
-                                                "description": "Minimum number of minutes to be allocated in each Period.",
-                                                "type":"integer",
-                                                "default": 0
-                                            }
-                                        },
-                                        "additionalProperties": false
-                                    }
-                                },
-                                "additionalProperties": false
+                            "distribution": {
+								"$ref": "#/definitions/distribution"
                             },
                             "sessionClassRooms":{
                                 "title": "SessionClassRooms",
@@ -692,33 +617,7 @@
                                         "type": "array",
                                         "additionalItems": false,
                                         "items": {
-                                            "title": "RefClassRoomToAssign",
-                                            "description": "Object, with classrooms and/or set of classrooms, where the engine should assign classroom to each class unit of the session.",
-                                            "type": "object",
-                                            "properties":{
-                                                "classRoomsList": {
-                                                    "title":"ClassRoomRef",
-                                                    "description":"Available classroom list to be assigned to session.",
-                                                    "type":"array",
-                                                    "additionalItems": false,
-                                                    "items": {                                    
-                                                        "title":"ClassRoomRef",
-                                                        "description":"Classroom identifier.",
-                                                        "type":"string"
-                                                    }                            
-                                                },
-                                                "classRoomsSetsList": {
-                                                    "title":"ClassRoomsSetsList",
-                                                    "description":"Classroom set list where one classroom could be taken to assign to session.",
-                                                    "type":"array",
-                                                    "additionalItems": false,
-                                                    "items": {                                    
-                                                        "title":"ClassRoomSetRef",
-                                                        "description":"Classroom set identifier.",
-                                                        "type":"string"
-                                                    }                   
-                                                }
-                                            }
+											"$ref": "#/definitions/refClassRoomToAssign"
                                         }
                                     },
                                     "capacityPreference": {
@@ -737,62 +636,18 @@
                                             "collective"
                                         ],
                                         "default": "individual"
-                                    },
-                                    "refBuilding": {
-                                        "description": "Building identifier of the building where the class unit takes place. Only allowed for sessions without groups of students. This is used to know the moving time and the number of moves between buildings for teachers without specifying a classroom.",
-                                        "type": "string",
-                                        "$comment": "It is incompatible with the other properties of 'sessionClassRooms' object."
                                     }
                                 },
                                 "additionalProperties": false
                             },
                             "frameTemplate": {
-                                "title": "SessionFrameTemplate",
-                                "description": "Complete template of preferences.",
-                                "$comment": "It have non-preferred sections.",
-                                "type": "array",
-                                "additionalItems": false,
-                                "items": {                                    
-                                    "title": "SessionSectionPreference",
-                                    "description": "Section assignment preference.",
-                                    "type": "object",
-                                    "required": [
-                                        "day",
-                                        "index",
-                                        "frame",
-                                        "type"
-                                    ],                                    
-                                    "properties": {
-                                        "day": {
-                                            "description": "Day of the week when the section is located.",
-                                            "type": "integer"
-                                        },
-                                        "index": {
-                                            "description": "Index built into the day where the section is located.",
-                                            "type": "integer"
-                                        },
-                                        "frame": {
-                                            "description": "Frame identifier.",
-                                            "type": "string"
-                                        },
-                                        "type": { 
-                                            "description": "Session availability to be assigned to the section.",
-                                            "enum": ["banned","strong-non-preferred", "weak-non-preferred", "preset"] 
-                                        }
-                                    }
-                                }
+								"$ref": "#/definitions/sessionFrameTemplate"  
                             },
                             "sessionSettings": {
                                 "title": "SessionSettings",
                                 "description": "Conditions on the position of the class unit.",
                                 "type": "object",
                                 "properties":{
-                                    "computeForMaxMinOccupancy": {
-                                        "description": " It indicates whether the class unit counts for the maximum and minimum daily teacher occupancy. By default, the engine computes class units with students.",
-                                        "type": "boolean",
-                                        "default": false,
-                                        "$comment": "If false is indicated in this field in the class unit with the students, it is ignored."
-                                    },
                                     "avoidFirstHourSessions": {
                                         "description": "It penalises the position of the class units if more than 50% of the class units are at first hour.",
                                         "type": "boolean",
@@ -849,15 +704,7 @@
                                         "default": false
                                     },
                                     "samePositionEveryPeriod": {
-                                        "description": "Keep the same position every week or period for the class units.",
-                                        "enum": [
-                                            "ignore",
-                                            "attempt",
-                                            "avoid",
-                                            "strict",
-                                            "forbidden"
-                                        ],
-                                        "default": "ignore"
+                                        "$ref": "#/definitions/samePositionEveryPeriod"
                                     }
                                 },
                                 "additionalProperties": false
@@ -1071,7 +918,125 @@
                             }
                         }
                     }
-                },                
+                },
+				"meetings": {
+					"title": "Meetings",
+                    "description": "List of meetings between teachers defined in the timetable.",
+                    "type": "array",
+                    "additionalItems": false,
+                    "items": {
+						"title": "Meeting",
+                        "description": "Sevice of meeting between teachers.",
+                        "type": "object",
+						"$comment": "It is incompatible set at same time refClassRoomToAssign and refBuilding.",
+                        "required": [
+                            "id",
+                            "refFrame",
+                            "refTask",
+                            "refTeachers",
+							"distribution"
+                        ],
+                        "properties": {
+							"id": {
+                                "description": "Session identifier.",
+                                "type": "integer"
+                            },
+                            "refFrame": {
+                                "description": "Session's frame identifier.",
+                                "type": "string"
+                            },
+							"refTask": {
+								"title": "RefTask",
+								"description": "Task identifier.",
+								"type": "string"     
+                            },
+							"refTeachers": {
+                                "title": "RefTeachers",
+                                "description": "List of teachers who in the service.",
+                                "type": "array",
+                                "additionalItems": false,
+                                "items": {
+									"title": "RefTeacher",
+									"description": "Teacher identifier.",
+									"type": "string"   
+								}
+							},
+                            "distribution": {
+								"$ref": "#/definitions/distribution"
+                            },
+                            "frameTemplate": {
+								"$ref": "#/definitions/sessionFrameTemplate"  
+                            },
+							"refClassRoomToAssign": {
+								"$ref": "#/definitions/refClassRoomToAssign"
+							},
+							"refBuilding": {
+								"description": "Building identifier of the building where the class unit takes place. This is used to know the moving time and the number of moves between buildings for teachers without specifying a classroom.",
+								"type": "string",
+								"$comment": "It is incompatible with the other properties of 'sessionClassRooms' object."
+							},						
+							"settings": {
+                                "$ref": "#/definitions/nonClassSessionSettings"
+							}	
+						}
+					}   
+				},
+				"complementaryActivities": {
+					"title": "ComplementaryActivities",
+                    "description": "List of complementary activities of the teachers.",
+                    "type": "array",
+                    "additionalItems": false,
+                    "items": {
+						"title": "Complementary",
+                        "description": "Service of teacher`s complementary activity.",
+                        "type": "object",
+						"$comment": "It is incompatible set at same time refClassRoomToAssign and refBuilding.",
+                        "required": [
+                            "id",
+                            "refFrame",
+                            "refTask",
+                            "refTeachers",
+							"distribution"
+                        ],
+                        "properties": {
+							"id": {
+                                "description": "Session identifier.",
+                                "type": "integer"
+                            },
+                            "refFrame": {
+                                "description": "Session's frame identifier.",
+                                "type": "string"
+                            },
+							"refTask": {
+								"title": "RefTask",
+								"description": "Task identifier.",
+								"type": "string"     
+                            },
+							"refTeacher": {
+								"title": "RefTeacher",
+								"description": "Teacher identifier.",
+								"type": "string"   
+							},
+                            "distribution": {
+								"$ref": "#/definitions/distribution"
+                            },
+                            "frameTemplate": {
+								"$ref": "#/definitions/sessionFrameTemplate"  
+                            },
+							"refClassRoomToAssign": {
+								"$ref": "#/definitions/refClassRoomToAssign"
+							},
+							"refBuilding": {
+								"description": "Building identifier of the building where the class unit takes place. This is used to know the moving time and the number of moves between buildings for teachers without specifying a classroom.",
+								"type": "string",
+								"$comment": "It is incompatible with the other properties of 'sessionClassRooms' object."
+							},						
+							"settings": {
+                                "$ref": "#/definitions/nonClassSessionSettings"
+							}		
+						}
+					}   
+				},
                 "onCallServices":{
                     "title": "OnCallServices",
                     "description": "List of on-call services of teachers defined in the timetable.",
@@ -1100,35 +1065,15 @@
                                 "type": "string"
                             },
                             "refPeriods": {
-                                "title": "OnCallPeriodsInfo",
-                                "description": "It contains the periods when the service must be set and mirror placement in periods condition (same placement in periods).",
-                                "type": "object",
-                                "required": [
-                                    "periods"
-                                ],                                    
-                                "properties": {
-                                    "periods": {
-                                        "title": "PeriodsList",
-                                        "description": "List of Periods when the service must be set.",
-                                        "type": "array",
-                                        "additionalItems": false,
-                                        "items": {
-                                            "description": "Period identifier.",
-                                            "type": "string"                                            
-                                        }
-                                    },
-                                    "samePositionEveryPeriod": {
-                                        "description": "Keep the same position each week or period for the service units.",
-                                        "enum": [
-                                            "ignore",
-                                            "attempt",
-                                            "avoid",
-                                            "strict",
-                                            "forbidden"
-                                        ],
-                                        "default": "ignore"
-                                    }
-                                }
+                                "title": "RefPeriods",
+								"description": "List of Periods when the service must be set.",
+								"type": "array",
+								"additionalItems": false,
+								"items": {
+									"title": "RefPeriod",
+									"description": "Period identifier.",
+									"type": "string"                                            
+								}
                             },
                             "refTask": {
                                 "description": "Task identifier.",
@@ -1184,7 +1129,7 @@
                                 "additionalProperties": false
                             },
                             "refTeachers": {
-                                "title": "RefTeachers",
+                                "title": "RefTeachersOnCall",
                                 "description": "List of teachers who in the service.",
                                 "type": "array",
                                 "additionalItems": false,
@@ -1219,11 +1164,9 @@
                                 "description": "Identifier of the building where the service is located. It is used to know the transfer time and the number of transfers between buildings for teachers.",
                                 "type": "string"
                             },
-                            "computeForMaxMinOccupancy": {
-                                "description": "It indicates whether the service calculates the maximum and minimum daily occupancy of the teacher.",
-                                "type": "boolean",
-                                "default": false
-                            }
+							"settings": {
+                                "$ref": "#/definitions/nonClassSessionSettings"
+							}	
                         },
                         "additionalProperties": false
                     }
@@ -1450,7 +1393,43 @@
                     }
                 }
             }
-        },        
+        },
+		"sessionFrameTemplate": {
+			"title": "SessionFrameTemplate",
+			"description": "Complete template of preferences.",
+			"$comment": "It have non-preferred sections.",
+			"type": "array",
+			"additionalItems": false,
+			"items": {                                    
+				"title": "SessionSectionPreference",
+				"description": "Section assignment preference.",
+				"type": "object",
+				"required": [
+					"day",
+					"index",
+					"frame",
+					"type"
+				],                                    
+				"properties": {
+					"day": {
+						"description": "Day of the week when the section is located.",
+						"type": "integer"
+					},
+					"index": {
+						"description": "Index built into the day where the section is located.",
+						"type": "integer"
+					},
+					"frame": {
+						"description": "Frame identifier.",
+						"type": "string"
+					},
+					"type": { 
+						"description": "Session availability to be assigned to the section.",
+						"enum": ["banned","strong-non-preferred", "weak-non-preferred", "preset"] 
+					}
+				}
+			}
+		},
         "onCallServiceframeTemplate": {
             "title": "OnCallTemplate",
             "description": "Template with teacher's preferences in the on-call service.",
@@ -1997,6 +1976,138 @@
                 }
             },
             "additionalProperties": false
-        }
+        },
+		"distribution": { 
+			"title":"Distribution",
+			"description": "It contains information on how the class units of the session are distributed throughout the week. It must contain only one element between 'stablePeriods' and 'variablePeriods'.",
+			"type":"object",
+			"javaType" : "com.penalara.ghc.jsonghcfile.engineinput.Distribution",
+			"$comment": "The 'periods' property is required if there is more than one period in the timetable. The 'stablePeriods' and 'variablePeriods' properties are mutually exclusive.",
+			"properties":{
+				"periods": {
+					"title": "RefPeriods",
+					"description": "List of periods or weeks in which the class unit must be assigned.",
+					"type": "array",
+					"additionalItems": false,
+					"items": {
+						"title": "RefPeriod",
+						"description": "Period identifier.",
+						"type": "string"
+					}
+				},
+				"stablePeriods": {
+					"title":"StablePeriods",
+					"description": "The distribution of the class unit of the session is the same in each period.",
+					"type":"object",
+					"$comment": "Only one property must be specified.",
+					"properties":{
+						"weeklyStable": {
+							"$ref": "#/definitions/weeklyStable"
+						},   
+						"weeklyVariable": {
+							"$ref": "#/definitions/weeklyVariable"
+						},
+						"weeklyCustom": {
+							"title": "WeeklyCustom",
+							"description": "It contains an array of 'WeeklyStable' distributions.",
+							"type": "array",
+							"additionalItems": false,
+							"items": {
+								"title": "CustomWeeklyStable",
+								"description": "'WeeklyStable' distributions array.",
+								"type": "array",
+								"additionalItems": false,
+								"items": {
+									"title": "DailyMinutes",
+									"description": "Indicates the minutes wich must have the session on the day.",
+									"type": "integer"   
+								}
+							}
+						}
+					},
+					"additionalProperties": false
+				},
+				"variablePeriods": {
+					"title":"VariablePeriods",
+					"description": "The total of the class units of the distribution are divided between the periods.",
+					"type":"object",
+					"$comment": "Properties 'weeklyStable' and 'weeklyVariable' are mutually exclusive.",
+					"properties":{
+						"weeklyStable": {
+							"$ref": "#/definitions/weeklyStable",
+							"$comment": "It indicates a stable distribution (number of days and number of sections per day of allocation), among all the periods over which it is distributed. It is not the distribution of each period, but the total of this class unit."
+						},   
+						"weeklyVariable": {
+							"$ref": "#/definitions/weeklyVariable",
+							"$comment": "It indicates a variable distribution among all the periods over which it is distributed. It is not the distribution of each period, but the total of this class unit."
+						},
+						"maximunTimeInPeriod": {
+							"description": "Maximum number of minutes to be allocated in each Period. If not defined, it is considered that there is no maximum limit.",
+							"type":"integer"
+						},
+						"minimnunTimeInPeriod": {
+							"description": "Minimum number of minutes to be allocated in each Period.",
+							"type":"integer",
+							"default": 0
+						}
+					},
+					"additionalProperties": false
+				}
+			},
+			"additionalProperties": false
+		},
+		"samePositionEveryPeriod": {
+			"title": "SamePositionEveryPeriod",
+			"description": "Keep the same position every week or period for the class units.",
+			"javaType" : "com.penalara.ghc.jsonghcfile.engineinput.SamePositionEveryPeriod",
+			"enum": [
+				"ignore",
+				"attempt",
+				"avoid",
+				"strict",
+				"forbidden"
+			],
+			"default": "ignore"
+		},
+		"refClassRoomToAssign": {
+			"title": "RefClassRoomToAssign",
+			"description": "Object, with classrooms and/or set of classrooms, where the engine should assign classroom to each class unit of the session.",
+			"type": "object",
+			"properties":{
+				"classRoom": {
+					"title":"ClassRoomRef",
+					"description":"Classroom identifier.",
+					"type":"string"
+				},
+				"classRoomsSetsList": {
+					"title":"ClassRoomsSetsList",
+					"description":"Classroom set list where one classroom could be taken to assign to session.",
+					"type":"array",
+					"additionalItems": false,
+					"items": {                                    
+						"title":"ClassRoomSetRef",
+						"description":"Classroom set identifier.",
+						"type":"string"
+					}                   
+				}
+			},
+			"additionalProperties": false
+		},
+		"nonClassSessionSettings": {
+			"title": "NonClassSessionSettings",
+			"description": "Settings of the meeting.",
+			"type": "object",
+			"properties":{
+				"computeForMaxMinOccupancy": {
+					"description": " It indicates whether the class unit counts for the maximum and minimum daily teacher occupancy. By default, the engine computes class units with students.",
+					"type": "boolean",
+					"default": false
+				},
+				"samePositionEveryPeriod": {
+					"$ref": "#/definitions/samePositionEveryPeriod"
+				}
+			},
+			"additionalProperties": false
+		}	
     }
 }
