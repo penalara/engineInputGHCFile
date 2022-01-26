@@ -610,6 +610,9 @@
                                 "title": "SessionClassRooms",
                                 "description": "It contains the information about the classrooms for the class units. At least one classroom is required for the class units.",
                                 "type": "object",
+								"required":[
+									"classRoomsToAssign"
+								],
                                 "properties":{
                                     "classRoomsToAssign": {
                                         "title": "ClassRoomsToAssign",
@@ -939,7 +942,7 @@
                         "properties": {
 							"id": {
                                 "description": "Session identifier.",
-                                "type": "integer"
+                                "type": "string"
                             },
                             "refFrame": {
                                 "description": "Session's frame identifier.",
@@ -1001,7 +1004,7 @@
                         "properties": {
 							"id": {
                                 "description": "Session identifier.",
-                                "type": "integer"
+                                "type": "string"
                             },
                             "refFrame": {
                                 "description": "Session's frame identifier.",
@@ -1058,7 +1061,7 @@
                             "id": {
                                 "description": "On-Call service identifier.",
                                 "$comment": "This identifier can not be equals to any session identifier.", 
-                                "type": "integer"
+                                "type": "string"
                             },
                             "refFrame": {
                                 "description": "Identifier of the frame where the service will be set.",
