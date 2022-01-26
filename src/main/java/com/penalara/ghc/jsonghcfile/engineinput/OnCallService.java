@@ -3,6 +3,7 @@ package com.penalara.ghc.jsonghcfile.engineinput;
 
 import java.util.ArrayList;
 import java.util.List;
+import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -12,7 +13,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 /**
  * OnCallService
  * <p>
- * On-call service of teachers who supervise the free time of students.
+ * On-call service of teachers who supervise the free time of students.Property 'refPeriods' is required if there are more than one period in the timetable.
  * 
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
@@ -26,18 +27,19 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "refTeachers",
     "frameTemplate",
     "refBuilding",
-    "computeForMaxMinOccupancy"
+    "settings"
 })
+@Generated("jsonschema2pojo")
 public class OnCallService {
 
     /**
-     * On-Call service identifier.
+     * On-Call service identifier.This identifier can not be equals to any session identifier.
      * (Required)
      * 
      */
     @JsonProperty("id")
     @JsonPropertyDescription("On-Call service identifier.")
-    private Integer id;
+    private String id;
     /**
      * Identifier of the frame where the service will be set.
      * (Required)
@@ -47,14 +49,14 @@ public class OnCallService {
     @JsonPropertyDescription("Identifier\u00a0of\u00a0the\u00a0frame\u00a0where\u00a0the service will\u00a0be\u00a0set.")
     private String refFrame;
     /**
-     * OnCallPeriodsInfo
+     * RefPeriods
      * <p>
-     * It contains the periods when the service must be set and mirror placement in periods condition (same placement in periods).
+     * List of Periods when the service must be set.
      * 
      */
     @JsonProperty("refPeriods")
-    @JsonPropertyDescription("It contains the periods when the service must be set and mirror placement in periods condition (same placement in periods).")
-    private OnCallPeriodsInfo refPeriods;
+    @JsonPropertyDescription("List of Periods when the service must be set.")
+    private List<String> refPeriods = new ArrayList<String>();
     /**
      * Task identifier.
      * (Required)
@@ -73,7 +75,7 @@ public class OnCallService {
     /**
      * TeachersEachSection
      * <p>
-     * Information about number of teacher in all sections.
+     * Information about number of teacher in all sections.The value 'byDefault' shall be used for all sections, if the field 'bySection' is not informed. This value is also used when a section is not informed in 'bySection'.
      * (Required)
      * 
      */
@@ -81,7 +83,7 @@ public class OnCallService {
     @JsonPropertyDescription("Information about number of teacher in all sections.")
     private TeachersEachSection teachersEachSection;
     /**
-     * RefTeachers
+     * RefTeachersOnCall
      * <p>
      * List of teachers who in the service.
      * (Required)
@@ -107,12 +109,14 @@ public class OnCallService {
     @JsonPropertyDescription("Identifier of the building where the service is located. It is used to know the transfer time and the number of transfers between buildings for teachers.")
     private String refBuilding;
     /**
-     * It indicates whether the service calculates the maximum and minimum daily occupancy of the teacher.
+     * NonClassSessionSettings
+     * <p>
+     * Settings of the meeting.
      * 
      */
-    @JsonProperty("computeForMaxMinOccupancy")
-    @JsonPropertyDescription("It indicates whether the service calculates the maximum and minimum daily occupancy of the teacher.")
-    private Boolean computeForMaxMinOccupancy = false;
+    @JsonProperty("settings")
+    @JsonPropertyDescription("Settings of the meeting.")
+    private NonClassSessionSettings settings;
 
     /**
      * No args constructor for use in serialization
@@ -126,15 +130,15 @@ public class OnCallService {
      * @param refPeriods
      * @param inBreak
      * @param teachersEachSection
+     * @param settings
      * @param refFrame
      * @param refTeachers
-     * @param computeForMaxMinOccupancy
      * @param frameTemplate
      * @param id
      * @param refTask
      * @param refBuilding
      */
-    public OnCallService(Integer id, String refFrame, OnCallPeriodsInfo refPeriods, String refTask, Boolean inBreak, TeachersEachSection teachersEachSection, List<RefTeacher> refTeachers, List<OnCallSectionPreference> frameTemplate, String refBuilding, Boolean computeForMaxMinOccupancy) {
+    public OnCallService(String id, String refFrame, List<String> refPeriods, String refTask, Boolean inBreak, TeachersEachSection teachersEachSection, List<RefTeacher> refTeachers, List<OnCallSectionPreference> frameTemplate, String refBuilding, NonClassSessionSettings settings) {
         super();
         this.id = id;
         this.refFrame = refFrame;
@@ -145,26 +149,26 @@ public class OnCallService {
         this.refTeachers = refTeachers;
         this.frameTemplate = frameTemplate;
         this.refBuilding = refBuilding;
-        this.computeForMaxMinOccupancy = computeForMaxMinOccupancy;
+        this.settings = settings;
     }
 
     /**
-     * On-Call service identifier.
+     * On-Call service identifier.This identifier can not be equals to any session identifier.
      * (Required)
      * 
      */
     @JsonProperty("id")
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
     /**
-     * On-Call service identifier.
+     * On-Call service identifier.This identifier can not be equals to any session identifier.
      * (Required)
      * 
      */
     @JsonProperty("id")
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -189,24 +193,24 @@ public class OnCallService {
     }
 
     /**
-     * OnCallPeriodsInfo
+     * RefPeriods
      * <p>
-     * It contains the periods when the service must be set and mirror placement in periods condition (same placement in periods).
+     * List of Periods when the service must be set.
      * 
      */
     @JsonProperty("refPeriods")
-    public OnCallPeriodsInfo getRefPeriods() {
+    public List<String> getRefPeriods() {
         return refPeriods;
     }
 
     /**
-     * OnCallPeriodsInfo
+     * RefPeriods
      * <p>
-     * It contains the periods when the service must be set and mirror placement in periods condition (same placement in periods).
+     * List of Periods when the service must be set.
      * 
      */
     @JsonProperty("refPeriods")
-    public void setRefPeriods(OnCallPeriodsInfo refPeriods) {
+    public void setRefPeriods(List<String> refPeriods) {
         this.refPeriods = refPeriods;
     }
 
@@ -251,7 +255,7 @@ public class OnCallService {
     /**
      * TeachersEachSection
      * <p>
-     * Information about number of teacher in all sections.
+     * Information about number of teacher in all sections.The value 'byDefault' shall be used for all sections, if the field 'bySection' is not informed. This value is also used when a section is not informed in 'bySection'.
      * (Required)
      * 
      */
@@ -263,7 +267,7 @@ public class OnCallService {
     /**
      * TeachersEachSection
      * <p>
-     * Information about number of teacher in all sections.
+     * Information about number of teacher in all sections.The value 'byDefault' shall be used for all sections, if the field 'bySection' is not informed. This value is also used when a section is not informed in 'bySection'.
      * (Required)
      * 
      */
@@ -273,7 +277,7 @@ public class OnCallService {
     }
 
     /**
-     * RefTeachers
+     * RefTeachersOnCall
      * <p>
      * List of teachers who in the service.
      * (Required)
@@ -285,7 +289,7 @@ public class OnCallService {
     }
 
     /**
-     * RefTeachers
+     * RefTeachersOnCall
      * <p>
      * List of teachers who in the service.
      * (Required)
@@ -337,21 +341,25 @@ public class OnCallService {
     }
 
     /**
-     * It indicates whether the service calculates the maximum and minimum daily occupancy of the teacher.
+     * NonClassSessionSettings
+     * <p>
+     * Settings of the meeting.
      * 
      */
-    @JsonProperty("computeForMaxMinOccupancy")
-    public Boolean getComputeForMaxMinOccupancy() {
-        return computeForMaxMinOccupancy;
+    @JsonProperty("settings")
+    public NonClassSessionSettings getSettings() {
+        return settings;
     }
 
     /**
-     * It indicates whether the service calculates the maximum and minimum daily occupancy of the teacher.
+     * NonClassSessionSettings
+     * <p>
+     * Settings of the meeting.
      * 
      */
-    @JsonProperty("computeForMaxMinOccupancy")
-    public void setComputeForMaxMinOccupancy(Boolean computeForMaxMinOccupancy) {
-        this.computeForMaxMinOccupancy = computeForMaxMinOccupancy;
+    @JsonProperty("settings")
+    public void setSettings(NonClassSessionSettings settings) {
+        this.settings = settings;
     }
 
 }

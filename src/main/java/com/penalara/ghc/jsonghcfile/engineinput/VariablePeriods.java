@@ -3,6 +3,7 @@ package com.penalara.ghc.jsonghcfile.engineinput;
 
 import java.util.ArrayList;
 import java.util.List;
+import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -12,7 +13,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 /**
  * VariablePeriods
  * <p>
- * The total of the class units of the distribution are divided between the periods.
+ * The total of the class units of the distribution are divided between the periods.Properties 'weeklyStable' and 'weeklyVariable' are mutually exclusive.
  * 
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
@@ -22,6 +23,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "maximunTimeInPeriod",
     "minimnunTimeInPeriod"
 })
+@Generated("jsonschema2pojo")
 public class VariablePeriods {
 
     /**

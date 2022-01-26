@@ -1,6 +1,7 @@
 
 package com.penalara.ghc.jsonghcfile.engineinput;
 
+import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -19,6 +20,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "minutes",
     "minBreak"
 })
+@Generated("jsonschema2pojo")
 public class MaxContinuousTeaching {
 
     /**
@@ -38,7 +40,7 @@ public class MaxContinuousTeaching {
     @JsonPropertyDescription("Maximum continuous teaching time in minutes.")
     private Integer minutes;
     /**
-     * Minimum time period to be considered as break time
+     * Minimum time period to be considered as break time If not specified, the engine will assign the general value or the default time of 30 minutes.
      * 
      */
     @JsonProperty("minBreak")
@@ -106,7 +108,7 @@ public class MaxContinuousTeaching {
     }
 
     /**
-     * Minimum time period to be considered as break time
+     * Minimum time period to be considered as break time If not specified, the engine will assign the general value or the default time of 30 minutes.
      * 
      */
     @JsonProperty("minBreak")
@@ -115,7 +117,7 @@ public class MaxContinuousTeaching {
     }
 
     /**
-     * Minimum time period to be considered as break time
+     * Minimum time period to be considered as break time If not specified, the engine will assign the general value or the default time of 30 minutes.
      * 
      */
     @JsonProperty("minBreak")

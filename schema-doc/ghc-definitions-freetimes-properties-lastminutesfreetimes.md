@@ -6,19 +6,18 @@ engineInputGHCSchema#/definitions/freeTimes/properties/lastMinutes
 
 Teacher's free intervals at the end of the day.
 
-
-| Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
-| :------------------ | ---------- | -------------- | ------------ | :---------------- | --------------------- | ------------------- | ------------------------------------------------------------------ |
-| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [ghc.schema.json\*](../out/ghc.schema.json "open original schema") |
+| Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                        |
+| :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :---------------------------------------------------------------- |
+| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [ghc.schema.json*](../out/ghc.schema.json "open original schema") |
 
 ## lastMinutes Type
 
 `object` ([LastMinutesFreeTimes](ghc-definitions-freetimes-properties-lastminutesfreetimes.md))
 
-# LastMinutesFreeTimes Properties
+# lastMinutes Properties
 
 | Property                        | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                  |
-| :------------------------------ | --------- | -------- | -------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| :------------------------------ | :-------- | :------- | :------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [strictDays](#strictdays)       | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-freetimes-properties-lastminutesfreetimes-properties-strictdays.md "engineInputGHCSchema#/definitions/freeTimes/properties/lastMinutes/properties/strictDays")       |
 | [preferredDays](#preferreddays) | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-freetimes-properties-lastminutesfreetimes-properties-preferreddays.md "engineInputGHCSchema#/definitions/freeTimes/properties/lastMinutes/properties/preferredDays") |
 | [minutes](#minutes)             | `integer` | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-freetimes-properties-lastminutesfreetimes-properties-minutes.md "engineInputGHCSchema#/definitions/freeTimes/properties/lastMinutes/properties/minutes")             |
@@ -27,13 +26,15 @@ Teacher's free intervals at the end of the day.
 
 Strict number of days on which the teacher must have the interval free at the end of the day.
 
-
 `strictDays`
 
--   is optional
--   Type: `integer`
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-definitions-freetimes-properties-lastminutesfreetimes-properties-strictdays.md "engineInputGHCSchema#/definitions/freeTimes/properties/lastMinutes/properties/strictDays")
+*   is optional
+
+*   Type: `integer`
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-definitions-freetimes-properties-lastminutesfreetimes-properties-strictdays.md "engineInputGHCSchema#/definitions/freeTimes/properties/lastMinutes/properties/strictDays")
 
 ### strictDays Type
 
@@ -43,13 +44,15 @@ Strict number of days on which the teacher must have the interval free at the en
 
 Preferred number of days on which the teacher should have the interval free at the end of the day. .
 
-
 `preferredDays`
 
--   is optional
--   Type: `integer`
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-definitions-freetimes-properties-lastminutesfreetimes-properties-preferreddays.md "engineInputGHCSchema#/definitions/freeTimes/properties/lastMinutes/properties/preferredDays")
+*   is optional
+
+*   Type: `integer`
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-definitions-freetimes-properties-lastminutesfreetimes-properties-preferreddays.md "engineInputGHCSchema#/definitions/freeTimes/properties/lastMinutes/properties/preferredDays")
 
 ### preferredDays Type
 
@@ -59,13 +62,15 @@ Preferred number of days on which the teacher should have the interval free at t
 
 Minutes of free time at the end of the day.
 
-
 `minutes`
 
--   is required
--   Type: `integer`
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-definitions-freetimes-properties-lastminutesfreetimes-properties-minutes.md "engineInputGHCSchema#/definitions/freeTimes/properties/lastMinutes/properties/minutes")
+*   is required
+
+*   Type: `integer`
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-definitions-freetimes-properties-lastminutesfreetimes-properties-minutes.md "engineInputGHCSchema#/definitions/freeTimes/properties/lastMinutes/properties/minutes")
 
 ### minutes Type
 

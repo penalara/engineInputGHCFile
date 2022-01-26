@@ -6,20 +6,18 @@ engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/se
 
 Conditions on the position of the class unit.
 
-
-| Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
-| :------------------ | ---------- | -------------- | ------------ | :---------------- | --------------------- | ------------------- | ------------------------------------------------------------------ |
-| Can be instantiated | No         | Unknown status | No           | Forbidden         | Forbidden             | none                | [ghc.schema.json\*](../out/ghc.schema.json "open original schema") |
+| Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                        |
+| :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :---------------------------------------------------------------- |
+| Can be instantiated | No         | Unknown status | No           | Forbidden         | Forbidden             | none                | [ghc.schema.json*](../out/ghc.schema.json "open original schema") |
 
 ## sessionSettings Type
 
 `object` ([SessionSettings](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings.md))
 
-# SessionSettings Properties
+# sessionSettings Properties
 
 | Property                                                                  | Type          | Required | Nullable       | Defined by                                                                                                                                                                                                                                                                                           |
-| :------------------------------------------------------------------------ | ------------- | -------- | -------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [computeForMaxMinOccupancy](#computeformaxminoccupancy)                   | `boolean`     | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings-properties-computeformaxminoccupancy.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/computeForMaxMinOccupancy")                   |
+| :------------------------------------------------------------------------ | :------------ | :------- | :------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [avoidFirstHourSessions](#avoidfirsthoursessions)                         | `boolean`     | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings-properties-avoidfirsthoursessions.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/avoidFirstHourSessions")                         |
 | [avoidLastHourSessions](#avoidlasthoursessions)                           | `boolean`     | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings-properties-avoidlasthoursessions.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/avoidLastHourSessions")                           |
 | [avoidAssingLastHourAndFirstNextDay](#avoidassinglasthourandfirstnextday) | `boolean`     | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings-properties-avoidassinglasthourandfirstnextday.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/avoidAssingLastHourAndFirstNextDay") |
@@ -31,36 +29,19 @@ Conditions on the position of the class unit.
 | [consecutiveWeeksBorders](#consecutiveweeksborders)                       | `boolean`     | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings-properties-consecutiveweeksborders.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/consecutiveWeeksBorders")                       |
 | [samePositionEveryPeriod](#samepositioneveryperiod)                       | Not specified | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings-properties-samepositioneveryperiod.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/samePositionEveryPeriod")                       |
 
-## computeForMaxMinOccupancy
-
- It indicates whether the class unit counts for the maximum and minimum daily teacher occupancy. By default, the engine computes class units with students.
-
-
-> If false is indicated in this field in the class unit with the students, it is ignored.
->
-
-`computeForMaxMinOccupancy`
-
--   is optional
--   Type: `boolean`
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings-properties-computeformaxminoccupancy.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/computeForMaxMinOccupancy")
-
-### computeForMaxMinOccupancy Type
-
-`boolean`
-
 ## avoidFirstHourSessions
 
 It penalises the position of the class units if more than 50% of the class units are at first hour.
 
-
 `avoidFirstHourSessions`
 
--   is optional
--   Type: `boolean`
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings-properties-avoidfirsthoursessions.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/avoidFirstHourSessions")
+*   is optional
+
+*   Type: `boolean`
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings-properties-avoidfirsthoursessions.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/avoidFirstHourSessions")
 
 ### avoidFirstHourSessions Type
 
@@ -78,13 +59,15 @@ true
 
 It penalises the position of the class units if more than 50% of the class units are at last hour.
 
-
 `avoidLastHourSessions`
 
--   is optional
--   Type: `boolean`
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings-properties-avoidlasthoursessions.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/avoidLastHourSessions")
+*   is optional
+
+*   Type: `boolean`
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings-properties-avoidlasthoursessions.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/avoidLastHourSessions")
 
 ### avoidLastHourSessions Type
 
@@ -102,13 +85,15 @@ true
 
 It penalises if the last hour and the first hour of the following day match.
 
-
 `avoidAssingLastHourAndFirstNextDay`
 
--   is optional
--   Type: `boolean`
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings-properties-avoidassinglasthourandfirstnextday.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/avoidAssingLastHourAndFirstNextDay")
+*   is optional
+
+*   Type: `boolean`
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings-properties-avoidassinglasthourandfirstnextday.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/avoidAssingLastHourAndFirstNextDay")
 
 ### avoidAssingLastHourAndFirstNextDay Type
 
@@ -126,13 +111,15 @@ true
 
 Preference over class units that coincide in the same time slot.
 
-
 `sameHourPreference`
 
--   is optional
--   Type: unknown
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings-properties-samehourpreference.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/sameHourPreference")
+*   is optional
+
+*   Type: unknown
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings-properties-samehourpreference.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/sameHourPreference")
 
 ### sameHourPreference Type
 
@@ -143,7 +130,7 @@ unknown
 **enum**: the value of this property must be equal to one of the following values:
 
 | Value      | Explanation |
-| :--------- | ----------- |
+| :--------- | :---------- |
 | `"ignore"` |             |
 | `"avoid"`  |             |
 | `"same"`   |             |
@@ -160,13 +147,15 @@ The default value is:
 
 It penalises if there is more than one class unit after noon stop..
 
-
 `avoidAfternoonSessions`
 
--   is optional
--   Type: `boolean`
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings-properties-avoidafternoonsessions.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/avoidAfternoonSessions")
+*   is optional
+
+*   Type: `boolean`
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings-properties-avoidafternoonsessions.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/avoidAfternoonSessions")
 
 ### avoidAfternoonSessions Type
 
@@ -184,13 +173,15 @@ true
 
 It penalises if more than 50% of the class unit are after the last break of the day.
 
-
 `avoidSectionsAfterBreak`
 
--   is optional
--   Type: `boolean`
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings-properties-avoidsectionsafterbreak.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/avoidSectionsAfterBreak")
+*   is optional
+
+*   Type: `boolean`
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings-properties-avoidsectionsafterbreak.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/avoidSectionsAfterBreak")
 
 ### avoidSectionsAfterBreak Type
 
@@ -208,13 +199,15 @@ true
 
 Do not allow breaks between class units of multiple duration (class duration of more than one section).
 
-
 `nonBreakInTheMiddleOfSession`
 
--   is optional
--   Type: `boolean`
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings-properties-nonbreakinthemiddleofsession.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/nonBreakInTheMiddleOfSession")
+*   is optional
+
+*   Type: `boolean`
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings-properties-nonbreakinthemiddleofsession.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/nonBreakInTheMiddleOfSession")
 
 ### nonBreakInTheMiddleOfSession Type
 
@@ -224,13 +217,15 @@ Do not allow breaks between class units of multiple duration (class duration of 
 
 If the class unit has more than one lesson, indicates the preference on assigning them on consecutive days.
 
-
 `followedDaysPreference`
 
--   is optional
--   Type: unknown
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings-properties-followeddayspreference.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/followedDaysPreference")
+*   is optional
+
+*   Type: unknown
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings-properties-followeddayspreference.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/followedDaysPreference")
 
 ### followedDaysPreference Type
 
@@ -241,7 +236,7 @@ unknown
 **enum**: the value of this property must be equal to one of the following values:
 
 | Value         | Explanation |
-| :------------ | ----------- |
+| :------------ | :---------- |
 | `"ignore"`    |             |
 | `"attempt"`   |             |
 | `"avoid"`     |             |
@@ -260,13 +255,15 @@ The default value is:
 
 It considers the end-of-week day, and the start-of-week day, as consecutive days for 'followedDaysPreference'.
 
-
 `consecutiveWeeksBorders`
 
--   is optional
--   Type: `boolean`
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings-properties-consecutiveweeksborders.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/consecutiveWeeksBorders")
+*   is optional
+
+*   Type: `boolean`
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings-properties-consecutiveweeksborders.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/consecutiveWeeksBorders")
 
 ### consecutiveWeeksBorders Type
 
@@ -276,24 +273,26 @@ It considers the end-of-week day, and the start-of-week day, as consecutive days
 
 Keep the same position every week or period for the class units.
 
-
 `samePositionEveryPeriod`
 
--   is optional
--   Type: unknown
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings-properties-samepositioneveryperiod.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/samePositionEveryPeriod")
+*   is optional
+
+*   Type: unknown ([SamePositionEveryPeriod](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings-properties-samepositioneveryperiod.md))
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings-properties-samepositioneveryperiod.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionSettings/properties/samePositionEveryPeriod")
 
 ### samePositionEveryPeriod Type
 
-unknown
+unknown ([SamePositionEveryPeriod](ghc-properties-ghcdata-properties-sessions-session-properties-sessionsettings-properties-samepositioneveryperiod.md))
 
 ### samePositionEveryPeriod Constraints
 
 **enum**: the value of this property must be equal to one of the following values:
 
 | Value         | Explanation |
-| :------------ | ----------- |
+| :------------ | :---------- |
 | `"ignore"`    |             |
 | `"attempt"`   |             |
 | `"avoid"`     |             |

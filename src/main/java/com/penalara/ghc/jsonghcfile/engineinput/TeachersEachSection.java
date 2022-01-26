@@ -3,6 +3,7 @@ package com.penalara.ghc.jsonghcfile.engineinput;
 
 import java.util.ArrayList;
 import java.util.List;
+import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -12,7 +13,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 /**
  * TeachersEachSection
  * <p>
- * Information about number of teacher in all sections.
+ * Information about number of teacher in all sections.The value 'byDefault' shall be used for all sections, if the field 'bySection' is not informed. This value is also used when a section is not informed in 'bySection'.
  * 
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
@@ -20,6 +21,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "byDefault",
     "bySection"
 })
+@Generated("jsonschema2pojo")
 public class TeachersEachSection {
 
     /**

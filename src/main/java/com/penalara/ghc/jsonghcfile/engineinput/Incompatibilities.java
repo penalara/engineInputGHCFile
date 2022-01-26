@@ -3,6 +3,7 @@ package com.penalara.ghc.jsonghcfile.engineinput;
 
 import java.util.HashMap;
 import java.util.Map;
+import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -29,6 +30,7 @@ import com.fasterxml.jackson.annotation.JsonValue;
     "doNotStartAtFirstMorningSectionIfHasAfternoonAssignment",
     "freeTimeAroundMidday"
 })
+@Generated("jsonschema2pojo")
 public class Incompatibilities {
 
     /**
@@ -350,6 +352,7 @@ public class Incompatibilities {
      * o not finish at the last hour of the evening and start at the first.
      * 
      */
+    @Generated("jsonschema2pojo")
     public enum DoNotFinishAtLastAfternoonSection {
 
         IGNORE("ignore"),
@@ -364,7 +367,7 @@ public class Incompatibilities {
             }
         }
 
-        private DoNotFinishAtLastAfternoonSection(String value) {
+        DoNotFinishAtLastAfternoonSection(String value) {
             this.value = value;
         }
 
@@ -397,6 +400,7 @@ public class Incompatibilities {
      * Do not start at the first hour and finish at the last hour of the morning.
      * 
      */
+    @Generated("jsonschema2pojo")
     public enum DoNotFinishAtLastMorningSection {
 
         IGNORE("ignore"),
@@ -411,7 +415,7 @@ public class Incompatibilities {
             }
         }
 
-        private DoNotFinishAtLastMorningSection(String value) {
+        DoNotFinishAtLastMorningSection(String value) {
             this.value = value;
         }
 
@@ -444,6 +448,7 @@ public class Incompatibilities {
      * Do not finish at the last hour in the morning and have the evening busy.
      * 
      */
+    @Generated("jsonschema2pojo")
     public enum DoNotFinishAtLastMorningSectionIfHasAfternoon {
 
         IGNORE("ignore"),
@@ -458,7 +463,7 @@ public class Incompatibilities {
             }
         }
 
-        private DoNotFinishAtLastMorningSectionIfHasAfternoon(String value) {
+        DoNotFinishAtLastMorningSectionIfHasAfternoon(String value) {
             this.value = value;
         }
 
@@ -491,6 +496,7 @@ public class Incompatibilities {
      * Do not finish at the last hour of the morning and start at the first hour of the evening.
      * 
      */
+    @Generated("jsonschema2pojo")
     public enum DoNotFinishAtLastMorningSectionIfStartAtFirstAfternoon {
 
         IGNORE("ignore"),
@@ -505,7 +511,7 @@ public class Incompatibilities {
             }
         }
 
-        private DoNotFinishAtLastMorningSectionIfStartAtFirstAfternoon(String value) {
+        DoNotFinishAtLastMorningSectionIfStartAtFirstAfternoon(String value) {
             this.value = value;
         }
 
@@ -538,6 +544,7 @@ public class Incompatibilities {
      * Do not start at the first hour and keep the evening busy.
      * 
      */
+    @Generated("jsonschema2pojo")
     public enum DoNotStartAtFirstMorningSection {
 
         IGNORE("ignore"),
@@ -552,7 +559,7 @@ public class Incompatibilities {
             }
         }
 
-        private DoNotStartAtFirstMorningSection(String value) {
+        DoNotStartAtFirstMorningSection(String value) {
             this.value = value;
         }
 

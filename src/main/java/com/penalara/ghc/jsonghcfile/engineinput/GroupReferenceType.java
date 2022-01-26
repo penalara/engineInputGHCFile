@@ -3,6 +3,7 @@ package com.penalara.ghc.jsonghcfile.engineinput;
 
 import java.util.HashMap;
 import java.util.Map;
+import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.annotation.JsonAnySetter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -13,26 +14,26 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 
 /**
- * RefGroup
+ * GroupReferenceType
  * <p>
- * Value pair: group identifier and number of students.
+ * Contains the reference to a group of the session, and optionally, the number of students of the group that attend the session.
  * 
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "refGroup",
+    "refIdGroup",
     "numStudents"
 })
-public class RefGroup {
+@Generated("jsonschema2pojo")
+public class GroupReferenceType {
 
     /**
      * Group identifier.
-     * (Required)
      * 
      */
-    @JsonProperty("refGroup")
+    @JsonProperty("refIdGroup")
     @JsonPropertyDescription("Group identifier.")
-    private String refGroup;
+    private String refIdGroup;
     /**
      * Custom number of students that are in the class units. If it is not specified, the engine defaults to the value of the Group object.
      * 
@@ -47,38 +48,36 @@ public class RefGroup {
      * No args constructor for use in serialization
      * 
      */
-    public RefGroup() {
+    public GroupReferenceType() {
     }
 
     /**
      * 
+     * @param refIdGroup
      * @param numStudents
-     * @param refGroup
      */
-    public RefGroup(String refGroup, Integer numStudents) {
+    public GroupReferenceType(String refIdGroup, Integer numStudents) {
         super();
-        this.refGroup = refGroup;
+        this.refIdGroup = refIdGroup;
         this.numStudents = numStudents;
     }
 
     /**
      * Group identifier.
-     * (Required)
      * 
      */
-    @JsonProperty("refGroup")
-    public String getRefGroup() {
-        return refGroup;
+    @JsonProperty("refIdGroup")
+    public String getRefIdGroup() {
+        return refIdGroup;
     }
 
     /**
      * Group identifier.
-     * (Required)
      * 
      */
-    @JsonProperty("refGroup")
-    public void setRefGroup(String refGroup) {
-        this.refGroup = refGroup;
+    @JsonProperty("refIdGroup")
+    public void setRefIdGroup(String refIdGroup) {
+        this.refIdGroup = refIdGroup;
     }
 
     /**

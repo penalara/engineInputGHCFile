@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.annotation.JsonAnySetter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -28,6 +29,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "refBuilding",
     "fullDay"
 })
+@Generated("jsonschema2pojo")
 public class Classroom {
 
     /**
@@ -48,7 +50,7 @@ public class Classroom {
     /**
      * BannedFrameTemplate
      * <p>
-     * Template with only banned preferences.
+     * Template with only banned preferences.It is used when the element cannot have non-preferred sections.
      * 
      */
     @JsonProperty("frameTemplate")
@@ -136,7 +138,7 @@ public class Classroom {
     /**
      * BannedFrameTemplate
      * <p>
-     * Template with only banned preferences.
+     * Template with only banned preferences.It is used when the element cannot have non-preferred sections.
      * 
      */
     @JsonProperty("frameTemplate")
@@ -147,7 +149,7 @@ public class Classroom {
     /**
      * BannedFrameTemplate
      * <p>
-     * Template with only banned preferences.
+     * Template with only banned preferences.It is used when the element cannot have non-preferred sections.
      * 
      */
     @JsonProperty("frameTemplate")

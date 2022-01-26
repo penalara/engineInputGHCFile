@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -24,6 +25,7 @@ import com.fasterxml.jackson.annotation.JsonValue;
     "refSesions",
     "daysSetting"
 })
+@Generated("jsonschema2pojo")
 public class DifferentDays {
 
     /**
@@ -109,6 +111,7 @@ public class DifferentDays {
      * Keep the same position each week or period for the class units.
      * 
      */
+    @Generated("jsonschema2pojo")
     public enum DaysSetting {
 
         NON_CONSECUTIVE_DAYS_PREFERRED("nonConsecutiveDaysPreferred"),
@@ -124,7 +127,7 @@ public class DifferentDays {
             }
         }
 
-        private DaysSetting(String value) {
+        DaysSetting(String value) {
             this.value = value;
         }
 

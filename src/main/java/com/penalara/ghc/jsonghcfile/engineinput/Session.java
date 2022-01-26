@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.annotation.JsonAnySetter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -24,16 +25,18 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonPropertyOrder({
     "id",
     "refFrame",
-    "refTasks",
-    "refTeachers",
-    "refSubjects",
-    "refGroups",
+    "refMainTask",
+    "refMainTeacher",
+    "refMainSubject",
+    "refMainGroup",
+    "otherElementsInClassRooms",
     "distribution",
     "sessionClassRooms",
     "frameTemplate",
     "sessionSettings",
     "sessionRelations"
 })
+@Generated("jsonschema2pojo")
 public class Session {
 
     /**
@@ -53,47 +56,54 @@ public class Session {
     @JsonPropertyDescription("Session's frame identifier.")
     private String refFrame;
     /**
-     * RefTasks
+     * RefMainTask
      * <p>
-     * List of task in the session.
-     * (Required)
+     * Main Task identifier.
      * 
      */
-    @JsonProperty("refTasks")
-    @JsonPropertyDescription("List of task in the session.")
-    private List<String> refTasks = new ArrayList<String>();
+    @JsonProperty("refMainTask")
+    @JsonPropertyDescription("Main Task identifier.")
+    private String refMainTask;
     /**
-     * RefTeachers
+     * RefMainTeacher
      * <p>
-     * List of teachers who teach or interact in the session.
-     * (Required)
+     * Main Teacher identifier.
      * 
      */
-    @JsonProperty("refTeachers")
-    @JsonPropertyDescription("List\u00a0of\u00a0teachers\u00a0who\u00a0teach\u00a0or\u00a0interact\u00a0in\u00a0the\u00a0session.")
-    private List<String> refTeachers = new ArrayList<String>();
+    @JsonProperty("refMainTeacher")
+    @JsonPropertyDescription("Main Teacher identifier.")
+    private String refMainTeacher;
     /**
-     * RefSubjects
+     * RefMainSubject
      * <p>
-     * List of subject taught in the session. At least one is required for session with groups of students.
+     * Identifier name of the main subject.
      * 
      */
-    @JsonProperty("refSubjects")
-    @JsonPropertyDescription("List of subject taught in the session. At least one is required for session with groups of students.")
-    private List<String> refSubjects = new ArrayList<String>();
+    @JsonProperty("refMainSubject")
+    @JsonPropertyDescription("Identifier name of the main subject.")
+    private String refMainSubject;
     /**
-     * RefGroups
+     * GroupReferenceType
      * <p>
-     * List of groups who are taught in the class unit. At least one is required for teaching sessions.
+     * Contains the reference to a group of the session, and optionally, the number of students of the group that attend the session.
      * 
      */
-    @JsonProperty("refGroups")
-    @JsonPropertyDescription("List of groups who are taught in the class unit. At least one is required for teaching sessions.")
-    private List<RefGroup> refGroups = new ArrayList<RefGroup>();
+    @JsonProperty("refMainGroup")
+    @JsonPropertyDescription("Contains the reference to a group of the session, and optionally, the number of students of the group that attend the session.")
+    private GroupReferenceType refMainGroup;
+    /**
+     * OtherElementsInClassRoomsList
+     * <p>
+     * List of other time elements in the classroom related to each other.
+     * 
+     */
+    @JsonProperty("otherElementsInClassRooms")
+    @JsonPropertyDescription("List of other time elements in the classroom related to each other.")
+    private List<OtherElementsInClassRooms> otherElementsInClassRooms = new ArrayList<OtherElementsInClassRooms>();
     /**
      * Distribution
      * <p>
-     * It contains information on how the class units of the session are distributed throughout the week. It must contain only one element between 'stablePeriods' and 'variablePeriods'.
+     * It contains information on how the class units of the session are distributed throughout the week. It must contain only one element between 'stablePeriods' and 'variablePeriods'.The 'periods' property is required if there is more than one period in the timetable. The 'stablePeriods' and 'variablePeriods' properties are mutually exclusive.
      * (Required)
      * 
      */
@@ -112,7 +122,7 @@ public class Session {
     /**
      * SessionFrameTemplate
      * <p>
-     * Complete template of preferences.
+     * Complete template of preferences.It have non-preferred sections.
      * 
      */
     @JsonProperty("frameTemplate")
@@ -148,26 +158,28 @@ public class Session {
 
     /**
      * 
+     * @param refMainSubject
+     * @param refMainGroup
      * @param refFrame
-     * @param refTeachers
      * @param frameTemplate
      * @param sessionRelations
      * @param sessionClassRooms
-     * @param refGroups
-     * @param refSubjects
+     * @param otherElementsInClassRooms
      * @param id
-     * @param refTasks
      * @param distribution
      * @param sessionSettings
+     * @param refMainTask
+     * @param refMainTeacher
      */
-    public Session(Integer id, String refFrame, List<String> refTasks, List<String> refTeachers, List<String> refSubjects, List<RefGroup> refGroups, Distribution distribution, SessionClassRooms sessionClassRooms, List<SessionSectionPreference> frameTemplate, SessionSettings sessionSettings, SessionRelations sessionRelations) {
+    public Session(Integer id, String refFrame, String refMainTask, String refMainTeacher, String refMainSubject, GroupReferenceType refMainGroup, List<OtherElementsInClassRooms> otherElementsInClassRooms, Distribution distribution, SessionClassRooms sessionClassRooms, List<SessionSectionPreference> frameTemplate, SessionSettings sessionSettings, SessionRelations sessionRelations) {
         super();
         this.id = id;
         this.refFrame = refFrame;
-        this.refTasks = refTasks;
-        this.refTeachers = refTeachers;
-        this.refSubjects = refSubjects;
-        this.refGroups = refGroups;
+        this.refMainTask = refMainTask;
+        this.refMainTeacher = refMainTeacher;
+        this.refMainSubject = refMainSubject;
+        this.refMainGroup = refMainGroup;
+        this.otherElementsInClassRooms = otherElementsInClassRooms;
         this.distribution = distribution;
         this.sessionClassRooms = sessionClassRooms;
         this.frameTemplate = frameTemplate;
@@ -216,101 +228,119 @@ public class Session {
     }
 
     /**
-     * RefTasks
+     * RefMainTask
      * <p>
-     * List of task in the session.
-     * (Required)
+     * Main Task identifier.
      * 
      */
-    @JsonProperty("refTasks")
-    public List<String> getRefTasks() {
-        return refTasks;
+    @JsonProperty("refMainTask")
+    public String getRefMainTask() {
+        return refMainTask;
     }
 
     /**
-     * RefTasks
+     * RefMainTask
      * <p>
-     * List of task in the session.
-     * (Required)
+     * Main Task identifier.
      * 
      */
-    @JsonProperty("refTasks")
-    public void setRefTasks(List<String> refTasks) {
-        this.refTasks = refTasks;
+    @JsonProperty("refMainTask")
+    public void setRefMainTask(String refMainTask) {
+        this.refMainTask = refMainTask;
     }
 
     /**
-     * RefTeachers
+     * RefMainTeacher
      * <p>
-     * List of teachers who teach or interact in the session.
-     * (Required)
+     * Main Teacher identifier.
      * 
      */
-    @JsonProperty("refTeachers")
-    public List<String> getRefTeachers() {
-        return refTeachers;
+    @JsonProperty("refMainTeacher")
+    public String getRefMainTeacher() {
+        return refMainTeacher;
     }
 
     /**
-     * RefTeachers
+     * RefMainTeacher
      * <p>
-     * List of teachers who teach or interact in the session.
-     * (Required)
+     * Main Teacher identifier.
      * 
      */
-    @JsonProperty("refTeachers")
-    public void setRefTeachers(List<String> refTeachers) {
-        this.refTeachers = refTeachers;
+    @JsonProperty("refMainTeacher")
+    public void setRefMainTeacher(String refMainTeacher) {
+        this.refMainTeacher = refMainTeacher;
     }
 
     /**
-     * RefSubjects
+     * RefMainSubject
      * <p>
-     * List of subject taught in the session. At least one is required for session with groups of students.
+     * Identifier name of the main subject.
      * 
      */
-    @JsonProperty("refSubjects")
-    public List<String> getRefSubjects() {
-        return refSubjects;
+    @JsonProperty("refMainSubject")
+    public String getRefMainSubject() {
+        return refMainSubject;
     }
 
     /**
-     * RefSubjects
+     * RefMainSubject
      * <p>
-     * List of subject taught in the session. At least one is required for session with groups of students.
+     * Identifier name of the main subject.
      * 
      */
-    @JsonProperty("refSubjects")
-    public void setRefSubjects(List<String> refSubjects) {
-        this.refSubjects = refSubjects;
+    @JsonProperty("refMainSubject")
+    public void setRefMainSubject(String refMainSubject) {
+        this.refMainSubject = refMainSubject;
     }
 
     /**
-     * RefGroups
+     * GroupReferenceType
      * <p>
-     * List of groups who are taught in the class unit. At least one is required for teaching sessions.
+     * Contains the reference to a group of the session, and optionally, the number of students of the group that attend the session.
      * 
      */
-    @JsonProperty("refGroups")
-    public List<RefGroup> getRefGroups() {
-        return refGroups;
+    @JsonProperty("refMainGroup")
+    public GroupReferenceType getRefMainGroup() {
+        return refMainGroup;
     }
 
     /**
-     * RefGroups
+     * GroupReferenceType
      * <p>
-     * List of groups who are taught in the class unit. At least one is required for teaching sessions.
+     * Contains the reference to a group of the session, and optionally, the number of students of the group that attend the session.
      * 
      */
-    @JsonProperty("refGroups")
-    public void setRefGroups(List<RefGroup> refGroups) {
-        this.refGroups = refGroups;
+    @JsonProperty("refMainGroup")
+    public void setRefMainGroup(GroupReferenceType refMainGroup) {
+        this.refMainGroup = refMainGroup;
+    }
+
+    /**
+     * OtherElementsInClassRoomsList
+     * <p>
+     * List of other time elements in the classroom related to each other.
+     * 
+     */
+    @JsonProperty("otherElementsInClassRooms")
+    public List<OtherElementsInClassRooms> getOtherElementsInClassRooms() {
+        return otherElementsInClassRooms;
+    }
+
+    /**
+     * OtherElementsInClassRoomsList
+     * <p>
+     * List of other time elements in the classroom related to each other.
+     * 
+     */
+    @JsonProperty("otherElementsInClassRooms")
+    public void setOtherElementsInClassRooms(List<OtherElementsInClassRooms> otherElementsInClassRooms) {
+        this.otherElementsInClassRooms = otherElementsInClassRooms;
     }
 
     /**
      * Distribution
      * <p>
-     * It contains information on how the class units of the session are distributed throughout the week. It must contain only one element between 'stablePeriods' and 'variablePeriods'.
+     * It contains information on how the class units of the session are distributed throughout the week. It must contain only one element between 'stablePeriods' and 'variablePeriods'.The 'periods' property is required if there is more than one period in the timetable. The 'stablePeriods' and 'variablePeriods' properties are mutually exclusive.
      * (Required)
      * 
      */
@@ -322,7 +352,7 @@ public class Session {
     /**
      * Distribution
      * <p>
-     * It contains information on how the class units of the session are distributed throughout the week. It must contain only one element between 'stablePeriods' and 'variablePeriods'.
+     * It contains information on how the class units of the session are distributed throughout the week. It must contain only one element between 'stablePeriods' and 'variablePeriods'.The 'periods' property is required if there is more than one period in the timetable. The 'stablePeriods' and 'variablePeriods' properties are mutually exclusive.
      * (Required)
      * 
      */
@@ -356,7 +386,7 @@ public class Session {
     /**
      * SessionFrameTemplate
      * <p>
-     * Complete template of preferences.
+     * Complete template of preferences.It have non-preferred sections.
      * 
      */
     @JsonProperty("frameTemplate")
@@ -367,7 +397,7 @@ public class Session {
     /**
      * SessionFrameTemplate
      * <p>
-     * Complete template of preferences.
+     * Complete template of preferences.It have non-preferred sections.
      * 
      */
     @JsonProperty("frameTemplate")

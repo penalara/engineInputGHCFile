@@ -6,19 +6,18 @@ engineInputGHCSchema#/properties/ghcData/properties/optimizationWeights/properti
 
 It contains options related to optimisable conditions for teachers.
 
-
-| Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
-| :------------------ | ---------- | -------------- | ------------ | :---------------- | --------------------- | ------------------- | ------------------------------------------------------------------ |
-| Can be instantiated | No         | Unknown status | No           | Forbidden         | Forbidden             | none                | [ghc.schema.json\*](../out/ghc.schema.json "open original schema") |
+| Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                        |
+| :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :---------------------------------------------------------------- |
+| Can be instantiated | No         | Unknown status | No           | Forbidden         | Forbidden             | none                | [ghc.schema.json*](../out/ghc.schema.json "open original schema") |
 
 ## teachers Type
 
 `object` ([TeachersOptimization](ghc-properties-ghcdata-properties-optimizationweights-properties-teachersoptimization.md))
 
-# TeachersOptimization Properties
+# teachers Properties
 
 | Property                                                    | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                                                                                                   |
-| :---------------------------------------------------------- | --------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| :---------------------------------------------------------- | :-------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [teacherIncompatibities](#teacherincompatibities)           | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-optimizationweights-properties-teachersoptimization-properties-teacherincompatibities.md "engineInputGHCSchema#/properties/ghcData/properties/optimizationWeights/properties/teachers/properties/teacherIncompatibities")           |
 | [uniformDailyDistribution](#uniformdailydistribution)       | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-optimizationweights-properties-teachersoptimization-properties-uniformdailydistribution.md "engineInputGHCSchema#/properties/ghcData/properties/optimizationWeights/properties/teachers/properties/uniformDailyDistribution")       |
 | [excessContinuousTeaching](#excesscontinuousteaching)       | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-optimizationweights-properties-teachersoptimization-properties-excesscontinuousteaching.md "engineInputGHCSchema#/properties/ghcData/properties/optimizationWeights/properties/teachers/properties/excessContinuousTeaching")       |
@@ -30,13 +29,15 @@ It contains options related to optimisable conditions for teachers.
 
 It indicates the weight of the teacher's incompatibilities that can be optimised.
 
-
 `teacherIncompatibities`
 
--   is optional
--   Type: `integer`
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-optimizationweights-properties-teachersoptimization-properties-teacherincompatibities.md "engineInputGHCSchema#/properties/ghcData/properties/optimizationWeights/properties/teachers/properties/teacherIncompatibities")
+*   is optional
+
+*   Type: `integer`
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-optimizationweights-properties-teachersoptimization-properties-teacherincompatibities.md "engineInputGHCSchema#/properties/ghcData/properties/optimizationWeights/properties/teachers/properties/teacherIncompatibities")
 
 ### teacherIncompatibities Type
 
@@ -54,13 +55,15 @@ The default value is:
 
 It indicates the weight of placing a teacher's class units in a non-uniform way during the week.
 
-
 `uniformDailyDistribution`
 
--   is optional
--   Type: `integer`
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-optimizationweights-properties-teachersoptimization-properties-uniformdailydistribution.md "engineInputGHCSchema#/properties/ghcData/properties/optimizationWeights/properties/teachers/properties/uniformDailyDistribution")
+*   is optional
+
+*   Type: `integer`
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-optimizationweights-properties-teachersoptimization-properties-uniformdailydistribution.md "engineInputGHCSchema#/properties/ghcData/properties/optimizationWeights/properties/teachers/properties/uniformDailyDistribution")
 
 ### uniformDailyDistribution Type
 
@@ -78,13 +81,15 @@ The default value is:
 
 It indicates the weight of placing more continuous class units than those declared in the settings.
 
-
 `excessContinuousTeaching`
 
--   is optional
--   Type: `integer`
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-optimizationweights-properties-teachersoptimization-properties-excesscontinuousteaching.md "engineInputGHCSchema#/properties/ghcData/properties/optimizationWeights/properties/teachers/properties/excessContinuousTeaching")
+*   is optional
+
+*   Type: `integer`
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-optimizationweights-properties-teachersoptimization-properties-excesscontinuousteaching.md "engineInputGHCSchema#/properties/ghcData/properties/optimizationWeights/properties/teachers/properties/excessContinuousTeaching")
 
 ### excessContinuousTeaching Type
 
@@ -102,13 +107,15 @@ The default value is:
 
 It indicates the weight of assigning more daily or weekly stay than the declared in the settings.
 
-
 `excessPermanence`
 
--   is optional
--   Type: `integer`
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-optimizationweights-properties-teachersoptimization-properties-excesspermanence.md "engineInputGHCSchema#/properties/ghcData/properties/optimizationWeights/properties/teachers/properties/excessPermanence")
+*   is optional
+
+*   Type: `integer`
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-optimizationweights-properties-teachersoptimization-properties-excesspermanence.md "engineInputGHCSchema#/properties/ghcData/properties/optimizationWeights/properties/teachers/properties/excessPermanence")
 
 ### excessPermanence Type
 
@@ -126,13 +133,15 @@ The default value is:
 
 It indicates the weight of having consecutive class units taught to the same group.
 
-
 `continuousSessionsWithGroup`
 
--   is optional
--   Type: `integer`
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-optimizationweights-properties-teachersoptimization-properties-continuoussessionswithgroup.md "engineInputGHCSchema#/properties/ghcData/properties/optimizationWeights/properties/teachers/properties/continuousSessionsWithGroup")
+*   is optional
+
+*   Type: `integer`
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-optimizationweights-properties-teachersoptimization-properties-continuoussessionswithgroup.md "engineInputGHCSchema#/properties/ghcData/properties/optimizationWeights/properties/teachers/properties/continuousSessionsWithGroup")
 
 ### continuousSessionsWithGroup Type
 
@@ -150,13 +159,15 @@ The default value is:
 
 It indicates the weight of the teacher being assigned an on-call hour within the limits of his or her timetable, thus trying to fit it into the gaps in his or her class units.
 
-
 `onCallSectionsOnBorders`
 
--   is optional
--   Type: `integer`
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-optimizationweights-properties-teachersoptimization-properties-oncallsectionsonborders.md "engineInputGHCSchema#/properties/ghcData/properties/optimizationWeights/properties/teachers/properties/onCallSectionsOnBorders")
+*   is optional
+
+*   Type: `integer`
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-optimizationweights-properties-teachersoptimization-properties-oncallsectionsonborders.md "engineInputGHCSchema#/properties/ghcData/properties/optimizationWeights/properties/teachers/properties/onCallSectionsOnBorders")
 
 ### onCallSectionsOnBorders Type
 

@@ -6,19 +6,18 @@ engineInputGHCSchema#/definitions/dailyOcupation
 
 Maximum and minimum values of teaching or activity time for teachers. This object indicates the type of condition (strict or weighting) and whether the automatic calculation in minutes in the engine should be set.
 
-
-| Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
-| :------------------ | ---------- | -------------- | ------------ | :---------------- | --------------------- | ------------------- | ------------------------------------------------------------------ |
-| Can be instantiated | No         | Unknown status | No           | Forbidden         | Forbidden             | none                | [ghc.schema.json\*](../out/ghc.schema.json "open original schema") |
+| Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                        |
+| :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :---------------------------------------------------------------- |
+| Can be instantiated | No         | Unknown status | No           | Forbidden         | Forbidden             | none                | [ghc.schema.json*](../out/ghc.schema.json "open original schema") |
 
 ## dailyOcupation Type
 
 `object` ([DailyOcupation](ghc-definitions-dailyocupation.md))
 
-# DailyOcupation Properties
+# dailyOcupation Properties
 
 | Property                              | Type      | Required | Nullable       | Defined by                                                                                                                                                           |
-| :------------------------------------ | --------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| :------------------------------------ | :-------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [allowFreeDays](#allowfreedays)       | `boolean` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-dailyocupation-properties-allowfreedays.md "engineInputGHCSchema#/definitions/dailyOcupation/properties/allowFreeDays")       |
 | [minimumTeaching](#minimumteaching)   | `object`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-dailyocupation-properties-minimumteaching.md "engineInputGHCSchema#/definitions/dailyOcupation/properties/minimumTeaching")   |
 | [maximumTeaching](#maximumteaching)   | `object`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-dailyocupation-properties-maximumteaching.md "engineInputGHCSchema#/definitions/dailyOcupation/properties/maximumTeaching")   |
@@ -29,13 +28,15 @@ Maximum and minimum values of teaching or activity time for teachers. This objec
 
 It indicates whether checking of minimums is omitted in the case of non-assigned days. Forbidden days are never checked.
 
-
 `allowFreeDays`
 
--   is optional
--   Type: `boolean`
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-definitions-dailyocupation-properties-allowfreedays.md "engineInputGHCSchema#/definitions/dailyOcupation/properties/allowFreeDays")
+*   is optional
+
+*   Type: `boolean`
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-definitions-dailyocupation-properties-allowfreedays.md "engineInputGHCSchema#/definitions/dailyOcupation/properties/allowFreeDays")
 
 ### allowFreeDays Type
 
@@ -45,13 +46,15 @@ It indicates whether checking of minimums is omitted in the case of non-assigned
 
 Minimum teaching time of the teacher with students.
 
-
 `minimumTeaching`
 
--   is optional
--   Type: `object` ([MinimumTeaching](ghc-definitions-dailyocupation-properties-minimumteaching.md))
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-definitions-dailyocupation-properties-minimumteaching.md "engineInputGHCSchema#/definitions/dailyOcupation/properties/minimumTeaching")
+*   is optional
+
+*   Type: `object` ([MinimumTeaching](ghc-definitions-dailyocupation-properties-minimumteaching.md))
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-definitions-dailyocupation-properties-minimumteaching.md "engineInputGHCSchema#/definitions/dailyOcupation/properties/minimumTeaching")
 
 ### minimumTeaching Type
 
@@ -61,13 +64,15 @@ Minimum teaching time of the teacher with students.
 
 Minimum teaching time of the teacher with students.
 
-
 `maximumTeaching`
 
--   is optional
--   Type: `object` ([MaximumTeaching](ghc-definitions-dailyocupation-properties-maximumteaching.md))
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-definitions-dailyocupation-properties-maximumteaching.md "engineInputGHCSchema#/definitions/dailyOcupation/properties/maximumTeaching")
+*   is optional
+
+*   Type: `object` ([MaximumTeaching](ghc-definitions-dailyocupation-properties-maximumteaching.md))
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-definitions-dailyocupation-properties-maximumteaching.md "engineInputGHCSchema#/definitions/dailyOcupation/properties/maximumTeaching")
 
 ### maximumTeaching Type
 
@@ -77,13 +82,15 @@ Minimum teaching time of the teacher with students.
 
 Minimum teaching time of the teacher with students and other non-teaching activities indicated as eligible for calculation.
 
-
 `minimumOccupancy`
 
--   is optional
--   Type: `object` ([MinimumOccupancy](ghc-definitions-dailyocupation-properties-minimumoccupancy.md))
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-definitions-dailyocupation-properties-minimumoccupancy.md "engineInputGHCSchema#/definitions/dailyOcupation/properties/minimumOccupancy")
+*   is optional
+
+*   Type: `object` ([MinimumOccupancy](ghc-definitions-dailyocupation-properties-minimumoccupancy.md))
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-definitions-dailyocupation-properties-minimumoccupancy.md "engineInputGHCSchema#/definitions/dailyOcupation/properties/minimumOccupancy")
 
 ### minimumOccupancy Type
 
@@ -93,13 +100,15 @@ Minimum teaching time of the teacher with students and other non-teaching activi
 
 Maximum teaching time of the teacher with students and other non-teaching activities indicated as eligible for calculation.
 
-
 `maximumOccupancy`
 
--   is optional
--   Type: `object` ([MaximumOccupancy](ghc-definitions-dailyocupation-properties-maximumoccupancy.md))
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-definitions-dailyocupation-properties-maximumoccupancy.md "engineInputGHCSchema#/definitions/dailyOcupation/properties/maximumOccupancy")
+*   is optional
+
+*   Type: `object` ([MaximumOccupancy](ghc-definitions-dailyocupation-properties-maximumoccupancy.md))
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-definitions-dailyocupation-properties-maximumoccupancy.md "engineInputGHCSchema#/definitions/dailyOcupation/properties/maximumOccupancy")
 
 ### maximumOccupancy Type
 

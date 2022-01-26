@@ -3,6 +3,7 @@ package com.penalara.ghc.jsonghcfile.engineinput;
 
 import java.util.ArrayList;
 import java.util.List;
+import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -12,7 +13,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 /**
  * Periods
  * <p>
- * Weeks or periods with different assignments which contains the timetable.
+ * Weeks or periods with different assignments which contains the timetable.If there are no defined periods, the engine will create a single period with all the days of the timetable.
  * 
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
@@ -20,6 +21,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "followedPeriods",
     "periodsList"
 })
+@Generated("jsonschema2pojo")
 public class Periods {
 
     /**

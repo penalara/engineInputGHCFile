@@ -4,6 +4,7 @@ package com.penalara.ghc.jsonghcfile.engineinput;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
+import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.annotation.JsonAnySetter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -26,6 +27,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "lastModifiedDate",
     "ghcData"
 })
+@Generated("jsonschema2pojo")
 public class EngineInputGHCSchema {
 
     /**

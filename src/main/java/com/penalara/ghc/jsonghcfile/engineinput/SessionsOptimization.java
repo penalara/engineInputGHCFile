@@ -1,6 +1,7 @@
 
 package com.penalara.ghc.jsonghcfile.engineinput;
 
+import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -23,6 +24,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "sameHourSessionClasses",
     "classRoomsChanges"
 })
+@Generated("jsonschema2pojo")
 public class SessionsOptimization {
 
     /**

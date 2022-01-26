@@ -3,6 +3,7 @@ package com.penalara.ghc.jsonghcfile.engineinput;
 
 import java.util.HashMap;
 import java.util.Map;
+import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -25,6 +26,7 @@ import com.fasterxml.jackson.annotation.JsonValue;
     "avoidMaxDuration",
     "allowDiscontinuity"
 })
+@Generated("jsonschema2pojo")
 public class WeeklyVariable {
 
     /**
@@ -188,6 +190,7 @@ public class WeeklyVariable {
      * It indicates the preference for class units of minimum duration.
      * 
      */
+    @Generated("jsonschema2pojo")
     public enum MinDurationDaily {
 
         ALLOW("allow"),
@@ -202,7 +205,7 @@ public class WeeklyVariable {
             }
         }
 
-        private MinDurationDaily(String value) {
+        MinDurationDaily(String value) {
             this.value = value;
         }
 

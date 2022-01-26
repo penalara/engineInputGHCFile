@@ -3,6 +3,7 @@ package com.penalara.ghc.jsonghcfile.engineinput;
 
 import java.util.HashMap;
 import java.util.Map;
+import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -19,7 +20,6 @@ import com.fasterxml.jackson.annotation.JsonValue;
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "computeForMaxMinOccupancy",
     "avoidFirstHourSessions",
     "avoidLastHourSessions",
     "avoidAssingLastHourAndFirstNextDay",
@@ -31,15 +31,9 @@ import com.fasterxml.jackson.annotation.JsonValue;
     "consecutiveWeeksBorders",
     "samePositionEveryPeriod"
 })
+@Generated("jsonschema2pojo")
 public class SessionSettings {
 
-    /**
-     *  It indicates whether the class unit counts for the maximum and minimum daily teacher occupancy. By default, the engine computes class units with students.
-     * 
-     */
-    @JsonProperty("computeForMaxMinOccupancy")
-    @JsonPropertyDescription(" It indicates whether the class unit counts for the maximum and minimum daily teacher occupancy. By default, the engine computes class units with students.")
-    private Boolean computeForMaxMinOccupancy = false;
     /**
      * It penalises the position of the class units if more than 50% of the class units are at first hour.
      * 
@@ -104,12 +98,14 @@ public class SessionSettings {
     @JsonPropertyDescription("It considers the end-of-week day, and the start-of-week day, as consecutive days for 'followedDaysPreference'.")
     private Boolean consecutiveWeeksBorders = false;
     /**
+     * SamePositionEveryPeriod
+     * <p>
      * Keep the same position every week or period for the class units.
      * 
      */
     @JsonProperty("samePositionEveryPeriod")
     @JsonPropertyDescription("Keep the same position every week or period for the class units.")
-    private SessionSettings.SamePositionEveryPeriod samePositionEveryPeriod = SessionSettings.SamePositionEveryPeriod.fromValue("ignore");
+    private SamePositionEveryPeriod samePositionEveryPeriod = SamePositionEveryPeriod.fromValue("ignore");
 
     /**
      * No args constructor for use in serialization
@@ -124,7 +120,6 @@ public class SessionSettings {
      * @param avoidAfternoonSessions
      * @param nonBreakInTheMiddleOfSession
      * @param avoidAssingLastHourAndFirstNextDay
-     * @param computeForMaxMinOccupancy
      * @param avoidFirstHourSessions
      * @param avoidLastHourSessions
      * @param samePositionEveryPeriod
@@ -132,9 +127,8 @@ public class SessionSettings {
      * @param consecutiveWeeksBorders
      * @param followedDaysPreference
      */
-    public SessionSettings(Boolean computeForMaxMinOccupancy, Boolean avoidFirstHourSessions, Boolean avoidLastHourSessions, Boolean avoidAssingLastHourAndFirstNextDay, SessionSettings.SameHourPreference sameHourPreference, Boolean avoidAfternoonSessions, Boolean avoidSectionsAfterBreak, Boolean nonBreakInTheMiddleOfSession, SessionSettings.FollowedDaysPreference followedDaysPreference, Boolean consecutiveWeeksBorders, SessionSettings.SamePositionEveryPeriod samePositionEveryPeriod) {
+    public SessionSettings(Boolean avoidFirstHourSessions, Boolean avoidLastHourSessions, Boolean avoidAssingLastHourAndFirstNextDay, SessionSettings.SameHourPreference sameHourPreference, Boolean avoidAfternoonSessions, Boolean avoidSectionsAfterBreak, Boolean nonBreakInTheMiddleOfSession, SessionSettings.FollowedDaysPreference followedDaysPreference, Boolean consecutiveWeeksBorders, SamePositionEveryPeriod samePositionEveryPeriod) {
         super();
-        this.computeForMaxMinOccupancy = computeForMaxMinOccupancy;
         this.avoidFirstHourSessions = avoidFirstHourSessions;
         this.avoidLastHourSessions = avoidLastHourSessions;
         this.avoidAssingLastHourAndFirstNextDay = avoidAssingLastHourAndFirstNextDay;
@@ -145,24 +139,6 @@ public class SessionSettings {
         this.followedDaysPreference = followedDaysPreference;
         this.consecutiveWeeksBorders = consecutiveWeeksBorders;
         this.samePositionEveryPeriod = samePositionEveryPeriod;
-    }
-
-    /**
-     *  It indicates whether the class unit counts for the maximum and minimum daily teacher occupancy. By default, the engine computes class units with students.
-     * 
-     */
-    @JsonProperty("computeForMaxMinOccupancy")
-    public Boolean getComputeForMaxMinOccupancy() {
-        return computeForMaxMinOccupancy;
-    }
-
-    /**
-     *  It indicates whether the class unit counts for the maximum and minimum daily teacher occupancy. By default, the engine computes class units with students.
-     * 
-     */
-    @JsonProperty("computeForMaxMinOccupancy")
-    public void setComputeForMaxMinOccupancy(Boolean computeForMaxMinOccupancy) {
-        this.computeForMaxMinOccupancy = computeForMaxMinOccupancy;
     }
 
     /**
@@ -328,20 +304,24 @@ public class SessionSettings {
     }
 
     /**
+     * SamePositionEveryPeriod
+     * <p>
      * Keep the same position every week or period for the class units.
      * 
      */
     @JsonProperty("samePositionEveryPeriod")
-    public SessionSettings.SamePositionEveryPeriod getSamePositionEveryPeriod() {
+    public SamePositionEveryPeriod getSamePositionEveryPeriod() {
         return samePositionEveryPeriod;
     }
 
     /**
+     * SamePositionEveryPeriod
+     * <p>
      * Keep the same position every week or period for the class units.
      * 
      */
     @JsonProperty("samePositionEveryPeriod")
-    public void setSamePositionEveryPeriod(SessionSettings.SamePositionEveryPeriod samePositionEveryPeriod) {
+    public void setSamePositionEveryPeriod(SamePositionEveryPeriod samePositionEveryPeriod) {
         this.samePositionEveryPeriod = samePositionEveryPeriod;
     }
 
@@ -350,6 +330,7 @@ public class SessionSettings {
      * If the class unit has more than one lesson, indicates the preference on assigning them on consecutive days.
      * 
      */
+    @Generated("jsonschema2pojo")
     public enum FollowedDaysPreference {
 
         IGNORE("ignore"),
@@ -366,7 +347,7 @@ public class SessionSettings {
             }
         }
 
-        private FollowedDaysPreference(String value) {
+        FollowedDaysPreference(String value) {
             this.value = value;
         }
 
@@ -397,6 +378,7 @@ public class SessionSettings {
      * Preference over class units that coincide in the same time slot.
      * 
      */
+    @Generated("jsonschema2pojo")
     public enum SameHourPreference {
 
         IGNORE("ignore"),
@@ -411,7 +393,7 @@ public class SessionSettings {
             }
         }
 
-        private SameHourPreference(String value) {
+        SameHourPreference(String value) {
             this.value = value;
         }
 
@@ -428,53 +410,6 @@ public class SessionSettings {
         @JsonCreator
         public static SessionSettings.SameHourPreference fromValue(String value) {
             SessionSettings.SameHourPreference constant = CONSTANTS.get(value);
-            if (constant == null) {
-                throw new IllegalArgumentException(value);
-            } else {
-                return constant;
-            }
-        }
-
-    }
-
-
-    /**
-     * Keep the same position every week or period for the class units.
-     * 
-     */
-    public enum SamePositionEveryPeriod {
-
-        IGNORE("ignore"),
-        ATTEMPT("attempt"),
-        AVOID("avoid"),
-        STRICT("strict"),
-        FORBIDDEN("forbidden");
-        private final String value;
-        private final static Map<String, SessionSettings.SamePositionEveryPeriod> CONSTANTS = new HashMap<String, SessionSettings.SamePositionEveryPeriod>();
-
-        static {
-            for (SessionSettings.SamePositionEveryPeriod c: values()) {
-                CONSTANTS.put(c.value, c);
-            }
-        }
-
-        private SamePositionEveryPeriod(String value) {
-            this.value = value;
-        }
-
-        @Override
-        public String toString() {
-            return this.value;
-        }
-
-        @JsonValue
-        public String value() {
-            return this.value;
-        }
-
-        @JsonCreator
-        public static SessionSettings.SamePositionEveryPeriod fromValue(String value) {
-            SessionSettings.SamePositionEveryPeriod constant = CONSTANTS.get(value);
             if (constant == null) {
                 throw new IllegalArgumentException(value);
             } else {

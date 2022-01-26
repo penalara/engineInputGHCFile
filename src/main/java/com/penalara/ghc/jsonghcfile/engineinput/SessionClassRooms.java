@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -23,15 +24,16 @@ import com.fasterxml.jackson.annotation.JsonValue;
 @JsonPropertyOrder({
     "classRoomsToAssign",
     "capacityPreference",
-    "capacityType",
-    "refBuilding"
+    "capacityType"
 })
+@Generated("jsonschema2pojo")
 public class SessionClassRooms {
 
     /**
      * ClassRoomsToAssign
      * <p>
      * List of classrooms to the session. Each object in the list represent one classroom that must be assigned.
+     * (Required)
      * 
      */
     @JsonProperty("classRoomsToAssign")
@@ -51,13 +53,6 @@ public class SessionClassRooms {
     @JsonProperty("capacityType")
     @JsonPropertyDescription("It indicates whether all students in the class units should fit in each classroom, or in the amount of all classrooms.")
     private SessionClassRooms.CapacityType capacityType = SessionClassRooms.CapacityType.fromValue("individual");
-    /**
-     * Building identifier of the building where the class unit takes place. Only allowed for sessions without groups of students. This is used to know the moving time and the number of moves between buildings for teachers without specifying a classroom.
-     * 
-     */
-    @JsonProperty("refBuilding")
-    @JsonPropertyDescription("Building identifier of the building where the class unit takes place. Only allowed for sessions without groups of students. This is used to know the moving time and the number of moves between buildings for teachers without specifying a classroom.")
-    private String refBuilding;
 
     /**
      * No args constructor for use in serialization
@@ -71,20 +66,19 @@ public class SessionClassRooms {
      * @param capacityPreference
      * @param capacityType
      * @param classRoomsToAssign
-     * @param refBuilding
      */
-    public SessionClassRooms(List<RefClassRoomToAssign> classRoomsToAssign, SessionClassRooms.CapacityPreference capacityPreference, SessionClassRooms.CapacityType capacityType, String refBuilding) {
+    public SessionClassRooms(List<RefClassRoomToAssign> classRoomsToAssign, SessionClassRooms.CapacityPreference capacityPreference, SessionClassRooms.CapacityType capacityType) {
         super();
         this.classRoomsToAssign = classRoomsToAssign;
         this.capacityPreference = capacityPreference;
         this.capacityType = capacityType;
-        this.refBuilding = refBuilding;
     }
 
     /**
      * ClassRoomsToAssign
      * <p>
      * List of classrooms to the session. Each object in the list represent one classroom that must be assigned.
+     * (Required)
      * 
      */
     @JsonProperty("classRoomsToAssign")
@@ -96,6 +90,7 @@ public class SessionClassRooms {
      * ClassRoomsToAssign
      * <p>
      * List of classrooms to the session. Each object in the list represent one classroom that must be assigned.
+     * (Required)
      * 
      */
     @JsonProperty("classRoomsToAssign")
@@ -139,29 +134,12 @@ public class SessionClassRooms {
         this.capacityType = capacityType;
     }
 
-    /**
-     * Building identifier of the building where the class unit takes place. Only allowed for sessions without groups of students. This is used to know the moving time and the number of moves between buildings for teachers without specifying a classroom.
-     * 
-     */
-    @JsonProperty("refBuilding")
-    public String getRefBuilding() {
-        return refBuilding;
-    }
-
-    /**
-     * Building identifier of the building where the class unit takes place. Only allowed for sessions without groups of students. This is used to know the moving time and the number of moves between buildings for teachers without specifying a classroom.
-     * 
-     */
-    @JsonProperty("refBuilding")
-    public void setRefBuilding(String refBuilding) {
-        this.refBuilding = refBuilding;
-    }
-
 
     /**
      * Preference on whether the engine should assess the capacity of the classroom to allocate each class unit.
      * 
      */
+    @Generated("jsonschema2pojo")
     public enum CapacityPreference {
 
         ATTEMPT("attempt"),
@@ -176,7 +154,7 @@ public class SessionClassRooms {
             }
         }
 
-        private CapacityPreference(String value) {
+        CapacityPreference(String value) {
             this.value = value;
         }
 
@@ -207,6 +185,7 @@ public class SessionClassRooms {
      * It indicates whether all students in the class units should fit in each classroom, or in the amount of all classrooms.
      * 
      */
+    @Generated("jsonschema2pojo")
     public enum CapacityType {
 
         INDIVIDUAL("individual"),
@@ -220,7 +199,7 @@ public class SessionClassRooms {
             }
         }
 
-        private CapacityType(String value) {
+        CapacityType(String value) {
             this.value = value;
         }
 

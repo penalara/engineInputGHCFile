@@ -6,10 +6,9 @@ engineInputGHCSchema#/definitions/incompatibilities/properties/doNotFinishAtLast
 
 o not finish at the last hour of the evening and start at the first.
 
-
-| Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
-| :------------------ | ---------- | -------------- | ----------------------- | :---------------- | --------------------- | ------------------- | ------------------------------------------------------------------ |
-| Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [ghc.schema.json\*](../out/ghc.schema.json "open original schema") |
+| Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                        |
+| :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :---------------------------------------------------------------- |
+| Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [ghc.schema.json*](../out/ghc.schema.json "open original schema") |
 
 ## doNotFinishAtLastAfternoonSectionIfStartedAtFirstAfternoonSection Type
 
@@ -20,7 +19,7 @@ unknown ([DoNotFinishAtLastAfternoonSection](ghc-definitions-incompatibilities-p
 **enum**: the value of this property must be equal to one of the following values:
 
 | Value      | Explanation |
-| :--------- | ----------- |
+| :--------- | :---------- |
 | `"ignore"` |             |
 | `"avoid"`  |             |
 | `"strict"` |             |

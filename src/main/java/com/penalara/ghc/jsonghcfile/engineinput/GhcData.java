@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.annotation.JsonAnySetter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -32,16 +33,19 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "subjects",
     "groups",
     "sessions",
+    "meetings",
+    "complementaryActivities",
     "onCallServices",
     "optimizationWeights",
     "engineSettings"
 })
+@Generated("jsonschema2pojo")
 public class GhcData {
 
     /**
      * Periods
      * <p>
-     * Weeks or periods with different assignments which contains the timetable.
+     * Weeks or periods with different assignments which contains the timetable.If there are no defined periods, the engine will create a single period with all the days of the timetable.
      * 
      */
     @JsonProperty("periods")
@@ -136,6 +140,24 @@ public class GhcData {
     @JsonPropertyDescription("Definition of the teacher class units. These may be with groups of students, meetings with other teachers or complementary activities.")
     private List<Session> sessions = new ArrayList<Session>();
     /**
+     * Meetings
+     * <p>
+     * List of meetings between teachers defined in the timetable.
+     * 
+     */
+    @JsonProperty("meetings")
+    @JsonPropertyDescription("List of meetings between teachers defined in the timetable.")
+    private List<Meeting> meetings = new ArrayList<Meeting>();
+    /**
+     * ComplementaryActivities
+     * <p>
+     * List of complementary activities of the teachers.
+     * 
+     */
+    @JsonProperty("complementaryActivities")
+    @JsonPropertyDescription("List of complementary activities of the teachers.")
+    private List<Complementary> complementaryActivities = new ArrayList<Complementary>();
+    /**
      * OnCallServices
      * <p>
      * List of on-call services of teachers defined in the timetable.
@@ -184,11 +206,13 @@ public class GhcData {
      * @param buildings
      * @param periods
      * @param classRooms
+     * @param meetings
+     * @param complementaryActivities
      * @param engineSettings
      * @param onCallServices
      * @param tasks
      */
-    public GhcData(Periods periods, List<Frame> frames, List<Building> buildings, List<Classroom> classRooms, List<ClassRoomSet> classRoomsSets, List<Task> tasks, List<Teacher> teachers, List<Subject> subjects, List<Group> groups, List<Session> sessions, List<OnCallService> onCallServices, OptimizationWeights optimizationWeights, EngineSettings engineSettings) {
+    public GhcData(Periods periods, List<Frame> frames, List<Building> buildings, List<Classroom> classRooms, List<ClassRoomSet> classRoomsSets, List<Task> tasks, List<Teacher> teachers, List<Subject> subjects, List<Group> groups, List<Session> sessions, List<Meeting> meetings, List<Complementary> complementaryActivities, List<OnCallService> onCallServices, OptimizationWeights optimizationWeights, EngineSettings engineSettings) {
         super();
         this.periods = periods;
         this.frames = frames;
@@ -200,6 +224,8 @@ public class GhcData {
         this.subjects = subjects;
         this.groups = groups;
         this.sessions = sessions;
+        this.meetings = meetings;
+        this.complementaryActivities = complementaryActivities;
         this.onCallServices = onCallServices;
         this.optimizationWeights = optimizationWeights;
         this.engineSettings = engineSettings;
@@ -208,7 +234,7 @@ public class GhcData {
     /**
      * Periods
      * <p>
-     * Weeks or periods with different assignments which contains the timetable.
+     * Weeks or periods with different assignments which contains the timetable.If there are no defined periods, the engine will create a single period with all the days of the timetable.
      * 
      */
     @JsonProperty("periods")
@@ -219,7 +245,7 @@ public class GhcData {
     /**
      * Periods
      * <p>
-     * Weeks or periods with different assignments which contains the timetable.
+     * Weeks or periods with different assignments which contains the timetable.If there are no defined periods, the engine will create a single period with all the days of the timetable.
      * 
      */
     @JsonProperty("periods")
@@ -437,6 +463,50 @@ public class GhcData {
     @JsonProperty("sessions")
     public void setSessions(List<Session> sessions) {
         this.sessions = sessions;
+    }
+
+    /**
+     * Meetings
+     * <p>
+     * List of meetings between teachers defined in the timetable.
+     * 
+     */
+    @JsonProperty("meetings")
+    public List<Meeting> getMeetings() {
+        return meetings;
+    }
+
+    /**
+     * Meetings
+     * <p>
+     * List of meetings between teachers defined in the timetable.
+     * 
+     */
+    @JsonProperty("meetings")
+    public void setMeetings(List<Meeting> meetings) {
+        this.meetings = meetings;
+    }
+
+    /**
+     * ComplementaryActivities
+     * <p>
+     * List of complementary activities of the teachers.
+     * 
+     */
+    @JsonProperty("complementaryActivities")
+    public List<Complementary> getComplementaryActivities() {
+        return complementaryActivities;
+    }
+
+    /**
+     * ComplementaryActivities
+     * <p>
+     * List of complementary activities of the teachers.
+     * 
+     */
+    @JsonProperty("complementaryActivities")
+    public void setComplementaryActivities(List<Complementary> complementaryActivities) {
+        this.complementaryActivities = complementaryActivities;
     }
 
     /**

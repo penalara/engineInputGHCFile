@@ -3,6 +3,7 @@ package com.penalara.ghc.jsonghcfile.engineinput;
 
 import java.util.ArrayList;
 import java.util.List;
+import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -12,7 +13,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 /**
  * StablePeriods
  * <p>
- * The distribution of the class unit of the session is the same in each period.
+ * The distribution of the class unit of the session is the same in each period.Only one property must be specified.
  * 
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
@@ -21,6 +22,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "weeklyVariable",
     "weeklyCustom"
 })
+@Generated("jsonschema2pojo")
 public class StablePeriods {
 
     /**

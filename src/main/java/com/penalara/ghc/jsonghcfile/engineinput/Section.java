@@ -3,6 +3,7 @@ package com.penalara.ghc.jsonghcfile.engineinput;
 
 import java.util.HashMap;
 import java.util.Map;
+import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.annotation.JsonAnySetter;
 import com.fasterxml.jackson.annotation.JsonCreator;
@@ -22,7 +23,6 @@ import com.fasterxml.jackson.annotation.JsonValue;
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "day",
     "index",
     "entryTime",
     "exitTime",
@@ -30,16 +30,9 @@ import com.fasterxml.jackson.annotation.JsonValue;
     "type",
     "allowed"
 })
+@Generated("jsonschema2pojo")
 public class Section {
 
-    /**
-     * Day of the week where the section is located.
-     * (Required)
-     * 
-     */
-    @JsonProperty("day")
-    @JsonPropertyDescription("Day of the week where the section is located.")
-    private Integer day;
     /**
      * Index built into the day where the section is located.
      * (Required)
@@ -65,7 +58,7 @@ public class Section {
     @JsonPropertyDescription("End time of the section.")
     private String exitTime;
     /**
-     * It indicates the duration (real or proportional) of the section in minutes.
+     * It indicates the duration (real or proportional) of the section in minutes.This indicates the duration of the section that the engine will use to assign class units. It can be the actual duration between check-in and check-out, or it can be a proportional time to simplify (hour, half hour, three-quarters of an hour...). The distribution of class units will be consistent with this duration.
      * (Required)
      * 
      */
@@ -105,37 +98,15 @@ public class Section {
      * @param allowed
      * @param index
      * @param type
-     * @param day
      */
-    public Section(Integer day, Integer index, String entryTime, String exitTime, Integer duration, Section.Type type, Boolean allowed) {
+    public Section(Integer index, String entryTime, String exitTime, Integer duration, Section.Type type, Boolean allowed) {
         super();
-        this.day = day;
         this.index = index;
         this.entryTime = entryTime;
         this.exitTime = exitTime;
         this.duration = duration;
         this.type = type;
         this.allowed = allowed;
-    }
-
-    /**
-     * Day of the week where the section is located.
-     * (Required)
-     * 
-     */
-    @JsonProperty("day")
-    public Integer getDay() {
-        return day;
-    }
-
-    /**
-     * Day of the week where the section is located.
-     * (Required)
-     * 
-     */
-    @JsonProperty("day")
-    public void setDay(Integer day) {
-        this.day = day;
     }
 
     /**
@@ -199,7 +170,7 @@ public class Section {
     }
 
     /**
-     * It indicates the duration (real or proportional) of the section in minutes.
+     * It indicates the duration (real or proportional) of the section in minutes.This indicates the duration of the section that the engine will use to assign class units. It can be the actual duration between check-in and check-out, or it can be a proportional time to simplify (hour, half hour, three-quarters of an hour...). The distribution of class units will be consistent with this duration.
      * (Required)
      * 
      */
@@ -209,7 +180,7 @@ public class Section {
     }
 
     /**
-     * It indicates the duration (real or proportional) of the section in minutes.
+     * It indicates the duration (real or proportional) of the section in minutes.This indicates the duration of the section that the engine will use to assign class units. It can be the actual duration between check-in and check-out, or it can be a proportional time to simplify (hour, half hour, three-quarters of an hour...). The distribution of class units will be consistent with this duration.
      * (Required)
      * 
      */
@@ -271,6 +242,7 @@ public class Section {
      * Kind of section.
      * 
      */
+    @Generated("jsonschema2pojo")
     public enum Type {
 
         TEACHING("teaching"),
@@ -285,7 +257,7 @@ public class Section {
             }
         }
 
-        private Type(String value) {
+        Type(String value) {
             this.value = value;
         }
 

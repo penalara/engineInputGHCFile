@@ -6,19 +6,18 @@ engineInputGHCSchema#/definitions/incompatibilities
 
 It contains the teacher's incompatibilities on the allocation of class units and rest periods.
 
-
-| Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
-| :------------------ | ---------- | -------------- | ------------ | :---------------- | --------------------- | ------------------- | ------------------------------------------------------------------ |
-| Can be instantiated | No         | Unknown status | No           | Forbidden         | Forbidden             | none                | [ghc.schema.json\*](../out/ghc.schema.json "open original schema") |
+| Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                        |
+| :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :---------------------------------------------------------------- |
+| Can be instantiated | No         | Unknown status | No           | Forbidden         | Forbidden             | none                | [ghc.schema.json*](../out/ghc.schema.json "open original schema") |
 
 ## incompatibilities Type
 
 `object` ([Incompatibilities](ghc-definitions-incompatibilities.md))
 
-# Incompatibilities Properties
+# incompatibilities Properties
 
 | Property                                                                                                                                | Type          | Required | Nullable       | Defined by                                                                                                                                                                                                                                                    |
-| :-------------------------------------------------------------------------------------------------------------------------------------- | ------------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| :-------------------------------------------------------------------------------------------------------------------------------------- | :------------ | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | [freeTimeBetweenDayBeforeAndCurrent](#freetimebetweendaybeforeandcurrent)                                                               | `object`      | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-freetimebetweendays.md "engineInputGHCSchema#/definitions/incompatibilities/properties/freeTimeBetweenDayBeforeAndCurrent")                                                               |
 | [freeTimeBetweenEndWeekAndStartWeekDays](#freetimebetweenendweekandstartweekdays)                                                       | `object`      | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-freetimebetweenweeksborders.md "engineInputGHCSchema#/definitions/incompatibilities/properties/freeTimeBetweenEndWeekAndStartWeekDays")                                                   |
 | [freeTimeFirstOrLastHoursDay](#freetimefirstorlasthoursday)                                                                             | `object`      | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-freetimefirstorlasthoursday.md "engineInputGHCSchema#/definitions/incompatibilities/properties/freeTimeFirstOrLastHoursDay")                                                              |
@@ -33,13 +32,15 @@ It contains the teacher's incompatibilities on the allocation of class units and
 
 Minutes between departure and arrival of the following day.
 
-
 `freeTimeBetweenDayBeforeAndCurrent`
 
--   is optional
--   Type: `object` ([FreeTimeBetweenDays](ghc-definitions-incompatibilities-properties-freetimebetweendays.md))
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-freetimebetweendays.md "engineInputGHCSchema#/definitions/incompatibilities/properties/freeTimeBetweenDayBeforeAndCurrent")
+*   is optional
+
+*   Type: `object` ([FreeTimeBetweenDays](ghc-definitions-incompatibilities-properties-freetimebetweendays.md))
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-freetimebetweendays.md "engineInputGHCSchema#/definitions/incompatibilities/properties/freeTimeBetweenDayBeforeAndCurrent")
 
 ### freeTimeBetweenDayBeforeAndCurrent Type
 
@@ -49,13 +50,15 @@ Minutes between departure and arrival of the following day.
 
 Minutes between the end time of the last day of the week and the start time of the following week.
 
-
 `freeTimeBetweenEndWeekAndStartWeekDays`
 
--   is optional
--   Type: `object` ([FreeTimeBetweenWeeksBorders](ghc-definitions-incompatibilities-properties-freetimebetweenweeksborders.md))
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-freetimebetweenweeksborders.md "engineInputGHCSchema#/definitions/incompatibilities/properties/freeTimeBetweenEndWeekAndStartWeekDays")
+*   is optional
+
+*   Type: `object` ([FreeTimeBetweenWeeksBorders](ghc-definitions-incompatibilities-properties-freetimebetweenweeksborders.md))
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-freetimebetweenweeksborders.md "engineInputGHCSchema#/definitions/incompatibilities/properties/freeTimeBetweenEndWeekAndStartWeekDays")
 
 ### freeTimeBetweenEndWeekAndStartWeekDays Type
 
@@ -65,13 +68,15 @@ Minutes between the end time of the last day of the week and the start time of t
 
 Minutes of free time at first or last hours of the day.
 
-
 `freeTimeFirstOrLastHoursDay`
 
--   is optional
--   Type: `object` ([FreeTimeFirstOrLastHoursDay](ghc-definitions-incompatibilities-properties-freetimefirstorlasthoursday.md))
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-freetimefirstorlasthoursday.md "engineInputGHCSchema#/definitions/incompatibilities/properties/freeTimeFirstOrLastHoursDay")
+*   is optional
+
+*   Type: `object` ([FreeTimeFirstOrLastHoursDay](ghc-definitions-incompatibilities-properties-freetimefirstorlasthoursday.md))
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-freetimefirstorlasthoursday.md "engineInputGHCSchema#/definitions/incompatibilities/properties/freeTimeFirstOrLastHoursDay")
 
 ### freeTimeFirstOrLastHoursDay Type
 
@@ -81,13 +86,15 @@ Minutes of free time at first or last hours of the day.
 
 o not finish at the last hour of the evening and start at the first.
 
-
 `doNotFinishAtLastAfternoonSectionIfStartedAtFirstAfternoonSection`
 
--   is optional
--   Type: unknown ([DoNotFinishAtLastAfternoonSection](ghc-definitions-incompatibilities-properties-donotfinishatlastafternoonsection.md))
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-donotfinishatlastafternoonsection.md "engineInputGHCSchema#/definitions/incompatibilities/properties/doNotFinishAtLastAfternoonSectionIfStartedAtFirstAfternoonSection")
+*   is optional
+
+*   Type: unknown ([DoNotFinishAtLastAfternoonSection](ghc-definitions-incompatibilities-properties-donotfinishatlastafternoonsection.md))
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-donotfinishatlastafternoonsection.md "engineInputGHCSchema#/definitions/incompatibilities/properties/doNotFinishAtLastAfternoonSectionIfStartedAtFirstAfternoonSection")
 
 ### doNotFinishAtLastAfternoonSectionIfStartedAtFirstAfternoonSection Type
 
@@ -98,7 +105,7 @@ unknown ([DoNotFinishAtLastAfternoonSection](ghc-definitions-incompatibilities-p
 **enum**: the value of this property must be equal to one of the following values:
 
 | Value      | Explanation |
-| :--------- | ----------- |
+| :--------- | :---------- |
 | `"ignore"` |             |
 | `"avoid"`  |             |
 | `"strict"` |             |
@@ -107,13 +114,15 @@ unknown ([DoNotFinishAtLastAfternoonSection](ghc-definitions-incompatibilities-p
 
 Do not start at the first hour and finish at the last hour of the morning.
 
-
 `doNotFinishAtLastMorningSectionIfStartedAtFirstMorningSection`
 
--   is optional
--   Type: unknown ([DoNotFinishAtLastMorningSection](ghc-definitions-incompatibilities-properties-donotfinishatlastmorningsection.md))
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-donotfinishatlastmorningsection.md "engineInputGHCSchema#/definitions/incompatibilities/properties/doNotFinishAtLastMorningSectionIfStartedAtFirstMorningSection")
+*   is optional
+
+*   Type: unknown ([DoNotFinishAtLastMorningSection](ghc-definitions-incompatibilities-properties-donotfinishatlastmorningsection.md))
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-donotfinishatlastmorningsection.md "engineInputGHCSchema#/definitions/incompatibilities/properties/doNotFinishAtLastMorningSectionIfStartedAtFirstMorningSection")
 
 ### doNotFinishAtLastMorningSectionIfStartedAtFirstMorningSection Type
 
@@ -124,7 +133,7 @@ unknown ([DoNotFinishAtLastMorningSection](ghc-definitions-incompatibilities-pro
 **enum**: the value of this property must be equal to one of the following values:
 
 | Value      | Explanation |
-| :--------- | ----------- |
+| :--------- | :---------- |
 | `"ignore"` |             |
 | `"avoid"`  |             |
 | `"strict"` |             |
@@ -133,13 +142,15 @@ unknown ([DoNotFinishAtLastMorningSection](ghc-definitions-incompatibilities-pro
 
 Do not finish at the last hour of the morning and start at the first hour of the evening.
 
-
 `doNotFinishAtLastMorningSectionIfStartAtFirstAfternoonSection`
 
--   is optional
--   Type: unknown ([DoNotFinishAtLastMorningSectionIfStartAtFirstAfternoon](ghc-definitions-incompatibilities-properties-donotfinishatlastmorningsectionifstartatfirstafternoon.md))
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-donotfinishatlastmorningsectionifstartatfirstafternoon.md "engineInputGHCSchema#/definitions/incompatibilities/properties/doNotFinishAtLastMorningSectionIfStartAtFirstAfternoonSection")
+*   is optional
+
+*   Type: unknown ([DoNotFinishAtLastMorningSectionIfStartAtFirstAfternoon](ghc-definitions-incompatibilities-properties-donotfinishatlastmorningsectionifstartatfirstafternoon.md))
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-donotfinishatlastmorningsectionifstartatfirstafternoon.md "engineInputGHCSchema#/definitions/incompatibilities/properties/doNotFinishAtLastMorningSectionIfStartAtFirstAfternoonSection")
 
 ### doNotFinishAtLastMorningSectionIfStartAtFirstAfternoonSection Type
 
@@ -150,7 +161,7 @@ unknown ([DoNotFinishAtLastMorningSectionIfStartAtFirstAfternoon](ghc-definition
 **enum**: the value of this property must be equal to one of the following values:
 
 | Value      | Explanation |
-| :--------- | ----------- |
+| :--------- | :---------- |
 | `"ignore"` |             |
 | `"avoid"`  |             |
 | `"strict"` |             |
@@ -159,13 +170,15 @@ unknown ([DoNotFinishAtLastMorningSectionIfStartAtFirstAfternoon](ghc-definition
 
 Do not finish at the last hour in the morning and have the evening busy.
 
-
 `doNotFinishAtLastMorningSectionIfHasAfternoonAssignment`
 
--   is optional
--   Type: unknown ([DoNotFinishAtLastMorningSectionIfHasAfternoon](ghc-definitions-incompatibilities-properties-donotfinishatlastmorningsectionifhasafternoon.md))
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-donotfinishatlastmorningsectionifhasafternoon.md "engineInputGHCSchema#/definitions/incompatibilities/properties/doNotFinishAtLastMorningSectionIfHasAfternoonAssignment")
+*   is optional
+
+*   Type: unknown ([DoNotFinishAtLastMorningSectionIfHasAfternoon](ghc-definitions-incompatibilities-properties-donotfinishatlastmorningsectionifhasafternoon.md))
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-donotfinishatlastmorningsectionifhasafternoon.md "engineInputGHCSchema#/definitions/incompatibilities/properties/doNotFinishAtLastMorningSectionIfHasAfternoonAssignment")
 
 ### doNotFinishAtLastMorningSectionIfHasAfternoonAssignment Type
 
@@ -176,7 +189,7 @@ unknown ([DoNotFinishAtLastMorningSectionIfHasAfternoon](ghc-definitions-incompa
 **enum**: the value of this property must be equal to one of the following values:
 
 | Value      | Explanation |
-| :--------- | ----------- |
+| :--------- | :---------- |
 | `"ignore"` |             |
 | `"avoid"`  |             |
 | `"strict"` |             |
@@ -185,13 +198,15 @@ unknown ([DoNotFinishAtLastMorningSectionIfHasAfternoon](ghc-definitions-incompa
 
 Do not start at the first hour and keep the evening busy.
 
-
 `doNotStartAtFirstMorningSectionIfHasAfternoonAssignment`
 
--   is optional
--   Type: unknown ([DoNotStartAtFirstMorningSection](ghc-definitions-incompatibilities-properties-donotstartatfirstmorningsection.md))
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-donotstartatfirstmorningsection.md "engineInputGHCSchema#/definitions/incompatibilities/properties/doNotStartAtFirstMorningSectionIfHasAfternoonAssignment")
+*   is optional
+
+*   Type: unknown ([DoNotStartAtFirstMorningSection](ghc-definitions-incompatibilities-properties-donotstartatfirstmorningsection.md))
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-donotstartatfirstmorningsection.md "engineInputGHCSchema#/definitions/incompatibilities/properties/doNotStartAtFirstMorningSectionIfHasAfternoonAssignment")
 
 ### doNotStartAtFirstMorningSectionIfHasAfternoonAssignment Type
 
@@ -202,7 +217,7 @@ unknown ([DoNotStartAtFirstMorningSection](ghc-definitions-incompatibilities-pro
 **enum**: the value of this property must be equal to one of the following values:
 
 | Value      | Explanation |
-| :--------- | ----------- |
+| :--------- | :---------- |
 | `"ignore"` |             |
 | `"avoid"`  |             |
 | `"strict"` |             |
@@ -211,13 +226,15 @@ unknown ([DoNotStartAtFirstMorningSection](ghc-definitions-incompatibilities-pro
 
 Do not have less than a custom free time around noon pause.
 
-
 `freeTimeAroundMidday`
 
--   is optional
--   Type: `object` ([FreeTimeAroundMidday](ghc-definitions-incompatibilities-properties-freetimearoundmidday.md))
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-freetimearoundmidday.md "engineInputGHCSchema#/definitions/incompatibilities/properties/freeTimeAroundMidday")
+*   is optional
+
+*   Type: `object` ([FreeTimeAroundMidday](ghc-definitions-incompatibilities-properties-freetimearoundmidday.md))
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-freetimearoundmidday.md "engineInputGHCSchema#/definitions/incompatibilities/properties/freeTimeAroundMidday")
 
 ### freeTimeAroundMidday Type
 

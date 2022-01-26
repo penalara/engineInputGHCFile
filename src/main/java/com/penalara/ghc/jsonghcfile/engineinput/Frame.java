@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.annotation.JsonAnySetter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -23,8 +24,9 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
     "id",
-    "sections"
+    "days"
 })
+@Generated("jsonschema2pojo")
 public class Frame {
 
     /**
@@ -36,15 +38,15 @@ public class Frame {
     @JsonPropertyDescription("Frame identifier.")
     private String id;
     /**
-     * Sections
+     * Days
      * <p>
-     * Timetable cells where class units are located.
+     * List of the days in the frame
      * (Required)
      * 
      */
-    @JsonProperty("sections")
-    @JsonPropertyDescription("Timetable\u00a0cells\u00a0where class units\u00a0are\u00a0located.")
-    private List<Section> sections = new ArrayList<Section>();
+    @JsonProperty("days")
+    @JsonPropertyDescription("List of the days in the frame")
+    private List<FrameDay> days = new ArrayList<FrameDay>();
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -57,13 +59,13 @@ public class Frame {
 
     /**
      * 
+     * @param days
      * @param id
-     * @param sections
      */
-    public Frame(String id, List<Section> sections) {
+    public Frame(String id, List<FrameDay> days) {
         super();
         this.id = id;
-        this.sections = sections;
+        this.days = days;
     }
 
     /**
@@ -87,27 +89,27 @@ public class Frame {
     }
 
     /**
-     * Sections
+     * Days
      * <p>
-     * Timetable cells where class units are located.
+     * List of the days in the frame
      * (Required)
      * 
      */
-    @JsonProperty("sections")
-    public List<Section> getSections() {
-        return sections;
+    @JsonProperty("days")
+    public List<FrameDay> getDays() {
+        return days;
     }
 
     /**
-     * Sections
+     * Days
      * <p>
-     * Timetable cells where class units are located.
+     * List of the days in the frame
      * (Required)
      * 
      */
-    @JsonProperty("sections")
-    public void setSections(List<Section> sections) {
-        this.sections = sections;
+    @JsonProperty("days")
+    public void setDays(List<FrameDay> days) {
+        this.days = days;
     }
 
     @JsonAnyGetter

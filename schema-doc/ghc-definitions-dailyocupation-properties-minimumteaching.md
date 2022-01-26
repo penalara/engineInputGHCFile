@@ -6,19 +6,18 @@ engineInputGHCSchema#/definitions/dailyOcupation/properties/minimumTeaching
 
 Minimum teaching time of the teacher with students.
 
-
-| Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
-| :------------------ | ---------- | -------------- | ------------ | :---------------- | --------------------- | ------------------- | ------------------------------------------------------------------ |
-| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [ghc.schema.json\*](../out/ghc.schema.json "open original schema") |
+| Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                        |
+| :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :---------------------------------------------------------------- |
+| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [ghc.schema.json*](../out/ghc.schema.json "open original schema") |
 
 ## minimumTeaching Type
 
 `object` ([MinimumTeaching](ghc-definitions-dailyocupation-properties-minimumteaching.md))
 
-# MinimumTeaching Properties
+# minimumTeaching Properties
 
 | Property                    | Type          | Required | Nullable       | Defined by                                                                                                                                                       |
-| :-------------------------- | ------------- | -------- | -------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| :-------------------------- | :------------ | :------- | :------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [restriction](#restriction) | Not specified | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-restrictiontype.md "engineInputGHCSchema#/definitions/dailyOcupation/properties/minimumTeaching/properties/restriction")  |
 | [setting](#setting)         | Not specified | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-ocupationsettingtype.md "engineInputGHCSchema#/definitions/dailyOcupation/properties/minimumTeaching/properties/setting") |
 
@@ -26,13 +25,15 @@ Minimum teaching time of the teacher with students.
 
 Indicate whether the incompatibility is a strict, ignore, preferred (strong optimization weight) or accordingToRule (weight according to optimization rule).
 
-
 `restriction`
 
--   is optional
--   Type: unknown ([RestrictionType](ghc-definitions-restrictiontype.md))
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-definitions-restrictiontype.md "engineInputGHCSchema#/definitions/dailyOcupation/properties/minimumTeaching/properties/restriction")
+*   is optional
+
+*   Type: unknown ([RestrictionType](ghc-definitions-restrictiontype.md))
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-definitions-restrictiontype.md "engineInputGHCSchema#/definitions/dailyOcupation/properties/minimumTeaching/properties/restriction")
 
 ### restriction Type
 
@@ -43,7 +44,7 @@ unknown ([RestrictionType](ghc-definitions-restrictiontype.md))
 **enum**: the value of this property must be equal to one of the following values:
 
 | Value               | Explanation |
-| :------------------ | ----------- |
+| :------------------ | :---------- |
 | `"ignore"`          |             |
 | `"strict"`          |             |
 | `"preferred"`       |             |
@@ -53,13 +54,15 @@ unknown ([RestrictionType](ghc-definitions-restrictiontype.md))
 
 Indicates whether the automatic calculation of the value must be adjusted to higher or lower. The adjustment will set with the duration of the greater section.
 
-
 `setting`
 
--   is optional
--   Type: unknown ([OcupationSettingType](ghc-definitions-ocupationsettingtype.md))
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-definitions-ocupationsettingtype.md "engineInputGHCSchema#/definitions/dailyOcupation/properties/minimumTeaching/properties/setting")
+*   is optional
+
+*   Type: unknown ([OcupationSettingType](ghc-definitions-ocupationsettingtype.md))
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-definitions-ocupationsettingtype.md "engineInputGHCSchema#/definitions/dailyOcupation/properties/minimumTeaching/properties/setting")
 
 ### setting Type
 
@@ -70,7 +73,7 @@ unknown ([OcupationSettingType](ghc-definitions-ocupationsettingtype.md))
 **enum**: the value of this property must be equal to one of the following values:
 
 | Value      | Explanation |
-| :--------- | ----------- |
+| :--------- | :---------- |
 | `"auto"`   |             |
 | `"higher"` |             |
 | `"lower"`  |             |

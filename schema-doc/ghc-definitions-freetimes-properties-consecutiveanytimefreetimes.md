@@ -6,34 +6,35 @@ engineInputGHCSchema#/definitions/freeTimes/properties/consecutiveAnyTime
 
 Teacher's free intervals at any time of the day.
 
-
-| Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
-| :------------------ | ---------- | -------------- | ------------ | :---------------- | --------------------- | ------------------- | ------------------------------------------------------------------ |
-| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [ghc.schema.json\*](../out/ghc.schema.json "open original schema") |
+| Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                        |
+| :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :---------------------------------------------------------------- |
+| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [ghc.schema.json*](../out/ghc.schema.json "open original schema") |
 
 ## consecutiveAnyTime Type
 
 `object` ([ConsecutiveAnyTimeFreeTimes](ghc-definitions-freetimes-properties-consecutiveanytimefreetimes.md))
 
-# ConsecutiveAnyTimeFreeTimes Properties
+# consecutiveAnyTime Properties
 
 | Property                        | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                                |
-| :------------------------------ | --------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| :------------------------------ | :-------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | [strictDays](#strictdays)       | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-freetimes-properties-consecutiveanytimefreetimes-properties-strictdays.md "engineInputGHCSchema#/definitions/freeTimes/properties/consecutiveAnyTime/properties/strictDays")       |
 | [preferredDays](#preferreddays) | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-freetimes-properties-consecutiveanytimefreetimes-properties-preferreddays.md "engineInputGHCSchema#/definitions/freeTimes/properties/consecutiveAnyTime/properties/preferredDays") |
 | [minutes](#minutes)             | `integer` | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-freetimes-properties-consecutiveanytimefreetimes-properties-minutes.md "engineInputGHCSchema#/definitions/freeTimes/properties/consecutiveAnyTime/properties/minutes")             |
 
 ## strictDays
 
-Strict number of days on which the teacher must have the interval free. 
-
+Strict number of days on which the teacher must have the interval free.
 
 `strictDays`
 
--   is optional
--   Type: `integer`
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-definitions-freetimes-properties-consecutiveanytimefreetimes-properties-strictdays.md "engineInputGHCSchema#/definitions/freeTimes/properties/consecutiveAnyTime/properties/strictDays")
+*   is optional
+
+*   Type: `integer`
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-definitions-freetimes-properties-consecutiveanytimefreetimes-properties-strictdays.md "engineInputGHCSchema#/definitions/freeTimes/properties/consecutiveAnyTime/properties/strictDays")
 
 ### strictDays Type
 
@@ -41,15 +42,17 @@ Strict number of days on which the teacher must have the interval free.
 
 ## preferredDays
 
-Preferred number of days on which the teacher should have the interval free. 
-
+Preferred number of days on which the teacher should have the interval free.
 
 `preferredDays`
 
--   is optional
--   Type: `integer`
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-definitions-freetimes-properties-consecutiveanytimefreetimes-properties-preferreddays.md "engineInputGHCSchema#/definitions/freeTimes/properties/consecutiveAnyTime/properties/preferredDays")
+*   is optional
+
+*   Type: `integer`
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-definitions-freetimes-properties-consecutiveanytimefreetimes-properties-preferreddays.md "engineInputGHCSchema#/definitions/freeTimes/properties/consecutiveAnyTime/properties/preferredDays")
 
 ### preferredDays Type
 
@@ -59,13 +62,15 @@ Preferred number of days on which the teacher should have the interval free.
 
 Minutes of free time interval.
 
-
 `minutes`
 
--   is required
--   Type: `integer`
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-definitions-freetimes-properties-consecutiveanytimefreetimes-properties-minutes.md "engineInputGHCSchema#/definitions/freeTimes/properties/consecutiveAnyTime/properties/minutes")
+*   is required
+
+*   Type: `integer`
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-definitions-freetimes-properties-consecutiveanytimefreetimes-properties-minutes.md "engineInputGHCSchema#/definitions/freeTimes/properties/consecutiveAnyTime/properties/minutes")
 
 ### minutes Type
 

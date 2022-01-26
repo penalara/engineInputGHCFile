@@ -1,6 +1,7 @@
 
 package com.penalara.ghc.jsonghcfile.engineinput;
 
+import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -28,6 +29,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "middayReference",
     "dailyBuildingTransfers"
 })
+@Generated("jsonschema2pojo")
 public class PeriodSetting {
 
     /**
@@ -57,7 +59,7 @@ public class PeriodSetting {
     @JsonPropertyDescription("This indicates the maximum preferential and strict time of stay of the teacher, for the daily stay that the teacher can be in the educational institution.")
     private DailyStay dailyStay;
     /**
-     * It indicates whether gaps between class units for the teacher should be avoided. This is a weighting condition.
+     * It indicates whether gaps between class units for the teacher should be avoided. This is a weighting condition.If did not specify, the engine will assign a true value.
      * 
      */
     @JsonProperty("avoidGapsBetweenSesions")
@@ -237,7 +239,7 @@ public class PeriodSetting {
     }
 
     /**
-     * It indicates whether gaps between class units for the teacher should be avoided. This is a weighting condition.
+     * It indicates whether gaps between class units for the teacher should be avoided. This is a weighting condition.If did not specify, the engine will assign a true value.
      * 
      */
     @JsonProperty("avoidGapsBetweenSesions")
@@ -246,7 +248,7 @@ public class PeriodSetting {
     }
 
     /**
-     * It indicates whether gaps between class units for the teacher should be avoided. This is a weighting condition.
+     * It indicates whether gaps between class units for the teacher should be avoided. This is a weighting condition.If did not specify, the engine will assign a true value.
      * 
      */
     @JsonProperty("avoidGapsBetweenSesions")

@@ -3,6 +3,7 @@ package com.penalara.ghc.jsonghcfile.engineinput;
 
 import java.util.HashMap;
 import java.util.Map;
+import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.annotation.JsonAnySetter;
 import com.fasterxml.jackson.annotation.JsonCreator;
@@ -27,6 +28,7 @@ import com.fasterxml.jackson.annotation.JsonValue;
     "frame",
     "type"
 })
+@Generated("jsonschema2pojo")
 public class OnCallSectionPreference {
 
     /**
@@ -181,6 +183,7 @@ public class OnCallSectionPreference {
      * Teacher availability to be assigned to the section.
      * 
      */
+    @Generated("jsonschema2pojo")
     public enum Type {
 
         BANNED("banned"),
@@ -194,7 +197,7 @@ public class OnCallSectionPreference {
             }
         }
 
-        private Type(String value) {
+        Type(String value) {
             this.value = value;
         }
 

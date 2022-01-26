@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -26,6 +27,7 @@ import com.fasterxml.jackson.annotation.JsonValue;
     "order",
     "allowBreakBetweenSessions"
 })
+@Generated("jsonschema2pojo")
 public class ConsecutiveGroup {
 
     /**
@@ -168,6 +170,7 @@ public class ConsecutiveGroup {
      * Indicates if the sessions must be 'ordered', 'unordered' or 'sameDay'  (it does not matter as long as they are allocated on the same day).
      * 
      */
+    @Generated("jsonschema2pojo")
     public enum Order {
 
         UNORDERED("unordered"),
@@ -182,7 +185,7 @@ public class ConsecutiveGroup {
             }
         }
 
-        private Order(String value) {
+        Order(String value) {
             this.value = value;
         }
 

@@ -3,6 +3,7 @@ package com.penalara.ghc.jsonghcfile.engineinput;
 
 import java.util.ArrayList;
 import java.util.List;
+import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -12,7 +13,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 /**
  * Distribution
  * <p>
- * It contains information on how the class units of the session are distributed throughout the week. It must contain only one element between 'stablePeriods' and 'variablePeriods'.
+ * It contains information on how the class units of the session are distributed throughout the week. It must contain only one element between 'stablePeriods' and 'variablePeriods'.The 'periods' property is required if there is more than one period in the timetable. The 'stablePeriods' and 'variablePeriods' properties are mutually exclusive.
  * 
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
@@ -21,6 +22,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "stablePeriods",
     "variablePeriods"
 })
+@Generated("jsonschema2pojo")
 public class Distribution {
 
     /**
@@ -35,7 +37,7 @@ public class Distribution {
     /**
      * StablePeriods
      * <p>
-     * The distribution of the class unit of the session is the same in each period.
+     * The distribution of the class unit of the session is the same in each period.Only one property must be specified.
      * 
      */
     @JsonProperty("stablePeriods")
@@ -44,7 +46,7 @@ public class Distribution {
     /**
      * VariablePeriods
      * <p>
-     * The total of the class units of the distribution are divided between the periods.
+     * The total of the class units of the distribution are divided between the periods.Properties 'weeklyStable' and 'weeklyVariable' are mutually exclusive.
      * 
      */
     @JsonProperty("variablePeriods")
@@ -96,7 +98,7 @@ public class Distribution {
     /**
      * StablePeriods
      * <p>
-     * The distribution of the class unit of the session is the same in each period.
+     * The distribution of the class unit of the session is the same in each period.Only one property must be specified.
      * 
      */
     @JsonProperty("stablePeriods")
@@ -107,7 +109,7 @@ public class Distribution {
     /**
      * StablePeriods
      * <p>
-     * The distribution of the class unit of the session is the same in each period.
+     * The distribution of the class unit of the session is the same in each period.Only one property must be specified.
      * 
      */
     @JsonProperty("stablePeriods")
@@ -118,7 +120,7 @@ public class Distribution {
     /**
      * VariablePeriods
      * <p>
-     * The total of the class units of the distribution are divided between the periods.
+     * The total of the class units of the distribution are divided between the periods.Properties 'weeklyStable' and 'weeklyVariable' are mutually exclusive.
      * 
      */
     @JsonProperty("variablePeriods")
@@ -129,7 +131,7 @@ public class Distribution {
     /**
      * VariablePeriods
      * <p>
-     * The total of the class units of the distribution are divided between the periods.
+     * The total of the class units of the distribution are divided between the periods.Properties 'weeklyStable' and 'weeklyVariable' are mutually exclusive.
      * 
      */
     @JsonProperty("variablePeriods")

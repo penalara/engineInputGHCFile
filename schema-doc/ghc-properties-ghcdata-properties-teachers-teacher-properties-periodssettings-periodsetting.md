@@ -6,19 +6,18 @@ engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/pe
 
 
 
-
-| Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
-| :------------------ | ---------- | -------------- | ------------ | :---------------- | --------------------- | ------------------- | ------------------------------------------------------------------ |
-| Can be instantiated | No         | Unknown status | No           | Forbidden         | Forbidden             | none                | [ghc.schema.json\*](../out/ghc.schema.json "open original schema") |
+| Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                        |
+| :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :---------------------------------------------------------------- |
+| Can be instantiated | No         | Unknown status | No           | Forbidden         | Forbidden             | none                | [ghc.schema.json*](../out/ghc.schema.json "open original schema") |
 
 ## items Type
 
 `object` ([PeriodSetting](ghc-properties-ghcdata-properties-teachers-teacher-properties-periodssettings-periodsetting.md))
 
-# PeriodSetting Properties
+# items Properties
 
 | Property                                            | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                                                                                                        |
-| :-------------------------------------------------- | --------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| :-------------------------------------------------- | :-------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | [refPeriod](#refperiod)                             | `string`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-periodssettings-periodsetting-properties-refperiod.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/periodSettings/items/properties/refPeriod")                             |
 | [weeklyStay](#weeklystay)                           | `object`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-weeklystay.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/periodSettings/items/properties/weeklyStay")                                                                                                                  |
 | [dailyStay](#dailystay)                             | `object`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-dailystay.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/periodSettings/items/properties/dailyStay")                                                                                                                    |
@@ -36,13 +35,15 @@ engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/pe
 
 Identifier of the period to which the settings affect.
 
-
 `refPeriod`
 
--   is required
--   Type: `string`
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-periodssettings-periodsetting-properties-refperiod.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/periodSettings/items/properties/refPeriod")
+*   is required
+
+*   Type: `string`
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-periodssettings-periodsetting-properties-refperiod.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/periodSettings/items/properties/refPeriod")
 
 ### refPeriod Type
 
@@ -52,13 +53,15 @@ Identifier of the period to which the settings affect.
 
 It indicates the maximum preferential and strict teacher's stay, for the weekly stay that the teacher can be in the academic institution.
 
-
 `weeklyStay`
 
--   is optional
--   Type: `object` ([WeeklyStay](ghc-definitions-weeklystay.md))
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-definitions-weeklystay.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/periodSettings/items/properties/weeklyStay")
+*   is optional
+
+*   Type: `object` ([WeeklyStay](ghc-definitions-weeklystay.md))
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-definitions-weeklystay.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/periodSettings/items/properties/weeklyStay")
 
 ### weeklyStay Type
 
@@ -68,13 +71,15 @@ It indicates the maximum preferential and strict teacher's stay, for the weekly 
 
 This indicates the maximum preferential and strict time of stay of the teacher, for the daily stay that the teacher can be in the educational institution.
 
-
 `dailyStay`
 
--   is optional
--   Type: `object` ([DailyStay](ghc-definitions-dailystay.md))
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-definitions-dailystay.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/periodSettings/items/properties/dailyStay")
+*   is optional
+
+*   Type: `object` ([DailyStay](ghc-definitions-dailystay.md))
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-definitions-dailystay.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/periodSettings/items/properties/dailyStay")
 
 ### dailyStay Type
 
@@ -84,16 +89,17 @@ This indicates the maximum preferential and strict time of stay of the teacher, 
 
 It indicates whether gaps between class units for the teacher should be avoided. This is a weighting condition.
 
-
 > If did not specify, the engine will assign a true value.
->
 
 `avoidGapsBetweenSesions`
 
--   is optional
--   Type: `boolean`
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-periodssettings-periodsetting-properties-avoidgapsbetweensesions.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/periodSettings/items/properties/avoidGapsBetweenSesions")
+*   is optional
+
+*   Type: `boolean`
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-periodssettings-periodsetting-properties-avoidgapsbetweensesions.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/periodSettings/items/properties/avoidGapsBetweenSesions")
 
 ### avoidGapsBetweenSesions Type
 
@@ -103,13 +109,15 @@ It indicates whether gaps between class units for the teacher should be avoided.
 
 It indicates the maximum continuous time of class units, which are allowed without having a gap or a non-class units between them.
 
-
 `maxContinuousTeaching`
 
--   is optional
--   Type: `object` ([MaxContinuousTeaching](ghc-definitions-maxcontinuousteaching.md))
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-definitions-maxcontinuousteaching.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/periodSettings/items/properties/maxContinuousTeaching")
+*   is optional
+
+*   Type: `object` ([MaxContinuousTeaching](ghc-definitions-maxcontinuousteaching.md))
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-definitions-maxcontinuousteaching.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/periodSettings/items/properties/maxContinuousTeaching")
 
 ### maxContinuousTeaching Type
 
@@ -119,13 +127,15 @@ It indicates the maximum continuous time of class units, which are allowed witho
 
 It indicates whether the existence of class units on both sides of a playground supervision taught by this teacher will be penalised.
 
-
 `avoidClassesAroundBreak`
 
--   is optional
--   Type: `boolean`
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-periodssettings-periodsetting-properties-avoidclassesaroundbreak.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/periodSettings/items/properties/avoidClassesAroundBreak")
+*   is optional
+
+*   Type: `boolean`
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-teachers-teacher-properties-periodssettings-periodsetting-properties-avoidclassesaroundbreak.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/periodSettings/items/properties/avoidClassesAroundBreak")
 
 ### avoidClassesAroundBreak Type
 
@@ -135,13 +145,15 @@ It indicates whether the existence of class units on both sides of a playground 
 
 It contains the free time spaces that the teacher must have.
 
-
 `freeTimes`
 
--   is optional
--   Type: `object` ([FreeTimes](ghc-definitions-freetimes.md))
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-definitions-freetimes.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/periodSettings/items/properties/freeTimes")
+*   is optional
+
+*   Type: `object` ([FreeTimes](ghc-definitions-freetimes.md))
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-definitions-freetimes.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/periodSettings/items/properties/freeTimes")
 
 ### freeTimes Type
 
@@ -151,13 +163,15 @@ It contains the free time spaces that the teacher must have.
 
 Free half-time periods .
 
-
 `freePartTimes`
 
--   is optional
--   Type: `object` ([FreePartTime](ghc-definitions-freeparttime.md))
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-definitions-freeparttime.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/periodSettings/items/properties/freePartTimes")
+*   is optional
+
+*   Type: `object` ([FreePartTime](ghc-definitions-freeparttime.md))
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-definitions-freeparttime.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/periodSettings/items/properties/freePartTimes")
 
 ### freePartTimes Type
 
@@ -167,13 +181,15 @@ Free half-time periods .
 
 It contains the teacher's incompatibilities on the allocation of class units and rest periods.
 
-
 `incompatibilities`
 
--   is optional
--   Type: `object` ([Incompatibilities](ghc-definitions-incompatibilities.md))
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-definitions-incompatibilities.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/periodSettings/items/properties/incompatibilities")
+*   is optional
+
+*   Type: `object` ([Incompatibilities](ghc-definitions-incompatibilities.md))
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-definitions-incompatibilities.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/periodSettings/items/properties/incompatibilities")
 
 ### incompatibilities Type
 
@@ -183,13 +199,15 @@ It contains the teacher's incompatibilities on the allocation of class units and
 
 Maximum and minimum values of teaching or activity time for teachers. This object indicates the type of condition (strict or weighting) and whether the automatic calculation in minutes in the engine should be set.
 
-
 `dailyOcupation`
 
--   is optional
--   Type: `object` ([DailyOcupation](ghc-definitions-dailyocupation.md))
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-definitions-dailyocupation.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/periodSettings/items/properties/dailyOcupation")
+*   is optional
+
+*   Type: `object` ([DailyOcupation](ghc-definitions-dailyocupation.md))
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-definitions-dailyocupation.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/periodSettings/items/properties/dailyOcupation")
 
 ### dailyOcupation Type
 
@@ -199,13 +217,15 @@ Maximum and minimum values of teaching or activity time for teachers. This objec
 
 It indicate the frame where the teacher takes noon pause.
 
-
 `middayReference`
 
--   is optional
--   Type: `object` ([MiddayReference](ghc-definitions-middayreference.md))
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-definitions-middayreference.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/periodSettings/items/properties/middayReference")
+*   is optional
+
+*   Type: `object` ([MiddayReference](ghc-definitions-middayreference.md))
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-definitions-middayreference.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/periodSettings/items/properties/middayReference")
 
 ### middayReference Type
 
@@ -215,13 +235,15 @@ It indicate the frame where the teacher takes noon pause.
 
 Maximum number of movements between buildings that the teacher can make per day.
 
-
 `dailyBuildingTransfers`
 
--   is optional
--   Type: `object` ([DailyBuildingTransfers](ghc-definitions-dailybuildingtransfers.md))
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-definitions-dailybuildingtransfers.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/periodSettings/items/properties/dailyBuildingTransfers")
+*   is optional
+
+*   Type: `object` ([DailyBuildingTransfers](ghc-definitions-dailybuildingtransfers.md))
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-definitions-dailybuildingtransfers.md "engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/periodSettings/items/properties/dailyBuildingTransfers")
 
 ### dailyBuildingTransfers Type
 

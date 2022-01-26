@@ -6,19 +6,18 @@ engineInputGHCSchema#/properties/ghcData/properties/groups/items
 
 
 
-
-| Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
-| :------------------ | ---------- | -------------- | ------------ | :---------------- | --------------------- | ------------------- | ------------------------------------------------------------------ |
-| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [ghc.schema.json\*](../out/ghc.schema.json "open original schema") |
+| Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                        |
+| :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :---------------------------------------------------------------- |
+| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [ghc.schema.json*](../out/ghc.schema.json "open original schema") |
 
 ## items Type
 
 `object` ([Group](ghc-properties-ghcdata-properties-groups-group.md))
 
-# Group Properties
+# items Properties
 
 | Property                                              | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                           |
-| :---------------------------------------------------- | --------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| :---------------------------------------------------- | :-------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [id](#id)                                             | `string`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-id.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/id")                                             |
 | [refFrame](#refframe)                                 | `string`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-refframe.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/refFrame")                                 |
 | [frameTemplate](#frametemplate)                       | `array`   | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-frametemplate.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/frameTemplate")                                                                 |
@@ -31,13 +30,15 @@ engineInputGHCSchema#/properties/ghcData/properties/groups/items
 
 Group identifier.
 
-
 `id`
 
--   is required
--   Type: `string`
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-id.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/id")
+*   is required
+
+*   Type: `string`
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-id.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/id")
 
 ### id Type
 
@@ -47,13 +48,15 @@ Group identifier.
 
 Group's frame identifier.
 
-
 `refFrame`
 
--   is required
--   Type: `string`
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-refframe.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/refFrame")
+*   is required
+
+*   Type: `string`
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-refframe.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/refFrame")
 
 ### refFrame Type
 
@@ -63,13 +66,15 @@ Group's frame identifier.
 
 Templates with frame sections assignment preferences.
 
-
 `frameTemplate`
 
--   is optional
--   Type: `object[]` ([SectionPreference](ghc-definitions-frametemplate-sectionpreference.md))
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-definitions-frametemplate.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/frameTemplate")
+*   is optional
+
+*   Type: `object[]` ([SectionPreference](ghc-definitions-frametemplate-sectionpreference.md))
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-definitions-frametemplate.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/frameTemplate")
 
 ### frameTemplate Type
 
@@ -79,13 +84,15 @@ Templates with frame sections assignment preferences.
 
 Number of students in the group.
 
-
 `numStudents`
 
--   is optional
--   Type: `integer`
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-numstudents.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/numStudents")
+*   is optional
+
+*   Type: `integer`
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-numstudents.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/numStudents")
 
 ### numStudents Type
 
@@ -95,13 +102,15 @@ Number of students in the group.
 
 Stric number of free afternoons for the group.
 
-
 `freeAfternoons`
 
--   is optional
--   Type: `integer`
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-freeafternoons.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/freeAfternoons")
+*   is optional
+
+*   Type: `integer`
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-freeafternoons.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/freeAfternoons")
 
 ### freeAfternoons Type
 
@@ -111,13 +120,15 @@ Stric number of free afternoons for the group.
 
 It indicates if the group can have gaps in its timetable.
 
-
 `notGaps`
 
--   is optional
--   Type: `boolean`
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-notgaps.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/notGaps")
+*   is optional
+
+*   Type: `boolean`
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-notgaps.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/notGaps")
 
 ### notGaps Type
 
@@ -127,13 +138,15 @@ It indicates if the group can have gaps in its timetable.
 
 This indicates whether the engine should be in the positions marked as non-preferred in the template for free intervals or gaps.
 
-
 `gapsAlwaysInNonPreferred`
 
--   is optional
--   Type: `boolean`
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-gapsalwaysinnonpreferred.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/gapsAlwaysInNonPreferred")
+*   is optional
+
+*   Type: `boolean`
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-groups-group-properties-gapsalwaysinnonpreferred.md "engineInputGHCSchema#/properties/ghcData/properties/groups/items/properties/gapsAlwaysInNonPreferred")
 
 ### gapsAlwaysInNonPreferred Type
 

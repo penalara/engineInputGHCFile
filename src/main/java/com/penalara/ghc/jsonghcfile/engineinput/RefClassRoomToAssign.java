@@ -2,12 +2,8 @@
 package com.penalara.ghc.jsonghcfile.engineinput;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import com.fasterxml.jackson.annotation.JsonAnyGetter;
-import com.fasterxml.jackson.annotation.JsonAnySetter;
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -22,20 +18,21 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "classRoomsList",
+    "classRoom",
     "classRoomsSetsList"
 })
+@Generated("jsonschema2pojo")
 public class RefClassRoomToAssign {
 
     /**
      * ClassRoomRef
      * <p>
-     * Available classroom list to be assigned to session.
+     * Classroom identifier.
      * 
      */
-    @JsonProperty("classRoomsList")
-    @JsonPropertyDescription("Available classroom list to be assigned to session.")
-    private List<String> classRoomsList = new ArrayList<String>();
+    @JsonProperty("classRoom")
+    @JsonPropertyDescription("Classroom identifier.")
+    private String classRoom;
     /**
      * ClassRoomsSetsList
      * <p>
@@ -45,8 +42,6 @@ public class RefClassRoomToAssign {
     @JsonProperty("classRoomsSetsList")
     @JsonPropertyDescription("Classroom set list where one classroom could be taken to assign to session.")
     private List<String> classRoomsSetsList = new ArrayList<String>();
-    @JsonIgnore
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
      * No args constructor for use in serialization
@@ -58,34 +53,34 @@ public class RefClassRoomToAssign {
     /**
      * 
      * @param classRoomsSetsList
-     * @param classRoomsList
+     * @param classRoom
      */
-    public RefClassRoomToAssign(List<String> classRoomsList, List<String> classRoomsSetsList) {
+    public RefClassRoomToAssign(String classRoom, List<String> classRoomsSetsList) {
         super();
-        this.classRoomsList = classRoomsList;
+        this.classRoom = classRoom;
         this.classRoomsSetsList = classRoomsSetsList;
     }
 
     /**
      * ClassRoomRef
      * <p>
-     * Available classroom list to be assigned to session.
+     * Classroom identifier.
      * 
      */
-    @JsonProperty("classRoomsList")
-    public List<String> getClassRoomsList() {
-        return classRoomsList;
+    @JsonProperty("classRoom")
+    public String getClassRoom() {
+        return classRoom;
     }
 
     /**
      * ClassRoomRef
      * <p>
-     * Available classroom list to be assigned to session.
+     * Classroom identifier.
      * 
      */
-    @JsonProperty("classRoomsList")
-    public void setClassRoomsList(List<String> classRoomsList) {
-        this.classRoomsList = classRoomsList;
+    @JsonProperty("classRoom")
+    public void setClassRoom(String classRoom) {
+        this.classRoom = classRoom;
     }
 
     /**
@@ -108,16 +103,6 @@ public class RefClassRoomToAssign {
     @JsonProperty("classRoomsSetsList")
     public void setClassRoomsSetsList(List<String> classRoomsSetsList) {
         this.classRoomsSetsList = classRoomsSetsList;
-    }
-
-    @JsonAnyGetter
-    public Map<String, Object> getAdditionalProperties() {
-        return this.additionalProperties;
-    }
-
-    @JsonAnySetter
-    public void setAdditionalProperty(String name, Object value) {
-        this.additionalProperties.put(name, value);
     }
 
 }

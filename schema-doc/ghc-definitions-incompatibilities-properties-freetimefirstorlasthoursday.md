@@ -6,19 +6,18 @@ engineInputGHCSchema#/definitions/incompatibilities/properties/freeTimeFirstOrLa
 
 Minutes of free time at first or last hours of the day.
 
-
-| Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
-| :------------------ | ---------- | -------------- | ------------ | :---------------- | --------------------- | ------------------- | ------------------------------------------------------------------ |
-| Can be instantiated | No         | Unknown status | No           | Forbidden         | Forbidden             | none                | [ghc.schema.json\*](../out/ghc.schema.json "open original schema") |
+| Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                        |
+| :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :---------------------------------------------------------------- |
+| Can be instantiated | No         | Unknown status | No           | Forbidden         | Forbidden             | none                | [ghc.schema.json*](../out/ghc.schema.json "open original schema") |
 
 ## freeTimeFirstOrLastHoursDay Type
 
 `object` ([FreeTimeFirstOrLastHoursDay](ghc-definitions-incompatibilities-properties-freetimefirstorlasthoursday.md))
 
-# FreeTimeFirstOrLastHoursDay Properties
+# freeTimeFirstOrLastHoursDay Properties
 
 | Property            | Type          | Required | Nullable       | Defined by                                                                                                                                                                                                                             |
-| :------------------ | ------------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| :------------------ | :------------ | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [type](#type)       | Not specified | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-conditiontype.md "engineInputGHCSchema#/definitions/incompatibilities/properties/freeTimeFirstOrLastHoursDay/properties/type")                                                                  |
 | [minutes](#minutes) | `integer`     | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-freetimefirstorlasthoursday-properties-minutes.md "engineInputGHCSchema#/definitions/incompatibilities/properties/freeTimeFirstOrLastHoursDay/properties/minutes") |
 
@@ -26,13 +25,15 @@ Minutes of free time at first or last hours of the day.
 
 Indicate whether the incompatibility is strict, avoid (penalisable in optimisation) or ignored.
 
-
 `type`
 
--   is optional
--   Type: unknown ([ConditionType](ghc-definitions-conditiontype.md))
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-definitions-conditiontype.md "engineInputGHCSchema#/definitions/incompatibilities/properties/freeTimeFirstOrLastHoursDay/properties/type")
+*   is optional
+
+*   Type: unknown ([ConditionType](ghc-definitions-conditiontype.md))
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-definitions-conditiontype.md "engineInputGHCSchema#/definitions/incompatibilities/properties/freeTimeFirstOrLastHoursDay/properties/type")
 
 ### type Type
 
@@ -43,7 +44,7 @@ unknown ([ConditionType](ghc-definitions-conditiontype.md))
 **enum**: the value of this property must be equal to one of the following values:
 
 | Value      | Explanation |
-| :--------- | ----------- |
+| :--------- | :---------- |
 | `"ignore"` |             |
 | `"avoid"`  |             |
 | `"strict"` |             |
@@ -52,13 +53,15 @@ unknown ([ConditionType](ghc-definitions-conditiontype.md))
 
 Custom time in minutes for incompatibility.
 
-
 `minutes`
 
--   is required
--   Type: `integer`
--   cannot be null
--   defined in: [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-freetimefirstorlasthoursday-properties-minutes.md "engineInputGHCSchema#/definitions/incompatibilities/properties/freeTimeFirstOrLastHoursDay/properties/minutes")
+*   is required
+
+*   Type: `integer`
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-definitions-incompatibilities-properties-freetimefirstorlasthoursday-properties-minutes.md "engineInputGHCSchema#/definitions/incompatibilities/properties/freeTimeFirstOrLastHoursDay/properties/minutes")
 
 ### minutes Type
 
