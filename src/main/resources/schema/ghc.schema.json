@@ -473,7 +473,7 @@
                                 "description": "Subject identifier.",
                                 "type": "string"
                             },
-                            "student-mentoring": {
+                            "isStudentMentoring": {
                                 "description": "It indicates whether the subject is a tutorial.",
                                 "type": "boolean",
                                 "default": false
@@ -538,8 +538,10 @@
                         "required":[
                             "id",
                             "refFrame",
-                            "refTasks",
-                            "refTeachers",
+                            "refMainTask",
+                            "refMainTeacher",
+							"refMainSubject",
+							"refMainGroup"
                             "distribution"
                         ],
                         "properties":{
@@ -998,7 +1000,7 @@
                             "id",
                             "refFrame",
                             "refTask",
-                            "refTeachers",
+                            "refTeacher",
 							"distribution"
                         ],
                         "properties": {
@@ -1390,7 +1392,8 @@
                         "description": "Identifier name of the frame.",
                         "type": "string"
                     },
-                    "type": { 
+                    "type": {
+						"title": "SectionPreferenceTypeWithOutPreset",
                         "description": "Element availability to be assigned to the section.",
                         "enum": ["banned","strong-non-preferred", "weak-non-preferred"] 
                     }
@@ -1426,7 +1429,8 @@
 						"description": "Frame identifier.",
 						"type": "string"
 					},
-					"type": { 
+					"type": {
+						"title": "SectionPreferenceTypeWithPreset",
 						"description": "Session availability to be assigned to the section.",
 						"enum": ["banned","strong-non-preferred", "weak-non-preferred", "preset"] 
 					}
@@ -1461,7 +1465,8 @@
                         "description": "Identifier name of the frame.",
                         "type": "string"
                     },
-                    "type": { 
+                    "type": {
+						"title": "SectionPreferenceTypeBannedPreset",
                         "description": "Teacher availability to be assigned to the section.",
                         "enum": ["banned", "preset"] 
                     }

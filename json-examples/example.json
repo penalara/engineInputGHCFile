@@ -1176,7 +1176,7 @@
 		],
 		"complementaryActivities": [
 			{
-				"id": "Apoyo",
+				"id": "Support",
 				"refFrame": "A",			
 				"refTask": "SUPPORT",
 				"refTeacher": "Bur",
