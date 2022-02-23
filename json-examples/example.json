@@ -1027,9 +1027,9 @@
                     ],
                     "stablePeriods": {
                         "weeklyVariable": {
-                            "minutesAmount": 260,
+                            "minutesAmount": 240,
                             "maxMinutesDaily":120,
-                            "minDurationDaily": "allow",
+							"minMinutesDaily":120,
                             "avoidMaxDuration": false,
                             "allowDiscontinuity": false
                         }
@@ -1187,10 +1187,10 @@
 					],
 					"stablePeriods": {
 						"weeklyVariable": {
-							"minutesAmount": 160,
+							"minutesAmount": 180,
 							"maxMinutesDaily":120,
-							"minDurationDaily": "allow",
 							"avoidMaxDuration": false,
+							"avoidMinDuration": false,
 							"allowDiscontinuity": false
 						}
 					}
