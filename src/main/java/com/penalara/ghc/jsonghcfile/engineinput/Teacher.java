@@ -33,11 +33,12 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 public class Teacher {
 
     /**
-     * 
+     * Identifier of the teacher.
      * (Required)
      * 
      */
     @JsonProperty("id")
+    @JsonPropertyDescription("Identifier of the teacher.")
     private String id;
     /**
      * Group or association of teachers who should have similar check-in and check-out times, if possible. This is useful for teachers who share transport.
@@ -101,7 +102,7 @@ public class Teacher {
     }
 
     /**
-     * 
+     * Identifier of the teacher.
      * (Required)
      * 
      */
@@ -111,7 +112,7 @@ public class Teacher {
     }
 
     /**
-     * 
+     * Identifier of the teacher.
      * (Required)
      * 
      */

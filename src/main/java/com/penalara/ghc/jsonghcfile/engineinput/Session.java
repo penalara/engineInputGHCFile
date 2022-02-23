@@ -59,6 +59,7 @@ public class Session {
      * RefMainTask
      * <p>
      * Main Task identifier.
+     * (Required)
      * 
      */
     @JsonProperty("refMainTask")
@@ -68,6 +69,7 @@ public class Session {
      * RefMainTeacher
      * <p>
      * Main Teacher identifier.
+     * (Required)
      * 
      */
     @JsonProperty("refMainTeacher")
@@ -77,6 +79,7 @@ public class Session {
      * RefMainSubject
      * <p>
      * Identifier name of the main subject.
+     * (Required)
      * 
      */
     @JsonProperty("refMainSubject")
@@ -86,6 +89,7 @@ public class Session {
      * GroupReferenceType
      * <p>
      * Contains the reference to a group of the session, and optionally, the number of students of the group that attend the session.
+     * (Required)
      * 
      */
     @JsonProperty("refMainGroup")
@@ -231,6 +235,7 @@ public class Session {
      * RefMainTask
      * <p>
      * Main Task identifier.
+     * (Required)
      * 
      */
     @JsonProperty("refMainTask")
@@ -242,6 +247,7 @@ public class Session {
      * RefMainTask
      * <p>
      * Main Task identifier.
+     * (Required)
      * 
      */
     @JsonProperty("refMainTask")
@@ -253,6 +259,7 @@ public class Session {
      * RefMainTeacher
      * <p>
      * Main Teacher identifier.
+     * (Required)
      * 
      */
     @JsonProperty("refMainTeacher")
@@ -264,6 +271,7 @@ public class Session {
      * RefMainTeacher
      * <p>
      * Main Teacher identifier.
+     * (Required)
      * 
      */
     @JsonProperty("refMainTeacher")
@@ -275,6 +283,7 @@ public class Session {
      * RefMainSubject
      * <p>
      * Identifier name of the main subject.
+     * (Required)
      * 
      */
     @JsonProperty("refMainSubject")
@@ -286,6 +295,7 @@ public class Session {
      * RefMainSubject
      * <p>
      * Identifier name of the main subject.
+     * (Required)
      * 
      */
     @JsonProperty("refMainSubject")
@@ -297,6 +307,7 @@ public class Session {
      * GroupReferenceType
      * <p>
      * Contains the reference to a group of the session, and optionally, the number of students of the group that attend the session.
+     * (Required)
      * 
      */
     @JsonProperty("refMainGroup")
@@ -308,6 +319,7 @@ public class Session {
      * GroupReferenceType
      * <p>
      * Contains the reference to a group of the session, and optionally, the number of students of the group that attend the session.
+     * (Required)
      * 
      */
     @JsonProperty("refMainGroup")

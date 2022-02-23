@@ -24,7 +24,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
     "id",
-    "student-mentoring",
+    "isStudentMentoring",
     "frameTemplate"
 })
 @Generated("jsonschema2pojo")
@@ -42,9 +42,9 @@ public class Subject {
      * It indicates whether the subject is a tutorial.
      * 
      */
-    @JsonProperty("student-mentoring")
+    @JsonProperty("isStudentMentoring")
     @JsonPropertyDescription("It indicates whether the subject is a tutorial.")
-    private Boolean studentMentoring = false;
+    private Boolean isStudentMentoring = false;
     /**
      * FrameTemplate
      * <p>
@@ -67,13 +67,13 @@ public class Subject {
     /**
      * 
      * @param frameTemplate
-     * @param studentMentoring
+     * @param isStudentMentoring
      * @param id
      */
-    public Subject(String id, Boolean studentMentoring, List<SectionPreference> frameTemplate) {
+    public Subject(String id, Boolean isStudentMentoring, List<SectionPreference> frameTemplate) {
         super();
         this.id = id;
-        this.studentMentoring = studentMentoring;
+        this.isStudentMentoring = isStudentMentoring;
         this.frameTemplate = frameTemplate;
     }
 
@@ -101,18 +101,18 @@ public class Subject {
      * It indicates whether the subject is a tutorial.
      * 
      */
-    @JsonProperty("student-mentoring")
-    public Boolean getStudentMentoring() {
-        return studentMentoring;
+    @JsonProperty("isStudentMentoring")
+    public Boolean getIsStudentMentoring() {
+        return isStudentMentoring;
     }
 
     /**
      * It indicates whether the subject is a tutorial.
      * 
      */
-    @JsonProperty("student-mentoring")
-    public void setStudentMentoring(Boolean studentMentoring) {
-        this.studentMentoring = studentMentoring;
+    @JsonProperty("isStudentMentoring")
+    public void setIsStudentMentoring(Boolean isStudentMentoring) {
+        this.isStudentMentoring = isStudentMentoring;
     }
 
     /**

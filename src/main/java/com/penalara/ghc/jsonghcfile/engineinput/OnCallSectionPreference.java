@@ -56,13 +56,15 @@ public class OnCallSectionPreference {
     @JsonPropertyDescription("Identifier name of the frame.")
     private String frame;
     /**
+     * SectionPreferenceTypeBannedPreset
+     * <p>
      * Teacher availability to be assigned to the section.
      * (Required)
      * 
      */
     @JsonProperty("type")
     @JsonPropertyDescription("Teacher availability to be assigned to the section.")
-    private OnCallSectionPreference.Type type;
+    private OnCallSectionPreference.SectionPreferenceTypeBannedPreset type;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -80,7 +82,7 @@ public class OnCallSectionPreference {
      * @param day
      * @param frame
      */
-    public OnCallSectionPreference(Integer day, Integer index, String frame, OnCallSectionPreference.Type type) {
+    public OnCallSectionPreference(Integer day, Integer index, String frame, OnCallSectionPreference.SectionPreferenceTypeBannedPreset type) {
         super();
         this.day = day;
         this.index = index;
@@ -149,22 +151,26 @@ public class OnCallSectionPreference {
     }
 
     /**
+     * SectionPreferenceTypeBannedPreset
+     * <p>
      * Teacher availability to be assigned to the section.
      * (Required)
      * 
      */
     @JsonProperty("type")
-    public OnCallSectionPreference.Type getType() {
+    public OnCallSectionPreference.SectionPreferenceTypeBannedPreset getType() {
         return type;
     }
 
     /**
+     * SectionPreferenceTypeBannedPreset
+     * <p>
      * Teacher availability to be assigned to the section.
      * (Required)
      * 
      */
     @JsonProperty("type")
-    public void setType(OnCallSectionPreference.Type type) {
+    public void setType(OnCallSectionPreference.SectionPreferenceTypeBannedPreset type) {
         this.type = type;
     }
 
@@ -180,24 +186,26 @@ public class OnCallSectionPreference {
 
 
     /**
+     * SectionPreferenceTypeBannedPreset
+     * <p>
      * Teacher availability to be assigned to the section.
      * 
      */
     @Generated("jsonschema2pojo")
-    public enum Type {
+    public enum SectionPreferenceTypeBannedPreset {
 
         BANNED("banned"),
         PRESET("preset");
         private final String value;
-        private final static Map<String, OnCallSectionPreference.Type> CONSTANTS = new HashMap<String, OnCallSectionPreference.Type>();
+        private final static Map<String, OnCallSectionPreference.SectionPreferenceTypeBannedPreset> CONSTANTS = new HashMap<String, OnCallSectionPreference.SectionPreferenceTypeBannedPreset>();
 
         static {
-            for (OnCallSectionPreference.Type c: values()) {
+            for (OnCallSectionPreference.SectionPreferenceTypeBannedPreset c: values()) {
                 CONSTANTS.put(c.value, c);
             }
         }
 
-        Type(String value) {
+        SectionPreferenceTypeBannedPreset(String value) {
             this.value = value;
         }
 
@@ -212,8 +220,8 @@ public class OnCallSectionPreference {
         }
 
         @JsonCreator
-        public static OnCallSectionPreference.Type fromValue(String value) {
-            OnCallSectionPreference.Type constant = CONSTANTS.get(value);
+        public static OnCallSectionPreference.SectionPreferenceTypeBannedPreset fromValue(String value) {
+            OnCallSectionPreference.SectionPreferenceTypeBannedPreset constant = CONSTANTS.get(value);
             if (constant == null) {
                 throw new IllegalArgumentException(value);
             } else {

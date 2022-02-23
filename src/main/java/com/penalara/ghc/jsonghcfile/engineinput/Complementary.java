@@ -66,6 +66,7 @@ public class Complementary {
      * RefTeacher
      * <p>
      * Teacher identifier.
+     * (Required)
      * 
      */
     @JsonProperty("refTeacher")
@@ -218,6 +219,7 @@ public class Complementary {
      * RefTeacher
      * <p>
      * Teacher identifier.
+     * (Required)
      * 
      */
     @JsonProperty("refTeacher")
@@ -229,6 +231,7 @@ public class Complementary {
      * RefTeacher
      * <p>
      * Teacher identifier.
+     * (Required)
      * 
      */
     @JsonProperty("refTeacher")

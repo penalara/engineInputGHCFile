@@ -66,13 +66,15 @@ public class Section {
     @JsonPropertyDescription("It indicates the duration (real or proportional) of the section in minutes.")
     private Integer duration;
     /**
+     * SectionType
+     * <p>
      * Kind of section.
      * (Required)
      * 
      */
     @JsonProperty("type")
     @JsonPropertyDescription("Kind of section.")
-    private Section.Type type;
+    private Section.SectionType type;
     /**
      * It indicates if the section is available to assign.
      * 
@@ -99,7 +101,7 @@ public class Section {
      * @param index
      * @param type
      */
-    public Section(Integer index, String entryTime, String exitTime, Integer duration, Section.Type type, Boolean allowed) {
+    public Section(Integer index, String entryTime, String exitTime, Integer duration, Section.SectionType type, Boolean allowed) {
         super();
         this.index = index;
         this.entryTime = entryTime;
@@ -190,22 +192,26 @@ public class Section {
     }
 
     /**
+     * SectionType
+     * <p>
      * Kind of section.
      * (Required)
      * 
      */
     @JsonProperty("type")
-    public Section.Type getType() {
+    public Section.SectionType getType() {
         return type;
     }
 
     /**
+     * SectionType
+     * <p>
      * Kind of section.
      * (Required)
      * 
      */
     @JsonProperty("type")
-    public void setType(Section.Type type) {
+    public void setType(Section.SectionType type) {
         this.type = type;
     }
 
@@ -239,25 +245,27 @@ public class Section {
 
 
     /**
+     * SectionType
+     * <p>
      * Kind of section.
      * 
      */
     @Generated("jsonschema2pojo")
-    public enum Type {
+    public enum SectionType {
 
         TEACHING("teaching"),
         BREAK("break"),
         MIDDAY("midday");
         private final String value;
-        private final static Map<String, Section.Type> CONSTANTS = new HashMap<String, Section.Type>();
+        private final static Map<String, Section.SectionType> CONSTANTS = new HashMap<String, Section.SectionType>();
 
         static {
-            for (Section.Type c: values()) {
+            for (Section.SectionType c: values()) {
                 CONSTANTS.put(c.value, c);
             }
         }
 
-        Type(String value) {
+        SectionType(String value) {
             this.value = value;
         }
 
@@ -272,8 +280,8 @@ public class Section {
         }
 
         @JsonCreator
-        public static Section.Type fromValue(String value) {
-            Section.Type constant = CONSTANTS.get(value);
+        public static Section.SectionType fromValue(String value) {
+            Section.SectionType constant = CONSTANTS.get(value);
             if (constant == null) {
                 throw new IllegalArgumentException(value);
             } else {

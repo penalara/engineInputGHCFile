@@ -29,6 +29,7 @@ public class GroupReferenceType {
 
     /**
      * Group identifier.
+     * (Required)
      * 
      */
     @JsonProperty("refIdGroup")
@@ -64,6 +65,7 @@ public class GroupReferenceType {
 
     /**
      * Group identifier.
+     * (Required)
      * 
      */
     @JsonProperty("refIdGroup")
@@ -73,6 +75,7 @@ public class GroupReferenceType {
 
     /**
      * Group identifier.
+     * (Required)
      * 
      */
     @JsonProperty("refIdGroup")

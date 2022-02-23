@@ -56,13 +56,15 @@ public class SectionPreference {
     @JsonPropertyDescription("Identifier name of the frame.")
     private String frame;
     /**
+     * SectionPreferenceTypeWithOutPreset
+     * <p>
      * Element availability to be assigned to the section.
      * (Required)
      * 
      */
     @JsonProperty("type")
     @JsonPropertyDescription("Element availability to be assigned to the section.")
-    private SectionPreference.Type type;
+    private SectionPreference.SectionPreferenceTypeWithOutPreset type;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -80,7 +82,7 @@ public class SectionPreference {
      * @param day
      * @param frame
      */
-    public SectionPreference(Integer day, Integer index, String frame, SectionPreference.Type type) {
+    public SectionPreference(Integer day, Integer index, String frame, SectionPreference.SectionPreferenceTypeWithOutPreset type) {
         super();
         this.day = day;
         this.index = index;
@@ -149,22 +151,26 @@ public class SectionPreference {
     }
 
     /**
+     * SectionPreferenceTypeWithOutPreset
+     * <p>
      * Element availability to be assigned to the section.
      * (Required)
      * 
      */
     @JsonProperty("type")
-    public SectionPreference.Type getType() {
+    public SectionPreference.SectionPreferenceTypeWithOutPreset getType() {
         return type;
     }
 
     /**
+     * SectionPreferenceTypeWithOutPreset
+     * <p>
      * Element availability to be assigned to the section.
      * (Required)
      * 
      */
     @JsonProperty("type")
-    public void setType(SectionPreference.Type type) {
+    public void setType(SectionPreference.SectionPreferenceTypeWithOutPreset type) {
         this.type = type;
     }
 
@@ -180,25 +186,27 @@ public class SectionPreference {
 
 
     /**
+     * SectionPreferenceTypeWithOutPreset
+     * <p>
      * Element availability to be assigned to the section.
      * 
      */
     @Generated("jsonschema2pojo")
-    public enum Type {
+    public enum SectionPreferenceTypeWithOutPreset {
 
         BANNED("banned"),
         STRONG_NON_PREFERRED("strong-non-preferred"),
         WEAK_NON_PREFERRED("weak-non-preferred");
         private final String value;
-        private final static Map<String, SectionPreference.Type> CONSTANTS = new HashMap<String, SectionPreference.Type>();
+        private final static Map<String, SectionPreference.SectionPreferenceTypeWithOutPreset> CONSTANTS = new HashMap<String, SectionPreference.SectionPreferenceTypeWithOutPreset>();
 
         static {
-            for (SectionPreference.Type c: values()) {
+            for (SectionPreference.SectionPreferenceTypeWithOutPreset c: values()) {
                 CONSTANTS.put(c.value, c);
             }
         }
 
-        Type(String value) {
+        SectionPreferenceTypeWithOutPreset(String value) {
             this.value = value;
         }
 
@@ -213,8 +221,8 @@ public class SectionPreference {
         }
 
         @JsonCreator
-        public static SectionPreference.Type fromValue(String value) {
-            SectionPreference.Type constant = CONSTANTS.get(value);
+        public static SectionPreference.SectionPreferenceTypeWithOutPreset fromValue(String value) {
+            SectionPreference.SectionPreferenceTypeWithOutPreset constant = CONSTANTS.get(value);
             if (constant == null) {
                 throw new IllegalArgumentException(value);
             } else {

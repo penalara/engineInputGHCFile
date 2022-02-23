@@ -56,13 +56,15 @@ public class SessionSectionPreference {
     @JsonPropertyDescription("Frame identifier.")
     private String frame;
     /**
+     * SectionPreferenceTypeWithPreset
+     * <p>
      * Session availability to be assigned to the section.
      * (Required)
      * 
      */
     @JsonProperty("type")
     @JsonPropertyDescription("Session availability to be assigned to the section.")
-    private SessionSectionPreference.Type type;
+    private SessionSectionPreference.SectionPreferenceTypeWithPreset type;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -80,7 +82,7 @@ public class SessionSectionPreference {
      * @param day
      * @param frame
      */
-    public SessionSectionPreference(Integer day, Integer index, String frame, SessionSectionPreference.Type type) {
+    public SessionSectionPreference(Integer day, Integer index, String frame, SessionSectionPreference.SectionPreferenceTypeWithPreset type) {
         super();
         this.day = day;
         this.index = index;
@@ -149,22 +151,26 @@ public class SessionSectionPreference {
     }
 
     /**
+     * SectionPreferenceTypeWithPreset
+     * <p>
      * Session availability to be assigned to the section.
      * (Required)
      * 
      */
     @JsonProperty("type")
-    public SessionSectionPreference.Type getType() {
+    public SessionSectionPreference.SectionPreferenceTypeWithPreset getType() {
         return type;
     }
 
     /**
+     * SectionPreferenceTypeWithPreset
+     * <p>
      * Session availability to be assigned to the section.
      * (Required)
      * 
      */
     @JsonProperty("type")
-    public void setType(SessionSectionPreference.Type type) {
+    public void setType(SessionSectionPreference.SectionPreferenceTypeWithPreset type) {
         this.type = type;
     }
 
@@ -180,26 +186,28 @@ public class SessionSectionPreference {
 
 
     /**
+     * SectionPreferenceTypeWithPreset
+     * <p>
      * Session availability to be assigned to the section.
      * 
      */
     @Generated("jsonschema2pojo")
-    public enum Type {
+    public enum SectionPreferenceTypeWithPreset {
 
         BANNED("banned"),
         STRONG_NON_PREFERRED("strong-non-preferred"),
         WEAK_NON_PREFERRED("weak-non-preferred"),
         PRESET("preset");
         private final String value;
-        private final static Map<String, SessionSectionPreference.Type> CONSTANTS = new HashMap<String, SessionSectionPreference.Type>();
+        private final static Map<String, SessionSectionPreference.SectionPreferenceTypeWithPreset> CONSTANTS = new HashMap<String, SessionSectionPreference.SectionPreferenceTypeWithPreset>();
 
         static {
-            for (SessionSectionPreference.Type c: values()) {
+            for (SessionSectionPreference.SectionPreferenceTypeWithPreset c: values()) {
                 CONSTANTS.put(c.value, c);
             }
         }
 
-        Type(String value) {
+        SectionPreferenceTypeWithPreset(String value) {
             this.value = value;
         }
 
@@ -214,8 +222,8 @@ public class SessionSectionPreference {
         }
 
         @JsonCreator
-        public static SessionSectionPreference.Type fromValue(String value) {
-            SessionSectionPreference.Type constant = CONSTANTS.get(value);
+        public static SessionSectionPreference.SectionPreferenceTypeWithPreset fromValue(String value) {
+            SessionSectionPreference.SectionPreferenceTypeWithPreset constant = CONSTANTS.get(value);
             if (constant == null) {
                 throw new IllegalArgumentException(value);
             } else {

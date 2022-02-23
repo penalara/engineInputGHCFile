@@ -37,7 +37,7 @@ public class NonClassSessionSettings {
      */
     @JsonProperty("samePositionEveryPeriod")
     @JsonPropertyDescription("Keep the same position every week or period for the class units.")
-    private SamePositionEveryPeriod samePositionEveryPeriod = SamePositionEveryPeriod.fromValue("ignore");
+    private SamePositionEveryPeriod samePositionEveryPeriod = null;
 
     /**
      * No args constructor for use in serialization

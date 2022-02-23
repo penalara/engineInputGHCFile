@@ -31,7 +31,6 @@
             "type": "object",
             "required": [
                 "frames",
-                "buildings",
                 "classRooms",
                 "teachers",
                 "subjects",
@@ -151,7 +150,8 @@
 														"type": "integer",
 														"$comment": "This indicates the duration of the section that the engine will use to assign class units. It can be the actual duration between check-in and check-out, or it can be a proportional time to simplify (hour, half hour, three-quarters of an hour...). The distribution of class units will be consistent with this duration."
 													},
-													"type": {                                            
+													"type": {
+														"title": "SectionType",
 														"description": "Kind of section.",
 														"enum": ["teaching", "break", "midday"]
 													},
@@ -349,7 +349,7 @@
                         ],
                         "properties":{
                             "id": {
-                                "id": "Identifier of the teacher.",
+                                "description": "Identifier of the teacher.",
                                 "type": "string"
                             },
                             "associationIdentifier": {
@@ -541,7 +541,7 @@
                             "refMainTask",
                             "refMainTeacher",
 							"refMainSubject",
-							"refMainGroup"
+							"refMainGroup",
                             "distribution"
                         ],
                         "properties":{
@@ -1922,7 +1922,7 @@
 			"description": "Contains the reference to a group of the session, and optionally, the number of students of the group that attend the session.",
 			"type": "object",
 			"required":[
-				"refGroup"
+				"refIdGroup"
 			],
 			"properties":{
 				"refIdGroup": {

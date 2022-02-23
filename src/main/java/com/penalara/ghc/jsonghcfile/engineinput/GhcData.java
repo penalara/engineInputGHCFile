@@ -65,7 +65,6 @@ public class GhcData {
      * Buildings
      * <p>
      * It contains the school or educational institution buildings.
-     * (Required)
      * 
      */
     @JsonProperty("buildings")
@@ -281,7 +280,6 @@ public class GhcData {
      * Buildings
      * <p>
      * It contains the school or educational institution buildings.
-     * (Required)
      * 
      */
     @JsonProperty("buildings")
@@ -293,7 +291,6 @@ public class GhcData {
      * Buildings
      * <p>
      * It contains the school or educational institution buildings.
-     * (Required)
      * 
      */
     @JsonProperty("buildings")
