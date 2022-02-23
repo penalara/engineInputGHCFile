@@ -1,15 +1,11 @@
 
 package com.penalara.ghc.jsonghcfile.engineinput;
 
-import java.util.HashMap;
-import java.util.Map;
 import javax.annotation.processing.Generated;
-import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-import com.fasterxml.jackson.annotation.JsonValue;
 
 
 /**
@@ -22,8 +18,9 @@ import com.fasterxml.jackson.annotation.JsonValue;
 @JsonPropertyOrder({
     "minutesAmount",
     "maxMinutesDaily",
-    "minDurationDaily",
+    "minMinutesDaily",
     "avoidMaxDuration",
+    "avoidMinDuration",
     "allowDiscontinuity"
 })
 @Generated("jsonschema2pojo")
@@ -46,12 +43,12 @@ public class WeeklyVariable {
     @JsonPropertyDescription("Maximum of minutes per day.")
     private Integer maxMinutesDaily;
     /**
-     * It indicates the preference for class units of minimum duration.
+     * Minimun of minutes per day.
      * 
      */
-    @JsonProperty("minDurationDaily")
-    @JsonPropertyDescription("It indicates the preference for class units of minimum duration.")
-    private WeeklyVariable.MinDurationDaily minDurationDaily = WeeklyVariable.MinDurationDaily.fromValue("allow");
+    @JsonProperty("minMinutesDaily")
+    @JsonPropertyDescription("Minimun of minutes per day.")
+    private Integer minMinutesDaily;
     /**
      * It indicates the preference for class units of maximum duration.
      * 
@@ -59,6 +56,13 @@ public class WeeklyVariable {
     @JsonProperty("avoidMaxDuration")
     @JsonPropertyDescription("It indicates the preference for class units of maximum duration.")
     private Boolean avoidMaxDuration = false;
+    /**
+     * It indicates the preference for class units of minimun duration.
+     * 
+     */
+    @JsonProperty("avoidMinDuration")
+    @JsonPropertyDescription("It indicates the preference for class units of minimun duration.")
+    private Boolean avoidMinDuration = false;
     /**
      * It indicates whether discontinuous sections are allowed, that is, having sections of other class units or breaks in between them.
      * 
@@ -77,17 +81,19 @@ public class WeeklyVariable {
     /**
      * 
      * @param allowDiscontinuity
-     * @param minDurationDaily
+     * @param minMinutesDaily
+     * @param avoidMinDuration
      * @param avoidMaxDuration
      * @param minutesAmount
      * @param maxMinutesDaily
      */
-    public WeeklyVariable(Integer minutesAmount, Integer maxMinutesDaily, WeeklyVariable.MinDurationDaily minDurationDaily, Boolean avoidMaxDuration, Boolean allowDiscontinuity) {
+    public WeeklyVariable(Integer minutesAmount, Integer maxMinutesDaily, Integer minMinutesDaily, Boolean avoidMaxDuration, Boolean avoidMinDuration, Boolean allowDiscontinuity) {
         super();
         this.minutesAmount = minutesAmount;
         this.maxMinutesDaily = maxMinutesDaily;
-        this.minDurationDaily = minDurationDaily;
+        this.minMinutesDaily = minMinutesDaily;
         this.avoidMaxDuration = avoidMaxDuration;
+        this.avoidMinDuration = avoidMinDuration;
         this.allowDiscontinuity = allowDiscontinuity;
     }
 
@@ -132,21 +138,21 @@ public class WeeklyVariable {
     }
 
     /**
-     * It indicates the preference for class units of minimum duration.
+     * Minimun of minutes per day.
      * 
      */
-    @JsonProperty("minDurationDaily")
-    public WeeklyVariable.MinDurationDaily getMinDurationDaily() {
-        return minDurationDaily;
+    @JsonProperty("minMinutesDaily")
+    public Integer getMinMinutesDaily() {
+        return minMinutesDaily;
     }
 
     /**
-     * It indicates the preference for class units of minimum duration.
+     * Minimun of minutes per day.
      * 
      */
-    @JsonProperty("minDurationDaily")
-    public void setMinDurationDaily(WeeklyVariable.MinDurationDaily minDurationDaily) {
-        this.minDurationDaily = minDurationDaily;
+    @JsonProperty("minMinutesDaily")
+    public void setMinMinutesDaily(Integer minMinutesDaily) {
+        this.minMinutesDaily = minMinutesDaily;
     }
 
     /**
@@ -168,6 +174,24 @@ public class WeeklyVariable {
     }
 
     /**
+     * It indicates the preference for class units of minimun duration.
+     * 
+     */
+    @JsonProperty("avoidMinDuration")
+    public Boolean getAvoidMinDuration() {
+        return avoidMinDuration;
+    }
+
+    /**
+     * It indicates the preference for class units of minimun duration.
+     * 
+     */
+    @JsonProperty("avoidMinDuration")
+    public void setAvoidMinDuration(Boolean avoidMinDuration) {
+        this.avoidMinDuration = avoidMinDuration;
+    }
+
+    /**
      * It indicates whether discontinuous sections are allowed, that is, having sections of other class units or breaks in between them.
      * 
      */
@@ -183,52 +207,6 @@ public class WeeklyVariable {
     @JsonProperty("allowDiscontinuity")
     public void setAllowDiscontinuity(Boolean allowDiscontinuity) {
         this.allowDiscontinuity = allowDiscontinuity;
-    }
-
-
-    /**
-     * It indicates the preference for class units of minimum duration.
-     * 
-     */
-    @Generated("jsonschema2pojo")
-    public enum MinDurationDaily {
-
-        ALLOW("allow"),
-        AVOID("avoid"),
-        FORBIDDEN("forbidden");
-        private final String value;
-        private final static Map<String, WeeklyVariable.MinDurationDaily> CONSTANTS = new HashMap<String, WeeklyVariable.MinDurationDaily>();
-
-        static {
-            for (WeeklyVariable.MinDurationDaily c: values()) {
-                CONSTANTS.put(c.value, c);
-            }
-        }
-
-        MinDurationDaily(String value) {
-            this.value = value;
-        }
-
-        @Override
-        public String toString() {
-            return this.value;
-        }
-
-        @JsonValue
-        public String value() {
-            return this.value;
-        }
-
-        @JsonCreator
-        public static WeeklyVariable.MinDurationDaily fromValue(String value) {
-            WeeklyVariable.MinDurationDaily constant = CONSTANTS.get(value);
-            if (constant == null) {
-                throw new IllegalArgumentException(value);
-            } else {
-                return constant;
-            }
-        }
-
     }
 
 }

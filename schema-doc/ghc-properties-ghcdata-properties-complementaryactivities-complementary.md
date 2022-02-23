@@ -23,7 +23,7 @@ Service of teacher\`s complementary activity.
 | [id](#id)                                     | `string` | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-complementaryactivities-complementary-properties-id.md "engineInputGHCSchema#/properties/ghcData/properties/complementaryActivities/items/properties/id")                   |
 | [refFrame](#refframe)                         | `string` | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-complementaryactivities-complementary-properties-refframe.md "engineInputGHCSchema#/properties/ghcData/properties/complementaryActivities/items/properties/refFrame")       |
 | [refTask](#reftask)                           | `string` | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-complementaryactivities-complementary-properties-reftask.md "engineInputGHCSchema#/properties/ghcData/properties/complementaryActivities/items/properties/refTask")         |
-| [refTeacher](#refteacher)                     | `string` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-complementaryactivities-complementary-properties-refteacher.md "engineInputGHCSchema#/properties/ghcData/properties/complementaryActivities/items/properties/refTeacher")   |
+| [refTeacher](#refteacher)                     | `string` | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-complementaryactivities-complementary-properties-refteacher.md "engineInputGHCSchema#/properties/ghcData/properties/complementaryActivities/items/properties/refTeacher")   |
 | [distribution](#distribution)                 | `object` | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-distribution.md "engineInputGHCSchema#/properties/ghcData/properties/complementaryActivities/items/properties/distribution")                                                                  |
 | [frameTemplate](#frametemplate)               | `array`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-sessionframetemplate.md "engineInputGHCSchema#/properties/ghcData/properties/complementaryActivities/items/properties/frameTemplate")                                                         |
 | [refClassRoomToAssign](#refclassroomtoassign) | `object` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-refclassroomtoassign.md "engineInputGHCSchema#/properties/ghcData/properties/complementaryActivities/items/properties/refClassRoomToAssign")                                                  |
@@ -90,7 +90,7 @@ Teacher identifier.
 
 `refTeacher`
 
-*   is optional
+*   is required
 
 *   Type: `string` ([RefTeacher](ghc-properties-ghcdata-properties-complementaryactivities-complementary-properties-refteacher.md))
 

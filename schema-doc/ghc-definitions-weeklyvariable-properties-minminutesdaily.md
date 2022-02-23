@@ -1,15 +1,15 @@
-# Untitled string in EngineInputGHCSchema Schema
+# Untitled integer in EngineInputGHCSchema Schema
 
 ```txt
-engineInputGHCSchema#/properties/ghcData/properties/teachers/items/properties/id
+engineInputGHCSchema#/definitions/weeklyVariable/properties/minMinutesDaily
 ```
 
-Identifier of the teacher.
+Minimun of minutes per day.
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                        |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :---------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [ghc.schema.json*](../out/ghc.schema.json "open original schema") |
 
-## id Type
+## minMinutesDaily Type
 
-`string`
+`integer`

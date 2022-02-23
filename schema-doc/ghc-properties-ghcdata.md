@@ -20,7 +20,7 @@ Schema of the object that contains the timetable planning data.
 | :-------------------------------------------------- | :------- | :------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [periods](#periods)                                 | `object` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-periods.md "engineInputGHCSchema#/properties/ghcData/properties/periods")                                 |
 | [frames](#frames)                                   | `array`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames.md "engineInputGHCSchema#/properties/ghcData/properties/frames")                                   |
-| [buildings](#buildings)                             | `array`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-buildings.md "engineInputGHCSchema#/properties/ghcData/properties/buildings")                             |
+| [buildings](#buildings)                             | `array`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-buildings.md "engineInputGHCSchema#/properties/ghcData/properties/buildings")                             |
 | [classRooms](#classrooms)                           | `array`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-classrooms.md "engineInputGHCSchema#/properties/ghcData/properties/classRooms")                           |
 | [classRoomsSets](#classroomssets)                   | `array`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-classroomssets.md "engineInputGHCSchema#/properties/ghcData/properties/classRoomsSets")                   |
 | [tasks](#tasks)                                     | `array`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-tasks.md "engineInputGHCSchema#/properties/ghcData/properties/tasks")                                     |
@@ -78,7 +78,7 @@ It contains the school or educational institution buildings.
 
 `buildings`
 
-*   is required
+*   is optional
 
 *   Type: `object[]` ([Building](ghc-properties-ghcdata-properties-buildings-building.md))
 

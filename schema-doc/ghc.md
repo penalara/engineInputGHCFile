@@ -1034,7 +1034,7 @@ Reference this group by using
 
 | Property                    | Type      | Required | Nullable       | Defined by                                                                                                                                               |
 | :-------------------------- | :-------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [refIdGroup](#refidgroup)   | `string`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-groupreferencetype-properties-refidgroup.md "engineInputGHCSchema#/definitions/refGroup/properties/refIdGroup")   |
+| [refIdGroup](#refidgroup)   | `string`  | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-groupreferencetype-properties-refidgroup.md "engineInputGHCSchema#/definitions/refGroup/properties/refIdGroup")   |
 | [numStudents](#numstudents) | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-groupreferencetype-properties-numstudents.md "engineInputGHCSchema#/definitions/refGroup/properties/numStudents") |
 
 ### refIdGroup
@@ -1043,7 +1043,7 @@ Group identifier.
 
 `refIdGroup`
 
-*   is optional
+*   is required
 
 *   Type: `string`
 
@@ -1092,13 +1092,14 @@ Reference this group by using
 {"$ref":"engineInputGHCSchema#/definitions/weeklyVariable"}
 ```
 
-| Property                                  | Type          | Required | Nullable       | Defined by                                                                                                                                                               |
-| :---------------------------------------- | :------------ | :------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [minutesAmount](#minutesamount)           | `integer`     | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-weeklyvariable-properties-minutesamount.md "engineInputGHCSchema#/definitions/weeklyVariable/properties/minutesAmount")           |
-| [maxMinutesDaily](#maxminutesdaily)       | `integer`     | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-weeklyvariable-properties-maxminutesdaily.md "engineInputGHCSchema#/definitions/weeklyVariable/properties/maxMinutesDaily")       |
-| [minDurationDaily](#mindurationdaily)     | Not specified | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-weeklyvariable-properties-mindurationdaily.md "engineInputGHCSchema#/definitions/weeklyVariable/properties/minDurationDaily")     |
-| [avoidMaxDuration](#avoidmaxduration)     | `boolean`     | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-weeklyvariable-properties-avoidmaxduration.md "engineInputGHCSchema#/definitions/weeklyVariable/properties/avoidMaxDuration")     |
-| [allowDiscontinuity](#allowdiscontinuity) | `boolean`     | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-weeklyvariable-properties-allowdiscontinuity.md "engineInputGHCSchema#/definitions/weeklyVariable/properties/allowDiscontinuity") |
+| Property                                  | Type      | Required | Nullable       | Defined by                                                                                                                                                               |
+| :---------------------------------------- | :-------- | :------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [minutesAmount](#minutesamount)           | `integer` | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-weeklyvariable-properties-minutesamount.md "engineInputGHCSchema#/definitions/weeklyVariable/properties/minutesAmount")           |
+| [maxMinutesDaily](#maxminutesdaily)       | `integer` | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-weeklyvariable-properties-maxminutesdaily.md "engineInputGHCSchema#/definitions/weeklyVariable/properties/maxMinutesDaily")       |
+| [minMinutesDaily](#minminutesdaily)       | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-weeklyvariable-properties-minminutesdaily.md "engineInputGHCSchema#/definitions/weeklyVariable/properties/minMinutesDaily")       |
+| [avoidMaxDuration](#avoidmaxduration)     | `boolean` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-weeklyvariable-properties-avoidmaxduration.md "engineInputGHCSchema#/definitions/weeklyVariable/properties/avoidMaxDuration")     |
+| [avoidMinDuration](#avoidminduration)     | `boolean` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-weeklyvariable-properties-avoidminduration.md "engineInputGHCSchema#/definitions/weeklyVariable/properties/avoidMinDuration")     |
+| [allowDiscontinuity](#allowdiscontinuity) | `boolean` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-weeklyvariable-properties-allowdiscontinuity.md "engineInputGHCSchema#/definitions/weeklyVariable/properties/allowDiscontinuity") |
 
 ### minutesAmount
 
@@ -1136,41 +1137,23 @@ Maximum of minutes per day.
 
 `integer`
 
-### minDurationDaily
+### minMinutesDaily
 
-It indicates the preference for class units of minimum duration.
+Minimun of minutes per day.
 
-`minDurationDaily`
+`minMinutesDaily`
 
 *   is optional
 
-*   Type: unknown
+*   Type: `integer`
 
 *   cannot be null
 
-*   defined in: [EngineInputGHCSchema](ghc-definitions-weeklyvariable-properties-mindurationdaily.md "engineInputGHCSchema#/definitions/weeklyVariable/properties/minDurationDaily")
+*   defined in: [EngineInputGHCSchema](ghc-definitions-weeklyvariable-properties-minminutesdaily.md "engineInputGHCSchema#/definitions/weeklyVariable/properties/minMinutesDaily")
 
-#### minDurationDaily Type
+#### minMinutesDaily Type
 
-unknown
-
-#### minDurationDaily Constraints
-
-**enum**: the value of this property must be equal to one of the following values:
-
-| Value         | Explanation |
-| :------------ | :---------- |
-| `"allow"`     |             |
-| `"avoid"`     |             |
-| `"forbidden"` |             |
-
-#### minDurationDaily Default Value
-
-The default value is:
-
-```json
-"allow"
-```
+`integer`
 
 ### avoidMaxDuration
 
@@ -1187,6 +1170,24 @@ It indicates the preference for class units of maximum duration.
 *   defined in: [EngineInputGHCSchema](ghc-definitions-weeklyvariable-properties-avoidmaxduration.md "engineInputGHCSchema#/definitions/weeklyVariable/properties/avoidMaxDuration")
 
 #### avoidMaxDuration Type
+
+`boolean`
+
+### avoidMinDuration
+
+It indicates the preference for class units of minimun duration.
+
+`avoidMinDuration`
+
+*   is optional
+
+*   Type: `boolean`
+
+*   cannot be null
+
+*   defined in: [EngineInputGHCSchema](ghc-definitions-weeklyvariable-properties-avoidminduration.md "engineInputGHCSchema#/definitions/weeklyVariable/properties/avoidMinDuration")
+
+#### avoidMinDuration Type
 
 `boolean`
 

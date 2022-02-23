@@ -26,7 +26,7 @@ Object with personal information and teachers' preferences.
 
 ## id
 
-
+Identifier of the teacher.
 
 `id`
 

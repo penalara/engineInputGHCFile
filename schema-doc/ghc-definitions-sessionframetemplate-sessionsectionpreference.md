@@ -16,12 +16,12 @@ Section assignment preference.
 
 # items Properties
 
-| Property        | Type          | Required | Nullable       | Defined by                                                                                                                                                                                |
-| :-------------- | :------------ | :------- | :------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [day](#day)     | `integer`     | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-sessionframetemplate-sessionsectionpreference-properties-day.md "engineInputGHCSchema#/definitions/sessionFrameTemplate/items/properties/day")     |
-| [index](#index) | `integer`     | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-sessionframetemplate-sessionsectionpreference-properties-index.md "engineInputGHCSchema#/definitions/sessionFrameTemplate/items/properties/index") |
-| [frame](#frame) | `string`      | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-sessionframetemplate-sessionsectionpreference-properties-frame.md "engineInputGHCSchema#/definitions/sessionFrameTemplate/items/properties/frame") |
-| [type](#type)   | Not specified | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-sessionframetemplate-sessionsectionpreference-properties-type.md "engineInputGHCSchema#/definitions/sessionFrameTemplate/items/properties/type")   |
+| Property        | Type          | Required | Nullable       | Defined by                                                                                                                                                                                                         |
+| :-------------- | :------------ | :------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [day](#day)     | `integer`     | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-sessionframetemplate-sessionsectionpreference-properties-day.md "engineInputGHCSchema#/definitions/sessionFrameTemplate/items/properties/day")                              |
+| [index](#index) | `integer`     | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-sessionframetemplate-sessionsectionpreference-properties-index.md "engineInputGHCSchema#/definitions/sessionFrameTemplate/items/properties/index")                          |
+| [frame](#frame) | `string`      | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-sessionframetemplate-sessionsectionpreference-properties-frame.md "engineInputGHCSchema#/definitions/sessionFrameTemplate/items/properties/frame")                          |
+| [type](#type)   | Not specified | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-sessionframetemplate-sessionsectionpreference-properties-sectionpreferencetypewithpreset.md "engineInputGHCSchema#/definitions/sessionFrameTemplate/items/properties/type") |
 
 ## day
 
@@ -85,15 +85,15 @@ Session availability to be assigned to the section.
 
 *   is required
 
-*   Type: unknown
+*   Type: unknown ([SectionPreferenceTypeWithPreset](ghc-definitions-sessionframetemplate-sessionsectionpreference-properties-sectionpreferencetypewithpreset.md))
 
 *   cannot be null
 
-*   defined in: [EngineInputGHCSchema](ghc-definitions-sessionframetemplate-sessionsectionpreference-properties-type.md "engineInputGHCSchema#/definitions/sessionFrameTemplate/items/properties/type")
+*   defined in: [EngineInputGHCSchema](ghc-definitions-sessionframetemplate-sessionsectionpreference-properties-sectionpreferencetypewithpreset.md "engineInputGHCSchema#/definitions/sessionFrameTemplate/items/properties/type")
 
 ### type Type
 
-unknown
+unknown ([SectionPreferenceTypeWithPreset](ghc-definitions-sessionframetemplate-sessionsectionpreference-properties-sectionpreferencetypewithpreset.md))
 
 ### type Constraints
 

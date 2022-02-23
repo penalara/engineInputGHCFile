@@ -18,7 +18,7 @@ Contains the reference to a group of the session, and optionally, the number of 
 
 | Property                    | Type      | Required | Nullable       | Defined by                                                                                                                                               |
 | :-------------------------- | :-------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [refIdGroup](#refidgroup)   | `string`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-groupreferencetype-properties-refidgroup.md "engineInputGHCSchema#/definitions/refGroup/properties/refIdGroup")   |
+| [refIdGroup](#refidgroup)   | `string`  | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-groupreferencetype-properties-refidgroup.md "engineInputGHCSchema#/definitions/refGroup/properties/refIdGroup")   |
 | [numStudents](#numstudents) | `integer` | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-groupreferencetype-properties-numstudents.md "engineInputGHCSchema#/definitions/refGroup/properties/numStudents") |
 
 ## refIdGroup
@@ -27,7 +27,7 @@ Group identifier.
 
 `refIdGroup`
 
-*   is optional
+*   is required
 
 *   Type: `string`
 

@@ -16,12 +16,12 @@ Template with a teacher section assignment preference about the service.
 
 # items Properties
 
-| Property        | Type          | Required | Nullable       | Defined by                                                                                                                                                                               |
-| :-------------- | :------------ | :------- | :------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [day](#day)     | `integer`     | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-oncalltemplate-oncallsectionpreference-properties-day.md "engineInputGHCSchema#/definitions/onCallServiceframeTemplate/items/properties/day")     |
-| [index](#index) | `integer`     | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-oncalltemplate-oncallsectionpreference-properties-index.md "engineInputGHCSchema#/definitions/onCallServiceframeTemplate/items/properties/index") |
-| [frame](#frame) | `string`      | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-oncalltemplate-oncallsectionpreference-properties-frame.md "engineInputGHCSchema#/definitions/onCallServiceframeTemplate/items/properties/frame") |
-| [type](#type)   | Not specified | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-oncalltemplate-oncallsectionpreference-properties-type.md "engineInputGHCSchema#/definitions/onCallServiceframeTemplate/items/properties/type")   |
+| Property        | Type          | Required | Nullable       | Defined by                                                                                                                                                                                                          |
+| :-------------- | :------------ | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [day](#day)     | `integer`     | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-oncalltemplate-oncallsectionpreference-properties-day.md "engineInputGHCSchema#/definitions/onCallServiceframeTemplate/items/properties/day")                                |
+| [index](#index) | `integer`     | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-oncalltemplate-oncallsectionpreference-properties-index.md "engineInputGHCSchema#/definitions/onCallServiceframeTemplate/items/properties/index")                            |
+| [frame](#frame) | `string`      | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-oncalltemplate-oncallsectionpreference-properties-frame.md "engineInputGHCSchema#/definitions/onCallServiceframeTemplate/items/properties/frame")                            |
+| [type](#type)   | Not specified | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-oncalltemplate-oncallsectionpreference-properties-sectionpreferencetypebannedpreset.md "engineInputGHCSchema#/definitions/onCallServiceframeTemplate/items/properties/type") |
 
 ## day
 
@@ -85,15 +85,15 @@ Teacher availability to be assigned to the section.
 
 *   is required
 
-*   Type: unknown
+*   Type: unknown ([SectionPreferenceTypeBannedPreset](ghc-definitions-oncalltemplate-oncallsectionpreference-properties-sectionpreferencetypebannedpreset.md))
 
 *   cannot be null
 
-*   defined in: [EngineInputGHCSchema](ghc-definitions-oncalltemplate-oncallsectionpreference-properties-type.md "engineInputGHCSchema#/definitions/onCallServiceframeTemplate/items/properties/type")
+*   defined in: [EngineInputGHCSchema](ghc-definitions-oncalltemplate-oncallsectionpreference-properties-sectionpreferencetypebannedpreset.md "engineInputGHCSchema#/definitions/onCallServiceframeTemplate/items/properties/type")
 
 ### type Type
 
-unknown
+unknown ([SectionPreferenceTypeBannedPreset](ghc-definitions-oncalltemplate-oncallsectionpreference-properties-sectionpreferencetypebannedpreset.md))
 
 ### type Constraints
 

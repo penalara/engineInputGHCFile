@@ -16,11 +16,11 @@ engineInputGHCSchema#/properties/ghcData/properties/subjects/items
 
 # items Properties
 
-| Property                                | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                   |
-| :-------------------------------------- | :-------- | :------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [id](#id)                               | `string`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-subjects-subject-properties-id.md "engineInputGHCSchema#/properties/ghcData/properties/subjects/items/properties/id")                               |
-| [student-mentoring](#student-mentoring) | `boolean` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-subjects-subject-properties-student-mentoring.md "engineInputGHCSchema#/properties/ghcData/properties/subjects/items/properties/student-mentoring") |
-| [frameTemplate](#frametemplate)         | `array`   | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-frametemplate.md "engineInputGHCSchema#/properties/ghcData/properties/subjects/items/properties/frameTemplate")                                                       |
+| Property                                  | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                     |
+| :---------------------------------------- | :-------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [id](#id)                                 | `string`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-subjects-subject-properties-id.md "engineInputGHCSchema#/properties/ghcData/properties/subjects/items/properties/id")                                 |
+| [isStudentMentoring](#isstudentmentoring) | `boolean` | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-subjects-subject-properties-isstudentmentoring.md "engineInputGHCSchema#/properties/ghcData/properties/subjects/items/properties/isStudentMentoring") |
+| [frameTemplate](#frametemplate)           | `array`   | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-frametemplate.md "engineInputGHCSchema#/properties/ghcData/properties/subjects/items/properties/frameTemplate")                                                         |
 
 ## id
 
@@ -40,11 +40,11 @@ Subject identifier.
 
 `string`
 
-## student-mentoring
+## isStudentMentoring
 
 It indicates whether the subject is a tutorial.
 
-`student-mentoring`
+`isStudentMentoring`
 
 *   is optional
 
@@ -52,9 +52,9 @@ It indicates whether the subject is a tutorial.
 
 *   cannot be null
 
-*   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-subjects-subject-properties-student-mentoring.md "engineInputGHCSchema#/properties/ghcData/properties/subjects/items/properties/student-mentoring")
+*   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-subjects-subject-properties-isstudentmentoring.md "engineInputGHCSchema#/properties/ghcData/properties/subjects/items/properties/isStudentMentoring")
 
-### student-mentoring Type
+### isStudentMentoring Type
 
 `boolean`
 

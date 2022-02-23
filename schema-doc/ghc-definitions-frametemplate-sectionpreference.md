@@ -16,12 +16,12 @@ Template with a section assignment preference.
 
 # items Properties
 
-| Property        | Type          | Required | Nullable       | Defined by                                                                                                                                                           |
-| :-------------- | :------------ | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [day](#day)     | `integer`     | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-frametemplate-sectionpreference-properties-day.md "engineInputGHCSchema#/definitions/frameTemplate/items/properties/day")     |
-| [index](#index) | `integer`     | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-frametemplate-sectionpreference-properties-index.md "engineInputGHCSchema#/definitions/frameTemplate/items/properties/index") |
-| [frame](#frame) | `string`      | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-frametemplate-sectionpreference-properties-frame.md "engineInputGHCSchema#/definitions/frameTemplate/items/properties/frame") |
-| [type](#type)   | Not specified | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-frametemplate-sectionpreference-properties-type.md "engineInputGHCSchema#/definitions/frameTemplate/items/properties/type")   |
+| Property        | Type          | Required | Nullable       | Defined by                                                                                                                                                                                       |
+| :-------------- | :------------ | :------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [day](#day)     | `integer`     | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-frametemplate-sectionpreference-properties-day.md "engineInputGHCSchema#/definitions/frameTemplate/items/properties/day")                                 |
+| [index](#index) | `integer`     | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-frametemplate-sectionpreference-properties-index.md "engineInputGHCSchema#/definitions/frameTemplate/items/properties/index")                             |
+| [frame](#frame) | `string`      | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-frametemplate-sectionpreference-properties-frame.md "engineInputGHCSchema#/definitions/frameTemplate/items/properties/frame")                             |
+| [type](#type)   | Not specified | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-frametemplate-sectionpreference-properties-sectionpreferencetypewithoutpreset.md "engineInputGHCSchema#/definitions/frameTemplate/items/properties/type") |
 
 ## day
 
@@ -85,15 +85,15 @@ Element availability to be assigned to the section.
 
 *   is required
 
-*   Type: unknown
+*   Type: unknown ([SectionPreferenceTypeWithOutPreset](ghc-definitions-frametemplate-sectionpreference-properties-sectionpreferencetypewithoutpreset.md))
 
 *   cannot be null
 
-*   defined in: [EngineInputGHCSchema](ghc-definitions-frametemplate-sectionpreference-properties-type.md "engineInputGHCSchema#/definitions/frameTemplate/items/properties/type")
+*   defined in: [EngineInputGHCSchema](ghc-definitions-frametemplate-sectionpreference-properties-sectionpreferencetypewithoutpreset.md "engineInputGHCSchema#/definitions/frameTemplate/items/properties/type")
 
 ### type Type
 
-unknown
+unknown ([SectionPreferenceTypeWithOutPreset](ghc-definitions-frametemplate-sectionpreference-properties-sectionpreferencetypewithoutpreset.md))
 
 ### type Constraints
 

@@ -20,10 +20,10 @@ engineInputGHCSchema#/properties/ghcData/properties/sessions/items
 | :------------------------------------------------------ | :-------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [id](#id)                                               | `integer` | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-id.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/id")                                                   |
 | [refFrame](#refframe)                                   | `string`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-refframe.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/refFrame")                                       |
-| [refMainTask](#refmaintask)                             | `string`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-refmaintask.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/refMainTask")                                 |
-| [refMainTeacher](#refmainteacher)                       | `string`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-refmainteacher.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/refMainTeacher")                           |
-| [refMainSubject](#refmainsubject)                       | `string`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-refmainsubject.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/refMainSubject")                           |
-| [refMainGroup](#refmaingroup)                           | `object`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-definitions-groupreferencetype.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/refMainGroup")                                                                       |
+| [refMainTask](#refmaintask)                             | `string`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-refmaintask.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/refMainTask")                                 |
+| [refMainTeacher](#refmainteacher)                       | `string`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-refmainteacher.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/refMainTeacher")                           |
+| [refMainSubject](#refmainsubject)                       | `string`  | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-refmainsubject.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/refMainSubject")                           |
+| [refMainGroup](#refmaingroup)                           | `object`  | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-groupreferencetype.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/refMainGroup")                                                                       |
 | [otherElementsInClassRooms](#otherelementsinclassrooms) | `array`   | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-otherelementsinclassroomslist.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/otherElementsInClassRooms") |
 | [distribution](#distribution)                           | `object`  | Required | cannot be null | [EngineInputGHCSchema](ghc-definitions-distribution.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/distribution")                                                                             |
 | [sessionClassRooms](#sessionclassrooms)                 | `object`  | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-sessions-session-properties-sessionclassrooms.md "engineInputGHCSchema#/properties/ghcData/properties/sessions/items/properties/sessionClassRooms")                     |
@@ -73,7 +73,7 @@ Main Task identifier.
 
 `refMainTask`
 
-*   is optional
+*   is required
 
 *   Type: `string` ([RefMainTask](ghc-properties-ghcdata-properties-sessions-session-properties-refmaintask.md))
 
@@ -91,7 +91,7 @@ Main Teacher identifier.
 
 `refMainTeacher`
 
-*   is optional
+*   is required
 
 *   Type: `string` ([RefMainTeacher](ghc-properties-ghcdata-properties-sessions-session-properties-refmainteacher.md))
 
@@ -109,7 +109,7 @@ Identifier name of the main subject.
 
 `refMainSubject`
 
-*   is optional
+*   is required
 
 *   Type: `string` ([RefMainSubject](ghc-properties-ghcdata-properties-sessions-session-properties-refmainsubject.md))
 
@@ -127,7 +127,7 @@ Contains the reference to a group of the session, and optionally, the number of 
 
 `refMainGroup`
 
-*   is optional
+*   is required
 
 *   Type: `object` ([GroupReferenceType](ghc-definitions-groupreferencetype.md))
 

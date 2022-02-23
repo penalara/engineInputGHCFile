@@ -22,7 +22,7 @@ engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/days
 | [entryTime](#entrytime) | `string`      | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames-frame-properties-days-frameday-properties-sections-section-properties-entrytime.md "engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/days/items/properties/sections/items/properties/entryTime") |
 | [exitTime](#exittime)   | `string`      | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames-frame-properties-days-frameday-properties-sections-section-properties-exittime.md "engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/days/items/properties/sections/items/properties/exitTime")   |
 | [duration](#duration)   | `integer`     | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames-frame-properties-days-frameday-properties-sections-section-properties-duration.md "engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/days/items/properties/sections/items/properties/duration")   |
-| [type](#type)           | Not specified | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames-frame-properties-days-frameday-properties-sections-section-properties-type.md "engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/days/items/properties/sections/items/properties/type")           |
+| [type](#type)           | Not specified | Required | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames-frame-properties-days-frameday-properties-sections-section-properties-sectiontype.md "engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/days/items/properties/sections/items/properties/type")    |
 | [allowed](#allowed)     | `boolean`     | Optional | cannot be null | [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames-frame-properties-days-frameday-properties-sections-section-properties-allowed.md "engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/days/items/properties/sections/items/properties/allowed")     |
 
 ## index
@@ -115,15 +115,15 @@ Kind of section.
 
 *   is required
 
-*   Type: unknown
+*   Type: unknown ([SectionType](ghc-properties-ghcdata-properties-frames-frame-properties-days-frameday-properties-sections-section-properties-sectiontype.md))
 
 *   cannot be null
 
-*   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames-frame-properties-days-frameday-properties-sections-section-properties-type.md "engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/days/items/properties/sections/items/properties/type")
+*   defined in: [EngineInputGHCSchema](ghc-properties-ghcdata-properties-frames-frame-properties-days-frameday-properties-sections-section-properties-sectiontype.md "engineInputGHCSchema#/properties/ghcData/properties/frames/items/properties/days/items/properties/sections/items/properties/type")
 
 ### type Type
 
-unknown
+unknown ([SectionType](ghc-properties-ghcdata-properties-frames-frame-properties-days-frameday-properties-sections-section-properties-sectiontype.md))
 
 ### type Constraints
 

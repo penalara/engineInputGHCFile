@@ -1963,17 +1963,17 @@
                     "description": "Maximum of minutes per day.",
                     "type": "integer"
                 },
-                "minDurationDaily": {
-                    "description": "It indicates the preference for class units of minimum duration.",
-                    "enum": [
-                        "allow",
-                        "avoid",
-                        "forbidden"
-                    ],
-                    "default": "allow"
+				"minMinutesDaily": {
+                    "description": "Minimun of minutes per day.",
+                    "type": "integer"
                 },
                 "avoidMaxDuration": {
                     "description": "It indicates the preference for class units of maximum duration.",
+                    "type":"boolean",
+                    "default": false
+                },
+				"avoidMinDuration": {
+                    "description": "It indicates the preference for class units of minimun duration.",
                     "type":"boolean",
                     "default": false
                 },
