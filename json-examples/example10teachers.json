@@ -1956,7 +1956,6 @@
 						"weeklyVariable": {
                             "minutesAmount": 540,
                             "maxMinutesDaily":180,
-                            "minDurationDaily": "avoid",
                             "avoidMaxDuration": true,
                             "allowDiscontinuity": false
                         }
@@ -1987,7 +1986,6 @@
 						"weeklyVariable": {
                             "minutesAmount": 540,
                             "maxMinutesDaily":180,
-                            "minDurationDaily": "avoid",
                             "avoidMaxDuration": true,
                             "allowDiscontinuity": false
                         }
@@ -2014,8 +2012,7 @@
                     "stablePeriods": {
 						"weeklyVariable": {
                             "minutesAmount": 420,
-                            "maxMinutesDaily":120,
-                            "minDurationDaily": "avoid"
+                            "maxMinutesDaily":120
                         }
                     }
                 },
@@ -2044,8 +2041,7 @@
                     "stablePeriods": {
 						"weeklyVariable": {
                             "minutesAmount": 420,
-                            "maxMinutesDaily":120,
-                            "minDurationDaily": "avoid"
+                            "maxMinutesDaily":120
                         }
                     }
                 },
@@ -2075,7 +2071,6 @@
 						"weeklyVariable": {
                             "minutesAmount": 540,
                             "maxMinutesDaily":180,
-                            "minDurationDaily": "avoid",
 							"avoidMaxDuration": true
                         }
                     }
@@ -2105,8 +2100,8 @@
 						"weeklyVariable": {
                             "minutesAmount": 540,
                             "maxMinutesDaily":180,
-                            "minDurationDaily": "avoid",
-							"avoidMaxDuration": true
+							"avoidMaxDuration": true,
+							"avoidMinDuration": true
                         }
                     }
                 },
