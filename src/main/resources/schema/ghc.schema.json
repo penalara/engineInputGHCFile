@@ -542,7 +542,8 @@
                             "refMainTeacher",
 							"refMainSubject",
 							"refMainGroup",
-                            "distribution"
+                            "distribution",
+							"sessionClassRooms"
                         ],
                         "properties":{
                             "id": {
