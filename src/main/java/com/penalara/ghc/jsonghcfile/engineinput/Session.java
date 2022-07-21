@@ -118,6 +118,7 @@ public class Session {
      * SessionClassRooms
      * <p>
      * It contains the information about the classrooms for the class units. At least one classroom is required for the class units.
+     * (Required)
      * 
      */
     @JsonProperty("sessionClassRooms")
@@ -377,6 +378,7 @@ public class Session {
      * SessionClassRooms
      * <p>
      * It contains the information about the classrooms for the class units. At least one classroom is required for the class units.
+     * (Required)
      * 
      */
     @JsonProperty("sessionClassRooms")
@@ -388,6 +390,7 @@ public class Session {
      * SessionClassRooms
      * <p>
      * It contains the information about the classrooms for the class units. At least one classroom is required for the class units.
+     * (Required)
      * 
      */
     @JsonProperty("sessionClassRooms")

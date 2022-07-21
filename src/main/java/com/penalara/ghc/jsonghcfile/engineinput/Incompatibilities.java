@@ -34,32 +34,32 @@ import com.fasterxml.jackson.annotation.JsonValue;
 public class Incompatibilities {
 
     /**
-     * FreeTimeBetweenDays
+     * ConditionTypeWithTime
      * <p>
-     * Minutes between departure and arrival of the following day.
+     * Indicate condition with time wich can be strict, avoid (penalisable in optimisation) or ignored.
      * 
      */
     @JsonProperty("freeTimeBetweenDayBeforeAndCurrent")
-    @JsonPropertyDescription("Minutes between departure and arrival of the following day.")
-    private FreeTimeBetweenDays freeTimeBetweenDayBeforeAndCurrent;
+    @JsonPropertyDescription("Indicate condition with time wich can be strict, avoid (penalisable in optimisation) or ignored.")
+    private ConditionTypeWithTime freeTimeBetweenDayBeforeAndCurrent;
     /**
-     * FreeTimeBetweenWeeksBorders
+     * ConditionTypeWithTime
      * <p>
-     * Minutes between the end time of the last day of the week and the start time of the following week.
+     * Indicate condition with time wich can be strict, avoid (penalisable in optimisation) or ignored.
      * 
      */
     @JsonProperty("freeTimeBetweenEndWeekAndStartWeekDays")
-    @JsonPropertyDescription("Minutes between the end time of the last day of the week and the start time of the following week.")
-    private FreeTimeBetweenWeeksBorders freeTimeBetweenEndWeekAndStartWeekDays;
+    @JsonPropertyDescription("Indicate condition with time wich can be strict, avoid (penalisable in optimisation) or ignored.")
+    private ConditionTypeWithTime freeTimeBetweenEndWeekAndStartWeekDays;
     /**
-     * FreeTimeFirstOrLastHoursDay
+     * ConditionTypeWithTime
      * <p>
-     * Minutes of free time at first or last hours of the day.
+     * Indicate condition with time wich can be strict, avoid (penalisable in optimisation) or ignored.
      * 
      */
     @JsonProperty("freeTimeFirstOrLastHoursDay")
-    @JsonPropertyDescription("Minutes of free time at first or last hours of the day.")
-    private FreeTimeFirstOrLastHoursDay freeTimeFirstOrLastHoursDay;
+    @JsonPropertyDescription("Indicate condition with time wich can be strict, avoid (penalisable in optimisation) or ignored.")
+    private ConditionTypeWithTime freeTimeFirstOrLastHoursDay;
     /**
      * DoNotFinishAtLastAfternoonSection
      * <p>
@@ -106,14 +106,14 @@ public class Incompatibilities {
     @JsonPropertyDescription("Do not start at the first hour and keep the evening busy.")
     private Incompatibilities.DoNotStartAtFirstMorningSection doNotStartAtFirstMorningSectionIfHasAfternoonAssignment;
     /**
-     * FreeTimeAroundMidday
+     * ConditionTypeWithTime
      * <p>
-     * Do not have less than a custom free time around noon pause.
+     * Indicate condition with time wich can be strict, avoid (penalisable in optimisation) or ignored.
      * 
      */
     @JsonProperty("freeTimeAroundMidday")
-    @JsonPropertyDescription("Do not have less than a custom free time around noon pause.")
-    private FreeTimeAroundMidday freeTimeAroundMidday;
+    @JsonPropertyDescription("Indicate condition with time wich can be strict, avoid (penalisable in optimisation) or ignored.")
+    private ConditionTypeWithTime freeTimeAroundMidday;
 
     /**
      * No args constructor for use in serialization
@@ -134,7 +134,7 @@ public class Incompatibilities {
      * @param freeTimeAroundMidday
      * @param doNotStartAtFirstMorningSectionIfHasAfternoonAssignment
      */
-    public Incompatibilities(FreeTimeBetweenDays freeTimeBetweenDayBeforeAndCurrent, FreeTimeBetweenWeeksBorders freeTimeBetweenEndWeekAndStartWeekDays, FreeTimeFirstOrLastHoursDay freeTimeFirstOrLastHoursDay, Incompatibilities.DoNotFinishAtLastAfternoonSection doNotFinishAtLastAfternoonSectionIfStartedAtFirstAfternoonSection, Incompatibilities.DoNotFinishAtLastMorningSection doNotFinishAtLastMorningSectionIfStartedAtFirstMorningSection, Incompatibilities.DoNotFinishAtLastMorningSectionIfStartAtFirstAfternoon doNotFinishAtLastMorningSectionIfStartAtFirstAfternoonSection, Incompatibilities.DoNotFinishAtLastMorningSectionIfHasAfternoon doNotFinishAtLastMorningSectionIfHasAfternoonAssignment, Incompatibilities.DoNotStartAtFirstMorningSection doNotStartAtFirstMorningSectionIfHasAfternoonAssignment, FreeTimeAroundMidday freeTimeAroundMidday) {
+    public Incompatibilities(ConditionTypeWithTime freeTimeBetweenDayBeforeAndCurrent, ConditionTypeWithTime freeTimeBetweenEndWeekAndStartWeekDays, ConditionTypeWithTime freeTimeFirstOrLastHoursDay, Incompatibilities.DoNotFinishAtLastAfternoonSection doNotFinishAtLastAfternoonSectionIfStartedAtFirstAfternoonSection, Incompatibilities.DoNotFinishAtLastMorningSection doNotFinishAtLastMorningSectionIfStartedAtFirstMorningSection, Incompatibilities.DoNotFinishAtLastMorningSectionIfStartAtFirstAfternoon doNotFinishAtLastMorningSectionIfStartAtFirstAfternoonSection, Incompatibilities.DoNotFinishAtLastMorningSectionIfHasAfternoon doNotFinishAtLastMorningSectionIfHasAfternoonAssignment, Incompatibilities.DoNotStartAtFirstMorningSection doNotStartAtFirstMorningSectionIfHasAfternoonAssignment, ConditionTypeWithTime freeTimeAroundMidday) {
         super();
         this.freeTimeBetweenDayBeforeAndCurrent = freeTimeBetweenDayBeforeAndCurrent;
         this.freeTimeBetweenEndWeekAndStartWeekDays = freeTimeBetweenEndWeekAndStartWeekDays;
@@ -148,68 +148,68 @@ public class Incompatibilities {
     }
 
     /**
-     * FreeTimeBetweenDays
+     * ConditionTypeWithTime
      * <p>
-     * Minutes between departure and arrival of the following day.
+     * Indicate condition with time wich can be strict, avoid (penalisable in optimisation) or ignored.
      * 
      */
     @JsonProperty("freeTimeBetweenDayBeforeAndCurrent")
-    public FreeTimeBetweenDays getFreeTimeBetweenDayBeforeAndCurrent() {
+    public ConditionTypeWithTime getFreeTimeBetweenDayBeforeAndCurrent() {
         return freeTimeBetweenDayBeforeAndCurrent;
     }
 
     /**
-     * FreeTimeBetweenDays
+     * ConditionTypeWithTime
      * <p>
-     * Minutes between departure and arrival of the following day.
+     * Indicate condition with time wich can be strict, avoid (penalisable in optimisation) or ignored.
      * 
      */
     @JsonProperty("freeTimeBetweenDayBeforeAndCurrent")
-    public void setFreeTimeBetweenDayBeforeAndCurrent(FreeTimeBetweenDays freeTimeBetweenDayBeforeAndCurrent) {
+    public void setFreeTimeBetweenDayBeforeAndCurrent(ConditionTypeWithTime freeTimeBetweenDayBeforeAndCurrent) {
         this.freeTimeBetweenDayBeforeAndCurrent = freeTimeBetweenDayBeforeAndCurrent;
     }
 
     /**
-     * FreeTimeBetweenWeeksBorders
+     * ConditionTypeWithTime
      * <p>
-     * Minutes between the end time of the last day of the week and the start time of the following week.
+     * Indicate condition with time wich can be strict, avoid (penalisable in optimisation) or ignored.
      * 
      */
     @JsonProperty("freeTimeBetweenEndWeekAndStartWeekDays")
-    public FreeTimeBetweenWeeksBorders getFreeTimeBetweenEndWeekAndStartWeekDays() {
+    public ConditionTypeWithTime getFreeTimeBetweenEndWeekAndStartWeekDays() {
         return freeTimeBetweenEndWeekAndStartWeekDays;
     }
 
     /**
-     * FreeTimeBetweenWeeksBorders
+     * ConditionTypeWithTime
      * <p>
-     * Minutes between the end time of the last day of the week and the start time of the following week.
+     * Indicate condition with time wich can be strict, avoid (penalisable in optimisation) or ignored.
      * 
      */
     @JsonProperty("freeTimeBetweenEndWeekAndStartWeekDays")
-    public void setFreeTimeBetweenEndWeekAndStartWeekDays(FreeTimeBetweenWeeksBorders freeTimeBetweenEndWeekAndStartWeekDays) {
+    public void setFreeTimeBetweenEndWeekAndStartWeekDays(ConditionTypeWithTime freeTimeBetweenEndWeekAndStartWeekDays) {
         this.freeTimeBetweenEndWeekAndStartWeekDays = freeTimeBetweenEndWeekAndStartWeekDays;
     }
 
     /**
-     * FreeTimeFirstOrLastHoursDay
+     * ConditionTypeWithTime
      * <p>
-     * Minutes of free time at first or last hours of the day.
+     * Indicate condition with time wich can be strict, avoid (penalisable in optimisation) or ignored.
      * 
      */
     @JsonProperty("freeTimeFirstOrLastHoursDay")
-    public FreeTimeFirstOrLastHoursDay getFreeTimeFirstOrLastHoursDay() {
+    public ConditionTypeWithTime getFreeTimeFirstOrLastHoursDay() {
         return freeTimeFirstOrLastHoursDay;
     }
 
     /**
-     * FreeTimeFirstOrLastHoursDay
+     * ConditionTypeWithTime
      * <p>
-     * Minutes of free time at first or last hours of the day.
+     * Indicate condition with time wich can be strict, avoid (penalisable in optimisation) or ignored.
      * 
      */
     @JsonProperty("freeTimeFirstOrLastHoursDay")
-    public void setFreeTimeFirstOrLastHoursDay(FreeTimeFirstOrLastHoursDay freeTimeFirstOrLastHoursDay) {
+    public void setFreeTimeFirstOrLastHoursDay(ConditionTypeWithTime freeTimeFirstOrLastHoursDay) {
         this.freeTimeFirstOrLastHoursDay = freeTimeFirstOrLastHoursDay;
     }
 
@@ -324,24 +324,24 @@ public class Incompatibilities {
     }
 
     /**
-     * FreeTimeAroundMidday
+     * ConditionTypeWithTime
      * <p>
-     * Do not have less than a custom free time around noon pause.
+     * Indicate condition with time wich can be strict, avoid (penalisable in optimisation) or ignored.
      * 
      */
     @JsonProperty("freeTimeAroundMidday")
-    public FreeTimeAroundMidday getFreeTimeAroundMidday() {
+    public ConditionTypeWithTime getFreeTimeAroundMidday() {
         return freeTimeAroundMidday;
     }
 
     /**
-     * FreeTimeAroundMidday
+     * ConditionTypeWithTime
      * <p>
-     * Do not have less than a custom free time around noon pause.
+     * Indicate condition with time wich can be strict, avoid (penalisable in optimisation) or ignored.
      * 
      */
     @JsonProperty("freeTimeAroundMidday")
-    public void setFreeTimeAroundMidday(FreeTimeAroundMidday freeTimeAroundMidday) {
+    public void setFreeTimeAroundMidday(ConditionTypeWithTime freeTimeAroundMidday) {
         this.freeTimeAroundMidday = freeTimeAroundMidday;
     }
 

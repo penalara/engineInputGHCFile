@@ -66,14 +66,14 @@ public class PeriodSetting {
     @JsonPropertyDescription("It indicates whether gaps between class units for the teacher should be avoided. This is a weighting condition.")
     private Boolean avoidGapsBetweenSesions;
     /**
-     * MaxContinuousTeaching
+     * ConditionTypeWithTime
      * <p>
-     * It indicates the maximum continuous time of class units, which are allowed without having a gap or a non-class units between them.
+     * Indicate condition with time wich can be strict, avoid (penalisable in optimisation) or ignored.
      * 
      */
     @JsonProperty("maxContinuousTeaching")
-    @JsonPropertyDescription("It indicates the maximum continuous time of class units, which are allowed without having a gap or a non-class units between them.")
-    private MaxContinuousTeaching maxContinuousTeaching;
+    @JsonPropertyDescription("Indicate condition with time wich can be strict, avoid (penalisable in optimisation) or ignored.")
+    private ConditionTypeWithTime maxContinuousTeaching;
     /**
      * It indicates whether the existence of class units on both sides of a playground supervision taught by this teacher will be penalised.
      * 
@@ -158,7 +158,7 @@ public class PeriodSetting {
      * @param weeklyStay
      * @param maxContinuousTeaching
      */
-    public PeriodSetting(String refPeriod, WeeklyStay weeklyStay, DailyStay dailyStay, Boolean avoidGapsBetweenSesions, MaxContinuousTeaching maxContinuousTeaching, Boolean avoidClassesAroundBreak, FreeTimes freeTimes, FreePartTime freePartTimes, Incompatibilities incompatibilities, DailyOcupation dailyOcupation, MiddayReference middayReference, DailyBuildingTransfers dailyBuildingTransfers) {
+    public PeriodSetting(String refPeriod, WeeklyStay weeklyStay, DailyStay dailyStay, Boolean avoidGapsBetweenSesions, ConditionTypeWithTime maxContinuousTeaching, Boolean avoidClassesAroundBreak, FreeTimes freeTimes, FreePartTime freePartTimes, Incompatibilities incompatibilities, DailyOcupation dailyOcupation, MiddayReference middayReference, DailyBuildingTransfers dailyBuildingTransfers) {
         super();
         this.refPeriod = refPeriod;
         this.weeklyStay = weeklyStay;
@@ -257,24 +257,24 @@ public class PeriodSetting {
     }
 
     /**
-     * MaxContinuousTeaching
+     * ConditionTypeWithTime
      * <p>
-     * It indicates the maximum continuous time of class units, which are allowed without having a gap or a non-class units between them.
+     * Indicate condition with time wich can be strict, avoid (penalisable in optimisation) or ignored.
      * 
      */
     @JsonProperty("maxContinuousTeaching")
-    public MaxContinuousTeaching getMaxContinuousTeaching() {
+    public ConditionTypeWithTime getMaxContinuousTeaching() {
         return maxContinuousTeaching;
     }
 
     /**
-     * MaxContinuousTeaching
+     * ConditionTypeWithTime
      * <p>
-     * It indicates the maximum continuous time of class units, which are allowed without having a gap or a non-class units between them.
+     * Indicate condition with time wich can be strict, avoid (penalisable in optimisation) or ignored.
      * 
      */
     @JsonProperty("maxContinuousTeaching")
-    public void setMaxContinuousTeaching(MaxContinuousTeaching maxContinuousTeaching) {
+    public void setMaxContinuousTeaching(ConditionTypeWithTime maxContinuousTeaching) {
         this.maxContinuousTeaching = maxContinuousTeaching;
     }
 

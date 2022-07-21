@@ -1355,6 +1355,24 @@
                 "accordingToRule"
             ] 
         },
+		"conditionTypeWithTime": {
+            "title": "ConditionTypeWithTime",
+            "description": "Indicate condition with time wich can be strict, avoid (penalisable in optimisation) or ignored.",
+            "javaType" : "com.penalara.ghc.jsonghcfile.engineinput.ConditionTypeWithTime",
+			"type": "object",
+			"required": [
+				"minutes"
+			],                                    
+			"properties": {
+				"type": {
+					"$ref": "#/definitions/conditionType"
+				},
+				"minutes": {
+					"description": "Custom time in minutes for condition.",
+					"type": "integer"
+				}
+			}
+        },
         "ocupationSetting": {
             "title": "OcupationSettingType",
             "description": "Indicates whether the automatic calculation of the value must be adjusted to higher or lower. The adjustment will set with the duration of the greater section.",
@@ -1524,22 +1542,7 @@
         "maxContinuousTeaching": {
             "title": "MaxContinuousTeaching",
             "description": "It indicates the maximum continuous time of class units, which are allowed without having a gap or a non-class units between them.",
-            "type": "object",                                                                        
-            "properties": {
-                "type": {
-                    "$ref": "#/definitions/conditionType"
-                },
-                "minutes": {
-                    "description": "Maximum continuous teaching time in minutes.",
-                    "type": "integer"
-                },
-                "minBreak": {
-                    "description": "Minimum time period to be considered as break time",
-                    "type": "integer",
-                    "$comment": "If not specified, the engine will assign the general value or the default time of 30 minutes."
-                }
-            },
-            "additionalProperties": false
+			"$ref": "#/definitions/conditionTypeWithTime"
         },
         "avoidClassesAroundBreak": {
             "description": "It indicates whether the existence of class units on both sides of a playground supervision taught by this teacher will be penalised.",
@@ -1704,56 +1707,17 @@
                 "freeTimeBetweenDayBeforeAndCurrent": {
                     "title": "FreeTimeBetweenDays",
                     "description": "Minutes between departure and arrival of the following day.",
-                    "type": "object",
-                    "required": [
-                        "minutes"
-                    ],  
-                    "properties": {
-                        "type": {
-                            "$ref": "#/definitions/conditionType"
-                        },
-                        "minutes": {
-                            "description": "Custom time in minutes for incompatibility.",
-                            "type": "integer"
-                        }
-                    },
-                    "additionalProperties": false
+					"$ref": "#/definitions/conditionTypeWithTime"
                 },
                 "freeTimeBetweenEndWeekAndStartWeekDays": {
                     "title": "FreeTimeBetweenWeeksBorders",
                     "description": "Minutes between the end time of the last day of the week and the start time of the following week.",
-                    "type": "object",
-                    "required": [
-                        "minutes"
-                    ],  
-                    "properties": {
-                        "type": {
-                            "$ref": "#/definitions/conditionType"
-                        },
-                        "minutes": {
-                            "description": "Custom time in minutes for incompatibility.",
-                            "type": "integer"
-                        }
-                    },
-                    "additionalProperties": false
+                    "$ref": "#/definitions/conditionTypeWithTime"
                 },
                 "freeTimeFirstOrLastHoursDay": {
                     "title": "FreeTimeFirstOrLastHoursDay",
                     "description": "Minutes of free time at first or last hours of the day.",
-                    "type": "object",
-                    "required": [
-                        "minutes"
-                    ],  
-                    "properties": {
-                        "type": {
-                            "$ref": "#/definitions/conditionType"
-                        },
-                        "minutes": {
-                            "description": "Custom time in minutes for incompatibility.",
-                            "type": "integer"
-                        }
-                    },
-                    "additionalProperties": false
+                    "$ref": "#/definitions/conditionTypeWithTime"
                 },
                 "doNotFinishAtLastAfternoonSectionIfStartedAtFirstAfternoonSection": {
                     "title": "DoNotFinishAtLastAfternoonSection",
@@ -1803,20 +1767,7 @@
                 "freeTimeAroundMidday": {
                     "title": "FreeTimeAroundMidday",
                     "description": "Do not have less than a custom free time around noon pause.",
-                    "type": "object",
-                    "required": [
-                        "minutes"
-                    ],  
-                    "properties": {
-                        "type": {
-                            "$ref": "#/definitions/conditionType"
-                        },
-                        "minutes": {
-                            "description": "Custom time in minutes for incompatibility.",
-                            "type": "integer"
-                        }
-                    },
-                    "additionalProperties": false
+                    "$ref": "#/definitions/conditionTypeWithTime"
                 }
             },
             "additionalProperties": false
