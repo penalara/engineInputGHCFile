@@ -356,6 +356,11 @@
                                 "description": "Group or association of teachers who should have similar check-in and check-out times, if possible. This is useful for teachers who share transport.",
                                 "type": "string"
                             },
+                            "overlapped": {
+                                "description": "It indicates if the teacher wants overlapped sessions",
+                                "type": "boolean",
+                                "default": false
+                            },
                             "frameTemplate":{
                                 "$ref": "#/definitions/frameTemplate"
                             },

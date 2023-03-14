@@ -25,6 +25,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonPropertyOrder({
     "id",
     "associationIdentifier",
+    "overlapped",
     "frameTemplate",
     "generalSettings",
     "periodSettings"
@@ -47,6 +48,13 @@ public class Teacher {
     @JsonProperty("associationIdentifier")
     @JsonPropertyDescription("Group or association of teachers who should have similar check-in and check-out times, if possible. This is useful for teachers who share transport.")
     private String associationIdentifier;
+    /**
+     * It indicates if the teacher wants overlapped sessions
+     * 
+     */
+    @JsonProperty("overlapped")
+    @JsonPropertyDescription("It indicates if the teacher wants overlapped sessions")
+    private Boolean overlapped = false;
     /**
      * FrameTemplate
      * <p>
@@ -91,11 +99,13 @@ public class Teacher {
      * @param periodSettings
      * @param generalSettings
      * @param id
+     * @param overlapped
      */
-    public Teacher(String id, String associationIdentifier, List<SectionPreference> frameTemplate, GeneralSettings generalSettings, List<PeriodSetting> periodSettings) {
+    public Teacher(String id, String associationIdentifier, Boolean overlapped, List<SectionPreference> frameTemplate, GeneralSettings generalSettings, List<PeriodSetting> periodSettings) {
         super();
         this.id = id;
         this.associationIdentifier = associationIdentifier;
+        this.overlapped = overlapped;
         this.frameTemplate = frameTemplate;
         this.generalSettings = generalSettings;
         this.periodSettings = periodSettings;
@@ -137,6 +147,24 @@ public class Teacher {
     @JsonProperty("associationIdentifier")
     public void setAssociationIdentifier(String associationIdentifier) {
         this.associationIdentifier = associationIdentifier;
+    }
+
+    /**
+     * It indicates if the teacher wants overlapped sessions
+     * 
+     */
+    @JsonProperty("overlapped")
+    public Boolean getOverlapped() {
+        return overlapped;
+    }
+
+    /**
+     * It indicates if the teacher wants overlapped sessions
+     * 
+     */
+    @JsonProperty("overlapped")
+    public void setOverlapped(Boolean overlapped) {
+        this.overlapped = overlapped;
     }
 
     /**
