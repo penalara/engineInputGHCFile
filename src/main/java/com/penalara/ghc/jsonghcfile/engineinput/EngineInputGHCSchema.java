@@ -12,56 +12,164 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 /**
  * EngineInputGHCSchema
  * <p>
- * Schema with the structure of GHC Engine files
+ * Schema of the object that contains the timetable planning data.
  * 
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "id",
-    "meta",
-    "specifications",
-    "results"
+    "periods",
+    "frames",
+    "buildings",
+    "classRooms",
+    "classRoomsSets",
+    "tasks",
+    "teachers",
+    "subjects",
+    "groups",
+    "sessions",
+    "meetings",
+    "complementaryActivities",
+    "onCallServices",
+    "optimizationWeights",
+    "engineSettings"
 })
 public class EngineInputGHCSchema {
 
     /**
-     * IdFile
+     * Periods
      * <p>
-     * Indicates the id number of the file at the Penalara Server.
+     * Weeks or periods with different assignments which contains the timetable.If there are no defined periods, the engine will create a single period with all the days of the timetable.
      * 
      */
-    @JsonProperty("id")
-    @JsonPropertyDescription("Indicates the id number of the file at the Penalara Server.")
-    private Integer id;
+    @JsonProperty("periods")
+    @JsonPropertyDescription("Weeks or periods with different assignments which contains the timetable.")
+    private Periods periods;
     /**
-     * FileMetadata
-     * <p>
-     * Information about the file.
-     * (Required)
-     * 
-     */
-    @JsonProperty("meta")
-    @JsonPropertyDescription("Information about the file.")
-    private FileMetadata meta;
-    /**
-     * GhcData
-     * <p>
-     * Schema of the object that contains the timetable planning data.
-     * (Required)
-     * 
-     */
-    @JsonProperty("specifications")
-    @JsonPropertyDescription("Schema of the object that contains the timetable planning data.")
-    private GhcData specifications;
-    /**
-     * EngineResults
+     * Frames
      * <p>
      * Tables of the timetable that contain sections where the class units are located.
      * 
      */
-    @JsonProperty("results")
+    @JsonProperty("frames")
     @JsonPropertyDescription("Tables of the timetable that contain sections where the class units are located.")
-    private List<EngineOutputGHCSchema> results = new ArrayList<EngineOutputGHCSchema>();
+    private List<Frame> frames = new ArrayList<Frame>();
+    /**
+     * Buildings
+     * <p>
+     * It contains the school or educational institution buildings.
+     * 
+     */
+    @JsonProperty("buildings")
+    @JsonPropertyDescription("It contains the school or educational institution buildings.")
+    private List<Building> buildings = new ArrayList<Building>();
+    /**
+     * ClassRooms
+     * <p>
+     * It contains the classrooms to organize the class units.
+     * 
+     */
+    @JsonProperty("classRooms")
+    @JsonPropertyDescription("It contains\u00a0the\u00a0classrooms\u00a0to organize\u00a0the\u00a0class units.")
+    private List<Classroom> classRooms = new ArrayList<Classroom>();
+    /**
+     * ClassRoomsSets
+     * <p>
+     * A division of the classrooms, grouped by organizational characteristics or needs.
+     * 
+     */
+    @JsonProperty("classRoomsSets")
+    @JsonPropertyDescription("A division of the classrooms, grouped by organizational characteristics or needs.")
+    private List<ClassRoomSet> classRoomsSets = new ArrayList<ClassRoomSet>();
+    /**
+     * Tasks
+     * <p>
+     * Types of tasks or activities for the teachers.
+     * 
+     */
+    @JsonProperty("tasks")
+    @JsonPropertyDescription("Types of tasks or activities for the teachers.")
+    private List<Task> tasks = new ArrayList<Task>();
+    /**
+     * Teachers
+     * <p>
+     * Teachers list of the timetable.
+     * 
+     */
+    @JsonProperty("teachers")
+    @JsonPropertyDescription("Teachers list of the timetable.")
+    private List<Teacher> teachers = new ArrayList<Teacher>();
+    /**
+     * Subjects
+     * <p>
+     * School subjects taught in the class units.
+     * 
+     */
+    @JsonProperty("subjects")
+    @JsonPropertyDescription("School subjects taught in the class units.")
+    private List<Subject> subjects = new ArrayList<Subject>();
+    /**
+     * Groups
+     * <p>
+     * Sets of students.
+     * 
+     */
+    @JsonProperty("groups")
+    @JsonPropertyDescription("Sets of students.")
+    private List<Group> groups = new ArrayList<Group>();
+    /**
+     * Sessions
+     * <p>
+     * Definition of the teacher class units. These may be with groups of students, meetings with other teachers or complementary activities.
+     * 
+     */
+    @JsonProperty("sessions")
+    @JsonPropertyDescription("Definition of the teacher class units. These may be with groups of students, meetings with other teachers or complementary activities.")
+    private List<Session> sessions = new ArrayList<Session>();
+    /**
+     * Meetings
+     * <p>
+     * List of meetings between teachers defined in the timetable.
+     * 
+     */
+    @JsonProperty("meetings")
+    @JsonPropertyDescription("List of meetings between teachers defined in the timetable.")
+    private List<Meeting> meetings = new ArrayList<Meeting>();
+    /**
+     * ComplementaryActivities
+     * <p>
+     * List of complementary activities of the teachers.
+     * 
+     */
+    @JsonProperty("complementaryActivities")
+    @JsonPropertyDescription("List of complementary activities of the teachers.")
+    private List<Complementary> complementaryActivities = new ArrayList<Complementary>();
+    /**
+     * OnCallServices
+     * <p>
+     * List of on-call services of teachers defined in the timetable.
+     * 
+     */
+    @JsonProperty("onCallServices")
+    @JsonPropertyDescription("List of on-call services of teachers defined in the timetable.")
+    private List<OnCallService> onCallServices = new ArrayList<OnCallService>();
+    /**
+     * OptimizationWeights
+     * <p>
+     * This indicates the weights that the weighting options will have for the engine optimisation process. The engine shall apply default values for elements that have not been specified.
+     * 
+     */
+    @JsonProperty("optimizationWeights")
+    @JsonPropertyDescription("This indicates the weights that the weighting options will have for the engine optimisation process. The engine shall apply default values for elements that have not been specified.")
+    private OptimizationWeights optimizationWeights;
+    /**
+     * EngineSettings
+     * <p>
+     * Customised engine configuration parameters.
+     * 
+     */
+    @JsonProperty("engineSettings")
+    @JsonPropertyDescription("Customised engine configuration parameters.")
+    private EngineSettings engineSettings;
 
     /**
      * No args constructor for use in serialization
@@ -72,111 +180,384 @@ public class EngineInputGHCSchema {
 
     /**
      * 
-     * @param meta
-     *     FileMetadata. Information about the file.
-     * @param id
-     *     IdFile. Indicates the id number of the file at the Penalara Server.
-     * @param results
-     *     EngineResults. Tables of the timetable that contain sections where the class units are located.
+     * @param classRoomsSets
+     *     ClassRoomsSets. A division of the classrooms, grouped by organizational characteristics or needs.
+     * @param sessions
+     *     Sessions. Definition of the teacher class units. These may be with groups of students, meetings with other teachers or complementary activities.
+     * @param frames
+     *     Frames. Tables of the timetable that contain sections where the class units are located.
+     * @param subjects
+     *     Subjects. School subjects taught in the class units.
+     * @param groups
+     *     Groups. Sets of students.
+     * @param optimizationWeights
+     *     OptimizationWeights. This indicates the weights that the weighting options will have for the engine optimisation process. The engine shall apply default values for elements that have not been specified.
+     * @param teachers
+     *     Teachers. Teachers list of the timetable.
+     * @param buildings
+     *     Buildings. It contains the school or educational institution buildings.
+     * @param periods
+     *     Periods. Weeks or periods with different assignments which contains the timetable.
+     * @param classRooms
+     *     ClassRooms. It contains the classrooms to organize the class units.
+     * @param meetings
+     *     Meetings. List of meetings between teachers defined in the timetable.
+     * @param complementaryActivities
+     *     ComplementaryActivities. List of complementary activities of the teachers.
+     * @param engineSettings
+     *     EngineSettings. Customised engine configuration parameters.
+     * @param onCallServices
+     *     OnCallServices. List of on-call services of teachers defined in the timetable.
+     * @param tasks
+     *     Tasks. Types of tasks or activities for the teachers.
      */
-    public EngineInputGHCSchema(Integer id, FileMetadata meta, GhcData specifications, List<EngineOutputGHCSchema> results) {
+    public EngineInputGHCSchema(Periods periods, List<Frame> frames, List<Building> buildings, List<Classroom> classRooms, List<ClassRoomSet> classRoomsSets, List<Task> tasks, List<Teacher> teachers, List<Subject> subjects, List<Group> groups, List<Session> sessions, List<Meeting> meetings, List<Complementary> complementaryActivities, List<OnCallService> onCallServices, OptimizationWeights optimizationWeights, EngineSettings engineSettings) {
         super();
-        this.id = id;
-        this.meta = meta;
-        this.specifications = specifications;
-        this.results = results;
+        this.periods = periods;
+        this.frames = frames;
+        this.buildings = buildings;
+        this.classRooms = classRooms;
+        this.classRoomsSets = classRoomsSets;
+        this.tasks = tasks;
+        this.teachers = teachers;
+        this.subjects = subjects;
+        this.groups = groups;
+        this.sessions = sessions;
+        this.meetings = meetings;
+        this.complementaryActivities = complementaryActivities;
+        this.onCallServices = onCallServices;
+        this.optimizationWeights = optimizationWeights;
+        this.engineSettings = engineSettings;
     }
 
     /**
-     * IdFile
+     * Periods
      * <p>
-     * Indicates the id number of the file at the Penalara Server.
+     * Weeks or periods with different assignments which contains the timetable.If there are no defined periods, the engine will create a single period with all the days of the timetable.
      * 
      */
-    @JsonProperty("id")
-    public Integer getId() {
-        return id;
+    @JsonProperty("periods")
+    public Periods getPeriods() {
+        return periods;
     }
 
     /**
-     * IdFile
+     * Periods
      * <p>
-     * Indicates the id number of the file at the Penalara Server.
+     * Weeks or periods with different assignments which contains the timetable.If there are no defined periods, the engine will create a single period with all the days of the timetable.
      * 
      */
-    @JsonProperty("id")
-    public void setId(Integer id) {
-        this.id = id;
+    @JsonProperty("periods")
+    public void setPeriods(Periods periods) {
+        this.periods = periods;
     }
 
     /**
-     * FileMetadata
-     * <p>
-     * Information about the file.
-     * (Required)
-     * 
-     */
-    @JsonProperty("meta")
-    public FileMetadata getMeta() {
-        return meta;
-    }
-
-    /**
-     * FileMetadata
-     * <p>
-     * Information about the file.
-     * (Required)
-     * 
-     */
-    @JsonProperty("meta")
-    public void setMeta(FileMetadata meta) {
-        this.meta = meta;
-    }
-
-    /**
-     * GhcData
-     * <p>
-     * Schema of the object that contains the timetable planning data.
-     * (Required)
-     * 
-     */
-    @JsonProperty("specifications")
-    public GhcData getSpecifications() {
-        return specifications;
-    }
-
-    /**
-     * GhcData
-     * <p>
-     * Schema of the object that contains the timetable planning data.
-     * (Required)
-     * 
-     */
-    @JsonProperty("specifications")
-    public void setSpecifications(GhcData specifications) {
-        this.specifications = specifications;
-    }
-
-    /**
-     * EngineResults
+     * Frames
      * <p>
      * Tables of the timetable that contain sections where the class units are located.
      * 
      */
-    @JsonProperty("results")
-    public List<EngineOutputGHCSchema> getResults() {
-        return results;
+    @JsonProperty("frames")
+    public List<Frame> getFrames() {
+        return frames;
     }
 
     /**
-     * EngineResults
+     * Frames
      * <p>
      * Tables of the timetable that contain sections where the class units are located.
      * 
      */
-    @JsonProperty("results")
-    public void setResults(List<EngineOutputGHCSchema> results) {
-        this.results = results;
+    @JsonProperty("frames")
+    public void setFrames(List<Frame> frames) {
+        this.frames = frames;
+    }
+
+    /**
+     * Buildings
+     * <p>
+     * It contains the school or educational institution buildings.
+     * 
+     */
+    @JsonProperty("buildings")
+    public List<Building> getBuildings() {
+        return buildings;
+    }
+
+    /**
+     * Buildings
+     * <p>
+     * It contains the school or educational institution buildings.
+     * 
+     */
+    @JsonProperty("buildings")
+    public void setBuildings(List<Building> buildings) {
+        this.buildings = buildings;
+    }
+
+    /**
+     * ClassRooms
+     * <p>
+     * It contains the classrooms to organize the class units.
+     * 
+     */
+    @JsonProperty("classRooms")
+    public List<Classroom> getClassRooms() {
+        return classRooms;
+    }
+
+    /**
+     * ClassRooms
+     * <p>
+     * It contains the classrooms to organize the class units.
+     * 
+     */
+    @JsonProperty("classRooms")
+    public void setClassRooms(List<Classroom> classRooms) {
+        this.classRooms = classRooms;
+    }
+
+    /**
+     * ClassRoomsSets
+     * <p>
+     * A division of the classrooms, grouped by organizational characteristics or needs.
+     * 
+     */
+    @JsonProperty("classRoomsSets")
+    public List<ClassRoomSet> getClassRoomsSets() {
+        return classRoomsSets;
+    }
+
+    /**
+     * ClassRoomsSets
+     * <p>
+     * A division of the classrooms, grouped by organizational characteristics or needs.
+     * 
+     */
+    @JsonProperty("classRoomsSets")
+    public void setClassRoomsSets(List<ClassRoomSet> classRoomsSets) {
+        this.classRoomsSets = classRoomsSets;
+    }
+
+    /**
+     * Tasks
+     * <p>
+     * Types of tasks or activities for the teachers.
+     * 
+     */
+    @JsonProperty("tasks")
+    public List<Task> getTasks() {
+        return tasks;
+    }
+
+    /**
+     * Tasks
+     * <p>
+     * Types of tasks or activities for the teachers.
+     * 
+     */
+    @JsonProperty("tasks")
+    public void setTasks(List<Task> tasks) {
+        this.tasks = tasks;
+    }
+
+    /**
+     * Teachers
+     * <p>
+     * Teachers list of the timetable.
+     * 
+     */
+    @JsonProperty("teachers")
+    public List<Teacher> getTeachers() {
+        return teachers;
+    }
+
+    /**
+     * Teachers
+     * <p>
+     * Teachers list of the timetable.
+     * 
+     */
+    @JsonProperty("teachers")
+    public void setTeachers(List<Teacher> teachers) {
+        this.teachers = teachers;
+    }
+
+    /**
+     * Subjects
+     * <p>
+     * School subjects taught in the class units.
+     * 
+     */
+    @JsonProperty("subjects")
+    public List<Subject> getSubjects() {
+        return subjects;
+    }
+
+    /**
+     * Subjects
+     * <p>
+     * School subjects taught in the class units.
+     * 
+     */
+    @JsonProperty("subjects")
+    public void setSubjects(List<Subject> subjects) {
+        this.subjects = subjects;
+    }
+
+    /**
+     * Groups
+     * <p>
+     * Sets of students.
+     * 
+     */
+    @JsonProperty("groups")
+    public List<Group> getGroups() {
+        return groups;
+    }
+
+    /**
+     * Groups
+     * <p>
+     * Sets of students.
+     * 
+     */
+    @JsonProperty("groups")
+    public void setGroups(List<Group> groups) {
+        this.groups = groups;
+    }
+
+    /**
+     * Sessions
+     * <p>
+     * Definition of the teacher class units. These may be with groups of students, meetings with other teachers or complementary activities.
+     * 
+     */
+    @JsonProperty("sessions")
+    public List<Session> getSessions() {
+        return sessions;
+    }
+
+    /**
+     * Sessions
+     * <p>
+     * Definition of the teacher class units. These may be with groups of students, meetings with other teachers or complementary activities.
+     * 
+     */
+    @JsonProperty("sessions")
+    public void setSessions(List<Session> sessions) {
+        this.sessions = sessions;
+    }
+
+    /**
+     * Meetings
+     * <p>
+     * List of meetings between teachers defined in the timetable.
+     * 
+     */
+    @JsonProperty("meetings")
+    public List<Meeting> getMeetings() {
+        return meetings;
+    }
+
+    /**
+     * Meetings
+     * <p>
+     * List of meetings between teachers defined in the timetable.
+     * 
+     */
+    @JsonProperty("meetings")
+    public void setMeetings(List<Meeting> meetings) {
+        this.meetings = meetings;
+    }
+
+    /**
+     * ComplementaryActivities
+     * <p>
+     * List of complementary activities of the teachers.
+     * 
+     */
+    @JsonProperty("complementaryActivities")
+    public List<Complementary> getComplementaryActivities() {
+        return complementaryActivities;
+    }
+
+    /**
+     * ComplementaryActivities
+     * <p>
+     * List of complementary activities of the teachers.
+     * 
+     */
+    @JsonProperty("complementaryActivities")
+    public void setComplementaryActivities(List<Complementary> complementaryActivities) {
+        this.complementaryActivities = complementaryActivities;
+    }
+
+    /**
+     * OnCallServices
+     * <p>
+     * List of on-call services of teachers defined in the timetable.
+     * 
+     */
+    @JsonProperty("onCallServices")
+    public List<OnCallService> getOnCallServices() {
+        return onCallServices;
+    }
+
+    /**
+     * OnCallServices
+     * <p>
+     * List of on-call services of teachers defined in the timetable.
+     * 
+     */
+    @JsonProperty("onCallServices")
+    public void setOnCallServices(List<OnCallService> onCallServices) {
+        this.onCallServices = onCallServices;
+    }
+
+    /**
+     * OptimizationWeights
+     * <p>
+     * This indicates the weights that the weighting options will have for the engine optimisation process. The engine shall apply default values for elements that have not been specified.
+     * 
+     */
+    @JsonProperty("optimizationWeights")
+    public OptimizationWeights getOptimizationWeights() {
+        return optimizationWeights;
+    }
+
+    /**
+     * OptimizationWeights
+     * <p>
+     * This indicates the weights that the weighting options will have for the engine optimisation process. The engine shall apply default values for elements that have not been specified.
+     * 
+     */
+    @JsonProperty("optimizationWeights")
+    public void setOptimizationWeights(OptimizationWeights optimizationWeights) {
+        this.optimizationWeights = optimizationWeights;
+    }
+
+    /**
+     * EngineSettings
+     * <p>
+     * Customised engine configuration parameters.
+     * 
+     */
+    @JsonProperty("engineSettings")
+    public EngineSettings getEngineSettings() {
+        return engineSettings;
+    }
+
+    /**
+     * EngineSettings
+     * <p>
+     * Customised engine configuration parameters.
+     * 
+     */
+    @JsonProperty("engineSettings")
+    public void setEngineSettings(EngineSettings engineSettings) {
+        this.engineSettings = engineSettings;
     }
 
 }

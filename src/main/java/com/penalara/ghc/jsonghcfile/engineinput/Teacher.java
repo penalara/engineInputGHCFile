@@ -42,11 +42,11 @@ public class Teacher {
     @JsonPropertyDescription("Group or association of teachers who should have similar check-in and check-out times, if possible. This is useful for teachers who share transport.")
     private String associationIdentifier;
     /**
-     * It indicates if the teacher wants overlapped sessions
+     * It indicates if the teacher can have overlapped sessions
      * 
      */
     @JsonProperty("overlapped")
-    @JsonPropertyDescription("It indicates if the teacher wants overlapped sessions")
+    @JsonPropertyDescription("It indicates if the teacher can have overlapped sessions")
     private Boolean overlapped = false;
     /**
      * FrameTemplate
@@ -94,7 +94,7 @@ public class Teacher {
      * @param id
      *     Identifier of the teacher.
      * @param overlapped
-     *     It indicates if the teacher wants overlapped sessions.
+     *     It indicates if the teacher can have overlapped sessions.
      */
     public Teacher(String id, String associationIdentifier, Boolean overlapped, List<SectionPreference> frameTemplate, GeneralSettings generalSettings, List<PeriodSetting> periodSettings) {
         super();
@@ -145,7 +145,7 @@ public class Teacher {
     }
 
     /**
-     * It indicates if the teacher wants overlapped sessions
+     * It indicates if the teacher can have overlapped sessions
      * 
      */
     @JsonProperty("overlapped")
@@ -154,7 +154,7 @@ public class Teacher {
     }
 
     /**
-     * It indicates if the teacher wants overlapped sessions
+     * It indicates if the teacher can have overlapped sessions
      * 
      */
     @JsonProperty("overlapped")
