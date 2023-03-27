@@ -2,13 +2,7 @@
 package com.penalara.ghc.jsonghcfile.engineinput;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import javax.annotation.processing.Generated;
-import com.fasterxml.jackson.annotation.JsonAnyGetter;
-import com.fasterxml.jackson.annotation.JsonAnySetter;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -26,7 +20,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "day",
     "sections"
 })
-@Generated("jsonschema2pojo")
 public class FrameDay {
 
     /**
@@ -47,8 +40,6 @@ public class FrameDay {
     @JsonProperty("sections")
     @JsonPropertyDescription("Timetable\u00a0cells\u00a0where class units\u00a0are\u00a0located.")
     private List<Section> sections = new ArrayList<Section>();
-    @JsonIgnore
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
      * No args constructor for use in serialization
@@ -60,7 +51,9 @@ public class FrameDay {
     /**
      * 
      * @param day
+     *     Day of the week.
      * @param sections
+     *     Sections. Timetable cells where class units are located.
      */
     public FrameDay(Integer day, List<Section> sections) {
         super();
@@ -110,16 +103,6 @@ public class FrameDay {
     @JsonProperty("sections")
     public void setSections(List<Section> sections) {
         this.sections = sections;
-    }
-
-    @JsonAnyGetter
-    public Map<String, Object> getAdditionalProperties() {
-        return this.additionalProperties;
-    }
-
-    @JsonAnySetter
-    public void setAdditionalProperty(String name, Object value) {
-        this.additionalProperties.put(name, value);
     }
 
 }

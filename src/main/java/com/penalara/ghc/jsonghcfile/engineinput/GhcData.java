@@ -2,13 +2,7 @@
 package com.penalara.ghc.jsonghcfile.engineinput;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import javax.annotation.processing.Generated;
-import com.fasterxml.jackson.annotation.JsonAnyGetter;
-import com.fasterxml.jackson.annotation.JsonAnySetter;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -39,7 +33,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "optimizationWeights",
     "engineSettings"
 })
-@Generated("jsonschema2pojo")
 public class GhcData {
 
     /**
@@ -55,7 +48,6 @@ public class GhcData {
      * Frames
      * <p>
      * Tables of the timetable that contain sections where the class units are located.
-     * (Required)
      * 
      */
     @JsonProperty("frames")
@@ -74,7 +66,6 @@ public class GhcData {
      * ClassRooms
      * <p>
      * It contains the classrooms to organize the class units.
-     * (Required)
      * 
      */
     @JsonProperty("classRooms")
@@ -102,7 +93,6 @@ public class GhcData {
      * Teachers
      * <p>
      * Teachers list of the timetable.
-     * (Required)
      * 
      */
     @JsonProperty("teachers")
@@ -112,7 +102,6 @@ public class GhcData {
      * Subjects
      * <p>
      * School subjects taught in the class units.
-     * (Required)
      * 
      */
     @JsonProperty("subjects")
@@ -122,7 +111,6 @@ public class GhcData {
      * Groups
      * <p>
      * Sets of students.
-     * (Required)
      * 
      */
     @JsonProperty("groups")
@@ -132,7 +120,6 @@ public class GhcData {
      * Sessions
      * <p>
      * Definition of the teacher class units. These may be with groups of students, meetings with other teachers or complementary activities.
-     * (Required)
      * 
      */
     @JsonProperty("sessions")
@@ -183,8 +170,6 @@ public class GhcData {
     @JsonProperty("engineSettings")
     @JsonPropertyDescription("Customised engine configuration parameters.")
     private EngineSettings engineSettings;
-    @JsonIgnore
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
      * No args constructor for use in serialization
@@ -196,20 +181,35 @@ public class GhcData {
     /**
      * 
      * @param classRoomsSets
+     *     ClassRoomsSets. A division of the classrooms, grouped by organizational characteristics or needs.
      * @param sessions
+     *     Sessions. Definition of the teacher class units. These may be with groups of students, meetings with other teachers or complementary activities.
      * @param frames
+     *     Frames. Tables of the timetable that contain sections where the class units are located.
      * @param subjects
+     *     Subjects. School subjects taught in the class units.
      * @param groups
+     *     Groups. Sets of students.
      * @param optimizationWeights
+     *     OptimizationWeights. This indicates the weights that the weighting options will have for the engine optimisation process. The engine shall apply default values for elements that have not been specified.
      * @param teachers
+     *     Teachers. Teachers list of the timetable.
      * @param buildings
+     *     Buildings. It contains the school or educational institution buildings.
      * @param periods
+     *     Periods. Weeks or periods with different assignments which contains the timetable.
      * @param classRooms
+     *     ClassRooms. It contains the classrooms to organize the class units.
      * @param meetings
+     *     Meetings. List of meetings between teachers defined in the timetable.
      * @param complementaryActivities
+     *     ComplementaryActivities. List of complementary activities of the teachers.
      * @param engineSettings
+     *     EngineSettings. Customised engine configuration parameters.
      * @param onCallServices
+     *     OnCallServices. List of on-call services of teachers defined in the timetable.
      * @param tasks
+     *     Tasks. Types of tasks or activities for the teachers.
      */
     public GhcData(Periods periods, List<Frame> frames, List<Building> buildings, List<Classroom> classRooms, List<ClassRoomSet> classRoomsSets, List<Task> tasks, List<Teacher> teachers, List<Subject> subjects, List<Group> groups, List<Session> sessions, List<Meeting> meetings, List<Complementary> complementaryActivities, List<OnCallService> onCallServices, OptimizationWeights optimizationWeights, EngineSettings engineSettings) {
         super();
@@ -256,7 +256,6 @@ public class GhcData {
      * Frames
      * <p>
      * Tables of the timetable that contain sections where the class units are located.
-     * (Required)
      * 
      */
     @JsonProperty("frames")
@@ -268,7 +267,6 @@ public class GhcData {
      * Frames
      * <p>
      * Tables of the timetable that contain sections where the class units are located.
-     * (Required)
      * 
      */
     @JsonProperty("frames")
@@ -302,7 +300,6 @@ public class GhcData {
      * ClassRooms
      * <p>
      * It contains the classrooms to organize the class units.
-     * (Required)
      * 
      */
     @JsonProperty("classRooms")
@@ -314,7 +311,6 @@ public class GhcData {
      * ClassRooms
      * <p>
      * It contains the classrooms to organize the class units.
-     * (Required)
      * 
      */
     @JsonProperty("classRooms")
@@ -370,7 +366,6 @@ public class GhcData {
      * Teachers
      * <p>
      * Teachers list of the timetable.
-     * (Required)
      * 
      */
     @JsonProperty("teachers")
@@ -382,7 +377,6 @@ public class GhcData {
      * Teachers
      * <p>
      * Teachers list of the timetable.
-     * (Required)
      * 
      */
     @JsonProperty("teachers")
@@ -394,7 +388,6 @@ public class GhcData {
      * Subjects
      * <p>
      * School subjects taught in the class units.
-     * (Required)
      * 
      */
     @JsonProperty("subjects")
@@ -406,7 +399,6 @@ public class GhcData {
      * Subjects
      * <p>
      * School subjects taught in the class units.
-     * (Required)
      * 
      */
     @JsonProperty("subjects")
@@ -418,7 +410,6 @@ public class GhcData {
      * Groups
      * <p>
      * Sets of students.
-     * (Required)
      * 
      */
     @JsonProperty("groups")
@@ -430,7 +421,6 @@ public class GhcData {
      * Groups
      * <p>
      * Sets of students.
-     * (Required)
      * 
      */
     @JsonProperty("groups")
@@ -442,7 +432,6 @@ public class GhcData {
      * Sessions
      * <p>
      * Definition of the teacher class units. These may be with groups of students, meetings with other teachers or complementary activities.
-     * (Required)
      * 
      */
     @JsonProperty("sessions")
@@ -454,7 +443,6 @@ public class GhcData {
      * Sessions
      * <p>
      * Definition of the teacher class units. These may be with groups of students, meetings with other teachers or complementary activities.
-     * (Required)
      * 
      */
     @JsonProperty("sessions")
@@ -570,16 +558,6 @@ public class GhcData {
     @JsonProperty("engineSettings")
     public void setEngineSettings(EngineSettings engineSettings) {
         this.engineSettings = engineSettings;
-    }
-
-    @JsonAnyGetter
-    public Map<String, Object> getAdditionalProperties() {
-        return this.additionalProperties;
-    }
-
-    @JsonAnySetter
-    public void setAdditionalProperty(String name, Object value) {
-        this.additionalProperties.put(name, value);
     }
 
 }

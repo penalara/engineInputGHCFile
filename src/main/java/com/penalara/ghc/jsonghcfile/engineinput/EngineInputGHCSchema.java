@@ -1,13 +1,8 @@
 
 package com.penalara.ghc.jsonghcfile.engineinput;
 
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
-import javax.annotation.processing.Generated;
-import com.fasterxml.jackson.annotation.JsonAnyGetter;
-import com.fasterxml.jackson.annotation.JsonAnySetter;
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import java.util.ArrayList;
+import java.util.List;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -17,46 +12,37 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 /**
  * EngineInputGHCSchema
  * <p>
- * Schema document to keep the timetable information that will be created by the PenalaraGHC.
+ * Schema with the structure of GHC Engine files
  * 
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "versionJson",
-    "createdDate",
-    "lastModifiedDate",
-    "ghcData"
+    "id",
+    "meta",
+    "specifications",
+    "results"
 })
-@Generated("jsonschema2pojo")
 public class EngineInputGHCSchema {
 
     /**
-     * SchemaVersion
+     * IdFile
      * <p>
-     * Version of EngineInputGHCSchema used
+     * Indicates the id number of the file at the Penalara Server.
      * 
      */
-    @JsonProperty("versionJson")
-    @JsonPropertyDescription("Version of EngineInputGHCSchema used")
-    private String versionJson;
+    @JsonProperty("id")
+    @JsonPropertyDescription("Indicates the id number of the file at the Penalara Server.")
+    private Integer id;
     /**
-     * JsonCreatedDate
+     * FileMetadata
      * <p>
-     * Json generation date.
+     * Information about the file.
+     * (Required)
      * 
      */
-    @JsonProperty("createdDate")
-    @JsonPropertyDescription("Json generation date.")
-    private Date createdDate;
-    /**
-     * JsonGenerationDate
-     * <p>
-     * Json last modification date.
-     * 
-     */
-    @JsonProperty("lastModifiedDate")
-    @JsonPropertyDescription("Json last modification date.")
-    private Date lastModifiedDate;
+    @JsonProperty("meta")
+    @JsonPropertyDescription("Information about the file.")
+    private FileMetadata meta;
     /**
      * GhcData
      * <p>
@@ -64,11 +50,18 @@ public class EngineInputGHCSchema {
      * (Required)
      * 
      */
-    @JsonProperty("ghcData")
+    @JsonProperty("specifications")
     @JsonPropertyDescription("Schema of the object that contains the timetable planning data.")
-    private GhcData ghcData;
-    @JsonIgnore
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+    private GhcData specifications;
+    /**
+     * EngineResults
+     * <p>
+     * Tables of the timetable that contain sections where the class units are located.
+     * 
+     */
+    @JsonProperty("results")
+    @JsonPropertyDescription("Tables of the timetable that contain sections where the class units are located.")
+    private List<EngineOutputGHCSchema> results = new ArrayList<EngineOutputGHCSchema>();
 
     /**
      * No args constructor for use in serialization
@@ -79,83 +72,65 @@ public class EngineInputGHCSchema {
 
     /**
      * 
-     * @param ghcData
-     * @param createdDate
-     * @param lastModifiedDate
-     * @param versionJson
+     * @param meta
+     *     FileMetadata. Information about the file.
+     * @param id
+     *     IdFile. Indicates the id number of the file at the Penalara Server.
+     * @param results
+     *     EngineResults. Tables of the timetable that contain sections where the class units are located.
      */
-    public EngineInputGHCSchema(String versionJson, Date createdDate, Date lastModifiedDate, GhcData ghcData) {
+    public EngineInputGHCSchema(Integer id, FileMetadata meta, GhcData specifications, List<EngineOutputGHCSchema> results) {
         super();
-        this.versionJson = versionJson;
-        this.createdDate = createdDate;
-        this.lastModifiedDate = lastModifiedDate;
-        this.ghcData = ghcData;
+        this.id = id;
+        this.meta = meta;
+        this.specifications = specifications;
+        this.results = results;
     }
 
     /**
-     * SchemaVersion
+     * IdFile
      * <p>
-     * Version of EngineInputGHCSchema used
+     * Indicates the id number of the file at the Penalara Server.
      * 
      */
-    @JsonProperty("versionJson")
-    public String getVersionJson() {
-        return versionJson;
+    @JsonProperty("id")
+    public Integer getId() {
+        return id;
     }
 
     /**
-     * SchemaVersion
+     * IdFile
      * <p>
-     * Version of EngineInputGHCSchema used
+     * Indicates the id number of the file at the Penalara Server.
      * 
      */
-    @JsonProperty("versionJson")
-    public void setVersionJson(String versionJson) {
-        this.versionJson = versionJson;
+    @JsonProperty("id")
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     /**
-     * JsonCreatedDate
+     * FileMetadata
      * <p>
-     * Json generation date.
+     * Information about the file.
+     * (Required)
      * 
      */
-    @JsonProperty("createdDate")
-    public Date getCreatedDate() {
-        return createdDate;
+    @JsonProperty("meta")
+    public FileMetadata getMeta() {
+        return meta;
     }
 
     /**
-     * JsonCreatedDate
+     * FileMetadata
      * <p>
-     * Json generation date.
+     * Information about the file.
+     * (Required)
      * 
      */
-    @JsonProperty("createdDate")
-    public void setCreatedDate(Date createdDate) {
-        this.createdDate = createdDate;
-    }
-
-    /**
-     * JsonGenerationDate
-     * <p>
-     * Json last modification date.
-     * 
-     */
-    @JsonProperty("lastModifiedDate")
-    public Date getLastModifiedDate() {
-        return lastModifiedDate;
-    }
-
-    /**
-     * JsonGenerationDate
-     * <p>
-     * Json last modification date.
-     * 
-     */
-    @JsonProperty("lastModifiedDate")
-    public void setLastModifiedDate(Date lastModifiedDate) {
-        this.lastModifiedDate = lastModifiedDate;
+    @JsonProperty("meta")
+    public void setMeta(FileMetadata meta) {
+        this.meta = meta;
     }
 
     /**
@@ -165,9 +140,9 @@ public class EngineInputGHCSchema {
      * (Required)
      * 
      */
-    @JsonProperty("ghcData")
-    public GhcData getGhcData() {
-        return ghcData;
+    @JsonProperty("specifications")
+    public GhcData getSpecifications() {
+        return specifications;
     }
 
     /**
@@ -177,19 +152,31 @@ public class EngineInputGHCSchema {
      * (Required)
      * 
      */
-    @JsonProperty("ghcData")
-    public void setGhcData(GhcData ghcData) {
-        this.ghcData = ghcData;
+    @JsonProperty("specifications")
+    public void setSpecifications(GhcData specifications) {
+        this.specifications = specifications;
     }
 
-    @JsonAnyGetter
-    public Map<String, Object> getAdditionalProperties() {
-        return this.additionalProperties;
+    /**
+     * EngineResults
+     * <p>
+     * Tables of the timetable that contain sections where the class units are located.
+     * 
+     */
+    @JsonProperty("results")
+    public List<EngineOutputGHCSchema> getResults() {
+        return results;
     }
 
-    @JsonAnySetter
-    public void setAdditionalProperty(String name, Object value) {
-        this.additionalProperties.put(name, value);
+    /**
+     * EngineResults
+     * <p>
+     * Tables of the timetable that contain sections where the class units are located.
+     * 
+     */
+    @JsonProperty("results")
+    public void setResults(List<EngineOutputGHCSchema> results) {
+        this.results = results;
     }
 
 }

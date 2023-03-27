@@ -3,7 +3,6 @@ package com.penalara.ghc.jsonghcfile.engineinput;
 
 import java.util.HashMap;
 import java.util.Map;
-import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 
@@ -14,7 +13,6 @@ import com.fasterxml.jackson.annotation.JsonValue;
  * Indicate whether the incompatibility is a strict, ignore, preferred (strong optimization weight) or accordingToRule (weight according to optimization rule).
  * 
  */
-@Generated("jsonschema2pojo")
 public enum RestrictionType {
 
     IGNORE("ignore"),

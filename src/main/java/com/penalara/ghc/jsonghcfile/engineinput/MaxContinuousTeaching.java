@@ -8,59 +8,68 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 
 /**
- * ConditionTypeWithTime
+ * MaxContinuousTeaching
  * <p>
- * Indicate condition with time wich can be strict, avoid (penalisable in optimisation) or ignored.
+ * It indicates the maximum continuous time of class units, which are allowed without having a gap or a non-class units between them.
  * 
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
     "type",
-    "minutes"
+    "minutes",
+    "minBreak"
 })
-public class ConditionTypeWithTime {
+public class MaxContinuousTeaching {
 
     /**
      * ConditionType
      * <p>
      * Indicate whether the incompatibility is strict, avoid (penalisable in optimisation) or ignored.
-     * (Required)
      * 
      */
     @JsonProperty("type")
     @JsonPropertyDescription("Indicate whether the incompatibility is strict, avoid (penalisable in optimisation) or ignored.")
     private ConditionType type;
     /**
-     * Custom time in minutes for condition.
+     * Maximum continuous teaching time in minutes.
      * 
      */
     @JsonProperty("minutes")
-    @JsonPropertyDescription("Custom time in minutes for condition.")
+    @JsonPropertyDescription("Maximum continuous teaching time in minutes.")
     private Integer minutes;
+    /**
+     * Minimum time period to be considered as break time If not specified, the engine will assign the general value or the default time of 30 minutes.
+     * 
+     */
+    @JsonProperty("minBreak")
+    @JsonPropertyDescription("Minimum time period to be considered as break time")
+    private Integer minBreak;
 
     /**
      * No args constructor for use in serialization
      * 
      */
-    public ConditionTypeWithTime() {
+    public MaxContinuousTeaching() {
     }
 
     /**
      * 
      * @param minutes
-     *     Custom time in minutes for condition.
+     *     Maximum continuous teaching time in minutes.
+     * @param minBreak
+     *     Minimum time period to be considered as break time.
      */
-    public ConditionTypeWithTime(ConditionType type, Integer minutes) {
+    public MaxContinuousTeaching(ConditionType type, Integer minutes, Integer minBreak) {
         super();
         this.type = type;
         this.minutes = minutes;
+        this.minBreak = minBreak;
     }
 
     /**
      * ConditionType
      * <p>
      * Indicate whether the incompatibility is strict, avoid (penalisable in optimisation) or ignored.
-     * (Required)
      * 
      */
     @JsonProperty("type")
@@ -72,7 +81,6 @@ public class ConditionTypeWithTime {
      * ConditionType
      * <p>
      * Indicate whether the incompatibility is strict, avoid (penalisable in optimisation) or ignored.
-     * (Required)
      * 
      */
     @JsonProperty("type")
@@ -81,7 +89,7 @@ public class ConditionTypeWithTime {
     }
 
     /**
-     * Custom time in minutes for condition.
+     * Maximum continuous teaching time in minutes.
      * 
      */
     @JsonProperty("minutes")
@@ -90,12 +98,30 @@ public class ConditionTypeWithTime {
     }
 
     /**
-     * Custom time in minutes for condition.
+     * Maximum continuous teaching time in minutes.
      * 
      */
     @JsonProperty("minutes")
     public void setMinutes(Integer minutes) {
         this.minutes = minutes;
+    }
+
+    /**
+     * Minimum time period to be considered as break time If not specified, the engine will assign the general value or the default time of 30 minutes.
+     * 
+     */
+    @JsonProperty("minBreak")
+    public Integer getMinBreak() {
+        return minBreak;
+    }
+
+    /**
+     * Minimum time period to be considered as break time If not specified, the engine will assign the general value or the default time of 30 minutes.
+     * 
+     */
+    @JsonProperty("minBreak")
+    public void setMinBreak(Integer minBreak) {
+        this.minBreak = minBreak;
     }
 
 }

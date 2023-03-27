@@ -1,7 +1,6 @@
 
 package com.penalara.ghc.jsonghcfile.engineinput;
 
-import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -19,7 +18,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "groupGaps",
     "teacherGaps"
 })
-@Generated("jsonschema2pojo")
 public class TimetableGaps {
 
     /**
@@ -47,7 +45,9 @@ public class TimetableGaps {
     /**
      * 
      * @param groupGaps
+     *     It indicates the weight given to the fact of leaving gaps in groups' timetables.
      * @param teacherGaps
+     *     It indicates the weight given to the fact of leaving gaps in teachers' timetables.
      */
     public TimetableGaps(Integer groupGaps, Integer teacherGaps) {
         super();

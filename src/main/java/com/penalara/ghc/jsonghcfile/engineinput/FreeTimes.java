@@ -1,7 +1,6 @@
 
 package com.penalara.ghc.jsonghcfile.engineinput;
 
-import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -21,7 +20,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "lastMinutes",
     "consecutiveAnyTime"
 })
-@Generated("jsonschema2pojo")
 public class FreeTimes {
 
     /**
@@ -71,9 +69,13 @@ public class FreeTimes {
     /**
      * 
      * @param consecutiveAnyTime
+     *     ConsecutiveAnyTimeFreeTimes. Teacher's free intervals at any time of the day.
      * @param fullDay
+     *     FullDaysFreeTimes. Teacher's full days of free time.
      * @param firstMinutes
+     *     FirstMinutesFreeTimes. Teacher's free intervals at the beginning of the day.
      * @param lastMinutes
+     *     LastMinutesFreeTimes. Teacher's free intervals at the end of the day.
      */
     public FreeTimes(FullDaysFreeTimes fullDay, FirstMinutesFreeTimes firstMinutes, LastMinutesFreeTimes lastMinutes, ConsecutiveAnyTimeFreeTimes consecutiveAnyTime) {
         super();

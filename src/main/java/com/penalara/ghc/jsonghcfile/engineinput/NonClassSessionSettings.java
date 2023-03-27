@@ -1,7 +1,6 @@
 
 package com.penalara.ghc.jsonghcfile.engineinput;
 
-import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -19,7 +18,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "computeForMaxMinOccupancy",
     "samePositionEveryPeriod"
 })
-@Generated("jsonschema2pojo")
 public class NonClassSessionSettings {
 
     /**
@@ -49,7 +47,7 @@ public class NonClassSessionSettings {
     /**
      * 
      * @param computeForMaxMinOccupancy
-     * @param samePositionEveryPeriod
+     *      It indicates whether the class unit counts for the maximum and minimum daily teacher occupancy. By default, the engine computes class units with students.
      */
     public NonClassSessionSettings(Boolean computeForMaxMinOccupancy, SamePositionEveryPeriod samePositionEveryPeriod) {
         super();

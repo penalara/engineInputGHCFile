@@ -3,7 +3,6 @@ package com.penalara.ghc.jsonghcfile.engineinput;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -23,7 +22,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "maximunTimeInPeriod",
     "minimnunTimeInPeriod"
 })
-@Generated("jsonschema2pojo")
 public class VariablePeriods {
 
     /**
@@ -69,9 +67,9 @@ public class VariablePeriods {
     /**
      * 
      * @param maximunTimeInPeriod
-     * @param weeklyVariable
-     * @param weeklyStable
+     *     Maximum number of minutes to be allocated in each Period. If not defined, it is considered that there is no maximum limit.
      * @param minimnunTimeInPeriod
+     *     Minimum number of minutes to be allocated in each Period.
      */
     public VariablePeriods(List<Integer> weeklyStable, WeeklyVariable weeklyVariable, Integer maximunTimeInPeriod, Integer minimnunTimeInPeriod) {
         super();

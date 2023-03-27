@@ -3,7 +3,6 @@ package com.penalara.ghc.jsonghcfile.engineinput;
 
 import java.util.HashMap;
 import java.util.Map;
-import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -31,7 +30,6 @@ import com.fasterxml.jackson.annotation.JsonValue;
     "consecutiveWeeksBorders",
     "samePositionEveryPeriod"
 })
-@Generated("jsonschema2pojo")
 public class SessionSettings {
 
     /**
@@ -117,15 +115,23 @@ public class SessionSettings {
     /**
      * 
      * @param avoidSectionsAfterBreak
+     *     It penalises if more than 50% of the class unit are after the last break of the day.
      * @param avoidAfternoonSessions
+     *     It penalises if there is more than one class unit after noon stop..
      * @param nonBreakInTheMiddleOfSession
+     *     Do not allow breaks between class units of multiple duration (class duration of more than one section).
      * @param avoidAssingLastHourAndFirstNextDay
+     *     It penalises if the last hour and the first hour of the following day match.
      * @param avoidFirstHourSessions
+     *     It penalises the position of the class units if more than 50% of the class units are at first hour.
      * @param avoidLastHourSessions
-     * @param samePositionEveryPeriod
+     *     It penalises the position of the class units if more than 50% of the class units are at last hour.
      * @param sameHourPreference
+     *     Preference over class units that coincide in the same time slot.
      * @param consecutiveWeeksBorders
+     *     It considers the end-of-week day, and the start-of-week day, as consecutive days for 'followedDaysPreference'.
      * @param followedDaysPreference
+     *     If the class unit has more than one lesson, indicates the preference on assigning them on consecutive days.
      */
     public SessionSettings(Boolean avoidFirstHourSessions, Boolean avoidLastHourSessions, Boolean avoidAssingLastHourAndFirstNextDay, SessionSettings.SameHourPreference sameHourPreference, Boolean avoidAfternoonSessions, Boolean avoidSectionsAfterBreak, Boolean nonBreakInTheMiddleOfSession, SessionSettings.FollowedDaysPreference followedDaysPreference, Boolean consecutiveWeeksBorders, SamePositionEveryPeriod samePositionEveryPeriod) {
         super();
@@ -330,7 +336,6 @@ public class SessionSettings {
      * If the class unit has more than one lesson, indicates the preference on assigning them on consecutive days.
      * 
      */
-    @Generated("jsonschema2pojo")
     public enum FollowedDaysPreference {
 
         IGNORE("ignore"),
@@ -378,7 +383,6 @@ public class SessionSettings {
      * Preference over class units that coincide in the same time slot.
      * 
      */
-    @Generated("jsonschema2pojo")
     public enum SameHourPreference {
 
         IGNORE("ignore"),

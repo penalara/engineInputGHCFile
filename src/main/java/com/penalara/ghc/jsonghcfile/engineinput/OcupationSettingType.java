@@ -3,7 +3,6 @@ package com.penalara.ghc.jsonghcfile.engineinput;
 
 import java.util.HashMap;
 import java.util.Map;
-import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 
@@ -14,7 +13,6 @@ import com.fasterxml.jackson.annotation.JsonValue;
  * Indicates whether the automatic calculation of the value must be adjusted to higher or lower. The adjustment will set with the duration of the greater section.
  * 
  */
-@Generated("jsonschema2pojo")
 public enum OcupationSettingType {
 
     AUTO("auto"),

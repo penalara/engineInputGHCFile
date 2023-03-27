@@ -3,11 +3,7 @@ package com.penalara.ghc.jsonghcfile.engineinput;
 
 import java.util.HashMap;
 import java.util.Map;
-import javax.annotation.processing.Generated;
-import com.fasterxml.jackson.annotation.JsonAnyGetter;
-import com.fasterxml.jackson.annotation.JsonAnySetter;
 import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -28,7 +24,6 @@ import com.fasterxml.jackson.annotation.JsonValue;
     "frame",
     "type"
 })
-@Generated("jsonschema2pojo")
 public class SectionPreference {
 
     /**
@@ -65,8 +60,6 @@ public class SectionPreference {
     @JsonProperty("type")
     @JsonPropertyDescription("Element availability to be assigned to the section.")
     private SectionPreference.SectionPreferenceTypeWithOutPreset type;
-    @JsonIgnore
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
      * No args constructor for use in serialization
@@ -78,9 +71,13 @@ public class SectionPreference {
     /**
      * 
      * @param index
+     *     Index inside the day where is located the section.
      * @param type
+     *     SectionPreferenceTypeWithOutPreset. Element availability to be assigned to the section.
      * @param day
+     *     Day of the week when is located the section.
      * @param frame
+     *     Identifier name of the frame.
      */
     public SectionPreference(Integer day, Integer index, String frame, SectionPreference.SectionPreferenceTypeWithOutPreset type) {
         super();
@@ -174,16 +171,6 @@ public class SectionPreference {
         this.type = type;
     }
 
-    @JsonAnyGetter
-    public Map<String, Object> getAdditionalProperties() {
-        return this.additionalProperties;
-    }
-
-    @JsonAnySetter
-    public void setAdditionalProperty(String name, Object value) {
-        this.additionalProperties.put(name, value);
-    }
-
 
     /**
      * SectionPreferenceTypeWithOutPreset
@@ -191,7 +178,6 @@ public class SectionPreference {
      * Element availability to be assigned to the section.
      * 
      */
-    @Generated("jsonschema2pojo")
     public enum SectionPreferenceTypeWithOutPreset {
 
         BANNED("banned"),

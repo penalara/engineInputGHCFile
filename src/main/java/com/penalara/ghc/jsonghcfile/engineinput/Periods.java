@@ -3,7 +3,6 @@ package com.penalara.ghc.jsonghcfile.engineinput;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -21,7 +20,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "followedPeriods",
     "periodsList"
 })
-@Generated("jsonschema2pojo")
 public class Periods {
 
     /**
@@ -54,7 +52,9 @@ public class Periods {
     /**
      * 
      * @param followedPeriods
+     *     FollowedPeriods. It indicates whether periods or weeks consider the last day of the previous period or week as consecutive days with the first day of the following period or week.
      * @param periodsList
+     *     PeriodsList. List of periods.
      */
     public Periods(Boolean followedPeriods, List<Period> periodsList) {
         super();

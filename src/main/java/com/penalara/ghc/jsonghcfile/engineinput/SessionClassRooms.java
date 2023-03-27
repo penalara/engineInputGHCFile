@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -26,7 +25,6 @@ import com.fasterxml.jackson.annotation.JsonValue;
     "capacityPreference",
     "capacityType"
 })
-@Generated("jsonschema2pojo")
 public class SessionClassRooms {
 
     /**
@@ -64,8 +62,11 @@ public class SessionClassRooms {
     /**
      * 
      * @param capacityPreference
+     *     Preference on whether the engine should assess the capacity of the classroom to allocate each class unit.
      * @param capacityType
+     *     It indicates whether all students in the class units should fit in each classroom, or in the amount of all classrooms.
      * @param classRoomsToAssign
+     *     ClassRoomsToAssign. List of classrooms to the session. Each object in the list represent one classroom that must be assigned.
      */
     public SessionClassRooms(List<RefClassRoomToAssign> classRoomsToAssign, SessionClassRooms.CapacityPreference capacityPreference, SessionClassRooms.CapacityType capacityType) {
         super();
@@ -139,7 +140,6 @@ public class SessionClassRooms {
      * Preference on whether the engine should assess the capacity of the classroom to allocate each class unit.
      * 
      */
-    @Generated("jsonschema2pojo")
     public enum CapacityPreference {
 
         ATTEMPT("attempt"),
@@ -185,7 +185,6 @@ public class SessionClassRooms {
      * It indicates whether all students in the class units should fit in each classroom, or in the amount of all classrooms.
      * 
      */
-    @Generated("jsonschema2pojo")
     public enum CapacityType {
 
         INDIVIDUAL("individual"),

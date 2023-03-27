@@ -3,7 +3,6 @@ package com.penalara.ghc.jsonghcfile.engineinput;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -29,7 +28,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "refBuilding",
     "settings"
 })
-@Generated("jsonschema2pojo")
 public class OnCallService {
 
     /**
@@ -128,15 +126,21 @@ public class OnCallService {
     /**
      * 
      * @param refPeriods
+     *     RefPeriods. List of Periods when the service must be set.
      * @param inBreak
+     *     It indicates whether it is a break supervision.
      * @param teachersEachSection
-     * @param settings
+     *     TeachersEachSection. Information about number of teacher in all sections.
      * @param refFrame
+     *     Identifier of the frame where the service will be set.
      * @param refTeachers
-     * @param frameTemplate
+     *     RefTeachersOnCall. List of teachers who in the service.
      * @param id
+     *     On-Call service identifier.
      * @param refTask
+     *     Task identifier.
      * @param refBuilding
+     *     Identifier of the building where the service is located. It is used to know the transfer time and the number of transfers between buildings for teachers.
      */
     public OnCallService(String id, String refFrame, List<String> refPeriods, String refTask, Boolean inBreak, TeachersEachSection teachersEachSection, List<RefTeacher> refTeachers, List<OnCallSectionPreference> frameTemplate, String refBuilding, NonClassSessionSettings settings) {
         super();

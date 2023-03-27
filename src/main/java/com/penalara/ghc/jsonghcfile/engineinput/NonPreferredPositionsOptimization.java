@@ -1,7 +1,6 @@
 
 package com.penalara.ghc.jsonghcfile.engineinput;
 
-import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -21,7 +20,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "inSubjectsAndTask",
     "inSessions"
 })
-@Generated("jsonschema2pojo")
 public class NonPreferredPositionsOptimization {
 
     /**
@@ -63,9 +61,13 @@ public class NonPreferredPositionsOptimization {
     /**
      * 
      * @param inGroups
+     *     It indicates the weight to be placed in a non-preferential section of a group.
      * @param inSessions
+     *     Indicates the weight to be placed in a non-preferential section of a session.
      * @param inSubjectsAndTask
+     *     It indicates the weight to be placed in a non-preferential section of a subject or a task.
      * @param inTeachers
+     *     It indicates the weight to be placed in a non-preferential section of a teacher.
      */
     public NonPreferredPositionsOptimization(Integer inGroups, Integer inTeachers, Integer inSubjectsAndTask, Integer inSessions) {
         super();

@@ -1,7 +1,6 @@
 
 package com.penalara.ghc.jsonghcfile.engineinput;
 
-import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -23,7 +22,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "avoidMinDuration",
     "allowDiscontinuity"
 })
-@Generated("jsonschema2pojo")
 public class WeeklyVariable {
 
     /**
@@ -81,11 +79,17 @@ public class WeeklyVariable {
     /**
      * 
      * @param allowDiscontinuity
+     *     It indicates whether discontinuous sections are allowed, that is, having sections of other class units or breaks in between them.
      * @param minMinutesDaily
+     *     Minimun of minutes per day.
      * @param avoidMinDuration
+     *     It indicates the preference for class units of minimun duration.
      * @param avoidMaxDuration
+     *     It indicates the preference for class units of maximum duration.
      * @param minutesAmount
+     *     Total of session's weekly minutes.
      * @param maxMinutesDaily
+     *     Maximum of minutes per day.
      */
     public WeeklyVariable(Integer minutesAmount, Integer maxMinutesDaily, Integer minMinutesDaily, Boolean avoidMaxDuration, Boolean avoidMinDuration, Boolean allowDiscontinuity) {
         super();

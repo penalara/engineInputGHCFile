@@ -1,12 +1,6 @@
 
 package com.penalara.ghc.jsonghcfile.engineinput;
 
-import java.util.HashMap;
-import java.util.Map;
-import javax.annotation.processing.Generated;
-import com.fasterxml.jackson.annotation.JsonAnyGetter;
-import com.fasterxml.jackson.annotation.JsonAnySetter;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -25,7 +19,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "index",
     "frame"
 })
-@Generated("jsonschema2pojo")
 public class BannedSectionPreference {
 
     /**
@@ -52,8 +45,6 @@ public class BannedSectionPreference {
     @JsonProperty("frame")
     @JsonPropertyDescription("Frame identifier.")
     private String frame;
-    @JsonIgnore
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
      * No args constructor for use in serialization
@@ -65,8 +56,11 @@ public class BannedSectionPreference {
     /**
      * 
      * @param index
+     *     Index built into the day where the section is located.
      * @param day
+     *     Day of the week when the section is located.
      * @param frame
+     *     Frame identifier.
      */
     public BannedSectionPreference(Integer day, Integer index, String frame) {
         super();
@@ -133,16 +127,6 @@ public class BannedSectionPreference {
     @JsonProperty("frame")
     public void setFrame(String frame) {
         this.frame = frame;
-    }
-
-    @JsonAnyGetter
-    public Map<String, Object> getAdditionalProperties() {
-        return this.additionalProperties;
-    }
-
-    @JsonAnySetter
-    public void setAdditionalProperty(String name, Object value) {
-        this.additionalProperties.put(name, value);
     }
 
 }

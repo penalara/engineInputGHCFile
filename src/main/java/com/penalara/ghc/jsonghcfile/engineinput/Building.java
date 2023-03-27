@@ -2,13 +2,7 @@
 package com.penalara.ghc.jsonghcfile.engineinput;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import javax.annotation.processing.Generated;
-import com.fasterxml.jackson.annotation.JsonAnyGetter;
-import com.fasterxml.jackson.annotation.JsonAnySetter;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -26,7 +20,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "id",
     "distances"
 })
-@Generated("jsonschema2pojo")
 public class Building {
 
     /**
@@ -46,8 +39,6 @@ public class Building {
     @JsonProperty("distances")
     @JsonPropertyDescription("Distance in minutes to another school building.")
     private List<Distance> distances = new ArrayList<Distance>();
-    @JsonIgnore
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
      * No args constructor for use in serialization
@@ -59,7 +50,9 @@ public class Building {
     /**
      * 
      * @param distances
+     *     Distances. Distance in minutes to another school building.
      * @param id
+     *     Building identifier.
      */
     public Building(String id, List<Distance> distances) {
         super();
@@ -107,16 +100,6 @@ public class Building {
     @JsonProperty("distances")
     public void setDistances(List<Distance> distances) {
         this.distances = distances;
-    }
-
-    @JsonAnyGetter
-    public Map<String, Object> getAdditionalProperties() {
-        return this.additionalProperties;
-    }
-
-    @JsonAnySetter
-    public void setAdditionalProperty(String name, Object value) {
-        this.additionalProperties.put(name, value);
     }
 
 }

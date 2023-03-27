@@ -1,12 +1,6 @@
 
 package com.penalara.ghc.jsonghcfile.engineinput;
 
-import java.util.HashMap;
-import java.util.Map;
-import javax.annotation.processing.Generated;
-import com.fasterxml.jackson.annotation.JsonAnyGetter;
-import com.fasterxml.jackson.annotation.JsonAnySetter;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -24,7 +18,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "id",
     "lastDay"
 })
-@Generated("jsonschema2pojo")
 public class Period {
 
     /**
@@ -43,8 +36,6 @@ public class Period {
     @JsonProperty("lastDay")
     @JsonPropertyDescription("The end day of the period (included).")
     private Integer lastDay;
-    @JsonIgnore
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
      * No args constructor for use in serialization
@@ -56,7 +47,9 @@ public class Period {
     /**
      * 
      * @param lastDay
+     *     The end day of the period (included).
      * @param id
+     *     Period identifier.
      */
     public Period(String id, Integer lastDay) {
         super();
@@ -102,16 +95,6 @@ public class Period {
     @JsonProperty("lastDay")
     public void setLastDay(Integer lastDay) {
         this.lastDay = lastDay;
-    }
-
-    @JsonAnyGetter
-    public Map<String, Object> getAdditionalProperties() {
-        return this.additionalProperties;
-    }
-
-    @JsonAnySetter
-    public void setAdditionalProperty(String name, Object value) {
-        this.additionalProperties.put(name, value);
     }
 
 }

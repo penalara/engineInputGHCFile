@@ -1,12 +1,6 @@
 
 package com.penalara.ghc.jsonghcfile.engineinput;
 
-import java.util.HashMap;
-import java.util.Map;
-import javax.annotation.processing.Generated;
-import com.fasterxml.jackson.annotation.JsonAnyGetter;
-import com.fasterxml.jackson.annotation.JsonAnySetter;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -24,7 +18,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "strict",
     "preferable"
 })
-@Generated("jsonschema2pojo")
 public class MorningsFreePartTimes {
 
     /**
@@ -41,8 +34,6 @@ public class MorningsFreePartTimes {
     @JsonProperty("preferable")
     @JsonPropertyDescription("Preferable number of mornings off.")
     private Integer preferable;
-    @JsonIgnore
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
      * No args constructor for use in serialization
@@ -54,7 +45,9 @@ public class MorningsFreePartTimes {
     /**
      * 
      * @param preferable
+     *     Preferable number of mornings off.
      * @param strict
+     *     Strict number of mornings off.
      */
     public MorningsFreePartTimes(Integer strict, Integer preferable) {
         super();
@@ -96,16 +89,6 @@ public class MorningsFreePartTimes {
     @JsonProperty("preferable")
     public void setPreferable(Integer preferable) {
         this.preferable = preferable;
-    }
-
-    @JsonAnyGetter
-    public Map<String, Object> getAdditionalProperties() {
-        return this.additionalProperties;
-    }
-
-    @JsonAnySetter
-    public void setAdditionalProperty(String name, Object value) {
-        this.additionalProperties.put(name, value);
     }
 
 }

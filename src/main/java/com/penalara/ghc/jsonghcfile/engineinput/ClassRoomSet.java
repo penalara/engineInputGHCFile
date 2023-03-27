@@ -2,13 +2,7 @@
 package com.penalara.ghc.jsonghcfile.engineinput;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import javax.annotation.processing.Generated;
-import com.fasterxml.jackson.annotation.JsonAnyGetter;
-import com.fasterxml.jackson.annotation.JsonAnySetter;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -27,7 +21,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "rooms",
     "anonymousRooms"
 })
-@Generated("jsonschema2pojo")
 public class ClassRoomSet {
 
     /**
@@ -55,8 +48,6 @@ public class ClassRoomSet {
     @JsonProperty("anonymousRooms")
     @JsonPropertyDescription("Number of non-specific defined classrooms that the group contains.")
     private Integer anonymousRooms = 0;
-    @JsonIgnore
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
      * No args constructor for use in serialization
@@ -68,8 +59,11 @@ public class ClassRoomSet {
     /**
      * 
      * @param anonymousRooms
+     *     Number of non-specific defined classrooms that the group contains.
      * @param rooms
+     *     ClassRoomEntries. Classrooms identifiers which contain the group.
      * @param id
+     *     ClassRooms group identifier.
      */
     public ClassRoomSet(String id, List<String> rooms, Integer anonymousRooms) {
         super();
@@ -138,16 +132,6 @@ public class ClassRoomSet {
     @JsonProperty("anonymousRooms")
     public void setAnonymousRooms(Integer anonymousRooms) {
         this.anonymousRooms = anonymousRooms;
-    }
-
-    @JsonAnyGetter
-    public Map<String, Object> getAdditionalProperties() {
-        return this.additionalProperties;
-    }
-
-    @JsonAnySetter
-    public void setAdditionalProperty(String name, Object value) {
-        this.additionalProperties.put(name, value);
     }
 
 }

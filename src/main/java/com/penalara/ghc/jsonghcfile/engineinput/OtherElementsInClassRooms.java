@@ -1,12 +1,6 @@
 
 package com.penalara.ghc.jsonghcfile.engineinput;
 
-import java.util.HashMap;
-import java.util.Map;
-import javax.annotation.processing.Generated;
-import com.fasterxml.jackson.annotation.JsonAnyGetter;
-import com.fasterxml.jackson.annotation.JsonAnySetter;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -26,7 +20,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "refGroup",
     "refTask"
 })
-@Generated("jsonschema2pojo")
 public class OtherElementsInClassRooms {
 
     /**
@@ -65,8 +58,6 @@ public class OtherElementsInClassRooms {
     @JsonProperty("refTask")
     @JsonPropertyDescription("Identifier name of the task of the other teacher.")
     private String refTask;
-    @JsonIgnore
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
      * No args constructor for use in serialization
@@ -78,9 +69,11 @@ public class OtherElementsInClassRooms {
     /**
      * 
      * @param refSubject
+     *     SubjectReference. Identifier name of other subject in the classroom.
      * @param refTeacher
-     * @param refGroup
+     *     TeacherReference. Identifier name of other teacher in the classroom.
      * @param refTask
+     *     TaskReference. Identifier name of the task of the other teacher.
      */
     public OtherElementsInClassRooms(String refSubject, String refTeacher, GroupReferenceType refGroup, String refTask) {
         super();
@@ -176,16 +169,6 @@ public class OtherElementsInClassRooms {
     @JsonProperty("refTask")
     public void setRefTask(String refTask) {
         this.refTask = refTask;
-    }
-
-    @JsonAnyGetter
-    public Map<String, Object> getAdditionalProperties() {
-        return this.additionalProperties;
-    }
-
-    @JsonAnySetter
-    public void setAdditionalProperty(String name, Object value) {
-        this.additionalProperties.put(name, value);
     }
 
 }

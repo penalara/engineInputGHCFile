@@ -2,13 +2,7 @@
 package com.penalara.ghc.jsonghcfile.engineinput;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import javax.annotation.processing.Generated;
-import com.fasterxml.jackson.annotation.JsonAnyGetter;
-import com.fasterxml.jackson.annotation.JsonAnySetter;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -36,7 +30,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "sessionSettings",
     "sessionRelations"
 })
-@Generated("jsonschema2pojo")
 public class Session {
 
     /**
@@ -151,8 +144,6 @@ public class Session {
     @JsonProperty("sessionRelations")
     @JsonPropertyDescription("It contains information on the relationships between this and other class units. These conditions can only apply to class units with students.")
     private SessionRelations sessionRelations;
-    @JsonIgnore
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
      * No args constructor for use in serialization
@@ -164,17 +155,23 @@ public class Session {
     /**
      * 
      * @param refMainSubject
-     * @param refMainGroup
+     *     RefMainSubject. Identifier name of the main subject.
      * @param refFrame
-     * @param frameTemplate
+     *     Session's frame identifier.
      * @param sessionRelations
+     *     SessionRelations. It contains information on the relationships between this and other class units. These conditions can only apply to class units with students.
      * @param sessionClassRooms
+     *     SessionClassRooms. It contains the information about the classrooms for the class units. At least one classroom is required for the class units.
      * @param otherElementsInClassRooms
+     *     OtherElementsInClassRoomsList. List of other time elements in the classroom related to each other.
      * @param id
-     * @param distribution
+     *     Session identifier.
      * @param sessionSettings
+     *     SessionSettings. Conditions on the position of the class unit.
      * @param refMainTask
+     *     RefMainTask. Main Task identifier.
      * @param refMainTeacher
+     *     RefMainTeacher. Main Teacher identifier.
      */
     public Session(Integer id, String refFrame, String refMainTask, String refMainTeacher, String refMainSubject, GroupReferenceType refMainGroup, List<OtherElementsInClassRooms> otherElementsInClassRooms, Distribution distribution, SessionClassRooms sessionClassRooms, List<SessionSectionPreference> frameTemplate, SessionSettings sessionSettings, SessionRelations sessionRelations) {
         super();
@@ -462,16 +459,6 @@ public class Session {
     @JsonProperty("sessionRelations")
     public void setSessionRelations(SessionRelations sessionRelations) {
         this.sessionRelations = sessionRelations;
-    }
-
-    @JsonAnyGetter
-    public Map<String, Object> getAdditionalProperties() {
-        return this.additionalProperties;
-    }
-
-    @JsonAnySetter
-    public void setAdditionalProperty(String name, Object value) {
-        this.additionalProperties.put(name, value);
     }
 
 }

@@ -3,7 +3,6 @@ package com.penalara.ghc.jsonghcfile.engineinput;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -28,7 +27,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "maximumSeparationTo",
     "minimumSeparationTo"
 })
-@Generated("jsonschema2pojo")
 public class SessionRelations {
 
     /**
@@ -123,14 +121,23 @@ public class SessionRelations {
     /**
      * 
      * @param differentDays
+     *     DifferentDays. Conditions on this and another class unit cannot coincide on the same day.
      * @param nonSimultaneus
+     *     NonSimultaneus. Identifiers of the sessions that they should not be assigned at the same time. It is a strict condition.
      * @param previousTo
+     *     PreviousTo. This indicates that this class unit must be allocated on a previous day to the class units in the list. This is a strict condition.
      * @param consecutiveGroup
+     *     ConsecutiveGroup. Contains the references of a continuous sessions group.
      * @param minimumSeparationTo
+     *     MinimumSeparationTo. It contains class units that must be taught at least a minimum number of days apart from the current class unit. .
      * @param afterTo
+     *     AfterTo. This indicates that this class unit must be allocated on a subsequent day to the class units in the list. This is a strict condition.
      * @param refSimultaneusGroup
+     *     RefSimultaneusGroup. Identifier of the group of simultaneous class units of the subject. Indicates that the class units are to be taught at the same time as the group class units. .
      * @param nonConsecutiveSessions
+     *     NonConsecutiveSessions. Identifiers of the sessions which class units must not be consecutive. This is a strict condition.
      * @param maximumSeparationTo
+     *     MaximumSeparationTo. It contains class units to be taught within a maximum number of days of the current class units.
      */
     public SessionRelations(Integer refSimultaneusGroup, DifferentDays differentDays, ConsecutiveGroup consecutiveGroup, List<Integer> nonConsecutiveSessions, List<Integer> nonSimultaneus, List<Integer> previousTo, List<Integer> afterTo, List<MaximumSeparationToSession> maximumSeparationTo, List<MinimumSeparationToSession> minimumSeparationTo) {
         super();

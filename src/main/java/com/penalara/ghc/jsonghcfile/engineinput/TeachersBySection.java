@@ -1,7 +1,6 @@
 
 package com.penalara.ghc.jsonghcfile.engineinput;
 
-import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -20,7 +19,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "index",
     "numTeachers"
 })
-@Generated("jsonschema2pojo")
 public class TeachersBySection {
 
     /**
@@ -58,8 +56,11 @@ public class TeachersBySection {
     /**
      * 
      * @param index
+     *     Index of the section.
      * @param day
+     *     Day of the week.
      * @param numTeachers
+     *     Custom number of teachers to be assigned in the section.
      */
     public TeachersBySection(Integer day, Integer index, Integer numTeachers) {
         super();

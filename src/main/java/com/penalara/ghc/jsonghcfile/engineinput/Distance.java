@@ -1,7 +1,6 @@
 
 package com.penalara.ghc.jsonghcfile.engineinput;
 
-import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -19,7 +18,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "refBuilding",
     "minutes"
 })
-@Generated("jsonschema2pojo")
 public class Distance {
 
     /**
@@ -49,7 +47,9 @@ public class Distance {
     /**
      * 
      * @param minutes
+     *     Distance in minutes from the building of the referred building.
      * @param refBuilding
+     *     Identifier of the other building that refers to the distance.
      */
     public Distance(String refBuilding, Integer minutes) {
         super();

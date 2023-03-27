@@ -1,7 +1,6 @@
 
 package com.penalara.ghc.jsonghcfile.engineinput;
 
-import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -20,7 +19,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "afternoons",
     "indistinctly"
 })
-@Generated("jsonschema2pojo")
 public class FreePartTime {
 
     /**
@@ -61,8 +59,11 @@ public class FreePartTime {
     /**
      * 
      * @param mornings
+     *     MorningsFreePartTimes. Mornings off.
      * @param afternoons
+     *     AfternoonFreePartTimes. Afternoons off.
      * @param indistinctly
+     *     IndistinctlyFreePartTimes. Free mornings or evenings indistinctly.
      */
     public FreePartTime(MorningsFreePartTimes mornings, AfternoonFreePartTimes afternoons, IndistinctlyFreePartTimes indistinctly) {
         super();

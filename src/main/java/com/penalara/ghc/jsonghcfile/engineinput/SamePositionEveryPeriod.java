@@ -3,7 +3,6 @@ package com.penalara.ghc.jsonghcfile.engineinput;
 
 import java.util.HashMap;
 import java.util.Map;
-import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 
@@ -14,7 +13,6 @@ import com.fasterxml.jackson.annotation.JsonValue;
  * Keep the same position every week or period for the class units.
  * 
  */
-@Generated("jsonschema2pojo")
 public enum SamePositionEveryPeriod {
 
     IGNORE("ignore"),

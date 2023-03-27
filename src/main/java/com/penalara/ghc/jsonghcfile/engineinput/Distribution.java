@@ -3,7 +3,6 @@ package com.penalara.ghc.jsonghcfile.engineinput;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -22,7 +21,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "stablePeriods",
     "variablePeriods"
 })
-@Generated("jsonschema2pojo")
 public class Distribution {
 
     /**
@@ -63,8 +61,11 @@ public class Distribution {
     /**
      * 
      * @param variablePeriods
+     *     VariablePeriods. The total of the class units of the distribution are divided between the periods.
      * @param periods
+     *     RefPeriods. List of periods or weeks in which the class unit must be assigned.
      * @param stablePeriods
+     *     StablePeriods. The distribution of the class unit of the session is the same in each period.
      */
     public Distribution(List<String> periods, StablePeriods stablePeriods, VariablePeriods variablePeriods) {
         super();

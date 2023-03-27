@@ -2,13 +2,7 @@
 package com.penalara.ghc.jsonghcfile.engineinput;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import javax.annotation.processing.Generated;
-import com.fasterxml.jackson.annotation.JsonAnyGetter;
-import com.fasterxml.jackson.annotation.JsonAnySetter;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -33,7 +27,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "refBuilding",
     "settings"
 })
-@Generated("jsonschema2pojo")
 public class Complementary {
 
     /**
@@ -116,8 +109,6 @@ public class Complementary {
     @JsonProperty("settings")
     @JsonPropertyDescription("Settings of the meeting.")
     private NonClassSessionSettings settings;
-    @JsonIgnore
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
      * No args constructor for use in serialization
@@ -128,15 +119,16 @@ public class Complementary {
 
     /**
      * 
-     * @param settings
      * @param refFrame
-     * @param frameTemplate
+     *     Session's frame identifier.
      * @param refTeacher
+     *     RefTeacher. Teacher identifier.
      * @param id
-     * @param refClassRoomToAssign
+     *     Session identifier.
      * @param refTask
-     * @param distribution
+     *     RefTask. Task identifier.
      * @param refBuilding
+     *     Building identifier of the building where the class unit takes place. This is used to know the moving time and the number of moves between buildings for teachers without specifying a classroom.
      */
     public Complementary(String id, String refFrame, String refTask, String refTeacher, Distribution distribution, List<SessionSectionPreference> frameTemplate, RefClassRoomToAssign refClassRoomToAssign, String refBuilding, NonClassSessionSettings settings) {
         super();
@@ -345,16 +337,6 @@ public class Complementary {
     @JsonProperty("settings")
     public void setSettings(NonClassSessionSettings settings) {
         this.settings = settings;
-    }
-
-    @JsonAnyGetter
-    public Map<String, Object> getAdditionalProperties() {
-        return this.additionalProperties;
-    }
-
-    @JsonAnySetter
-    public void setAdditionalProperty(String name, Object value) {
-        this.additionalProperties.put(name, value);
     }
 
 }

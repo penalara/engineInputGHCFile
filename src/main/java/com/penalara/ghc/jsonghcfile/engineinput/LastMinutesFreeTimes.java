@@ -1,12 +1,6 @@
 
 package com.penalara.ghc.jsonghcfile.engineinput;
 
-import java.util.HashMap;
-import java.util.Map;
-import javax.annotation.processing.Generated;
-import com.fasterxml.jackson.annotation.JsonAnyGetter;
-import com.fasterxml.jackson.annotation.JsonAnySetter;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -25,7 +19,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "preferredDays",
     "minutes"
 })
-@Generated("jsonschema2pojo")
 public class LastMinutesFreeTimes {
 
     /**
@@ -50,8 +43,6 @@ public class LastMinutesFreeTimes {
     @JsonProperty("minutes")
     @JsonPropertyDescription("Minutes of free time at the end of the day.")
     private Integer minutes;
-    @JsonIgnore
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
      * No args constructor for use in serialization
@@ -63,8 +54,11 @@ public class LastMinutesFreeTimes {
     /**
      * 
      * @param minutes
+     *     Minutes of free time at the end of the day.
      * @param strictDays
+     *     Strict number of days on which the teacher must have the interval free at the end of the day.
      * @param preferredDays
+     *     Preferred number of days on which the teacher should have the interval free at the end of the day. .
      */
     public LastMinutesFreeTimes(Integer strictDays, Integer preferredDays, Integer minutes) {
         super();
@@ -127,16 +121,6 @@ public class LastMinutesFreeTimes {
     @JsonProperty("minutes")
     public void setMinutes(Integer minutes) {
         this.minutes = minutes;
-    }
-
-    @JsonAnyGetter
-    public Map<String, Object> getAdditionalProperties() {
-        return this.additionalProperties;
-    }
-
-    @JsonAnySetter
-    public void setAdditionalProperty(String name, Object value) {
-        this.additionalProperties.put(name, value);
     }
 
 }

@@ -3,7 +3,6 @@ package com.penalara.ghc.jsonghcfile.engineinput;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -21,7 +20,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "classRoom",
     "classRoomsSetsList"
 })
-@Generated("jsonschema2pojo")
 public class RefClassRoomToAssign {
 
     /**
@@ -53,7 +51,9 @@ public class RefClassRoomToAssign {
     /**
      * 
      * @param classRoomsSetsList
+     *     ClassRoomsSetsList. Classroom set list where one classroom could be taken to assign to session.
      * @param classRoom
+     *     ClassRoomRef. Classroom identifier.
      */
     public RefClassRoomToAssign(String classRoom, List<String> classRoomsSetsList) {
         super();

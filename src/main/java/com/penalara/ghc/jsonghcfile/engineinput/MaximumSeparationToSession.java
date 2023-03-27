@@ -3,7 +3,6 @@ package com.penalara.ghc.jsonghcfile.engineinput;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -21,7 +20,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "refSessions",
     "days"
 })
-@Generated("jsonschema2pojo")
 public class MaximumSeparationToSession {
 
     /**
@@ -53,7 +51,9 @@ public class MaximumSeparationToSession {
     /**
      * 
      * @param days
+     *     Days of separation condition.
      * @param refSessions
+     *     SessionRefs. List of sessions references.
      */
     public MaximumSeparationToSession(List<Integer> refSessions, Integer days) {
         super();

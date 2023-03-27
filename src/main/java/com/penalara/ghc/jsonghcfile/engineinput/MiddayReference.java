@@ -1,7 +1,6 @@
 
 package com.penalara.ghc.jsonghcfile.engineinput;
 
-import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -19,7 +18,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "refFrame",
     "strict"
 })
-@Generated("jsonschema2pojo")
 public class MiddayReference {
 
     /**
@@ -47,7 +45,9 @@ public class MiddayReference {
     /**
      * 
      * @param refFrame
+     *     Identifier of a frame where the teacher takes noon pause. If not specified, the engine shall take the noon pause of the frame with the highest allocation.
      * @param strict
+     *     It indicates whether the teacher's noon pause should be respected without placing his or her class units in sections of other frameworks that overlap with his or her noon pause.
      */
     public MiddayReference(String refFrame, Boolean strict) {
         super();

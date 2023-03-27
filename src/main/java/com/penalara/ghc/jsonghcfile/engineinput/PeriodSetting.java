@@ -1,7 +1,6 @@
 
 package com.penalara.ghc.jsonghcfile.engineinput;
 
-import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -29,7 +28,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "middayReference",
     "dailyBuildingTransfers"
 })
-@Generated("jsonschema2pojo")
 public class PeriodSetting {
 
     /**
@@ -66,14 +64,14 @@ public class PeriodSetting {
     @JsonPropertyDescription("It indicates whether gaps between class units for the teacher should be avoided. This is a weighting condition.")
     private Boolean avoidGapsBetweenSesions;
     /**
-     * ConditionTypeWithTime
+     * MaxContinuousTeaching
      * <p>
-     * Indicate condition with time wich can be strict, avoid (penalisable in optimisation) or ignored.
+     * It indicates the maximum continuous time of class units, which are allowed without having a gap or a non-class units between them.
      * 
      */
     @JsonProperty("maxContinuousTeaching")
-    @JsonPropertyDescription("Indicate condition with time wich can be strict, avoid (penalisable in optimisation) or ignored.")
-    private ConditionTypeWithTime maxContinuousTeaching;
+    @JsonPropertyDescription("It indicates the maximum continuous time of class units, which are allowed without having a gap or a non-class units between them.")
+    private MaxContinuousTeaching maxContinuousTeaching;
     /**
      * It indicates whether the existence of class units on both sides of a playground supervision taught by this teacher will be penalised.
      * 
@@ -146,19 +144,9 @@ public class PeriodSetting {
     /**
      * 
      * @param refPeriod
-     * @param freeTimes
-     * @param dailyBuildingTransfers
-     * @param avoidClassesAroundBreak
-     * @param incompatibilities
-     * @param dailyOcupation
-     * @param avoidGapsBetweenSesions
-     * @param dailyStay
-     * @param freePartTimes
-     * @param middayReference
-     * @param weeklyStay
-     * @param maxContinuousTeaching
+     *     Identifier of the period to which the settings affect.
      */
-    public PeriodSetting(String refPeriod, WeeklyStay weeklyStay, DailyStay dailyStay, Boolean avoidGapsBetweenSesions, ConditionTypeWithTime maxContinuousTeaching, Boolean avoidClassesAroundBreak, FreeTimes freeTimes, FreePartTime freePartTimes, Incompatibilities incompatibilities, DailyOcupation dailyOcupation, MiddayReference middayReference, DailyBuildingTransfers dailyBuildingTransfers) {
+    public PeriodSetting(String refPeriod, WeeklyStay weeklyStay, DailyStay dailyStay, Boolean avoidGapsBetweenSesions, MaxContinuousTeaching maxContinuousTeaching, Boolean avoidClassesAroundBreak, FreeTimes freeTimes, FreePartTime freePartTimes, Incompatibilities incompatibilities, DailyOcupation dailyOcupation, MiddayReference middayReference, DailyBuildingTransfers dailyBuildingTransfers) {
         super();
         this.refPeriod = refPeriod;
         this.weeklyStay = weeklyStay;
@@ -257,24 +245,24 @@ public class PeriodSetting {
     }
 
     /**
-     * ConditionTypeWithTime
+     * MaxContinuousTeaching
      * <p>
-     * Indicate condition with time wich can be strict, avoid (penalisable in optimisation) or ignored.
+     * It indicates the maximum continuous time of class units, which are allowed without having a gap or a non-class units between them.
      * 
      */
     @JsonProperty("maxContinuousTeaching")
-    public ConditionTypeWithTime getMaxContinuousTeaching() {
+    public MaxContinuousTeaching getMaxContinuousTeaching() {
         return maxContinuousTeaching;
     }
 
     /**
-     * ConditionTypeWithTime
+     * MaxContinuousTeaching
      * <p>
-     * Indicate condition with time wich can be strict, avoid (penalisable in optimisation) or ignored.
+     * It indicates the maximum continuous time of class units, which are allowed without having a gap or a non-class units between them.
      * 
      */
     @JsonProperty("maxContinuousTeaching")
-    public void setMaxContinuousTeaching(ConditionTypeWithTime maxContinuousTeaching) {
+    public void setMaxContinuousTeaching(MaxContinuousTeaching maxContinuousTeaching) {
         this.maxContinuousTeaching = maxContinuousTeaching;
     }
 

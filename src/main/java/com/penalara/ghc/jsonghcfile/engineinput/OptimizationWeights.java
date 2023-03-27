@@ -1,7 +1,6 @@
 
 package com.penalara.ghc.jsonghcfile.engineinput;
 
-import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -21,7 +20,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "sessions",
     "teachers"
 })
-@Generated("jsonschema2pojo")
 public class OptimizationWeights {
 
     /**
@@ -71,9 +69,13 @@ public class OptimizationWeights {
     /**
      * 
      * @param sessions
+     *     SessionsOptimization. It contains options related to optimisable conditions for sessions.
      * @param nonPreferredPositions
+     *     NonPreferredPositionsOptimization. It contains options related to allocation in non-preferred sections.
      * @param timetableGaps
+     *     TimetableGaps. It contains options related to timetable-gaps weights.
      * @param teachers
+     *     TeachersOptimization. It contains options related to optimisable conditions for teachers.
      */
     public OptimizationWeights(TimetableGaps timetableGaps, NonPreferredPositionsOptimization nonPreferredPositions, SessionsOptimization sessions, TeachersOptimization teachers) {
         super();

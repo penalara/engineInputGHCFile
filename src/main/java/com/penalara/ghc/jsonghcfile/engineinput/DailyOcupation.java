@@ -1,7 +1,6 @@
 
 package com.penalara.ghc.jsonghcfile.engineinput;
 
-import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -22,7 +21,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "minimumOccupancy",
     "maximumOccupancy"
 })
-@Generated("jsonschema2pojo")
 public class DailyOcupation {
 
     /**
@@ -79,10 +77,15 @@ public class DailyOcupation {
     /**
      * 
      * @param allowFreeDays
+     *     It indicates whether checking of minimums is omitted in the case of non-assigned days. Forbidden days are never checked.
      * @param minimumOccupancy
+     *     MinimumOccupancy. Minimum teaching time of the teacher with students and other non-teaching activities indicated as eligible for calculation.
      * @param maximumOccupancy
+     *     MaximumOccupancy. Maximum teaching time of the teacher with students and other non-teaching activities indicated as eligible for calculation.
      * @param minimumTeaching
+     *     MinimumTeaching. Minimum teaching time of the teacher with students.
      * @param maximumTeaching
+     *     MaximumTeaching. Minimum teaching time of the teacher with students.
      */
     public DailyOcupation(Boolean allowFreeDays, MinimumTeaching minimumTeaching, MaximumTeaching maximumTeaching, MinimumOccupancy minimumOccupancy, MaximumOccupancy maximumOccupancy) {
         super();

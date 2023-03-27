@@ -1,7 +1,6 @@
 
 package com.penalara.ghc.jsonghcfile.engineinput;
 
-import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -23,7 +22,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "continuousSessionsWithGroup",
     "onCallSectionsOnBorders"
 })
-@Generated("jsonschema2pojo")
 public class TeachersOptimization {
 
     /**
@@ -79,11 +77,17 @@ public class TeachersOptimization {
     /**
      * 
      * @param onCallSectionsOnBorders
+     *     It indicates the weight of the teacher being assigned an on-call hour within the limits of his or her timetable, thus trying to fit it into the gaps in his or her class units.
      * @param uniformDailyDistribution
+     *     It indicates the weight of placing a teacher's class units in a non-uniform way during the week.
      * @param excessPermanence
+     *     It indicates the weight of assigning more daily or weekly stay than the declared in the settings.
      * @param excessContinuousTeaching
+     *     It indicates the weight of placing more continuous class units than those declared in the settings.
      * @param teacherIncompatibities
+     *     It indicates the weight of the teacher's incompatibilities that can be optimised.
      * @param continuousSessionsWithGroup
+     *     It indicates the weight of having consecutive class units taught to the same group.
      */
     public TeachersOptimization(Integer teacherIncompatibities, Integer uniformDailyDistribution, Integer excessContinuousTeaching, Integer excessPermanence, Integer continuousSessionsWithGroup, Integer onCallSectionsOnBorders) {
         super();

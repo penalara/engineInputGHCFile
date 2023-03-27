@@ -1,7 +1,6 @@
 
 package com.penalara.ghc.jsonghcfile.engineinput;
 
-import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -20,7 +19,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "preferable",
     "countAroundMidday"
 })
-@Generated("jsonschema2pojo")
 public class DailyStay {
 
     /**
@@ -55,8 +53,11 @@ public class DailyStay {
     /**
      * 
      * @param preferable
+     *     Ponderable Time in minutes of maximum daily stay.
      * @param countAroundMidday
+     *     It indicates, in the case of split shifts, that the unoccupied intervals between the morning and afternoon class units are counted each day.
      * @param strict
+     *     Strict time in minutes of maximum daily stay.
      */
     public DailyStay(Integer strict, Integer preferable, Boolean countAroundMidday) {
         super();

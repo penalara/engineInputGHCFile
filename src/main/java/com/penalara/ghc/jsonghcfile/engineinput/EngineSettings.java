@@ -1,7 +1,6 @@
 
 package com.penalara.ghc.jsonghcfile.engineinput;
 
-import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -19,7 +18,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "teacherBalance",
     "countGapsAroundMidday"
 })
-@Generated("jsonschema2pojo")
 public class EngineSettings {
 
     /**
@@ -47,7 +45,9 @@ public class EngineSettings {
     /**
      * 
      * @param teacherBalance
+     *     It indicates whether the optimiser should balance the timetables of different teachers, to avoid very bad timetables for a particular teacher.
      * @param countGapsAroundMidday
+     *     It indicates, in the case of a split day (with a noon pause), that the unoccupied intervals between the morning and afternoon class units should be counted. This option affects the weighting in the teacher's optimisation of the gaps in their timetable.
      */
     public EngineSettings(Boolean teacherBalance, Boolean countGapsAroundMidday) {
         super();

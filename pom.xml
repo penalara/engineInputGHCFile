@@ -56,31 +56,6 @@
   
     <build>
         <plugins>
-        	<!--POJO generation-->
-            <plugin>
-                <groupId>org.jsonschema2pojo</groupId>
-                <artifactId>jsonschema2pojo-maven-plugin</artifactId>
-                <version>1.1.1</version>
-                <configuration> <!-- Documentation at http://joelittlejohn.github.io/jsonschema2pojo/site/1.0.2/generate-mojo.html -->
-                    <sourceDirectory>${basedir}/src/main/resources/schema</sourceDirectory>
-                    <outputDirectory>${basedir}/src/main/java</outputDirectory>
-                    <targetPackage>com.penalara.ghc.jsonghcfile.engineinput</targetPackage>
-                    <removeOldOutput>true</removeOldOutput>
-                    <includeHashcodeAndEquals>false</includeHashcodeAndEquals>
-                    <includeToString>false</includeToString>
-                    <useTitleAsClassname>true</useTitleAsClassname>
-                    <includeConstructors>true</includeConstructors>
-                    <useDoubleNumbers>false</useDoubleNumbers>
-                </configuration>
-                <executions>
-                    <execution>
-                    	<phase>generate-sources</phase>
-                        <goals>
-                            <goal>generate</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
         	<!-- Sources -->
         	<plugin>
     			<groupId>org.apache.maven.plugins</groupId>

@@ -1,7 +1,6 @@
 
 package com.penalara.ghc.jsonghcfile.engineinput;
 
-import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -19,7 +18,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "strict",
     "preferable"
 })
-@Generated("jsonschema2pojo")
 public class DailyBuildingTransfers {
 
     /**
@@ -47,7 +45,9 @@ public class DailyBuildingTransfers {
     /**
      * 
      * @param preferable
+     *     Maximum number of movements per day that can be weighted/preferred.
      * @param strict
+     *     Strict maximum number of movements per day.
      */
     public DailyBuildingTransfers(Integer strict, Integer preferable) {
         super();

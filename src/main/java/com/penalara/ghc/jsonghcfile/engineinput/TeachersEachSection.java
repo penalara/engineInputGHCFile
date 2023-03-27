@@ -3,7 +3,6 @@ package com.penalara.ghc.jsonghcfile.engineinput;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -21,7 +20,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "byDefault",
     "bySection"
 })
-@Generated("jsonschema2pojo")
 public class TeachersEachSection {
 
     /**
@@ -51,7 +49,9 @@ public class TeachersEachSection {
     /**
      * 
      * @param bySection
+     *     TeachersBySections. Custom number of teachers in each section.
      * @param byDefault
+     *     Default value for number of teacher in all sections.
      */
     public TeachersEachSection(Integer byDefault, List<TeachersBySection> bySection) {
         super();

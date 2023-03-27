@@ -2,13 +2,7 @@
 package com.penalara.ghc.jsonghcfile.engineinput;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import javax.annotation.processing.Generated;
-import com.fasterxml.jackson.annotation.JsonAnyGetter;
-import com.fasterxml.jackson.annotation.JsonAnySetter;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -29,7 +23,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "refBuilding",
     "fullDay"
 })
-@Generated("jsonschema2pojo")
 public class Classroom {
 
     /**
@@ -70,8 +63,6 @@ public class Classroom {
     @JsonProperty("fullDay")
     @JsonPropertyDescription("This indicates whether the classroom should be booked all day after holding a subject.")
     private Boolean fullDay = false;
-    @JsonIgnore
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
      * No args constructor for use in serialization
@@ -83,10 +74,15 @@ public class Classroom {
     /**
      * 
      * @param frameTemplate
+     *     BannedFrameTemplate. Template with only banned preferences.
      * @param id
+     *     Identifier name of the classroom.
      * @param fullDay
+     *     This indicates whether the classroom should be booked all day after holding a subject.
      * @param refBuilding
+     *     Building identifier where the class is located.
      * @param capacity
+     *     The maximum number of students the classroom can hold.
      */
     public Classroom(String id, Integer capacity, List<BannedSectionPreference> frameTemplate, String refBuilding, Boolean fullDay) {
         super();
@@ -191,16 +187,6 @@ public class Classroom {
     @JsonProperty("fullDay")
     public void setFullDay(Boolean fullDay) {
         this.fullDay = fullDay;
-    }
-
-    @JsonAnyGetter
-    public Map<String, Object> getAdditionalProperties() {
-        return this.additionalProperties;
-    }
-
-    @JsonAnySetter
-    public void setAdditionalProperty(String name, Object value) {
-        this.additionalProperties.put(name, value);
     }
 
 }

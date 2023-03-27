@@ -3,7 +3,6 @@ package com.penalara.ghc.jsonghcfile.engineinput;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -22,7 +21,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "weeklyVariable",
     "weeklyCustom"
 })
-@Generated("jsonschema2pojo")
 public class StablePeriods {
 
     /**
@@ -62,9 +60,8 @@ public class StablePeriods {
 
     /**
      * 
-     * @param weeklyVariable
-     * @param weeklyStable
      * @param weeklyCustom
+     *     WeeklyCustom. It contains an array of 'WeeklyStable' distributions.
      */
     public StablePeriods(List<Integer> weeklyStable, WeeklyVariable weeklyVariable, List<List<Integer>> weeklyCustom) {
         super();

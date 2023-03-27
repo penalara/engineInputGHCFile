@@ -3,7 +3,6 @@ package com.penalara.ghc.jsonghcfile.engineinput;
 
 import java.util.HashMap;
 import java.util.Map;
-import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -30,7 +29,6 @@ import com.fasterxml.jackson.annotation.JsonValue;
     "doNotStartAtFirstMorningSectionIfHasAfternoonAssignment",
     "freeTimeAroundMidday"
 })
-@Generated("jsonschema2pojo")
 public class Incompatibilities {
 
     /**
@@ -125,14 +123,23 @@ public class Incompatibilities {
     /**
      * 
      * @param doNotFinishAtLastMorningSectionIfStartAtFirstAfternoonSection
+     *     DoNotFinishAtLastMorningSectionIfStartAtFirstAfternoon. Do not finish at the last hour of the morning and start at the first hour of the evening.
      * @param freeTimeBetweenDayBeforeAndCurrent
+     *     FreeTimeBetweenDays. Minutes between departure and arrival of the following day.
      * @param doNotFinishAtLastMorningSectionIfStartedAtFirstMorningSection
+     *     DoNotFinishAtLastMorningSection. Do not start at the first hour and finish at the last hour of the morning.
      * @param freeTimeFirstOrLastHoursDay
+     *     FreeTimeFirstOrLastHoursDay. Minutes of free time at first or last hours of the day.
      * @param doNotFinishAtLastAfternoonSectionIfStartedAtFirstAfternoonSection
+     *     DoNotFinishAtLastAfternoonSection. o not finish at the last hour of the evening and start at the first.
      * @param doNotFinishAtLastMorningSectionIfHasAfternoonAssignment
+     *     DoNotFinishAtLastMorningSectionIfHasAfternoon. Do not finish at the last hour in the morning and have the evening busy.
      * @param freeTimeBetweenEndWeekAndStartWeekDays
+     *     FreeTimeBetweenWeeksBorders. Minutes between the end time of the last day of the week and the start time of the following week.
      * @param freeTimeAroundMidday
+     *     FreeTimeAroundMidday. Do not have less than a custom free time around noon pause.
      * @param doNotStartAtFirstMorningSectionIfHasAfternoonAssignment
+     *     DoNotStartAtFirstMorningSection. Do not start at the first hour and keep the evening busy.
      */
     public Incompatibilities(ConditionTypeWithTime freeTimeBetweenDayBeforeAndCurrent, ConditionTypeWithTime freeTimeBetweenEndWeekAndStartWeekDays, ConditionTypeWithTime freeTimeFirstOrLastHoursDay, Incompatibilities.DoNotFinishAtLastAfternoonSection doNotFinishAtLastAfternoonSectionIfStartedAtFirstAfternoonSection, Incompatibilities.DoNotFinishAtLastMorningSection doNotFinishAtLastMorningSectionIfStartedAtFirstMorningSection, Incompatibilities.DoNotFinishAtLastMorningSectionIfStartAtFirstAfternoon doNotFinishAtLastMorningSectionIfStartAtFirstAfternoonSection, Incompatibilities.DoNotFinishAtLastMorningSectionIfHasAfternoon doNotFinishAtLastMorningSectionIfHasAfternoonAssignment, Incompatibilities.DoNotStartAtFirstMorningSection doNotStartAtFirstMorningSectionIfHasAfternoonAssignment, ConditionTypeWithTime freeTimeAroundMidday) {
         super();
@@ -352,7 +359,6 @@ public class Incompatibilities {
      * o not finish at the last hour of the evening and start at the first.
      * 
      */
-    @Generated("jsonschema2pojo")
     public enum DoNotFinishAtLastAfternoonSection {
 
         IGNORE("ignore"),
@@ -400,7 +406,6 @@ public class Incompatibilities {
      * Do not start at the first hour and finish at the last hour of the morning.
      * 
      */
-    @Generated("jsonschema2pojo")
     public enum DoNotFinishAtLastMorningSection {
 
         IGNORE("ignore"),
@@ -448,7 +453,6 @@ public class Incompatibilities {
      * Do not finish at the last hour in the morning and have the evening busy.
      * 
      */
-    @Generated("jsonschema2pojo")
     public enum DoNotFinishAtLastMorningSectionIfHasAfternoon {
 
         IGNORE("ignore"),
@@ -496,7 +500,6 @@ public class Incompatibilities {
      * Do not finish at the last hour of the morning and start at the first hour of the evening.
      * 
      */
-    @Generated("jsonschema2pojo")
     public enum DoNotFinishAtLastMorningSectionIfStartAtFirstAfternoon {
 
         IGNORE("ignore"),
@@ -544,7 +547,6 @@ public class Incompatibilities {
      * Do not start at the first hour and keep the evening busy.
      * 
      */
-    @Generated("jsonschema2pojo")
     public enum DoNotStartAtFirstMorningSection {
 
         IGNORE("ignore"),
